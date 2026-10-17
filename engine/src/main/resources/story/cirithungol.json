@@ -1,0 +1,467 @@
+{
+  "id": "cirithungol",
+  "name": "Valle de Morgul y Cirith Ungol",
+  "baseLevel": 58,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "La luz verde",
+      "text": "Bajo un cielo pardo que ya no deja ver el sol, sigues hacia el sur hasta un cruce de calzadas en medio de un anillo de árboles. Allí tomas la que sube al este, hacia las montañas. Te lleva a un valle frío donde todo brilla con una luz verde y enferma: el río, los prados y, al fondo, una ciudad de murallas pálidas con una torre alta coronada de luz. No piensas acercarte. Por la pared norte del valle sube una senda de peldaños tallados, y en su polvo vuelves a ver huellas pequeñas.",
+      "imagePrompt": "A cold mountain valley glowing with a sickly green light, a pale-walled city with a tall glowing tower at the far end, a young traveler in a grey elven cloak at the foot of a path of carved steps climbing the northern cliff, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "Las flores pálidas",
+      "text": "Bordeas el valle por los prados que bajan al río, buscando el pie de la senda sin pasar cerca de la ciudad. Los prados están cubiertos de flores blancas que brillan débilmente en la penumbra, como pequeñas lunas, y huelen a podrido, a tumba abierta. El río corre negro y sin ruido. No te atreves a beber de él, aunque tienes sed. Te envuelves en la capa y caminas deprisa, con la vista baja, mientras la luz verde te sigue sobre la hierba.",
+      "imagePrompt": "Dark meadows sloping to a black silent river, covered with faintly glowing pale white flowers, a young traveler in a grey elven cloak wrapped in his cloak walking fast with eyes lowered, green light from a distant city, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bordear los prados del río"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "La patrulla del valle",
+      "text": "Empiezas a subir por la senda y en el primer recodo te encuentras de frente con dos orcos que bajan. No son como los de las montañas: llevan cotas negras y en el pecho un emblema pintado, una luna blanca con una calavera por cara. Se paran en seco y olfatean el aire. Uno dice algo con voz ronca y se ríe; el otro ya ha sacado un cuchillo largo y curvo. Están entre tú y la subida, y no piensan apartarse.",
+      "imagePrompt": "A narrow path of carved steps on a cliff above a green-lit valley, two orcs in black mail with a white skull-faced moon emblem drawing long curved knives against a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir directo por la senda",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Orco de Morgul",
+            "portrait": "mordor_orc",
+            "levelOffset": -2,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "31"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Orco de Morgul",
+            "portrait": "mordor_orc",
+            "levelOffset": -2,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "31"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "El orco del arroyo",
+      "text": "Un arroyo baja de las alturas y cruza los prados para unirse al río. Su agua es tan fría que te duelen los tobillos al vadearlo, y tiene el mismo brillo verdoso que todo lo demás. A mitad del vado oyes un chapoteo río arriba: un orco con la luna blanca en el pecho se ha agachado a llenar un cubo. Levanta la cabeza, te ve y suelta el cubo, que se va flotando. Corre hacia ti por el agua, con la espada ya fuera.",
+      "imagePrompt": "An icy greenish stream crossing dark meadows, a young traveler in a grey elven cloak halfway across the ford as an orc with a white moon emblem drops a bucket upstream and charges through the water with a sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el arroyo helado",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Orco de Morgul",
+            "portrait": "mordor_orc",
+            "levelOffset": 0,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "31"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "Grietas con telas",
+      "text": "Para no ir por la senda, donde podrías encontrarte con alguien, trepas por las grietas de la pared, agarrándote a raíces y salientes. Las grietas están llenas de telarañas grises, viejas y polvorientas, tan gruesas que parecen trapos. Al apartar una con la mano, algo se mueve dentro. Dos arañas del tamaño de un perro salen de la grieta, negras y peludas, con ojos que brillan como cuentas. Una se descuelga sobre tu cabeza. La otra te corta la retirada.",
+      "imagePrompt": "A cliff face of cracks choked with thick grey dusty webs, two dog-sized black hairy spiders with bead-like eyes emerging, one dropping from above toward a young traveler in a grey elven cloak clinging to the rock, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Trepar por las grietas",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Araña",
+            "portrait": "spider",
+            "levelOffset": -2,
+            "pattern": [
+              "13",
+              "131",
+              "31",
+              "313"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Araña",
+            "portrait": "spider",
+            "levelOffset": -2,
+            "pattern": [
+              "13",
+              "131",
+              "31",
+              "313"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "La escalera recta",
+      "text": "La senda se convierte en una escalera recta, tallada en la roca, que sube y sube sin descanso hacia la oscuridad. Los peldaños son altos y estrechos, gastados en el centro. No hay barandilla ni nada a lo que agarrarse, solo la pared a un lado y el vacío al otro. Subes contando escalones hasta que pierdes la cuenta. Te arden las piernas. Cuando te vuelves a mirar, la ciudad de la luz verde ha quedado muy abajo, pequeña como un juguete.",
+      "imagePrompt": "A steep straight stair cut into a dark cliff climbing endlessly, a sheer drop on one side, a young traveler in a grey elven cloak climbing with aching legs, a small green-lit city far below in the valley, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir por la escalera tallada"
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "El silencio del valle",
+      "text": "Te escondes entre unas rocas a esperar que pase el peligro. Al cabo de un rato te das cuenta de que no oyes nada: ni viento, ni agua, ni un pájaro, ni siquiera tu respiración. Das una palmada y el sonido muere en el aire como si nunca hubiera existido. La luz verde de la ciudad sube y baja despacio, como el pulso de algo dormido. No sabes cuánto tiempo pasas así. Cuando por fin te levantas, tienes las manos entumecidas.",
+      "imagePrompt": "Among dark boulders on a mountainside in total silence, a young traveler in a grey elven cloak crouching and clapping his hands without a sound, a sickly green light pulsing slowly from a distant city below, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Esperar entre las rocas"
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "El puesto de la luna",
+      "text": "Junto a la senda hay un puesto de guardia antiguo, de piedra blanca, construido por gentes mucho mejores que los orcos. Sobre la puerta estuvo tallada una luna creciente, hermosa, pero alguien la ha picado a golpes y ha pintado encima una calavera. Dentro hay huesos de animales, cenizas y basura. Te sientas un momento en el umbral. Piensas que este valle, antes de la luz verde, debió de ser un lugar donde la luna se reflejaba en el río.",
+      "imagePrompt": "An ancient white stone guard post beside a mountain path, a once beautiful carved crescent moon above its door hacked and daubed with a crude skull, a young traveler in a grey elven cloak sitting on the threshold among bones and ashes, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Entrar en el puesto viejo"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "El derrumbe",
+      "text": "Más arriba, un tramo de la senda se ha desplomado, y entre los dos lados queda un vacío demasiado ancho para saltarlo. Por encima, en la pared, sobresale un cuerno de roca. Lanzas la cuerda gris de los elfos, la enganchas en él a la segunda y pasas colgado, con los pies contra la roca y el abismo debajo. Al otro lado das un tirón seco, y la cuerda se suelta y cae en tus manos. La enrollas con cuidado.",
+      "imagePrompt": "A collapsed section of a cliff path over a deep abyss, a young traveler in a grey elven cloak crossing the gap hanging from a thin grey elven rope looped over a horn of rock, feet braced against the cliff, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Salvar el tramo derrumbado"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "La hoguera del nicho",
+      "text": "Sigues trepando hasta un rellano y ves una luz rojiza: en un nicho de la pared, cuatro orcos de la luna blanca se calientan junto a una hoguera pequeña, discutiendo a gritos sobre algo que ha pasado arriba. Te pegas a la roca para pasar de largo. Pero el viento cambia, les lleva tu olor y las voces se callan de golpe. Cuatro cabezas se vuelven hacia la oscuridad donde estás. Uno coge una tea encendida y se acerca, olfateando.",
+      "imagePrompt": "A rock niche on a dark cliff lit by a small fire, four orcs with white skull-moon emblems turning toward the darkness, one advancing with a burning torch toward a young traveler in a grey elven cloak pressed against the rock, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la luz de una hoguera",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Orco de Morgul",
+            "portrait": "mordor_orc",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "31"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Orco de Morgul",
+            "portrait": "mordor_orc",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "31"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Orco de Morgul",
+            "portrait": "mordor_orc",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "31"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Orco de Morgul",
+            "portrait": "mordor_orc",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "31"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "El orco que huye",
+      "text": "Oyes pasos que bajan a la carrera y te pegas a la pared, dentro de una grieta. Un orco pasa a tu lado sin verte, tropezando, mirando hacia atrás. Lleva el casco torcido y sangre en el brazo, y murmura algo una y otra vez, como un loco. No huye de ti: huye de algo que hay arriba. Se le cae un cuchillo curvo en los peldaños y ni siquiera se para a recogerlo. Esperas a que sus pasos se pierdan abajo antes de seguir.",
+      "imagePrompt": "A dark mountain stair, a panicked wounded orc with a crooked helmet running downward and looking back over his shoulder, a young traveler in a grey elven cloak hidden in a crack of the cliff watching him pass, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Pegarse a la pared"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "Las piedras que caen",
+      "text": "Sigues subiendo, peldaño a peldaño. De pronto, un ruido seco arriba, y luego un estruendo que crece: piedras que caen rebotando por la escalera, algunas grandes como cabezas. Te aplastas contra la pared mientras pasan silbando a un palmo de ti y se pierden en el vacío. Una te roza el hombro y te deja el brazo dormido un buen rato. Cuando cesa el ruido, te quedas quieto, esperando la siguiente. No llega. Nunca sabrás si se soltaron solas.",
+      "imagePrompt": "Stones and boulders bouncing down a steep rock stair into an abyss, a young traveler in a grey elven cloak flattened against the cliff wall as rocks whistle past him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir peldaño a peldaño"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "La garganta de las telas",
+      "text": "Para ahorrarte un tramo de escalera, atajas por una garganta estrecha entre dos paredes. Es un error. La garganta está tapada de lado a lado por telarañas, una detrás de otra, como velas de un barco. Cortas la primera con la espada; es dura y pegajosa como cuero mojado. Al cortar la segunda, toda la garganta tiembla. Cuatro arañas bajan por los hilos, rápidas, desde las sombras de arriba, chasqueando las mandíbulas. Detrás de ti, las telas ya cierran el camino.",
+      "imagePrompt": "A narrow rocky gorge blocked by layers of thick webs like ship sails, four large black spiders descending on threads from above, a young traveler in a grey elven cloak slashing at the sticky webs with his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atajar por una garganta",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Araña",
+            "portrait": "spider",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "31",
+              "313"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Araña",
+            "portrait": "spider",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "31",
+              "313"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Araña",
+            "portrait": "spider",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "31",
+              "313"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Araña",
+            "portrait": "spider",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "31",
+              "313"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "Las tortas contadas",
+      "text": "Te sientas al abrigo de una roca y abres el zurrón. Cuentas lo que te queda del pan de los elfos: tres tortas, envueltas todavía en sus hojas. Partes una, comes la mitad despacio y guardas el resto. El sabor te devuelve por un momento la luz dorada de los árboles, el agua del río plateado, la voz serena de la Dama. Te sientes más fuerte de lo que deberías. Bebes un sorbo del odre y vuelves a ponerte en camino.",
+      "imagePrompt": "Sheltered behind a rock on a dark mountainside, a young traveler in a grey elven cloak unwrapping elven waybread from green leaves and eating slowly, a small waterskin beside him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Descansar tras una roca"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "La luz que busca",
+      "text": "Te asomas al borde para mirar el valle. En ese momento la luz de la torre se intensifica, y un haz verde se despliega y recorre despacio las paredes, como una mano que tantea en la oscuridad. Se acerca a ti. Te tiras detrás de una roca y te encoges, sin respirar. El haz pasa por encima, ilumina la piedra a tu lado con un brillo de enfermedad y sigue de largo. Esperas a que se apague del todo para volver a moverte.",
+      "imagePrompt": "A sickly green beam of light sweeping across dark valley cliffs from a distant city tower, a young traveler in a grey elven cloak curled up behind a rock as the light passes over him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Asomarse al borde"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "La cresta",
+      "text": "Llegas por fin a lo alto de la subida. Delante, la montaña se alza en una cresta dentada, negra contra el cielo pardo, y en ella se abre una hendidura: el paso. Junto a él, encaramada sobre las rocas, hay una torre oscura con una sola ventana encendida de rojo. Desde aquí no ves guardias en sus muros, pero tampoco sabes si te vigilan. Decides que, sea como sea, no pasarás por debajo de esa torre si puedes evitarlo.",
+      "imagePrompt": "The top of a mountain climb, a jagged black ridge against a brown sky with a cleft pass, a dark tower perched on the rocks with a single red-lit window, a young traveler in a grey elven cloak watching warily, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir hasta la cresta"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "El hedor",
+      "text": "El aire cambia. Empiezas a notar un olor dulzón y podrido que no se parece a nada que conozcas, y que se hace más espeso a cada paso. Entre las rocas aparecen huesos de cabras, de lobos y de orcos, vacíos y limpios, como si algo les hubiera sorbido la vida y hubiera tirado lo demás. Hay hilos grises enredados en ellos. Te tapas la nariz con la capa. No quieres saber qué come así, pero sospechas que pronto lo sabrás.",
+      "imagePrompt": "Dark rocks scattered with clean dry bones of goats, wolves and orcs tangled in grey threads, a sickly haze in the air, a young traveler in a grey elven cloak covering his nose with his cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir un olor extraño"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "La cornisa",
+      "text": "Agotado, buscas un sitio para dormir y solo encuentras una cornisa estrecha, poco más ancha que tus hombros, sobre el vacío. Pasas la cuerda de los elfos por un pico de roca y por tu cintura, y te tumbas de lado contra la pared. Duermes a ratos, despertándote cada vez que cae una piedra. No llega el alba, solo un gris pardo un poco más claro. Desatas la cuerda, la enrollas y la guardas, y sigues subiendo.",
+      "imagePrompt": "A narrow ledge above a dark abyss, a young traveler in a grey elven cloak sleeping on his side against the rock, tied at the waist by a thin grey elven rope looped around a spike of stone, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Dormir en una cornisa"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "La humareda",
+      "text": "Una humareda espesa baja del paso y se arrastra por la ladera, empujada por un viento del este. Huele a azufre y a hierro quemado, y te hace llorar los ojos. Te atas un pañuelo sobre la boca y avanzas casi a ciegas, palpando la pared con una mano. Toses hasta que te duele el pecho. Cuando por fin sales del humo, tienes la cara negra de hollín y la boca amarga. Es el primer aliento de la tierra que hay al otro lado.",
+      "imagePrompt": "A thick sulphurous smoke rolling down a mountainside from a pass, a young traveler in a grey elven cloak groping along the cliff wall with a cloth tied over his mouth, eyes watering, face blackened with soot, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atravesar la humareda"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "La boca negra",
+      "text": "La senda se pierde entre rocas y la sigues hasta el final. Allí, en la pared, se abre una boca negra, más alta que dos hombres, de la que sale un aire frío y fétido. Por encima, una torre oscura encaramada en la cresta, con una ventana roja, vigila el paso; no quieres pasar bajo ella, y no hay otro camino hacia el este. En el umbral cuelgan telas desgarradas, como si alguien las hubiera atravesado hace poco, y en la piedra hay unas manchas verdosas, secas. Respiras hondo, empuñas la espada y entras.",
+      "imagePrompt": "A black cave mouth taller than two men in a dark cliff below a ridge tower with a red window, torn webs and dry greenish stains at the threshold, a young traveler in a grey elven cloak gripping his sword before entering, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar un paso entre las rocas"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "Las crías",
+      "text": "Te desvías de la senda por una hondonada entre rocas, para que nadie te vea desde arriba. El suelo está cubierto de cáscaras secas, como de huevos enormes, y de hilos que se te pegan a las botas. Demasiado tarde comprendes que es un criadero. Tres arañas jóvenes, del tamaño de un ternero, salen de debajo de una losa y te rodean despacio, levantando las patas delanteras. Su olor dulzón y podrido llena la hondonada.",
+      "imagePrompt": "A rocky hollow littered with huge dry eggshells and sticky threads, three calf-sized young spiders emerging from under a slab and circling a young traveler in a grey elven cloak with forelegs raised, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Trepar por la hondonada",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Araña",
+            "portrait": "spider",
+            "levelOffset": -4,
+            "pattern": [
+              "13",
+              "131",
+              "31",
+              "313"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Araña",
+            "portrait": "spider",
+            "levelOffset": -4,
+            "pattern": [
+              "13",
+              "131",
+              "31",
+              "313"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Araña",
+            "portrait": "spider",
+            "levelOffset": -4,
+            "pattern": [
+              "13",
+              "131",
+              "31",
+              "313"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "Ella-Laraña",
+      "text": "Al final solo queda un camino: el túnel que cruza la montaña. Dentro, la oscuridad es completa y el hedor, insoportable. Avanzas tanteando la pared, entre telas que se te pegan a la cara. Entonces oyes un roce enorme, un chasquido, y delante se encienden dos racimos de ojos, uno de ellos apagado y costroso, herido hace poco. Una araña gigantesca llena el túnel de lado a lado, y a su lado se descuelga una cría. Es Ella-Laraña, la vieja señora de este túnel, y tiene hambre.",
+      "imagePrompt": "A pitch-black tunnel choked with webs, an enormous ancient spider filling the passage with clusters of glowing eyes, one cluster dull and scarred, a smaller spider dropping beside her, a young traveler in a grey elven cloak with sword raised, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Ella-Laraña",
+            "portrait": "boss_cirithungol",
+            "levelOffset": 8,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "12",
+              "121",
+              "1212",
+              "31",
+              "123"
+            ],
+            "everyNTicks": 1,
+            "modes": {
+              "defenseBelowPct": 15,
+              "attackAbovePct": 70,
+              "maxDefenses": 1,
+              "defense": [
+                "2132",
+                "21",
+                "212",
+                "2121",
+                "21212",
+                "13",
+                "131"
+              ]
+            }
+          },
+          {
+            "name": "Araña",
+            "portrait": "spider",
+            "levelOffset": -4,
+            "pattern": [
+              "13",
+              "131",
+              "31",
+              "313"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    }
+  ]
+}

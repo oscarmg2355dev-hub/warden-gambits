@@ -1,0 +1,231 @@
+{
+  "id": "caradhras",
+  "name": "Caradhras",
+  "baseLevel": 25,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "Al pie del Cuerno Rojo",
+      "text": "Dejas atrás las ruinas del campamento dunlendino, donde las brasas aún humean, y empiezas a subir. El camino del paso trepa por la falda del Caradhras, cuyas laderas tienen bajo la nieve un tono rojizo, como de hierro viejo. Los acebos quedan abajo y, con ellos, el último abrigo. El viento baja de la cumbre con un silbido largo y el cielo del norte se ha vuelto del color del plomo. Te ciñes la capa gris de Rivendel y miras hacia arriba. Al otro lado de esas montañas sigue el rastro que persigues desde Bree.",
+      "imagePrompt": "A young traveler in a grey elven cloak starting up a snowy mountain path, a towering peak with reddish rocky slopes above vanishing into leaden clouds, smoking ruins of a camp and dark holly trees below, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "El camino del paso",
+      "text": "Sigues el viejo camino, que sube en zigzag por la ladera, medio borrado por la nieve. Al doblar un recodo te detienes: alguien ha pasado por aquí hace pocos días. Hay huellas hondas de botas de hombres altos, otras mucho más pequeñas, casi como de niños, y las pisadas de un poni cargado. Suben hacia el paso en fila, abriendo surco. Sean quienes sean, te han adelantado mientras peleabas en Eregion, y recuerdas los rumores que te acompañan desde Bree. Pisas donde ellos pisaron y sigues subiendo, con el viento de cara.",
+      "imagePrompt": "A winding mountain path half buried in snow on reddish slopes, a line of old footprints of tall boots, small feet and a pony climbing toward a high pass, a young traveler in a grey cloak kneeling to study them, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Tomar el camino del paso"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "La cañada helada",
+      "text": "Dejas el camino y subes por una cañada estrecha que corta la ladera, donde el viento apenas llega. Es más empinada, pero las paredes de roca te protegen y avanzas deprisa. El silencio es casi completo: solo crujen la nieve bajo tus botas y, de vez en cuando, un trozo de hielo que se suelta allá arriba. Entonces ves en la nieve huellas grandes de lobo, muchas, y unas plumas negras enganchadas en las rocas. Esta cañada no está tan vacía como parece. Aprietas la empuñadura de la espada.",
+      "imagePrompt": "A narrow snowy ravine between steep reddish rock walls, large wolf prints in the snow and black feathers caught on the stones, a lone young traveler in a grey cloak gripping his sword hilt, pale cold light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir por la cañada"
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "Ojos en la cresta",
+      "text": "Para no perder el rastro subes por una cresta desnuda desde donde se ve media montaña. También a ti se te ve. Dos crebain se separan de las nubes y bajan en picado sobre ti, graznando con voz ronca, mientras otros vigilan desde lo alto. Atacan por turnos, buscándote los ojos con el pico. Si uno de ellos vuelve con su amo, alguien sabrá muy pronto que un viajero solitario sube hacia el paso. No puedes permitir que escapen.",
+      "imagePrompt": "Two large black crows diving out of grey clouds at a young traveler with a raised sword on a bare snowy mountain ridge, more dark birds circling high above, wind-blown snow, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Avanzar por la cresta",
+      "encounter": {
+        "rivals": [
+          { "name": "Crebain", "portrait": "crebain", "levelOffset": -2, "pattern": ["12", "121", "1212", "31"], "everyNTicks": 2 },
+          { "name": "Crebain", "portrait": "crebain", "levelOffset": -2, "pattern": ["12", "121", "1212", "31"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "El lobo del rastro",
+      "text": "Sigues las huellas del grupo paso a paso, sin apartarte del surco que abrieron. A media mañana notas que no eres el único: sobre las pisadas de los viajeros hay otras más recientes, de un lobo grande que también ha seguido el rastro. Lo ves poco después, plantado en mitad del camino, gris y flaco, con los ojos amarillos fijos en ti. No huye ni aúlla. Baja la cabeza y avanza despacio, con la calma de quien ya ha cazado hombres antes.",
+      "imagePrompt": "A gaunt grey wolf with yellow eyes standing in the middle of a snowy trench of footprints on a mountain path, head lowered and advancing, a young traveler in a grey cloak drawing his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir las huellas del grupo",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": 1, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "La manada de la cañada",
+      "text": "Sigues las huellas de los lobos cañada arriba, con la espada desnuda. El rastro se estrecha entre dos rocas y, al otro lado, los encuentras: dos lobos enormes, de pelo gris sucio, que roen los huesos de una cabra montés. Levantan la cabeza a la vez. No son bestias salvajes; se mueven coordinados, y mientras uno se queda delante, el otro se desliza por la ladera para cerrarte la retirada. Alguien les ha enseñado a cazar así. Tendrás que pelear en la nieve, sin espacio para maniobrar.",
+      "imagePrompt": "Two huge dirty-grey wolves gnawing the bones of a mountain goat in a narrow snowy ravine, raising their heads at a young traveler with a bare sword, one wolf slinking up the slope to flank him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el rastro de los lobos",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -2, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -2, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "Plumas negras",
+      "text": "Prefieres no cruzarte con lo que dejó esas huellas y trepas por la pared de la cañada, agarrándote a salientes helados. Arriba, en una repisa, descubres de dónde venían las plumas: un nido de crebain, grande y sucio, lleno de huesos pequeños. Cuatro pájaros negros levantan el vuelo a la vez y se te echan encima, chillando, mientras te sujetas con una mano a la roca. Tienes que afirmarte, desenvainar y luchar en una repisa del ancho de una mesa.",
+      "imagePrompt": "Four black crows bursting from a filthy nest of small bones on a narrow icy rock ledge, attacking a young traveler clinging to the cliff with one hand and drawing his sword with the other, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Trepar fuera de la cañada",
+      "encounter": {
+        "rivals": [
+          { "name": "Crebain", "portrait": "crebain", "levelOffset": -5, "pattern": ["12", "121", "1212", "31"], "everyNTicks": 2 },
+          { "name": "Crebain", "portrait": "crebain", "levelOffset": -5, "pattern": ["12", "121", "1212", "31"], "everyNTicks": 2 },
+          { "name": "Crebain", "portrait": "crebain", "levelOffset": -5, "pattern": ["12", "121", "1212", "31"], "everyNTicks": 2 },
+          { "name": "Crebain", "portrait": "crebain", "levelOffset": -5, "pattern": ["12", "121", "1212", "31"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "El refugio bajo la peña",
+      "text": "Bajo una peña que hace de tejado encuentras un hueco resguardado del viento, y no eres el primero en usarlo. La nieve está aplastada donde se tumbaron varias personas, hay cenizas de una hoguera y una rama de leña olvidada, y en un rincón, estiércol de poni. El fuego ardió con fuerza: la roca de encima está ennegrecida, como si hubiera soportado una llama más viva que la de la leña. Te sientas donde ellos se sentaron y comes algo. Por un momento te sientes menos solo en la montaña.",
+      "imagePrompt": "A sheltered hollow under an overhanging crag on a snowy mountainside, trampled snow, cold ashes of a campfire and a forgotten stick of firewood, blackened rock above, a young traveler in a grey cloak sitting alone eating, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar el abrigo de la peña"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "La cornisa",
+      "text": "El camino se reduce a una cornisa que bordea un precipicio, apenas más ancha que tus botas. A la izquierda, la roca; a la derecha, un vacío blanco donde se pierde el viento. Avanzas de lado, con la espalda pegada a la pared y la capa batiendo como una vela. A mitad de camino, un bloque de nieve se desprende sobre tu cabeza y pasa rozándote hacia el abismo. Te quedas inmóvil, sin respirar, hasta que deja de sonar. Luego sigues, paso a paso, hasta pisar terreno firme.",
+      "imagePrompt": "A young traveler edging sideways along a narrow icy ledge with his back pressed to a reddish cliff, grey cloak flapping, a block of snow tumbling past him into a white misty void below, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar la cornisa helada"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "Voces en el viento",
+      "text": "Te refugias tras un grupo de rocas para recobrar el aliento. El viento ha cambiado: ya no silba, sino que gime, y entre sus ráfagas te parece oír voces lejanas, risas crueles, palabras en una lengua que no conoces. Te dices que es la fatiga. Cierras los ojos y las voces siguen ahí, más cerca, como si alguien hablara justo al otro lado de la roca. Te asomas: no hay nadie, solo nieve que gira. Es como si la propia montaña tuviera voz y no te quisiera aquí.",
+      "imagePrompt": "A young traveler in a grey cloak crouching behind a cluster of rocks on a high snowy slope, wind-driven snow swirling in ghostly shapes like faces around him, dim grey light, an eerie empty mountainside, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Descansar tras las rocas"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "La pendiente",
+      "text": "Para ganar tiempo atajas por una pendiente lisa de nieve dura en lugar de seguir el rodeo del camino. Al principio vas bien, clavando los talones. Luego la costra se rompe bajo tu peso y resbalas ladera abajo, cada vez más rápido, hasta que consigues frenar clavando la espada en el hielo. Te quedas tendido, jadeando, con el corazón golpeándote el pecho. Has perdido altura y casi una hora, pero sigues entero. Te levantas, sacudes la nieve de la capa y vuelves a subir.",
+      "imagePrompt": "A young traveler sliding down a steep smooth snow slope on his back, driving his sword into the ice to stop himself, a long scar in the snow above him, reddish rocks and grey sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atajar por la pendiente"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "La guarida",
+      "text": "Sigues hacia arriba el rastro de la manada hasta una cueva baja que apesta a carne podrida. Entras con cuidado. Está vacía, pero no abandonada: hay huesos roídos, pelo gris en las rocas y, en un rincón, un collar de cuero con una mano blanca pintada. Esos lobos tienen dueño, y su dueño quiere que vigilen este paso. Antes de salir oyes, muy lejos, un aullido al que responden otros. La manada está de caza. Sales de la cueva y sigues subiendo, más deprisa.",
+      "imagePrompt": "A low dark cave in a snowy mountainside littered with gnawed bones and grey fur, a leather collar marked with a painted white hand lying in a corner, a young traveler with a sword peering inside, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar la guarida de la manada"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "El puente de nieve",
+      "text": "Una grieta profunda corta la cañada de lado a lado, y solo hay un modo de pasar: un puente de nieve helada que la cruza como un arco frágil. Lo tanteas con la espada. Aguanta. Lo cruzas a gatas, repartiendo el peso, sin mirar el azul oscuro que se abre debajo. Cuando estás a punto de llegar, el arco cruje y se hunde detrás de ti con un estruendo sordo. Saltas a la otra orilla y te quedas mirando el hueco. Por aquí ya no hay vuelta atrás.",
+      "imagePrompt": "A fragile arch of frozen snow spanning a deep blue crevasse in a mountain ravine, collapsing behind a young traveler in a grey cloak as he leaps to the far edge, powder snow exploding, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar la grieta"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "La cueva de hielo",
+      "text": "Encuentras una cueva abierta en el hielo, con paredes azules y lisas que brillan con una luz extraña. Dentro no sopla el viento y el silencio es tan grande que oyes tu propia respiración. Te sientas a descansar y, a la luz que se filtra, descubres en la roca del fondo unas runas angulosas, talladas hace mucho. Son marcas enanas: alguien abrió este paso, o lo usó, cuando las montañas aún eran caminos de comercio. Te reconforta pensar que otros sobrevivieron aquí antes que tú.",
+      "imagePrompt": "Inside a glowing blue ice cave on a high mountain, a young traveler in a grey cloak resting against the wall, ancient angular dwarvish runes carved into the dark rock at the back, soft filtered light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Refugiarse en una cueva"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "El espolón",
+      "text": "Trepas hasta lo alto de un espolón de roca desde donde se domina el paso. La vista te corta el aliento: al este, la cumbre del Caradhras se pierde en un remolino de nubes negras; al oeste, muy abajo, las lomas de Eregion parecen una alfombra gris. Y desde el norte avanza la tormenta, una pared blanca que se traga las montañas una a una. Calculas que tienes pocas horas. Bajas del espolón a toda prisa, decidido a llegar lo más alto posible antes de que te alcance.",
+      "imagePrompt": "A young traveler standing atop a rocky spur high on a mountain, a reddish peak lost in swirling black clouds, grey hills far below to the west, a vast white wall of storm advancing from the north, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Coronar el espolón"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "La nieve profunda",
+      "text": "Sigues subiendo hacia el paso. La nieve te llega ya a las rodillas y cada paso cuesta como diez. Empieza a nevar de verdad: copos gruesos, pesados, que caen sin ruido y borran el mundo a tu alrededor. Pronto no ves más allá de unos metros. Te guías por la pendiente, siempre hacia arriba, y por el viento, que te da en la cara. El frío se te mete en los huesos a pesar de la capa. Te repites que el paso no puede estar lejos, y no sabes si te lo crees.",
+      "imagePrompt": "A lone young traveler in a grey cloak wading uphill through knee-deep snow in a heavy snowfall, visibility only a few steps, faint outline of a mountain slope, everything white and grey, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir subiendo hacia el paso"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "Lobos en la ventisca",
+      "text": "Bordeas la montaña por una ladera más baja, donde el viento golpea con menos fuerza. Es un respiro corto. Entre los remolinos de nieve aparecen dos siluetas grises que trotan hacia ti sin ruido, una por cada lado. Son lobos grandes y flacos, con los ojos amarillos clavados en tu garganta. Han esperado a que el frío te cansara. Con la nieve hasta las rodillas no puedes huir ni esquivar. Plantas los pies, levantas la espada y esperas el primer salto.",
+      "imagePrompt": "Two lean grey wolves with yellow eyes emerging from swirling snow on a lower mountain slope, closing in from both sides on a young traveler planted knee-deep in snow with his sword raised, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bordear la ladera por abajo",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -2, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -2, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "Piedras desde lo alto",
+      "text": "Avanzas pegado a la pared de roca, buscando su abrigo. Es entonces cuando empieza a llover piedra. Primero cae un guijarro, luego otro, luego un bloque del tamaño de un barril que rebota a tu lado y sigue rodando ladera abajo. Miras arriba y no ves a nadie, solo roca y nubes. Te aplastas contra la pared hasta que cesa. Cuando por fin te mueves, tienes la certeza de que esta montaña no quiere a nadie en sus laderas, y menos a ti.",
+      "imagePrompt": "Rocks and a barrel-sized boulder tumbling down a reddish cliff face onto a narrow snowy path, a young traveler in a grey cloak pressed flat against the wall, no one visible above, only clouds, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Avanzar pegado a la roca"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "Graznidos en la nieve",
+      "text": "Cruzas un campo de nieve abierto, sin una roca donde esconderte. A medio camino, un graznido rompe el silencio: un crebain, un pájaro negro y enorme, da vueltas sobre ti, llamando. Al momento, de la nieve sale un lobo gris que te seguía a distancia, y el crebain baja para atacar con él a la vez, uno por arriba y otro por abajo. Trabajan juntos, como el perro y el halcón de un mismo cazador. Te das la vuelta con la espada en alto; no hay otra salida que pelear.",
+      "imagePrompt": "A wide open snowfield on a mountainside, a black crow diving from above and a grey wolf charging from the snow at the same time, a young traveler in a grey cloak turning with his sword raised, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el campo de nieve",
+      "encounter": {
+        "rivals": [
+          { "name": "Crebain", "portrait": "crebain", "levelOffset": -2, "pattern": ["12", "121", "1212", "31"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -2, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "La retirada",
+      "text": "Comprendes que la montaña no te dejará pasar y das media vuelta. Bajar es casi peor que subir: la nieve nueva cubre los huecos y cada paso puede ser un resbalón. Al poco oyes aullidos a tu espalda, cada vez más cerca. Cuatro lobos grises bajan tras de ti por la ladera, saltando por la nieve con más soltura de la que tú tendrás nunca. Te alcanzan en un rellano. No tiene sentido correr más. Te vuelves hacia ellos con la espada en la mano.",
+      "imagePrompt": "Four grey wolves bounding down a snowy mountainside after a young traveler in a grey cloak who turns to face them on a small flat ledge, sword in hand, falling snow and dark sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Retroceder montaña abajo",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -5, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -5, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -5, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -5, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "El paso cerrado",
+      "text": "Subes hasta la boca del paso, entre dos paredes de roca por donde el viento ruge como un río. Allí la nieve forma un muro más alto que tú. A sus pies encuentras un surco abierto a golpes, como si alguien hubiera intentado cavar un camino a través de él, y luego pisadas de muchos pies que dan media vuelta y bajan. Otros llegaron hasta aquí y no pudieron seguir. Tú tampoco podrás. Miras por última vez hacia el este y empiezas a bajar.",
+      "imagePrompt": "A high mountain pass between two rock walls blocked by a towering wall of snow, a half-dug trench at its base and many footprints turning back downhill, a young traveler in a grey cloak looking east into the howling wind, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Intentar cruzar el paso"
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "La Furia del Caradhras",
+      "text": "Entonces la montaña descarga toda su furia. El cielo se cierra, el viento se vuelve un aullido continuo y la nieve llega de lado, tan densa que no ves tus propias manos. Allá arriba algo retumba: un alud se desprende y baja hacia ti como un mar blanco. Esto no es una tormenta cualquiera; hay malicia en ella, una voluntad vieja que quiere enterrarte. No puedes vencer a una montaña. Solo puedes resistir, mantenerte en pie y bajar hacia el oeste, hacia la falda que se curva al sur, donde se esconden los antiguos dominios de los enanos.",
+      "imagePrompt": "A furious blizzard on a reddish mountain, an avalanche thundering down like a white sea toward a tiny young traveler in a grey cloak bracing against the wind, sword in hand, shapes of malice in the storm clouds, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          { "name": "Furia del Caradhras", "portrait": "boss_caradhras", "levelOffset": 3, "pattern": ["32", "323", "3232", "12", "121", "1212", "31", "123"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } }
+        ]
+      }
+    }
+  ]
+}

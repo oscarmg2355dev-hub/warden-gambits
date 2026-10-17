@@ -1,0 +1,122 @@
+{
+  "id": "quebradas",
+  "name": "The Trollshaws",
+  "nodes": {
+    "quebradas_1_0": {
+      "title": "Hills of Ill Repute",
+      "text": "Beyond the Last Bridge, the Road enters a different land: steep hills clad in forest, gloomy ravines and, atop some of the heights, ruined castles of sinister aspect. In Bree they call this country the Trollshaws, and they do not say it in jest. It rains often, the trees drip and moss covers everything. Among the ferns you see broad paths, flattened by feet far too large. To the east, very far away, snow-capped peaks at last appear."
+    },
+    "quebradas_2_0": {
+      "title": "The Forgotten Highway",
+      "text": "You keep to the Road, which winds between the hills, hemmed in by slopes of tall trees. Here the highway is neglected: roots heaving up the paving stones, deep puddles, fallen branches no one clears. Even so, it is the only thing that seems safe in this land. At midday you find a stone bearing a fresh notch, the sign of someone who stopped here not long ago. In the distance, a column of smoke rises among the trees.",
+      "choiceLabel": "Follow the Road through the woods"
+    },
+    "quebradas_2_1": {
+      "title": "Beneath the Old Trees",
+      "text": "You leave the Road and climb a wooded slope, where the trees are so old that their crowns quench the daylight. The ground is covered with rotting leaves that muffle your steps. You make your way among gigantic trunks, following a game trail that rises and falls without rest. Now and then, a crack of branches in the distance forces you to stop and listen. The forest is not empty, and what moves in it is not small.",
+      "choiceLabel": "Venture into the high forest"
+    },
+    "quebradas_3_0": {
+      "title": "The Castle on the Hill",
+      "text": "You climb a rocky hill crowned by the ruins of a castle. Its black walls still stand, cracked, and the wind whistles through the empty windows. Whoever built it was no one's friend: on the stones of the gateway are carvings of chained figures, blurred by time. From the battlements you command the whole valley. The Road fades eastward among the woods, and in a nearby hollow you see small, dark figures moving.",
+      "choiceLabel": "Climb to the ruined castle"
+    },
+    "quebradas_3_1": {
+      "title": "The Fires in the Ravine",
+      "text": "You follow the smoke to a ravine beside the Road. You crawl through the ferns and see a camp of orcs from the Misty Mountains: shelters of branches, gnawed bones and a smoking fire. They have come down from the mountains with the autumn, seeking prey on the roads. Before you can withdraw, three of them, returning from the hunt, find you from behind. They let out a screech and charge at you with jagged scimitars.",
+      "choiceLabel": "Approach the fires"
+    },
+    "quebradas_3_2": {
+      "title": "The Warg of the Pool",
+      "text": "You go down to a stream running between moss-covered rocks and follow it upstream, thinking it will lead you to open ground. But water draws others too. In a still pool, a Warg drinks with ears pricked. Around its neck hang the remains of a leather strap: someone has used it as a mount. Seeing you, it bares its fangs and leaps from stone to stone along the stream, straight towards you.",
+      "choiceLabel": "Follow the forest stream"
+    },
+    "quebradas_3_3": {
+      "title": "The Bare Knoll",
+      "text": "You climb a knoll where the forest opens and only ferns and rocks grow. From there you see the whole country: hills upon hills, dark with trees, and between them the valley along which the Road runs. On the far side of the knoll, in a clearing, you make out three large grey shapes, still as rocks. They look like giants crouched around a dead fire. They do not move. Even so, your mouth goes dry.",
+      "choiceLabel": "Climb the bare knoll"
+    },
+    "quebradas_4_0": {
+      "title": "The Cellars",
+      "text": "You descend a broken stair to the castle's cellars. Down there it smells of mould and of something worse. Bones lie heaped, large and small, and on the walls are claw marks at a height impossible for a man. In a corner you find a burst chest, empty but for a few ancient coins stuck to the bottom with mud. You pocket them and get back to the light as fast as you can. Something big used this place as a lair, and not so long ago.",
+      "choiceLabel": "Go down to the cellars"
+    },
+    "quebradas_4_1": {
+      "title": "What the Orcs Fear",
+      "text": "You stay on the battlements watching the hollow. The figures are orcs, a dozen of them, dragging something heavy through the trees towards the northern hills. They are not coming your way, and you give thanks. You wait for them to disappear and, meanwhile, you study the ground: the orcs carefully avoid certain ravines, as though something in them frightened even them. You take good note of those places.",
+      "choiceLabel": "Keep watch from the battlements"
+    },
+    "quebradas_4_2": {
+      "title": "The Orcs' Plunder",
+      "text": "When the second orc falls, no one else appears: the camp was almost empty. You search it quickly. Among filthy hides and pots you find things stolen from travellers: a wineskin, a Dwarf's boot, a torn green cloak, a handful of horseshoe nails. The orcs hunt on the Road, and not all their encounters end well for wayfarers. You fill your bag with whatever may serve you and slip away before the rest return.",
+      "choiceLabel": "Search the camp"
+    },
+    "quebradas_4_3": {
+      "title": "Lost in the Forest",
+      "text": "You do not stay to find out if there are more. You plunge into the forest at a run, leaping roots and thrusting branches aside, until the smoke of the camp is far behind. When you stop, panting, you are lost among identical trees. You calm yourself, look for the moss on the trunks and the light between the crowns, and little by little recover your heading east. You have lost time, but you are alive, and no one follows you.",
+      "choiceLabel": "Flee into the forest"
+    },
+    "quebradas_4_4": {
+      "title": "Giant Footprints",
+      "text": "After the fight, you kneel by the pool to wash, and then you see them: footprints in the mud of the bank, so large that a child could lie down in each one. They have thick toes and sink very deep. They are fresh, from last night at most, and lead away upstream towards a dark ravine. You no longer have any doubt about the name of this land. You rise slowly, sword in hand, and listen.",
+      "choiceLabel": "Examine the bank of the pool"
+    },
+    "quebradas_4_5": {
+      "title": "The Hollow Fir",
+      "text": "To get away from the Warg's carcass, which will soon draw others, you cross the stream on some fallen trunks, slick with moss. On the far bank the forest is lighter and smells of resin. You find an enormous fir with a hollow trunk and crawl inside to rest. From your refuge you watch a fox go by, a family of deer and, high among the branches, a squirrel scolding you. For a moment, the forest seems almost kindly.",
+      "choiceLabel": "Cross by the fallen trunks"
+    },
+    "quebradas_4_6": {
+      "title": "The Three of Stone",
+      "text": "You go down into the clearing with your heart in your mouth. The three shapes are trolls indeed, but of stone: enormous, hunched, one with an arm raised as if about to strike. Time has clothed them in lichen and moss. All around are fresh prints of boots and of bare feet, and the grass is flattened where someone sat down to rest. The travellers you follow were here. You smile, picturing them before these giants, as frightened as you.",
+      "choiceLabel": "Go down to the giants' clearing"
+    },
+    "quebradas_4_7": {
+      "title": "The Cave of the Slab",
+      "text": "You circle the clearing and, among bramble-covered rocks, find the mouth of a cave. A great slab of stone, which must once have served as a door, lies broken to one side. Inside, the floor is strewn with old bones, broken pots and coins green with rust. No one has lived here for a long time, or so it seems. But beside the entrance lies a heap of freshly torn branches and a stench that is anything but ancient.",
+      "choiceLabel": "Explore the nearby rocks"
+    },
+    "quebradas_5_0": {
+      "title": "The Wolf Rider",
+      "text": "You advance along the crest of a hill, where the trees thin and the going is easier. It is a mistake: from afar you stand out against the sky. An orc mounted on a Warg has seen you and comes charging up the slope, brandishing a spear above its head. A few paces off, the orc leaps from its mount to attack you from one side while the beast rams you from the other. You must divide your attention between the two.",
+      "choiceLabel": "Advance along the crest"
+    },
+    "quebradas_5_1": {
+      "title": "The Hollow of Mist",
+      "text": "You cross a dark, damp hollow where the mist clings among the trunks. A howl breaks the silence, very close, and freezes you where you stand. Out of the mist comes a huge Warg, hackles raised and muzzle stained with fresh blood. It has been hunting, and it has not had enough. It circles you, measuring your strength, and then it lunges. You plant your feet in the wet earth and await the blow.",
+      "choiceLabel": "Cross the dark hollow"
+    },
+    "quebradas_5_2": {
+      "title": "The Broad Path",
+      "text": "You find a broad, trampled path that cuts through the forest like a wound. Large creatures use it, but this time those who walk it are small, noisy and many: four orcs coming down laden with a deer, quarrelling at the tops of their voices. They see you at the same moment you see them. They drop their prey, draw their blades and spread out to surround you, shouting something in their tongue that sounds like mockery. You wait for the first to close in.",
+      "choiceLabel": "Take the broad path"
+    },
+    "quebradas_5_3": {
+      "title": "The Orc on the Bank",
+      "text": "You go down towards the river that runs along the valley floor, looking for a place to cross. On the bank, seated on a rock, a big, brawny orc is whetting a stolen sword. It wears a dented helmet and a plain black shield. It is taller than you and seems in no hurry. It rises slowly, slings the shield onto its arm and beckons you closer with a mocking gesture.",
+      "choiceLabel": "Head down towards the river"
+    },
+    "quebradas_6_0": {
+      "title": "The Voice from the Cave",
+      "text": "You decide to risk no more and make a long detour along the hillside, among crags and fallen trees. It takes you almost the whole day, but you meet no one. As evening falls, the forest suddenly opens before a deep ravine at the foot of a rock face. It smells of stale smoke and rotting meat. In the rock face gapes a great cave, and from it comes a sound you first take for a rockfall: an enormous voice, humming.",
+      "choiceLabel": "Skirt the valley along the hillside"
+    },
+    "quebradas_6_1": {
+      "title": "The Valley in Darkness",
+      "text": "You want to be out of these hills as soon as possible and cross the valley by night, guided by the stars that peer between the treetops. In the darkness, two Wargs bar your way in a clearing, drawn by your scent. You fight almost blind, guessing their leaps by the glint of their eyes. Beyond the clearing, a wall of rock rises against the sky, and at its base the mouth of a great cave lets out the red glow of a fire.",
+      "choiceLabel": "Cross the valley in darkness"
+    },
+    "quebradas_7_0": {
+      "title": "The Stone-troll",
+      "text": "Out of the cave comes a Stone-troll, alive and wide awake: almost twice the height of a man, with skin grey and rough as rock and a club made from a whole tree trunk. It has smelled you, and it likes what it smells. A Warg, drawn by the bones, growls at its side. Behind it, the fire lights a heap of bones and stolen treasure. You know from the tales that sunlight turns its kind to stone, but dawn is a long way off. Until then, you have only your sword. Beyond these hills, the Road descends towards a swift river and the ford that leads to the land of the Elves: the Ford of Bruinen."
+    }
+  },
+  "rivals": {
+    "Orco de las Montañas Nubladas": "Misty Mountains Orc",
+    "Huargo de monta": "Riding Warg",
+    "Huargo": "Warg",
+    "Orco grande de las Montañas Nubladas": "Great Misty Mountains Orc",
+    "Trol de piedra": "Stone-troll",
+    "Huargo de la cueva": "Cave Warg"
+  }
+}

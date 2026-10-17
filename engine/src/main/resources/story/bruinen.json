@@ -1,0 +1,228 @@
+{
+  "id": "bruinen",
+  "name": "Vado del Bruinen",
+  "baseLevel": 19,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "El valle del Bruinen",
+      "text": "Amanece cuando dejas atrás las colinas de los trolls, con el cuerpo dolorido y la espada mellada. El Camino desciende ahora por una larga garganta entre pinos oscuros, y el aire se llena de un rumor creciente: el Bruinen, el río que baja de las montañas y marca la frontera de la tierra de los elfos. En el barro de la calzada ves huellas profundas de cascos herrados, muchas y muy juntas, que corren todas hacia el este. Nadie cabalga así por gusto. Algo, o alguien, fue perseguido por aquí hace pocos días.",
+      "imagePrompt": "Dawn over a long gorge of dark pines, an old paved road descending toward a distant roaring river, a weary young traveler with a notched sword studying deep hoofprints in the mud, snowy mountains beyond, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "La garganta del Camino",
+      "text": "Sigues la calzada, que baja en curvas cerradas entre paredes de roca. A cada paso el rumor del río suena más fuerte, aunque todavía no lo ves. Las huellas de los cascos no se detienen en ningún momento: ni una hoguera, ni un alto para abrevar a los caballos. Quienes las dejaron tenían prisa, o hambre de algo. Al mediodía, en un recodo, te parece ver una figura que se agacha tras una peña, por encima del Camino, y desaparece. Te quedas quieto un buen rato, con la mano en la empuñadura.",
+      "imagePrompt": "A winding paved road descending in tight bends between rock walls and dark pines, deep hoofprints in the mud, a young traveler pausing with his hand on his sword, a crouching figure half hidden behind a crag above, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el Camino hacia el vado"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "La ladera del bosque",
+      "text": "Prefieres no caminar por donde han pasado esos jinetes, y te internas en el bosque que cubre la ladera. Bajas entre abedules y pinos, sorteando piedras resbaladizas y arroyos que corren hacia el valle. Es más lento, pero aquí nadie te verá desde el Camino. A media mañana encuentras el cadáver de un ciervo, medio devorado, con mordiscos de unas fauces demasiado grandes para un lobo corriente. Las huellas de la bestia se alejan entre los helechos. Más arriba, un risco de piedra gris domina todo el valle.",
+      "imagePrompt": "A steep forested slope of birches and pines, a young traveler crouching beside a half-eaten deer carcass marked by huge bites, large paw prints leading into the ferns, a grey rocky crag rising above the trees, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar por la ladera boscosa"
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "Pies pequeños en el barro",
+      "text": "Te arrodillas junto a la calzada y estudias el barro con calma. Debajo de las huellas de los caballos, casi borradas por ellas, hay otras más antiguas: las de un poni cargado, botas de hombre alto y unos pies pequeños y descalzos, de dedos anchos. Pies de hobbit. Recuerdas los rumores de Bree sobre el montaraz que guiaba a unos medianos hacia el este. Pasaron por aquí antes que los jinetes, aunque no mucho antes. Lo que no ves por ninguna parte son huellas de vuelta, ni de unos ni de otros.",
+      "imagePrompt": "A young traveler kneeling by a muddy old road in a pine gorge, examining layered tracks: deep horse hoofprints over older prints of a pony, a tall man's boots and small bare feet, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Examinar las huellas"
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "El vigía del recodo",
+      "text": "Dejas la calzada y trepas hacia la peña donde viste moverse la sombra. Detrás hay un hombre agazapado, de pelo enmarañado y capa parda, con un cuchillo largo al cinto: un espía de las Tierras Brunas. Ha estado vigilando el Camino, y por el lecho de ramas y las migas de pan, lleva días haciéndolo. Al verte se lanza contra ti sin una palabra. Más abajo, entre los pinos, oyes ramas que se quiebran: alguien más huye ladera abajo, sin mirar atrás.",
+      "imagePrompt": "Behind a rock above a winding pine-gorge road, a shaggy-haired spy in a brown cloak lunging with a long knife at a young traveler, another figure fleeing downhill through the trees, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Ir tras la figura del recodo",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": 0, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "Los huargos del helechal",
+      "text": "Sigues las huellas entre los helechos con la espada desnuda. No tardas en oír los gruñidos: en un claro, tres huargos se disputan los restos de otra presa. Son flacos y tienen el pelaje sucio de barro, pero están igual de rabiosos que cualquiera, y en cuanto el viento les lleva tu olor dejan la carne y se vuelven hacia ti. Uno te rodea por la izquierda, otro por la derecha, y el tercero te mira de frente, enseñando los dientes. No hay árbol al que subir ni sitio adonde correr. Solo te queda pelear.",
+      "imagePrompt": "In a fern clearing among birches, three gaunt mud-stained wargs abandoning a carcass and circling a young traveler with a drawn sword, two flanking, one baring its teeth, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el rastro de la bestia",
+      "encounter": {
+        "rivals": [
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -4, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -4, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -4, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "El risco gris",
+      "text": "Trepas por el risco, agarrándote a raíces y grietas, hasta una repisa desde la que se domina el valle entero. Abajo, el Bruinen corre ancho y turbio, de un color pardo que no se parece en nada al agua clara de montaña. Hay troncos enteros flotando en la corriente y, en las orillas, franjas de barro y piedras arrastradas mucho más arriba de lo normal. El río ha crecido de golpe hace poco, como si algo lo hubiera desbordado. Al este, en la otra orilla, el bosque sube hacia valles escondidos.",
+      "imagePrompt": "From a high grey rock ledge, a young traveler overlooking a wide valley where a swollen brown river carries uprooted trunks, mud and boulders strewn high along its banks, wooded hidden valleys rising beyond, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir al risco de piedra"
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "La hondonada del campamento",
+      "text": "Las huellas pequeñas se apartan del Camino un trecho y te llevan a una hondonada al abrigo de unas rocas. Alguien acampó aquí: hay un círculo de ceniza fría, ramas de pino dispuestas como lecho y, entre ellas, un trozo de venda con manchas oscuras. Huele todavía, muy levemente, a unas hojas aplastadas de aroma dulce y limpio que no reconoces. Uno de los viajeros estaba herido, y alguien cuidaba de él con saber de montaraz. Te guardas la venda sin saber bien por qué y vuelves a la calzada.",
+      "imagePrompt": "A sheltered hollow beside a mountain road among rocks, a ring of cold ashes, a bed of pine boughs, a young traveler holding a stained bandage, crushed green leaves on the ground, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar dónde acamparon los viajeros"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "El galope",
+      "text": "Sigues el rastro de los caballos negros. Más adelante, las pisadas se alargan, se hunden más y salpican barro a los lados: ahí empezaron a galopar. Durante un tramo, entre ellas, ves otras distintas, de un caballo más ligero que apenas marca el suelo, como si corriera por delante de todos los demás. Al final del tramo, en una rama baja, ondea un jirón de tela negra. Al tocarlo se te hiela la mano, igual que si la hubieras metido en nieve. Conoces ese frío: lo sentiste en la Cima de los Vientos.",
+      "imagePrompt": "A muddy pine-gorge road torn up by galloping hooves, a young traveler reaching toward a ragged strip of black cloth fluttering on a low branch, his breath misting, cold grey light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir a los caballos negros"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "El petate del espía",
+      "text": "Cuando el espía cae, revisas sus cosas. Lleva poco: pan duro, una manta raída, un pedernal y una bolsa con monedas de plata acuñadas lejos de aquí. Pero en el forro de la capa encuentras algo más: un trozo de cuero con un dibujo tosco del Camino, del río y del vado, y marcas junto a cada recodo. Alguien quiere saber quién cruza hacia la tierra de los elfos, y paga bien por ello. Te guardas el cuero. Quizá a los señores del otro lado del río les interese verlo.",
+      "imagePrompt": "On a rocky slope among pines, a young traveler searching a fallen spy's worn pack, holding up a crude leather map of a road, a river and a ford, silver coins spilling on the ground, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Registrar el petate del espía"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "El que huyó",
+      "text": "Bajas la ladera tras el otro hombre, guiándote por las ramas rotas y las piedras removidas. Corre como alguien que conoce bien el terreno, y a ratos lo pierdes de vista. Por fin llegas a la orilla de un arroyo crecido y lo ves al otro lado, subiendo a toda prisa hacia el oeste, de vuelta por donde has venido. No vale la pena seguirlo: lo que vaya a contar, ya lo contará. Te quedas un momento mirando el agua, que baja turbia, cargada de ramas y barro.",
+      "imagePrompt": "A young traveler stopping at the bank of a swollen muddy stream in a pine forest, watching a fleeing man in a brown cloak climbing the far slope westward, broken branches in the current, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Perseguir al segundo hombre"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "El agua fría",
+      "text": "Los huargos te han dejado arañazos en el brazo y un mordisco poco profundo en la pierna. Bajas hasta un arroyo que salta entre las piedras y te lavas las heridas en el agua helada, apretando los dientes. Luego las vendas con tiras de tu propia camisa. Mientras lo haces, notas que el arroyo arrastra hojas y ramas a una velocidad extraña, y que en las piedras de la orilla hay una línea de barro seco muy por encima del agua. Hace pocos días, todo este valle estuvo bajo una crecida.",
+      "imagePrompt": "A wounded young traveler kneeling by a cold rushing brook among stones, washing a bitten leg, a dried mud line high on the bank rocks above the water, birch forest around, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Lavar las heridas en el arroyo"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "La guarida",
+      "text": "Sigues el rastro de los huargos ladera arriba hasta una grieta entre raíces de pino, donde la tierra está removida y apesta a carroña. Es su guarida. Dentro hay huesos de ciervo, de oveja y otros que prefieres no mirar de cerca. Junto a la entrada encuentras una correa de cuero cortada, de las que usan los jinetes de lobo de las montañas. Estas bestias no estaban aquí por casualidad: alguien las trajo o las empujó hacia el vado. Sales al aire limpio con una inquietud que no se va.",
+      "imagePrompt": "A dark den in a crack between pine roots, bones of deer and sheep scattered in trampled earth, a young traveler crouching at the entrance holding a cut leather strap, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar la guarida de los huargos"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "Los árboles caídos",
+      "text": "Bajas del risco hasta la orilla del Bruinen. De cerca, la crecida es aún más impresionante: árboles enteros arrancados de raíz y amontonados como paja, rocas del tamaño de una carreta movidas de su sitio y la arena cubierta de ramas y espuma seca. El agua ha bajado algo, pero sigue rugiendo, rápida y fría. No ha llovido tanto como para esto. Un leñador de Bree diría que fue una tormenta en las montañas. Tú, después de todo lo que has visto este otoño, ya no estás tan seguro.",
+      "imagePrompt": "On the bank of a fast cold river, a young traveler walking among uprooted trees piled like straw, displaced boulders and dried foam on the sand, grey sky, forested slopes, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar a la orilla del río"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "La grieta del risco",
+      "text": "Encuentras una grieta en la roca, lo bastante honda para resguardarte del viento, y decides descansar un rato antes de seguir. Te duermes sin querer. Te despierta, ya de tarde, un sonido que viene de muy lejos, río abajo: un grito largo y agudo que no es de ningún animal. Se te eriza la piel, porque conoces ese grito. Esperas, inmóvil, con la espada sobre las rodillas, pero no se repite. Solo queda el rumor del agua y el latido de tu propio corazón.",
+      "imagePrompt": "A young traveler sitting tense inside a narrow rock crevice high above a river valley in late afternoon light, sword across his knees, staring downstream toward a distant unseen cry, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Refugiarse en una grieta"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "El huargo viejo",
+      "text": "Un sendero de ciervos baja hacia el vado entre abedules, y lo sigues porque parece el más corto. Es estrecho y está cubierto de hojas mojadas. A mitad de bajada, el bosque se queda en silencio de golpe. Un huargo viejo y enorme sale de detrás de un tronco y se planta en mitad del sendero. Tiene el hocico gris y una cicatriz le cruza el lomo. No ataca enseguida: te estudia, como si supiera que llevas días de camino y que estás cansado.",
+      "imagePrompt": "On a narrow deer trail through wet birch woods, a huge old warg with a grey muzzle and a scar across its back blocking the path, staring at a tired young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Tomar el sendero de los ciervos",
+      "encounter": {
+        "rivals": [
+          { "name": "Huargo viejo", "portrait": "warg", "levelOffset": 1, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "Vigías junto al río",
+      "text": "Te guías por el ruido del río, que suena cada vez más cerca. En un claro junto a unas rocas, dos hombres de las Tierras Brunas están sentados ante un fuego pequeño, sin humo, con la vista puesta en la otra orilla. Hablan en voz baja en su lengua áspera. Uno de ellos se vuelve, te ve y da un grito. En un momento los dos están en pie, con los cuchillos en la mano. No piensan dejar que nadie cuente que estaban aquí vigilando.",
+      "imagePrompt": "In a clearing by rocks near a loud river, two shaggy Dunlending spies in brown cloaks springing up from a small smokeless fire with knives drawn toward a young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el rumor del agua",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -2, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -2, "pattern": ["13", "131", "31"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "La manada del pedregal",
+      "text": "Para ahorrar camino, atajas por un pedregal: una ladera de piedras sueltas, sin un solo árbol, que baja directa hacia el valle del río. Las piedras ruedan bajo tus botas y el ruido delata cada paso. A medio cruzar oyes aullidos arriba. Cuatro huargos bajan saltando de roca en roca, mucho más ágiles que tú en este terreno. No hay dónde esconderse. Buscas una peña grande, apoyas la espalda contra ella para que no te rodeen y esperas el primer salto con la espada en alto.",
+      "imagePrompt": "On a steep slope of loose scree above a river valley, four wargs bounding down from rock to rock toward a young traveler bracing his back against a large boulder, sword raised, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el pedregal",
+      "encounter": {
+        "rivals": [
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -5, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -5, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -5, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -5, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "El hombre de la cicatriz",
+      "text": "Prefieres no bajar todavía al vado y trepas a unas peñas altas, desde donde puedes ver sin ser visto. O eso crees. Entre dos rocas, un hombre te está esperando: un espía de las Tierras Brunas, curtido y con aspecto de haber matado más de una vez. Lleva una espada corta de buen acero y una cicatriz le parte la mejilla. Te ha visto venir desde lejos. Sonríe sin ganas, se escupe en la palma de la mano y avanza hacia ti.",
+      "imagePrompt": "Among high grey crags, a scarred veteran Dunlending spy with a short steel sword stepping out between two rocks to face a young traveler, the river valley far below, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Rodear por las peñas altas",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino veterano", "portrait": "dunlending", "levelOffset": 1, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "El vado",
+      "text": "Al atardecer llegas por fin al vado del Bruinen, donde el Camino entra en el río y sale por la otra orilla, empinada y oscura de árboles. El agua corre todavía crecida y turbia. La orilla de este lado es un caos de barro, piedras y ramas, y en él ves cosas que te encogen el estómago: cascos negros hundidos en el lodo, jirones de tela oscura enganchados en las zarzas y, medio enterrado en la arena, el cuerpo de un gran caballo negro, ahogado. Decides esperar a que salga la luna para cruzar.",
+      "imagePrompt": "At dusk, a wide river ford with a steep forested far bank, the near bank churned into mud and stones, black rags caught on brambles, a drowned black horse half-buried in sand, a lone young traveler watching, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar al vado"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "La vigilia de la arboleda",
+      "text": "No te fías de acercarte al agua a cielo abierto, y te apostas en una arboleda desde la que se ve el vado entero. Cae la noche. Pasan las horas sin que nada se mueva, salvo el río. Entonces, a tu espalda, oyes un jadeo: dos huargos han seguido tu rastro hasta aquí y se separan para atacarte por los dos lados. Luchas entre los troncos, a la luz de una luna pálida. Y, por encima del fragor, notas que algo en la orilla parece estar escuchando.",
+      "imagePrompt": "Night in a grove above a river ford under a pale moon, a young traveler fighting two wargs attacking from both sides among the tree trunks, the dark water glinting below, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Vigilar el vado desde los árboles",
+      "encounter": {
+        "rivals": [
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -2, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -2, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El Jinete Negro",
+      "text": "Bajo la luna, te acercas al borde del agua para cruzar. Entonces el barro de la orilla se mueve. Una figura alta se alza del lodo, envuelta en una capa negra hecha jirones y empapada: un Jinete Negro sin caballo, al que la crecida dejó atrás en la orilla oeste. Sientes el mismo frío que en la Cima de los Vientos, pero más amargo, como si la criatura, humillada, buscara en quién vengarse. Desenvaina una hoja pálida. A tu espalda el río ruge más fuerte, y en la otra orilla una luz blanca se mueve entre los árboles.",
+      "imagePrompt": "Moonlit river ford, a tall horseless hooded figure in a tattered soaked black cloak rising from the mud of the near bank with a pale blade, a young traveler facing it, a white light among trees across the water, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          { "name": "Jinete Negro", "portrait": "boss_bruinen", "levelOffset": 3, "pattern": ["32", "323", "3232", "13", "131", "3123", "31232", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } }
+        ]
+      }
+    }
+  ]
+}

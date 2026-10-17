@@ -1,0 +1,119 @@
+{
+  "id": "anduin",
+  "name": "The Anduin",
+  "nodes": {
+    "anduin_1_0": {
+      "title": "The Great River",
+      "text": "The great river is broad and slow, a grey-green that mirrors the winter sky. The Elven boat answers the lightest stroke of the paddle, and soon you learn to let the current do almost all the work. On either side dark woods, reed-beds and muddy banks go by in turn. You see no one. You eat a mouthful of Elven bread and look south, where the river bends and disappears. You know that somewhere ahead of you, three grey boats are holding the same course."
+    },
+    "anduin_2_0": {
+      "title": "The Islands",
+      "text": "The river opens into several arms between long, low islands covered in bare willows and rushes. You choose a narrow channel and paddle on between branches that brush the water. Here the current is gentler and the silence weighs heavily. A heron takes flight before you, and its harsh cry startles you more than any orc. On the shore of an islet you see old footprints in the mud, almost washed away by the rain.",
+      "choiceLabel": "Paddle among the islands"
+    },
+    "anduin_2_1": {
+      "title": "Arrows from the East",
+      "text": "You draw close to the eastern bank to escape the strong current in midstream. It is a mistake. A black arrow whistles over your head and plunges into the water, then another, which sinks into the gunwale. Among the thickets of the bank two orcs with short bows show themselves, laughing. You cannot paddle faster than their arrows, so you drive the boat onto the shore, leap into the mud and climb towards them, sword in hand.",
+      "choiceLabel": "Hug the eastern bank"
+    },
+    "anduin_3_0": {
+      "title": "The Willow Bank",
+      "text": "You land on a bank of willows to stretch your legs and look for dry firewood. The ground is soft and smells of rot. Among the trunks you find the bones of a deer, picked clean and recent, and around them the prints of enormous paws. You turn slowly. Between the branches, yellow eyes are watching you, and then a Warg slinks out of the undergrowth, low and silent, its hackles raised. Between it and the boat there is only you.",
+      "choiceLabel": "Land among the willows"
+    },
+    "anduin_3_1": {
+      "title": "The Shallows",
+      "text": "The river widens and loses depth, and you must climb out and drag the boat across a stony shallow. You are knee-deep in water when you hear the howling. Two Wargs come racing down the slope towards the bank, and behind them an orc with a bow shouts orders. You tie the boat's rope to a rock and climb out of the water to meet them before they can surround you in the shallows.",
+      "choiceLabel": "Cross the shallows"
+    },
+    "anduin_3_2": {
+      "title": "The Reed-bed",
+      "text": "You slip into a dead arm of the river, among reeds taller than you, looking for a quiet place to spend the night. The water is still and black. Suddenly an arrow slices through the stems beside your face. An orc archer has followed you along the bank, crouching among the reeds, and is drawing his bow again. You leap onto firm ground and run at him before he has time to take aim once more.",
+      "choiceLabel": "Go up a side channel"
+    },
+    "anduin_3_3": {
+      "title": "The Pack on the Shore",
+      "text": "You make camp on a shingle beach beneath a bank, without a fire, wrapped in your grey cloak. At midnight you are woken by the sound of rolling stones. On top of the bank, shadows are moving, four of them, one after another, and the wind brings you a smell of wet dog and carrion. A pack of Wargs has caught your scent. There is no time to push the boat into the water. You get to your feet with your back to the river.",
+      "choiceLabel": "Camp on the shore"
+    },
+    "anduin_4_0": {
+      "title": "A Camp by the Water",
+      "text": "In an inlet on the western bank you discover the remains of a camp. There is cold ash beneath a layer of leaves, three furrows in the sand where someone beached three boats, and the prints of small, bare feet beside others made by boots. Among the stones you find a folded leaf, green and silver, like those that wrapped the Elves' bread. There is no blood and no sign of a struggle. Whoever slept here left in peace, downriver.",
+      "choiceLabel": "Search an old camp"
+    },
+    "anduin_4_1": {
+      "title": "The Brown Lands",
+      "text": "The eastern bank becomes flat and bare, a brown land of dry grass and burnt scrub stretching away out of sight. No tree grows, no bird sings. Here and there you see old ashes and heaps of bones. You paddle as close as you can to the opposite shore. At dusk a column of smoke rises very far off, to the east, and then dissolves. Someone lives in that wasteland, and you do not wish to know who.",
+      "choiceLabel": "Look upon the Brown Lands"
+    },
+    "anduin_4_2": {
+      "title": "Fires on the Far Shore",
+      "text": "That night, moored to a branch, you watch fires kindle on the eastern bank one after another, until they form a row of red eyes along the water. You hear hoarse singing and the clash of metal. You cannot stay so close. You cover yourself with the grey cloak, slip the mooring and let yourself drift down the middle of the river without touching the paddle. You pass the fires so slowly that your chest aches from holding your breath. No one cries out. At dawn the river is empty again.",
+      "choiceLabel": "Watch the shore by night"
+    },
+    "anduin_4_3": {
+      "title": "The Dawn Mist",
+      "text": "Dawn comes with a mist so thick that you cannot see the prow of your own boat. The river is only a murmur and the dip of the paddle. You go on blindly, guided by the sound of the bank, and at one point you hear harsh voices very close, in a tongue you know from Moria. You stop paddling and hold your breath. The voices fade away. When the mist lifts, the river is empty and a pale sun shines on the water.",
+      "choiceLabel": "Paddle through the mist"
+    },
+    "anduin_4_4": {
+      "title": "The Islet of Rushes",
+      "text": "You find a small islet in the middle of the river, ringed with rushes, and decide to rest there a whole day. No one can approach without your hearing it. You dry your clothes in the pale sun, mend your old cloak and hone your sword's edge on your whetstone. You eat little, for the Elven bread goes a long way. In the afternoon a kingfisher alights on the prow of the boat. You watch it without moving until it flies away.",
+      "choiceLabel": "Rest on an islet"
+    },
+    "anduin_4_5": {
+      "title": "Orc Tracks",
+      "text": "On the eastern bank the mud holds a fresh trail: hobnailed boots, many of them, and among them the marks of great paws. You follow it on foot for a stretch. The trail runs parallel to the river, southward, as if those who left it were following something that travels by water. You find a black rag caught on a bramble and a broken arrow. You hurry back to the boat. Whatever they are hunting is ahead of you.",
+      "choiceLabel": "Follow the orc tracks"
+    },
+    "anduin_4_6": {
+      "title": "The Silent Wood",
+      "text": "On the western bank the forest comes down to the water, old and dark, its trunks clad in moss. You land to fetch water from a stream and go a few paces in. Everything is silent, but it is not a hostile silence: it is that of a place no one has entered for a long time. You drink, fill your waterskin and stay a while, listening. For a moment you remember the Golden Wood, and it seems very far away.",
+      "choiceLabel": "Venture into the western woods"
+    },
+    "anduin_4_7": {
+      "title": "The Rain",
+      "text": "A cold rain begins to fall at midday and does not stop all day. The river turns grey and swollen, and the boat fills with water faster than you can bail it. You take shelter beneath an overhanging rock on the bank, with the boat upturned above you. The Elven cloak keeps you drier than you expected. You listen to the rain drumming on the hull, and fall asleep thinking of the inn at Bree.",
+      "choiceLabel": "Shelter from the rain"
+    },
+    "anduin_5_0": {
+      "title": "Ambush at the Bend",
+      "text": "The river turns in a sharp bend beneath a cliff on the eastern bank, and the current drives you towards it with no escape. By the time you see it, it is too late: two orcs with bows wait above, and on the beach at the foot of the cliff two Wargs strain at their chains. The arrows force you ashore. You leap onto the sand shielding your head with your arm. The orcs slip the chains.",
+      "choiceLabel": "Round the great bend"
+    },
+    "anduin_5_1": {
+      "title": "Stars upon the Water",
+      "text": "You decide to travel by night, when the eyes on the shore see less. The sky is clear and the stars are mirrored in the river, so that you seem to float between two skies. You barely touch the paddle. The current carries you slowly and silently, and only now and then do you hear a splash or the cry of a night bird. By dawn you have covered many leagues, and no one has seen you pass.",
+      "choiceLabel": "Drift by night"
+    },
+    "anduin_5_2": {
+      "title": "Wargs in the Water",
+      "text": "The river narrows between an islet and the bank, and the current carries you closer to land than you would like. On the shore two Wargs were waiting for you. They plunge into the water without hesitation and swim towards the boat, ears flattened and eyes fixed on you. One manages to set its paws on the gunwale and almost overturns you. You beat it off with the paddle, reach a gravel bar and leap onto it, sword in hand, as the two of them climb out of the water, dripping.",
+      "choiceLabel": "Cross the narrow channel"
+    },
+    "anduin_5_3": {
+      "title": "Signs on the Shore",
+      "text": "On a smooth rock on the western bank someone has left a sign: three small stones, one atop another, and an arrow drawn in charcoal pointing south. It is not the work of orcs. Further on, on a tree, you see the faint mark of a rope someone tied to moor a boat. You do not know whether the signs were meant for you or for others coming behind, but they give you heart. Someone has passed this way, and gone on.",
+      "choiceLabel": "Follow the signs ashore"
+    },
+    "anduin_6_0": {
+      "title": "The Stone Hills",
+      "text": "After many days on the river, the land begins to rise on either side. The woods thin out and grey hills of bare rock appear, ever higher and steeper. The river narrows and the current gathers strength; the boat now runs on its own, and you must use the paddle to keep it clear of the rocks. The air is colder. Ahead, between the hills, the water turns white in places.",
+      "choiceLabel": "Paddle towards the hills"
+    },
+    "anduin_6_1": {
+      "title": "A Distant Roar",
+      "text": "One morning, as you wake, you hear a new sound: a dull, unceasing roar that comes from the south and is nothing like the wind. You press your ear to the rock and feel it there too, like a heartbeat. Rapids, many and strong, and still far off. On the eastern bank there are more fires than ever. You understand that the river is about to close before you, and that whoever wishes to pass that way will have to go between enemies.",
+      "choiceLabel": "Listen to the roaring water"
+    },
+    "anduin_7_0": {
+      "title": "The Chieftain of the Raiders",
+      "text": "In a narrow pass just above the rapids, the river runs between two crags. Suddenly the boat strikes something: a chain stretched beneath the water. On the eastern crag a huge orc with a longbow and a scimitar at his belt rises, laughing. He is the chieftain of the river raiders, who lives on whatever the water brings him. Beside him an archer is already taking aim. You leap onto the nearest rock and climb towards them, the boat caught fast."
+    }
+  },
+  "rivals": {
+    "Arquero orco": "Orc Archer",
+    "Huargo": "Warg",
+    "Cabecilla de los saqueadores del río": "Chieftain of the River Raiders"
+  }
+}

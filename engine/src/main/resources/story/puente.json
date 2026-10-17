@@ -1,0 +1,244 @@
+{
+  "id": "puente",
+  "name": "Último Puente",
+  "baseLevel": 13,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "Las Tierras Solitarias",
+      "text": "Cuando el alba asoma, la sombra se ha ido y tú sigues en pie, temblando, con la espada mellada y el alma helada. Dejas atrás la Cima de los Vientos sin volver la vista. Hacia el este se extienden las Tierras Solitarias: lomas pardas, brezo marchito, bosquecillos raquíticos y ni una casa en leguas. El Camino las cruza hacia el río Fontegrís y el Último Puente. De noche, desde muy lejos, llegan aullidos largos que no son de lobo corriente. Son huargos, y están cazando.",
+      "imagePrompt": "A weary young traveler with a notched sword walking east at dawn across desolate brown moorland with withered heather and stunted trees, a straight old road vanishing toward a distant river valley, a ruined hill behind him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "Leguas de Camino",
+      "text": "Sigues el Camino, que al menos es firme y recto. Avanzas deprisa, durmiendo poco y mal, siempre con un ojo en el horizonte. El paisaje no cambia: lomas, piedras, viento. A ratos el Camino pasa junto a murallas derruidas o bajo colinas coronadas de ruinas, recuerdos de un tiempo en que esta tierra tuvo reyes. Ahora solo la habitan los cuervos. Al segundo día, el cielo se cierra y el aire se carga de lluvia.",
+      "imagePrompt": "A lone young traveler walking a straight ancient road through empty moorland, crumbling walls and ruin-crowned hills along the way, crows on the stones, a heavy rain-laden sky closing in, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el Camino del Este"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "El explorador gris",
+      "text": "Abandonas el Camino y te internas en las tierras salvajes del sur, donde es más fácil pasar inadvertido. El terreno es áspero, lleno de barrancos y matorrales. Al segundo atardecer, un huargo solitario te sale al paso desde un bosquecillo: enorme, de pelaje gris sucio y ojos amarillos. No es un lobo hambriento cualquiera; es un explorador de su manada, y si escapa, traerá a los demás. No puedes dejar que se vaya.",
+      "imagePrompt": "Rough wild country of ravines and scrub at sunset, a huge dirty-grey warg with yellow eyes stepping out of a copse to block the way of a young traveler drawing his sword, long shadows, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cortar por las tierras salvajes",
+      "encounter": {
+        "rivals": [
+          { "name": "Huargo explorador", "portrait": "warg", "levelOffset": 0, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "La torre caída",
+      "text": "La tormenta te sorprende en campo abierto y corres hacia la única sombra que ves: una torre en ruinas sobre un otero junto al Camino. Dentro, el suelo está seco y alguien dejó hace tiempo un montón de leña bajo una escalera derrumbada. Enciendes un fuego pequeño, el primero en días. Fuera, la lluvia azota las piedras. Desde la tronera ves el Camino brillante de agua y oyes, entre trueno y trueno, un aullido lejano.",
+      "imagePrompt": "Inside a ruined stone tower on a knoll during a storm, a young traveler warming himself by a small fire beneath a collapsed staircase, rain lashing through an arrow slit that shows a gleaming wet road outside, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Refugiarse en la torre caída"
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "El enano del oeste",
+      "text": "Te cruzas con un viajero que camina hacia el oeste con un fardo enorme: un enano de barba trenzada y hacha al cinto, que vuelve a las Montañas Azules. Desconfía de ti hasta que compartes tu tabaco. Entonces habla: de los huargos que rondan el río, más numerosos que nunca, y de un jefe de manada grande como un poni que los guía. Te aconseja cruzar el puente de día y no fiarte de nadie que pregunte demasiado.",
+      "imagePrompt": "On a lonely moorland road, a stout dwarf with a braided beard, an axe at his belt and a huge pack sharing pipe smoke with a young traveler on a roadside stone, grey windy sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Saludar al viajero solitario"
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "Huellas pequeñas",
+      "text": "En un barranco arenoso das con un rastro que reconoces: pies pequeños y descalzos, botas de hombre y cascos de poni. Los viajeros pasaron por aquí, despacio, como si alguno no pudiera caminar deprisa. Los sigues un buen trecho entre zarzas y piedras. El rastro gira poco a poco hacia el norte, de vuelta al Camino, y comprendes que ellos también se dirigen al puente. Quizá no estés tan lejos como creías.",
+      "imagePrompt": "A sandy ravine floor with small bare footprints, a man's boot prints and pony hoofprints winding between brambles and stones, a young traveler crouching to follow the trail, pale afternoon light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir las huellas pequeñas"
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "El barranco de las zarzas",
+      "text": "Para evitar una loma pelada donde se te vería desde leguas, bajas a un barranco estrecho, cubierto de zarzas y espinos. El fondo es un laberinto de rocas caídas y regatos helados. Avanzas despacio, con la capa desgarrada, y por la tarde encuentras algo que te hiela la sangre: los restos de un ciervo devorado hace muy poco y, alrededor, huellas de zarpas del tamaño de tu mano abierta. Estás en territorio de huargos.",
+      "imagePrompt": "A narrow thorny ravine choked with fallen rocks and icy rivulets, a young traveler with a torn cloak finding the freshly devoured remains of a deer surrounded by enormous paw prints, gloomy light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar al barranco de zarzas"
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "Asedio en la torre",
+      "text": "Decides pasar la noche en la torre. Hacia la medianoche, el fuego se ha reducido a brasas y despiertas sobresaltado: algo araña la piedra fuera. Tres huargos han olido el humo y rondan la entrada, gruñendo en voz baja, como si hablaran entre ellos. Uno se cuela por la puerta derrumbada mientras los otros buscan la tronera. Agarras un tizón con la mano izquierda y la espada con la derecha. La noche va a ser larga.",
+      "imagePrompt": "Midnight inside a ruined tower lit by dying embers, three wargs forcing their way in through a collapsed doorway and an arrow slit, a young traveler holding a burning brand in one hand and a sword in the other, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Pasar la noche en la torre",
+      "encounter": {
+        "rivals": [
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -4, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -4, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -4, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "El hombre de la curva",
+      "text": "No quieres perder tiempo y sigues bajo la lluvia. En una curva del Camino, un hombre encapuchado espera sentado en una piedra, como si el aguacero no le importara. Te pregunta si vienes de las colinas y si has visto a unos medianos. Habla con el acento de las Tierras Brunas, y su mano no se aparta del puñal. Cuando respondes que no, sonríe con dientes torcidos y se levanta. De un modo u otro, piensa sacarte lo que sabes.",
+      "imagePrompt": "A hooded man with crooked teeth rising from a stone at a bend of a rain-soaked road, hand on his dagger, confronting a drenched young traveler, sheets of rain over bleak moorland, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir bajo la lluvia",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": 1, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "Noche junto al enano",
+      "text": "Aceptas compartir el campamento del enano esa noche, al abrigo de unas rocas. Ronca como un fuelle, pero duerme con el hacha en la mano, y hace bien: antes del alba, los huargos atacan. Él se planta contra dos, maldiciendo en su lengua, y te grita que te ocupes del tercero, el más grande, que viene derecho hacia ti con las fauces abiertas. No hay tiempo para pensar ni para tener miedo.",
+      "imagePrompt": "Before dawn at a rocky campsite, a stout dwarf swinging an axe against two wargs while a third, larger warg leaps with open jaws at a young traveler rising from his blanket with a sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acampar con el enano",
+      "encounter": {
+        "rivals": [
+          { "name": "Huargo grande", "portrait": "warg", "levelOffset": 1, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "Los que preguntan",
+      "text": "Te despides del enano y sigues solo hacia el este a buen paso. Al mediodía oyes cascos detrás de ti: dos jinetes en caballos flacos te alcanzan y te rodean. Son hombres de las Tierras Brunas, y preguntan por un enano con mucho equipaje y por unos medianos que viajan con un montaraz. Les contestas que no has visto a nadie. No te creen. Desmontan sin prisa y desenvainan las espadas.",
+      "imagePrompt": "Two rough riders on thin horses dismounting and drawing swords as they surround a young traveler on an empty moorland road at midday, grey sky, wind in the heather, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Adelantarse en solitario",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -2, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -2, "pattern": ["13", "131", "31"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "Tras el mismo olor",
+      "text": "Sigues el rastro de los viajeros sin perderlo, aunque se borra a ratos entre las piedras. No eres el único: otras huellas, enormes, lo cruzan una y otra vez. Al atardecer, en un claro de abedules, cuatro huargos alzan el hocico del suelo que olfateaban. Iban tras el mismo olor que tú, y te miran como a un estorbo que se puede comer. Se separan sin prisa para cercarte. A tu espalda, solo hay un tronco caído.",
+      "imagePrompt": "A birch clearing at dusk, four wargs lifting their muzzles from a scent trail and spreading out to encircle a young traveler with his back to a fallen trunk, sword drawn, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "No perder el rastro",
+      "encounter": {
+        "rivals": [
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -5, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -5, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -5, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -5, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "El cuerno del vigía",
+      "text": "Dejas el rastro y vuelves hacia el Camino, buscando terreno más llano. En lo alto de una loma ves a un hombre agazapado que vigila la calzada: un espía dunlendino con un cuerno colgado al cuello. Si lo hace sonar, cualquiera que esté cerca sabrá que vienes. Te acercas por detrás, despacio, pero una piedra se mueve bajo tu bota. El hombre se gira, se lleva el cuerno a los labios y, al ver tu espada, desenvaina.",
+      "imagePrompt": "A crouching lookout with a horn on a cord turning in alarm on a hilltop above an old road, a young traveler with a sword creeping up behind him over loose stones, cold evening light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Volver hacia el Camino",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": 0, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "La guarida",
+      "text": "Sigues el fondo del barranco, decidido a salir de él cuanto antes. Pero el barranco se estrecha y termina en una pared de roca con una cueva al pie. El olor es inconfundible. De la oscuridad sale un huargo viejo y enorme, con el hocico canoso y una oreja arrancada, dispuesto a defender su guarida. Gruñe tan hondo que lo sientes en el pecho. El paso es demasiado angosto para darle la espalda.",
+      "imagePrompt": "A narrow ravine ending in a rock wall with a dark cave, a huge old warg with a grey muzzle and a torn ear emerging to defend its den against a young traveler with a sword, gloom and bones, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Recorrer el fondo del barranco",
+      "encounter": {
+        "rivals": [
+          { "name": "Huargo viejo", "portrait": "warg", "levelOffset": 1, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "Emboscada en la cresta",
+      "text": "Trepas por la pared del barranco, mano tras mano, hasta salir a una cresta pelada. Allí te espera una sorpresa: un espía de las Tierras Brunas, que vigilaba desde arriba, te recibe con una patada que casi te devuelve al fondo. Te agarras a una raíz y logras subir. Mientras forcejeáis, un aullido responde muy cerca, y un huargo asoma por la cresta, atraído por el ruido. Ahora tienes dos enemigos y un precipicio a la espalda.",
+      "imagePrompt": "A bare ridge at the edge of a ravine, a young traveler hauling himself up by a root while a rough spy kicks at him and a warg appears on the crest, a sheer drop below, windy grey sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Trepar fuera del barranco",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -2, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -2, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "El pozo del páramo",
+      "text": "Encuentras un pozo de piedra en mitad del páramo, junto a los cimientos de una casa que ya no existe. El agua del fondo es oscura, pero fresca. Te curas los rasguños, bebes y te sientas con la espalda contra el brocal. Durante un rato solo oyes el viento en el brezo. Piensas en Bree, en tu casa cerrada, en lo lejos que has llegado. Luego te levantas: el río ya no puede estar lejos.",
+      "imagePrompt": "An old stone well alone on a heather moor beside the faint foundations of a vanished house, a tired young traveler sitting with his back against the well drinking water, wind bending the heather, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Descansar en el pozo viejo"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "El puente a lo lejos",
+      "text": "Subes a una loma para orientarte. Desde arriba, por fin, ves el final de las Tierras Solitarias: una franja de árboles oscuros marca el curso del Fontegrís, y sobre él, pequeño como un juguete, un puente de piedra de tres arcos. Más allá, la tierra se alza en colinas boscosas. Pero también ves otra cosa: sombras grises que se mueven entre los árboles de la orilla, demasiadas para contarlas.",
+      "imagePrompt": "View from a moorland hilltop of a distant grey river lined with dark trees and a small three-arched stone bridge, wooded hills beyond, grey shapes of wolves moving along the bank, a young traveler watching, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a la loma más alta"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "El agua que borra",
+      "text": "Un arroyo ancho y helado te corta el paso, camino del Fontegrís. Lo vadeas con el agua hasta las rodillas, que se te entumecen al instante. En la otra orilla te secas bajo un sol pálido y vuelves a meterte en la corriente un buen trecho para borrar tu olor, como hacen los cazadores de Bree para despistar a los perros. Si los huargos te buscan, al menos tendrán que esforzarse. El aire ya huele a río grande.",
+      "imagePrompt": "A young traveler wading knee-deep along a wide icy stream through bleak moorland to hide his scent, boots in hand, pale weak sunlight, distant line of dark trees marking a larger river, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Vadear el arroyo helado"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "El campo de huesos",
+      "text": "Atraviesas un llano donde los huesos blanquean entre la hierba: caballos, lobos y algún hombre, caídos en una escaramuza de la que nadie cantará. Las armas están oxidadas, aunque algunas puntas de flecha parecen recientes. Recoges un escudo pequeño todavía útil y te lo cuelgas a la espalda. Mientras caminas, sientes los ojos de los cuervos sobre ti. Saben que este campo siempre tiene sitio para uno más.",
+      "imagePrompt": "A grassy plain strewn with bleached bones of horses, wolves and men among rusted weapons, a young traveler picking up a small battered shield, crows watching from a dead tree, overcast sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el campo de huesos"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "Entre los juncos",
+      "text": "Bajas hacia el río dando un rodeo amplio, siempre contra el viento, para que los huargos no te huelan. El Fontegrís corre gris y rápido, crecido por las lluvias, entre orillas de piedra. Te arrastras entre los juncos hasta tener el Último Puente a la vista. Sobre la calzada, entre los arcos, se tumban varias bestias grises. Una sombra mucho mayor y más oscura que las demás se levanta y olfatea el aire en tu dirección.",
+      "imagePrompt": "A young traveler crawling through riverside reeds toward an ancient three-arched stone bridge over a swift grey swollen river, several grey wargs lying on the bridge while a much larger dark one rises sniffing the air, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acercarse al río con sigilo"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "Carrera hacia el río",
+      "text": "Decides no esperar y bajas a la carrera hacia el río por campo abierto, con la esperanza de llegar al puente antes de que te descubran. No lo consigues. Dos huargos que vigilaban desde un bosquecillo salen tras de ti, uno por cada lado, y te obligan a detenerte en una pendiente de piedras sueltas. Más abajo, junto al puente, un aullido profundo les responde. Tienes que acabar con estos dos antes de que lleguen los demás.",
+      "imagePrompt": "A young traveler forced to a halt on a slope of loose stones as two wargs close in from both sides, a stone bridge over a grey river visible below, open windswept ground, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Correr hacia el puente",
+      "encounter": {
+        "rivals": [
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -2, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -2, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El jefe de la manada",
+      "text": "El Último Puente cruza el Fontegrís en tres arcos de piedra antigua. Los viajeros a los que sigues pasaron por aquí hace días; ahora, sobre la calzada, te espera el jefe de la manada: un huargo gigantesco, negro como el carbón, con cicatrices de mil peleas y unos ojos que parecen entender demasiado. Se planta en mitad del puente y te cierra el paso. Al otro lado esperan las colinas boscosas y el camino hacia el este. Para alcanzarlos, tienes que pasar por encima de él.",
+      "imagePrompt": "An ancient three-arched stone bridge over a swift grey river, a gigantic coal-black scarred warg with knowing eyes standing alone in the middle of the bridge facing a young traveler with a sword, wooded hills beyond, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          { "name": "Jefe de la manada de huargos", "portrait": "boss_puente", "levelOffset": 2, "pattern": ["12", "121", "1212", "13", "131", "31", "11"], "everyNTicks": 1, "modes": { "defenseBelowPct": 50, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } }
+        ]
+      }
+    }
+  ]
+}

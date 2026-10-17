@@ -1,0 +1,473 @@
+{
+  "id": "amonhen",
+  "name": "Amon Hen",
+  "baseLevel": 46,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "El lago de los tres montes",
+      "text": "Más allá de los reyes de piedra, el río se abre en un lago largo y quieto, encerrado entre colinas. En el centro se alza una isla alta y escarpada, y al fondo retumba un trueno que no cesa: una gran cascada que todavía no ves. En la orilla oeste, al pie de una colina cubierta de bosque, un prado verde baja hasta el agua. Varas allí la barca y la dejas sobre la hierba. Los elfos llamaban a esa colina Amon Hen, la del Ojo. Ningún pájaro canta. Desde el oeste, muy lejos, llegan toques de cuerno roncos, cada vez más débiles, que se alejan.",
+      "imagePrompt": "A long still lake among wooded hills, a steep island in the middle and far mist of great falls, a young traveler in a grey elven cloak leaving a small grey boat on a green lawn at the foot of a forested hill, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "Los cuervos del prado",
+      "text": "Cruzas el prado hacia los árboles. La hierba está aplastada en anchas franjas, como si una multitud hubiera corrido por ella hace muy poco, y hay manchas oscuras sobre el verde. En el lindero, una bandada de cuervos negros se alza de golpe de entre los helechos. La mayoría se aleja hacia el oeste graznando, pero dos dan una vuelta sobre tu cabeza y bajan en picado hacia ti, con las garras por delante. Son crebain, pájaros espías que no se comportan como cuervos.",
+      "imagePrompt": "A trampled green meadow at the edge of a dark wood, a flock of black crows bursting from the ferns, two large crebain diving with talons at a young traveler in a grey elven cloak raising his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el prado",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Crebain",
+            "portrait": "crebain",
+            "levelOffset": -2,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "31"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Crebain",
+            "portrait": "crebain",
+            "levelOffset": -2,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "31"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "La orilla del lago",
+      "text": "Prefieres no entrar todavía en el bosque y sigues la orilla hacia el sur, por una franja de guijarros. El agua del lago está tan quieta que refleja las colinas boca abajo. Encuentras los restos de un muro viejo, cubierto de musgo, y un poco más allá unos escalones de piedra que suben entre los árboles hacia la cumbre. Al sur, el trueno de la cascada crece, y una columna de vapor blanco se levanta sobre el agua. Te sientas un momento en una piedra. Todo está demasiado callado.",
+      "imagePrompt": "A pebbly lakeshore below a wooded hill, mossy remains of an ancient wall and worn stone steps climbing among trees, white spray rising from distant falls, a young traveler in a grey elven cloak resting on a stone and looking south, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la orilla del lago"
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "Bajo los árboles",
+      "text": "Bajo los árboles el suelo está revuelto, lleno de ramas rotas y de flechas negras clavadas en los troncos. Entre los helechos yacen orcos muertos, muchos, de dos clases distintas. Unos son grandes, con escudos en los que hay pintada una mano blanca. Otros, más pequeños, llevan un ojo rojo en el yelmo. Dos señores, piensas, y ninguno amigo. No sabes quién luchó aquí contra ellos, ni si sobrevivió. Caminas despacio, sin tocar nada, con la mano en la empuñadura.",
+      "imagePrompt": "Inside a dim forest with broken branches and black arrows stuck in tree trunks, dead orcs lying among ferns with white hand shields and red eye helmets, a young traveler in a grey elven cloak walking slowly with a hand on his sword hilt, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Entrar en el bosque"
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "El arroyo enturbiado",
+      "text": "Un arroyo baja de la colina hacia el lago, y quieres llenar el odre. Pero el agua viene turbia, revuelta por cientos de pies que la han cruzado más arriba. En el barro de la orilla hay huellas de botas herradas, tantas que se pisan unas a otras, y todas van en la misma dirección: hacia el oeste, lejos del lago. Algunas son muy hondas, como de quien carga un peso. Esperas a que el agua se aclare y bebes, mirando hacia donde se pierde el rastro.",
+      "imagePrompt": "A small muddy stream running down a wooded hill, deep iron-shod boot prints trampling the banks all heading west, a young traveler in a grey elven cloak kneeling to fill a waterskin and looking along the trail, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar al arroyo"
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "Los escalones antiguos",
+      "text": "Subes por los escalones antiguos. Son anchos y gastados, y alguien los talló hace siglos para que los reyes subieran a la cumbre sin fatigarse. Entre las piedras crecen raíces y musgo. A medida que asciendes, el bosque se aclara y el lago aparece debajo, cada vez más pequeño, con la isla en medio como la proa de un barco de piedra. Te detienes a recobrar el aliento en un rellano. Arriba, contra el cielo, ves algo que parece un asiento tallado.",
+      "imagePrompt": "Wide worn ancient stone steps climbing a forested hill, roots and moss between the stones, the lake and a steep island far below, a young traveler in a grey elven cloak pausing on a landing and gazing up toward a carved stone seat on the summit, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir los escalones de piedra"
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "La senda de la cascada",
+      "text": "Sigues la orilla hacia el estruendo. La senda se estrecha entre el agua y una pared de roca, y el aire se llena de una llovizna fina. Al doblar una peña te encuentras con dos uruk-hai que vuelven de la orilla con las botas mojadas. Sobre el hombro de uno se posa un cuervo negro, que grazna y te señala con el pico. Los uruk-hai se separan sin decir palabra para cerrarte la senda por los dos lados, y el cuervo levanta el vuelo.",
+      "imagePrompt": "A narrow lakeshore path between water and a rock wall in fine spray from roaring falls, two uruk-hai with white hand shields and a black crebain on one's shoulder blocking the way of a young traveler in a grey elven cloak drawing his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Caminar hacia la cascada",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -4,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -4,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Crebain",
+            "portrait": "crebain",
+            "levelOffset": -4,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "31"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "La fuente del bosque",
+      "text": "Lejos de los muertos, en una hondonada del bosque, encuentras una fuente que brota de una piedra y cae a una pila tallada, cubierta de hojas. El agua está fría y limpia. Te lavas la cara y las manos, y luego te sientas con la espalda contra la piedra a comer un trozo de pan élfico. Por primera vez en todo el día oyes un pájaro. Cierras los ojos un momento. Cuando los abres, la luz ha cambiado y la tarde avanza.",
+      "imagePrompt": "A quiet hollow in a forest, a clear spring flowing from a stone into a carved basin covered in leaves, a young traveler in a grey elven cloak sitting with his back to the stone eating elven bread in soft afternoon light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar agua limpia"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "Polvo en el oeste",
+      "text": "Subes a un claro desde el que se ve el oeste. Más allá de la colina la tierra baja hacia praderas inmensas, verdes y pardas, que se pierden en el horizonte. Muy lejos, una mancha oscura avanza por ellas, levantando una nube de polvo. Es una tropa grande, que corre sin descanso. No puedes distinguir quiénes son, pero sabes de dónde vienen: de este bosque, de entre estos muertos. La sigues con la vista hasta que la mancha se confunde con la tierra.",
+      "imagePrompt": "A high forest clearing overlooking vast green and brown plains to the west, a distant dark mass of running warriors raising a cloud of dust, a young traveler in a grey elven cloak watching from among the trees, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a un claro alto"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "Tres rastros más",
+      "text": "Sigues el rastro de los orcos un trecho, hasta donde la colina se acaba. Allí ves algo que no habías visto: encima de las huellas herradas, más frescas, hay otras de solo tres caminantes. Dos son de botas largas y ligeras; el tercero, más corto y pesado, hunde el talón en el barro. Corren detrás de los orcos, y por la distancia entre los pasos, corren mucho. No los alcanzarías nunca. Te quedas mirando el rastro, y luego te das la vuelta hacia el lago.",
+      "imagePrompt": "The edge of a wooded hill where a wide trail of orc boot prints heads into open grassland, three fresher sets of tracks running on top, a young traveler in a grey elven cloak crouching to study them then looking back, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el rastro un trecho"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "El rezagado",
+      "text": "Rodeas una espesura de acebos y casi tropiezas con él. Es un uruk-hai sentado contra un tronco, con una pierna vendada con trapos sucios. Se ha quedado atrás, solo, y lo sabe. Está afilando una espada corta sobre una piedra, y al verte no se asusta: sonríe, deja la piedra y se levanta apoyándose en el árbol. Cojea, pero la espada no le tiembla en la mano. No piensa dejarte marchar para que cuentes que lo viste.",
+      "imagePrompt": "A holly thicket in a forest, a wounded uruk-hai with a bandaged leg rising from against a tree trunk with a short blade, grinning at a young traveler in a grey elven cloak who stands with sword ready, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Rodear la espesura",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": 1,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "El asiento de piedra",
+      "text": "En la cumbre hay una plataforma de losas y, sobre cuatro pilares, un asiento de piedra al que se sube por una escalera. No te atreves a sentarte en él; no es para ti. Te quedas a su lado, con la mano en la piedra fría. Aun así, desde aquí se ve muy lejos. Al este, más allá del río, hay colinas grises y rotas; detrás, una llanura que brilla como agua sucia; y más allá, una línea de montañas oscuras bajo una nube que no se mueve.",
+      "imagePrompt": "A flagstone summit platform with a carved stone seat on four pillars, a young traveler in a grey elven cloak standing beside it with a hand on the stone, looking east over broken grey hills, a gleaming marsh and dark distant mountains under a heavy cloud, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir hasta la cumbre"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "Los vigías de la ladera",
+      "text": "Te apartas de los escalones para explorar la ladera alta, entre rocas y pinos retorcidos. Llegas a un saliente y te encuentras con cuatro uruk-hai que han subido hasta allí a mirar el lago. Señalan las orillas, discuten, uno escupe hacia el agua. Buscaban algo desde lo alto y no lo han encontrado. Tu llegada les parece un premio de consolación. Se reparten a tu alrededor sobre la roca, y a tu espalda solo queda el vacío.",
+      "imagePrompt": "A rocky ledge on a high hillside among twisted pines overlooking a lake, four uruk-hai with white hand shields spreading out around a young traveler in a grey elven cloak who stands with his back to a sheer drop, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Explorar la ladera alta",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "El borde de la cascada",
+      "text": "Llegas al borde de la cascada. Aquí el lago se acaba de golpe y todo el río cae por un escalón de roca hacia un abismo de espuma, tan hondo que no ves el fondo. El ruido te llena el pecho y te impide pensar. Sobre la niebla se forma un arco de colores. Más abajo, el río sigue hacia el sur, ancho y lento, entre tierras bajas. Ninguna barca pasaría por aquí entera. Te quedas mucho rato mirando, empapado y sin poder apartar los ojos.",
+      "imagePrompt": "The brink of a mighty waterfall where a lake pours over a rock step into a bottomless gulf of foam, a rainbow in the mist, a young traveler in a grey elven cloak standing on wet rocks at the edge looking down, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Asomarse a la cascada"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "El embarcadero antiguo",
+      "text": "Entre los juncos descubres un embarcadero de piedra, tan viejo que las olas han redondeado sus bordes. Tiene argollas de hierro comidas por el óxido y unos peldaños que bajan hasta el agua. Alguien amarraba aquí sus barcas cuando estas colinas tenían dueño. Te sientas en el último peldaño, con los pies cerca del agua, y miras la isla del centro del lago, inalcanzable, coronada de pájaros que dan vueltas sin posarse nunca.",
+      "imagePrompt": "An ancient stone landing among reeds on a lake shore with rusted iron mooring rings and steps descending into the water, a young traveler in a grey elven cloak sitting on the last step gazing at a steep island circled by birds, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar a un embarcadero viejo"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "Noche sin fuego",
+      "text": "La noche te alcanza lejos del prado, y la pasas bajo una roca saliente, envuelto en la capa gris. No enciendes fuego. El frío baja de la colina y el estruendo de la cascada no se calla nunca. A medianoche te despiertas y ves, muy al este, un resplandor rojo bajo las nubes, que crece y mengua como una brasa a la que alguien sopla. No vuelves a dormirte. Cuando por fin amanece, el resplandor se ha borrado y el cielo es gris.",
+      "imagePrompt": "Night under an overhanging rock on a hillside, a young traveler in a grey elven cloak wrapped in a grey cloak without a fire, eyes open, a faint red glow pulsing beneath clouds far to the east, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Pasar la noche a cubierto"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "Niebla en el bosque",
+      "text": "Al amanecer, una niebla blanca sube del lago y se mete en el bosque. Los troncos aparecen y desaparecen a tu alrededor como figuras que se acercan y se alejan. Caminas despacio, contando los pasos, guiándote por el rumor de la cascada. En un momento oyes un aleteo muy cerca, y un graznido, y luego nada. Te quedas quieto hasta que el silencio vuelve. Cuando la niebla se rasga, estás en la ladera, más cerca del agua de lo que creías.",
+      "imagePrompt": "White fog rising from a lake and drifting between dark tree trunks at dawn, a black bird shape flapping nearby, a young traveler in a grey elven cloak standing still and listening with his sword half drawn, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Caminar entre la niebla"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "La atalaya en ruinas",
+      "text": "Entre los árboles de la ladera encuentras las ruinas de una atalaya: un círculo de piedras labradas y un pilar todavía en pie, con un yelmo alado tallado en lo alto. Los hombres que la construyeron vigilaban desde aquí el río y la frontera del este. Ahora crecen ortigas donde dormían sus centinelas. Te apoyas en el pilar y miras al este, como debieron de mirar ellos. La tierra del otro lado sigue siendo gris y hostil. Nadie la vigila ya.",
+      "imagePrompt": "Ruins of an ancient watchtower on a forested hillside, a circle of carved stones and one standing pillar topped by a winged helm carving, nettles growing, a young traveler in a grey elven cloak leaning on the pillar looking east, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Visitar unas ruinas"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "La senda de los ciervos",
+      "text": "Encuentras una senda estrecha, abierta por los ciervos, que baja en zigzag por la ladera entre helechos y piedras. La sigues porque es la única que no han pisado botas herradas. Al cabo de un rato ves a los ciervos: tres hembras y un macho joven, inmóviles entre los árboles, mirándote. No huyen. Pasas a su lado despacio, casi sin respirar, y ellos te siguen con los ojos hasta que la senda gira. Es lo único vivo y tranquilo que has visto en esta colina.",
+      "imagePrompt": "A narrow deer trail zigzagging down a forested hillside among ferns and stones, three does and a young stag standing still between the trees watching a young traveler in a grey elven cloak pass quietly, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir una senda de ciervos"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "El cuervo grande",
+      "text": "Bajas por el bosque hacia el prado. Desde hace rato te sigue un cuervo, más grande que los demás, saltando de rama en rama sin graznar. Cuando te detienes, se detiene. Cuando echas a andar, te adelanta y te espera. Al final, en un claro, se posa en una rama baja, tan cerca que ves sus ojos. Sabes que, si lo dejas volar, llevará tu cara a alguien. Antes de que levantes la espada, se lanza a picotearte los ojos.",
+      "imagePrompt": "A forest clearing at dusk, a single huge black crebain perched on a low branch close to the face of a young traveler in a grey elven cloak, lunging at him with open beak as he raises his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar por el bosque",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Crebain",
+            "portrait": "crebain",
+            "levelOffset": 0,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "31"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "Saqueadores entre las piedras",
+      "text": "Bajas por un pedregal que se abre entre los árboles, sin cubierta, a la vista de todos. Al pie, dos uruk-hai rebuscan entre las cosas que dejaron sus muertos: cinturones, cuchillos, un odre. Sobre ellos, dos cuervos negros esperan su parte. Los pájaros te ven primero. Graznan, y los uruk-hai levantan la cabeza a la vez. Uno arroja lo que tiene en la mano y desenvaina; el otro silba, y los cuervos se dejan caer sobre ti.",
+      "imagePrompt": "An open scree slope among trees, two uruk-hai with white hand shields looting fallen gear, two black crebain diving from above toward a young traveler in a grey elven cloak descending the stones with sword drawn, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar por un pedregal",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Crebain",
+            "portrait": "crebain",
+            "levelOffset": -5,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "31"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Crebain",
+            "portrait": "crebain",
+            "levelOffset": -5,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "31"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El caudillo de la orilla",
+      "text": "Vuelves al prado al caer la tarde. Tu barca sigue donde la dejaste. Pero un poco más allá hay un surco en la arena, donde alguien empujó otra barca al agua con la proa hacia la orilla de enfrente, y huellas pequeñas, descalzas, que entran en el lago. Inclinado sobre ellas está el uruk más grande que has visto, con un yelmo de cuernos y una espada ancha, olfateando el rastro como un perro. A su lado, un guerrero espera órdenes. El caudillo te mira y se ríe.",
+      "imagePrompt": "A green lakeside lawn at dusk, a small grey boat on the grass, a furrow in the sand and small bare footprints leading into the water, a huge uruk chieftain in a horned helm sniffing them, turning toward a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Caudillo uruk-hai",
+            "portrait": "boss_amonhen",
+            "levelOffset": 12,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "12",
+              "121",
+              "1212",
+              "31",
+              "123"
+            ],
+            "everyNTicks": 1,
+            "modes": {
+              "defenseBelowPct": 15,
+              "attackAbovePct": 70,
+              "maxDefenses": 1,
+              "defense": [
+                "2132",
+                "21",
+                "212",
+                "2121",
+                "21212",
+                "13",
+                "131"
+              ]
+            }
+          },
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -4,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    }
+  ]
+}

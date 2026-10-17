@@ -1,0 +1,233 @@
+{
+  "id": "nimrodel",
+  "name": "Nimrodel",
+  "baseLevel": 37,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "La linde del bosque",
+      "text": "Con el capitán hundido en el río, el camino de la orilla te lleva por fin hasta los primeros árboles. No se parecen a ningún árbol que conozcas: troncos lisos y grises, altísimos, y ramas cargadas de hojas doradas en pleno invierno, que brillan débilmente bajo la luna. Bajo ellos el aire es distinto, más quieto y más limpio. Por el oeste baja otro río a unirse al que traes, cantando entre piedras. En Rivendel oíste su nombre: el Nimrodel. Detrás quedan los orcos; delante, un bosque del que pocos hombres hablan sin bajar la voz.",
+      "imagePrompt": "A young traveler in a grey cloak reaching the edge of a forest of immensely tall smooth grey trunks with golden leaves glowing faintly under the moon in winter, a clear stream tumbling over stones to join a wider river, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "Bajo los árboles dorados",
+      "text": "Te adentras bajo los árboles. La hojarasca dorada cubre el suelo y apaga tus pasos, y la luz de la luna se filtra entre las ramas como polvo de oro. No se oye ningún animal. Tienes la sensación, cada vez más clara, de que no estás solo: de que algo, o alguien, te observa desde muy arriba. Levantas la vista y no ves más que hojas. Aun así, apartas la mano de la espada sin darte cuenta, como quien entra en una casa ajena.",
+      "imagePrompt": "A young traveler in a grey cloak walking on a carpet of golden fallen leaves beneath towering grey-trunked trees, moonlight filtering through the high golden canopy like gold dust, looking up warily, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Entrar bajo los árboles"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "Orcos en la orilla",
+      "text": "Prefieres no internarte de noche en un bosque desconocido y sigues la orilla, entre la linde y el agua. Pronto ves que no eres el único que lo ha pensado: cuatro orcos de las montañas, sucios del viaje, están acuclillados junto al río, discutiendo. Uno levanta la nariz, olfatea y se pone en pie. No quieren entrar entre los árboles, pero a ti sí quieren alcanzarte. Avanzan por la orilla, dos por cada lado.",
+      "imagePrompt": "Four grimy mountain orcs rising from a crouch by a moonlit river at the edge of a golden-leaved forest, advancing along the bank from both sides toward a young traveler in a grey cloak drawing his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la orilla del río",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -5, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -5, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2 },
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -5, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2 },
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -5, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "Un arquero entre los troncos",
+      "text": "Un sendero apenas visible serpentea entre los troncos y lo sigues. En un claro pequeño, un silbido corta el aire y una flecha negra se clava en el árbol junto a tu cabeza. No viene de arriba, sino de detrás de un tronco caído: un arquero orco que se ha metido en el bosque, encogido y nervioso, con los ojos brillando en la oscuridad. Dispara otra vez, falla, y busca una tercera flecha con dedos torpes. Este lugar le da más miedo que tú. Corres hacia él.",
+      "imagePrompt": "A hunched nervous orc archer behind a fallen trunk in a small moonlit glade of grey-trunked golden trees, fumbling for an arrow, a black arrow quivering in a tree beside a young traveler in a grey cloak charging toward him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir un sendero entre los troncos",
+      "encounter": {
+        "rivals": [
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": 1, "pattern": ["32", "323"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "La presa disputada",
+      "text": "Sigues el rumor del agua entre helechos secos hasta que oyes otra cosa: un gruñido y una risa áspera. Junto a un arroyo, un orco de las montañas y dos arqueros han acorralado a un ciervo herido y discuten quién se lo queda. Pisas una rama. Los tres se vuelven a la vez. El ciervo aprovecha y huye entre los árboles; los orcos, en cambio, parecen pensar que tú eres una presa mejor.",
+      "imagePrompt": "By a moonlit forest brook among dry ferns, a mountain orc and two orc archers turning away from a wounded deer bolting into the golden trees, facing a young traveler in a grey cloak who has stepped on a branch, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar hacia el rumor del agua",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -4, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -4, "pattern": ["32", "323"], "everyNTicks": 1 },
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -4, "pattern": ["32", "323"], "everyNTicks": 1 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "El fuego del claro",
+      "text": "Para alejarte de la orilla, cortas camino por un claro abierto entre la linde y los primeros árboles grandes. Es un error: en el centro arde un fuego pequeño y mal escondido, y alrededor dos orcos, uno de las montañas y un arquero, se calientan las manos. Uno se venda el brazo, donde todavía lleva clavada una flecha de plumas grises. Te ven. Se levantan sin prisa, y uno patea las brasas hacia ti.",
+      "imagePrompt": "Two orcs, a big mountain orc and an archer, rising around a small badly hidden campfire in an open clearing at a forest edge, one with a grey-feathered arrow in his arm kicking embers at a young traveler in a grey cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cortar camino por un claro",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -2, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -2, "pattern": ["32", "323"], "everyNTicks": 1 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "El arquero del remanso",
+      "text": "Bajas a una orilla de cantos donde un arroyo forma un remanso. La luna brilla en el agua. Al otro lado, entre unas rocas, algo se mueve: un arquero orco agazapado, que vigila el agua y te ha visto. Su primera flecha salta en las piedras a tus pies. Podrías retroceder, pero entonces te seguiría disparando por la espalda. Cruzas el remanso con el agua helada por las rodillas, mientras él busca otra flecha.",
+      "imagePrompt": "A young traveler in a grey cloak wading knee-deep across a moonlit forest brook pool toward an orc archer crouching among rocks on the far bank, an arrow skipping off the stones, golden-leaved trees beyond, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar a la orilla pedregosa",
+      "encounter": {
+        "rivals": [
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": 0, "pattern": ["32", "323"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "Silbidos en lo alto",
+      "text": "Te detienes en mitad del sendero y escuchas. Al principio no hay nada. Luego, muy arriba, suena un silbido suave, como de pájaro, y otro que le contesta desde el otro lado. No son pájaros. Te quedas quieto, con las manos lejos de la espada, y dejas que te miren. Al cabo de un rato los silbidos callan, y una hoja dorada cae girando hasta tu hombro. No sabes si es una advertencia o un permiso. Decides tomarlo como un permiso y sigues, despacio.",
+      "imagePrompt": "A young traveler in a grey cloak standing very still on a faint forest path with open empty hands, looking up into a high golden canopy where unseen watchers hide, a single golden leaf spiraling down to his shoulder, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Detenerse a escuchar"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "El gran árbol",
+      "text": "Te sientas al pie del árbol más grande que has visto nunca: su tronco gris y liso es tan ancho que cinco hombres no lo abrazarían. Entre las raíces hay un hueco seco y mullido de hojas. Apoyas la espalda en la corteza y notas algo extraño, como un pulso lento y tranquilo, muy hondo. Por primera vez desde que entraste en la montaña, el miedo te suelta del todo. Duermes un poco, sin sueños. Al despertar, la luna se ha movido y tú te sientes más ligero.",
+      "imagePrompt": "A young traveler in a grey cloak asleep in a hollow of leaves between the roots of a gigantic smooth grey tree trunk, golden foliage far above, moonlight falling peacefully over him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Descansar al pie de un árbol"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "La flecha de aviso",
+      "text": "Cruzas el arroyo saltando de piedra en piedra. En cuanto pisas la otra orilla, una flecha de plumas grises se clava en la tierra, justo delante de tu bota, y vibra. No es una flecha orca. Te quedas inmóvil. Una voz clara dice algo desde lo alto, en una lengua que suena como el agua; no la entiendes, pero el tono es firme. Levantas las manos despacio, abiertas, y das un paso atrás. Nadie más dispara. Lo que hagas a partir de ahora tendrá testigos.",
+      "imagePrompt": "A grey-feathered arrow quivering in the earth just before the boot of a young traveler in a grey cloak who slowly raises his open hands on the bank of a forest brook, golden trees above hiding an unseen archer, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el arroyo"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "El orco caído",
+      "text": "Sigues las gotas de sangre del ciervo herido entre los helechos, pero lo que encuentras es otra cosa: un orco muerto, tendido boca abajo junto a un tronco, con dos flechas de plumas grises en la espalda. Lleva poco tiempo muerto, y nadie le ha quitado las armas. Quien lo mató lo hizo desde lejos y en silencio, y luego se fue sin dejar huella. Este bosque tiene guardianes, y no les gustan los orcos. Esperas que los hombres les disgusten un poco menos.",
+      "imagePrompt": "A dead orc lying face down beside a fallen trunk among dry ferns with two grey-feathered arrows in his back, a young traveler in a grey cloak looking up uneasily at the silent golden trees, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el rastro del ciervo"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "La piedra de paso",
+      "text": "Te alejas de la linde hacia el interior del bosque. Aquí los árboles son más grandes y la hojarasca más espesa. Encuentras un círculo de piedras con ceniza fría: el fuego de unos viajeros que pasaron hace años. En una de las piedras alguien grabó una runa que reconoces de Rivendel, una señal élfica de paso seguro. Te sientas un momento junto a ella. Hace mucho tiempo que nadie te deja una señal amable en el camino.",
+      "imagePrompt": "A ring of old stones with cold ash deep in a forest of huge grey trunks and thick golden leaf litter, one stone carved with a graceful elvish rune, a young traveler in a grey cloak sitting beside it, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Apartarse de la linde"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "La columna sin antorchas",
+      "text": "Te escondes entre los helechos altos cuando oyes pasos. Al poco pasa una columna de orcos por la linde, a pocos metros, con prisa y sin antorchas. No entran entre los árboles grandes: los rodean, mirando hacia arriba con miedo. Uno se queda atrás y olfatea el aire en tu dirección. Contienes la respiración. Desde lo alto llega un silbido corto; el orco se estremece, maldice y corre tras los demás. Te quedas quieto mucho rato antes de moverte.",
+      "imagePrompt": "A column of orcs without torches hurrying along a forest edge at night, glancing fearfully up at towering golden trees, one sniffing the air, a young traveler in a grey cloak hidden among tall ferns a few steps away, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Esconderse entre los helechos"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "La cascada",
+      "text": "Remontas el arroyo por la orilla hasta una cascada pequeña, donde el agua cae por escalones de piedra clara con un ruido que parece una canción. Te sientas en una roca a escucharla. No sabes por qué, pero se te hace un nudo en la garganta: piensas en Bree, en el camino, en todo lo que has visto morir desde entonces. Dejas que la cascada cante por ti un rato. Cuando te levantas, el peso que traías de la montaña es un poco menor.",
+      "imagePrompt": "A small waterfall spilling over steps of pale stone in a moonlit forest of golden trees, a young traveler in a grey cloak sitting on a rock listening with a sorrowful face, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Remontar el arroyo"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "El rastro de la banda",
+      "text": "Sigues la orilla hacia el sur y das con un rastro que no esconde nada: ramas rotas, barro removido, huesos roídos y un escudo abandonado. Una banda de orcos numerosa ha pasado por aquí hace poco, bordeando el bosque sin atreverse a entrar en él, como si buscara una puerta. Por las huellas, no son pocos. Decides apartarte de su camino y te alejas del rastro hacia los árboles, con la espada a mano y los oídos atentos.",
+      "imagePrompt": "A trampled trail along a riverbank at a forest edge, broken branches, churned mud, gnawed bones and an abandoned orcish shield, a young traveler in a grey cloak studying it with his hand on his sword, golden trees nearby, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la orilla hacia el sur"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "Arqueros en la niebla",
+      "text": "Una niebla espesa sube del río y se enreda entre los troncos, y avanzas por ella casi a ciegas, guiándote por el rumor del agua. De pronto, cuatro sombras encorvadas surgen delante de ti: arqueros orcos, tan perdidos como tú en la niebla, con las flechas ya en la cuerda. Por un instante nadie se mueve. Luego uno de ellos chilla y los cuatro disparan a la vez. Una flecha te roza la capa. Te lanzas hacia ellos antes de que vuelvan a cargar.",
+      "imagePrompt": "Thick low mist among grey tree trunks, four hunched orc archers looming out of the fog loosing arrows at a young traveler in a grey cloak lunging toward them with his sword, faint golden leaves overhead, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Avanzar entre la niebla",
+      "encounter": {
+        "rivals": [
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -5, "pattern": ["32", "323"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -5, "pattern": ["32", "323"], "everyNTicks": 1 },
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -5, "pattern": ["32", "323"], "everyNTicks": 1 },
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -5, "pattern": ["32", "323"], "everyNTicks": 1 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "Una plataforma en lo alto",
+      "text": "Buscas un árbol de ramas bajas y trepas, más alto de lo que nunca has subido. Entre las hojas doradas encuentras algo inesperado: una plataforma de madera clara, bien atada a las ramas, vacía. Te tumbas en ella, envuelto en la capa. Desde aquí el bosque es un mar de oro bajo la luna. Te duermes. Cuando abres los ojos, crees ver sombras grises sentadas en las ramas de más arriba, mirándote. Parpadeas, y ya no hay nadie. Bajas con cuidado, preguntándote si lo has soñado.",
+      "imagePrompt": "A young traveler in a grey cloak lying on an empty platform of pale wood bound high among golden branches, a sea of moonlit golden treetops around him, faint grey figures perched on the branches above watching, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Trepar a un árbol"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "Los rezagados",
+      "text": "Atajas por la linde del bosque, donde los árboles son más bajos y avanzas más deprisa. Allí, entre unos matorrales, dos orcos discuten a media voz: uno grande, de las montañas, y un arquero flaco. Se han quedado atrás de su banda y no se atreven a entrar en el bosque solos. Al verte, la discusión se acaba: por fin tienen algo que hacer con su miedo. Te rodean despacio, sin dejarte llegar a los árboles grandes.",
+      "imagePrompt": "Among thickets at the edge of a golden forest at night, a big mountain orc and a thin orc archer spreading out to surround a young traveler in a grey cloak, cutting him off from the great trees behind them, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atajar por la linde",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -2, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -2, "pattern": ["32", "323"], "everyNTicks": 1 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "Una canción lejana",
+      "text": "Te detienes, te apoyas en un tronco y esperas en silencio, sin saber muy bien a qué. Al cabo de un rato llega, de muy lejos, una canción. Son voces claras, muchas, que cantan en lo alto de los árboles en una lengua que no entiendes. No es una canción alegre. Habla de agua, te parece, y de algo perdido hace mucho tiempo. La escuchas hasta el final. Cuando calla, notas las mejillas mojadas y el corazón, de algún modo, más tranquilo.",
+      "imagePrompt": "A young traveler in a grey cloak leaning against a vast grey tree trunk in a moonlit golden forest, eyes closed, tears on his cheeks, listening to distant singing drifting down from high in the trees, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Esperar en silencio"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "Las aguas del Nimrodel",
+      "text": "Llegas a la orilla del Nimrodel, que baja claro y rápido sobre piedras pálidas. Te quitas las botas y lo cruzas a pie. El agua está helada y te llega a las rodillas, pero no duele: al contrario, a cada paso sientes que se lleva algo, el cansancio, el polvo de la montaña, el recuerdo del fuego bajo el puente. Al llegar a la otra orilla te quedas un momento quieto, con el agua goteándote. Hacía semanas que no respirabas así.",
+      "imagePrompt": "A young traveler in a grey cloak wading barefoot and knee-deep across a clear swift stream running over pale stones, boots in hand, a look of relief on his face, golden-leaved trees on both banks in moonlight, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el Nimrodel a pie"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "El sendero escondido",
+      "text": "Entre dos raíces enormes descubres un sendero estrecho, tan limpio de hojas que alguien tiene que cuidarlo. Lo sigues. Cada vez que dudas en una bifurcación, encuentras una señal: una rama doblada, una piedra blanca, una hoja prendida en una corteza. Nunca ves a nadie, pero sabes que te están guiando, despacio, hacia el este, hacia el lugar donde se juntan los ríos. Te preguntas si es una invitación o una trampa. Decides confiar.",
+      "imagePrompt": "A narrow path swept clean of leaves winding between enormous grey roots in a golden forest, a small white stone and a bent branch marking a fork, a young traveler in a grey cloak following it, unseen guides above, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Tomar un sendero escondido"
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El jefe de los arqueros",
+      "text": "Llegas al lugar donde el Nimrodel se une al río que traes desde las montañas, más ancho y frío. Al otro lado, el bosque se vuelve más espeso y más dorado. Pero antes de que encuentres la manera de cruzar, te rodean: un orco enorme con un arco negro tan alto como él, el jefe de los arqueros, con un orco de las montañas y un arquero a su lado. Luchas con la espalda contra el río. Muy arriba, entre las ramas doradas, unas figuras vestidas de gris observan la lucha en silencio, con los arcos tensos y una cuerda enrollada al hombro.",
+      "imagePrompt": "At the meeting of two rivers under golden trees, a huge orc chieftain with a black bow as tall as himself and two orcs fighting a young traveler in a grey cloak, grey-clad elven archers watching silently from the high branches, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          { "name": "Jefe de los arqueros orcos", "portrait": "boss_nimrodel", "levelOffset": 4, "pattern": ["32", "323", "3232", "12", "121", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 20, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } },
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -4, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2 },
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -4, "pattern": ["32", "323"], "everyNTicks": 1 }
+        ]
+      }
+    }
+  ]
+}

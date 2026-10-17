@@ -1,0 +1,122 @@
+{
+  "id": "puente",
+  "name": "The Last Bridge",
+  "nodes": {
+    "puente_1_0": {
+      "title": "The Lone-lands",
+      "text": "When dawn breaks, the shadow is gone and you are still standing, trembling, your sword notched and your soul frozen. You leave Weathertop behind without looking back. Eastward stretch the Lone-lands: brown ridges, withered heather, stunted copses and not a house for leagues. The Road crosses them towards the river Hoarwell and the Last Bridge. At night, from very far away, come long howls that belong to no common wolf. They are Wargs, and they are hunting."
+    },
+    "puente_2_0": {
+      "title": "Leagues of Road",
+      "text": "You keep to the Road, which is at least firm and straight. You make good speed, sleeping little and badly, always with one eye on the horizon. The land does not change: ridges, stones, wind. At times the Road passes beside crumbled walls or beneath hills crowned with ruins, memories of a time when this land had kings. Now only the crows dwell here. On the second day the sky closes in and the air grows heavy with rain.",
+      "choiceLabel": "Follow the East Road"
+    },
+    "puente_2_1": {
+      "title": "The Grey Scout",
+      "text": "You leave the Road and strike into the wild lands to the south, where it is easier to pass unnoticed. The ground is rough, full of ravines and scrub. On the second evening, a lone Warg comes out at you from a copse: huge, with a dirty grey coat and yellow eyes. This is no ordinary hungry wolf; it is a scout of its pack, and if it escapes, it will bring the others. You cannot let it go.",
+      "choiceLabel": "Cut across the wild lands"
+    },
+    "puente_3_0": {
+      "title": "The Fallen Tower",
+      "text": "The storm catches you in open country and you run towards the only shelter you see: a ruined tower on a knoll beside the Road. Inside, the floor is dry, and long ago someone left a pile of firewood beneath a collapsed stair. You light a small fire, the first in days. Outside, the rain lashes the stones. From the arrow slit you see the Road gleaming with water and hear, between peals of thunder, a distant howl.",
+      "choiceLabel": "Shelter in the fallen tower"
+    },
+    "puente_3_1": {
+      "title": "The Dwarf from the West",
+      "text": "You meet a traveller walking west with an enormous bundle: a Dwarf with a braided beard and an axe at his belt, returning to the Blue Mountains. He mistrusts you until you share your pipe-weed. Then he talks: of the Wargs prowling the river, more numerous than ever, and of a pack leader as big as a pony that guides them. He advises you to cross the bridge by day and to trust no one who asks too many questions.",
+      "choiceLabel": "Greet the lone traveller"
+    },
+    "puente_3_2": {
+      "title": "Small Footprints",
+      "text": "In a sandy ravine you come upon a trail you recognise: small bare feet, a man's boots and a pony's hooves. The travellers passed this way, slowly, as though one of them could not walk fast. You follow them a good stretch among brambles and stones. The trail bends little by little to the north, back towards the Road, and you understand that they too are making for the bridge. Perhaps you are not as far behind as you thought.",
+      "choiceLabel": "Follow the small footprints"
+    },
+    "puente_3_3": {
+      "title": "The Bramble Ravine",
+      "text": "To avoid a bare ridge where you could be seen for leagues, you go down into a narrow ravine choked with brambles and thorns. Its floor is a maze of fallen rocks and icy rills. You make slow progress, your cloak in tatters, and in the afternoon you find something that chills your blood: the remains of a deer devoured very recently and, all around, paw prints the size of your open hand. You are in Warg country.",
+      "choiceLabel": "Go down the bramble ravine"
+    },
+    "puente_4_0": {
+      "title": "Siege at the Tower",
+      "text": "You decide to spend the night in the tower. Towards midnight the fire has burned down to embers and you wake with a start: something is scratching at the stone outside. Three Wargs have smelled the smoke and prowl the entrance, growling softly, as if talking among themselves. One slips through the fallen doorway while the others seek the arrow slit. You seize a brand in your left hand and your sword in your right. The night will be long.",
+      "choiceLabel": "Spend the night in the tower"
+    },
+    "puente_4_1": {
+      "title": "The Man at the Bend",
+      "text": "You do not want to lose time and push on through the rain. At a bend in the Road, a hooded man sits waiting on a stone, as though the downpour meant nothing to him. He asks whether you come from the hills and whether you have seen some halflings. He speaks with the accent of Dunland, and his hand never strays from his dagger. When you answer no, he smiles with crooked teeth and rises. One way or another, he means to get what you know.",
+      "choiceLabel": "Press on through the rain"
+    },
+    "puente_4_2": {
+      "title": "A Night with the Dwarf",
+      "text": "You accept a place at the Dwarf's camp that night, in the shelter of some rocks. He snores like a bellows, but he sleeps with his axe in his hand, and rightly so: before dawn, the Wargs attack. He plants himself against two, cursing in his own tongue, and shouts at you to deal with the third, the biggest, which comes straight for you with gaping jaws. There is no time to think, nor to be afraid.",
+      "choiceLabel": "Camp with the Dwarf"
+    },
+    "puente_4_3": {
+      "title": "Those Who Ask",
+      "text": "You take leave of the Dwarf and go on alone eastward at a good pace. At midday you hear hooves behind you: two riders on scrawny horses overtake you and hem you in. They are men of Dunland, and they ask after a Dwarf with a great deal of baggage and some halflings travelling with a Ranger. You tell them you have seen no one. They do not believe you. They dismount unhurriedly and draw their swords.",
+      "choiceLabel": "Go on ahead alone"
+    },
+    "puente_4_4": {
+      "title": "On the Same Scent",
+      "text": "You follow the travellers' trail without losing it, though at times it fades among the stones. You are not the only one: other prints, enormous, cross it again and again. At dusk, in a birch clearing, four Wargs lift their muzzles from the ground they were sniffing. They were after the same scent as you, and they look at you as a nuisance that can be eaten. They spread out unhurriedly to hem you in. At your back there is only a fallen trunk.",
+      "choiceLabel": "Stay on the trail"
+    },
+    "puente_4_5": {
+      "title": "The Lookout's Horn",
+      "text": "You leave the trail and turn back towards the Road, seeking flatter ground. On top of a ridge you see a man crouched watching the highway: a Dunlending spy with a horn hung about his neck. If he sounds it, anyone nearby will know you are coming. You creep up behind him, slowly, but a stone shifts under your boot. The man spins round, lifts the horn to his lips and, seeing your sword, draws his own.",
+      "choiceLabel": "Head back towards the Road"
+    },
+    "puente_4_6": {
+      "title": "The Lair",
+      "text": "You follow the floor of the ravine, determined to get out of it as soon as you can. But the ravine narrows and ends in a wall of rock with a cave at its foot. The smell is unmistakable. Out of the darkness comes an old, enormous Warg, grey-muzzled and with one ear torn away, ready to defend its lair. It growls so deep you feel it in your chest. The passage is too narrow to turn your back on it.",
+      "choiceLabel": "Follow the ravine floor"
+    },
+    "puente_4_7": {
+      "title": "Ambush on the Crest",
+      "text": "You climb the ravine wall, hand over hand, until you come out onto a bare crest. There a surprise awaits you: a spy from Dunland, keeping watch from above, greets you with a kick that nearly sends you back to the bottom. You catch hold of a root and manage to haul yourself up. As you grapple, a howl answers very near, and a Warg appears over the crest, drawn by the noise. Now you have two enemies and a precipice at your back.",
+      "choiceLabel": "Climb out of the ravine"
+    },
+    "puente_5_0": {
+      "title": "The Moorland Well",
+      "text": "You find a stone well in the middle of the moor, beside the foundations of a house that no longer exists. The water at the bottom is dark, but fresh. You tend your scratches, drink and sit with your back against the well's rim. For a while you hear only the wind in the heather. You think of Bree, of your shuttered house, of how far you have come. Then you rise: the river cannot be far now.",
+      "choiceLabel": "Rest at the old well"
+    },
+    "puente_5_1": {
+      "title": "The Bridge in the Distance",
+      "text": "You climb a ridge to get your bearings. From the top, at last, you see the end of the Lone-lands: a band of dark trees marks the course of the Hoarwell, and over it, small as a toy, a stone bridge of three arches. Beyond, the land rises into wooded hills. But you see something else too: grey shadows moving among the trees on the bank, too many to count.",
+      "choiceLabel": "Climb the highest ridge"
+    },
+    "puente_5_2": {
+      "title": "The Water That Erases",
+      "text": "A broad, icy stream bars your way towards the Hoarwell. You wade across with the water to your knees, which go numb at once. On the far bank you dry yourself under a pale sun, then step back into the current for a good stretch to wash away your scent, as the hunters of Bree do to throw off the dogs. If the Wargs are looking for you, at least they will have to work for it. The air already smells of a great river.",
+      "choiceLabel": "Wade the icy stream"
+    },
+    "puente_5_3": {
+      "title": "The Field of Bones",
+      "text": "You cross a plain where bones lie bleaching in the grass: horses, wolves and the odd man, fallen in a skirmish no one will ever sing of. The weapons are rusted, though some arrowheads look recent. You pick up a small shield, still serviceable, and sling it on your back. As you walk, you feel the eyes of the crows upon you. They know this field always has room for one more.",
+      "choiceLabel": "Cross the field of bones"
+    },
+    "puente_6_0": {
+      "title": "Among the Reeds",
+      "text": "You go down towards the river by a wide detour, always against the wind, so that the Wargs will not catch your scent. The Hoarwell runs grey and swift, swollen by the rains, between banks of stone. You crawl through the reeds until the Last Bridge is in sight. On the causeway, between the arches, several grey beasts lie stretched out. A shadow far larger and darker than the rest rises and sniffs the air in your direction.",
+      "choiceLabel": "Steal towards the river"
+    },
+    "puente_6_1": {
+      "title": "A Race to the River",
+      "text": "You decide not to wait and run down towards the river across open country, hoping to reach the bridge before you are discovered. You do not make it. Two Wargs that were watching from a copse come after you, one on each side, and force you to a halt on a slope of loose stones. Further down, by the bridge, a deep howl answers them. You have to finish these two before the others arrive.",
+      "choiceLabel": "Run for the bridge"
+    },
+    "puente_7_0": {
+      "title": "The Pack Leader",
+      "text": "The Last Bridge spans the Hoarwell in three arches of ancient stone. The travellers you follow crossed here days ago; now, on the causeway, the leader of the pack awaits you: a gigantic Warg, black as coal, scarred by a thousand fights, with eyes that seem to understand too much. It plants itself in the middle of the bridge and bars your way. On the other side wait the wooded hills and the road east. To reach them, you must go through it."
+    }
+  },
+  "rivals": {
+    "Huargo explorador": "Warg Scout",
+    "Huargo": "Warg",
+    "Espía dunlendino": "Dunlending Spy",
+    "Huargo grande": "Great Warg",
+    "Huargo viejo": "Old Warg",
+    "Jefe de la manada de huargos": "Warg Pack Leader"
+  }
+}

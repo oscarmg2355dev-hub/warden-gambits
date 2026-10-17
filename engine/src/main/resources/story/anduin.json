@@ -1,0 +1,478 @@
+{
+  "id": "anduin",
+  "name": "Río Anduin",
+  "baseLevel": 40,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "El Río Grande",
+      "text": "El gran río es ancho y lento, de un color gris verdoso que refleja el cielo de invierno. La barca élfica responde al menor golpe de remo, y pronto aprendes a dejar que la corriente haga casi todo el trabajo. A ambos lados se suceden bosques oscuros, cañaverales y orillas de barro. No ves a nadie. Comes un bocado del pan élfico y miras al sur, donde el río se curva y desaparece. Sabes que, en alguna parte delante de ti, tres barcas grises llevan el mismo rumbo.",
+      "imagePrompt": "A small grey elven boat drifting down a wide grey-green river in winter, dark forests and reeds on both banks, a young traveler in a grey cloak resting his paddle, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "Las islas",
+      "text": "El río se abre en varios brazos entre islas largas y bajas, cubiertas de sauces desnudos y de juncos. Eliges un canal estrecho y avanzas a golpe de remo entre las ramas que rozan el agua. Aquí la corriente es más mansa y el silencio pesa. Una garza levanta el vuelo delante de ti, y su graznido te sobresalta más que cualquier orco. En la orilla de un islote ves pisadas viejas en el barro, borradas casi por la lluvia.",
+      "imagePrompt": "A narrow channel between low islands of bare willows and reeds on a great river, a heron taking flight, a young traveler paddling a small grey boat, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Remar entre las islas"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "Flechas desde el este",
+      "text": "Te acercas a la orilla oriental para huir de la corriente fuerte del centro. Es un error. Una flecha negra silba sobre tu cabeza y se clava en el agua, y luego otra, que se hunde en la borda. Entre los matorrales de la ribera asoman dos orcos con arcos cortos, riéndose. No puedes remar más rápido que sus flechas, así que embistes la orilla, saltas al barro y subes hacia ellos con la espada en la mano.",
+      "imagePrompt": "Two orc archers in thickets on a muddy eastern riverbank shooting black arrows at a young traveler leaping from a small grey boat with sword drawn, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Arrimarse a la orilla oriental",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Arquero orco",
+            "portrait": "orc_archer",
+            "levelOffset": -2,
+            "pattern": [
+              "32",
+              "323"
+            ],
+            "everyNTicks": 1,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Arquero orco",
+            "portrait": "orc_archer",
+            "levelOffset": -2,
+            "pattern": [
+              "32",
+              "323"
+            ],
+            "everyNTicks": 1
+          }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "La ribera de los sauces",
+      "text": "Desembarcas en una ribera de sauces para estirar las piernas y buscar leña seca. El suelo está blando y huele a podrido. Entre los troncos encuentras los huesos de un ciervo, limpios y recientes, y alrededor, huellas de patas enormes. Te das la vuelta despacio. Entre las ramas, unos ojos amarillos te observan, y luego un huargo sale del sotobosque, bajo y silencioso, con el lomo erizado. Entre él y la barca solo estás tú.",
+      "imagePrompt": "A huge warg stalking out of a willow thicket on a riverbank, deer bones on the ground, a young traveler with sword drawn between it and his beached boat, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Desembarcar entre los sauces",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": 0,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "Los bajíos",
+      "text": "El río se ensancha y pierde hondura, y tienes que bajar y arrastrar la barca por un bajío de piedras. Estás con el agua por las rodillas cuando oyes los aullidos. Dos huargos bajan corriendo por la ladera hacia la orilla, y detrás, un orco con un arco grita órdenes. Atas la cuerda de la barca a una roca y sales del agua a su encuentro antes de que te rodeen en los bajíos.",
+      "imagePrompt": "Two wargs and an orc archer charging down a slope toward a shallow stony ford, a young traveler wading out of the river with a tethered grey boat behind him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar los bajíos",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": -4,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": -4,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Arquero orco",
+            "portrait": "orc_archer",
+            "levelOffset": -4,
+            "pattern": [
+              "32",
+              "323"
+            ],
+            "everyNTicks": 1,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "El carrizal",
+      "text": "Te metes por un brazo muerto del río, entre carrizos más altos que tú, buscando un sitio tranquilo para pasar la noche. El agua está quieta y negra. De pronto una flecha corta los tallos junto a tu cara. Un arquero orco te ha seguido por la orilla, agachado entre los carrizos, y vuelve a tensar el arco. Saltas a tierra firme y corres hacia él antes de que tenga tiempo de apuntar otra vez.",
+      "imagePrompt": "An orc archer crouching among tall reeds by a still black backwater, drawing a bow at a young traveler jumping from a grey boat, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Remontar un brazo del río",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Arquero orco",
+            "portrait": "orc_archer",
+            "levelOffset": 1,
+            "pattern": [
+              "32",
+              "323"
+            ],
+            "everyNTicks": 1,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "La manada de la orilla",
+      "text": "Acampas en una playa de grava bajo un talud, sin fuego, envuelto en la capa gris. A medianoche te despierta el ruido de piedras que ruedan. Arriba del talud hay sombras que se mueven, cuatro, una detrás de otra, y el viento te trae un olor a perro mojado y a carroña. Una manada de huargos ha olido tu rastro. No hay tiempo para empujar la barca al agua. Te pones en pie, con la espalda contra el río.",
+      "imagePrompt": "Four wargs descending a gravel bank at midnight toward a young traveler standing with his back to a dark river beside a beached grey boat, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acampar en la orilla",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": -5,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": -5,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": -5,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": -5,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "Un campamento junto al agua",
+      "text": "En una ensenada de la orilla oeste descubres los restos de un campamento. Hay ceniza fría bajo una capa de hojas, tres surcos en la arena donde alguien varó tres barcas, y huellas de pies pequeños, descalzos, junto a otras de botas. Entre las piedras encuentras una hoja doblada, verde y plata, como las que envolvían el pan de los elfos. No hay sangre ni señales de lucha. Quienes durmieron aquí se fueron tranquilos, río abajo.",
+      "imagePrompt": "An abandoned riverside camp in a cove, cold ashes, three keel marks in the sand, small bare footprints, a young traveler kneeling to pick up a folded green and silver leaf, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Revisar un viejo campamento"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "Las tierras pardas",
+      "text": "La orilla este se vuelve llana y desnuda, una tierra parda de hierba seca y matorrales quemados que se extiende hasta perderse de vista. No crece un árbol, no canta un pájaro. Aquí y allá ves cenizas viejas y montones de huesos. Remas lo más pegado que puedes a la orilla contraria. Al atardecer, una columna de humo se levanta muy lejos, hacia el este, y luego se deshace. Alguien vive en ese desierto, y no quieres saber quién.",
+      "imagePrompt": "A barren brown wasteland of dry grass and burnt scrub along the eastern bank of a great river, a distant column of smoke, a young traveler paddling close to the far shore, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Mirar hacia las tierras pardas"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "Hogueras en la otra orilla",
+      "text": "Esa noche, amarrado a una rama, ves encenderse hogueras en la orilla este, una tras otra, hasta formar una hilera de ojos rojos a lo largo del agua. Oyes cantos roncos y golpes de metal. No puedes quedarte tan cerca. Te cubres con la capa gris, sueltas la amarra y te dejas llevar por el centro del río, sin tocar el remo. Pasas frente a las hogueras tan despacio que te duele el pecho de contener el aliento. Nadie grita. Al amanecer, el río vuelve a estar vacío.",
+      "imagePrompt": "A row of orc campfires along a dark eastern riverbank at night, a young traveler hunched under a grey cloak in a small boat drifting silently past in mid-river, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Vigilar la orilla de noche"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "La niebla del amanecer",
+      "text": "Amanece con una niebla tan espesa que no ves la proa de tu propia barca. El río es solo un rumor y el golpe del remo en el agua. Avanzas a ciegas, guiándote por el sonido de la orilla, y en un momento oyes voces ásperas muy cerca, en una lengua que conoces de Moria. Dejas de remar y contienes la respiración. Las voces se alejan. Cuando la niebla se levanta, el río está vacío y el sol pálido brilla sobre el agua.",
+      "imagePrompt": "A small grey boat lost in thick white morning fog on a river, a young traveler holding his breath with paddle raised, shadowy orc shapes faintly visible on the bank, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Remar entre la niebla"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "El islote de los juncos",
+      "text": "Encuentras un islote pequeño en medio del río, rodeado de juncos, y decides descansar allí un día entero. Nadie puede acercarse sin que lo oigas. Secas la ropa al sol pálido, remiendas la capa vieja y repasas el filo de la espada con la piedra. Comes poco, porque el pan élfico rinde mucho. Por la tarde, un martín pescador se posa en la proa de la barca. Lo miras sin moverte hasta que se va.",
+      "imagePrompt": "A tiny reed-ringed island in the middle of a wide river, a young traveler sharpening his sword beside drying clothes, a kingfisher perched on the bow of a grey boat, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Descansar en un islote"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "Huellas de orco",
+      "text": "En la orilla este, el barro conserva un rastro fresco: botas de clavos, muchas, y entre ellas las marcas de patas grandes. Lo sigues a pie un trecho. El rastro corre paralelo al río, hacia el sur, como si quienes lo dejaron siguieran algo que va por el agua. Encuentras un trapo negro enganchado en una zarza y una flecha rota. Vuelves a la barca deprisa. Lo que sea que persiguen, va delante de ti.",
+      "imagePrompt": "Fresh orc boot tracks and huge paw prints in the mud of a riverbank, a broken black arrow and a black rag on a bramble, a young traveler crouching to study them, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir unas huellas de orco"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "El bosque callado",
+      "text": "En la orilla oeste el bosque llega hasta el agua, viejo y oscuro, con troncos cubiertos de musgo. Desembarcas para buscar agua de un arroyo y te internas unos pasos. Todo está en silencio, pero no es un silencio hostil: es el de un lugar donde nadie ha entrado en mucho tiempo. Bebes, llenas el odre y te quedas un rato escuchando. Por un momento te acuerdas del Bosque Dorado, y te parece muy lejos.",
+      "imagePrompt": "An ancient silent forest of mossy trunks reaching down to the western bank of a river, a young traveler filling a waterskin at a small stream, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Internarse en la ribera oeste"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "La lluvia",
+      "text": "Una lluvia fría empieza a caer al mediodía y no para en todo el día. El río se pone gris y crecido, y la barca se llena de agua más rápido de lo que puedes achicarla. Te refugias bajo una roca saliente de la orilla, con la barca volcada encima. La capa élfica te mantiene más seco de lo que esperabas. Escuchas la lluvia golpear el casco de la barca, y te duermes pensando en la posada de Bree.",
+      "imagePrompt": "Cold heavy rain over a swollen grey river, a young traveler sheltering under an overhanging rock with an upturned grey boat over him, wrapped in a grey cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Refugiarse de la lluvia"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "Emboscada en el recodo",
+      "text": "El río dobla en un recodo cerrado, bajo un risco de la orilla este, y la corriente te empuja hacia allí sin remedio. Cuando lo ves, ya es tarde: dos orcos con arcos esperan en lo alto, y en la playa, al pie del risco, dos huargos tiran de sus cadenas. Las flechas te obligan a varar. Saltas a la arena cubriéndote la cabeza con el brazo. Los orcos sueltan las cadenas.",
+      "imagePrompt": "Two orc archers atop a cliff at a river bend and two chained wargs being released on the beach below, a young traveler leaping from a grey boat onto the sand, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Doblar el gran recodo",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Arquero orco",
+            "portrait": "orc_archer",
+            "levelOffset": -5,
+            "pattern": [
+              "32",
+              "323"
+            ],
+            "everyNTicks": 1,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Arquero orco",
+            "portrait": "orc_archer",
+            "levelOffset": -5,
+            "pattern": [
+              "32",
+              "323"
+            ],
+            "everyNTicks": 1
+          },
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": -5,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": -5,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "Las estrellas sobre el agua",
+      "text": "Decides viajar de noche, cuando los ojos de la orilla ven menos. El cielo está despejado y las estrellas se reflejan en el río, de modo que parece que flotas entre dos cielos. Apenas tocas el remo. La corriente te lleva despacio y en silencio, y solo de vez en cuando oyes un chapoteo o el grito de un ave nocturna. Al amanecer has recorrido muchas leguas, y nadie te ha visto pasar.",
+      "imagePrompt": "A small grey boat drifting at night on a still river reflecting a starry sky, a young traveler lying back with his paddle across his knees, dark banks on both sides, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Dejarse llevar de noche"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "Huargos en el agua",
+      "text": "El río se estrecha entre un islote y la orilla, y la corriente te acerca a tierra más de lo que quisieras. En la ribera, dos huargos te esperaban. Se lanzan al agua sin dudar y nadan hacia la barca, con las orejas aplastadas y los ojos fijos en ti. Uno llega a apoyar las patas en la borda y casi te vuelca. Lo apartas a golpes de remo, alcanzas una barra de grava y saltas a ella, espada en mano, mientras los dos salen del agua chorreando.",
+      "imagePrompt": "Two wargs swimming toward a small grey boat in a narrow channel between an islet and the riverbank, a young traveler leaping onto a gravel bar with sword drawn, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el canal estrecho",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": -2,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": -2,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "Señales en la orilla",
+      "text": "En una roca lisa de la orilla oeste alguien ha dejado una señal: tres piedras pequeñas, una encima de otra, y una flecha dibujada con carbón que apunta al sur. No es obra de orcos. Más allá, en un árbol, ves la marca fina de una cuerda que alguien ató para amarrar una barca. No sabes si las señales eran para ti o para otros que vienen detrás, pero te dan ánimo. Alguien ha pasado por aquí, y ha seguido adelante.",
+      "imagePrompt": "A smooth riverside rock with three stacked pebbles and a charcoal arrow pointing south, a rope mark on a nearby tree, a young traveler studying them beside his grey boat, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir las señales de la orilla"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "Las colinas de piedra",
+      "text": "Tras muchos días de río, la tierra empieza a alzarse a ambos lados. Los bosques se aclaran y aparecen colinas grises de roca desnuda, cada vez más altas y abruptas. El río se estrecha y la corriente gana fuerza; la barca corre ahora sola, y tienes que usar el remo para mantenerla lejos de las piedras. El aire es más frío. Delante, entre las colinas, el agua se vuelve blanca en algunos puntos.",
+      "imagePrompt": "Grey rocky hills rising on both sides of a narrowing river, the current quickening with white water ahead, a young traveler steering a small grey boat with his paddle, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Remar hacia las colinas"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "Un rumor lejano",
+      "text": "Una mañana, al despertar, oyes un sonido nuevo: un rumor sordo, constante, que viene del sur y no se parece al viento. Pegas la oreja a la roca y lo sientes también allí, como un latido. Son rápidos, muchos y fuertes, y aún están lejos. En la orilla este se ven más hogueras que nunca. Comprendes que el río se va a cerrar delante de ti, y que quien quiera cruzar por ahí tendrá que pasar entre enemigos.",
+      "imagePrompt": "A young traveler with his ear pressed to a riverside rock at dawn, listening to a distant roar of rapids, many campfires smoking on the far eastern bank, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Escuchar el rumor del agua"
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El cabecilla de los saqueadores",
+      "text": "En un paso estrecho, justo antes de los rápidos, el río corre entre dos peñas. De pronto la barca choca contra algo: una cadena tendida bajo el agua. En la peña este, un orco enorme con un arco largo y un alfanje al cinto se levanta riendo. Es el cabecilla de los saqueadores del río, que vive de lo que el agua le trae. A su lado, un arquero ya apunta. Saltas a la roca más cercana y trepas hacia ellos, con la barca atrapada.",
+      "imagePrompt": "A huge orc chieftain with a longbow and scimitar laughing on a rock above a river narrows, an orc archer aiming beside him, a young traveler climbing from a grey boat caught on an underwater chain, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Cabecilla de los saqueadores del río",
+            "portrait": "boss_anduin",
+            "levelOffset": 8,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "13",
+              "131",
+              "31",
+              "32",
+              "323",
+              "123"
+            ],
+            "everyNTicks": 1,
+            "modes": {
+              "defenseBelowPct": 15,
+              "attackAbovePct": 70,
+              "maxDefenses": 1,
+              "defense": [
+                "2132",
+                "21",
+                "212",
+                "2121",
+                "21212",
+                "12",
+                "121"
+              ]
+            }
+          },
+          {
+            "name": "Arquero orco",
+            "portrait": "orc_archer",
+            "levelOffset": -4,
+            "pattern": [
+              "32",
+              "323"
+            ],
+            "everyNTicks": 1
+          }
+        ]
+      }
+    }
+  ]
+}

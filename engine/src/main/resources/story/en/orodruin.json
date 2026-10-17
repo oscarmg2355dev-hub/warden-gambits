@@ -1,0 +1,11 @@
+{
+  "id": "orodruin",
+  "name": "Mount Doom",
+  "nodes": {
+    "orodruin_final": {
+      "title": "The End of the Shadow",
+      "text": "The Nazgûl has fled northward, shrieking, astride its wounded beast, and you are left on the slope without understanding how you are still alive. The next day the earth shudders. The mountain bursts open: fire, rocks and a thunder that does not end. Far off, the dark tower of the north cracks and crumbles amid clouds of dust, and a mighty wind sweeps the plain. You run downhill between rivers of lava to a knoll of solid rock. When the smoke parts, you see great Eagles flying towards the mountain. You will never wholly know what happened up there, nor whether the patrols you drew after you left another path free. You think of the owners of those small footprints and find yourself hoping, without knowing why, that they are alive. The shadow has gone. With your pack and waterskin all but empty after so many days, you look west and begin the long road home to Bree."
+    }
+  },
+  "rivals": {}
+}

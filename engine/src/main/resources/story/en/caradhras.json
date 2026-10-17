@@ -1,0 +1,119 @@
+{
+  "id": "caradhras",
+  "name": "Caradhras",
+  "nodes": {
+    "caradhras_1_0": {
+      "title": "At the Foot of the Redhorn",
+      "text": "You leave behind the ruins of the Dunlending camp, where the embers still smoke, and begin to climb. The road to the pass clambers up the flank of Caradhras, whose slopes beneath the snow have a reddish hue, like old iron. The holly trees fall away below and, with them, the last shelter. The wind comes down from the summit with a long whistle, and the northern sky has turned the colour of lead. You draw the grey cloak of Rivendell tight about you and look up. Beyond those mountains runs the trail you have followed since Bree."
+    },
+    "caradhras_2_0": {
+      "title": "The Road to the Pass",
+      "text": "You follow the old road as it zigzags up the slope, half buried by snow. Rounding a bend, you stop: someone passed this way only a few days ago. There are deep prints of tall men's boots, others far smaller, almost like children's, and the hoofmarks of a laden pony. They climb towards the pass in single file, breaking a furrow. Whoever they are, they overtook you while you were fighting in Hollin, and you recall the rumours that have followed you since Bree. You tread where they trod and keep climbing, the wind in your face.",
+      "choiceLabel": "Take the road to the pass"
+    },
+    "caradhras_2_1": {
+      "title": "The Frozen Gully",
+      "text": "You leave the road and climb a narrow gully that cuts across the slope, where the wind barely reaches. It is steeper, but the rock walls shield you and you make good speed. The silence is almost complete: only the snow creaking beneath your boots and, now and then, a shard of ice breaking loose far above. Then you see in the snow great wolf tracks, many of them, and black feathers snagged on the rocks. This gully is not as empty as it seems. You tighten your grip on your sword.",
+      "choiceLabel": "Climb the gully"
+    },
+    "caradhras_3_0": {
+      "title": "Eyes on the Ridge",
+      "text": "So as not to lose the trail, you climb a bare ridge from which half the mountain can be seen. You can be seen too. Two crebain break from the clouds and dive at you, cawing hoarsely, while others keep watch from on high. They attack by turns, seeking your eyes with their beaks. If one of them returns to its master, someone will soon know that a lone traveller is climbing towards the pass. You cannot let them escape.",
+      "choiceLabel": "Advance along the ridge"
+    },
+    "caradhras_3_1": {
+      "title": "The Wolf on the Trail",
+      "text": "You follow the company's tracks step by step, never straying from the furrow they broke. By mid-morning you realise you are not the only one: over the travellers' footprints lie fresher ones, those of a large wolf that has also followed the trail. You see it soon after, standing in the middle of the path, grey and lean, its yellow eyes fixed on you. It neither flees nor howls. It lowers its head and advances slowly, with the calm of one that has hunted men before.",
+      "choiceLabel": "Follow the company's tracks"
+    },
+    "caradhras_3_2": {
+      "title": "The Pack in the Gully",
+      "text": "You follow the wolf tracks up the gully, your sword bare. The trail narrows between two rocks and, on the other side, you find them: two enormous wolves with dirty grey coats, gnawing the bones of a mountain goat. They raise their heads together. These are no wild beasts; they move as one, and while one stays in front, the other slinks along the slope to cut off your retreat. Someone has taught them to hunt like this. You will have to fight in the snow, with no room to manoeuvre.",
+      "choiceLabel": "Follow the wolves' trail"
+    },
+    "caradhras_3_3": {
+      "title": "Black Feathers",
+      "text": "You would rather not cross paths with whatever left those tracks, so you climb the wall of the gully, clinging to icy holds. At the top, on a ledge, you discover where the feathers came from: a nest of crebain, large and filthy, full of small bones. Four black birds take flight at once and fall upon you, shrieking, while you hold on to the rock with one hand. You must find your footing, draw your sword and fight on a ledge no wider than a table.",
+      "choiceLabel": "Climb out of the gully"
+    },
+    "caradhras_4_0": {
+      "title": "The Shelter beneath the Crag",
+      "text": "Beneath an overhanging crag you find a hollow sheltered from the wind, and you are not the first to use it. The snow is flattened where several people lay down, there are ashes of a fire and a forgotten branch of firewood, and in a corner, pony dung. The fire burned fiercely: the rock above is blackened, as if it had endured a flame brighter than any wood could give. You sit where they sat and eat something. For a moment you feel less alone on the mountain.",
+      "choiceLabel": "Seek the shelter of the crag"
+    },
+    "caradhras_4_1": {
+      "title": "The Ledge",
+      "text": "The road narrows to a ledge skirting a precipice, scarcely wider than your boots. On the left, the rock; on the right, a white void where the wind is lost. You edge sideways, your back pressed to the wall and your cloak flapping like a sail. Halfway along, a block of snow breaks loose above your head and brushes past you into the abyss. You stand motionless, not breathing, until the sound dies away. Then you go on, step by step, until you reach firm ground.",
+      "choiceLabel": "Cross the icy ledge"
+    },
+    "caradhras_4_2": {
+      "title": "Voices on the Wind",
+      "text": "You take refuge behind a cluster of rocks to catch your breath. The wind has changed: it no longer whistles but moans, and between its gusts you seem to hear distant voices, cruel laughter, words in a tongue you do not know. You tell yourself it is weariness. You close your eyes and the voices are still there, closer, as if someone were speaking just on the other side of the rock. You look out: there is no one, only whirling snow. It is as though the mountain itself had a voice and did not want you here.",
+      "choiceLabel": "Rest behind the rocks"
+    },
+    "caradhras_4_3": {
+      "title": "The Slope",
+      "text": "To gain time you cut straight across a smooth slope of hard snow instead of following the road's long detour. At first all goes well, digging in your heels. Then the crust breaks beneath your weight and you slide down the slope, faster and faster, until you manage to stop yourself by driving your sword into the ice. You lie sprawled, gasping, your heart pounding against your ribs. You have lost height and nearly an hour, but you are still whole. You rise, shake the snow from your cloak and climb again.",
+      "choiceLabel": "Cut across the slope"
+    },
+    "caradhras_4_4": {
+      "title": "The Lair",
+      "text": "You follow the pack's trail upward to a low cave that reeks of rotting meat. You enter with care. It is empty, but not abandoned: there are gnawed bones, grey fur on the rocks and, in a corner, a leather collar painted with a white hand. Those wolves have a master, and their master wants them to guard this pass. Before leaving you hear, very far off, a howl answered by others. The pack is hunting. You leave the cave and keep climbing, faster now.",
+      "choiceLabel": "Seek the pack's lair"
+    },
+    "caradhras_4_5": {
+      "title": "The Snow Bridge",
+      "text": "A deep crevasse cuts the gully from side to side, and there is only one way across: a bridge of frozen snow spanning it like a fragile arch. You test it with your sword. It holds. You cross on hands and knees, spreading your weight, never looking at the dark blue that opens beneath. Just as you are about to reach the far side, the arch creaks and collapses behind you with a muffled roar. You leap to the other edge and stand staring at the gap. There is no turning back this way now.",
+      "choiceLabel": "Cross the crevasse"
+    },
+    "caradhras_4_6": {
+      "title": "The Ice Cave",
+      "text": "You find a cave opened in the ice, with smooth blue walls that shine with a strange light. Inside, the wind does not blow, and the silence is so deep that you hear your own breathing. You sit down to rest and, by the light that filters in, discover on the rock at the back some angular runes, carved long ago. They are Dwarvish marks: someone opened this pass, or used it, when the mountains were still roads of trade. It comforts you to think that others survived here before you.",
+      "choiceLabel": "Take refuge in a cave"
+    },
+    "caradhras_4_7": {
+      "title": "The Spur",
+      "text": "You climb to the top of a rocky spur that commands the pass. The view takes your breath away: to the east, the summit of Caradhras is lost in a whirl of black clouds; to the west, far below, the downs of Hollin look like a grey carpet. And from the north the storm advances, a white wall swallowing the mountains one by one. You reckon you have a few hours. You scramble down from the spur in haste, determined to get as high as you can before it catches you.",
+      "choiceLabel": "Scale the top of the spur"
+    },
+    "caradhras_5_0": {
+      "title": "The Deep Snow",
+      "text": "You keep climbing towards the pass. The snow is already up to your knees, and every step costs as much as ten. It begins to snow in earnest: thick, heavy flakes that fall without a sound and erase the world around you. Soon you cannot see more than a few yards. You steer by the slope, always upward, and by the wind in your face. The cold seeps into your bones despite the cloak. You tell yourself the pass cannot be far, and you do not know whether you believe it.",
+      "choiceLabel": "Keep climbing towards the pass"
+    },
+    "caradhras_5_1": {
+      "title": "Wolves in the Blizzard",
+      "text": "You skirt the mountain along a lower slope, where the wind strikes less fiercely. It is a short respite. Out of the swirling snow appear two grey shapes trotting towards you without a sound, one on each side. They are large, lean wolves, their yellow eyes fixed on your throat. They have waited for the cold to wear you down. With snow up to your knees you can neither flee nor dodge. You plant your feet, raise your sword and await the first leap.",
+      "choiceLabel": "Skirt the lower slope"
+    },
+    "caradhras_5_2": {
+      "title": "Stones from Above",
+      "text": "You advance hugging the rock wall, seeking its shelter. That is when it begins to rain stone. First a pebble falls, then another, then a block the size of a barrel that bounces beside you and rolls on down the slope. You look up and see no one, only rock and cloud. You flatten yourself against the wall until it stops. When at last you move, you are certain that this mountain wants no one on its slopes, and you least of all.",
+      "choiceLabel": "Advance hugging the rock"
+    },
+    "caradhras_5_3": {
+      "title": "Cawing in the Snow",
+      "text": "You cross an open snowfield, without a rock to hide behind. Halfway over, a caw breaks the silence: a crebain, a huge black bird, circles above you, calling. At once a grey wolf that had been trailing you at a distance rises out of the snow, and the crebain swoops to attack with it, one from above and one from below. They work together, like the hound and the hawk of a single hunter. You turn with your sword raised; there is no way out but to fight.",
+      "choiceLabel": "Cross the snowfield"
+    },
+    "caradhras_6_0": {
+      "title": "The Retreat",
+      "text": "You understand that the mountain will not let you pass, and you turn back. Going down is almost worse than going up: the new snow covers the hollows and every step may be a slip. Soon you hear howling behind you, ever closer. Four grey wolves come down the slope after you, bounding through the snow with more ease than you will ever have. They catch you on a level shelf. There is no sense in running further. You turn to face them, sword in hand.",
+      "choiceLabel": "Retreat down the mountain"
+    },
+    "caradhras_6_1": {
+      "title": "The Closed Pass",
+      "text": "You climb to the mouth of the pass, between two walls of rock where the wind roars like a river. There the snow forms a wall taller than you. At its foot you find a furrow hacked open, as if someone had tried to dig a way through, and then the prints of many feet turning around and going down. Others came this far and could go no further. Nor will you. You look east one last time and begin your descent.",
+      "choiceLabel": "Try to cross the pass"
+    },
+    "caradhras_7_0": {
+      "title": "The Wrath of Caradhras",
+      "text": "Then the mountain unleashes all its fury. The sky closes in, the wind becomes an unbroken howl and the snow drives sideways, so thick you cannot see your own hands. High above, something rumbles: an avalanche breaks loose and comes down at you like a white sea. This is no ordinary storm; there is malice in it, an old will that wants to bury you. You cannot defeat a mountain. You can only endure, stay on your feet and descend westward, towards the skirts that curve south, where the ancient realms of the Dwarves lie hidden."
+    }
+  },
+  "rivals": {
+    "Crebain": "Crebain",
+    "Lobo de Saruman": "Wolf of Saruman",
+    "Furia del Caradhras": "Wrath of Caradhras"
+  }
+}

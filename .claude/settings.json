@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew:*)",
+      "Bash(./gradlew.bat:*)",
+      "PowerShell(.\\gradlew.bat:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(*adb.exe devices*)",
+      "Bash(*adb.exe logcat*)",
+      "Bash(*adb.exe exec-out screencap*)",
+      "Bash(*emulator.exe -list-avds*)"
+    ]
+  },
+  "env": {
+    "JAVA_HOME": "C:\\Program Files\\Android\\Android Studio\\jbr"
+  }
+}

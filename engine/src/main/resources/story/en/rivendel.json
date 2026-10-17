@@ -1,0 +1,115 @@
+{
+  "id": "rivendel",
+  "name": "Rivendell",
+  "nodes": {
+    "rivendel_1_0": {
+      "title": "Waking in Rivendell",
+      "text": "You wake in a soft bed, in a room full of light, with the murmur of a waterfall drifting in through the window. It takes you a while to remember: the rider at the ford, the cold, and then the river rising again in white crests that swept the rider downstream amid shrieks. Afterwards, as you will later be told, an Elf-lord with golden hair lifted you from the bank and set you upon his steed. An Elf-woman changing the water in the basin smiles at you: you are in Rivendell, in the house of the lord of the valley, and here you are safe. Outside, the valley awaits you."
+    },
+    "rivendel_2_0": {
+      "title": "The Great House",
+      "text": "When you can stand, you wander through the house. It is large and labyrinthine, made of carved wood and pale stone, with galleries open to the valley and stairs that never seem to lead to the same place twice. The Elves greet you with a quiet courtesy, as if wounded travellers were an everyday matter. From a window you watch people arriving from very far away: Dwarves with braided beards, Elves clad in green and grey, a tall man with a great horn at his side. Something important is being prepared in this house.",
+      "choiceLabel": "Explore the house"
+    },
+    "rivendel_2_1": {
+      "title": "The Hidden Valley",
+      "text": "You step out into the valley with the morning. Rivendell lies tucked in a narrow cleft between pinewoods, with the river running along its floor and waterfalls tumbling everywhere, white and loud. The air smells of resin and damp leaves. Along the paths pass Elves who sing as they work, and far off, beyond the trees, you hear the rhythmic ring of a hammer on an anvil. A path climbs the slope beside the highest waterfall. You breathe deeply. For the first time in weeks, you are in no hurry.",
+      "choiceLabel": "Go out into the valley"
+    },
+    "rivendel_3_0": {
+      "title": "The Hall of Fire",
+      "text": "At nightfall they lead you to the Hall of Fire, a long, pillared chamber where a fire always burns and where the Elves come to sing and to listen. You sit in a corner, near the shadows. The songs are in a tongue you do not understand, but the images come on their own: grey seas, ancient stars, white ships. For the first time since you left Bree, the weariness in your chest dissolves. No one asks who you are or what you seek. For tonight, it is enough to be here.",
+      "choiceLabel": "Enter the Hall of Fire"
+    },
+    "rivendel_3_1": {
+      "title": "The Ancient Books",
+      "text": "A soft-spoken Elf leads you to a room full of shelves, rolled maps and books older than any kingdom of Men. He teaches you to read a map of the lands stretching south of the valley, along the Misty Mountains. There, he tells you, lay Eregion, which Men call Hollin: a land of Elven-smiths, famed in another age, that fell to ruin after an ancient war. Today only stones, holly trees and silence remain. Something in those words calls to you.",
+      "choiceLabel": "Seek out the library"
+    },
+    "rivendel_3_2": {
+      "title": "The Forge of the Elves",
+      "text": "You follow the sound to an open forge beside the river, where a strong-armed Elven-smith is working a red-hot blade. He notices your sword, hanging notched from your belt, and asks you to leave it with him. He holds it a long while in his hands, like one who listens. It is honest steel, he says, forged by Men, and it has seen things it should not have seen. He promises to return it better than it came. Meanwhile, he invites you to stay and watch.",
+      "choiceLabel": "Follow the ring of the hammer"
+    },
+    "rivendel_3_3": {
+      "title": "Beside the Waterfalls",
+      "text": "You climb the path that clambers beside the waterfall, among ferns drenched by the spray. At the top is a stone lookout from which you can see the whole valley and, to the north and east, the peaks of the mountains. There you find two tall Elves, dark-haired and with the bearing of warriors, preparing to ride out scouting. They are so alike they could be twins. They greet you, surprised to see a man of Bree so far from home, and ask you about the Road.",
+      "choiceLabel": "Climb beside the waterfall"
+    },
+    "rivendel_4_0": {
+      "title": "The Old Hobbit",
+      "text": "In the middle of the hall, a very old hobbit with white hair and bright eyes rises and recites verses he has composed himself, amid the laughter and applause of the Elves. Then he sits beside you, curious to learn that you come from Bree. He asks about the inn, about the beer, about the weather on the Road. When you speak to him of the Ranger and the hobbits, he smiles mischievously and tells you there are stories best left for their owners to tell.",
+      "choiceLabel": "Listen to the old hobbit"
+    },
+    "rivendel_4_1": {
+      "title": "The Dwarf of the Mountain",
+      "text": "You step out onto the terrace for some air and find a Dwarf with a white, braided beard, smoking a pipe beneath the stars. He comes from the Lonely Mountain, he tells you, far to the east, and has made a long journey to seek counsel. He speaks proudly of his people, but when he mentions kinsmen who set out years ago for the ancient mines of the Misty Mountains, his voice darkens. They have had no word of them for a long time. You fall silent, gazing at the dark mountains.",
+      "choiceLabel": "Step out onto the terrace"
+    },
+    "rivendel_4_2": {
+      "title": "The Southern Roads",
+      "text": "You spend hours bent over the maps. You learn the names: the Hoarwell, which you have already crossed; the Bruinen; the Misty Mountains, running south like a spine; and on their western slopes, Eregion. Beyond rises a peak with reddish flanks that the Elf calls Caradhras, the Redhorn, with a high pass leading to the far side of the mountains. You copy the way as best you can onto a scrap of parchment. For the first time, your journey has a shape and a direction.",
+      "choiceLabel": "Study the maps of the south"
+    },
+    "rivendel_4_3": {
+      "title": "The Smiths of Old",
+      "text": "The Elf tells you the story of Eregion. Long ago the finest Elven-smiths lived there, in a city called Ost-in-Edhil, friends of the Dwarves who dwelt beyond the mountains. They made marvellous works, but someone of fair words and foul intent deceived them, and war destroyed them. He tells you no more, and you do not ask. He says only that in that land the holly trees they planted still grow, and that the stones remember.",
+      "choiceLabel": "Ask about Eregion"
+    },
+    "rivendel_4_4": {
+      "title": "The Tempering",
+      "text": "You spend your days at the forge, working the bellows and hauling charcoal. The smith takes your sword apart, straightens the blade, smooths away the notches and tempers it in river water, murmuring words you do not understand. When he gives it back, it weighs the same yet seems another thing: more alive, firmer in the hand. At the base of the blade he has engraved a small Elvish sign. It means, he tells you, something like 'the one who watches'. It seems a good name for what you are.",
+      "choiceLabel": "Help at the forge"
+    },
+    "rivendel_4_5": {
+      "title": "The Light Mail",
+      "text": "While your sword rests at the forge, the smith rummages in a chest and draws out a coat of mail of fine, dark rings. It was made here many years ago, he tells you, for a Ranger who never returned to claim it. He fits it on you himself with leather straps. It weighs less than a woollen shirt, and yet the edge of a knife slides over it without biting. At the end of the day he returns your sword as well, clean and sharp. You feel a different man.",
+      "choiceLabel": "Try on an Elven mail coat"
+    },
+    "rivendel_4_6": {
+      "title": "Lessons in Swordplay",
+      "text": "Before riding out scouting, the two Elves invite you to practise with them in a meadow by the river. They correct your guard, your footwork, the way you look your enemy in the eye rather than at his sword. They are patient, but not gentle: you end up on the ground more times than you can count. While you rest, they tell you they often ride with the Rangers of the North, and that they know well the one who brought the hobbits here. They do not tell you his name. Only that he is among the best.",
+      "choiceLabel": "Train with the two Elves"
+    },
+    "rivendel_4_7": {
+      "title": "The White Horse",
+      "text": "You go down to the stables, where the Elves care for their steeds as if they were friends. A groom shows you a white horse, slender and proud, and tells you it was this horse that crossed the ford a few days ago bearing a wounded halfling, with the Nine hard on its heels. It reached the far bank just before the river rose. The horse sniffs your hand calmly. You are glad that the small traveller, whoever he was, came through safely.",
+      "choiceLabel": "Go down to the stables"
+    },
+    "rivendel_5_0": {
+      "title": "The Closed Council",
+      "text": "One morning, the house wakes different. The Elves speak in low voices and, on a porch beside the river, many gather: the lord of the house, an old man clad in grey, Elves, Dwarves, Men and a small figure or two. A guard gently stops you at some distance. It is not a council for you, he says. You watch from afar for hours. When at last they part, no one is smiling, and each walks away in silence. Something has been decided there that weighs upon them all.",
+      "choiceLabel": "Head for the river porch"
+    },
+    "rivendel_5_1": {
+      "title": "The Healer's Hands",
+      "text": "The wounds of the journey have closed, but the cold of the ford lingers in your bones: at times you wake frozen, with the feeling of a shadow at your side. You go to see the healers of the house. An Elf-woman with cool hands listens to you, prepares hot water and casts into it some crushed leaves with a sweet, clean scent. The steam fills your head with light. When you leave, the cold has gone. She tells you that you were fortunate: others bear that hurt far longer.",
+      "choiceLabel": "Visit the healers"
+    },
+    "rivendel_5_2": {
+      "title": "The Night of Stars",
+      "text": "One night you climb to a high terrace open to the sky. Elves sit there in silence, gazing at the stars, and one of them sings softly a song they call the Queen of the Stars. You lie down on the stone, still warm, and think of Bree: of your empty house, of the inn, of the muddy street. It surprises you not to miss it as much as you expected. This land is not yours, you know, and sooner or later you will have to go on your way.",
+      "choiceLabel": "Climb to the high terrace"
+    },
+    "rivendel_5_3": {
+      "title": "News from the Scouts",
+      "text": "In the courtyard, some Elven scouts and a pair of Rangers of the North are preparing to ride out in search of the Black Riders. You approach to ask. They tell you the river swept away the Nine and their horses drowned, but no one has found the riders, for such creatures do not die as others do. They will go out in every direction: north, west and south as well, following the mountains. You tell them of the rider on the bank. They listen closely and thank you.",
+      "choiceLabel": "Seek news of the Road"
+    },
+    "rivendel_6_0": {
+      "title": "The Word of the Lord of the House",
+      "text": "Before leaving, you ask to see the lord of the house, and he receives you in a small room, without ceremony. His face has no age, but his eyes seem to have seen the whole world. He hears your tale without interrupting. When you tell him you mean to go south along the skirts of the mountains, he warns you that the way is not safe: black birds keep watch from the sky, and men of Dunland serve a master not their own. Trust no one who asks too many questions, he tells you, and he gives you a grey cloak of Elven cloth.",
+      "choiceLabel": "Seek an audience with the lord"
+    },
+    "rivendel_6_1": {
+      "title": "The Preparations",
+      "text": "Winter comes to the valley, and you know it is time to leave. You pack with care: a grey cloak of Elven cloth they give you, warmer than its weight would suggest, waybread that keeps for weeks, a water flask, rope and a pouch of herbs from the healers. You check your sword, your boots and your straps. As you work, you hear that another company is being prepared in the house too, more important than yours, but no one says where it will go or when. It is not your concern, and you know it.",
+      "choiceLabel": "Prepare for the journey"
+    },
+    "rivendel_7_0": {
+      "title": "The Farewell",
+      "text": "On a cold winter morning you cross for the last time the narrow bridge over the river. Some Elves have come out to see you off and sing a brief song for your road. You turn once to look at the house, the waterfalls, the light among the pines, and it is hard to tear your eyes away. Then you leave the valley and set your course south, following the western skirts of the Misty Mountains. Beyond many leagues of empty land, Eregion awaits you, the land of holly. Your body is rested, and the valley lives in your memory."
+    }
+  },
+  "rivals": {}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "orodruin",
+  "name": "Monte del Destino",
+  "baseLevel": 0,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "El fin de la sombra",
+      "text": "El nazgûl ha huido hacia el norte, chillando, a lomos de su bestia herida, y tú te has quedado en la ladera sin entender cómo sigues vivo. Al día siguiente, la tierra se estremece. La montaña revienta: fuego, rocas y un trueno que no termina. A lo lejos, la torre oscura del norte se resquebraja y se desploma entre nubes de polvo, y un viento enorme barre la llanura. Corres cuesta abajo entre ríos de lava hasta una loma de roca firme. Cuando el humo se abre, ves pasar grandes águilas hacia la montaña. Nunca sabrás del todo qué ocurrió allí arriba, ni si las patrullas que arrastraste tras de ti dejaron libre otro camino. Piensas en los dueños de aquellas huellas pequeñas y deseas, sin saber por qué, que estén vivos. La sombra se ha ido. Con el zurrón y el odre casi vacíos tras tantos días, miras al oeste y emprendes el largo regreso a Bree.",
+      "imagePrompt": "An erupting volcano spewing fire and smoke, a distant dark fortress collapsing in clouds of dust, great eagles flying high toward the mountain, a young traveler in a grey elven cloak standing on a rocky knoll as the western sky clears, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    }
+  ]
+}

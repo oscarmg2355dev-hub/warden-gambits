@@ -1,0 +1,120 @@
+{
+  "id": "sombrio",
+  "name": "Dimrill Dale",
+  "nodes": {
+    "sombrio_1_0": {
+      "title": "The East Gate",
+      "text": "You climb the last steps blindly and, all at once, the air changes: cold, clean, smelling of snow. You pass through a vast, broken gate and step out into the light of day. It is a grey light, beneath an overcast sky, but after so much darkness it makes your eyes stream. At your feet opens a long valley between mountains, the Dimrill Dale, which the Dwarves called Azanulbizar. At its far end gleams a still, dark lake. Behind you, very deep, the drums still rumble. You cannot stay here."
+    },
+    "sombrio_2_0": {
+      "title": "The Stair by the Torrent",
+      "text": "Beside the gate begins a path of carved steps that descends the slope alongside a white torrent. You take it without a thought: it is the shortest way to the valley floor. The steps are worn and slippery with frost, and the water leaps beside you with a roar that drowns every other sound. That troubles you. Every few paces you turn to look at the gate, high above, black as an open mouth.",
+      "choiceLabel": "Descend the old stair"
+    },
+    "sombrio_2_1": {
+      "title": "Among the Crags",
+      "text": "You do not trust the stepped path: anyone coming out of the gate will see it. You strike off along the slope, leaping from rock to rock among dry heather and fallen crags. It is slower and more tiring, but from up here you command the whole valley: the lake, the torrent, the river running south-east. You stop to catch your breath behind a large stone. Then you hear harsh voices coming down from the gate.",
+      "choiceLabel": "Strike off along the slope"
+    },
+    "sombrio_3_0": {
+      "title": "Goblins on the Steps",
+      "text": "You descend as fast as you dare. Halfway down the stair, stones roll from above and strike your heels: four goblins have come out of the gate after you and are bounding down the steps, eyes narrowed against the light. They do not like the day, but they hunger for the chase and know you are alone. They catch you on a landing where the torrent spatters the stone. You turn to face them, sword in hand.",
+      "choiceLabel": "Keep descending at speed"
+    },
+    "sombrio_3_1": {
+      "title": "The Archer on the Ledge",
+      "text": "You leave the stair and go down along the bank of the torrent, leaping between wet rocks to gain time. A black arrow buries itself in the moss a hand's breadth from your fingers. You look up: on a ledge beside the stair, an orc archer is drawing his bow again, wrapped in rags against the light. He is alone, but from up there he can riddle you with arrows. There is nowhere to take cover. You climb towards him, rock by rock, before he finds his mark.",
+      "choiceLabel": "Cut down along the torrent"
+    },
+    "sombrio_3_2": {
+      "title": "Orcs on the Slope",
+      "text": "You go on along the slope towards the lake, crouching among the crags. The voices draw nearer and, rounding a rock, you run straight into them: a large orc of the mountains, long-armed and bearing a short scimitar, and two goblins, one of them burdened with his spear. They had come out to scour the slope. The orc laughs to see you alone and wrenches the spear from the goblin's hands. Then all three hurl themselves at you.",
+      "choiceLabel": "Skirt the slope towards the lake"
+    },
+    "sombrio_3_3": {
+      "title": "The Watchers on the Cliff",
+      "text": "You climb towards the cliffs, thinking no one will look for you so high. You are wrong. On a ledge, two figures are watching the valley: an orc of the mountains and an archer with his bow on his back. They are scouts, sent to see who has come out of the gate. The orc sees you first and growls a warning. The archer unslings his bow and the orc draws his blade. You are too close to flee.",
+      "choiceLabel": "Climb towards the cliffs"
+    },
+    "sombrio_4_0": {
+      "title": "The Mirror Lake",
+      "text": "At the foot of the stair, the path runs beside the lake. It is long and narrow, of a blue so dark it seems black, and no wind ruffles its surface. The Dwarves called it Kheled-zâram, the Mirrormere. You lean over the shore without quite knowing why. In the water you see the mountains upside down, sharp as if carved, and among their peaks pale glints, like gems, that the grey sky cannot explain. You gaze longer than you would wish. At last you draw away, feeling you have seen something not meant for you.",
+      "choiceLabel": "Look into the lake"
+    },
+    "sombrio_4_1": {
+      "title": "Durin's Stone",
+      "text": "Near the shore of the lake stands a solitary column, broken at the top, with runes worn by centuries of rain. You cannot read them, but you remember what you heard told in Rivendell: that here, in the first days, the first of the Dwarf-kings looked into the lake and resolved to found his realm beneath these mountains. That realm is the darkness from which you have just escaped. You rest your hand on the cold stone a moment, as one who greets the dead, and go on your way.",
+      "choiceLabel": "Approach the broken column"
+    },
+    "sombrio_4_2": {
+      "title": "The Springs of the River",
+      "text": "Following the torrent you come to a hollow where several springs well up, their water so cold it makes your teeth ache to drink. From them rises a clear river that runs south-east between white stones: the Silverlode, they told you in Rivendell, the river that flows down towards the woods. You wash your face and hands, black with soot and blood, and for a moment the water seems to carry away something of what you saw down below. You fill your waterskin and go on.",
+      "choiceLabel": "Seek the springs of the river"
+    },
+    "sombrio_4_3": {
+      "title": "Remnants of an Old Battle",
+      "text": "The stony slope you cross is not only stone. Among the heather peer rusted helms, spearheads and bleached orc bones, so old they crumble at a touch. A great battle was fought here long ago, Dwarves against orcs, at the very gates of the lost realm. You walk slowly, with respect, among what little remains. On a rock you find a Dwarvish axe still whole, without a trace of rust, but you leave it where it lies. It is not yours, and here no one has forgotten whose it is.",
+      "choiceLabel": "Cross the stony slope"
+    },
+    "sombrio_4_4": {
+      "title": "Those Who Leave the Gate",
+      "text": "From high on the slope you watch the gate through which you came out. After a while someone else emerges: a small company of figures coming slowly down the stair, some tall and others the height of a child. They do not run like those fleeing a battle, but walk like those who bear a burden. Reaching the bottom, one sinks to his knees and the others turn towards the gate, in silence, for a long time. You understand they have left someone in there. You do not approach. It is not your grief.",
+      "choiceLabel": "Watch the gate from above"
+    },
+    "sombrio_4_5": {
+      "title": "The Fallen Watchtower",
+      "text": "On the slope you find the remains of a Dwarven watchtower: three walls of dressed stone and a half-collapsed roof. Inside there is old ash and a dry corner, sheltered from the wind. You sit for the first time since the bridge. Your hands are shaking. You eat a little hard bread from the provisions of Rivendell and close your eyes. When you open them, the sky has darkened a little more. The shadows of the valley lengthen and, with them, fear returns.",
+      "choiceLabel": "Take refuge in some ruins"
+    },
+    "sombrio_4_6": {
+      "title": "The Highest Cliff",
+      "text": "You climb to the top of a cliff from which the whole valley can be seen. To the west, the black mouth of the gate; below, the lake, still as an eye; to the south-east, a river running down between ever gentler hills until it is lost in a distant smudge of trees, grey and golden at once, though it is the dead of winter. You have heard tales of such a forest, and not all of them are reassuring. But it is the only road that does not lead you back into the mountain.",
+      "choiceLabel": "Climb the highest cliff"
+    },
+    "sombrio_4_7": {
+      "title": "The Goat Path",
+      "text": "You come down from the cliffs by a path so narrow that only goats can have made it. At a bend you find fresh prints in the mud: hobnailed boots, many of them, heading down into the valley. Orcs. They have come out of the mountain by some side door and now roam the valley, somewhere between you and the south-east. You follow the tracks carefully, from afar, until they split into two groups. One goes towards the river; the other, towards the lake.",
+      "choiceLabel": "Descend by a narrow path"
+    },
+    "sombrio_5_0": {
+      "title": "The Riverbank",
+      "text": "You go down to the river that rises in the valley and begin to follow it south-east. It runs swift and clear over white stones, and its voice is the only sound. The path along the bank is ancient, paved in stretches by the Dwarves, and you make good progress. Little by little the mountains fall behind and the valley widens. You pass a deer drinking, which watches you without fear. For a while you almost forget that someone may be coming after you.",
+      "choiceLabel": "Follow the riverbank"
+    },
+    "sombrio_5_1": {
+      "title": "The Guarded Ford",
+      "text": "You want to cross to the far bank of the river, where the ground seems more sheltered, and you look for a ford. You find one where the water spreads over a bed of pebbles. But you are not the first to arrive: on the opposite bank, an orc of the mountains is filling a waterskin while another, with a black bow, keeps watch. They see you as you see them. The archer looses; the orc splashes across the water, scimitar raised. You plant yourself on the pebbles and wait.",
+      "choiceLabel": "Look for a ford"
+    },
+    "sombrio_5_2": {
+      "title": "A Halt in the Hollow",
+      "text": "You take refuge in a hollow among great rocks, where the wind cannot reach, and allow yourself to rest. Evening falls quickly in the valley. When the sun sets behind the mountains, you hear the drums again, distant, and then a clamour of voices and horns coming from the gate. You know what it means: with the dark, the orcs come out to hunt. You have no intention of waiting for them. You rise, settle your cloak and set off south-east, faster than before.",
+      "choiceLabel": "Rest among some rocks"
+    },
+    "sombrio_5_3": {
+      "title": "The Forward Scout",
+      "text": "You quicken your pace to leave the valley behind before nightfall. The path winds down between crags and, coming out of one bend, you find an orc of the mountains sitting on a stone, eating something you would rather not look at. He is big, in a coat of rings and with a leather shield, and from the way he rises he does not seem afraid. Perhaps he went ahead of the rest of his band. He spits, takes up his spear and comes towards you.",
+      "choiceLabel": "Quicken your pace"
+    },
+    "sombrio_6_0": {
+      "title": "The Pursuers",
+      "text": "When night falls, you decide not to stop. You walk beside the river, guided by its sound, with the moon peering now and then between the clouds. After some hours you hear something behind you: quick footsteps, breathing, a jingle of metal. They catch you on an open stretch of the bank: two orcs of the mountains and two archers running ahead on your trail. Someone larger, who has stayed behind, commands them, but these four do not wait. You turn to meet them.",
+      "choiceLabel": "Walk on without rest"
+    },
+    "sombrio_6_1": {
+      "title": "The Fir Copse",
+      "text": "When night falls, you slip into a copse of firs beside the river and hide among the roots, wrapped in your grey cloak. Soon you hear footsteps on the bank, many of them, and voices arguing in their hideous tongue: a band of orcs is following the river south-east, hunting someone. One of them, enormous, bellows orders. They pass a few paces from you. You wait until the noise fades and emerge with caution. You know they are ahead of you, and that your road is the same as theirs.",
+      "choiceLabel": "Hide in a copse"
+    },
+    "sombrio_7_0": {
+      "title": "The Captain of the Mountain",
+      "text": "The river widens and the hills grow gentle. In the distance you can already make out, dark against the sky, the line of a forest. Then, on the bank, an orc captain of the mountains comes out to meet you, taller than you, with a dented helm and an enormous scimitar. Beside him, an archer already has an arrow on the string, and a goblin out of the mines follows him like a dog. The captain grins to see you alone: he has been hunting you all night. You fight with your feet in the mud and the river at your back. Beyond them, to the south-east, the trees await you."
+    }
+  },
+  "rivals": {
+    "Trasgo de Moria": "Moria Goblin",
+    "Arquero orco": "Orc Archer",
+    "Orco de las Montañas Nubladas": "Misty Mountains Orc",
+    "Capitán orco de las Montañas Nubladas": "Misty Mountains Orc Captain"
+  }
+}

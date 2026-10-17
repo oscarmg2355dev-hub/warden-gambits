@@ -1,0 +1,238 @@
+{
+  "id": "chet",
+  "name": "Bosque de Chet",
+  "baseLevel": 4,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "Bajo los árboles de Chet",
+      "text": "Con el Tuerto vencido, apartas el tronco y miras la espesura. El Camino sigue hacia el este, pero los rumores hablan de un montaraz que guió a unos hobbits por el bosque, lejos de ojos indiscretos, y decides seguir su ejemplo. El Bosque de Chet te traga en pocos pasos: robles retorcidos, helechos hasta la cintura y una penumbra verde que apaga los sonidos. Aquí y allá, troncos marcados y senderos estrechos delatan a los cazadores. De lejos llega un aullido largo, y otro le responde.",
+      "imagePrompt": "A dense ancient forest of twisted oaks and waist-high ferns in green gloom, narrow hunter trails between trunks, a lone young traveler with sword and pack stepping under the canopy, distant mist, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "La senda de los cazadores",
+      "text": "Eliges la senda más marcada, la que han abierto generaciones de cazadores de Archet. Es estrecha pero firme, y alguien ha tallado muescas en los troncos para no perderse. Caminas durante horas bajo las copas, escuchando el crujir de las ramas y el aleteo de los pájaros. En un recodo encuentras una cuerda con nudos atada a un árbol, señal de que el sendero se bifurca: un ramal baja hacia el humo de una chimenea; el otro, hacia los restos de un fuego viejo.",
+      "imagePrompt": "A narrow forest trail beneath tall oaks with notches carved into the bark, a knotted cord tied to a tree marking a fork, a young traveler pausing, thin smoke rising far between the trees, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la senda de cazadores"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "La espesura",
+      "text": "Prefieres no seguir caminos que otros puedan vigilar y te abres paso por la espesura, apartando ramas y zarzas con la espada. Pronto pierdes el sol. El bosque se cierra a tu alrededor y un olor acre te pone en guardia: un lobo ha marcado aquí su territorio. Lo oyes antes de verlo, un gruñido bajo a tu izquierda. Una bestia de pelo pardo surge entre los helechos, más grande que cualquier perro de Bree y mucho más segura de sí misma.",
+      "imagePrompt": "Deep tangled undergrowth in a dim forest, a large brown wolf emerging from ferns with a low growl, a young traveler hacking through branches with a sword, faint shafts of light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Adentrarse en la espesura",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo pardo de Chet", "portrait": "wolf", "levelOffset": 1, "pattern": ["12", "121", "1212"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "El campamento abandonado",
+      "text": "El ramal te lleva a un claro donde alguien acampó hace poco, quizá un día o dos. Las cenizas están frías, pero el suelo cuenta una historia: huellas de pies pequeños, descalzos y anchos, junto a las de unas botas largas y los cascos de un poni. Hobbits, sin duda, y el montaraz del que hablaban en Bree. Borraron su rastro con cuidado, aunque no lo bastante para un ojo atento. Junto a un tronco ves además otras marcas: botas pesadas que llegaron después.",
+      "imagePrompt": "A small forest clearing with cold campfire ashes, small bare footprints beside long boot prints and pony hoof tracks in soft earth, a young traveler kneeling to study them, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Registrar el viejo fuego"
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "La cabaña del trampero",
+      "text": "El humo sale de una cabaña de troncos medio enterrada en la ladera. Te abre un trampero barbudo y desconfiado, con un arco a medio tensar. Cuando le dices que vienes de Bree, baja el arma y te deja calentarte junto a la lumbre. Te habla de lobos que ya no temen al fuego y de un macho gris enorme que los guía. Hace dos noches le mataron el perro. Te mira con ojos cansados y te pregunta si de verdad sabes usar esa espada.",
+      "imagePrompt": "A half-buried log cabin on a wooded slope, a bearded trapper with a half-drawn bow at the doorway lowering his weapon for a young traveler, chimney smoke curling through the trees, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar hacia la chimenea"
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "El arroyo escondido",
+      "text": "Siguiendo el rumor del agua llegas a un arroyo que corre entre piedras cubiertas de musgo. Te lavas la sangre y el sudor, bebes hasta saciarte y, por un momento, el bosque parece amable. Martines pescadores azules cruzan como flechas sobre la corriente. Río abajo, el agua se remansa en pozas oscuras; río arriba, unas piedras planas permiten pasar a la otra orilla. Te concedes un respiro antes de decidir por dónde seguir.",
+      "imagePrompt": "A clear forest stream running over mossy stones, a young traveler washing his face at the bank, blue kingfishers darting over the water, flat stepping stones upstream, soft green light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar al arroyo"
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "El roble caído",
+      "text": "Un roble gigantesco yace derribado por alguna tormenta antigua, con las raíces al aire como una muralla. Trepas por el tronco hasta un punto desde el que ves por encima de los helechos. Al norte se alza una columna de humo gris; al este, los árboles parecen aclararse sobre un terreno más bajo y brumoso. Una ardilla te riñe desde una rama, ofendida por la visita. Respiras hondo: al menos ahora sabes hacia dónde se abre el bosque.",
+      "imagePrompt": "A gigantic fallen oak with upturned roots like a wall in a dense forest, a young traveler standing atop the trunk looking over ferns toward a distant column of grey smoke and misty lowlands, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Trepar al roble caído"
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "Tras las huellas",
+      "text": "Sigues las huellas pequeñas durante una buena legua. Quien guía al grupo conoce el bosque: elige suelos de hojarasca, cruza arroyos para despistar y evita los claros. Pierdes el rastro dos veces y lo recuperas otras tantas. Al final comprendes que no debes alcanzarlos; sea cual sea su misión, prefieren no ser encontrados. Respetas su silencio, pero tomas nota del rumbo: noreste, hacia unas tierras bajas y húmedas.",
+      "imagePrompt": "A young traveler following faint small footprints across leaf litter and a shallow forest brook, dappled autumn light through oaks, the trail vanishing into northeastern mist, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir las huellas pequeñas"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "Los de las botas pesadas",
+      "text": "Las botas pesadas te llevan a una hondonada donde dos hombres asan un conejo. Son de la misma calaña que la banda del Tuerto: cuchillos largos, ropas robadas y una lista de nombres garabateada en un trozo de cuero. Hablan de cobrar una recompensa por noticias de los hobbits. No piensas ayudarles a ganarla. Al pisar una rama seca, ambos se vuelven hacia ti y se levantan, sonriendo como lobos.",
+      "imagePrompt": "Two rough bandits roasting a rabbit over a small fire in a forest hollow, rising with long knives drawn as a young traveler steps on a dry branch, gloomy oaks around, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir las botas pesadas",
+      "encounter": {
+        "rivals": [
+          { "name": "Bandido del bosque", "portrait": "bandit", "levelOffset": -2, "pattern": ["12", "121"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Bandido del bosque", "portrait": "bandit", "levelOffset": -2, "pattern": ["12", "121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "La trampa rota",
+      "text": "Ofreces tu ayuda al trampero y te pide que revises sus trampas mientras él remienda redes. En la tercera encuentras un lobo atrapado por la pata trasera, que se revuelve con furia. Antes de que decidas qué hacer, la cadena cede con un chasquido. La bestia, herida y loca de dolor, se lanza sobre ti sin pensarlo. Un animal acorralado es el más peligroso del bosque, te había advertido el viejo, y ahora entiendes por qué.",
+      "imagePrompt": "A snarling grey wolf breaking free from an iron leg trap in a forest glade, the chain snapping as it lunges at a young traveler raising a sword, scattered autumn leaves, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Revisar las trampas",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo hambriento", "portrait": "wolf", "levelOffset": 0, "pattern": ["12", "121", "1212"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "Junto a la lumbre",
+      "text": "Aceptas pasar la noche bajo el techo del trampero. Cenáis un guiso de setas y carne seca mientras el viento sacude las copas. El viejo te habla del pantano que hay más allá del bosque: agua quieta, nieblas y unos moscardones que te comen vivo. También te enseña a preparar un ungüento de hierbas amargas para espantarlos. Duermes como no dormías desde Bree y, al alba, te despide con un pan bajo el brazo.",
+      "imagePrompt": "Inside a snug log cabin at night, an old bearded trapper and a young traveler sharing stew by a crackling hearth, bundles of herbs drying from the beams, wind shaking trees outside, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Quedarse a pasar la noche"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "Las piedras del vado",
+      "text": "Saltas de piedra en piedra hasta la otra orilla. Una de ellas se mueve bajo tu pie y casi caes al agua helada, pero recuperas el equilibrio a tiempo. En la ribera opuesta encuentras un viejo poste de madera con signos sencillos que no sabes leer y una flecha tallada que señala al este. Alguien, hace mucho, marcó aquí una ruta. Siguiendo su dirección, el bosque parece de pronto un poco menos hostil.",
+      "imagePrompt": "A young traveler leaping across flat stepping stones over a cold forest stream, an old weathered wooden post carved with simple signs and an arrow pointing east on the far bank, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar por las piedras"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "Ojos en la orilla",
+      "text": "Sigues la corriente hasta las pozas oscuras, donde el bosque se inclina sobre el agua. El silencio es total; ni un pájaro canta. Entonces los ves: dos pares de ojos amarillos entre los juncos de la orilla, esperando a que la presa baje a beber. Has caminado justo hacia su emboscada. Los lobos salen del agua salpicando y te rodean, uno por cada lado, con el lomo erizado y los colmillos al aire.",
+      "imagePrompt": "Dark still pools under overhanging trees, two yellow-eyed grey wolves emerging from reeds and splashing water to flank a young traveler on a muddy bank, eerie silence, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el agua abajo",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de las pozas", "portrait": "wolf", "levelOffset": -2, "pattern": ["12", "121", "1212"], "everyNTicks": 2 },
+          { "name": "Lobo de las pozas", "portrait": "wolf", "levelOffset": -2, "pattern": ["12", "121", "1212"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "El fuego de los salteadores",
+      "text": "El humo te conduce a un campamento improvisado bajo un saliente de roca. Un solo hombre lo guarda, rodeado de fardos robados: un rezagado de la banda del Tuerto. Por su mirada, ya sabe que su jefe ha caído, y también quién lo hizo. Su cara pasa del susto a la rabia en un instante. Agarra una lanza corta apoyada en la roca y carga contra ti gritando venganza, sin pararse a pensar.",
+      "imagePrompt": "A makeshift camp under a rocky overhang in the forest with stolen bundles and a smoky fire, a lone furious bandit with a short spear charging a young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Ir hacia la columna de humo",
+      "encounter": {
+        "rivals": [
+          { "name": "Salteador rezagado", "portrait": "bandit", "levelOffset": 1, "pattern": ["12", "121"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "Hacia las tierras bajas",
+      "text": "Bajas del roble y caminas hacia donde viste la bruma. El terreno desciende poco a poco y los robles dan paso a alisos y sauces de raíces húmedas. El aire se vuelve pesado y aparecen los primeros mosquitos. Bajo un sauce encuentras un pequeño montón de piedras apiladas, cubierto de musgo, con ofrendas de hace siglos. Te detienes un momento ante él, sin saber muy bien por qué, y luego sigues adelante.",
+      "imagePrompt": "A forest sloping down toward misty lowlands, oaks giving way to alders and willows, a small moss-covered cairn of stacked stones under a willow, a young traveler pausing respectfully among gnats, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Avanzar hacia la bruma"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "El claro de los aullidos",
+      "text": "Desembocas en un claro amplio, cubierto de hierba alta y rodeado de abedules blancos. A mitad de camino comprendes el error: aquí no hay dónde esconderse. Un aullido se eleva a tu espalda, otro a tu derecha, un tercero delante. Tres lobos salen de la linde y empiezan a cerrar el círculo, sin prisa, como quien conoce bien el oficio. Plantas los pies en el suelo y esperas al primero.",
+      "imagePrompt": "A wide grassy clearing ringed by white birches, three grey wolves emerging from the tree line and circling a young traveler standing his ground with sword ready, cold overcast light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atravesar un claro",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de la manada", "portrait": "wolf", "levelOffset": -4, "pattern": ["12", "121", "1212"], "everyNTicks": 2 },
+          { "name": "Lobo de la manada", "portrait": "wolf", "levelOffset": -4, "pattern": ["12", "121", "1212"], "everyNTicks": 2 },
+          { "name": "Lobo de la manada", "portrait": "wolf", "levelOffset": -4, "pattern": ["12", "121", "1212"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "La hondonada del peaje",
+      "text": "El sendero baja hacia una hondonada cruzada por un tronco a modo de barrera. Junto a él, un hombre con una ballesta oxidada y un sombrero ladeado exige peaje a quien pase: dos monedas o la vida. Asegura que el bosque es suyo desde que los cazadores de Archet dejaron de venir. No tienes intención de pagar a nadie por caminar entre árboles, y se lo dices. Él escupe al suelo y se lanza a por ti.",
+      "imagePrompt": "A forest hollow with a log laid across the trail as a barrier, a scruffy bandit in a tilted hat with a rusty crossbow demanding a toll from a young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar a la hondonada",
+      "encounter": {
+        "rivals": [
+          { "name": "Cobrador de peajes", "portrait": "bandit", "levelOffset": 0, "pattern": ["12", "121"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "El muro de zarzas",
+      "text": "Un muro de zarzas cierra el bosque y no hay forma de rodearlo. Te abres paso a golpes de espada, con las espinas arañándote la cara y las manos. Cuando por fin asomas al otro lado, sangrando y sin aliento, un lobo viejo y cubierto de cicatrices te espera sentado, como si supiera que vendrías por ahí. Se levanta despacio, sin un gruñido. Es un cazador paciente, y tú estás cansado.",
+      "imagePrompt": "A young traveler emerging scratched and breathless from a dense wall of brambles, an old scarred grey wolf rising slowly to face him in the shadowed forest beyond, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Abrirse paso entre zarzas",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo viejo", "portrait": "wolf", "levelOffset": 1, "pattern": ["12", "121", "1212"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "El puente de troncos",
+      "text": "Un torrente profundo corta el bosque, y el único paso es un puente de troncos atados con cuerdas. Cuando estás a medio cruzar, dos bandidos salen de la maleza, uno en cada extremo. El más cercano sostiene un hacha junto a las cuerdas y sonríe: si das un paso más, cortará. Te ordenan dejar las armas sobre los troncos. Miras el agua espumosa allá abajo, luego a tu enemigo, y decides moverte tú primero.",
+      "imagePrompt": "A rickety bridge of lashed logs over a deep foaming forest torrent, two bandits at either end, one with an axe at the ropes, a young traveler balanced midway with sword drawn, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el puente de troncos",
+      "encounter": {
+        "rivals": [
+          { "name": "Bandido del puente", "portrait": "bandit", "levelOffset": -2, "pattern": ["12", "121"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Bandido del puente", "portrait": "bandit", "levelOffset": -2, "pattern": ["12", "121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "Un refugio de montaraces",
+      "text": "Cae la noche y encuentras un refugio excavado bajo las raíces de una haya, oculto tras una cortina de hiedra. Dentro hay leña seca, un cuenco de barro y una estrella sencilla grabada en la piedra. Los montaraces del norte usan estos escondrijos para recorrer las tierras salvajes sin ser vistos. Duermes al abrigo, escuchando aullidos que se acercan y se alejan. Antes del alba, uno suena muy cerca.",
+      "imagePrompt": "A hidden shelter dug beneath the roots of a great beech tree, an ivy curtain pulled aside, dry firewood and a clay bowl inside, a simple star carved in stone, a young traveler resting at night, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar refugio para la noche"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "Marcas en las cortezas",
+      "text": "En los troncos de esta parte del bosque aparecen marcas profundas de garras, a una altura que te hiela la sangre. Algún lobo enorme ha estado afilándolas aquí, marcando un territorio que se extiende hacia el este. Huesos roídos y mechones de pelo gris salpican el suelo. Los aullidos que te acompañan desde hace días parecen venir ahora de la misma dirección, como si el bosque entero te empujara hacia su guarida.",
+      "imagePrompt": "Deep claw marks gouged high on oak trunks in a gloomy forest, gnawed bones and tufts of grey fur on the ground, a young traveler touching the scars in the bark, mist drifting eastward, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir las marcas de garras"
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El lobo gris alfa",
+      "text": "Al final del bosque, donde los árboles se vuelven ralos y el suelo huele ya a ciénaga, te espera la manada. En lo alto de una roca, el lobo gris alfa te observa: más alto que un poni, con el pelaje color ceniza y una cicatriz que le parte el hocico. Es el que guía a los demás, el terror de los cazadores de Archet. Basta un gruñido suyo para que dos lobos jóvenes se coloquen a tus flancos. Más allá, entre la bruma, comienzan los pantanos.",
+      "imagePrompt": "At the misty edge of a thinning forest near marshland, a huge ash-grey alpha wolf with a scarred muzzle standing on a rock, two younger wolves flanking a young traveler with sword drawn, dusk, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo gris alfa", "portrait": "boss_chet", "levelOffset": 3, "pattern": ["12", "121", "1212", "12121", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 10, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } },
+          { "name": "Lobo joven de la manada", "portrait": "wolf", "levelOffset": -4, "pattern": ["12", "121", "1212"], "everyNTicks": 2 },
+          { "name": "Lobo joven de la manada", "portrait": "wolf", "levelOffset": -4, "pattern": ["12", "121", "1212"], "everyNTicks": 2 }
+        ]
+      }
+    }
+  ]
+}

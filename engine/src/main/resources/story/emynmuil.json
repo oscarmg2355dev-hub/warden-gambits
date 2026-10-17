@@ -1,0 +1,470 @@
+{
+  "id": "emynmuil",
+  "name": "Emyn Muil",
+  "baseLevel": 49,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "La orilla de enfrente",
+      "text": "Esa noche cruzas el lago en tu barca, hacia la orilla de enfrente, por donde se fueron los dueños de aquellas huellas pequeñas. Remas despacio, con la cascada rugiendo a tu derecha. Al amanecer varas en una playa de piedras, bajo una colina pelada, y escondes la barca entre las rocas. No volverás a por ella: adonde vas no hay río. Delante se alzan las colinas de Emyn Muil, un laberinto de roca gris cortado por barrancos y grietas, donde el viento silba y casi nada crece.",
+      "imagePrompt": "Dawn on a stony eastern lakeshore below a bare hill, a young traveler in a grey elven cloak hiding a small grey boat among boulders, beyond him a maze of grey rocky hills cut by ravines and cracks under a cold sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "El barranco ciego",
+      "text": "Te metes por el primer barranco que se abre hacia el este. Las paredes son de roca gris, lisa y fría, y el suelo está lleno de piedras sueltas que ruedan bajo tus botas. Al cabo de una hora el barranco se cierra en un muro. Vuelves atrás, eliges otro, y también se cierra. A media tarde comprendes que estas colinas no se cruzan andando derecho: hay que leerlas como un acertijo. Te sientas, bebes un trago y miras las grietas con más paciencia.",
+      "imagePrompt": "A narrow ravine of smooth cold grey rock ending in a sheer wall, loose stones on the floor, a young traveler in a grey elven cloak sitting on a rock with a waterskin studying the cracks in the cliffs, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Entrar por un barranco"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "La cresta del viento",
+      "text": "Decides subir antes de perderte, y trepas por una cresta de roca hasta lo alto. Allí el viento te golpea de lado, cortante, y tienes que agacharte para no perder el equilibrio. Desde arriba ves el laberinto entero: crestas paralelas, barrancos que se cruzan, pozos de sombra donde no llega el sol. Todo es gris. Eliges con la vista una línea que parece seguir hacia el este, y la memorizas piedra a piedra antes de bajar.",
+      "imagePrompt": "A wind-swept ridge of grey rock high above a maze of parallel ridges and shadowed ravines, a young traveler in a grey elven cloak crouching against the cutting wind, cloak whipping, studying the way east, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Trepar a la cresta"
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "Ojos en la pared",
+      "text": "Sigues una grieta honda que parece correr hacia el este. Es tan estrecha que el cielo es solo una cinta blanca sobre tu cabeza. De pronto, algo se mueve en la pared, a la altura de tus ojos: hay una repisa, y en ella un lobo de pelaje gris, del mismo color que la piedra, tan quieto que habías pasado a su lado sin verlo. Ahora te enseña los dientes. Salta desde la repisa sin un aullido, directo a tu garganta.",
+      "imagePrompt": "A deep narrow crack in grey rock with a thin strip of sky above, a stone-grey wolf leaping silently from a ledge at a young traveler in a grey elven cloak who raises his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la grieta más honda",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Lobo de las rocas",
+            "portrait": "wolf",
+            "levelOffset": 0,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121",
+              "31"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "El sendero de los orcos",
+      "text": "Entre las piedras encuentras un sendero pisado, el primero que ves en estas colinas. Hay huellas de botas pesadas y, en una roca, alguien ha pintado con algo rojo un ojo sin párpado. Lo sigues con cautela. En un recodo te das de frente con dos orcos que suben. Son distintos de los uruk-hai: más bajos, de brazos largos, con escudos negros y el mismo ojo rojo. Se quedan un instante quietos, sorprendidos. Luego chillan y cargan.",
+      "imagePrompt": "A trodden path among grey rocks with a red lidless eye painted on a boulder, two hunched long-armed orcs with black shields bearing a red eye charging a young traveler in a grey elven cloak around a bend, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Tomar un sendero pisado",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -2,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -2,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "La roca de la cabeza de caballo",
+      "text": "Caminas por las alturas siguiendo la línea que memorizaste. Durante horas todo va bien. Pero al atardecer reconoces una roca partida con forma de cabeza de caballo, la misma junto a la que pasaste a mediodía. Has dado un rodeo enorme y has vuelto al principio. Te quedas mirándola, rabioso. El viento te mete el frío hasta los huesos. Esta vez marcas la roca con la punta de la espada, y te prometes no volver a verla.",
+      "imagePrompt": "High grey rocky heights at sunset, a split boulder shaped like a horse head, a young traveler in a grey elven cloak scratching a mark into it with the tip of his sword, frustrated, cold wind blowing, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Caminar por las alturas"
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "La hondonada de los huesos",
+      "text": "Bajas a una hondonada resguardada del viento. El suelo está sembrado de huesos de cabra, limpios, y hay restos de una hoguera. Junto a ella, un orco de Mordor roe un hueso, y a sus pies duermen dos lobos de las rocas, enroscados como perros. Uno de ellos abre los ojos. No hace ruido: se levanta, despierta al otro con el hocico, y los dos te miran fijamente. El orco ve hacia dónde miran, escupe el hueso y coge su lanza.",
+      "imagePrompt": "A sheltered hollow among grey rocks strewn with goat bones, a Mordor orc by a campfire spitting out a bone, two lean stone-grey wolves rising beside him and staring at a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar a una hondonada",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Lobo de las rocas",
+            "portrait": "wolf",
+            "levelOffset": -4,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121",
+              "31"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Lobo de las rocas",
+            "portrait": "wolf",
+            "levelOffset": -4,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121",
+              "31"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -4,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "El salto",
+      "text": "La grieta por la que vas desemboca de pronto en otra, perpendicular, que corta el paso de lado a lado. Es demasiado ancha para cruzarla de un paso y demasiado honda para ver el fondo: solo oyes, muy abajo, el goteo del agua. Te quitas la mochila, la lanzas al otro lado y retrocedes para tomar carrerilla. Saltas. Tus botas llegan al borde, resbalan, y te agarras a la piedra con las uñas. Subes. Te quedas tumbado, temblando, riéndote sin saber por qué.",
+      "imagePrompt": "A crack in grey rock opening onto a wide bottomless chasm, a young traveler in a grey elven cloak clinging to the far edge after a running jump, his backpack lying beyond, water dripping far below, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la grieta hasta el final"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "Una sombra bajo la luna",
+      "text": "Duermes bajo una losa inclinada que te protege del viento. Te despierta un ruido de piedrecillas que caen. La luna ha salido, y por un instante, encima de una roca, ves recortada contra ella una sombra flaca, encogida, que mira hacia el este. Parpadeas y ya no está. No sabes si era un animal, un orco o un sueño. No vuelves a cerrar los ojos hasta el alba, con la espada sobre las rodillas y el oído atento a cada piedra.",
+      "imagePrompt": "Moonlit grey rocks at night, a thin crouched shadow silhouetted for an instant on a boulder against the moon, a young traveler in a grey elven cloak awake under a leaning stone slab with his sword across his knees, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar abrigo para dormir"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "Señales rojas",
+      "text": "El sendero de los orcos sigue hacia el este, y cada tanto, en una roca, vuelve a aparecer el ojo rojo, pintado con prisa. Junto a uno de ellos hay un montón de piedras con una lanza clavada y un trapo negro atado. Más allá, el sendero se divide en tres, y cada rama lleva su señal. Entiendes que estas colinas están vigiladas por gente que conoce el camino. Decides apartarte de los senderos, aunque te cueste el doble.",
+      "imagePrompt": "A rocky path among grey hills forking in three, a red eye crudely painted on a boulder, a cairn with a spear and a tattered black rag tied to it, a young traveler in a grey elven cloak studying the signs warily, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Leer las señales del sendero"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "Huellas en la escarcha",
+      "text": "Te escondes entre las rocas para dejar pasar a una patrulla, y pasa: cuatro orcos que bajan a buen paso, sin hablar. Respiras. Pero uno se detiene, vuelve atrás y se agacha sobre la escarcha que cubre el sendero. Tus huellas están ahí, marcadas en blanco, claras como una firma. El orco olfatea, gruñe, y los otros tres se dan la vuelta. Antes de que te encuentren, sales a su encuentro en el paso estrecho, donde solo caben de dos en dos.",
+      "imagePrompt": "A narrow frosty defile in grey hills, an orc crouching over fresh footprints in the frost, three more orcs with red eye shields turning back, a young traveler in a grey elven cloak stepping out from the rocks to face them, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Esconderse entre las rocas",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "La noche helada",
+      "text": "La noche en las alturas es la más fría que recuerdas. No hay leña en estas colinas, ni un mal arbusto que quemar. Te envuelves en la capa gris y te acurrucas entre dos piedras, con las rodillas contra el pecho. La capa abriga más de lo que parece, pero el frío sube de la roca. Te frotas las manos, cuentas las estrellas, repites en voz baja las canciones de la posada. Al alba tienes escarcha en las cejas, pero sigues vivo.",
+      "imagePrompt": "A freezing starry night high on grey rocks, a young traveler in a grey elven cloak curled between two stones wrapped in a grey elven cloak, frost on his brows, no fire, breath steaming, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acampar en lo alto"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "El cortado",
+      "text": "El camino que elegiste se acaba en un cortado de roca, alto como diez hombres, sin otra bajada en mucha distancia. Sacas la cuerda gris de los elfos. La pasas doble alrededor de un saliente de piedra, para poder recuperarla desde abajo, y bajas de espaldas, apoyando las botas en la pared. La cuerda es fina como un cordel y, sin embargo, no cede ni un palmo. Abajo, tiras de un cabo y la cuerda entera cae a tus pies, enroscada como una serpiente gris.",
+      "imagePrompt": "A sheer grey cliff as tall as ten men, a young traveler in a grey elven cloak rappelling backward on a thin grey elven rope doubled around a stone spike, boots braced against the rock face, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Descolgarse por un cortado"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "El agua de la piedra",
+      "text": "Llevas un día entero sin encontrar agua y el odre está casi vacío. La lengua se te pega al paladar. Por fin, en una hendidura a la sombra, das con una pila natural en la roca, llena de agua de lluvia. Está fría y sabe a piedra, pero te parece mejor que la cerveza de la posada. Bebes despacio, llenas el odre hasta arriba y te quedas un rato allí, viendo cómo el agua vuelve a quedarse quieta.",
+      "imagePrompt": "A shaded cleft among grey rocks with a natural stone basin full of rainwater, a young traveler in a grey elven cloak kneeling and drinking slowly, filling a waterskin, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar agua entre las rocas"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "El desprendimiento",
+      "text": "Cruzas una pedrera de rocas sueltas al pie de un risco. A medio camino oyes un chasquido arriba, y luego un rugido creciente: la ladera se ha soltado. Corres en diagonal, saltando de piedra en piedra, mientras a tu espalda bajan rodando bloques del tamaño de una casa. Uno pasa tan cerca que sientes el viento. Cuando se hace el silencio, estás al otro lado, cubierto de polvo gris, y el camino por el que viniste ya no existe.",
+      "imagePrompt": "A rockslide crashing down a grey scree slope below a cliff, house-sized boulders tumbling, a young traveler in a grey elven cloak running diagonally across the stones covered in grey dust, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atravesar la pedrera"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "Bruma entre las rocas",
+      "text": "Amanece con una bruma baja que llena los barrancos como leche. Solo asoman las crestas, como islas en un mar blanco. Caminas por ellas, de una a otra, mientras abajo la niebla se mueve despacio. Es hermoso y engañoso: un mal paso y caerías en lo blanco sin saber cuánto. Al mediodía el sol la deshace, y descubres que has avanzado más que en todo el día anterior. Por primera vez, al este, las colinas parecen bajar.",
+      "imagePrompt": "Low mist filling ravines like milk with grey rocky crests rising like islands, a young traveler in a grey elven cloak walking along a crest at dawn above the white sea of fog, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Caminar entre la bruma"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "El arco de piedra",
+      "text": "El viento ha tallado en la roca un arco enorme, tan alto que bajo él cabría una torre. Pasas por debajo y te detienes en mitad, con el cuello torcido, mirando hacia arriba. La piedra está estriada como la madera, en capas grises y ocres. En la sombra del arco hay una piedra lisa con marcas antiguas: rayas, círculos, quizá un mapa. Alguien pasó por aquí hace mucho y quiso dejar constancia. Grabas a su lado una pequeña B, por Bree.",
+      "imagePrompt": "A colossal natural stone arch carved by wind in grey and ochre layered rock, a young traveler in a grey elven cloak standing beneath it looking up, a smooth stone with ancient scratched circles and lines in the shadow, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Pasar bajo un arco de piedra"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "La manada de la meseta",
+      "text": "Sales a una meseta pelada, sin una roca donde cubrirte. A mitad de camino oyes el primer aullido, corto, a tu izquierda. Le responde otro a tu derecha, y otro detrás. Cuatro lobos de las rocas salen de las grietas del borde y se abren en abanico, sin prisa, sin dejar de mirarte. Cazan como cazan los lobos: en silencio, cerrando el círculo paso a paso. Te pones en el centro, giras despacio y esperas al primero.",
+      "imagePrompt": "A bare open rocky plateau, four stone-grey wolves emerging from cracks at the edge and fanning out in a closing circle around a young traveler in a grey elven cloak turning slowly with sword ready, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar una meseta pelada",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Lobo de las rocas",
+            "portrait": "wolf",
+            "levelOffset": -5,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121",
+              "31"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Lobo de las rocas",
+            "portrait": "wolf",
+            "levelOffset": -5,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121",
+              "31"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Lobo de las rocas",
+            "portrait": "wolf",
+            "levelOffset": -5,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121",
+              "31"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Lobo de las rocas",
+            "portrait": "wolf",
+            "levelOffset": -5,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121",
+              "31"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "El vigía del Ojo",
+      "text": "Rodeas una peña alta y ves, en lo más alto, un montón de leña seca y un orco sentado junto a ella. Es un vigía, y está ahí para encender una señal si ve algo. Todavía no te ha visto. Subes por detrás, agarrándote a cada grieta, con la respiración contenida. Te falta un tramo cuando una piedra se suelta bajo tu bota. El orco se vuelve y coge una tea; luego, al verte tan cerca, cambia la tea por el alfanje.",
+      "imagePrompt": "A lone orc lookout atop a high grey rock beside a pile of dry firewood for a signal beacon, turning with a curved blade as a young traveler in a grey elven cloak climbs up behind him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Rodear una peña alta",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": 1,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "El borde de las colinas",
+      "text": "Por fin llegas al borde oriental. Las colinas terminan en un acantilado largo y roto, y a sus pies se extiende una llanura gris y parda que brilla aquí y allá como un espejo sucio: agua estancada, juncos, niebla. Más allá, en el horizonte, se alza una muralla de montañas negras. El viento trae un olor a podrido. Buscas durante horas una bajada, y al fin das con un barranco ancho que desciende, piedra a piedra, hacia la llanura.",
+      "imagePrompt": "The eastern edge of grey rocky hills ending in a long broken cliff, a vast grey-brown marshland gleaming below with pools and mist, black mountains on the horizon, a young traveler in a grey elven cloak looking down from the brink, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar la bajada al este"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "Huellas enormes",
+      "text": "Bajas por un cauce seco que desciende hacia el este. En la arena del fondo hay huellas: enormes, de pies descalzos más largos que tu brazo, con dedos gruesos y uñas que arañan la roca. Hay también huesos rotos a golpes, no a mordiscos, y una piedra con manchas oscuras. Lo que dejó esas huellas pasó por aquí hace poco y es mucho más grande que tú. Sigues adelante, porque no hay otro camino, pero ahora miras cada sombra.",
+      "imagePrompt": "A dry stream bed descending through grey rocks, enormous bare footprints longer than an arm in the sand, smashed bones and a dark-stained stone, a young traveler in a grey elven cloak following warily with sword in hand, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir un cauce seco"
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El trol de las colinas",
+      "text": "La bajada desemboca en una explanada al pie de las colinas, desde la que ya se ve la ciénaga. Allí, sentado sobre una roca, te espera algo que te hiela la sangre: un trol de las colinas, gris como la piedra, con una porra hecha de un tronco entero. A su lado, un orco de Mordor le grita órdenes y le señala hacia ti con la lanza. El trol se levanta despacio, más alto que dos hombres, y la explanada entera parece encogerse.",
+      "imagePrompt": "A rocky flat at the foot of grey hills overlooking distant marshes, a huge grey hill troll with a tree-trunk club rising from a boulder, a Mordor orc pointing a spear at a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Trol de las colinas",
+            "portrait": "boss_emynmuil",
+            "levelOffset": 2,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "32",
+              "323",
+              "3232",
+              "31",
+              "123"
+            ],
+            "everyNTicks": 1,
+            "modes": {
+              "defenseBelowPct": 10,
+              "attackAbovePct": 70,
+              "maxDefenses": 1,
+              "defense": [
+                "2132",
+                "21",
+                "212",
+                "2121",
+                "21212",
+                "12",
+                "121"
+              ]
+            }
+          },
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -4,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,521 @@
+{
+  "id": "gorgoroth",
+  "name": "Gorgoroth",
+  "baseLevel": 61,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "La tierra de ceniza",
+      "text": "Has dejado a la gran araña chillando en la oscuridad, herida, de vuelta a sus agujeros, y no la has seguido. Al salir del túnel has pasado de noche bajo una torre que guardaba silencio, sin guardias en los muros y con humo en las ventanas, y has bajado por un barranco de la otra vertiente, resbalando entre piedras sueltas. Ahora, delante, se extiende una llanura de ceniza y escoria, rota por grietas rojas. En medio, sola, una montaña escupe fuego. El agua del odre tendrá que durar.",
+      "imagePrompt": "A vast plain of ash and broken slag split by glowing red cracks under a dark sky, a lone fire-spitting volcano in the middle, a young traveler in a grey elven cloak at the foot of a ravine looking out over it, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "El rastreador negro",
+      "text": "Al pie del barranco, agachado sobre tu rastro en la ceniza, hay un orco enorme, de piel negra y brazos largos, con una cota de malla hasta las rodillas y un ojo rojo pintado en el escudo. Olfatea tus huellas como un sabueso. Cuando levanta la vista y te ve, no grita ni llama a nadie: sonríe, enseñando los colmillos, y se levanta despacio, desenvainando una espada ancha. Quiere la presa para él solo.",
+      "imagePrompt": "The foot of a dark ravine on an ash plain, a huge black-skinned uruk in knee-length mail with a red eye on his shield sniffing footprints in the ash and rising with a broad sword toward a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar hacia la llanura",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Uruk negro",
+            "portrait": "uruk",
+            "levelOffset": 1,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121",
+              "22"
+            ],
+            "everyNTicks": 2,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "La calzada de la ceniza",
+      "text": "Encuentras una calzada elevada que cruza la llanura, de piedras negras apisonadas, y la sigues un trecho porque a los lados la ceniza te llega a los tobillos. Al rodear un montón de escoria, te das de bruces con dos orcos que vienen en sentido contrario, cargados con fardos. Se quedan un instante pasmados, tan sorprendidos como tú. Luego tiran los fardos al suelo, sacan las cimitarras y se lanzan contra ti, gritando para darse valor.",
+      "imagePrompt": "A raised road of packed black stones crossing an ash plain, two Mordor orcs dropping heavy bundles and drawing scimitars beside a slag heap as they run into a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir una calzada de orcos",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -2,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -2,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "El agua de la roca",
+      "text": "El odre pesa ya muy poco, y buscas agua entre unas rocas negras. En una oquedad encuentras un charco de lluvia vieja, de un palmo de hondo, cubierto por una película de ceniza. La apartas con la mano. El agua sabe a hierro y a humo, amarga, pero es agua. Bebes despacio, a sorbos pequeños, y llenas el odre hasta arriba. Luego te quedas un rato mirando el charco vacío, como quien mira un tesoro gastado.",
+      "imagePrompt": "A hollow among black rocks on an ash plain, a small puddle of old rainwater under a film of ash, a young traveler in a grey elven cloak kneeling and filling his waterskin from it, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar agua entre las rocas"
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "La grieta roja",
+      "text": "Oyes pies que marchan y te descuelgas en una grieta que corta el suelo. Abajo, muy hondo, brilla una luz roja, y sube un calor que te seca los labios y te hace sudar bajo la capa. Te quedas colgado de un saliente, a dos palmos del borde, mientras arriba pasa una tropa de orcos. La ceniza que levantan te cae encima. Cuando se alejan, sales arrastrándote, con las manos doloridas de tanto apretar la roca.",
+      "imagePrompt": "A narrow crack in an ash plain glowing red from deep below, a young traveler in a grey elven cloak hanging from a ledge just under the edge as a troop of orcs marches past above, ash falling on him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Esconderse en una grieta"
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "Los campamentos",
+      "text": "Desde lo alto de un montón de escoria miras la llanura. Está salpicada de campamentos: hogueras, tiendas negras, corrales y largas filas de orcos que se ponen en marcha hacia el norte, una detrás de otra, como hormigas. Toda esta tierra parece vaciarse hacia allí, hacia algo que la reclama. Al nordeste, entre las nubes, adivinas una mole oscura, inmensa, más alta que cualquier montaña, y apartas enseguida la vista. Mejor no mirarla mucho.",
+      "imagePrompt": "From atop a slag heap, a vast ash plain dotted with campfires, black tents and long lines of orcs marching north, an immense dark fortress looming in distant clouds, a young traveler in a grey elven cloak crouching on the heap, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a un montón de escoria"
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "El foso de ceniza",
+      "text": "Para alejarte de la calzada cruzas una hondonada llena de ceniza fina como harina. Te hundes hasta las rodillas, y luego hasta los muslos. Cada paso levanta una nube gris que se te mete en la boca, en los ojos y en la nariz. Te tapas la cara con el borde de la capa y respiras a través de ella. Tardas una eternidad en cruzar lo que habrías recorrido en un momento por la calzada. Al otro lado, escupes gris durante un buen rato.",
+      "imagePrompt": "A hollow filled with flour-fine grey ash, a young traveler in a grey elven cloak sinking to his thighs and wading through clouds of ash with his cloak pulled over his face, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar la hondonada de ceniza"
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "Las hogueras",
+      "text": "Al caer la noche tienes que pasar cerca de un campamento para no meterte en una grieta. Avanzas a gatas, aprovechando las sombras de la escoria. Estás a punto de dejarlo atrás cuando un orco que sale a orinar tropieza contigo. Su grito despierta a todo el campamento. Dos uruks negros y dos orcos se te echan encima, y a lo lejos, por toda la llanura, empiezan a sonar cuernos, uno tras otro. De pronto, todos te buscan a ti.",
+      "imagePrompt": "A night orc camp on an ash plain lit by fires, two black uruks and two Mordor orcs rushing at a young traveler in a grey elven cloak who rises from among slag heaps, horns blowing far across the plain, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Pasar junto a unas hogueras",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Uruk negro",
+            "portrait": "uruk",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121",
+              "22"
+            ],
+            "everyNTicks": 2,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Uruk negro",
+            "portrait": "uruk",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121",
+              "22"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "El día sin sol",
+      "text": "No hay día aquí, solo una penumbra parda un poco más clara que la noche. Te tumbas entre dos rocas y te cubres por entero con la capa gris de los elfos. Duermes a ratos. Una vez te despiertan unos pasos: una patrulla de orcos pasa a tres zancadas de ti, discutiendo, y uno llega a sentarse en tu roca a sacarse una piedra de la bota. No te ve. La capa te hace parecer una piedra más. Cuando se van, tardas mucho en volver a respirar.",
+      "imagePrompt": "A dim brown sunless day on an ash plain, a young traveler in a grey elven cloak lying hidden like a stone under a grey elven cloak between rocks, an orc sitting on the rock beside him pulling a pebble from his boot, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Dormir bajo la capa"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "El río de fuego",
+      "text": "Sigues el borde de la grieta durante horas. Más adelante se ensancha, y por el fondo corre despacio un río de roca fundida, rojo y amarillo, que hace crujir el aire. Su luz te alumbra el camino en la oscuridad, pero el calor es tan fuerte que tienes que alejarte del borde cada poco para respirar. Una piedra que pisas se suelta y desaparece en el fuego sin un ruido. Dejas la grieta en cuanto ves tierra firme a un lado.",
+      "imagePrompt": "A wide chasm in an ash plain with a slow river of molten red and yellow rock at the bottom, its glow lighting a young traveler in a grey elven cloak walking at a distance from the scorching edge, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el borde de la grieta"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "El olog del puente",
+      "text": "La grieta solo se puede cruzar por un puente de piedra estrecho. En el otro extremo, apoyado en el pretil, hay un trol. No es como el de las colinas: es más esbelto, de escamas negras, con escudo y martillo, y sus ojos se fijan en ti con una inteligencia fría. Ninguna criatura de esta tierra te ha parecido nunca tan peligrosa. Es un olog-hai. Se endereza, golpea el escudo con el martillo y avanza hasta el centro del puente. No piensa dejarte cruzar.",
+      "imagePrompt": "A narrow stone bridge over a glowing red chasm, a tall black-scaled olog-hai troll with a shield and a war hammer striding to the middle, facing a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el puente de piedra",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Olog-hai",
+            "portrait": "troll",
+            "levelOffset": 0,
+            "pattern": [
+              "2132",
+              "13",
+              "131",
+              "1313",
+              "13131"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "Las fraguas",
+      "text": "Para alejarte de las filas de orcos bajas por el otro lado del montón y te encuentras con un barrio de fraguas al aire libre: martillos que golpean sin descanso, chorros de chispas, hornos que rugen y orcos sudorosos que sacan del fuego hojas de espada al rojo. Nadie mira hacia fuera; todos trabajan como si les fuera la vida en ello. Te arrastras por detrás de las pilas de escoria, entre el estruendo, hasta que el ruido de los martillos queda atrás.",
+      "imagePrompt": "Open-air forges on an ash plain, roaring furnaces, showers of sparks and sweating orcs hammering red-hot blades, a young traveler in a grey elven cloak crawling behind piles of slag in the background, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Rodear unas fraguas"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "El campamento vacío",
+      "text": "Encuentras un campamento abandonado: tiendas caídas, hogueras frías y basura por todas partes. Su tropa ya ha marchado hacia el norte. Lo atraviesas buscando algo de agua, y no estás solo. Cuatro orcos rezagados revuelven los restos, peleándose por un barril. Al verte se olvidan del barril. Uno silba, otro se ríe, y los cuatro se despliegan a tu alrededor entre las tiendas caídas, cerrándote el paso por todos lados.",
+      "imagePrompt": "An abandoned orc camp of collapsed tents and cold fires on an ash plain, four straggler Mordor orcs leaving a barrel and spreading out around a young traveler in a grey elven cloak among the fallen tents, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atravesar un campamento vacío",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -5,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "La patrulla",
+      "text": "Sales de la hondonada por la otra ladera y te sacudes la ceniza. Pero tu rastro en la ceniza blanda es tan claro como un camino, y una patrulla lo encuentra enseguida: un uruk negro al mando y dos orcos que corren delante con la nariz pegada al suelo. Te alcanzan en un llano sin rocas donde esconderse. El uruk ladra una orden y los orcos se separan para atacarte por los flancos, mientras él viene de frente.",
+      "imagePrompt": "A bare flat on an ash plain, a black uruk barking orders as two Mordor orcs sniffing a clear trail in the soft ash split up to flank a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Salir por la otra ladera",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Uruk negro",
+            "portrait": "uruk",
+            "levelOffset": -4,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121",
+              "22"
+            ],
+            "everyNTicks": 2,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -4,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Orco de Mordor",
+            "portrait": "mordor_orc",
+            "levelOffset": -4,
+            "pattern": [
+              "13",
+              "131",
+              "1313",
+              "11"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "La última torta",
+      "text": "Te detienes al abrigo de una roca negra, agotado. En el fondo del zurrón encuentras la última torta de pan élfico, envuelta en su hoja. La partes en dos y te comes las dos mitades, despacio, con los ojos cerrados. Por un momento la ceniza desaparece y vuelves a estar bajo los árboles de oro, con agua clara cerca. Doblas la hoja vacía y la guardas en el pecho, como un recuerdo. Te levantas con fuerzas que no sabías que tenías.",
+      "imagePrompt": "Behind a black rock on an ash plain, a young traveler in a grey elven cloak eating the last piece of elven waybread with closed eyes, an empty green leaf in his hand, a faint golden glow of memory around him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Descansar tras una roca negra"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "La persecución",
+      "text": "Alguien ha encontrado tu rastro: empiezan a sonar cuernos por toda la llanura, y las patrullas convergen hacia donde estás. Corres hacia el oeste, alejándote de la montaña, saltando grietas y escondiéndote tras la escoria, mientras ellos te siguen con antorchas. Durante horas los llevas detrás de ti, cada vez más lejos. Al fin los pierdes en un campo de rocas. Exhausto, te das la vuelta y miras atrás. La llanura que rodea la montaña se ha quedado vacía de patrullas.",
+      "imagePrompt": "Orc patrols with torches chasing across a dark ash plain, a young traveler in a grey elven cloak running west among slag heaps and cracks, the fiery mountain far behind him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Alejarse de la montaña"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "Bajo el ojo",
+      "text": "Cruzas la llanura de noche. Al nordeste, en lo alto de una mole oscura e inmensa, arde una luz roja, y de pronto sientes que te busca, que barre la tierra como el haz de un faro. No te tiras al suelo: sigues andando, con la cabeza gacha y la capa ceñida, como una sombra más de la ceniza. Durante un instante insoportable el peso de esa mirada parece rozarte, y te tiemblan las rodillas, pero no te detienes. Luego se aparta y se vuelve hacia el norte, hacia otra cosa que le importa más. Respiras.",
+      "imagePrompt": "A dark ash plain at night, a distant immense black fortress with a fiery red light at its summit sweeping the land, a young traveler in a grey elven cloak walking on with bowed head, wrapped tight in his cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar la llanura de noche"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "La cueva de lava",
+      "text": "Encuentras la boca de una cueva larga y negra que dejó la lava al enfriarse, y te metes dentro para descansar. El aire está quieto y huele a azufre, pero aquí no te verán. Agitas el odre: queda poco. Bebes un sorbo, solo uno, y te lo pasas de un lado a otro de la boca antes de tragarlo. Tienes los labios agrietados y la garganta en carne viva. Duermes sentado contra la pared, con la espada en la mano.",
+      "imagePrompt": "Inside a long black lava tube cave, a young traveler in a grey elven cloak resting against the wall taking a single sip from an almost empty waterskin, sword in hand, a dim red glow at the entrance, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Meterse en una cueva de lava"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "La sombra alada",
+      "text": "Cruzas un llano abierto, sin una roca, y a mitad de camino el aire se enfría de golpe. Un grito agudo baja del cielo. Una sombra con alas enormes vuela bajo, en círculos, buscando. Echas a correr hacia una grieta lejana, la única cobertura, y la sombra te corta el paso una y otra vez, obligándote a desviarte hacia el sur, lejos de donde querías ir. Llegas a la grieta sin aliento y te metes dentro. Cuando sales, el cielo está vacío y no sabes dónde estás. Te buscaba a ti, y no sabes por qué.",
+      "imagePrompt": "An open ash flat under a dark sky, a huge winged shadow with a black rider swooping low to cut off a young traveler in a grey elven cloak who runs for a distant crevice, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el llano abierto"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "Las faldas del fuego",
+      "text": "Subes por el flanco más apartado de la montaña de fuego, lejos de la calzada que asciende en espiral, por una ladera de escoria suelta que se desliza bajo tus pies. El suelo quema a través de las botas y la montaña retumba como un tambor. Desde arriba ves antorchas de patrullas que barren la llanura, buscando. Entonces haces algo que no te explicas del todo: empujas una piedra grande ladera abajo, con estrépito, y te dejas ver contra el resplandor. Las antorchas giran hacia ti. Te las llevas detrás por este flanco, lejos de cualquier otro camino.",
+      "imagePrompt": "The far flank of a rumbling volcano away from its spiral road, a young traveler in a grey elven cloak pushing a boulder crashing downhill as distant orc torches on the ash plain below turn toward him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir hacia la montaña"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "Los últimos guardias",
+      "text": "Al pie de la montaña hay un último puesto de guardia: una torre baja de piedra negra junto a la calzada. Solo quedan en él dos uruks negros, afilando sus espadas junto a la puerta. Intentas rodearlos, pero la escoria cruje bajo tus pies. Uno se lleva un cuerno a la boca y lo hace sonar. Por toda la llanura le responden otros cuernos, y las antorchas de las patrullas empiezan a converger hacia ti. Los dos uruks se acercan con las espadas desnudas, uno por cada lado.",
+      "imagePrompt": "A low black stone guard tower beside a road at the foot of a volcano, a black uruk blowing a horn while another closes in on a young traveler in a grey elven cloak with a naked sword, torches converging across the plain, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el último puesto",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Uruk negro",
+            "portrait": "uruk",
+            "levelOffset": -2,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121",
+              "22"
+            ],
+            "everyNTicks": 2,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Uruk negro",
+            "portrait": "uruk",
+            "levelOffset": -2,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121",
+              "22"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "La bestia alada",
+      "text": "Te alejas de la calzada por el flanco más apartado de la montaña, con las antorchas siempre detrás. Pero hay algo que lleva tiempo buscándote por la llanura, y por fin te encuentra. Un chillido rasga el cielo y el aire se hiela, aunque el suelo arde. Una bestia sin plumas, de cuello largo y piel como cuero viejo, se posa en una roca delante de ti, y sobre ella una figura envuelta en negro, sin rostro, con una espada pálida. Un nazgûl. Por la ladera sube un uruk negro. Retrocedes cuesta abajo, arrastrándolos contigo, cada vez más lejos del camino.",
+      "imagePrompt": "A remote flank of a smoking volcano far from its road, a huge featherless long-necked winged beast landing on a rock, a faceless black-robed rider with a pale sword, a black uruk climbing, a young traveler in a grey elven cloak backing downhill, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Nazgûl en su bestia alada",
+            "portrait": "boss_gorgoroth",
+            "levelOffset": 4,
+            "pattern": [
+              "32",
+              "323",
+              "3232",
+              "3123",
+              "31232",
+              "31",
+              "123"
+            ],
+            "everyNTicks": 1,
+            "modes": {
+              "defenseBelowPct": 15,
+              "attackAbovePct": 70,
+              "maxDefenses": 1,
+              "defense": [
+                "2132",
+                "21",
+                "212",
+                "2121",
+                "21212",
+                "32",
+                "323"
+              ]
+            }
+          },
+          {
+            "name": "Uruk negro",
+            "portrait": "uruk",
+            "levelOffset": -4,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121",
+              "22"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "id": "lothlorien",
+  "name": "Lothlórien",
+  "baseLevel": 40,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "Caras Galadhon",
+      "text": "Los elfos te guían en silencio por el bosque durante un par de días hasta una colina verde rodeada por un muro y un foso. Sobre ella se alzan los árboles más altos que has visto, y entre sus ramas brillan cientos de luces, plateadas, verdes y doradas: es Caras Galadhon, la ciudad de los árboles. Te dan de comer, ropa limpia y un lecho alto entre las hojas. Esa noche no sueñas con fuego. Piensas en Bree, en el viento de la Cima, en el vado y en la oscuridad bajo la montaña. En lo alto de la colina, una luz blanca y serena parece velar por todo el bosque, y sabes que alguien te ha visto llegar.",
+      "imagePrompt": "A green hill crowned with immensely tall golden-leaved trees glowing with hundreds of silver, green and gold lamps among the branches at dusk, encircled by a wall and moat, a young traveler gazing up in peace, a serene white light at the summit, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "Las casas de los árboles",
+      "text": "Por la mañana subes por una escalera blanca que rodea un tronco inmenso. Arriba, entre las ramas, hay plataformas de madera clara, los talan, con paredes de tela gris que el viento mueve como velas. Ahí viven los galadhrim: duermen, cantan y trabajan por encima del suelo, sin que una sola rama parezca forzada. Un niño elfo te mira con curiosidad y se ríe cuando te agarras a la baranda. Desde lo alto, el bosque es un mar de oro que se pierde hacia el este, hasta un brillo lejano de agua.",
+      "imagePrompt": "A young traveler climbing a pale spiral stair around a colossal silver tree trunk toward wooden platforms with grey cloth walls high among golden leaves, an elf child laughing nearby, morning light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a los talan"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "Los caminos de la ciudad",
+      "text": "Recorres a pie los senderos que cruzan la colina. Están pavimentados de piedra blanca y bordeados de lámparas que nadie parece encender ni apagar. Los elfos te saludan con una inclinación breve, sin preguntas, y siguen con lo suyo. Oyes música en algún lugar alto, un arpa y una voz, y el murmullo del agua bajo el musgo. El muro verde rodea la ciudad como un abrazo. Por primera vez desde Rivendel no llevas la mano en la espada. Te das cuenta y la apartas despacio.",
+      "imagePrompt": "White stone paths winding between giant silver trees on a green hill, softly glowing lamps along the way, elves bowing politely to a young traveler walking with his hand away from his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Recorrer los caminos de la ciudad"
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "La sala de la Dama",
+      "text": "Te llevan a lo alto del árbol más grande, a una sala ovalada de paredes verdes y plata. Al fondo, sentados uno junto al otro, están el señor y la Dama del bosque. Te reciben solo un momento, con cortesía, entre otros asuntos más graves: te preguntan de dónde vienes y por qué caminos, y agradecen tus noticias. No es una audiencia larga; hay mensajeros que esperan y voces que hablan en voz baja junto a las columnas. Sales de la sala con la sensación de haber estado muy cerca de algo antiguo e inmenso, y de no haberlo entendido del todo.",
+      "imagePrompt": "An oval hall of green and silver high in a giant tree, an elven lord and a radiant lady seated side by side, a young traveler bowing briefly before them while messengers wait, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a la gran sala"
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "Los cantos de duelo",
+      "text": "Al caer la tarde, el bosque entero canta. Son cantos lentos, en una lengua que no entiendes, pero la tristeza no necesita traducción. Un elfo que guarda la escalera te explica que lloran a alguien que cayó en las profundidades de la montaña, un viajero gris que muchos conocían desde hacía siglos. Recuerdas el fuego bajo el puente de Moria y el temblor de la piedra. Te sientas en una raíz y escuchas hasta que la última voz se apaga entre las hojas.",
+      "imagePrompt": "Elves singing a slow lament at dusk among glowing golden trees, a young traveler sitting on a great root listening with bowed head, dim lamps among the branches, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Escuchar los cantos de duelo"
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "El guía de la linde",
+      "text": "Buscas al elfo que te guió desde el Nimrodel y lo encuentras afilando flechas al pie de un mallorn. Te recibe con más calidez que en el bosque, ahora que ya no eres un desconocido armado. Te cuenta que vigila la linde norte con sus hermanos y que, desde hace meses, los orcos rondan más que nunca las orillas. Te enseña unas pocas palabras en su lengua, para dar las gracias y para pedir paso. Las repites hasta que dejan de sonar torpes en tu boca.",
+      "imagePrompt": "An elf warden in grey sharpening arrows at the foot of a huge silver tree, a young traveler sitting beside him learning words, golden leaves drifting down, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar a tu guía élfico"
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "La fuente del jardín",
+      "text": "Sigues el rumor del agua hasta una fuente que brota en lo alto de la colina y baja en un hilo plateado por un canal de piedra. Hay un jardín en silencio, sin muro ni guardias, y sin embargo nadie entra en él sin permiso. Te sientas en la hierba, a distancia. El agua es tan clara que se ve el fondo como si no hubiera agua. Bebes un sorbo del canal y te parece que se te aclara la cabeza, como después de dormir mucho.",
+      "imagePrompt": "A silver spring flowing down a stone channel into a quiet garden on a hilltop among golden trees, a young traveler sitting on the grass drinking from his cupped hands, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el rumor de la fuente"
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "El espejo",
+      "text": "Al anochecer, una doncella élfica te lleva hasta lo alto de unos escalones y te señala una hondonada del jardín, con una pila de plata sobre un pedestal. Te dice que es el espejo de la Dama, y que nadie se asoma a él sin su permiso. Te quedas en el borde, sin bajar. Desde allí solo ves el agua quieta, y en ella las estrellas. Pero por un instante te parece que tiemblan y dibujan otra cosa: un gran río, dos figuras de piedra enormes y, muy al este, un resplandor rojo. Parpadeas, y vuelven a ser estrellas.",
+      "imagePrompt": "A shadowed garden hollow at night with a silver basin of water on a pedestal, an elf maiden on the steps pointing it out to a young traveler who stays at the edge, stars reflected in the still water, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Asomarse a la hondonada"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "El señor del bosque",
+      "text": "El señor del bosque te recibe a solas en una terraza alta. Le interesa tu camino: dónde viste orcos, por dónde rondan los lobos, qué se dice en Bree de las tierras del sur. Te escucha con paciencia y después te habla del río que nace en el norte y corre hacia el mar, y de las tierras que guarda cada orilla. Al despedirte comprendes que no te ha preguntado por curiosidad. Hay muchas fronteras que vigilar, y cada viajero trae noticias.",
+      "imagePrompt": "A silver-haired elven lord speaking with a young traveler on a high wooden terrace above golden treetops, a distant river glinting in the east, evening light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Escuchar al señor del bosque"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "El enano y el elfo",
+      "text": "Junto al pabellón de los huéspedes ves pasar a dos figuras que no esperabas ver juntas: un enano de barba larga, con un hacha al cinto, y un elfo alto de cabellos claros que se ríe de algo que el enano ha dicho. Hablan de árboles y de cuevas como viejos amigos. Te quedas mirando más de la cuenta. El enano te devuelve la mirada con el ceño fruncido, y luego te saluda con la cabeza. No te acercas: son de otro camino.",
+      "imagePrompt": "A long-bearded dwarf with an axe and a tall fair elf walking and laughing together near a grey pavilion among golden trees, a young traveler watching them from a distance, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Pasear junto al pabellón"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "Los tejedores",
+      "text": "En un talan bajo, unas elfas tejen capas en telares de madera clara. La tela es ligera como el aire, y su color cambia según la mires: gris al sol, verde entre las hojas, pardo como la tierra mojada. Te dejan pasar la mano por un paño a medio hacer. Es cálido y no pesa nada. Una de ellas te dice que esas capas no hacen invisible a nadie, pero que ayudan a que los ojos enemigos resbalen. Ojalá hubieras tenido una en la Cima.",
+      "imagePrompt": "Elf women weaving shimmering grey-green cloaks on pale wooden looms on a low tree platform, a young traveler touching the fabric in wonder, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Visitar a los tejedores"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "Los arqueros",
+      "text": "Los guardianes de la linde practican en un claro al pie de la colina, y te dejan probar uno de sus arcos. Es más largo que tú y cuesta tensarlo. Tu primera flecha se pierde entre los helechos; la tercera, al menos, toca el tronco. Ellos no se ríen. Uno te corrige la postura de los pies y otro te enseña a respirar antes de soltar. Al final no has aprendido a tirar, pero sí a mirar con más calma lo que tienes delante.",
+      "imagePrompt": "Elven archers practicing in a forest clearing, one correcting the stance of a young traveler drawing a tall longbow, arrows stuck in a target tree, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Practicar con los arqueros"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "Los cordeleros",
+      "text": "En un taller bajo las raíces, dos elfos trenzan cuerda gris con una fibra que brilla como seda. La cuerda es fina, apenas más gruesa que tu dedo, y sin embargo te aseguran que aguantaría el peso de tres hombres. Te dejan trenzar un palmo; te sale torcido y blando. Uno de ellos lo deshace con paciencia y lo vuelve a empezar delante de ti, más despacio. Piensas que, en el camino que te queda, algún día una cuerda así podría valer más que una espada.",
+      "imagePrompt": "Two elves braiding fine shining grey rope in a workshop among great tree roots, coils of rope hanging, a young traveler trying to braid a short length, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Visitar a los cordeleros"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "Los hornos",
+      "text": "El olor a pan te lleva hasta unos hornos de piedra escondidos entre las raíces. Los elfos que trabajan allí preparan unas tortas finas y doradas que envuelven en hojas. Te dan a probar un pedazo. Es poco más que un bocado, pero al rato te sientes como después de una comida entera. Te cuentan que ese pan dura semanas en el camino y que no se da a cualquiera. Lo dicen sin mirarte, como si no fuera contigo.",
+      "imagePrompt": "Elves baking thin golden cakes in stone ovens hidden among tree roots, wrapping them in green leaves, a young traveler tasting a small piece, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Entrar en los hornos"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "La colina de las flores",
+      "text": "A media mañana de camino hacia el oeste hay una colina pequeña cubierta de hierba siempre verde y salpicada de flores doradas y blancas. En la cima crecen dos anillos de árboles, y en el centro un mallorn sostiene un talan antiguo. Los elfos la visitan poco y hablan de ella en voz baja, como de un lugar donde el tiempo no pasa. Te tumbas en la hierba. Por un momento no oyes nada, ni el viento, ni tu propia sangre.",
+      "imagePrompt": "A small green hill covered in golden and white flowers, crowned by two rings of trees around a great silver tree with an old platform, a young traveler lying in the grass, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a la colina florida"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "Una noche en el talan",
+      "text": "Esa noche no puedes dormir y sales al borde del talan. El bosque está oscuro, pero arriba las estrellas parecen más cercanas que en ningún otro lugar de tu viaje. Abajo, alguien canta en voz muy baja. Piensas en el camino que te queda, que ya no sabes dónde acaba, y por primera vez no te asusta no saberlo. Te envuelves en la manta y te quedas allí sentado hasta que el cielo empieza a ponerse gris.",
+      "imagePrompt": "A young traveler sitting wrapped in a blanket at the edge of a high tree platform at night, stars bright above dark golden trees, faint lamps below, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Velar bajo las estrellas"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "El saber de los galadhrim",
+      "text": "Un elfo de pelo gris, uno de los más viejos de la ciudad, accede a hablar contigo. Te cuenta la historia del bosque desde antes de que hubiera hombres en Bree, y te habla del Enemigo, que vuelve a levantarse en su tierra negra del este, más allá del río y de las montañas de ceniza. No te dice nada para asustarte; habla como quien describe el invierno. Cuando terminas de escucharle, el sol ya se ha puesto y tienes mucho en que pensar.",
+      "imagePrompt": "An ancient grey-haired elf sage telling old stories to a young traveler on a carved bench beneath golden trees, a faint map of dark mountains sketched in the air by his gesture, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Escuchar a los sabios"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "Los centinelas del río",
+      "text": "Un grupo de guardianes vuelve de la orilla del gran río y te sientas con ellos junto al fuego. Traen malas noticias: en la ribera este hay orcos que disparan a todo lo que se mueve en el agua, y huargos que bajan a beber al anochecer. Más al sur, dicen, unos rápidos cierran el río y solo se pasan por tierra, con las barcas a hombros. Escuchas en silencio y preguntas de vez en cuando. Pronto, piensas, ese será tu camino.",
+      "imagePrompt": "Elf wardens in grey cloaks sitting around a small fire at night, reporting grim news to a young traveler, longbows propped beside them, one sketching a river in the dirt with an arrow, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Hablar con los centinelas"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "Los mapas del río",
+      "text": "En una sala baja, un elfo extiende ante ti un mapa del gran río dibujado con tinta plateada. Te señala los bosques de las orillas, las islas, los rápidos donde ninguna barca pasa sin cargarla a hombros y, más abajo, dos grandes figuras de piedra a ambos lados del cauce, y después un lago y una cascada que ruge. Más allá, el mapa se vuelve oscuro y vacío. Le preguntas qué hay allí. Se encoge de hombros y enrolla el pergamino.",
+      "imagePrompt": "An elf unrolling a silver-inked map of a great river on a wooden table, islands, rapids and two stone statues drawn on it, a young traveler leaning over it by lamplight, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Estudiar los mapas del río"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "La cena de despedida",
+      "text": "Los elfos preparan una cena sencilla bajo los árboles para despedirte, como si fueras un viejo conocido y no un viajero perdido de Bree. Hay pan, miel y un vino claro que sabe a verano. Al final, la Dama pasa entre las mesas y se detiene un instante a tu lado. Te dice muy poco: que el camino del sur está lleno de sombra, y que la luz que llevas dentro también cuenta. Luego sigue su camino entre las lámparas.",
+      "imagePrompt": "A simple farewell feast at long tables beneath glowing golden trees at night, elves eating bread and honey, a radiant elven lady pausing beside a young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acudir a la cena de despedida"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "Rumores río abajo",
+      "text": "Preguntas por los huéspedes del pabellón gris y un guardián te cuenta que ya se han ido. Partieron hace pocos días, río abajo, en tres barcas grises, con capas de los galadhrim y regalos de la Dama. Iban hacia el sur, aunque nadie sabe adónde exactamente, y algunos dicen que ni ellos mismos lo sabían. Miras el pabellón vacío, con las cortinas recogidas. Otra vez llegas un paso por detrás, como en Bree, como en Rivendel.",
+      "imagePrompt": "An empty grey pavilion among golden trees with its curtains tied back, an elf warden pointing downstream toward a distant river, a young traveler looking on thoughtfully, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Preguntar por los otros viajeros"
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "La partida en barcas",
+      "text": "Al amanecer te llevan hasta la orilla, donde el río plateado se une al gran río. Allí te espera una barca gris, pequeña y ligera. Los elfos te dan una capa como la que viste tejer, pan envuelto en hojas y un rollo de cuerda gris, y te enseñan a remar y a remendar el casco. Un guardián te cuenta que hace pocos días partieron de esta misma orilla tres barcas como la tuya, río abajo, hacia el sur. Luego empujan la tuya y la corriente te lleva. Te vuelves una vez: entre la bruma, el bosque dorado brilla y se aleja.",
+      "imagePrompt": "Dawn mist on a wide river where a silver stream joins it, a young traveler in a grey elven cloak in a small grey boat drifting away, elves on the shore of a golden forest, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    }
+  ]
+}

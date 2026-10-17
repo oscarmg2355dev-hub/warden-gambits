@@ -1,0 +1,120 @@
+{
+  "id": "moria",
+  "name": "Moria",
+  "nodes": {
+    "moria_1_0": {
+      "title": "Beneath the Mountain",
+      "text": "The channel is narrow, cold and half flooded. You crawl on for what seems like hours, until the water falls behind and the gallery widens. You light a torch with trembling hands. The light reveals smooth walls, carved with a precision no man could equal, and steps climbing into the dark. The channel has left you on a low level; the long roads of the city pass above you. You are inside Khazad-dûm, the ancient realm of the Dwarves, which Men call Moria. Nothing can be heard. Somewhere to the east, there must be a way out."
+    },
+    "moria_2_0": {
+      "title": "The Sentry on the Stair",
+      "text": "You climb a broad stair, its steps worn by thousands of Dwarven feet, rising through the rock for an endless time. At the top it opens onto a passage, and there a reddish light glows: the torch of a goblin on guard, warming its hands, bored, until it sees your own flame. It shrieks and hurls its spear at you. You cannot let it raise the alarm in these halls. You race up the last steps, sword first.",
+      "choiceLabel": "Climb the great stair"
+    },
+    "moria_2_1": {
+      "title": "The Troll of the Cistern",
+      "text": "You would rather not climb, so you follow a low tunnel that runs east at the level of the rock. After a while it opens into a chamber with a cistern of still water, carved in the stone. Something large is drinking from it: a cave-troll, with grey, scaly hide and arms that nearly brush the floor. It smells you before it sees you. It turns, water streaming from its mouth, and raises an iron club. The chamber is small and there is nowhere to hide.",
+      "choiceLabel": "Follow the low tunnel"
+    },
+    "moria_3_0": {
+      "title": "The Hall of Pillars",
+      "text": "Beyond the passage opens a hall so vast that your torch reaches neither ceiling nor walls. You see only pillars, rows of pillars carved like tree trunks, vanishing into the dark like a forest of stone. You walk among them in silence. Suddenly, very far away, you see a pale white light, unlike any fire, moving slowly along another gallery and disappearing. Someone else walks these halls. Perhaps it is the travellers who entered by the western door.",
+      "choiceLabel": "Cross the hall of pillars"
+    },
+    "moria_3_1": {
+      "title": "The Cold Forges",
+      "text": "An open door leads you into the forges. They are enormous, with furnaces carved in the rock and anvils the size of a cart, and everything has been cold for many years. Tools lie scattered across the floor, hammers, tongs, a Dwarvish axe split in half. Some walls are blackened by a fire that did not come from the furnaces, and in a corner you see black arrows lodged in the wood. There was fighting here. You run your hand over an anvil and think of those who worked at it.",
+      "choiceLabel": "Enter the forges"
+    },
+    "moria_3_2": {
+      "title": "The Great Shaft",
+      "text": "The tunnel opens onto the edge of an immense shaft, so wide your torch cannot light the far side. A stone walkway without a railing runs around it. You lean out carefully. Below there is nothing, only blackness, but from the depths rises a hot, dry air that smells of iron and burning, like the breath of a distant forge. For an instant you seem to feel a tremor in the rock. You draw back from the edge with your hair on end, not quite knowing what you fear.",
+      "choiceLabel": "Look into the great shaft"
+    },
+    "moria_3_3": {
+      "title": "The Mines",
+      "text": "You go down into the mines by a stone ramp. Here the tunnels are rougher and branch in every direction, and veins in the walls glitter in the torchlight like frost. There are overturned carts, rusty picks and bones you would rather not look at. The Dwarves have not worked here for a long time. But the silence is not complete: very far off, in some tunnel, rings the blow of a pick against rock, rhythmic and patient. Someone is still digging in the dark.",
+      "choiceLabel": "Go down into the mine galleries"
+    },
+    "moria_4_0": {
+      "title": "Footprints in the Dust",
+      "text": "You head towards where you saw the light, but when you reach the gallery no one is there. In the dust of the floor, however, footprints come down a stair and cross the gallery: large boots, small feet and a round mark, like that of a staff planted at every step. They vanish northward, up a rising stair. You understand that the channel has saved you a long road: they must have made a great detour through the upper levels. For a moment you wonder whether to wait for them. Then you turn away: whatever their road, it is not yours to cross. You seek your own way out.",
+      "choiceLabel": "Follow the distant light"
+    },
+    "moria_4_1": {
+      "title": "The Patrol",
+      "text": "You take a wide passage running east. You move fast, too fast. Rounding a corner you run headlong into a patrol: three hunched goblins with torches and, behind them, a far larger orc in a mail shirt and a horned helm, growling orders. He is a captain. He looks at you, grins to show his fangs and draws a broad, notched sword. The goblins slink off to cut your retreat. They are used to hunting in these passages.",
+      "choiceLabel": "Follow the eastern passage"
+    },
+    "moria_4_2": {
+      "title": "The Looters",
+      "text": "You search the workshops surrounding the forges, in case anything useful remains. You find a Dwarvish lamp without oil and little else. Leaving the last one, you discover you were not the only one searching: four goblins laden with scrap come in through the other door, squabbling over a dented helm. They freeze at the sight of you. Then they drop their loot and draw their knives, grinning. Four against one seems a good bargain to them.",
+      "choiceLabel": "Search the workshops"
+    },
+    "moria_4_3": {
+      "title": "The Channel of the Forges",
+      "text": "A stone channel that once carried water to the forges still runs along a wall. You follow it. The water is cold and clean, and you drink your fill. The channel leads you down a narrow passage, far from the great halls, to a small chamber where some Dwarf must once have lived: a stone bench, an empty niche, runes on the lintel. You sit down to rest. For the first time since entering the mountain, you close your eyes for a moment.",
+      "choiceLabel": "Follow the water channel"
+    },
+    "moria_4_4": {
+      "title": "The Guardroom",
+      "text": "You skirt the shaft along the walkway, hugging the wall, to a door that opens onto a guardroom. Inside you find the remains of an ancient battle: bones of Dwarves still in their mail, shattered shields, black arrows. The last defenders died here, facing the door. On the wall someone carved hasty runes, crooked, which you cannot read. There is no need: you understand it is a farewell. You bow your head a moment before going on.",
+      "choiceLabel": "Skirt the shaft by the walkway"
+    },
+    "moria_4_5": {
+      "title": "The Bridge over the Shaft",
+      "text": "A narrow stone bridge crosses the shaft through its centre, without a railing, and you decide to risk it. Halfway across you hear heavy footsteps that make the stone tremble. At the far end appears a cave-troll with a goblin perched on its back, prodding it with a spear to steer it. The troll sees you and roars. There is no room to step aside and no time to turn back. You plant your feet on the stone and wait, with the abyss on either side.",
+      "choiceLabel": "Cross the shaft by the bridge"
+    },
+    "moria_4_6": {
+      "title": "The Diggers",
+      "text": "You follow the tapping of the pick through the tunnels to a torchlit gallery. There several goblins are at work, hewing the rock under the eye of a large orc with a whip. Seeing you, the miners flee shrieking down the side tunnels, but the orc does not. He is a captain, broad-shouldered and covered in scars, and he seems almost pleased that something has broken the monotony. He cracks his whip, draws an axe and comes at you without haste.",
+      "choiceLabel": "Approach the sound of picks"
+    },
+    "moria_4_7": {
+      "title": "The Silver Vein",
+      "text": "You slip into a narrow vein that branches away from the main tunnels, so low you must go stooping. At its end it widens into a small chamber. In its walls gleams a metal that is neither silver nor iron: bright, cold, with a radiance of its own that grows as you bring the torch near. You have heard legends of that metal and of the greed it awakens. You do not touch it. You rest a while in its light, in silence, and then retrace your steps.",
+      "choiceLabel": "Hide in a narrow vein"
+    },
+    "moria_5_0": {
+      "title": "The Tomb in the Light",
+      "text": "You climb through passages and stairs until you see true light: a shaft of grey daylight falling through a high opening at the far end of a chamber. Beneath it, in the centre, stands a pale slab carved with runes: a tomb. All around, dust covers the bones of Dwarves and orcs, notched axes, burst chests and a book with pages slashed through by a blade. No one has passed this way in years; there is not a single footprint in the dust. Here the last of someone's people held out. You cannot read what the stone says, and you touch nothing. After a moment of silence, you go on.",
+      "choiceLabel": "Climb to the upper levels"
+    },
+    "moria_5_1": {
+      "title": "Drums in the Deep",
+      "text": "Then the drums begin. They sound far below, in the depths of the mountain, slow and deep, and set the rock trembling beneath your feet. You freeze. At once, on every side, you hear running feet, shrieks and harsh orders: the mines are waking. You break into a run eastward, but as you burst into a hall, two goblins and an orc captain bellowing at his troops bar your way. They were not expecting you, but they do not hesitate. You will have to hack your way through.",
+      "choiceLabel": "Press on to the east"
+    },
+    "moria_5_2": {
+      "title": "The Hidden Chamber",
+      "text": "You slip into a side chamber, cover your torch with your cloak and wait in the dark. Soon you hear footsteps, many and heavy, and harsh voices in a hideous tongue. Through the crack of the door you watch a column of orcs and goblins with torches marching past, hundreds perhaps, heading west in haste, as if on a hunt. One stops to sniff beside your door. You hold your breath. Then it follows the others. When the last echo dies away, it is long before you dare to come out.",
+      "choiceLabel": "Hide in a side chamber"
+    },
+    "moria_5_3": {
+      "title": "The Troll in the Passage",
+      "text": "You choose the most direct passage east, though it is the most exposed. It is wide and straight, lined with statues of Dwarf-kings, and you advance quickly. Too quickly. One of the statues moves: it is no statue, but a cave-troll that was sleeping upright in a niche. It wakes with a grunt, shakes the dust from its grey hide and blocks your way with its whole body. There is no turning back: the passage belongs to the troll, and you will have to win it.",
+      "choiceLabel": "Take the shortest way"
+    },
+    "moria_6_0": {
+      "title": "The Hall of the Chasm",
+      "text": "You descend a broad flight of steps towards the deepest levels of the city. The air grows hotter with every step. Below awaits an enormous hall with a soaring roof, its floor split by a chasm that gives off a red glow, like embers. At the far end you glimpse a still greater drop and, beyond it, an arch that might lead to the way out. You hear drums in the distance, ever faster. Something is coming, and it is not orcs. You hurry towards the far end of the hall.",
+      "choiceLabel": "Descend the broad stairway"
+    },
+    "moria_6_1": {
+      "title": "The Burning Passage",
+      "text": "You slip into a narrow passage that slopes downward, twisting like a worm. It is hot, ever hotter, and the walls sweat. Through cracks in the rock a red gleam shows now and then, and the smoke makes you cough. You hear drums in the distance, ever faster, and another, deeper sound, like a vast bellows breathing. At last the passage opens all at once onto an immense black space, and before you, over an abyss, stretches a bridge of stone.",
+      "choiceLabel": "Take the narrow passage"
+    },
+    "moria_7_0": {
+      "title": "Durin's Bane",
+      "text": "The bridge is a narrow arch of stone, without a railing, flung across a fiery abyss. On the far side, stairs climb towards the eastern gate. Behind you, a cave-troll and a straggling goblin have followed you to the bridge. Halfway across, the heat strikes you: from the chasm rises an immense shadow with a heart of flame. You cannot defeat it; you can only endure its blows of fire and press on. At the height of the struggle, the shadow halts and turns its head towards the western halls, towards a white light and approaching footsteps, and lets you escape. You climb the stairs towards the eastern gate and the light of day, never looking back."
+    }
+  },
+  "rivals": {
+    "Trasgo de Moria": "Moria Goblin",
+    "Trol de las cavernas": "Cave-troll",
+    "Orco capitán": "Orc Captain",
+    "Sombra de Durin": "Durin's Bane"
+  }
+}

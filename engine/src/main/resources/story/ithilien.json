@@ -1,0 +1,452 @@
+{
+  "id": "ithilien",
+  "name": "Ithilien",
+  "baseLevel": 55,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "Al sur, bajo las montañas",
+      "text": "Dejas atrás el estanque del señor de los ahogados y sales al desierto de ceniza. Allí pierdes las huellas pequeñas entre la escoria, pero sabes adónde iban: al este, más allá de la muralla negra de las montañas. Por ese lado no hay paso, y al norte se adivinan torres oscuras cerrando un valle. Giras al sur y sigues la falda occidental de las montañas por una calzada antigua. Durante dos días todo es polvo. Al tercero la tierra cambia: hierba, matas, árboles, y un olor a tomillo y a resina. En el primer manantial limpio bebes hasta hartarte y llenas el odre.",
+      "imagePrompt": "An ancient paved road running south along the western foot of black mountains, an ash desert giving way to grass, herbs and trees, a young traveler in a grey elven cloak kneeling to fill a waterskin at a clear spring, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "Los exploradores del sur",
+      "text": "La calzada, empedrada hace siglos por los hombres de Gondor, sigue hacia el sur entre árboles cada vez más altos. En una curva te topas con dos hombres que vienen en sentido contrario. Son altos y morenos, con capas rojas, anillos de oro en las orejas y una serpiente roja pintada en el escudo. Son los primeros hombres que ves en semanas, pero no traen buenas intenciones: te gritan algo en una lengua que no entiendes y desenvainan sus cimitarras a la vez.",
+      "imagePrompt": "An overgrown ancient paved road through tall trees, two tall southern warriors in red cloaks with gold earrings and red serpent shields drawing curved scimitars against a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la vieja calzada",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Guerrero haradrim",
+            "portrait": "haradrim",
+            "levelOffset": -2,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "123"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Guerrero haradrim",
+            "portrait": "haradrim",
+            "levelOffset": -2,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "123"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "El jardín abandonado",
+      "text": "Dejas la calzada y bajas por unas laderas cubiertas de hierbas: tomillo, salvia, mejorana, matas que crujen bajo tus botas y sueltan su olor al pisarlas. Entre ellas asoman muros bajos de piedra, bancales que alguien cuidó hace mucho y que ahora nadie riega. Esto fue un jardín, comprendes, el jardín de un reino entero. En un arroyo te lavas el barro de la ciénaga de la cara y de las manos. Por primera vez en muchos días, te descubres sonriendo.",
+      "imagePrompt": "Sunny hillsides overgrown with thyme, sage and wild herbs among old crumbling terrace walls, a small clear stream where a young traveler in a grey elven cloak washes marsh mud from his face, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar por las laderas de hierbas"
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "La atalaya",
+      "text": "Sobre una colina asoma una torre de vigía, sin tejado, con la escalera interior medio derrumbada. En el dintel de la puerta hay tallado un árbol con siete estrellas encima, casi borrado por la hiedra. Subes con cuidado hasta lo alto. Desde allí ves bosques que ondulan hacia el sur, el brillo lejano del gran río al oeste y, al este, siempre, las montañas negras. Al sur, entre los árboles, se levantan varias columnas de humo. Alguien acampa en estas tierras, y no son los dueños de la torre.",
+      "imagePrompt": "A roofless ruined watchtower on a wooded hill, a worn carving of a tree with seven stars above its ivy-covered door, a young traveler in a grey elven cloak on top looking south at columns of smoke rising from distant forests, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a la torre en ruinas"
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "Silbidos en el bosque",
+      "text": "Te adentras en un bosque espeso de robles y helechos. Al poco oyes un silbido, como el de un pájaro, y otro que le responde desde el lado contrario. Luego un tercero, más cerca. No son pájaros. Te quedas quieto, con la mano en la espada, y durante un largo rato no pasa nada. Solo una vez, entre dos troncos, te parece ver moverse una sombra vestida de verde y pardo, que desaparece sin un ruido. Alguien te ha visto, y ha decidido dejarte pasar.",
+      "imagePrompt": "A dense forest of oaks and ferns in green dappled light, a young traveler in a grey elven cloak standing still with his hand on his sword hilt, a barely visible shadowy figure in green and brown slipping between distant trunks, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Adentrarse en la espesura"
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "Entre los cipreses",
+      "text": "Cruzas un bosquecillo de cipreses oscuros, altos y estrechos como lanzas, que huelen a resina caliente. Una flecha se clava en el tronco que tienes al lado, a un palmo de tu cabeza, y se queda temblando. Te tiras al suelo. Entre las ramas de un ciprés, más arriba, ves una capa roja y el brillo de un arco que se tensa otra vez. El arquero está solo y te ha elegido como blanco. Corres de tronco en tronco hacia él, mientras otra flecha silba a tu lado.",
+      "imagePrompt": "A grove of tall narrow dark cypress trees, an arrow quivering in a trunk beside a young traveler in a grey elven cloak who runs toward a southern archer in a red cloak drawing his bow among the branches, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el bosquecillo de cipreses",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Arquero haradrim",
+            "portrait": "haradrim",
+            "levelOffset": 0,
+            "pattern": [
+              "32",
+              "323",
+              "3232"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "El vado de piedras",
+      "text": "Un arroyo ancho y rápido baja de las montañas, y lo cruzas por un vado de piedras planas. En la otra orilla, tres hombres del sur llenan sus odres agachados junto al agua. Te ven al mismo tiempo que tú a ellos. El que lleva lanza se levanta de un salto y se mete en el arroyo para cortarte el paso, mientras los otros dos retroceden por la orilla y descuelgan los arcos. Estás en medio del agua, sin dónde esconderte. Avanzas hacia el lancero.",
+      "imagePrompt": "A wide fast stream crossed by flat stepping stones, a southern spearman leaping into the water to block a young traveler in a grey elven cloak while two southern archers on the far bank unsling their bows, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Vadear el arroyo grande",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Guerrero haradrim",
+            "portrait": "haradrim",
+            "levelOffset": -4,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "123"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Arquero haradrim",
+            "portrait": "haradrim",
+            "levelOffset": -4,
+            "pattern": [
+              "32",
+              "323",
+              "3232"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Arquero haradrim",
+            "portrait": "haradrim",
+            "levelOffset": -4,
+            "pattern": [
+              "32",
+              "323",
+              "3232"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "La aldea vacía",
+      "text": "Al pie de la colina hay una aldea en ruinas: casas de piedra sin tejado, un pozo cegado y una fuente seca con una pila tallada en forma de concha. En una de las casas, la chimenea aún conserva hollín. Decides pasar allí la noche, sin encender fuego, porque el humo se vería desde lejos. Cenas pan élfico con unas hojas de acedera que encuentras en un huerto asilvestrado. Antes de dormir, te preguntas quién vivía aquí y adónde se fue.",
+      "imagePrompt": "A ruined stone village at dusk, roofless houses and a dry shell-shaped fountain, a young traveler in a grey elven cloak sitting without a fire inside a roofless house eating elven bread with wild sorrel leaves, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar a la aldea en ruinas"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "El campamento del humo",
+      "text": "Te acercas a una de las columnas de humo al caer la tarde, arrastrándote entre los helechos. Es un campamento de hombres del sur: tiendas rojas, lanzas clavadas en el suelo y cuatro guardias junto al fuego, asando algo. Quieres rodearlo sin que te vean, pero una rama seca se parte bajo tu rodilla. Las cuatro cabezas se vuelven a la vez. Dos de ellos echan mano de las cimitarras; los otros dos, de los arcos. Ya no tiene sentido esconderse.",
+      "imagePrompt": "A southern war camp in a forest at dusk, red tents and planted spears, two southern warriors and two archers by a fire turning toward a young traveler in a grey elven cloak who rises from the ferns with his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acercarse al humo",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Guerrero haradrim",
+            "portrait": "haradrim",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "123"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Guerrero haradrim",
+            "portrait": "haradrim",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "123"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Arquero haradrim",
+            "portrait": "haradrim",
+            "levelOffset": -5,
+            "pattern": [
+              "32",
+              "323",
+              "3232"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Arquero haradrim",
+            "portrait": "haradrim",
+            "levelOffset": -5,
+            "pattern": [
+              "32",
+              "323",
+              "3232"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "La flecha verde",
+      "text": "Sigues la dirección de los silbidos y llegas a un claro. Al borde, junto a un tronco caído, yace un hombre del sur, con su capa roja extendida sobre la hierba. Tiene clavada en el pecho una flecha larga, de plumas verdes, que no se parece a ninguna flecha de orco. Alguien defiende todavía estos bosques, sin dejarse ver, contra los que vienen del sur. No tocas nada. Te alejas del claro despacio, sintiendo en la nuca unos ojos que no encuentras.",
+      "imagePrompt": "A forest glade with a fallen trunk, a dead southern warrior in a red cloak lying on the grass with a long green-feathered arrow, a young traveler in a grey elven cloak backing away slowly and glancing around, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el rastro de los silbidos"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "La columna roja",
+      "text": "Desde la ladera, oculto entre las matas, ves pasar una columna de hombres del sur por la calzada del valle. Marchan hacia el norte, cientos de ellos, con estandartes rojos y negros, lanzas, escudos con la serpiente y tambores que retumban en el pecho. En medio de la columna avanza algo que al principio confundes con una colina gris: una bestia enorme, con colmillos curvos y una torre de madera sobre el lomo. Contienes el aliento hasta que el último soldado se pierde de vista.",
+      "imagePrompt": "From a bushy hillside, a long column of southern soldiers with red and black banners marching along a valley road, a colossal grey tusked beast with a wooden tower on its back among them, a young traveler in a grey elven cloak hiding, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Esconderse en la ladera"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "El estanque de los nenúfares",
+      "text": "Entre unos cedros encuentras un estanque redondo, de agua clara, con nenúfares blancos y un borde de piedra labrada que el tiempo ha ido cubriendo de musgo. Libélulas azules vuelan sobre la superficie. Te quitas las botas y metes los pies en el agua fresca, y por un rato te olvidas de las flechas, de la ceniza y de las montañas. Una rana salta desde una hoja. Cuando por fin te levantas, el sol ya ha bajado y la sombra de los cedros cubre el agua.",
+      "imagePrompt": "A round clear pool among cedars with white water lilies and a mossy carved stone rim, blue dragonflies over the water, a young traveler in a grey elven cloak sitting barefoot with his feet in the water in golden afternoon light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar agua entre los cedros"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "Cuernos en el oeste",
+      "text": "Hacia el oeste suenan cuernos, y después gritos, choques de acero y un bramido tan enorme que hace temblar las hojas. Corres hacia allí, pero el bosque es espeso y tardas horas en llegar. Cuando lo haces, todo ha terminado. Solo encuentras helechos aplastados, lanzas rotas, jirones de capas rojas colgando de las ramas y una franja de árboles tronchados que se pierde hacia el río. No hay nadie. Quienquiera que luchó aquí se ha ido, y tú llegas tarde, otra vez.",
+      "imagePrompt": "A trampled forest of crushed ferns after a battle, broken spears and torn red cloaks hanging from branches, a swath of snapped trees heading west, a young traveler in a grey elven cloak arriving too late and looking around, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el sonido de los cuernos"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "Arqueros en el barranco",
+      "text": "Subes por un barranco seco, entre rocas blancas y arbustos de espino, buscando un paso hacia el sur. A mitad de la subida rueda una piedra desde arriba, y luego otra. Levantas la vista: en el borde del barranco, dos arqueros del sur te esperan con las flechas en la cuerda, uno a cada lado, como si supieran que ibas a pasar por aquí. Las flechas rebotan en las rocas junto a tus pies. Trepas hacia el más cercano, agachado, de roca en roca.",
+      "imagePrompt": "A dry ravine of white rocks and thorn bushes, two southern archers on either rim shooting down, arrows glancing off the rocks as a young traveler in a grey elven cloak climbs toward the nearest one, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir por el barranco",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Arquero haradrim",
+            "portrait": "haradrim",
+            "levelOffset": -2,
+            "pattern": [
+              "32",
+              "323",
+              "3232"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Arquero haradrim",
+            "portrait": "haradrim",
+            "levelOffset": -2,
+            "pattern": [
+              "32",
+              "323",
+              "3232"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "La noche tibia",
+      "text": "Acampas bajo un cedro enorme, al abrigo de sus ramas bajas. Es la primera noche tibia desde que saliste del bosque dorado. El cielo está limpio y lleno de estrellas, y entre los arbustos canta un ruiseñor, una y otra vez, como si en el mundo no hubiera guerra. Te tumbas boca arriba sobre la capa. Piensas en Bree, en la posada y en su ruido de jarras, y te duermes antes de darte cuenta. Nadie te molesta en toda la noche.",
+      "imagePrompt": "A warm starry night under a huge cedar with low branches, a young traveler in a grey elven cloak lying on his back on his cloak gazing at the stars, a small nightingale singing on a nearby bush, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acampar bajo un cedro"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "El puente roto",
+      "text": "Un torrente encajonado corta el bosque de norte a sur, y el único paso es un puente de piedra de un solo arco, roto por la mitad. Entre los dos extremos queda un hueco de varios pasos sobre el agua espumosa. Lanzas primero el zurrón a la otra orilla. Luego retrocedes, tomas carrerilla y saltas. Caes de rodillas en el borde, con medio cuerpo en el aire, y te arrastras hasta estar a salvo. Debajo, el agua sigue rugiendo, indiferente.",
+      "imagePrompt": "A single-arch stone bridge broken in the middle over a foaming gorge torrent, a young traveler in a grey elven cloak landing on his knees on the far edge after a running leap, his pack lying ahead of him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el torrente"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "La flecha que no viste",
+      "text": "Atraviesas un robledal antiguo, de troncos tan anchos que tres hombres no los abarcarían. Vas atento al suelo, a las ramas que crujen, y no miras hacia arriba. Un silbido corto, a tu espalda, te hace girar: desde una rama alta, un arquero del sur cae entre las hojas con una flecha de plumas verdes clavada en el hombro. Te apuntaba a ti. Se levanta como puede y huye cojeando hacia el sur. Buscas a quien disparó. Solo hay árboles, y un silencio largo.",
+      "imagePrompt": "An ancient oak wood with huge trunks, a southern archer falling from a high branch with a green-feathered arrow in his shoulder, a young traveler in a grey elven cloak turning around in surprise, no shooter visible, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atravesar el robledal"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "La tormenta",
+      "text": "El cielo se cubre de golpe y estalla una tormenta de primavera, con truenos que ruedan entre las colinas. Encuentras refugio en una sala de piedra medio enterrada en la ladera, con columnas cubiertas de hiedra. En la pared del fondo hay tallado un rey con corona alta y una espada sobre las rodillas, con la cara borrada por los siglos. Te sientas a su lado, empapado, y escuchas la lluvia golpear las hojas. Huele a tierra mojada y a romero.",
+      "imagePrompt": "A spring thunderstorm over wooded hills, a half-buried ivy-covered stone hall with columns, a weathered carving of a crowned king with a sword across his knees, a young traveler in a grey elven cloak sitting soaked beside it, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar refugio en la ladera"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "Huellas enormes",
+      "text": "En un claro encuentras huellas redondas, tan grandes que podrías sentarte dentro de una, hundidas en la tierra blanda. Alrededor, los árboles jóvenes están partidos a la altura de tu pecho y hay ramas arrancadas mucho más arriba de lo que alcanzarías con la espada. Algo enorme ha pasado por aquí hace poco, a paso lento, y se ha detenido a comer cortezas. Las huellas siguen hacia el sur. Las sigues con cautela, procurando no hacer ruido.",
+      "imagePrompt": "A forest clearing with enormous round footprints pressed into soft earth, young trees snapped at chest height and branches torn high above, a young traveler in a grey elven cloak following the trail cautiously southward, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir unas huellas enormes"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "El centinela del sur",
+      "text": "El bosque se aclara y llegas a un collado por el que pasa un sendero hacia el sur. En medio, apoyado en una lanza larga, te espera un guerrero del sur más alto que los demás, con un escudo redondo de bronce y un casco con penacho rojo. No se esconde ni llama a nadie. Te mira acercarte, clava la lanza en el suelo, desenvaina una cimitarra ancha y te hace un gesto con la cabeza. Quiere luchar contigo él solo.",
+      "imagePrompt": "A wooded pass with a trail heading south, a tall southern warrior with a round bronze shield and a red plumed helmet drawing a broad scimitar, his long spear planted beside him, facing a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir hacia el sur",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Guerrero haradrim",
+            "portrait": "haradrim",
+            "levelOffset": 1,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "123"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "Bajo el humo del este",
+      "text": "Subes a una loma pelada para ver el camino. Mientras miras, el cielo del este empieza a oscurecerse: por encima de las montañas avanza una nube parda, enorme, que se extiende despacio sobre los bosques como una mancha de aceite sobre el agua. El sol se vuelve un disco pálido y luego desaparece. El canto de los pájaros se apaga. A media mañana parece que anochece. No sabes qué es, pero sabes de dónde viene, y sientes que algo grande ha empezado.",
+      "imagePrompt": "A bare hilltop over wooded lands, a vast brown cloud rolling from black eastern mountains and swallowing a pale sun, a young traveler in a grey elven cloak watching as daylight fades to dusk at midmorning, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a la loma"
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El olifante de guerra",
+      "text": "El sendero te lleva a un claro junto a la calzada, lleno de árboles tronchados. Allí está: una bestia gris, grande como una casa, con colmillos curvos envueltos en anillas de bronce y una torre de madera sobre el lomo, de la que cuelgan jirones rojos. Debió de quedarse rezagada de su columna. En la torre, un arquero del sur tensa el arco y grita algo. La bestia levanta la trompa, lanza un bramido que hace temblar el suelo y viene hacia ti.",
+      "imagePrompt": "A forest clearing of snapped trees beside an old road, a colossal grey war oliphant with bronze-ringed curved tusks and a wooden tower hung with red rags, a southern archer in the tower, charging at a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Olifante de guerra",
+            "portrait": "boss_ithilien",
+            "levelOffset": 2,
+            "pattern": [
+              "32",
+              "323",
+              "3232",
+              "12",
+              "121",
+              "123",
+              "31"
+            ],
+            "everyNTicks": 1,
+            "modes": {
+              "defenseBelowPct": 15,
+              "attackAbovePct": 70,
+              "maxDefenses": 1,
+              "defense": [
+                "2132",
+                "21",
+                "212",
+                "2121",
+                "21212",
+                "32",
+                "323"
+              ]
+            }
+          },
+          {
+            "name": "Arquero haradrim",
+            "portrait": "haradrim",
+            "levelOffset": -4,
+            "pattern": [
+              "32",
+              "323",
+              "3232"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    }
+  ]
+}

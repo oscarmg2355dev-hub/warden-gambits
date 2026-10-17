@@ -1,0 +1,119 @@
+{
+  "id": "ithilien",
+  "name": "Ithilien",
+  "nodes": {
+    "ithilien_1_0": {
+      "title": "South, beneath the Mountains",
+      "text": "You leave behind the pool of the lord of the drowned and come out into the desert of ash. There you lose the small footprints among the slag, but you know where they were going: east, beyond the black wall of the mountains. There is no pass on this side, and to the north you glimpse dark towers closing a valley. You turn south and follow the western skirts of the mountains along an ancient road. For two days all is dust. On the third the land changes: grass, bushes, trees, and a scent of thyme and resin. At the first clean spring you drink your fill and refill your waterskin."
+    },
+    "ithilien_2_0": {
+      "title": "The Scouts of the South",
+      "text": "The road, paved centuries ago by the men of Gondor, runs south between ever taller trees. At a bend you run into two men coming the other way. They are tall and swarthy, with red cloaks, gold rings in their ears and a red serpent painted on their shields. They are the first men you have seen in weeks, but they mean no good: they shout something at you in a tongue you do not understand and draw their scimitars as one.",
+      "choiceLabel": "Follow the old road"
+    },
+    "ithilien_2_1": {
+      "title": "The Forsaken Garden",
+      "text": "You leave the road and go down slopes covered with herbs: thyme, sage, marjoram, bushes that crackle beneath your boots and release their scent as you tread on them. Among them low stone walls appear, terraces that someone tended long ago and that no one waters now. This was a garden, you understand, the garden of a whole realm. In a brook you wash the mud of the marshes from your face and hands. For the first time in many days, you find yourself smiling.",
+      "choiceLabel": "Descend the herb slopes"
+    },
+    "ithilien_3_0": {
+      "title": "The Watchtower",
+      "text": "On a hill stands a watchtower, roofless, its inner stair half collapsed. On the lintel of the door is carved a tree with seven stars above it, almost hidden by ivy. You climb carefully to the top. From there you see woods rolling southward, the distant gleam of the great river to the west and, to the east, always, the black mountains. To the south, among the trees, several columns of smoke rise. Someone is camping in these lands, and they are not the masters of the tower.",
+      "choiceLabel": "Climb the ruined tower"
+    },
+    "ithilien_3_1": {
+      "title": "Whistles in the Wood",
+      "text": "You go deep into a dense wood of oaks and ferns. Soon you hear a whistle, like a bird's, and another answering it from the opposite side. Then a third, closer. They are not birds. You stand still, your hand on your sword, and for a long while nothing happens. Only once, between two trunks, do you seem to see a shadow clad in green and brown move and vanish without a sound. Someone has seen you, and has decided to let you pass.",
+      "choiceLabel": "Venture into the thicket"
+    },
+    "ithilien_3_2": {
+      "title": "Among the Cypresses",
+      "text": "You cross a grove of dark cypresses, tall and slender as spears, smelling of warm resin. An arrow buries itself in the trunk beside you, a hand's breadth from your head, and stays there quivering. You throw yourself to the ground. Among the branches of a cypress, higher up, you see a red cloak and the gleam of a bow being drawn again. The archer is alone and has chosen you as his mark. You run from trunk to trunk towards him, while another arrow whistles past you.",
+      "choiceLabel": "Cross the cypress grove"
+    },
+    "ithilien_3_3": {
+      "title": "The Stepping-stone Ford",
+      "text": "A wide, swift stream comes down from the mountains, and you cross it by a ford of flat stones. On the far bank, three men of the south are crouched by the water, filling their waterskins. They see you at the same moment you see them. The one with the spear leaps up and wades into the stream to bar your way, while the other two fall back along the bank and unsling their bows. You are in the middle of the water with nowhere to hide. You advance on the spearman.",
+      "choiceLabel": "Ford the great stream"
+    },
+    "ithilien_4_0": {
+      "title": "The Empty Village",
+      "text": "At the foot of the hill lies a ruined village: roofless stone houses, a choked well and a dry fountain with a basin carved in the shape of a shell. In one of the houses the chimney still holds soot. You decide to spend the night there without lighting a fire, for the smoke would be seen from afar. You sup on Elven bread with some sorrel leaves you find in an overgrown garden. Before you sleep, you wonder who lived here and where they went.",
+      "choiceLabel": "Go down to the ruined village"
+    },
+    "ithilien_4_1": {
+      "title": "The Camp of Smoke",
+      "text": "You approach one of the columns of smoke at dusk, crawling among the ferns. It is a camp of men of the south: red tents, spears planted in the ground and four guards by the fire, roasting something. You mean to circle round it unseen, but a dry branch snaps beneath your knee. The four heads turn at once. Two of them reach for their scimitars; the other two, for their bows. There is no point in hiding any longer.",
+      "choiceLabel": "Creep towards the smoke"
+    },
+    "ithilien_4_2": {
+      "title": "The Green Arrow",
+      "text": "You follow the direction of the whistles and come to a clearing. At its edge, beside a fallen trunk, lies a man of the south, his red cloak spread on the grass. In his chest is lodged a long arrow with green feathers, unlike any orc arrow. Someone still defends these woods, unseen, against those who come from the south. You touch nothing. You leave the clearing slowly, feeling on the back of your neck eyes that you cannot find.",
+      "choiceLabel": "Follow the whistles"
+    },
+    "ithilien_4_3": {
+      "title": "The Red Column",
+      "text": "From the hillside, hidden among the bushes, you watch a column of men of the south pass along the road in the valley. They are marching north, hundreds of them, with red and black banners, spears, serpent shields and drums that throb in your chest. In the midst of the column moves something you at first mistake for a grey hill: an enormous beast, with curved tusks and a wooden tower on its back. You hold your breath until the last soldier passes out of sight.",
+      "choiceLabel": "Hide on the hillside"
+    },
+    "ithilien_4_4": {
+      "title": "The Pool of Water-lilies",
+      "text": "Among some cedars you find a round pool of clear water, with white water-lilies and a rim of dressed stone that time has been covering with moss. Blue dragonflies skim the surface. You take off your boots and dip your feet in the cool water, and for a while you forget the arrows, the ash and the mountains. A frog leaps from a leaf. When at last you rise, the sun has sunk and the shadow of the cedars covers the water.",
+      "choiceLabel": "Seek water among the cedars"
+    },
+    "ithilien_4_5": {
+      "title": "Horns in the West",
+      "text": "To the west horns sound, then shouts, the clash of steel and a bellow so enormous it makes the leaves tremble. You run towards it, but the wood is dense and it takes you hours to arrive. When you do, it is all over. You find only flattened ferns, broken spears, shreds of red cloaks hanging from the branches and a swathe of snapped trees running off towards the river. There is no one. Whoever fought here has gone, and you arrive late, once again.",
+      "choiceLabel": "Follow the sound of horns"
+    },
+    "ithilien_4_6": {
+      "title": "Archers in the Ravine",
+      "text": "You climb a dry ravine, among white rocks and thorn bushes, looking for a way south. Halfway up a stone rolls down from above, then another. You look up: on the rim of the ravine two archers of the south await you with arrows on the string, one on each side, as though they knew you would pass this way. The arrows glance off the rocks at your feet. You climb towards the nearer one, crouching, from rock to rock.",
+      "choiceLabel": "Climb the ravine"
+    },
+    "ithilien_4_7": {
+      "title": "The Mild Night",
+      "text": "You make camp beneath a huge cedar, sheltered by its low branches. It is the first mild night since you left the Golden Wood. The sky is clear and full of stars, and among the bushes a nightingale sings, again and again, as if there were no war in the world. You lie on your back on your cloak. You think of Bree, of the inn and its clatter of mugs, and fall asleep before you know it. No one troubles you all night.",
+      "choiceLabel": "Camp beneath a cedar"
+    },
+    "ithilien_5_0": {
+      "title": "The Broken Bridge",
+      "text": "A deep-cut torrent splits the wood from north to south, and the only crossing is a single-arched stone bridge, broken in the middle. Between its two ends there is a gap of several paces above the foaming water. First you throw your pack to the far side. Then you step back, take a run-up and leap. You land on your knees at the edge, half your body in the air, and drag yourself to safety. Below, the water roars on, indifferent.",
+      "choiceLabel": "Cross the torrent"
+    },
+    "ithilien_5_1": {
+      "title": "The Arrow You Did Not See",
+      "text": "You pass through an ancient oakwood, its trunks so broad that three men could not encircle them. You keep your eyes on the ground, on the creaking branches, and do not look up. A short whistle behind you makes you spin round: from a high branch an archer of the south falls through the leaves with a green-feathered arrow in his shoulder. He was aiming at you. He picks himself up as best he can and limps away southward. You look for whoever shot. There are only trees, and a long silence.",
+      "choiceLabel": "Pass through the oakwood"
+    },
+    "ithilien_5_2": {
+      "title": "The Storm",
+      "text": "The sky clouds over all at once and a spring storm breaks, with thunder rolling among the hills. You find shelter in a stone hall half buried in the hillside, with ivy-clad pillars. On the far wall is carved a king with a tall crown and a sword across his knees, his face worn away by the centuries. You sit beside him, drenched, and listen to the rain beating on the leaves. It smells of wet earth and rosemary.",
+      "choiceLabel": "Seek shelter on the hillside"
+    },
+    "ithilien_5_3": {
+      "title": "Enormous Tracks",
+      "text": "In a clearing you find round tracks, so large you could sit inside one, sunk into the soft earth. Around them the young trees are snapped at the height of your chest and branches have been torn off far higher than your sword could reach. Something enormous passed here not long ago, at a slow pace, and stopped to eat bark. The tracks lead on southward. You follow them warily, taking care to make no noise.",
+      "choiceLabel": "Follow some enormous tracks"
+    },
+    "ithilien_6_0": {
+      "title": "The Sentinel of the South",
+      "text": "The wood thins and you reach a saddle crossed by a path running south. In the middle, leaning on a long spear, waits a warrior of the south taller than the rest, with a round bronze shield and a helm with a red plume. He neither hides nor calls to anyone. He watches you approach, plants his spear in the ground, draws a broad scimitar and nods to you. He wants to fight you alone.",
+      "choiceLabel": "Keep heading south"
+    },
+    "ithilien_6_1": {
+      "title": "Beneath the Smoke of the East",
+      "text": "You climb a bare knoll to see the way. As you watch, the eastern sky begins to darken: above the mountains an enormous brown cloud advances, spreading slowly over the woods like a stain of oil on water. The sun becomes a pale disc and then disappears. The birdsong dies away. At mid-morning it seems that night is falling. You do not know what it is, but you know where it comes from, and you feel that something great has begun.",
+      "choiceLabel": "Climb the knoll"
+    },
+    "ithilien_7_0": {
+      "title": "The War Oliphaunt",
+      "text": "The path leads you to a clearing beside the road, full of snapped trees. There it is: a grey beast, as big as a house, with curved tusks bound in bronze rings and a wooden tower on its back from which red tatters hang. It must have fallen behind its column. In the tower an archer of the south draws his bow and shouts something. The beast raises its trunk, lets out a bellow that shakes the ground and comes towards you."
+    }
+  },
+  "rivals": {
+    "Guerrero haradrim": "Haradrim Warrior",
+    "Arquero haradrim": "Haradrim Archer",
+    "Olifante de guerra": "War Oliphaunt"
+  }
+}

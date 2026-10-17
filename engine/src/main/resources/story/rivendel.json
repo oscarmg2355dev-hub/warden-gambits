@@ -1,0 +1,181 @@
+{
+  "id": "rivendel",
+  "name": "Rivendel",
+  "baseLevel": 22,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "Despertar en Rivendel",
+      "text": "Despiertas en una cama blanda, en una habitación llena de luz, con el rumor de una cascada entrando por la ventana. Tardas en recordar: el jinete en el vado, el frío, y luego el río alzándose de nuevo en crestas blancas que arrastraron al jinete aguas abajo entre alaridos. Después, según te dirán luego, un señor élfico de cabellos dorados te sacó de la orilla y te subió a su montura. Una elfa que cambia el agua de la jofaina te sonríe: estás en Rivendel, en la casa del señor del valle, y aquí estás a salvo. Fuera, el valle te espera.",
+      "imagePrompt": "A young traveler waking in a soft bed in a bright elvish room with carved wooden arches, a waterfall visible through the open window, an elf woman pouring water into a basin, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "La gran casa",
+      "text": "Cuando puedes tenerte en pie, recorres la casa. Es grande y laberíntica, hecha de madera tallada y piedra clara, con galerías abiertas al valle y escaleras que nunca parecen llevar dos veces al mismo sitio. Los elfos te saludan con una cortesía tranquila, como si los viajeros heridos fueran algo de cada día. Desde una ventana ves llegar gente de muy lejos: enanos de barbas trenzadas, elfos vestidos de verde y gris, un hombre alto con un gran cuerno al costado. Algo importante se está preparando en esta casa.",
+      "imagePrompt": "Inside an elvish house of carved wood and pale stone, a young traveler at a gallery window watching arrivals below: braided-bearded dwarves, elves in green and grey, a tall man with a great horn, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Recorrer la casa"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "El valle escondido",
+      "text": "Sales al valle con la mañana. Rivendel está metido en una hondonada estrecha entre pinares, con el río corriendo al fondo y cascadas que caen por todas partes, blancas y ruidosas. El aire huele a resina y a hojas húmedas. Por los senderos pasan elfos que cantan mientras trabajan, y a lo lejos, más allá de los árboles, oyes el golpe rítmico de un martillo sobre un yunque. Una senda sube por la ladera junto a la cascada más alta. Respiras hondo. Por primera vez en semanas, no tienes prisa.",
+      "imagePrompt": "A narrow hidden valley with pine woods, white waterfalls tumbling down the slopes, a river below, elvish houses among the trees, a young traveler walking a path in morning light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Salir al valle"
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "La Sala del Fuego",
+      "text": "Al caer la noche te llevan a la Sala del Fuego, un salón largo de columnas donde siempre arde una hoguera y adonde los elfos van a cantar y a escuchar. Te sientas en un rincón, junto a las sombras. Las canciones son en una lengua que no entiendes, pero las imágenes llegan solas: mares grises, estrellas antiguas, barcos blancos. Por primera vez desde que saliste de Bree, el cansancio se te deshace en el pecho. Nadie te pregunta quién eres ni qué buscas. Por esta noche, basta con estar aquí.",
+      "imagePrompt": "A long elvish hall of pillars lit by an ever-burning hearth fire, elves singing softly, a young traveler sitting in a shadowed corner listening, warm golden light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Entrar en la Sala del Fuego"
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "Los libros antiguos",
+      "text": "Un elfo de voz suave te lleva a una sala llena de estanterías, mapas enrollados y libros más viejos que cualquier reino de los hombres. Te enseña a leer un mapa de las tierras que se extienden al sur del valle, a lo largo de las Montañas Nubladas. Ahí, te dice, estuvo Eregion, a la que los hombres llaman Acebeda: una tierra de herreros élficos, famosos en otro tiempo, que acabó en ruinas tras una guerra antigua. Hoy solo quedan piedras, acebos y silencio. Algo en esas palabras te llama.",
+      "imagePrompt": "An elvish library with tall carved shelves, rolled maps and ancient books, an elf scholar showing a young traveler a map of mountains and a ruined land beyond, soft lamplight, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar la biblioteca"
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "La forja de los elfos",
+      "text": "Sigues el sonido hasta una forja abierta junto al río, donde un herrero élfico de brazos fuertes trabaja una hoja al rojo. Se fija en tu espada, que cuelga del cinto llena de mellas, y te pide que se la dejes. La sostiene un buen rato entre las manos, como quien escucha. Dice que es acero honrado, forjado por hombres, y que ha visto cosas que no debería haber visto. Promete devolvértela mejor de lo que llegó. Mientras tanto, te invita a quedarte y mirar.",
+      "imagePrompt": "An open elvish forge beside a river, a strong elf smith holding a notched human sword and examining it closely, glowing hot metal on an anvil, a young traveler watching, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el golpe del martillo"
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "Junto a las cascadas",
+      "text": "Subes por la senda que trepa junto a la cascada, entre helechos empapados por la espuma. Arriba hay un mirador de piedra desde el que se ve todo el valle y, al norte y al este, las cumbres de las montañas. Allí encuentras a dos elfos altos, de cabello oscuro y aire de guerreros, que se preparan para salir de exploración. Se parecen tanto que podrían ser gemelos. Te saludan, sorprendidos de ver a un hombre de Bree tan lejos de su casa, y te preguntan por el Camino.",
+      "imagePrompt": "A stone lookout above a tall waterfall with fern-covered slopes, a view over a hidden valley and distant peaks, two tall dark-haired twin elf warriors greeting a young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir junto a la cascada"
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "El viejo hobbit",
+      "text": "En el centro de la sala, un hobbit muy anciano, de pelo blanco y ojos vivos, se levanta y recita unos versos que ha compuesto él mismo, entre las risas y los aplausos de los elfos. Luego se sienta a tu lado, curioso al saber que vienes de Bree. Te pregunta por la posada, por la cerveza, por el tiempo en el Camino. Cuando le hablas del montaraz y de los hobbits, sonríe con picardía y te dice que hay historias que es mejor dejar que cuenten sus dueños.",
+      "imagePrompt": "In a firelit elvish hall, a very old white-haired hobbit reciting verses to laughing elves, then sitting beside a young traveler and talking with a sly smile, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Escuchar al viejo hobbit"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "El enano de la Montaña",
+      "text": "Sales a la terraza a tomar el aire y encuentras a un enano de barba blanca y trenzada, fumando en pipa bajo las estrellas. Viene de la Montaña Solitaria, te dice, muy al este, y ha hecho un largo viaje para pedir consejo. Habla con orgullo de su pueblo, pero cuando menciona a unos parientes que partieron hace años hacia las antiguas minas de las Montañas Nubladas, se le ensombrece la voz. Hace mucho que no saben nada de ellos. Te quedas callado, mirando las montañas oscuras.",
+      "imagePrompt": "On a moonlit elvish terrace, a white-bearded dwarf with a braided beard smoking a pipe under the stars, talking gravely to a young traveler, dark mountains on the horizon, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Salir a la terraza"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "Los caminos del sur",
+      "text": "Pasas horas inclinado sobre los mapas. Aprendes los nombres: el Fontegrís, que ya cruzaste; el Bruinen; las Montañas Nubladas, que bajan como un espinazo hacia el sur; y en su ladera occidental, Eregion. Más allá se alza un pico de laderas rojizas que el elfo llama Caradhras, el Cuerno Rojo, con un paso alto que lleva al otro lado de las montañas. Copias como puedes el camino en un trozo de pergamino. Por primera vez, tu viaje tiene un dibujo y una dirección.",
+      "imagePrompt": "A young traveler bent over old elvish maps by lamplight, a long mountain range running south, a reddish peak marked on the parchment, copying a route with a quill, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Estudiar los mapas del sur"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "Los herreros de antaño",
+      "text": "El elfo te cuenta la historia de Eregion. Hace mucho tiempo vivieron allí los mejores herreros élficos, en una ciudad llamada Ost-in-Edhil, amigos de los enanos que habitaban al otro lado de las montañas. Hicieron obras maravillosas, pero alguien de buenas palabras y malas intenciones los engañó, y la guerra los destruyó. No te cuenta más, y tú no preguntas. Solo te dice que en esa tierra todavía crecen los acebos que ellos plantaron, y que las piedras recuerdan.",
+      "imagePrompt": "An elf loremaster in a quiet stone alcove telling an old tale to a young traveler, a faded tapestry behind them showing an elvish city among holly trees and smiths at work, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Preguntar por Eregion"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "El temple",
+      "text": "Te pasas los días en la forja, tirando del fuelle y acarreando carbón. El herrero desmonta tu espada, endereza la hoja, borra las mellas y la templa en agua del río, murmurando palabras que no entiendes. Cuando te la devuelve, pesa igual pero parece otra: más viva, más firme en la mano. En la base de la hoja ha grabado un pequeño signo élfico. Significa, te dice, algo así como «el que vigila». Te parece un buen nombre para lo que eres.",
+      "imagePrompt": "In an elvish forge, an elf smith quenching a gleaming sword in river water amid steam, a young traveler working the bellows, a small elvish rune engraved near the hilt, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Ayudar en la forja"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "La cota ligera",
+      "text": "Mientras tu espada descansa en la forja, el herrero rebusca en un arcón y saca una cota de malla de anillas finas y oscuras. Se hizo aquí hace muchos años, te dice, para un montaraz que nunca volvió a reclamarla. Te la ajusta él mismo con tiras de cuero. Pesa menos que una camisa de lana y, sin embargo, el filo de un cuchillo resbala sobre ella sin morder. Al final del día te devuelve también la espada, limpia y afilada. Te sientes otro.",
+      "imagePrompt": "An elf smith fitting a light dark mail shirt onto a young traveler beside an open chest in a forge, a cleaned sharpened sword resting on the anvil, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Probarse una cota élfica"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "Lecciones de esgrima",
+      "text": "Antes de salir de exploración, los dos elfos te invitan a practicar con ellos en un prado junto al río. Te corrigen la guardia, la forma de pisar, la manera de mirar al enemigo a los ojos y no a la espada. Son pacientes, pero no blandos: acabas en el suelo más veces de las que puedes contar. Mientras descansáis, te cuentan que cabalgan a menudo con los montaraces del norte, y que conocen bien al que trajo a los hobbits hasta aquí. No te dicen su nombre. Solo que es de los mejores.",
+      "imagePrompt": "In a riverside meadow, two dark-haired twin elf warriors training a young traveler in swordplay, one correcting his stance, the traveler fallen on the grass, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Entrenar con los dos elfos"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "El caballo blanco",
+      "text": "Bajas a las caballerizas, donde los elfos cuidan de sus monturas como si fueran amigos. Un mozo te muestra un caballo blanco, esbelto y orgulloso, y te cuenta que fue él quien cruzó el vado hace pocos días llevando a lomos a un mediano herido, con los Nueve pisándole los talones. Llegó a la otra orilla justo antes de que el río se alzara. El caballo te olfatea la mano con calma. Te alegras de que aquel pequeño viajero, quienquiera que fuese, llegara a salvo.",
+      "imagePrompt": "In elvish stables of carved wood, a slender proud white horse sniffing a young traveler's hand, an elf groom beside it telling a story, soft light through the doors, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar a las caballerizas"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "El consejo cerrado",
+      "text": "Una mañana, la casa amanece distinta. Los elfos hablan en voz baja y, en un pórtico junto al río, se reúnen muchos: el señor de la casa, un anciano vestido de gris, elfos, enanos, hombres y alguna figura pequeña. Un guardia te detiene con amabilidad a cierta distancia. No es un consejo para ti, te dice. Te quedas mirando de lejos durante horas. Cuando por fin se separan, nadie sonríe, y cada uno se marcha callado. Algo se ha decidido allí que pesa sobre todos.",
+      "imagePrompt": "On an elvish porch beside a river, a solemn council seen from afar: an elf lord, an old man in grey, dwarves, men and small folk seated in a circle, a guard politely stopping a young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Ir hacia el pórtico del río"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "Las manos del sanador",
+      "text": "Las heridas del viaje se han cerrado, pero el frío del vado sigue en tus huesos: a veces te despiertas helado, con la sensación de una sombra a tu lado. Vas a ver a los sanadores de la casa. Una elfa de manos frías te escucha, prepara agua caliente y echa en ella unas hojas aplastadas de olor dulce y limpio. El vapor te llena la cabeza de luz. Cuando sales, el frío se ha ido. Te dice que tuviste suerte: otros cargan con ese mal mucho más tiempo.",
+      "imagePrompt": "In a quiet elvish healing room, an elf healer pouring steaming water over crushed green leaves in a bowl, a young traveler breathing the vapour, pale light through tall windows, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Visitar a los sanadores"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "La noche de las estrellas",
+      "text": "Una noche subes a una terraza alta, abierta al cielo. Hay elfos sentados en silencio, mirando las estrellas, y uno de ellos canta en voz baja una canción a la que llaman la Reina de las Estrellas. Te tumbas en la piedra todavía tibia y piensas en Bree: en tu casa vacía, en la posada, en la calle embarrada. Te sorprende no echarlo de menos tanto como esperabas. Esta tierra no es tuya, lo sabes, y tarde o temprano tendrás que seguir tu camino.",
+      "imagePrompt": "A high open elvish terrace at night under a vast starry sky, elves sitting in silence, one singing softly, a young traveler lying on the warm stone gazing upward, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a la terraza alta"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "Noticias de los exploradores",
+      "text": "En el patio, unos exploradores élficos y un par de montaraces del norte se preparan para salir en busca de los jinetes negros. Te acercas a preguntar. Te cuentan que el río arrastró a los Nueve y que sus caballos se ahogaron, pero que nadie ha encontrado a los jinetes, porque esas criaturas no mueren como los demás. Saldrán en todas direcciones: al norte, al oeste y también al sur, siguiendo las montañas. Les cuentas lo del jinete de la orilla. Te escuchan con atención y te dan las gracias.",
+      "imagePrompt": "In an elvish courtyard, elf scouts and grim northern rangers in grey cloaks preparing to ride out, a young traveler speaking with them, horses saddled, morning light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar noticias del Camino"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "La palabra del señor de la casa",
+      "text": "Antes de marcharte, pides ver al señor de la casa, y te recibe en una sala pequeña, sin ceremonia. Su rostro no tiene edad, pero sus ojos parecen haber visto el mundo entero. Escucha tu historia sin interrumpirte. Cuando le dices que piensas ir hacia el sur por la falda de las montañas, te advierte que ese camino no es seguro: hay aves negras que vigilan desde el cielo y hombres de las Tierras Brunas al servicio de un amo ajeno. No confíes en nadie que pregunte demasiado, te dice, y te regala una capa gris de tela élfica.",
+      "imagePrompt": "A small quiet elvish chamber, an ageless dark-haired elf lord with grave wise eyes listening to a young traveler, tall windows with a waterfall beyond, soft evening light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Pedir audiencia al señor"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "Los preparativos",
+      "text": "Llega el invierno al valle, y sabes que es hora de partir. Preparas el petate con cuidado: una capa gris de tela élfica que te regalan y que abriga más de lo que pesa, pan de viaje que dura semanas, una cantimplora, cuerda y una bolsa de hierbas de los sanadores. Revisas la espada, las botas y las correas. Mientras trabajas, oyes que en la casa se prepara también otra partida, más importante que la tuya, pero nadie dice adónde irá ni cuándo. No es asunto tuyo, y lo sabes.",
+      "imagePrompt": "A young traveler in an elvish room packing for a winter journey: a grey elven cloak, waybread, rope, a water flask and a pouch of herbs, a sword on the table, frost on the window, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Preparar el viaje"
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "La despedida",
+      "text": "Una mañana fría de invierno cruzas por última vez el puente estrecho sobre el río. Algunos elfos han salido a despedirte y cantan una canción breve por tu camino. Te vuelves una vez para mirar la casa, las cascadas, la luz entre los pinos, y te cuesta apartar los ojos. Luego sales del valle y tomas rumbo al sur, siguiendo la falda occidental de las Montañas Nubladas. Más allá de muchas leguas de tierras vacías te espera Eregion, la tierra de los acebos. Llevas el cuerpo descansado y el valle en la memoria.",
+      "imagePrompt": "A cold winter morning, a young traveler in a grey travelling cloak crossing a narrow stone bridge out of a hidden valley of waterfalls and pines, elves waving farewell, snowy mountains to the south, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "id": "moria",
+  "name": "Moria",
+  "baseLevel": 31,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "Bajo la montaña",
+      "text": "El canal es estrecho, frío y medio inundado. Avanzas a gatas durante lo que parecen horas, hasta que el agua se queda atrás y la galería se ensancha. Enciendes una tea con manos temblorosas. La luz descubre paredes lisas, talladas con una precisión que ningún hombre podría igualar, y escalones que suben hacia la oscuridad. El canal te ha dejado en un nivel bajo; los caminos largos de la ciudad pasan por encima de ti. Estás dentro de Khazad-dûm, el viejo reino de los enanos, al que los hombres llaman Moria. No se oye nada. En algún lugar, al este, tiene que haber una salida.",
+      "imagePrompt": "A young traveler in a wet grey cloak holding up a torch in a vast dark dwarven gallery, smooth precisely carved stone walls and steps rising into blackness, a flooded narrow channel behind him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "El centinela de la escalera",
+      "text": "Subes por una escalera ancha, de peldaños gastados por miles de pies enanos, que asciende a través de la roca durante un tiempo interminable. Arriba desemboca en un pasillo, y allí brilla una luz rojiza: la antorcha de un trasgo de guardia que se calienta las manos, aburrido, hasta que ve tu tea. Grita y te arroja la lanza. No puedes dejar que dé la alarma en estas salas. Subes corriendo los últimos peldaños, con la espada por delante.",
+      "imagePrompt": "A young traveler with a torch and sword charging up the last steps of a vast worn dwarven stairway toward a goblin sentry by a red torch, shouting and hurling a spear, deep darkness around, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir por la gran escalera",
+      "encounter": {
+        "rivals": [
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": 1, "pattern": ["13", "131"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "El trol de la cisterna",
+      "text": "Prefieres no subir y sigues un túnel bajo que corre hacia el este a ras de la roca. Al cabo de un rato desemboca en una sala con una cisterna de agua quieta, tallada en la piedra. Algo grande bebe en ella: un trol de las cavernas, de piel gris y escamosa, con brazos que casi tocan el suelo. Te huele antes de verte. Se gira, con el agua chorreándole por la boca, y levanta un garrote de hierro. La sala es pequeña y no hay dónde esconderse.",
+      "imagePrompt": "A huge grey scaly cave troll with arms nearly touching the floor turning from a carved stone cistern, water dripping from its mouth, raising an iron club at a young traveler holding a torch and sword in a small dark chamber, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el túnel bajo",
+      "encounter": {
+        "rivals": [
+          { "name": "Trol de las cavernas", "portrait": "troll", "levelOffset": 0, "pattern": ["2132", "12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "La sala de columnas",
+      "text": "Más allá del pasillo se abre una sala tan grande que tu tea no alcanza ni el techo ni las paredes. Solo ves columnas, hileras de columnas talladas como troncos de árboles, que se pierden en la oscuridad como un bosque de piedra. Caminas entre ellas en silencio. De pronto, muy lejos, ves una luz blanca y pálida, distinta de cualquier fuego, que se mueve despacio por otra galería y desaparece. Alguien más camina por estas salas. Quizá sean los viajeros que entraron por la puerta del oeste.",
+      "imagePrompt": "An immense dark dwarven hall of endless carved pillars like stone tree trunks, a young traveler with a small torch among them, and far away a faint pale white light moving through a distant gallery, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar la sala de columnas"
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "Las forjas frías",
+      "text": "Una puerta abierta te lleva a las forjas. Son enormes, con hornos tallados en la roca y yunques del tamaño de un carro, y todo lleva frío muchos años. Por el suelo hay herramientas tiradas, martillos, tenazas, un hacha enana partida por la mitad. Algunas paredes están ennegrecidas por un fuego que no salió de los hornos, y en un rincón ves flechas negras clavadas en la madera. Aquí se luchó. Pasas la mano por un yunque y piensas en quienes trabajaron en él.",
+      "imagePrompt": "Vast cold dwarven forges with furnaces carved into rock and anvils as big as carts, scattered hammers and tongs, a broken dwarven axe, black arrows stuck in wood, a young traveler with a torch touching an anvil, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Entrar en las forjas"
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "El gran pozo",
+      "text": "El túnel se abre al borde de un pozo inmenso, tan ancho que tu tea no ilumina el otro lado. Una pasarela de piedra sin barandilla lo rodea. Te asomas con cuidado. Abajo no hay nada, solo negrura, pero desde el fondo sube un aire caliente y seco que huele a hierro y a quemado, como el aliento de una fragua lejana. Durante un instante te parece notar un temblor en la roca. Te apartas del borde con el pelo erizado, sin saber bien de qué tienes miedo.",
+      "imagePrompt": "A young traveler with a torch on a narrow railless stone walkway at the edge of an immense black shaft, faint warm reddish air rising from the depths, the far side lost in darkness, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Asomarse al gran pozo"
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "Las minas",
+      "text": "Bajas a las minas por una rampa de piedra. Aquí los túneles son más toscos y se ramifican en todas direcciones, y en las paredes brillan vetas que reflejan la luz de la tea como escarcha. Hay vagonetas volcadas, picos oxidados y huesos que prefieres no mirar. Hace mucho que los enanos no trabajan aquí. Pero el silencio no es completo: muy lejos, en algún túnel, suena el golpe de un pico contra la roca, rítmico y paciente. Alguien sigue cavando en la oscuridad.",
+      "imagePrompt": "Rough branching mine tunnels with glittering veins in the walls, overturned mine carts, rusty picks and old bones, a young traveler with a torch listening, darkness stretching away in every direction, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar a las galerías de mina"
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "Huellas en el polvo",
+      "text": "Te diriges hacia donde viste la luz, pero cuando llegas a la galería ya no hay nadie. En el polvo del suelo, sin embargo, quedan huellas que bajan de una escalera y cruzan la galería: botas grandes, pies pequeños y una marca redonda, como la de un bastón que se apoya a cada paso. Se pierden hacia el norte, por una escalera que sube. Entiendes que el canal te ha ahorrado mucho camino: ellos habrán dado un largo rodeo por los niveles de arriba. Durante un momento dudas si esperarlos. Luego te das la vuelta: sea cual sea su camino, no te corresponde cruzarte en él. Tú buscas tu propia salida.",
+      "imagePrompt": "Fresh footprints of large boots, small bare feet and the round marks of a staff in the thick dust of a dark dwarven gallery, leading to a crossing of six passages, a young traveler with a torch kneeling over them, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la luz lejana"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "La patrulla",
+      "text": "Tomas un pasillo ancho que corre hacia el este. Avanzas deprisa, demasiado. Al doblar una esquina te das de bruces con una patrulla: tres trasgos encorvados con antorchas y, tras ellos, un orco mucho más grande, con cota de malla y un yelmo con cuernos, que gruñe órdenes. Es un capitán. Te mira, sonríe enseñando los colmillos y desenvaina una espada ancha y mellada. Los trasgos se escabullen para cortarte la retirada. Están acostumbrados a cazar en estos pasillos.",
+      "imagePrompt": "Around a corner of a wide dark dwarven passage, a big orc captain in mail and a horned helm drawing a broad notched sword, grinning, three hunched goblins with torches slipping behind a young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el pasillo del este",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco capitán", "portrait": "orc", "levelOffset": -5, "pattern": ["11", "12", "121", "1212"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "Los saqueadores",
+      "text": "Registras los talleres que rodean las forjas, por si queda algo útil. Encuentras una lámpara enana sin aceite y poco más. Al salir del último, descubres que no eras el único que buscaba: cuatro trasgos cargados de chatarra entran por la otra puerta, discutiendo por un yelmo abollado. Se quedan quietos al verte. Luego sueltan el botín y sacan los cuchillos, sonriendo. Cuatro contra uno les parece un buen trato.",
+      "imagePrompt": "Four grinning goblins dropping armfuls of scrap and a dented helm to draw knives in the doorway of a dark dwarven workshop, facing a young traveler with a torch and sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Registrar los talleres",
+      "encounter": {
+        "rivals": [
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "El canal de las forjas",
+      "text": "Un canal de piedra que antes llevaba agua a las forjas corre todavía junto a una pared. Lo sigues. El agua está fría y limpia, y bebes hasta saciarte. El canal te lleva por un pasillo estrecho, lejos de las salas grandes, hasta una pequeña estancia donde debió de vivir algún enano: un banco de piedra, una hornacina vacía, runas en el dintel. Te sientas a descansar. Por primera vez desde que entraste en la montaña, cierras los ojos un momento.",
+      "imagePrompt": "A narrow carved stone water channel leading into a small quiet dwarven chamber with a stone bench, an empty niche and runes over the door, a young traveler resting with his torch beside him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el canal de agua"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "La sala de guardia",
+      "text": "Rodeas el pozo por la pasarela, pegado a la pared, hasta una puerta que da a una sala de guardia. Dentro encuentras restos de una batalla antigua: huesos de enanos todavía con sus cotas puestas, escudos partidos, flechas negras. Los últimos defensores murieron aquí, de cara a la puerta. En la pared alguien grabó unas runas apresuradas, torcidas, que no sabes leer. No hace falta: entiendes que es una despedida. Bajas la cabeza un momento antes de seguir.",
+      "imagePrompt": "A dark dwarven guardroom with skeletons of dwarves still in mail facing the door, broken shields and black arrows, hasty crooked runes scratched on the wall, a young traveler with a torch bowing his head, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Rodear el pozo por la pasarela"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "El puente del pozo",
+      "text": "Un puente de piedra estrecho cruza el pozo por el centro, sin barandilla, y decides arriesgarte. A mitad de camino oyes pasos pesados que hacen temblar la piedra. Por el otro extremo aparece un trol de las cavernas con un trasgo subido a la espalda, que lo pincha con una lanza para guiarlo. El trol te ve y ruge. No hay sitio para apartarse ni tiempo para volver. Afirmas los pies en la piedra y esperas, con el abismo a cada lado.",
+      "imagePrompt": "A narrow railless stone bridge across a black shaft, a roaring cave troll with a goblin riding on its back prodding it with a spear advancing toward a young traveler with a torch and sword, abyss on both sides, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el pozo por el puente",
+      "encounter": {
+        "rivals": [
+          { "name": "Trol de las cavernas", "portrait": "troll", "levelOffset": -2, "pattern": ["2132", "12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -2, "pattern": ["13", "131"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "Los picadores",
+      "text": "Sigues el golpeteo del pico por los túneles hasta una galería iluminada con antorchas. Allí trabajan varios trasgos, picando la roca bajo la mirada de un orco grande con un látigo. Al verte, los mineros huyen chillando por los túneles laterales, pero el orco no. Es un capitán, ancho de hombros y lleno de cicatrices, y parece casi contento de que algo rompa la monotonía. Restalla el látigo, saca un hacha y viene hacia ti sin prisa.",
+      "imagePrompt": "A torchlit mine gallery, goblin miners fleeing into side tunnels, a broad scarred orc captain cracking a whip and drawing an axe as he strides toward a young traveler with a torch and sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acercarse al ruido de picos",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco capitán", "portrait": "orc", "levelOffset": 1, "pattern": ["11", "12", "121", "1212"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "La veta de plata",
+      "text": "Te metes por una veta estrecha que se aparta de los túneles principales, tan baja que tienes que avanzar agachado. Al final se ensancha en una pequeña cámara. En sus paredes brilla un metal que no es plata ni hierro: claro, frío, con un resplandor propio que crece cuando le acercas la tea. Has oído leyendas sobre ese metal y sobre la codicia que despierta. No lo tocas. Descansas un rato a su luz, en silencio, y luego vuelves sobre tus pasos.",
+      "imagePrompt": "A tiny hidden chamber at the end of a low mine vein, walls streaked with a pale shining metal that glows with its own cold silvery light, a young traveler crouching with a torch, gazing without touching, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Esconderse en una veta estrecha"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "La tumba en la luz",
+      "text": "Subes por pasillos y escaleras hasta que ves luz de verdad: un rayo de día gris que entra por un hueco alto, al fondo de una sala. Bajo él, en el centro, hay una losa clara con runas grabadas: una tumba. Alrededor, el polvo cubre huesos de enanos y de orcos, hachas melladas, cofres reventados y un libro de hojas hendidas por un tajo. Nadie ha pasado por aquí desde hace años; en el polvo no hay ni una huella. Aquí resistieron los últimos de alguien. No sabes leer lo que dice la piedra, y no tocas nada. Te quedas un momento en silencio y luego sigues tu camino.",
+      "imagePrompt": "A shaft of grey daylight falling from a high opening onto a pale runed stone slab in the centre of a dusty dwarven chamber, old bones of dwarves and orcs, notched axes, broken chests and a slashed book around it, a young traveler standing in silence, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir hacia los niveles altos"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "Tambores en lo profundo",
+      "text": "Entonces empiezan los tambores. Suenan muy abajo, en lo profundo de la montaña, lentos y graves, y hacen vibrar la roca bajo tus pies. Te quedas helado. Al momento, por todas partes, oyes carreras, chillidos y órdenes ásperas: las minas despiertan. Echas a correr hacia el este, pero al salir a una sala te cortan el paso dos trasgos y un orco capitán que grita a sus tropas. No te esperaban, pero no dudan. Tendrás que abrirte camino a golpes.",
+      "imagePrompt": "A dark dwarven hall trembling with the beat of unseen drums, an orc captain bellowing orders and two goblins blocking the way of a young traveler running with a torch and sword, torches flaring in distant galleries, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir hacia el este",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco capitán", "portrait": "orc", "levelOffset": -4, "pattern": ["11", "12", "121", "1212"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -4, "pattern": ["13", "131"], "everyNTicks": 1 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -4, "pattern": ["13", "131"], "everyNTicks": 1 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "La sala escondida",
+      "text": "Te metes en una sala lateral, tapas la tea con la capa y esperas en la oscuridad. Al poco oyes pasos, muchos y pesados, y voces ásperas en una lengua horrible. Por la rendija de la puerta ves pasar una columna de orcos y trasgos con antorchas, cientos quizá, que marchan hacia el oeste con prisa, como si fueran de caza. Uno se detiene a olfatear junto a tu puerta. Contienes el aliento. Luego sigue a los demás. Cuando el último eco se apaga, tardas en atreverte a salir.",
+      "imagePrompt": "Seen through the crack of a door, a long column of orcs and goblins with torches marching hurriedly through a dark dwarven hall, one goblin sniffing at the door, a young traveler hiding in darkness behind it, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Esconderse en una sala lateral"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "El trol del pasillo",
+      "text": "Eliges el pasillo más directo hacia el este, aunque sea el más expuesto. Es ancho y recto, con estatuas de reyes enanos a los lados, y avanzas deprisa. Demasiado. Una de las estatuas se mueve: no es una estatua, sino un trol de las cavernas que dormía de pie en una hornacina. Se despierta con un gruñido, se sacude el polvo de la piel gris y te corta el paso con todo el cuerpo. No hay vuelta atrás: el pasillo es suyo, y tendrás que ganártelo.",
+      "imagePrompt": "A long straight dwarven corridor lined with statues of dwarf kings, one of them actually a grey cave troll stepping out of its niche, shaking off dust and blocking the way of a young traveler with a torch, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Tomar el camino más corto",
+      "encounter": {
+        "rivals": [
+          { "name": "Trol de las cavernas", "portrait": "troll", "levelOffset": 1, "pattern": ["2132", "12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "La sala de la grieta",
+      "text": "Bajas por una escalinata ancha hacia los niveles más hondos de la ciudad. El aire se vuelve más caliente a cada peldaño. Abajo te espera una sala enorme, de techo altísimo, cuyo suelo está partido por una grieta que despide un resplandor rojo, como de brasas. Al fondo adivinas una caída aún mayor y, más allá, un arco que podría llevar a la salida. Oyes tambores a lo lejos, cada vez más rápidos. Algo se acerca, y no son orcos. Aprietas el paso hacia el fondo de la sala.",
+      "imagePrompt": "An enormous high-roofed dwarven hall whose floor is split by a fissure glowing red like embers, a young traveler hurrying across with a torch toward a dark drop and a distant archway, menace behind him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar por la escalinata ancha"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "El pasadizo ardiente",
+      "text": "Te metes por un pasadizo estrecho que baja en rampa, retorciéndose como un gusano. Hace calor, cada vez más, y las paredes sudan. Por las grietas de la roca asoma de vez en cuando un brillo rojo, y el humo te hace toser. Oyes tambores a lo lejos, cada vez más rápidos, y otro sonido más hondo, como un fuelle enorme que respira. Al final el pasadizo se abre de golpe a un espacio inmenso y negro, y ante ti, sobre un abismo, se tiende un puente de piedra.",
+      "imagePrompt": "A narrow twisting ramp passage with sweating walls and red light glowing through cracks, smoke drifting, opening suddenly onto an immense black void where a slender stone bridge spans an abyss, a young traveler with a torch at the threshold, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Tomar el pasadizo estrecho"
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "La Sombra de Durin",
+      "text": "El puente es un arco de piedra estrecho, sin barandilla, tendido sobre un abismo del que sube un resplandor de fuego. Al otro lado, unas escaleras ascienden hacia la puerta del este. A tu espalda, un trol de las cavernas y un trasgo rezagado te han seguido hasta el puente. Estás a mitad del puente cuando el calor te golpea: de la grieta se alza una sombra inmensa con un corazón de llamas. No puedes vencerla. Solo puedes resistir sus golpes de fuego y seguir avanzando. En lo peor de la lucha, la sombra se detiene y vuelve la cabeza hacia las salas del oeste, hacia una luz blanca y unos pasos que se acercan, y te deja escapar. Subes las escaleras sin mirar atrás, hacia la puerta del este y la luz del día.",
+      "imagePrompt": "A narrow railless stone bridge over a fiery abyss in a vast dark hall, an immense shadow with a heart of flame rising from the chasm and turning its head away, a small young traveler with a sword crossing toward stairs, chased by a cave troll and a goblin and grey daylight, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          { "name": "Sombra de Durin", "portrait": "boss_moria", "levelOffset": 3, "pattern": ["32", "323", "3232", "13", "131", "31", "123"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } },
+          { "name": "Trol de las cavernas", "portrait": "troll", "levelOffset": -4, "pattern": ["2132", "12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -4, "pattern": ["13", "131"], "everyNTicks": 1 }
+        ]
+      }
+    }
+  ]
+}

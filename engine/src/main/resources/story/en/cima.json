@@ -1,0 +1,121 @@
+{
+  "id": "cima",
+  "name": "Weathertop",
+  "nodes": {
+    "cima_1_0": {
+      "title": "Beneath Weathertop",
+      "text": "You leave the marsh behind with the queen's drone still in your ears. The ground turns firm and stony, and a chain of bare hills rises before you. The tallest, to the south, ends in a ring of broken stones: Weathertop, the Amon Sûl of the songs of Bree, where they say a great watchtower once stood. The wind blows icy and carries the smell of ash. To the north, a half-erased path runs along the ridges; to the south, the East Road skirts the hills. You settle your pack and choose."
+    },
+    "cima_2_0": {
+      "title": "The Ridge Path",
+      "text": "You climb to the path that winds along the spine of the hills. It is ancient: in places it is lined with dressed stones and the remains of walls that someone raised centuries ago to defend these heights. From here you see everything and no one sees you. In the mud of a bend you discover fresh tracks, several small ones and a long boot print, all heading towards the summit. The travellers whose trail you follow passed this way a few days ago. You are late, but you are on the right road.",
+      "choiceLabel": "Take the ridge path"
+    },
+    "cima_2_1": {
+      "title": "An Over-Friendly Traveller",
+      "text": "You go down to the Road, broad and open, which skirts the hills to the south. You make good speed, but here anyone can see you. Before long, a dark-haired man steps out from some thorn bushes and greets you like any other traveller. He talks too much and looks too much at your sword. When you turn your back to walk on, you hear the whisper of a knife leaving its sheath. He is a Dunlending, a man of Dunland, and he is not here by chance.",
+      "choiceLabel": "Go down to the East Road"
+    },
+    "cima_3_0": {
+      "title": "The Fallen Walls",
+      "text": "The path runs through the remains of a fort: crumbling towers, lichen-covered walls, a courtyard where nettles grow. As you pass beneath an arch you hear a growl. Two lean wolves, ribs showing, emerge from a crack in the wall where they have made their den. Hunger has stripped them of their fear of men. They split apart to attack from both sides, and you look for a wall at your back before they spring.",
+      "choiceLabel": "Cross the fallen walls"
+    },
+    "cima_3_1": {
+      "title": "The Scout by the Stream",
+      "text": "You go down into a hollow where a stream runs among brambles, seeking water and shelter from the wind. Someone has had the same idea: on the bank, a man of Dunland is cleaning a bow and going over some marks on a strip of bark. He is a seasoned scout, with scars on his arms. He sees you before you can withdraw and asks no questions. He sets down the bark, draws a short axe and comes at you.",
+      "choiceLabel": "Go down into the hollow"
+    },
+    "cima_3_2": {
+      "title": "The Trail of Hooves",
+      "text": "On the Road you find hoofprints, large and deep, of heavy horses that galloped eastward. You are not the only one following them: a pack of wolves noses along the same trail, as if those riders left behind them a promise of carrion. Four of them raise their heads at your scent. One growls; the others fan out along the verge. You understand that today the prey will be you.",
+      "choiceLabel": "Follow the hoofprints"
+    },
+    "cima_3_3": {
+      "title": "The Old Watchtower",
+      "text": "Beside the Road stands a ruined watchtower, little more than a stump of stone. From afar you see a thread of smoke: someone is using it as a shelter. You creep closer and hear three men arguing in a harsh tongue as they watch the Road. They speak of riders, of hills and of a payment that does not come. One of them steps out to stretch his legs and stumbles into you. His shout warns the others, and all three reach for their weapons.",
+      "choiceLabel": "Approach the old watchtower"
+    },
+    "cima_4_0": {
+      "title": "The Star Flagstone",
+      "text": "When the last wolf falls, you walk the fort in silence. In the courtyard, beneath the nettles, a flagstone peers out, carved with a many-pointed star and worn by centuries of rain. This place belonged to a kingdom no one in Bree names any more, and yet someone remembers it: beside the stone lie dry branches stacked with care, as if left for whoever comes after. You take only what you need for one night and give thanks under your breath.",
+      "choiceLabel": "Explore the fort's courtyard"
+    },
+    "cima_4_1": {
+      "title": "A Lone Crow",
+      "text": "You would rather not linger among the ruins and follow the path southward. The wind rises and forces you to walk hunched over. In the afternoon, from a ridge, you see Weathertop much closer: a round, bare hill with its crown of stones. Above it flies a crow, only one, in slow circles. There is something about that hill that wrings your heart, as if the air there weighed more. Even so, you press on.",
+      "choiceLabel": "Follow the path south"
+    },
+    "cima_4_2": {
+      "title": "The Marked Bark",
+      "text": "You pick up the bark the scout left behind. It bears crude marks: a hill with a circle, some strokes that might be days and five figures, four small and one tall. Someone has been watching the travellers you follow and counting their steps. You tuck the bark into your jerkin. If the spies know so much, other, worse enemies may know it too, and the hill no longer looks like a refuge to you, but a trap.",
+      "choiceLabel": "Examine the scout's bark"
+    },
+    "cima_4_3": {
+      "title": "Water and Silence",
+      "text": "You wash your hands in the stream and sit among the brambles to catch your breath. The water runs cold and clear, and the wind does not reach the bottom of the hollow. For the first time in days you eat something hot: a little bacon toasted over a tiny flame you put out at once. As you chew, you see in the mud of the bank the prints of a laden pony. The travellers you follow drank here too.",
+      "choiceLabel": "Rest beside the stream"
+    },
+    "cima_4_4": {
+      "title": "Where the Tracks End",
+      "text": "You follow the hoofprints until they leave the Road and fade into a field of scree at the foot of the hills. There the grass is burned in circles, and the air holds a cold that is not autumn's. The riders split up in several directions, as though they meant to surround something. A shiver rises from the nape of your neck. You do not know what they were seeking, but you are sure they were all looking towards the summit.",
+      "choiceLabel": "Follow the trail to its end"
+    },
+    "cima_4_5": {
+      "title": "The Road Marker",
+      "text": "Wounded by the bites, you seek a spring that wells beside an old stone marker at the edge of the Road. You wash your wounds and bind them with strips of your shirt. As you do, you see on the marker some letters almost worn away and, beneath them, a fresh sign scratched with the point of a knife: an arrow pointing to the hills. A Ranger's mark, you think. It is not meant for you, but it tells you which way to go.",
+      "choiceLabel": "Tend your wounds at the spring"
+    },
+    "cima_4_6": {
+      "title": "What They Were Watching",
+      "text": "You search the watchtower. The spies had provisions for many days, a blanket of good wool that is not theirs and a bag of silver coins minted far from here. Someone pays them well to keep watch. On the wall they have drawn in charcoal the outline of Weathertop and, beside it, a white hand. You do not know what that sign means, but you etch it into your memory. You keep the blanket: the nights here are cruel.",
+      "choiceLabel": "Search the watchtower"
+    },
+    "cima_4_7": {
+      "title": "A Shadow on the Crown",
+      "text": "You move away from the watchtower and seek a rise that overlooks the hill. You lie down in the heather and wait for evening. Nothing moves on the summit, but now and then the wind carries a smell of burnt wood and something else, sour, that you cannot name. When the light fails, you seem to see a shadow blacker than the night slipping between the stones of the crown. You blink, and it is gone.",
+      "choiceLabel": "Watch the summit from afar"
+    },
+    "cima_5_0": {
+      "title": "In the Lee of the Rocks",
+      "text": "The wind blows so hard you can scarcely move forward. You take refuge in a hollow between great rocks at the foot of the hills and wait for it to drop. From there you study the slope: there are several ways up and none is easy. You warm your hands with your breath, run a thumb along your sword's edge and eat the last of your dried fruit. When at last the wind relents, Weathertop is closer than ever, dark against a sky of torn clouds.",
+      "choiceLabel": "Shelter among the rocks"
+    },
+    "cima_5_1": {
+      "title": "The Open Heath",
+      "text": "You cut across an open heath that climbs towards the hill. There is nowhere to hide, and you know it. Halfway up, a figure rises from the heather where it had lain for hours: a tracker from Dunland, his face smeared with mud and a short spear in his hand. He was waiting for you. He neither shouts nor calls for help; he means to deal with you alone, and by the way he moves, he knows how.",
+      "choiceLabel": "Cut across the heath"
+    },
+    "cima_5_2": {
+      "title": "The Line of Stones",
+      "text": "You find a line of standing stones climbing the slope, the remains of a wall or of some very ancient causeway. You follow them, and they lead you along a hidden pass no one would guess from below. On some, the moss is scraped by recent boots. It comforts you to think that people who know these hills better than you walk this way. You climb slowly, without a sound, and when you look back, the whole world seems small and grey.",
+      "choiceLabel": "Follow the line of stones"
+    },
+    "cima_5_3": {
+      "title": "The Western Slope",
+      "text": "You climb the western slope, the steepest, clutching at shrubs and loose rocks. Halfway up, a thick stench warns you too late: you have reached the mouth of a den. Three wolves come out of it, lean and furious, and block your way above and on either side. Below lies only the drop. You cannot flee without falling, so you set your feet against the rock and raise your sword.",
+      "choiceLabel": "Scale the western slope"
+    },
+    "cima_6_0": {
+      "title": "The Deserted Camp",
+      "text": "You peer into a sheltered dell on the western face of the hill, below the summit, and climb down into it warily. There is a spring, stacked firewood and the remains of a large fire. The grass is trampled and burned in patches, there are broken branches everywhere and, on the ground, signs of a struggle you cannot read. Small footprints and a pony's trail leave the dell towards the south, hurried. Whoever camped here left in haste, and something forced them to.",
+      "choiceLabel": "Turn aside to the sheltered dell"
+    },
+    "cima_6_1": {
+      "title": "The Crown of Stones",
+      "text": "You climb the last stretch to the summit. Of the great tower of Amon Sûl only a ring of broken stones remains, covered in rough grass. The ground is blackened, and some rocks seem melted by a terrible heat, though the air is freezing. Something burned here only a few days ago. On a heap of stones you find fresh scratches, like letters, that you do not understand. Below stretch empty lands beneath a leaden sky.",
+      "choiceLabel": "Climb to the summit"
+    },
+    "cima_7_0": {
+      "title": "The Wraith of the Summit",
+      "text": "Night falls over the hill and the wind stops dead. In the silence, the cold bites into your bones and a nameless dread tightens your chest. From where you stand you see a tall figure appear among the stones of the crown wrapped in a black mantle, faceless beneath its hood; only a pale gleam where the eyes should be. It comes towards you without haste. It is one of the Black Riders they spoke of in Bree, returned to the hill like one seeking a lost trail. This is no foe you can kill. All that remains is to endure, with steel and fire, until the shadow withdraws."
+    }
+  },
+  "rivals": {
+    "Espía dunlendino": "Dunlending Spy",
+    "Lobo hambriento": "Hungry Wolf",
+    "Explorador dunlendino": "Dunlending Scout",
+    "Rastreador dunlendino": "Dunlending Tracker",
+    "Espectro del Anillo": "Ringwraith"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "bree",
+  "name": "Bree",
+  "baseLevel": 1,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "Las puertas de Bree",
+      "text": "Llegas a Bree al caer la tarde, con la capa empapada por la lluvia.",
+      "imagePrompt": "Puertas de madera de una aldea al atardecer bajo la lluvia"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "El Pony Pisador",
+      "text": "Un bandido te corta el paso frente a la posada.",
+      "imagePrompt": "Posada iluminada en la noche con un bandido en la puerta",
+      "choiceLabel": "Entrar en la posada",
+      "encounter": {
+        "rivals": [
+          { "name": "Bandido de Bree", "portrait": "bandit", "levelOffset": 0, "pattern": ["12", "21"], "everyNTicks": 2 }
+        ]
+      }
+    }
+  ]
+}

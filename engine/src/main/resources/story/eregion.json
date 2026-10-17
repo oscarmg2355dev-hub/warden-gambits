@@ -1,0 +1,232 @@
+{
+  "id": "eregion",
+  "name": "Eregion",
+  "baseLevel": 22,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "La tierra de los acebos",
+      "text": "Tras muchos días de marcha hacia el sur por la falda de las montañas, el paisaje cambia. Entras en una tierra de lomas suaves y matorrales, salpicada de acebos de hojas oscuras y frutos rojos, y aquí y allá asoman entre la hierba piedras talladas: restos de muros, columnas caídas, peldaños que no llevan a ninguna parte. Es Eregion, la vieja tierra de los elfos. El aire es limpio y frío, pero hay algo extraño: no se oye ni un pájaro. Al este, tres grandes cumbres nevadas dominan el horizonte.",
+      "imagePrompt": "A winter land of gentle hills and dark holly trees with red berries, broken carved elvish stones and fallen columns in the grass, a lone young traveler in a grey cloak, three great snowy peaks to the east, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "La calzada élfica",
+      "text": "Encuentras los restos de una calzada antigua, de losas anchas y bien encajadas, que corre hacia el este entre las lomas. La sigues. Es cómodo caminar por ella, aunque te sientes expuesto: apenas hay árboles a los lados y el cielo es enorme. A un lado, no muy lejos, asoman las ruinas de un edificio cubierto de hiedra. Entonces ves en lo alto una mancha oscura que se mueve como humo contra el viento. No es humo. Es una bandada de pájaros negros que vuela en círculos amplios, como si buscara algo.",
+      "imagePrompt": "An ancient elvish road of wide fitted flagstones running east across open bare hills under a huge grey sky, ivy-covered ruins nearby, a dark flock of black birds circling far above a small young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la vieja calzada élfica"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "Entre los acebos",
+      "text": "Prefieres avanzar a cubierto y te metes entre los acebos, que aquí crecen altos y espesos como un bosque. Sus hojas pinchan y se te enganchan en la capa, pero desde arriba nadie podría verte. Avanzas despacio, siguiendo las vaguadas. A media tarde hueles humo de leña y, poco después, oyes un aullido largo que llega desde un arroyo cercano. Te detienes en seco. Nadie debería vivir aquí: esta tierra lleva siglos vacía.",
+      "imagePrompt": "A dense grove of tall dark holly trees with red berries in winter, a young traveler in a grey cloak moving cautiously through the spiky leaves, a thin column of woodsmoke rising beyond, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar entre los acebos"
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "La bandada",
+      "text": "Sigues por la calzada a pesar de todo, y la bandada te ve. Los pájaros bajan en espiral, graznando con voces roncas, y entonces los reconoces: crebain, grandes cuervos de las Tierras Brunas que, según los cuentos, sirven de ojos a quien los alimenta. Dos de ellos se lanzan contra ti con el pico y las garras por delante, buscándote la cara, mientras el resto te vigila desde arriba. Si alguno escapa, alguien sabrá muy pronto que un hombre armado camina por Eregion.",
+      "imagePrompt": "On an open ancient road, two large black crows diving at a young traveler's face with beaks and claws, a dark flock circling above in a pale winter sky, holly-dotted hills around, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la calzada a cielo abierto",
+      "encounter": {
+        "rivals": [
+          { "name": "Crebain", "portrait": "crebain", "levelOffset": -2, "pattern": ["12", "121", "1212", "31"], "everyNTicks": 2 },
+          { "name": "Crebain", "portrait": "crebain", "levelOffset": -2, "pattern": ["12", "121", "1212", "31"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "El lobo de las ruinas",
+      "text": "Dejas la calzada y corres a esconderte entre las ruinas cubiertas de hiedra. Los pájaros pasan de largo. Pero no estás solo: entre las piedras caídas hay un lobo enorme, de pelaje gris sucio y ojos amarillos, que te observa con una inteligencia que no te gusta nada. No es un lobo salvaje. Se mueve como si alguien le hubiera enseñado a cazar hombres. Gruñe sin prisa y se interpone entre tú y la única salida.",
+      "imagePrompt": "Inside ivy-covered elvish ruins, a huge dirty-grey wolf with yellow eyes stepping between fallen stones toward a young traveler with a drawn sword, blocking the only exit, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Refugiarse en las ruinas cercanas",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": 1, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "El fuego entre los acebos",
+      "text": "Te acercas al humo arrastrándote entre los acebos. En un claro hay un pequeño campamento: dos hombres de las Tierras Brunas, de pelo oscuro y enmarañado, asan algo en una hoguera junto a unas mantas y un fardo de provisiones. Por lo que alcanzas a oír, llevan semanas vigilando esta tierra y se quejan del frío y de la paga. Una rama cruje bajo tu rodilla. Los dos se levantan de un salto, cogen sus armas y vienen hacia ti con los ojos entornados.",
+      "imagePrompt": "A small camp in a clearing among holly trees, two shaggy dark-haired Dunlending men leaping up from a fire with weapons toward a young traveler crouching in the bushes, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acercarse al humo",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -2, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -2, "pattern": ["13", "131", "31"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "Lobos en el arroyo",
+      "text": "Bajas con cuidado hacia el arroyo de donde vino el aullido. En la orilla, dos lobos grandes beben agua helada, flacos y de pelo gris. Pero no son lobos corrientes: son demasiado altos, demasiado silenciosos, y uno lleva en el cuello la marca de una vieja cuerda, como si lo hubieran tenido atado. Levantan la cabeza a la vez, te miran y se separan sin hacer ruido, uno por cada lado del arroyo. Saben exactamente lo que hacen.",
+      "imagePrompt": "By a frozen stream in a holly valley, two tall gaunt grey wolves raising their heads from the water and splitting apart silently to flank a young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar hacia el aullido",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -2, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -2, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "Las piedras de la ciudad",
+      "text": "La calzada te lleva hasta los restos de una ciudad: muros derrumbados, plazas cubiertas de hierba y arcos rotos que todavía conservan grabados de hojas y estrellas. Quizá fue aquí donde vivieron los herreros élficos de los que hablan los cuentos. Encuentras una piedra con forma de yunque, partida en dos, y junto a ella un acebo enorme, más viejo que nada que hayas visto. Todo está en silencio. Te sientes como un intruso en una casa donde alguien murió hace mucho.",
+      "imagePrompt": "Ruins of an ancient elvish city in winter, collapsed walls and broken arches carved with leaves and stars, a split anvil-shaped stone beside an enormous old holly tree, a young traveler standing silent, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Explorar la ciudad en ruinas"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "Bajo el acebo viejo",
+      "text": "La bandada vuelve a pasar, más baja esta vez, y te tiras bajo un acebo enorme cuyas ramas llegan hasta el suelo. Desde dentro, entre las hojas, la ves dar vueltas sobre la calzada durante mucho rato. Luego se aleja hacia el suroeste, hacia las Tierras Brunas y, más allá, hacia donde se dice que hay una torre de piedra negra junto a un bosque viejo. Cuando sales, tienes la certeza de que alguien, en algún sitio, ya sabe que estás aquí.",
+      "imagePrompt": "Hidden beneath the low branches of a huge holly tree, a young traveler peering out between spiky leaves at a flock of black crows circling over an old road before flying off, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Esconderse de la bandada"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "La torre caída",
+      "text": "Entre las ruinas queda en pie la mitad de una torre, y trepas por sus piedras hasta lo alto. Desde allí la vista es enorme: las lomas de acebos, la calzada que corre hacia el este y, al fondo, las montañas, con una cumbre de laderas rojizas que destaca sobre las demás. En una vaguada lejana ves subir el humo de una hoguera y, junto a él, figuras pequeñas que se mueven. Hay más gente en Eregion de la que debería haber.",
+      "imagePrompt": "From the top of a half-ruined elvish tower, a young traveler looking over holly hills and an old road leading east to mountains with a reddish peak, distant campfire smoke and small figures in a hollow, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Trepar a la torre derrumbada"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "El manantial",
+      "text": "Detrás de las ruinas, el murmullo del agua te lleva a un manantial que brota de una pila de piedra tallada, adornada con hojas de acebo. El agua está helada y es tan clara que ves cada grano de arena del fondo. Bebes, te lavas la cara y te sientas un rato. Por primera vez desde que entraste en esta tierra sientes algo parecido a la paz, como si los que hicieron esta fuente hubieran dejado en ella un poco de su cuidado. Recuperas fuerzas y sigues adelante.",
+      "imagePrompt": "A clear spring flowing from a carved stone basin decorated with holly leaves behind elvish ruins, a young traveler kneeling to drink icy water, winter light, quiet and peaceful, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar agua entre las piedras"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "El prisionero",
+      "text": "Uno de los hombres sigue vivo, herido en una pierna. Lo atas y le preguntas qué hacen aquí. Al principio te escupe; luego, con miedo, empieza a hablar. Su gente vive en las Tierras Brunas, y un señor poderoso les paga para vigilar los caminos: quién va, quién viene y hacia dónde. Habla de un capitán que los manda desde unas ruinas al pie de la montaña roja. Cuando le preguntas por ese señor, solo dice que vive en una torre y que lo sabe todo.",
+      "imagePrompt": "In a holly clearing by a dying campfire, a wounded Dunlending man tied up and talking fearfully, a young traveler kneeling to question him, sword across his knees, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Interrogar al herido"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "Las cosas del campamento",
+      "text": "Revuelves el campamento. Entre las mantas encuentras comida para semanas, una bolsa con plata y un trozo de pergamino con marcas toscas: la calzada, las ruinas, el paso de la montaña roja y, junto a cada sitio, rayas que podrían contar viajeros. Al pie del dibujo, alguien ha trazado una mano abierta con tinta blanca. No sabes qué significa, pero no te gusta. Echas tierra sobre el fuego, te guardas el pergamino y te alejas antes de que vuelva alguien.",
+      "imagePrompt": "A young traveler searching an abandoned camp among holly trees, holding a crude parchment map with a white open hand painted at the bottom, blankets and a pouch of silver on the ground, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Registrar el campamento"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "El rastro de la manada",
+      "text": "Examinas el terreno junto al arroyo. Los dos lobos no estaban solos: hay huellas de muchos más, todas recientes, que llegan desde el suroeste y siguen hacia las montañas. Entre ellas, en el barro, encuentras pisadas de botas de hombre. Alguien camina con la manada, o detrás de ella, como un pastor con sus perros. La idea te hiela más que el agua del arroyo. Sigues el rastro un buen trecho, hasta que lo pierdes en un pedregal.",
+      "imagePrompt": "Along a frozen stream bank, a young traveler crouching over many fresh wolf tracks in the mud mixed with a man's boot prints, all leading toward distant snowy mountains, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Rastrear a los lobos"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "El refugio de piedra",
+      "text": "Encuentras una pequeña construcción élfica casi entera, con el techo de losas todavía en pie y estrellas grabadas en el dintel. Dentro está seco. Enciendes un fuego pequeño y pasas allí la noche, con la espada al alcance de la mano. Fuera empieza a nevar. Antes de dormirte, a la luz de las brasas, distingues en la pared unas letras élficas casi borradas. No sabes leerlas, pero tienes la extraña sensación de que alguien, hace mucho, escribió allí una despedida.",
+      "imagePrompt": "A small intact elvish stone shelter at night with stars carved above the door, snow beginning to fall outside, a young traveler by a small fire inside, faded elvish letters on the wall, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar refugio para la noche"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "El mojón de los elfos",
+      "text": "Subes a una loma alta coronada por un mojón de piedra, tan antiguo que el musgo lo cubre casi entero. Al limpiarlo descubres una flecha grabada que apunta al este, hacia las montañas, y debajo unas runas que parecen enanas. Por aquí debía de pasar el camino que unía Eregion con los enanos del otro lado de la sierra. Desde la cima ves la montaña de laderas rojizas, más cerca ya, con nubes grises enganchadas en la cumbre. Hacia allí debes ir.",
+      "imagePrompt": "On a hilltop, an ancient moss-covered waystone carved with an arrow pointing east and dwarvish runes, a young traveler clearing the moss, a reddish snow-capped peak beyond with grey clouds clinging to it, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a la loma más alta"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "La emboscada del barranco",
+      "text": "Atajas por un barranco estrecho de paredes de roca, cubierto de nieve fresca. Es un error. A mitad de camino, un silbido corto rompe el silencio y por los dos extremos aparecen tus enemigos: un hombre de las Tierras Brunas con una lanza corta y, a su lado, un lobo gris que obedece a sus gestos como un perro de caza. Te habían visto venir desde arriba. No puedes trepar por las paredes ni volver atrás. Aprietas la empuñadura y eliges al primero.",
+      "imagePrompt": "In a narrow snowy ravine between rock walls, a Dunlending man with a short spear signalling a grey wolf that closes in on a trapped young traveler from both ends, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atajar por el barranco",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -2, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -2, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "Sombras en el cielo",
+      "text": "Cruzas un llano abierto, sin un árbol, para ganar tiempo. El cielo está bajo y gris, y parece vacío hasta que deja de estarlo: tres crebain bajan de las nubes en picado, sin un graznido, directos hacia ti. Son grandes, de plumas negras y brillantes, y atacan con una astucia que no esperas de unos pájaros, uno por delante y dos por detrás. Más arriba, otros dan vueltas, esperando. Tienes que acabar con estos antes de que vuelvan a contar lo que han visto.",
+      "imagePrompt": "On an open treeless winter plain under a low grey sky, three large glossy black crows diving silently at a young traveler from front and behind, more circling high above, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el llano abierto",
+      "encounter": {
+        "rivals": [
+          { "name": "Crebain", "portrait": "crebain", "levelOffset": -4, "pattern": ["12", "121", "1212", "31"], "everyNTicks": 2 },
+          { "name": "Crebain", "portrait": "crebain", "levelOffset": -4, "pattern": ["12", "121", "1212", "31"], "everyNTicks": 2 },
+          { "name": "Crebain", "portrait": "crebain", "levelOffset": -4, "pattern": ["12", "121", "1212", "31"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "La orilla del río",
+      "text": "Bajas hasta un río estrecho de aguas oscuras y rápidas, y sigues su orilla hacia el este, hacia las montañas, al abrigo de los sauces desnudos. Aquí no hay nadie. En la arena encuentras las huellas de una partida de hombres, más de una docena, que marchó en tu misma dirección hace un par de días, con botas pesadas y algo que arrastraban. Los sigues de lejos, con cuidado. Sea quien sea quien los manda, vigila el camino de las montañas.",
+      "imagePrompt": "A narrow dark fast river in winter, bare willows along the bank, a young traveler following a trail of many heavy boot prints in the sand toward snowy mountains to the east, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la orilla del río"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "La patrulla del collado",
+      "text": "Subes hacia un collado entre lomas, desde donde esperas ver el camino de las montañas. Al llegar arriba te topas de frente con una patrulla que bajaba: un hombre de las Tierras Brunas y tres lobos grises, sujetos con correas que sueltan en cuanto te ven. Por un instante nadie se mueve. Luego el hombre grita algo en su lengua y los lobos se lanzan sobre ti. Más allá del collado, al pie de la montaña roja, se ve el resplandor de una gran hoguera.",
+      "imagePrompt": "On a windswept saddle between hills, a patrol of a Dunlending man releasing three grey wolves from leashes at a young traveler, a large campfire glow below a reddish mountain beyond, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir hacia el collado",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -5, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -5, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -5, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -5, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "La calzada hacia la montaña",
+      "text": "Das con la vieja calzada élfica y la sigues hacia el este, mientras el terreno empieza a subir hacia las montañas. Las lomas se vuelven más empinadas, los acebos escasean y la nieve cubre ya las piedras. Al caer la tarde, el camino pasa junto a unas ruinas grandes, al pie de la montaña roja. Hay luz entre sus muros: una hoguera, voces de hombres, gruñidos de lobo. Para llegar al paso, tendrás que cruzar por delante de ellos.",
+      "imagePrompt": "At dusk, an old elvish road climbing through sparse holly and snow toward a reddish mountain, great ruins at its foot with firelight between the walls, a young traveler approaching cautiously, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Tomar la calzada hacia la montaña"
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El capitán dunlendino",
+      "text": "Al pie de la montaña roja, entre los muros de una antigua sala élfica, los hombres de las Tierras Brunas tienen su campamento. Desde allí vigilan el camino del paso. Su jefe sale a tu encuentro a la luz de la hoguera: un hombre enorme, de barba negra y brazos cubiertos de cicatrices, con un hacha en cada mano. Tras él asoman un espía y un lobo gris. El capitán se ríe. Dice que su señor quiere saber quién cruza las montañas, y que tú no las vas a cruzar. Detrás de él, el Caradhras se pierde entre las nubes.",
+      "imagePrompt": "Firelit ruins of an elvish hall at the foot of a snowy reddish mountain, a huge black-bearded Dunlending captain with an axe in each hand laughing at a young traveler, a spy and a grey wolf behind him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          { "name": "Capitán dunlendino", "portrait": "boss_eregion", "levelOffset": 3, "pattern": ["12", "121", "1212", "13", "131", "31", "123"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } },
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -4, "pattern": ["13", "131", "31"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -4, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    }
+  ]
+}

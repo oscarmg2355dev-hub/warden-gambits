@@ -1,0 +1,252 @@
+{
+  "id": "durin",
+  "name": "Puertas de Durin",
+  "baseLevel": 28,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "El cauce seco",
+      "text": "Cuando por fin dejas atrás la nieve, tienes los dedos entumecidos y la capa tiesa de hielo, pero estás vivo. Bajas hasta las lomas y sigues hacia el sur, bordeando la sierra. Al segundo día das con el rastro de un grupo de viajeros: botas de hombres, pies pequeños y descalzos, las herraduras de un poni. También ellos venían de las montañas y torcieron hacia el sur. Las huellas te llevan a un valle por el que corre el lecho de un río seco, lleno de piedras redondas. Al fondo se alzan paredes de roca gris, cortadas a pico.",
+      "imagePrompt": "A young traveler in a frost-stiff grey cloak walking along a dry riverbed of round stones in a cold valley at the foot of great mountains, faint footprints and pony tracks ahead, sheer grey cliffs in the distance, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "La escalera del salto",
+      "text": "Sigues el cauce seco, como hicieron los viajeros. Sube entre rocas hasta un salto donde antes debía de caer una cascada; ahora solo gotea un hilo de agua por la piedra. Junto a él, unos peldaños tallados en la roca, gastados y resbaladizos, trepan por el acantilado. Los subes. Arriba te espera algo que no imaginabas: un lago oscuro, quieto como una losa, que llena el valle hasta el pie de las paredes. El viejo camino se hunde en él. No sopla el viento, y el agua huele a podrido.",
+      "imagePrompt": "Worn stone steps carved beside a trickling dry waterfall, at the top a still black lake filling a valley up to the foot of huge grey cliffs, an old road vanishing into the water, a young traveler in a grey cloak at the top step, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el cauce seco"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "Las alturas del valle",
+      "text": "No te gusta lo encajonado del valle, así que trepas por la ladera para verlo desde arriba. Desde lo alto de un peñasco lo entiendes todo: el río se ha detenido porque algo ha cegado su cauce, y sus aguas forman un lago negro bajo unos acantilados enormes. Al pie de la pared, en la orilla, hay dos acebos enormes arrancados de cuajo y rocas amontonadas, como si un gigante hubiera tenido un ataque de rabia. Detrás de ti, en las colinas, suena un aullido. Te han olido.",
+      "imagePrompt": "View from a high crag over a black still lake beneath enormous sheer cliffs, two huge uprooted holly trees and heaped boulders on the shore at the foot of the wall, a young traveler in a grey cloak looking down, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir por la ladera"
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "El poni solitario",
+      "text": "Bordeas el lago por una franja estrecha de tierra, entre el agua y la roca. A medio camino algo se mueve entre las piedras y te llevas la mano a la espada, pero es un poni: un animal flaco, sin carga ni silla, con los ojos desorbitados de terror. Por las herraduras sabes que es el del grupo que sigues. Lo llamas en voz baja, pero no se acerca. Mira el agua, relincha y sale al trote hacia el norte, lejos del lago. Algo lo ha asustado mucho.",
+      "imagePrompt": "A thin frightened pony without saddle or packs, wild-eyed, among stones on a narrow strip of shore beside a black still lake, a young traveler in a grey cloak reaching out a hand, sheer cliffs behind, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bordear la orilla del lago"
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "Trasgos en la escalera",
+      "text": "Te quedas un rato en lo alto de los peldaños, escondido, observando el lago. No tardas en ver movimiento: dos figuras encorvadas bajan por las rocas de la orilla, con armaduras negras mal ajustadas y cimitarras herrumbrosas. Son trasgos, criaturas de las minas, salidos de algún agujero de la montaña. Uno se queda atrás y el otro olfatea el aire y sube derecho hacia ti. Te han visto. En la escalera no hay sitio para huir; tendrás que pelear sobre los peldaños.",
+      "imagePrompt": "A hunched goblin in ill-fitting black armour with a rusty scimitar climbing worn stone steps beside a dry waterfall toward a young traveler with a sword, a second goblin hanging back by a black lake, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Vigilar desde los peldaños",
+      "encounter": {
+        "rivals": [
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": 1, "pattern": ["13", "131"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "Los lobos de la ladera",
+      "text": "Sigues por las alturas, saltando de roca en roca, pero los aullidos se acercan. Tres lobos grises aparecen en la cresta, recortados contra el cielo, y bajan hacia ti en línea recta. Son grandes y silenciosos, y se mueven como si alguien los hubiera enseñado a cazar hombres. No hay árbol al que subir ni cueva donde meterse. Buscas una roca que te cubra la espalda y te preparas. Más abajo, el lago negro sigue quieto, indiferente a todo.",
+      "imagePrompt": "Three large grey wolves silhouetted on a rocky ridge against a pale sky, running straight down at a young traveler with his back to a boulder and his sword ready, a black lake far below, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir por las alturas",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -4, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -4, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -4, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "El borde del acantilado",
+      "text": "Desciendes con cuidado por la ladera hasta lo alto de los acantilados, justo encima del sitio donde viste los árboles arrancados. Desde aquí oyes el agua lamer la piedra allá abajo. Te asomas: la pared cae a plomo, lisa, sin una sola marca, y a su pie las rocas amontonadas forman una barrera junto a la orilla. Algo ha golpeado aquí con una fuerza terrible; hay grietas recientes en la roca, blancas como heridas. Buscas un camino para bajar y lo encuentras: una chimenea estrecha entre dos peñas.",
+      "imagePrompt": "A young traveler in a grey cloak peering over the edge of a sheer smooth cliff, far below heaped boulders and broken trees at the shore of a black lake, fresh pale cracks in the rock, a narrow chimney gully beside him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Descender hacia el muro"
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "Los cazadores del poni",
+      "text": "Corres tras el poni por la orilla, temiendo que se rompa una pata entre las piedras. No eres el único que lo persigue. Un lobo gris sale de entre las rocas y se lanza a por el animal, que se encabrita y huye ladera arriba. El lobo se vuelve entonces hacia ti, con el pelo erizado: prefiere una presa que no corre. Te pones entre él y el camino por donde se fue el poni y levantas la espada. Ese animal va a llegar a casa, si de ti depende.",
+      "imagePrompt": "A grey wolf with bristling fur turning from a fleeing pony toward a young traveler who blocks its path with a raised sword on a stony lakeshore, the pony galloping away up the slope, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Ir tras el poni",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": 1, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "El carroñero",
+      "text": "Sigues la orilla hacia los acantilados. Cerca del muro, el suelo está revuelto: rocas recién caídas, troncos partidos y un olor a cieno que te revuelve el estómago. Entre las piedras, un trasgo solitario hurga en el barro buscando algo de valor. Al verte suelta un chillido y se lanza contra ti con un cuchillo curvo en cada mano, más rabioso que valiente. Si escapa, avisará a los suyos. No puedes dejar que se vaya.",
+      "imagePrompt": "A shrieking goblin with a curved knife in each hand leaping from churned mud and fallen rocks at the foot of a cliff toward a young traveler with a sword, broken tree trunks and a black lake nearby, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la orilla hasta el muro",
+      "encounter": {
+        "rivals": [
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": 1, "pattern": ["13", "131"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "La madriguera",
+      "text": "El otro trasgo, el que se quedó atrás, ha huido. Lo sigues entre las rocas de la orilla hasta una grieta de la ladera, medio tapada con ramas, por la que se cuela. Te asomas. Es una madriguera, no una entrada: un agujero estrecho que apesta a humo y a carne quemada, donde otros tres trasgos se levantan de un salto junto a una fogata. Ahora son cuatro, y la luz del fuego brilla en sus hojas. Ya no puedes retroceder sin darles la espalda.",
+      "imagePrompt": "A cramped smoky goblin den in a rock crevice, four goblins springing up beside a small fire with blades glinting, a young traveler with a sword at the narrow entrance half hidden by branches, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Perseguir al trasgo que huye",
+      "encounter": {
+        "rivals": [
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "Disputa en la orilla",
+      "text": "Bajas por fin a la orilla del lago. Las piedras están cubiertas de un limo verde y resbaladizo, y el agua, tan cerca, parece todavía más negra. Junto a un tronco caído te sorprende una escena extraña: un trasgo y un lobo gris se disputan los restos de algo muerto, gruñéndose el uno al otro. Al verte, olvidan su pelea. El lobo se agacha para saltar y el trasgo, más listo, se aparta para atacarte por el costado. Tienes el lago a la espalda, y no te gusta nada.",
+      "imagePrompt": "On a slimy green lakeshore beside a fallen trunk, a goblin and a grey wolf quarrelling over a carcass turn together toward a young traveler with a sword, the black lake close behind him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar a la orilla",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -2, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -2, "pattern": ["13", "131"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "La manada",
+      "text": "Los dos primeros lobos eran solo la avanzada. Desde la cresta bajan cuatro más, dos por cada flanco, con el hocico pegado a tu rastro. Podrías esconderte, pero te encontrarían. Buscas un paso estrecho entre dos rocas, donde no puedan atacarte todos a la vez, y esperas con la espada en alto. El primero salta; detrás vienen los otros, gruñendo, buscando un hueco para llegar a ti. La pelea será larga, y no hay nadie que vaya a venir a ayudarte.",
+      "imagePrompt": "Four grey wolves coming down a rocky ridge from both flanks toward a young traveler standing in a narrow gap between two boulders with his sword raised, the first wolf already leaping, grey sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Plantar cara a la manada",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -5, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -5, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -5, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -5, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "Huida entre los peñascos",
+      "text": "Oyes más aullidos en la cresta y no te quedas a contarlos. Bajas a saltos entre los peñascos, hacia el lago, buscando un sitio donde los lobos no puedan rodearte. La mayoría pierde tu rastro entre las rocas, pero uno, el más grande, no se deja engañar. Te alcanza al pie de la ladera, donde las piedras dan paso a la orilla, y se planta frente a ti con los colmillos al aire. Este no se rendirá. Tendrás que acabar con él.",
+      "imagePrompt": "A huge grey wolf baring its fangs, blocking a young traveler at the foot of a boulder-strewn slope where the rocks meet the shore of a black lake, the traveler gripping his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Escapar entre los peñascos",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": 0, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "Las puertas cegadas",
+      "text": "Bajas por la chimenea hasta el pie del muro. De cerca, el destrozo es aún mayor: rocas enormes apiladas contra la pared, acebos partidos, barro removido. Detrás de ese montón, sospechas, hay una puerta, aunque no ves ni una rendija. Un trasgo trepa por las rocas tratando de apartarlas, sin éxito, y maldice a gritos en su lengua. Al verte, saca el arma. Parece que también él busca una manera de entrar, o de salir.",
+      "imagePrompt": "Enormous boulders and broken holly trees heaped against a smooth sheer cliff wall by a black lake, a goblin on the rocks drawing a weapon as a young traveler climbs down from a narrow gully, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar hasta el pie del muro",
+      "encounter": {
+        "rivals": [
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": 1, "pattern": ["13", "131"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "La grieta de la cumbre",
+      "text": "Recorres lo alto del acantilado buscando otra bajada. Encuentras una grieta reciente que corta la roca de arriba abajo, como si la montaña se hubiera rajado por un golpe. Huele a humedad y a algo rancio. No estás solo: por ella sube un trasgo que lleva un lobo atado con una cuerda. Al verte, el trasgo suelta al animal con una risa aguda y le grita una orden. El lobo salta hacia ti y su amo lo sigue con una lanza. Aquí arriba, un mal paso te mandaría al lago.",
+      "imagePrompt": "On top of a high cliff above a black lake, a goblin with a spear releasing a grey wolf from a rope as both rush at a young traveler, a fresh crack splitting the rock beside them, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Recorrer lo alto del acantilado",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -2, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -2, "pattern": ["13", "131"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "Las últimas huellas",
+      "text": "Buscas el rastro del grupo de viajeros que bajó de las montañas. Lo encuentras cerca del muro, en una franja de tierra que el agua no ha cubierto: las botas, los pies pequeños, el poni. Las huellas se detienen al pie de la pared y allí se mezclan con otras marcas, anchas y viscosas, que salen del lago como si algo se hubiera arrastrado por el barro. Después, nada: ni sangre ni cuerpos, solo rocas amontonadas contra la piedra lisa. Entraron, comprendes, y algo cerró el camino detrás de ellos.",
+      "imagePrompt": "Footprints of boots, small bare feet and a pony ending at the foot of a sheer cliff, mixed with broad slimy drag marks coming out of a black lake, boulders heaped against the smooth wall, a young traveler kneeling, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar el rastro del grupo"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "El agua que se mueve",
+      "text": "Te sientas en una roca y observas el lago. Su superficie parece de cristal negro, sin una ola. Pero al rato ves que no está quieta del todo: cerca de la orilla aparecen anillos lentos, como si algo respirara debajo, y una línea de burbujas avanza y se detiene. Hay peces muertos flotando con el vientre al aire. En el barro de la orilla se marcan surcos anchos, recientes, que no ha hecho ningún animal que conozcas. Te alejas del agua sin hacer ruido y no vuelves a darle la espalda.",
+      "imagePrompt": "A young traveler in a grey cloak sitting on a rock watching a glassy black lake, slow rings and a line of bubbles on the surface, dead fish floating belly up, wide fresh furrows in the shore mud, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Vigilar la superficie del lago"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "El cauce antiguo",
+      "text": "Te detienes a pensar cómo se formó este lago. No es natural: aguas abajo, una barrera de piedras y tierra ciega el cauce y retiene el agua, que apenas se filtra por encima. Pero lo que te llama la atención es otra cosa. Siguiendo con la vista la línea del viejo cauce hacia los acantilados, comprendes que el río no nacía en un manantial cualquiera: brotaba de la propia montaña, por un canal que ahora queda bajo el agua, junto al muro. Si el agua pudo salir por ahí, quizá un hombre pueda entrar.",
+      "imagePrompt": "A young traveler in a grey cloak studying a dark lake held back by a rough dam of stones and earth, the line of an old riverbed leading across the water toward a sheer cliff where a carved channel lies drowned, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Examinar el viejo cauce"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "Líneas a la luz de la luna",
+      "text": "Buscas un rincón seco lejos del agua y descansas hasta la noche, con la espalda contra una roca. Cuando sale la luna y las nubes se abren, ves algo que te deja sin aliento: en la pared lisa del acantilado se encienden unas líneas plateadas, finas como hilos, que dibujan un arco, unos árboles y una estrella. Es una puerta enorme que solo se deja ver a la luz de la luna. Pero está cerrada y tapada por unas rocas caídas, y no conoces su secreto. Al rato las nubes vuelven y el dibujo se apaga.",
+      "imagePrompt": "Night by a black lake, moonlight breaking through clouds onto a sheer cliff where faint silver lines glow, tracing an arch, trees and a star, boulders heaped at its base, a young traveler resting against a rock watching in awe, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Descansar hasta la noche"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "La orilla bajo el muro",
+      "text": "Avanzas por la orilla hacia la base del acantilado, pisando con cuidado entre las piedras cubiertas de limo. El agua está a un paso, negra y quieta, y procuras no mirarla. A tu espalda, sin embargo, oyes de vez en cuando un chapoteo suave, como si algo te siguiera bajo la superficie, a tu mismo paso. Te vuelves y no hay nada, solo anillos que se ensanchan. Aprietas el paso. El muro se acerca, enorme, y a sus pies el agua se arremolina contra unas rocas caídas.",
+      "imagePrompt": "A young traveler in a grey cloak walking warily along a slimy stony shore at the foot of an enormous cliff, widening rings on the black water just behind him, heaped boulders ahead where the water swirls, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Caminar por la orilla"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "Los últimos lobos",
+      "text": "Atajas hacia el muro por un caos de peñascos caídos, saltando de uno a otro. A medio camino te alcanzan dos lobos grises que llevaban rato siguiéndote sin un aullido. El primero salta desde una roca más alta y casi te derriba; el segundo busca tus piernas. Peleas en equilibrio sobre piedras resbaladizas, con el lago brillando abajo como un ojo negro. Sabes que, si caes al agua, quizá no vuelvas a salir.",
+      "imagePrompt": "A young traveler fighting two grey wolves while balancing on slippery fallen boulders above a black lake, one wolf leaping from a higher rock, the other snapping at his legs, sheer cliff behind, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atajar entre los peñascos",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -2, "pattern": ["13", "131", "1313"], "everyNTicks": 2 },
+          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -2, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El Guardián del Agua",
+      "text": "Al pie de la pared, a ras del agua, la roca se ha partido: los golpes que han derribado árboles y amontonado rocas han rajado también un viejo canal enano, y por la grieta sale un soplo de aire frío del interior de la montaña. Es tu camino. Te metes en el agua hasta las rodillas para alcanzarla y, en ese momento, el lago hierve. Brazos larguísimos, pálidos y viscosos, surgen de la superficie y se enroscan buscándote. No podrás matar lo que vive ahí debajo; tienes que golpearlo hasta que se hunda y te deje pasar.",
+      "imagePrompt": "Long pale slimy tentacles bursting from a boiling black lake around a young traveler knee-deep in water, slashing with his sword, a dark crack in the cliff at water level beside him, heaped boulders, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          { "name": "Guardián del Agua", "portrait": "boss_durin", "levelOffset": 5, "pattern": ["13", "131", "1313", "12", "121", "1212", "31", "123"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "13", "131"] } }
+        ]
+      }
+    }
+  ]
+}

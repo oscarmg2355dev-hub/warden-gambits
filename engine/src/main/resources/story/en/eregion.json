@@ -1,0 +1,120 @@
+{
+  "id": "eregion",
+  "name": "Hollin",
+  "nodes": {
+    "eregion_1_0": {
+      "title": "The Land of Holly",
+      "text": "After many days marching south along the skirts of the mountains, the landscape changes. You enter a country of gentle downs and scrub, dotted with holly trees of dark leaves and red berries, and here and there carved stones peer out of the grass: the remains of walls, fallen columns, steps that lead nowhere. It is Hollin, Eregion of old, the ancient land of the Elves. The air is clean and cold, but something is strange: not a single bird can be heard. To the east, three great snowy peaks command the horizon."
+    },
+    "eregion_2_0": {
+      "title": "The Elven Highway",
+      "text": "You come upon the remains of an ancient highway of broad, well-fitted flagstones, running east between the downs. You follow it. The walking is easy, though you feel exposed: there are hardly any trees on either side and the sky is enormous. Off to one side, not far away, the ruins of an ivy-clad building rise into view. Then you see, high above, a dark smudge moving like smoke against the wind. It is not smoke. It is a flock of black birds flying in wide circles, as if searching for something.",
+      "choiceLabel": "Follow the old Elven highway"
+    },
+    "eregion_2_1": {
+      "title": "Among the Holly",
+      "text": "You would rather advance under cover, so you slip in among the holly trees, which grow here tall and thick as a forest. Their leaves prick and snag on your cloak, but no one above could see you. You move slowly, following the hollows. In mid-afternoon you smell wood smoke and, soon after, hear a long howl coming from a nearby stream. You stop dead. No one should live here: this land has lain empty for centuries.",
+      "choiceLabel": "Pass among the holly trees"
+    },
+    "eregion_3_0": {
+      "title": "The Flock",
+      "text": "You keep to the highway in spite of everything, and the flock sees you. The birds come spiralling down, cawing in hoarse voices, and then you recognise them: crebain, great crows of Dunland that, so the tales say, serve as eyes for whoever feeds them. Two of them dive at you, beaks and claws first, seeking your face, while the rest watch from above. If any escapes, someone will soon know that an armed man is walking through Hollin.",
+      "choiceLabel": "Keep to the open highway"
+    },
+    "eregion_3_1": {
+      "title": "The Wolf in the Ruins",
+      "text": "You leave the highway and run to hide among the ivy-covered ruins. The birds pass over. But you are not alone: among the fallen stones lies an enormous wolf, its coat a dirty grey and its eyes yellow, watching you with an intelligence you do not like at all. It is no wild wolf. It moves as though someone had taught it to hunt men. It growls without haste and places itself between you and the only way out.",
+      "choiceLabel": "Shelter in the nearby ruins"
+    },
+    "eregion_3_2": {
+      "title": "The Fire among the Holly",
+      "text": "You creep towards the smoke on your belly among the holly. In a clearing lies a small camp: two men of Dunland, with dark, matted hair, roasting something over a fire beside some blankets and a bundle of provisions. From what you can catch, they have spent weeks watching this land, and they grumble about the cold and the pay. A branch cracks beneath your knee. Both spring to their feet, seize their weapons and come towards you with narrowed eyes.",
+      "choiceLabel": "Approach the smoke"
+    },
+    "eregion_3_3": {
+      "title": "Wolves at the Stream",
+      "text": "You go carefully down towards the stream the howl came from. On the bank, two large wolves are drinking the icy water, lean and grey-coated. But these are no common wolves: they are too tall, too silent, and one bears on its neck the mark of an old rope, as if it had been kept tied. They raise their heads together, look at you, and part without a sound, one on each side of the stream. They know exactly what they are doing.",
+      "choiceLabel": "Go down towards the howl"
+    },
+    "eregion_4_0": {
+      "title": "The Stones of the City",
+      "text": "The highway brings you to the remains of a city: collapsed walls, squares overgrown with grass and broken arches that still bear carvings of leaves and stars. Perhaps it was here that the Elven-smiths of the tales once lived. You find a stone shaped like an anvil, split in two, and beside it an enormous holly tree, older than anything you have ever seen. All is silent. You feel like an intruder in a house where someone died long ago.",
+      "choiceLabel": "Explore the ruined city"
+    },
+    "eregion_4_1": {
+      "title": "Beneath the Old Holly",
+      "text": "The flock passes again, lower this time, and you throw yourself beneath an enormous holly whose branches reach the ground. From inside, through the leaves, you watch it wheel over the highway for a long while. Then it moves off to the south-west, towards Dunland and, beyond it, to where they say a tower of black stone stands beside an old forest. When you crawl out, you are certain that someone, somewhere, already knows you are here.",
+      "choiceLabel": "Hide from the flock"
+    },
+    "eregion_4_2": {
+      "title": "The Fallen Tower",
+      "text": "Among the ruins, half a tower still stands, and you climb its stones to the top. From there the view is vast: the holly-clad downs, the highway running east and, in the distance, the mountains, with one peak of reddish flanks standing out above the rest. In a far-off hollow you see the smoke of a fire rising and, beside it, small figures moving. There are more people in Hollin than there ought to be.",
+      "choiceLabel": "Climb the crumbling tower"
+    },
+    "eregion_4_3": {
+      "title": "The Spring",
+      "text": "Behind the ruins, the murmur of water leads you to a spring welling from a basin of carved stone, adorned with holly leaves. The water is icy and so clear that you can see every grain of sand on the bottom. You drink, wash your face and sit a while. For the first time since entering this land you feel something like peace, as if those who made this fountain had left in it a little of their care. You regain your strength and go on.",
+      "choiceLabel": "Look for water among the stones"
+    },
+    "eregion_4_4": {
+      "title": "The Prisoner",
+      "text": "One of the men is still alive, wounded in the leg. You bind him and ask what they are doing here. At first he spits at you; then, fearful, he begins to talk. His people live in Dunland, and a powerful lord pays them to watch the roads: who goes, who comes and in which direction. He speaks of a captain who commands them from some ruins at the foot of the red mountain. When you ask him about that lord, he says only that he lives in a tower and knows everything.",
+      "choiceLabel": "Question the wounded man"
+    },
+    "eregion_4_5": {
+      "title": "The Camp's Belongings",
+      "text": "You rummage through the camp. Among the blankets you find food for weeks, a purse of silver and a scrap of parchment with crude markings: the highway, the ruins, the pass of the red mountain and, beside each place, strokes that might be counting travellers. At the foot of the drawing, someone has traced an open hand in white ink. You do not know what it means, but you do not like it. You kick earth over the fire, pocket the parchment and slip away before anyone returns.",
+      "choiceLabel": "Search the camp"
+    },
+    "eregion_4_6": {
+      "title": "The Pack's Trail",
+      "text": "You examine the ground beside the stream. The two wolves were not alone: there are prints of many more, all fresh, coming from the south-west and heading on towards the mountains. Among them, in the mud, you find the tread of a man's boots. Someone walks with the pack, or behind it, like a shepherd with his dogs. The thought chills you more than the water of the stream. You follow the trail a good way, until you lose it on a stony slope.",
+      "choiceLabel": "Track the wolves"
+    },
+    "eregion_4_7": {
+      "title": "The Stone Shelter",
+      "text": "You find a small Elven building almost whole, its roof of slabs still standing and stars carved on the lintel. Inside it is dry. You light a small fire and spend the night there, your sword within reach. Outside it begins to snow. Before you fall asleep, by the light of the embers, you make out on the wall some Elvish letters, nearly worn away. You cannot read them, but you have the strange feeling that someone, long ago, wrote a farewell there.",
+      "choiceLabel": "Seek shelter for the night"
+    },
+    "eregion_5_0": {
+      "title": "The Elven Waymark",
+      "text": "You climb a high down crowned by a stone waymark, so ancient that moss covers it almost entirely. Clearing it, you discover a carved arrow pointing east, towards the mountains, and beneath it runes that look Dwarvish. The road that joined Eregion to the Dwarves beyond the range must once have passed this way. From the summit you see the mountain with reddish flanks, nearer now, with grey clouds snagged on its peak. That is where you must go.",
+      "choiceLabel": "Climb the highest hill"
+    },
+    "eregion_5_1": {
+      "title": "The Ambush in the Ravine",
+      "text": "You take a shortcut through a narrow ravine walled with rock and covered in fresh snow. It is a mistake. Halfway along, a short whistle breaks the silence and your enemies appear at both ends: a man of Dunland with a short spear and, beside him, a grey wolf that obeys his gestures like a hunting hound. They had seen you coming from above. You cannot climb the walls or turn back. You tighten your grip on the hilt and choose your first foe.",
+      "choiceLabel": "Cut through the ravine"
+    },
+    "eregion_5_2": {
+      "title": "Shadows in the Sky",
+      "text": "You cross an open plain, without a tree, to gain time. The sky is low and grey, and it seems empty until it no longer is: three crebain drop from the clouds in a steep dive, without a caw, straight at you. They are large, with glossy black feathers, and they attack with a cunning you do not expect from birds, one from the front and two from behind. Higher up, others circle, waiting. You must finish these before they return to tell what they have seen.",
+      "choiceLabel": "Cross the open plain"
+    },
+    "eregion_5_3": {
+      "title": "The Riverbank",
+      "text": "You go down to a narrow river of dark, swift water and follow its bank east, towards the mountains, sheltered by bare willows. There is no one here. In the sand you find the tracks of a band of men, more than a dozen, who marched in your direction a couple of days ago, in heavy boots, dragging something. You follow them from afar, with care. Whoever commands them is watching the way into the mountains.",
+      "choiceLabel": "Follow the riverbank"
+    },
+    "eregion_6_0": {
+      "title": "The Patrol on the Saddle",
+      "text": "You climb towards a saddle between the downs, from which you hope to see the road into the mountains. At the top you run straight into a patrol coming down: a man of Dunland and three grey wolves on leashes, which he slips the moment he sees you. For an instant no one moves. Then the man shouts something in his tongue and the wolves hurl themselves at you. Beyond the saddle, at the foot of the red mountain, glows the light of a great fire.",
+      "choiceLabel": "Climb towards the saddle"
+    },
+    "eregion_6_1": {
+      "title": "The Highway to the Mountain",
+      "text": "You find the old Elven highway again and follow it east, as the ground begins to rise towards the mountains. The downs grow steeper, the holly thins and snow already covers the stones. As evening falls, the road passes beside some great ruins at the foot of the red mountain. There is light within their walls: a fire, the voices of men, the growling of wolves. To reach the pass, you will have to go right past them.",
+      "choiceLabel": "Take the highway to the mountain"
+    },
+    "eregion_7_0": {
+      "title": "The Dunlending Captain",
+      "text": "At the foot of the red mountain, within the walls of an ancient Elven hall, the men of Dunland have made their camp. From there they watch the road to the pass. Their chief comes out to meet you in the firelight: a huge man, black-bearded, his arms covered in scars, an axe in each hand. Behind him loom a spy and a grey wolf. The captain laughs. His lord wishes to know who crosses the mountains, he says, and you are not going to cross them. Behind him, Caradhras vanishes into the clouds."
+    }
+  },
+  "rivals": {
+    "Crebain": "Crebain",
+    "Lobo de Saruman": "Wolf of Saruman",
+    "Espía dunlendino": "Dunlending Spy",
+    "Capitán dunlendino": "Dunlending Captain"
+  }
+}

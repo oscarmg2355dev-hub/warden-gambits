@@ -1,0 +1,233 @@
+{
+  "id": "sombrio",
+  "name": "Valle del Arroyo Sombrío",
+  "baseLevel": 34,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "La puerta del este",
+      "text": "Subes los últimos peldaños a ciegas y, de pronto, el aire cambia: frío, limpio, con olor a nieve. Atraviesas una puerta enorme y rota y sales a la luz del día. Es una luz gris, de cielo encapotado, pero después de tanta oscuridad te hace llorar los ojos. A tus pies se abre un valle largo entre montañas, el Arroyo Sombrío, al que los enanos llamaban Azanulbizar. Al fondo brilla un lago quieto y oscuro. A tu espalda, muy hondo, todavía retumban los tambores. No puedes quedarte aquí.",
+      "imagePrompt": "A young traveler in a grey cloak stumbling out of a huge broken dwarven gate onto a mountainside into grey overcast daylight, shielding his eyes, a long valley below with a dark still lake between snowy peaks, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "La escalera del torrente",
+      "text": "Junto a la puerta nace un camino de escalones tallados que baja por la ladera al lado de un torrente blanco. Lo tomas sin pensarlo: es el camino más corto hacia el fondo del valle. Los peldaños están gastados y resbaladizos por la escarcha, y el agua salta a tu lado con un estruendo que tapa cualquier otro ruido. Eso te preocupa. Cada pocos pasos te vuelves a mirar la puerta, allá arriba, negra como una boca abierta.",
+      "imagePrompt": "A young traveler in a grey cloak hurrying down worn frosty stone steps carved beside a roaring white mountain torrent, looking back over his shoulder at a black gate high on the slope, grey overcast sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar por la vieja escalera"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "Entre los peñascos",
+      "text": "No te fías del camino de escalones: cualquiera que salga por la puerta lo verá. Te apartas por la ladera, saltando de roca en roca entre brezos secos y peñascos caídos. Es más lento y más cansado, pero desde aquí arriba dominas el valle entero: el lago, el torrente, el río que baja hacia el sureste. Te detienes a recuperar el aliento detrás de una piedra grande. Entonces oyes voces ásperas que bajan de la puerta.",
+      "imagePrompt": "A young traveler in a grey cloak crouching behind a large boulder among dry heather and fallen rocks on a high mountain slope, a wide valley with a dark lake and a white torrent spread out below, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Apartarse por la ladera"
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "Trasgos en los peldaños",
+      "text": "Bajas tan rápido como te atreves. A media escalera, unas piedras ruedan desde arriba y te golpean los talones: cuatro trasgos han salido de la puerta tras de ti y bajan saltando los escalones, con los ojos entornados contra la luz. No les gusta el día, pero tienen hambre de caza y saben que estás solo. Te alcanzan en un rellano donde el torrente salpica la piedra. Te vuelves hacia ellos con la espada en la mano.",
+      "imagePrompt": "Four squinting goblins leaping down frosty carved stone steps beside a white torrent toward a young traveler in a grey cloak turning on a wet landing with his sword drawn, grey daylight, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir bajando deprisa",
+      "encounter": {
+        "rivals": [
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -5, "pattern": ["13", "131"], "everyNTicks": 1 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "El arquero del saliente",
+      "text": "Dejas la escalera y bajas por la orilla del torrente, saltando entre rocas mojadas para ganar tiempo. Una flecha negra se clava en el musgo a un palmo de tu mano. Levantas la vista: en un saliente, junto a la escalera, un arquero orco tensa otra vez el arco, envuelto en trapos para protegerse de la luz. Está solo, pero desde allí arriba puede acribillarte. No hay dónde cubrirse. Trepas hacia él, de roca en roca, antes de que acierte.",
+      "imagePrompt": "An orc archer wrapped in rags against the daylight drawing a black bow on a rocky ledge above a white mountain torrent, a young traveler in a grey cloak climbing the wet rocks toward him, a black arrow in the moss, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atajar por la orilla del torrente",
+      "encounter": {
+        "rivals": [
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": 1, "pattern": ["32", "323"], "everyNTicks": 1, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "Orcos en la ladera",
+      "text": "Sigues por la ladera hacia el lago, agachado entre los peñascos. Las voces se acercan y, al rodear una roca, te das de bruces con ellos: un orco grande de las montañas, de brazos largos y cimitarra corta, y dos trasgos, uno de ellos cargado con su lanza. Habían salido a rastrear la ladera. El orco se ríe al ver que estás solo y le arranca la lanza al trasgo de las manos. Luego los tres se lanzan contra ti.",
+      "imagePrompt": "A big long-armed mountain orc with a short scimitar and two goblins, one carrying a spear rounding a boulder on a heather slope, face to face with a young traveler in a grey cloak drawing his sword, a dark lake far below, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Rodear la ladera hacia el lago",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -4, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -4, "pattern": ["13", "131"], "everyNTicks": 1 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -4, "pattern": ["13", "131"], "everyNTicks": 1 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "Los ojeadores del risco",
+      "text": "Subes hacia los riscos, pensando que nadie te buscará tan arriba. Te equivocas. En una cornisa, dos figuras vigilan el valle: un orco de las montañas y un arquero con el arco a la espalda. Son ojeadores, enviados a ver quién ha salido por la puerta. El orco te ve primero y gruñe un aviso. El arquero se descuelga el arco y el orco desenvaina. Estás demasiado cerca para huir.",
+      "imagePrompt": "On a windswept rocky ledge high above a valley, a mountain orc drawing a blade and an orc archer unslinging his bow above a young traveler in a grey cloak climbing up, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir hacia los riscos",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -2, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -2, "pattern": ["32", "323"], "everyNTicks": 1 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "El lago espejo",
+      "text": "Al pie de la escalera, el camino pasa junto al lago. Es largo y estrecho, de un azul tan oscuro que parece negro, y ningún viento riza su superficie. Los enanos lo llamaban Kheled-zâram. Te asomas a la orilla sin saber muy bien por qué. En el agua ves las montañas del revés, nítidas como talladas, y entre sus cumbres unos destellos pálidos, como de gemas, que el cielo gris no explica. Te quedas mirando más tiempo del que querrías. Al final te apartas, con la sensación de haber visto algo que no era para ti.",
+      "imagePrompt": "A young traveler in a grey cloak kneeling at the edge of a long narrow still lake of deep dark blue, snowy mountain peaks mirrored perfectly upside down in the water with faint pale gem-like glints among them, grey sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Asomarse al lago"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "La piedra de Durin",
+      "text": "Cerca de la orilla del lago se alza una columna solitaria, partida por arriba, con runas gastadas por siglos de lluvia. No sabes leerlas, pero recuerdas lo que oíste contar en Rivendel: que aquí, en los primeros días, el primero de los reyes enanos se asomó al lago y decidió fundar su reino bajo estas montañas. Ese reino es la oscuridad de la que acabas de escapar. Apoyas la mano en la piedra fría un instante, como quien saluda a un muerto, y sigues tu camino.",
+      "imagePrompt": "A lone weathered stone pillar broken at the top, carved with worn dwarven runes, standing near the shore of a dark mountain lake, a young traveler in a grey cloak resting his hand on it, grey overcast light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acercarse a la columna rota"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "Las fuentes del río",
+      "text": "Siguiendo el torrente llegas a una hondonada donde brotan varias fuentes de un agua tan fría que te duelen los dientes al beber. De ellas nace un río claro que corre hacia el sureste entre piedras blancas: el Cauce de Plata, te dijeron en Rivendel, el río que baja hacia los bosques. Te lavas la cara y las manos, negras de hollín y de sangre, y por un momento el agua parece llevarse también algo de lo que viste ahí abajo. Llenas el odre y sigues.",
+      "imagePrompt": "Icy springs welling up in a rocky hollow and feeding a clear river that runs away over white stones, a young traveler in a grey cloak washing soot from his face and hands in the cold water, grey daylight, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar las fuentes del río"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "Restos de una vieja batalla",
+      "text": "El pedregal que cruzas no es solo piedra. Entre los brezos asoman yelmos oxidados, puntas de lanza y huesos de orco blanqueados, tan viejos que se deshacen al rozarlos. Aquí se libró una gran batalla hace mucho tiempo, enanos contra orcos, a las puertas mismas del reino perdido. Caminas despacio, con respeto, entre lo poco que queda. Sobre una roca encuentras un hacha enana entera, sin rastro de óxido, pero la dejas donde está. No es tuya, y aquí nadie ha olvidado de quién es.",
+      "imagePrompt": "A stony field among dry heather strewn with rusted helms, spear points and old bleached orc bones, a young traveler in a grey cloak walking slowly through it, an untarnished dwarven axe lying on a rock, grey sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el pedregal"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "Los que salen de la puerta",
+      "text": "Desde lo alto de la ladera vigilas la puerta por la que saliste. Al cabo de un rato sale alguien más: un grupo pequeño de figuras que bajan despacio por la escalera, algunas altas y otras de la estatura de un niño. No corren como quien huye de una batalla, sino como quien lleva un peso encima. Al llegar abajo, uno se deja caer de rodillas y los demás se vuelven hacia la puerta, en silencio, mucho rato. Entiendes que han dejado a alguien allí dentro. No te acercas. No es tu duelo.",
+      "imagePrompt": "Seen from far up a rocky slope, a small group of distant figures, some tall and some child-sized, standing in grief at the foot of stone steps below a dark mountain gate, one kneeling, a young traveler in a grey cloak watching from behind rocks, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Vigilar la puerta desde arriba"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "La atalaya caída",
+      "text": "En la ladera encuentras los restos de una atalaya de los enanos: tres muros de piedra labrada y un techo medio hundido. Dentro hay ceniza vieja y un rincón seco, al abrigo del viento. Te sientas por primera vez desde el puente. Te tiemblan las manos. Comes un poco de pan duro de las provisiones de Rivendel y cierras los ojos. Cuando los abres, el cielo se ha oscurecido un poco más. Las sombras del valle se alargan y, con ellas, vuelve el miedo.",
+      "imagePrompt": "The ruins of a small dwarven watchtower on a mountain slope, three walls of dressed stone and a half-fallen roof, a weary young traveler in a grey cloak sitting in a dry corner eating hard bread, the valley darkening outside, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Refugiarse en unas ruinas"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "El risco más alto",
+      "text": "Trepas hasta lo alto de un risco desde donde se ve todo el valle. Al oeste, la boca negra de la puerta; abajo, el lago, quieto como un ojo; al sureste, un río que baja entre colinas cada vez más suaves hasta perderse en una mancha lejana de árboles, grises y dorados a la vez, aunque estás en pleno invierno. Has oído historias de un bosque así, y no todas son tranquilizadoras. Pero es el único camino que no te devuelve a la montaña.",
+      "imagePrompt": "A young traveler in a grey cloak standing on a high crag overlooking a long mountain valley, a black gate to one side, a dark still lake below, and far to the southeast a river winding toward a distant forest of grey and gold, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Trepar al risco más alto"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "La senda de las cabras",
+      "text": "Bajas de los riscos por una senda tan estrecha que solo pueden haberla abierto las cabras. En un recodo encuentras huellas frescas en el barro: botas de clavos, muchas, que bajan hacia el valle. Orcos. Han salido de la montaña por alguna puerta lateral y ahora andan por el valle, en algún lugar entre tú y el sureste. Sigues las huellas con cuidado, de lejos, hasta que se separan en dos grupos. Uno va hacia el río; el otro, hacia el lago.",
+      "imagePrompt": "A narrow goat path winding down steep crags, a young traveler in a grey cloak crouching to study many fresh hobnailed boot prints in the mud that lead down into a misty valley, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar por una senda estrecha"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "La orilla del río",
+      "text": "Bajas hasta el río que nace en el valle y empiezas a seguirlo hacia el sureste. Corre rápido y claro sobre piedras blancas, y su ruido es lo único que se oye. El camino de la orilla es antiguo, empedrado a trechos por los enanos, y avanzas bien. Poco a poco las montañas se van quedando atrás y el valle se ensancha. Te cruzas con un ciervo que bebe y te mira sin miedo. Por un rato casi olvidas que alguien puede venir detrás de ti.",
+      "imagePrompt": "An old partly paved riverside road along a clear fast river running over white stones, a young traveler in a grey cloak walking beside it, a deer drinking and watching him, mountains receding behind under a grey sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la orilla del río"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "El vado vigilado",
+      "text": "Quieres pasar a la otra orilla del río, donde el terreno parece más abrigado, y buscas un vado. Lo encuentras donde el agua se abre sobre un lecho de cantos. Pero no eres el primero en llegar: en la orilla de enfrente, un orco de las montañas llena un odre mientras otro, con un arco negro, vigila. Te ven a la vez que tú a ellos. El arquero dispara; el orco cruza el agua chapoteando, con la cimitarra en alto. Te plantas en los cantos y esperas.",
+      "imagePrompt": "A shallow stony ford across a clear river, a mountain orc splashing through the water with a raised scimitar while an orc archer shoots from the far bank, a young traveler in a grey cloak bracing on the stones with his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar un vado",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -2, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -2, "pattern": ["32", "323"], "everyNTicks": 1 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "Un alto en la hondonada",
+      "text": "Te refugias en una hondonada entre rocas grandes, donde el viento no llega, y te permites descansar. La tarde cae deprisa en el valle. Cuando el sol se pone tras las montañas, oyes otra vez los tambores, lejanos, y luego un clamor de voces y cuernos que viene de la puerta. Sabes lo que significa: con la oscuridad, los orcos salen de caza. No piensas quedarte a esperarlos. Te levantas, te ajustas la capa y echas a andar hacia el sureste, más deprisa que antes.",
+      "imagePrompt": "A sheltered hollow among large boulders at dusk, a young traveler in a grey cloak rising to his feet and looking back toward dark mountains where a distant gate is lit by red torchlight, the sunset fading, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Descansar entre unas rocas"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "La avanzadilla",
+      "text": "Apretas el paso para dejar el valle atrás antes de la noche. El camino baja en curvas entre peñas y, al salir de una de ellas, te encuentras con un orco de las montañas sentado en una piedra, comiéndose algo que prefieres no mirar. Es grande, con cota de anillas y un escudo de cuero, y por la forma en que se levanta no parece asustado. Quizá se adelantó al resto de su banda. Escupe, recoge su lanza y se te acerca.",
+      "imagePrompt": "A big mountain orc in ring mail with a leather shield rising from a rock beside a winding valley road between crags, picking up a spear, facing a young traveler in a grey cloak at a bend, late afternoon light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Apretar el paso",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": 1, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "Los perseguidores",
+      "text": "Cuando cae la noche, decides no detenerte. Caminas junto al río, guiándote por su ruido, con la luna asomando a ratos entre las nubes. Al cabo de unas horas oyes algo a tu espalda: pasos rápidos, respiraciones, un tintineo de metal. Te alcanzan en un tramo abierto de la orilla: dos orcos de las montañas y dos arqueros que corren delante siguiendo tu rastro. Los manda alguien más grande que se ha quedado atrás, pero estos cuatro no esperan. Te das la vuelta para recibirlos.",
+      "imagePrompt": "Night on an open riverbank under a cloudy moon, two orc archers running ahead of two mountain orcs as they catch up with a young traveler in a grey cloak turning to face them with his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Caminar sin descanso",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -5, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -5, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2 },
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -5, "pattern": ["32", "323"], "everyNTicks": 1 },
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -5, "pattern": ["32", "323"], "everyNTicks": 1 }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "El bosquecillo de abetos",
+      "text": "Cuando cae la noche, te metes en un bosquecillo de abetos junto al río y te escondes entre las raíces, envuelto en la capa gris. Al rato oyes pasos en la orilla, muchos, y voces que discuten en su lengua horrible: una banda de orcos sigue el río hacia el sureste, buscando a alguien. Uno de ellos, enorme, da órdenes a gritos. Pasan de largo a pocos pasos de ti. Esperas hasta que el ruido se pierde y sales con cautela. Sabes que van por delante y que tu camino es el mismo que el suyo.",
+      "imagePrompt": "A young traveler wrapped in a grey cloak hiding among the roots of a dark fir copse by a river at night, a band of orcs passing along the bank a few steps away, a huge orc shouting orders, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Ocultarse en un bosquecillo"
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El capitán de la montaña",
+      "text": "El río se ensancha y las colinas se suavizan. A lo lejos ya distingues, oscura contra el cielo, la línea de un bosque. Entonces, en la orilla, te sale al encuentro un capitán orco de las montañas, más alto que tú, con un yelmo abollado y una cimitarra enorme. A su lado, un arquero ya tiene la flecha en la cuerda, y un trasgo salido de las minas le sigue como un perro. El capitán sonríe al verte solo: llevaba toda la noche buscándote. Luchas con los pies en el barro y el río a tu espalda. Más allá de ellos, hacia el sureste, te esperan los árboles.",
+      "imagePrompt": "Night on a muddy riverbank, a tall orc captain in a dented helm swinging a huge scimitar at a young traveler in a grey cloak, an orc archer drawing his bow and a goblin crouching beside him, the dark line of a distant forest on the horizon, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          { "name": "Capitán orco de las Montañas Nubladas", "portrait": "boss_sombrio", "levelOffset": 6, "pattern": ["12", "121", "1212", "13", "131", "31", "123"], "everyNTicks": 1, "modes": { "defenseBelowPct": 20, "attackAbovePct": 70, "maxDefenses": 2, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } },
+          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -4, "pattern": ["32", "323"], "everyNTicks": 1 },
+          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -4, "pattern": ["13", "131"], "everyNTicks": 1 }
+        ]
+      }
+    }
+  ]
+}

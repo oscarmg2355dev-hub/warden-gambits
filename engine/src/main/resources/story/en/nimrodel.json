@@ -1,0 +1,119 @@
+{
+  "id": "nimrodel",
+  "name": "Nimrodel",
+  "nodes": {
+    "nimrodel_1_0": {
+      "title": "The Eaves of the Wood",
+      "text": "With the captain sunk in the river, the path along the bank brings you at last to the first trees. They resemble no trees you know: smooth grey trunks, immensely tall, and branches laden with golden leaves in the dead of winter, gleaming faintly beneath the moon. Under them the air is different, stiller and cleaner. From the west another river comes down to join the one you have followed, singing among the stones. In Rivendell you heard its name: the Nimrodel. Behind you lie the orcs; ahead, a forest few men speak of without lowering their voices."
+    },
+    "nimrodel_2_0": {
+      "title": "Beneath the Golden Trees",
+      "text": "You venture beneath the trees. Golden leaf-fall covers the ground and muffles your steps, and the moonlight filters through the branches like gold dust. No animal can be heard. You have a feeling, ever clearer, that you are not alone: that something, or someone, is watching you from high above. You look up and see nothing but leaves. Even so, you take your hand from your sword without noticing, like one entering another's house.",
+      "choiceLabel": "Go in beneath the trees"
+    },
+    "nimrodel_2_1": {
+      "title": "Orcs on the Bank",
+      "text": "You would rather not enter an unknown forest by night, so you follow the bank, between the eaves and the water. Soon you see you are not the only one to think of it: four orcs of the mountains, filthy from the road, are squatting by the river, arguing. One lifts his nose, sniffs and gets to his feet. They do not want to go in among the trees, but they very much want to catch you. They advance along the bank, two on each side.",
+      "choiceLabel": "Follow the riverbank"
+    },
+    "nimrodel_3_0": {
+      "title": "An Archer among the Trunks",
+      "text": "A barely visible path winds between the trunks and you follow it. In a small clearing, a whistle cuts the air and a black arrow buries itself in the tree beside your head. It does not come from above, but from behind a fallen trunk: an orc archer who has strayed into the forest, hunched and jittery, his eyes glinting in the dark. He looses again, misses, and fumbles for a third arrow with clumsy fingers. This place frightens him more than you do. You rush at him.",
+      "choiceLabel": "Follow a path among the trunks"
+    },
+    "nimrodel_3_1": {
+      "title": "The Disputed Prey",
+      "text": "You follow the murmur of water through dry ferns until you hear something else: a growl and a harsh laugh. Beside a stream, an orc of the mountains and two archers have cornered a wounded deer and are arguing over who will keep it. You tread on a branch. All three turn at once. The deer seizes its chance and flees among the trees; the orcs, for their part, seem to think you are better prey.",
+      "choiceLabel": "Follow the sound of water down"
+    },
+    "nimrodel_3_2": {
+      "title": "The Fire in the Clearing",
+      "text": "To get away from the bank, you cut across an open clearing between the eaves and the first great trees. It is a mistake: in the middle burns a small, badly hidden fire, and around it two orcs, one of the mountains and an archer, are warming their hands. One is binding his arm, where an arrow with grey feathers is still lodged. They see you. They rise without haste, and one kicks the embers towards you.",
+      "choiceLabel": "Cut across a clearing"
+    },
+    "nimrodel_3_3": {
+      "title": "The Archer by the Pool",
+      "text": "You go down to a pebbled bank where a stream forms a still pool. The moon shines on the water. On the far side, among some rocks, something moves: a crouching orc archer, watching the water, who has seen you. His first arrow skips off the stones at your feet. You could retreat, but then he would keep shooting at your back. You cross the pool with icy water up to your knees, while he reaches for another arrow.",
+      "choiceLabel": "Go down to the stony bank"
+    },
+    "nimrodel_4_0": {
+      "title": "Whistles on High",
+      "text": "You stop in the middle of the path and listen. At first there is nothing. Then, far above, a soft whistle sounds, like a bird's, and another answers it from the other side. They are not birds. You stand still, your hands far from your sword, and let them look at you. After a while the whistles fall silent, and a golden leaf comes spinning down onto your shoulder. You do not know whether it is a warning or a permission. You choose to take it as a permission and go on, slowly.",
+      "choiceLabel": "Stop and listen"
+    },
+    "nimrodel_4_1": {
+      "title": "The Great Tree",
+      "text": "You sit at the foot of the largest tree you have ever seen: its smooth grey trunk is so broad that five men could not encircle it. Among the roots lies a dry hollow, soft with leaves. You lean your back against the bark and feel something strange, like a slow, calm pulse, very deep. For the first time since you entered the mountain, fear lets go of you entirely. You sleep a little, without dreams. When you wake, the moon has moved and you feel lighter.",
+      "choiceLabel": "Rest beneath a great tree"
+    },
+    "nimrodel_4_2": {
+      "title": "The Warning Arrow",
+      "text": "You cross the stream, leaping from stone to stone. The moment you set foot on the far bank, an arrow with grey feathers buries itself in the earth just before your boot, quivering. It is no orc arrow. You freeze. A clear voice says something from on high, in a tongue that sounds like water; you do not understand it, but the tone is firm. You raise your hands slowly, open, and take a step back. No one shoots again. Whatever you do from now on will have witnesses.",
+      "choiceLabel": "Cross the stream"
+    },
+    "nimrodel_4_3": {
+      "title": "The Fallen Orc",
+      "text": "You follow the wounded deer's drops of blood through the ferns, but what you find is something else: a dead orc, lying face down beside a trunk, with two grey-feathered arrows in his back. He has not been dead long, and no one has taken his weapons. Whoever killed him did so from afar and in silence, and then left without a trace. This forest has guardians, and they do not like orcs. You hope they dislike Men a little less.",
+      "choiceLabel": "Follow the deer's trail"
+    },
+    "nimrodel_4_4": {
+      "title": "The Waystone",
+      "text": "You move away from the eaves into the heart of the forest. Here the trees are larger and the leaf-fall thicker. You find a ring of stones with cold ash: the fire of travellers who passed years ago. On one of the stones someone carved a rune you recognise from Rivendell, an Elvish sign of safe passage. You sit beside it a moment. It has been a long time since anyone left you a kindly sign upon the road.",
+      "choiceLabel": "Move away from the eaves"
+    },
+    "nimrodel_4_5": {
+      "title": "The Column without Torches",
+      "text": "You hide among the tall ferns when you hear footsteps. Soon a column of orcs passes along the eaves, a few yards away, in haste and without torches. They do not go in among the great trees: they skirt them, glancing upward in fear. One lags behind and sniffs the air in your direction. You hold your breath. From on high comes a short whistle; the orc shudders, curses and runs after the others. You stay still a long while before moving.",
+      "choiceLabel": "Hide among the ferns"
+    },
+    "nimrodel_4_6": {
+      "title": "The Waterfall",
+      "text": "You follow the stream upward along its bank to a small waterfall, where the water tumbles down steps of pale stone with a sound like a song. You sit on a rock to listen. You do not know why, but a lump rises in your throat: you think of Bree, of the road, of everything you have seen die since then. You let the waterfall sing for you a while. When you rise, the weight you carried out of the mountain is a little lighter.",
+      "choiceLabel": "Follow the stream upward"
+    },
+    "nimrodel_4_7": {
+      "title": "The Band's Trail",
+      "text": "You follow the bank southward and come upon a trail that hides nothing: broken branches, churned mud, gnawed bones and an abandoned shield. A large band of orcs passed this way not long ago, skirting the forest without daring to enter it, as if seeking a door. By the tracks, they are not few. You decide to keep out of their path and move away from the trail towards the trees, sword to hand and ears alert.",
+      "choiceLabel": "Follow the bank southward"
+    },
+    "nimrodel_5_0": {
+      "title": "Archers in the Mist",
+      "text": "A thick mist rises from the river and tangles among the trunks, and you advance through it almost blind, guided by the murmur of the water. Suddenly, four hunched shadows loom before you: orc archers, as lost as you in the mist, arrows already on the string. For an instant no one moves. Then one of them shrieks and all four loose at once. An arrow grazes your cloak. You hurl yourself at them before they can nock again.",
+      "choiceLabel": "Press on through the mist"
+    },
+    "nimrodel_5_1": {
+      "title": "A Platform on High",
+      "text": "You find a tree with low branches and climb, higher than you have ever climbed. Among the golden leaves you find something unexpected: a platform of pale wood, firmly lashed to the branches, empty. You lie down on it, wrapped in your cloak. From here the forest is a sea of gold beneath the moon. You fall asleep. When you open your eyes, you think you see grey shadows sitting in the branches above, watching you. You blink, and no one is there. You climb down carefully, wondering whether you dreamed it.",
+      "choiceLabel": "Climb a tree"
+    },
+    "nimrodel_5_2": {
+      "title": "The Stragglers",
+      "text": "You cut along the eaves of the forest, where the trees are lower and you can move faster. There, among some bushes, two orcs are arguing in low voices: a big one from the mountains and a scrawny archer. They have fallen behind their band and dare not enter the forest alone. Seeing you, the argument ends: at last they have something to do with their fear. They circle you slowly, keeping you from reaching the great trees.",
+      "choiceLabel": "Cut along the eaves"
+    },
+    "nimrodel_5_3": {
+      "title": "A Distant Song",
+      "text": "You stop, lean against a trunk and wait in silence, not quite knowing for what. After a while there comes, from very far away, a song. Clear voices, many of them, singing high in the trees in a tongue you do not understand. It is not a joyful song. It speaks of water, you think, and of something lost long ago. You listen to the end. When it falls silent, you find your cheeks wet and your heart, somehow, at peace.",
+      "choiceLabel": "Wait in silence"
+    },
+    "nimrodel_6_0": {
+      "title": "The Waters of Nimrodel",
+      "text": "You reach the bank of the Nimrodel, which runs clear and swift over pale stones. You take off your boots and wade across. The water is icy and comes up to your knees, but it does not hurt: on the contrary, with every step you feel it carrying something away, the weariness, the dust of the mountain, the memory of the fire beneath the bridge. Reaching the far bank, you stand a moment, still, the water dripping from you. For weeks you have not breathed like this.",
+      "choiceLabel": "Wade across the Nimrodel"
+    },
+    "nimrodel_6_1": {
+      "title": "The Hidden Path",
+      "text": "Between two enormous roots you discover a narrow path, so clear of leaves that someone must tend it. You follow it. Every time you hesitate at a fork, you find a sign: a bent branch, a white stone, a leaf pinned to a piece of bark. You never see anyone, but you know you are being guided, slowly, eastward, towards the place where the rivers meet. You wonder whether it is an invitation or a trap. You decide to trust.",
+      "choiceLabel": "Take a hidden path"
+    },
+    "nimrodel_7_0": {
+      "title": "The Chief of the Archers",
+      "text": "You reach the place where the Nimrodel joins the river you have followed from the mountains, wider and colder. On the far side, the forest grows thicker and more golden. But before you can find a way across, they surround you: an enormous orc with a black bow as tall as himself, the chief of the archers, with an orc of the mountains and an archer at his side. You fight with your back to the river. High above, among the golden branches, figures clad in grey watch the struggle in silence, bows drawn and a rope coiled over one shoulder."
+    }
+  },
+  "rivals": {
+    "Orco de las Montañas Nubladas": "Misty Mountains Orc",
+    "Arquero orco": "Orc Archer",
+    "Jefe de los arqueros orcos": "Orc Archer Chief"
+  }
+}

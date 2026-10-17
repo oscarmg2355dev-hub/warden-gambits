@@ -1,0 +1,230 @@
+{
+  "id": "moscagua",
+  "name": "Pantanos de Moscagua",
+  "baseLevel": 7,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "Los Pantanos de Moscagua",
+      "text": "Con el alfa abatido, el bosque te deja marchar. Ante ti se extienden los Pantanos de Moscagua: un mar de juncos, aguas pardas y bancos de niebla que se mueven como rebaños. Cada paso se hunde en el fango y el aire vibra con el zumbido de incontables insectos que buscan tu piel. Aun así, el barro guarda huellas recientes: pies pequeños, unas botas largas, un poni. Y otras más pesadas, que no te gustan nada, siguiendo a las primeras.",
+      "imagePrompt": "Vast foggy marshland of reeds, brown stagnant pools and drifting mist banks, clouds of midges in the air, a young traveler with sword and pack sinking ankle-deep in mud, footprints ahead, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "Entre los juncos",
+      "text": "Te metes entre los juncos, que te superan en altura, buscando el camino más directo. El agua te llega a las rodillas y está tibia, espesa y maloliente. De pronto, el zumbido se vuelve un rugido: una nube de moscardones se levanta de la superficie como humo negro y se lanza sobre ti. Pican, se meten en los ojos y en la boca, y no hay forma de huir con el agua por las rodillas. Tienes que hacerles frente.",
+      "imagePrompt": "Tall reeds rising above a young traveler wading knee-deep in murky marsh water, a dense black cloud of biting flies swarming like smoke around him, hazy grey light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Vadear entre los juncos",
+      "encounter": {
+        "rivals": [
+          { "name": "Nube de moscardones", "portrait": "swarm", "levelOffset": 0, "pattern": ["32", "323", "13"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "Huellas en el barro",
+      "text": "Decides seguir las huellas, que buscan siempre los bancos de tierra más firmes. Pronto descubres que no eres el único: un hombre de pelo negro y piel curtida camina agachado delante de ti, estudiando las mismas marcas. Viste ropas de las tierras del sur y lleva un cuchillo curvo al cinto. Cuando se da cuenta de tu presencia, no pregunta nada. Su mano vuela hacia el arma, y entiendes que un testigo es lo último que desea.",
+      "imagePrompt": "A dark-haired weathered southern spy crouching over footprints on a muddy bank in the fog, turning with a curved knife toward a young traveler behind him among the reeds, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el rastro de barro",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": 0, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "La isleta de los sauces",
+      "text": "Escapas del agua hacia una isleta donde crecen tres sauces retorcidos. La tierra es firme y seca, un pequeño milagro en medio del pantano. Te sacudes los insectos, te untas la cara con barro para protegerte y comes algo de lo poco que te queda. Desde aquí oyes un zumbido grave y constante que viene del norte, como si algo enorme respirara bajo el agua. Prefieres no pensar demasiado en ello.",
+      "imagePrompt": "A small dry islet with three twisted willows in the middle of a misty swamp, a young traveler smearing mud on his face against insects while resting on the roots, grey water all around, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar tierra firme"
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "El agua negra",
+      "text": "Te arriesgas a cruzar una laguna de agua negra que acorta el camino. A mitad de travesía el fondo desaparece bajo tus pies y el fango te atrapa hasta la cintura. Cuanto más te mueves, más te hundes. Con la calma que te queda, te inclinas hacia atrás, alcanzas una raíz con la punta de la espada y tiras de ella poco a poco. Sales cubierto de lodo, temblando y vivo, con una lección bien aprendida.",
+      "imagePrompt": "A young traveler trapped waist-deep in black bog mud in a dark lagoon, reaching with his sword toward a twisted root, mist and dead trees around, cold dim light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atravesar el agua negra"
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "El campamento del espía",
+      "text": "Siguiendo hacia atrás las huellas del espía, encuentras su campamento: una manta, un odre y un hatillo bien atado. Dentro hay pan negro, un puñado de monedas de plata y un retazo de tela con una mano blanca pintada. No sabes qué significa, pero tiene el tacto de algo importante. También hay un mapa con el Camino trazado y varias cruces junto a una colina alta, al este. Guardas el retazo y sigues adelante.",
+      "imagePrompt": "A hidden spy camp among reeds with a blanket, a waterskin and an opened bundle, a young traveler holding a scrap of cloth painted with a white hand, a crude map on the ground, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Registrar su campamento"
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "La luz del pantano",
+      "text": "Al caer la tarde ves una luz pálida que flota sobre el agua, a poca distancia. Piensas que puede ser otro viajero con una linterna y la sigues, chapoteando. Pero la luz se aleja cada vez que te acercas: danza, se apaga y vuelve a encenderse más allá. Cuando por fin te detienes, no sabes dónde estás. A tu alrededor solo hay niebla, agua quieta y el croar de las ranas, que de repente calla.",
+      "imagePrompt": "A pale ghostly light floating over still marsh water at twilight, a young traveler wading after it through thick fog among dead reeds and stumps, eerie silence, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la luz lejana"
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "Noche en la isleta",
+      "text": "Decides pasar la noche en la isleta. No te atreves a encender fuego, así que te envuelves en la capa húmeda y escuchas el pantano: chapoteos, el gemido del viento entre los juncos y, muy lejos, hacia el este, destellos que iluminan las nubes sobre unas colinas, como relámpagos sin trueno. Te preguntas si serán tormentas o algo peor. Al amanecer, la niebla lo ha borrado todo y el camino sigue esperándote.",
+      "imagePrompt": "Night on a small willow islet in a swamp, a young traveler wrapped in a damp cloak watching distant pale flashes lighting the clouds over far eastern hills, dark reeds around, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acampar bajo los sauces"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "El nido del zumbido",
+      "text": "Sigues el zumbido grave hasta un tocón hueco que se alza en mitad del agua. A su alrededor, el aire es una masa viva de insectos, y en su interior palpita algo parecido a un panal de barro. Al acercarte, cuatro enjambres se separan de la nube principal y se arrojan sobre ti desde distintos lados. Comprendes que este nido es solo uno de muchos, y que en algún lugar del pantano debe de haber uno mucho mayor.",
+      "imagePrompt": "A hollow tree stump rising from swamp water, crusted with a pulsing mud hive, four dark swarms of giant midges peeling off to attack a young traveler from different sides, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar el origen del zumbido",
+      "encounter": {
+        "rivals": [
+          { "name": "Enjambre de moscardones", "portrait": "swarm", "levelOffset": -5, "pattern": ["32", "323", "13"], "everyNTicks": 2 },
+          { "name": "Enjambre de moscardones", "portrait": "swarm", "levelOffset": -5, "pattern": ["32", "323", "13"], "everyNTicks": 2 },
+          { "name": "Enjambre de moscardones", "portrait": "swarm", "levelOffset": -5, "pattern": ["32", "323", "13"], "everyNTicks": 2 },
+          { "name": "Enjambre de moscardones", "portrait": "swarm", "levelOffset": -5, "pattern": ["32", "323", "13"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "La pasarela hundida",
+      "text": "Recuperado del susto, exploras la orilla y encuentras los restos de una pasarela de madera, medio hundida pero todavía útil. Alguien la construyó hace siglos, cuando quizá estas tierras estaban habitadas. Avanzas por ella con cuidado, comprobando cada tabla. En un poste descubres una talla antigua, gastada por el agua: una corona rodeada de estrellas. Recuerdas que en las historias de Bree se hablaba de un reino perdido del norte.",
+      "imagePrompt": "Remains of an ancient half-sunken wooden boardwalk crossing a misty marsh, a weathered post carved with a crown and stars, a muddy young traveler testing the planks with his foot, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar la vieja pasarela"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "Ojos entre la niebla",
+      "text": "Mientras te limpias el lodo, oyes voces en una lengua áspera que no entiendes. Te agazapas en la niebla y ves a dos hombres morenos que rebuscan en el barro y señalan al este. Son espías, sin duda, gente del sur que nada bueno busca tan al norte. Uno de ellos olfatea el aire como un perro y se vuelve exactamente hacia tu escondite. No hay tiempo para huir con las piernas entumecidas por el frío del fango.",
+      "imagePrompt": "Two dark-haired southern spies searching the mud in thick fog, one sniffing the air and turning toward a young traveler crouching hidden among the reeds, pale sun, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Esconderse en la niebla",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -2, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -2, "pattern": ["13", "131", "31"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "El regreso del compañero",
+      "text": "Te escondes junto al campamento y esperas. Al anochecer llega otro hombre, compañero del primero, que maldice al ver el hatillo revuelto. Busca alrededor con una antorcha, y la luz despierta dos enjambres de moscardones dormidos en los juncos. El espía te descubre en el mismo instante en que la nube zumbante os envuelve a los dos. En el caos, él decide atacar, y los insectos no distinguen entre bandos.",
+      "imagePrompt": "A southern spy with a torch discovering a young traveler hidden by a ransacked camp at nightfall, two swarms of midges bursting from the reeds around them both, firelight in fog, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Esperar junto al campamento",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -4, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Moscardones de Moscagua", "portrait": "swarm", "levelOffset": -4, "pattern": ["32", "323", "13"], "everyNTicks": 2 },
+          { "name": "Moscardones de Moscagua", "portrait": "swarm", "levelOffset": -4, "pattern": ["32", "323", "13"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "La colina de las cruces",
+      "text": "Estudias el mapa del espía a la luz del atardecer. Las cruces señalan una colina alta al este, junto al Camino, acompañadas de unas palabras en una lengua que no conoces. Fuera lo que fuese lo que buscaban, lo buscaban allí. Orientas tus pasos en esa dirección, eligiendo los bancos de juncos más firmes. Cuando la niebla se abre un instante, ves a lo lejos una cima pelada, coronada por un anillo de piedras.",
+      "imagePrompt": "A young traveler studying a crude map marked with crosses at sunset in a marsh, the fog parting to reveal a distant bare hill crowned with a ring of ruined stones on the horizon, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Estudiar el mapa del espía"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "El ahogado del pantano",
+      "text": "La luz vuelve a encenderse justo delante y, esta vez, se queda quieta. Te acercas y descubres que brilla sobre un tronco podrido donde yace un esqueleto con restos de armadura, atrapado en el fango desde hace mucho. Al rozarlo, el tronco se parte y libera un enjambre furioso que dormía en su interior, mayor y más agresivo que ninguno de los que has visto. La luz se apaga y solo queda el zumbido.",
+      "imagePrompt": "A pale marsh light hovering over a rotten log where an old skeleton in rusted armor lies half sunk in mud, a furious swarm of midges bursting out at a young traveler, fog, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acercarse a la luz",
+      "encounter": {
+        "rivals": [
+          { "name": "Enjambre del ahogado", "portrait": "swarm", "levelOffset": 1, "pattern": ["32", "323", "13"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "Destellos en las colinas",
+      "text": "Entre la niebla distingues un montículo de tierra y piedras que sobresale del agua. Subes a él para orientarte. Desde allí, por fin, ves algo más que juncos: hacia el este, una línea de colinas oscuras recorta el cielo, y sobre la más alta parpadean destellos blancos, como chispas de una tormenta lejana. Algo ocurre en esas cumbres. Esperas a que cesen y, con las estrellas como guía, fijas tu rumbo hacia ellas.",
+      "imagePrompt": "A young traveler standing atop a small rocky mound in a foggy marsh at night, looking east at a line of dark hills where white flashes flicker on the highest summit under the stars, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir al montículo"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "Tierra más firme",
+      "text": "Poco a poco, el suelo se endurece bajo tus botas. Aparecen matas de brezo y alguna roca gris asomando entre el musgo. No es el final del pantano, pero sí un respiro: puedes caminar sin hundirte y secar la ropa al viento. Te sientas en una piedra y cuentas tus provisiones, más escasas de lo que quisieras. A lo lejos, las colinas se ven algo más cerca que ayer. Aún queda mucho barro por delante.",
+      "imagePrompt": "Firmer heath ground rising out of the marsh with grey rocks and moss, a young traveler sitting on a stone counting scant provisions, cloak drying in the wind, distant hills, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar suelo firme"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "El manantial escondido",
+      "text": "Después de días bebiendo agua turbia, la encuentras casi por casualidad: un manantial que brota entre piedras blancas, limpio y helado. Bebes hasta que te duelen los dientes y llenas la cantimplora. Alrededor crecen berros y menta silvestre, y los moscardones, extrañamente, no se acercan. Te lavas las picaduras, que arden menos, y descansas un rato escuchando el agua. Pocas veces algo tan pequeño te ha parecido un regalo tan grande.",
+      "imagePrompt": "A clear spring bubbling between white stones in the middle of a marsh, watercress and wild mint around it, a weary young traveler drinking from cupped hands, the mist held back, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar agua limpia"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "Un campamento reciente",
+      "text": "Encuentras un lugar donde alguien acampó hace muy poco: hierba aplastada para cuatro cuerpos pequeños y uno grande, ramas cortadas con cuidado y ni una brasa a la vista. Son los hobbits y su guía, seguro. Alguno debió de quejarse mucho de los mosquitos, porque en un rincón hay un montón de hierbas aromáticas chamuscadas. Sonríes sin querer. Al menos, de momento, nadie los ha alcanzado aquí.",
+      "imagePrompt": "A recently abandoned marsh campsite with flattened grass in four small hollows and one larger, carefully cut branches and a pile of scorched aromatic herbs, a smiling young traveler crouching, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el rastro de los viajeros"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "El cañaveral",
+      "text": "Te internas en un cañaveral tan alto y tan denso que apenas ves el cielo. Las cañas crujen y susurran con cada soplo de viento, y por momentos crees oír pasos a tu lado. Avanzas marcando las cañas con la espada para no caminar en círculos. Cuando por fin sales al otro lado, descubres que el rumbo es el correcto: el terreno sube suavemente y la niebla empieza a quedarse a tu espalda.",
+      "imagePrompt": "A young traveler pushing through towering dense marsh canes that blot out the sky, slashing marks on the stalks with a sword, rustling reeds and drifting fog behind, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el cañaveral"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "La orilla del este",
+      "text": "Eliges el camino largo y bordeas la ciénaga por su orilla oriental, donde los juncos ralean y aparecen los primeros espinos. Tardas un día más, pero llegas entero. Desde un pequeño alto contemplas el último tramo de pantano: una laguna ancha rodeada de niebla, de la que sube un zumbido tan potente que hace vibrar el aire. Todos los enjambres parecen volver allí, como abejas a su colmena.",
+      "imagePrompt": "A young traveler on a small rise at the edge of a marsh with sparse thorn bushes, gazing down at a wide fog-shrouded lagoon where dark swarms stream inward like bees to a hive, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Rodear la ciénaga"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "El corazón de la ciénaga",
+      "text": "Atajas por el centro de la ciénaga, donde el agua es más profunda y la niebla más espesa. Es un error. Un espía dunlendino te ha seguido durante horas, esperando su oportunidad, y la encuentra cuando un enjambre te rodea en un paso estrecho. El hombre sale de los juncos con el cuchillo en alto mientras los insectos te ciegan. Peleas con el barro hasta el pecho y la certeza de que nadie vendrá a buscarte.",
+      "imagePrompt": "Deep in a foggy bog, a young traveler chest-deep in water fighting a swarm of midges while a southern spy leaps from the reeds with a raised knife, grey gloom, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cortar por la ciénaga",
+      "encounter": {
+        "rivals": [
+          { "name": "Moscardones de Moscagua", "portrait": "swarm", "levelOffset": -2, "pattern": ["32", "323", "13"], "everyNTicks": 2 },
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -2, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "La reina del enjambre",
+      "text": "La laguna del centro del pantano hierve de insectos. Sobre un islote de barro y huesos se agita la reina del enjambre: una criatura alada del tamaño de un perro, de ojos rojos y aguijón goteante, nacida del agua estancada y de siglos de olvido. A su alrededor, una nube de guardianas zumba como una tormenta. Ella te ha sentido llegar, y no es la única: entre los juncos de la orilla, el espía dunlendino que seguía tus huellas sale con el cuchillo en la mano. Más allá de la laguna, la tierra sube hacia colinas peladas y una cima coronada de piedras. Para alcanzarla, primero tienes que cruzar su reino.",
+      "imagePrompt": "A seething swamp lagoon with an islet of mud and bones, a dog-sized winged insect queen with red eyes and a dripping stinger rising amid a storm of midges to face a young traveler, a southern spy with a curved knife stepping out of the reeds, distant bare hills, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          { "name": "Reina del enjambre", "portrait": "boss_moscagua", "levelOffset": 2, "pattern": ["32", "323", "3232", "13", "131", "1313", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 10, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } },
+          { "name": "Guardianas del enjambre", "portrait": "swarm", "levelOffset": -4, "pattern": ["32", "323", "13"], "everyNTicks": 2 },
+          { "name": "Espía del pantano", "portrait": "dunlending", "levelOffset": -4, "pattern": ["13", "131", "31"], "everyNTicks": 2 }
+        ]
+      }
+    }
+  ]
+}

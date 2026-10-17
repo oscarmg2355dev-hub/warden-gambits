@@ -1,0 +1,432 @@
+{
+  "id": "cienagas",
+  "name": "Ciénagas de los Muertos",
+  "baseLevel": 52,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "Tierra de agua muerta",
+      "text": "Dejas atrás las últimas rocas y el suelo se vuelve blando bajo tus botas. Delante se extiende la ciénaga: charcas de agua parda, matas de juncos podridos, lomas de barro que tiemblan al pisarlas. Un olor dulzón y rancio lo llena todo. La niebla se arrastra a ras del agua, y hace frío, un frío húmedo que no se va con el sol. Ningún pájaro vuela aquí. Al este, detrás de la bruma, adivinas la muralla oscura de las montañas.",
+      "imagePrompt": "A vast dismal marsh of brown pools, rotten reed tufts and trembling mud mounds under low creeping fog, a young traveler in a grey elven cloak stepping off the last grey rocks onto soft ground, dark mountains faint beyond the mist, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "La primera luz",
+      "text": "Sigues una orilla de juncos mientras cae la tarde. Delante, sobre el agua, se enciende una luz pálida, verdosa, como la llama de una vela que nadie sostiene. Se queda quieta un momento. Luego se acerca, flotando, y al llegar a tu altura crece y se estira, y sientes en la cara un aliento helado en lugar de calor. Es una llama que quema de frío. Cuando la espada la atraviesa, chisporrotea, se encoge y vuelve a crecer.",
+      "imagePrompt": "Dusk along a reed bank in a misty marsh, a pale greenish flame floating over the water and swelling into a cold fiery shape before a young traveler in a grey elven cloak who slashes at it with his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la orilla de los juncos",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Fuego fatuo",
+            "portrait": "wisp",
+            "levelOffset": 0,
+            "pattern": [
+              "32",
+              "323",
+              "3232",
+              "31"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "Los pozos negros",
+      "text": "Avanzas saltando de una mata de hierba a otra, porque entre ellas el agua es negra y no se ve el fondo. Al aterrizar en una mata grande, el agua de los pozos de alrededor empieza a temblar. Dos formas suben despacio, hechas de niebla y de agua sucia, con algo parecido a brazos. No tienen cara, solo dos hundimientos oscuros donde deberían estar los ojos. Huelen a fondo de pozo. Se inclinan hacia ti como si quisieran abrazarte.",
+      "imagePrompt": "Black water pools between grass tussocks in a marsh, two figures of mist and dirty water rising with arm-like shapes and dark hollows for eyes, leaning toward a young traveler in a grey elven cloak standing on a tussock with sword raised, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Saltar de mata en mata",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Espectro de la ciénaga",
+            "portrait": "marsh_wraith",
+            "levelOffset": -2,
+            "pattern": [
+              "3123",
+              "31232",
+              "13",
+              "31"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Espectro de la ciénaga",
+            "portrait": "marsh_wraith",
+            "levelOffset": -2,
+            "pattern": [
+              "3123",
+              "31232",
+              "13",
+              "31"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "Caras bajo el agua",
+      "text": "Te detienes junto a una charca de agua quieta, tan clara que sorprende en este lugar. Al principio solo ves barro. Luego, bajo la superficie, ves un rostro: pálido, con un yelmo antiguo, los ojos abiertos como si soñara. Y otro detrás, y otro más, hombres de otros tiempos y criaturas que no reconoces, tendidos en el fondo como si los hubieran dejado allí tras una batalla muy antigua. No te inclinas más. Te apartas despacio, sin dar la espalda al agua.",
+      "imagePrompt": "A still clear marsh pool with pale faces in ancient helmets lying beneath the surface with open eyes, a young traveler in a grey elven cloak stepping back from the edge slowly without turning away, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Asomarse a una charca"
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "La vara de tantear",
+      "text": "La niebla se espesa tanto que dejas de verte los pies. Cortas una vara de un arbusto seco y tanteas el suelo antes de cada paso. A veces la vara se hunde sin encontrar fondo, y tienes que buscar otro camino. Avanzas así durante horas, en un mundo blanco y mudo, sin saber si vas hacia el este o das vueltas. Solo el frío te dice que estás despierto. Cuando la niebla se aclara un poco, ves que la vara está cubierta de barro hasta la mitad.",
+      "imagePrompt": "Dense white fog over a marsh, a young traveler in a grey elven cloak probing the soft ground ahead with a long dead stick before each step, the stick sinking into black mud, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Avanzar entre la niebla"
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "El islote seco",
+      "text": "Encuentras un islote de tierra firme, apenas más grande que una habitación, con un arbusto torcido y unas piedras. Es el primer suelo seco en todo el día. Te quitas las botas, escurres los calcetines y comes un trozo de pan élfico, despacio, mirando el agua alrededor. Las hojas que lo envuelven todavía huelen al bosque dorado. Por un momento, el hedor de la ciénaga desaparece, y te acuerdas de los árboles de plata y de sus lámparas.",
+      "imagePrompt": "A tiny dry islet with a twisted bush and stones in a grey marsh, a young traveler in a grey elven cloak sitting barefoot wringing out his socks and eating elven bread wrapped in leaves, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a un islote seco"
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "La calzada hundida",
+      "text": "Entre las matas descubres una hilera de piedras planas, medio hundidas, que cruzan la ciénaga en línea recta. Es lo que queda de una calzada, hecha por gente que sabía construir, hace tanto tiempo que la ciénaga se la ha ido tragando. La sigues saltando de losa en losa. Algunas se mueven bajo tu peso. En una ves tallado un círculo con rayos, como un sol. Te preguntas adónde llevaba este camino cuando aquí no había agua.",
+      "imagePrompt": "A line of flat half-sunken paving stones crossing a misty marsh in a straight line, a worn carved sun symbol on one slab, a young traveler in a grey elven cloak leaping from stone to stone, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir una hilera de piedras"
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "Lo que asoma del barro",
+      "text": "En una loma de barro asoma algo metálico. Lo desentierras con la punta de la espada: es un yelmo oxidado, alto y estrecho, con restos de un penacho que ya no tiene color. Debajo hay una punta de lanza y un trozo de escudo con un dibujo borrado. Aquí murió alguien hace muchísimo tiempo, en una guerra de la que nadie te ha hablado. Vuelves a dejarlo todo donde estaba, lo cubres con barro y sigues adelante en silencio.",
+      "imagePrompt": "A mud mound in a marsh with a tall rusted ancient helmet, a spearhead and a broken shield half unearthed, a young traveler in a grey elven cloak kneeling and covering them again with mud, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Mirar lo que asoma del barro"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "Las luces que engañan",
+      "text": "De noche ves luces delante, en fila, como las linternas de un campamento. Piensas en hombres, en fuego, en un poco de calor, y vas hacia ellas. Las luces retroceden a medida que avanzas, siempre a la misma distancia. Cuando quieres darte cuenta, tienes agua hasta la cintura. Entonces ves que las luces no flotan solas: dos las sostienen en alto unas figuras grises y quietas que creías troncos muertos. Las otras dos bajan hacia ti, y las figuras echan a andar por el agua. Has caído en su trampa como un niño.",
+      "imagePrompt": "Night in a marsh, pale lantern-like lights over the water, two held aloft by grey still figures mistaken for dead trunks that start wading forward, two flames swooping at a young traveler in a grey elven cloak standing waist-deep in water, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir las luces pálidas",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Fuego fatuo",
+            "portrait": "wisp",
+            "levelOffset": -5,
+            "pattern": [
+              "32",
+              "323",
+              "3232",
+              "31"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Fuego fatuo",
+            "portrait": "wisp",
+            "levelOffset": -5,
+            "pattern": [
+              "32",
+              "323",
+              "3232",
+              "31"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Espectro de la ciénaga",
+            "portrait": "marsh_wraith",
+            "levelOffset": -5,
+            "pattern": [
+              "3123",
+              "31232",
+              "13",
+              "31"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Espectro de la ciénaga",
+            "portrait": "marsh_wraith",
+            "levelOffset": -5,
+            "pattern": [
+              "3123",
+              "31232",
+              "13",
+              "31"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "Voces en la niebla",
+      "text": "En la niebla empiezas a oír voces. Son débiles, lejanas, y no entiendes lo que dicen; parecen hablar en una lengua muy antigua, despacio, como quien llama a alguien que se ha ido. Vienen del agua. Te detienes a escuchar, y por un momento te parece que una de ellas dice tu nombre. Sacudes la cabeza con fuerza. Te tapas un oído con la mano y sigues tanteando con la vara, más deprisa, hasta que las voces quedan atrás.",
+      "imagePrompt": "Thick fog over dark marsh water with faint ghostly breath rising from the surface, a young traveler in a grey elven cloak covering one ear and hurrying on with a probing stick, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Escuchar la niebla"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "El lodazal",
+      "text": "Para ganar tiempo atajas por un lodazal que parece firme. No lo es. Al tercer paso te hundes hasta las rodillas, y luego hasta la cintura, y el barro te sujeta las piernas como unas manos. Cuanto más te mueves, más te hundes. Te quedas quieto, respiras, y lanzas la cuerda gris de los elfos hacia un tronco muerto que asoma a un lado. A la tercera vez se enrolla en una rama. Tiras palmo a palmo hasta sacarte, cubierto de barro negro y temblando, y desenrollas la cuerda de la rama antes de seguir.",
+      "imagePrompt": "A treacherous black mudflat in a marsh, a young traveler in a grey elven cloak sunk to the waist hauling himself out by a thin grey elven rope looped around a branch of a dead tree, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atajar por el lodazal"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "Los que suben del agua",
+      "text": "Decides pasar la noche en el islote. Te duermes con la espada al lado, y te despierta el frío: unas manos heladas te han agarrado los tobillos desde el agua de la orilla. Tiran de ti hacia el barro, despacio, sin ruido. Te sueltas a patadas y ruedas hasta el arbusto torcido. En el borde del islote, medio dentro del agua, tres espectros se arrastran hacia ti sobre los codos, con jirones de niebla por cabello. Te pones de espaldas al arbusto y alzas la espada.",
+      "imagePrompt": "Midnight on a tiny marsh islet with a twisted bush, three misty wraiths crawling out of the shallows on their elbows, icy hands reaching for the ankles of a young traveler in a grey elven cloak who rolls back against the bush raising his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Pasar la noche en el islote",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Espectro de la ciénaga",
+            "portrait": "marsh_wraith",
+            "levelOffset": -4,
+            "pattern": [
+              "3123",
+              "31232",
+              "13",
+              "31"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Espectro de la ciénaga",
+            "portrait": "marsh_wraith",
+            "levelOffset": -4,
+            "pattern": [
+              "3123",
+              "31232",
+              "13",
+              "31"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Espectro de la ciénaga",
+            "portrait": "marsh_wraith",
+            "levelOffset": -4,
+            "pattern": [
+              "3123",
+              "31232",
+              "13",
+              "31"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "El alba sin sol",
+      "text": "Sales del islote antes de que amanezca, para aprovechar la poca luz. Pero el alba aquí no trae sol: solo un gris que se aclara un poco, como agua sucia en un vaso. Hacia el este, las montañas se recortan más nítidas que nunca, negras, con humo en sus cumbres. Delante, la ciénaga sigue y sigue. Caminas sin hablar, ni siquiera contigo mismo. Te sorprendes echando de menos hasta el viento helado de las colinas.",
+      "imagePrompt": "A sunless grey dawn over an endless marsh, jagged black mountains with smoke on their peaks sharp on the eastern horizon, a young traveler in a grey elven cloak walking silently away from a tiny islet, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Partir antes del alba"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "Chispas de la calzada",
+      "text": "La calzada termina en una explanada de losas rotas, quizá una plaza o un puesto de guardia hundido. Al pisar la primera, unas chispas pálidas brotan de las rendijas entre las piedras, como de una fragua apagada que alguien removiera. Suben, se juntan y forman cuatro llamas, que empiezan a girar a tu alrededor. No queman: hielan. Donde pasan, el agua de los charcos se cubre de escarcha. El círculo se estrecha.",
+      "imagePrompt": "A sunken square of broken paving stones in a marsh, pale sparks rising from the cracks and forming four cold ghostly flames circling a young traveler in a grey elven cloak, puddles frosting where they pass, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la calzada hasta el final",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Fuego fatuo",
+            "portrait": "wisp",
+            "levelOffset": -5,
+            "pattern": [
+              "32",
+              "323",
+              "3232",
+              "31"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Fuego fatuo",
+            "portrait": "wisp",
+            "levelOffset": -5,
+            "pattern": [
+              "32",
+              "323",
+              "3232",
+              "31"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Fuego fatuo",
+            "portrait": "wisp",
+            "levelOffset": -5,
+            "pattern": [
+              "32",
+              "323",
+              "3232",
+              "31"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Fuego fatuo",
+            "portrait": "wisp",
+            "levelOffset": -5,
+            "pattern": [
+              "32",
+              "323",
+              "3232",
+              "31"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "Los montículos",
+      "text": "La calzada pasa junto a unos montículos alargados, cubiertos de hierba áspera, que asoman del agua en filas. Son demasiado regulares para ser naturales. En la cabecera de uno hay una piedra hincada, inclinada, con letras que el tiempo ha borrado. Son tumbas, comprendes, o lo que queda de ellas. Rodeas las filas con respeto y sin pisar ninguna. No sabes a quién pertenecen, pero alguien quiso que se les recordara.",
+      "imagePrompt": "Rows of long grassy burial mounds rising from marsh water beside a sunken road, a leaning standing stone with weathered letters, a young traveler in a grey elven cloak walking respectfully around them in grey light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Rodear unos montículos"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "El grito en lo alto",
+      "text": "Cruzas una llanura de barro sin un solo junco. A mitad de camino el aire se vuelve de hielo y la luz se apaga. Muy alto, entre las nubes, pasa una sombra con alas enormes, y de ella cae un grito que te atraviesa. Te tiras de bruces en el barro, cubierto con la capa gris, sin moverte, sin respirar. Cuando el frío por fin se retira, el cielo vuelve a estar vacío, pero tardas mucho en ponerte en pie.",
+      "imagePrompt": "An open mudflat in a marsh under dark clouds, a huge winged shadow with a dark rider gliding high above, a young traveler in a grey elven cloak lying face down in the mud covered by a grey cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar el barrizal abierto"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "La sed",
+      "text": "Estás rodeado de agua y no puedes beberla. La de las charcas sabe a hierro y a podrido, y te revuelve el estómago con solo olerla. Tu odre está casi vacío. Al final encuentras unas hojas anchas, dobladas como cuencos, que han recogido el rocío de la noche. Las vacías una a una en la boca, con cuidado de no perder ni una gota. Es poco, pero te basta para seguir hasta que vuelva a llover.",
+      "imagePrompt": "A grey marsh at dawn, a young traveler in a grey elven cloak carefully tipping dew from broad cupped leaves into his mouth, an almost empty waterskin at his belt, foul brown pools all around, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar agua para beber"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "Los juncos secos",
+      "text": "Te metes en un mar de juncos secos, más altos que tú, que crujen y se rozan con el viento como huesos. No ves nada más allá de un paso. El ruido es constante, y bajo él te parece oír otros: un chapoteo, un roce, algo que se arrastra. Cada vez que te paras, todo se para. Avanzas abriendo los tallos con el brazo, siempre hacia donde crees que está el este. Al salir, tienes la cara llena de cortes finos.",
+      "imagePrompt": "A sea of tall dry rattling reeds in a marsh under a grey sky, a young traveler in a grey elven cloak pushing through the stalks with his arm, his face scratched, vague shadows moving among the reeds, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar unos juncos secos"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "La noche de las velas",
+      "text": "Al caer la noche te refugias en un montón de piedras, y desde allí ves encenderse luces por toda la ciénaga: cientos, pálidas, verdes y blancas, que suben y bajan sobre el agua como velas en una procesión sin fin. Ninguna se acerca. Te quedas inmóvil, con la capa sobre la cabeza, mirándolas por una rendija. Es hermoso y terrible a la vez. Al alba, una a una, se van apagando, y la ciénaga vuelve a ser gris y vacía.",
+      "imagePrompt": "Night over a vast marsh with hundreds of pale green and white lights floating over the water like a candle procession, a young traveler in a grey elven cloak motionless on a heap of stones with his cloak over his head, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Refugiarse en unas piedras"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "El espectro del canal",
+      "text": "Un canal ancho de agua lenta te corta el paso, y no hay forma de rodearlo. Lo vadeas con la espada en alto y el agua hasta el pecho, tanteando el fondo con los pies. La corriente trae hacia ti un bulto de trapos oscuros, flotando, como una capa vieja que alguien perdió. Te apartas para dejarlo pasar. Pero el bulto se detiene a tu lado, se despliega y se yergue: un espectro más grande que los que has visto, envuelto en jirones de una capa antigua. Y se lanza sobre ti.",
+      "imagePrompt": "A wide slow marsh channel, a young traveler in a grey elven cloak wading chest-deep with sword held high as a bundle of dark floating rags unfolds beside him into a large wraith wrapped in tatters of an ancient cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Vadear un canal ancho",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Espectro de la ciénaga",
+            "portrait": "marsh_wraith",
+            "levelOffset": 1,
+            "pattern": [
+              "3123",
+              "31232",
+              "13",
+              "31"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "El fin de la ciénaga",
+      "text": "Bordeas una laguna ancha durante horas, y poco a poco la ciénaga cambia. Los juncos escasean, el barro se seca y se agrieta, y empiezan a aparecer montones de escoria gris y polvo. Más allá, la tierra es un desierto de ceniza que llega hasta el pie de las montañas negras. Por fin terreno firme, aunque muerto. Te detienes en la última orilla. Entre tú y esa tierra solo queda un gran estanque, oscuro y quieto como un ojo.",
+      "imagePrompt": "The edge of a marsh giving way to cracked dry mud, heaps of grey slag and an ash desert stretching to black mountains, a young traveler in a grey elven cloak standing by a last great dark still pool, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bordear unas aguas abiertas"
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El señor de los ahogados",
+      "text": "Llegas al último estanque, el que separa la ciénaga de la tierra seca. Cuando pones el pie en el agua, el estanque entero se estremece. Del centro se levanta una figura enorme, hecha de barro y agua negra, con una corona herrumbrosa hundida en la frente y los restos de una armadura antigua. Sus ojos son dos luces pálidas. A su lado brota una llama fría que gira y espera. Es el señor de los que duermen bajo la ciénaga, y no quiere dejarte pasar.",
+      "imagePrompt": "A great dark still pool at the edge of a marsh, a huge figure of mud and black water rising with a rusted crown and ancient armor, eyes like pale lights, a cold ghostly flame beside it, facing a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Señor de los ahogados",
+            "portrait": "boss_cienagas",
+            "levelOffset": 10,
+            "pattern": [
+              "3123",
+              "31232",
+              "13",
+              "131",
+              "1313",
+              "31",
+              "32",
+              "323",
+              "123"
+            ],
+            "everyNTicks": 1,
+            "modes": {
+              "defenseBelowPct": 15,
+              "attackAbovePct": 70,
+              "maxDefenses": 1,
+              "defense": [
+                "2132",
+                "21",
+                "212",
+                "2121",
+                "21212",
+                "3123",
+                "31232"
+              ]
+            }
+          },
+          {
+            "name": "Fuego fatuo",
+            "portrait": "wisp",
+            "levelOffset": -4,
+            "pattern": [
+              "32",
+              "323",
+              "3232",
+              "31"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "id": "bree",
+  "name": "Bree",
+  "baseLevel": 1,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "Una puerta que se cierra",
+      "text": "Cierras la puerta de tu casa en Bree y la llave pesa más de lo que esperabas. Es otoño del año 3018 y el pueblo hierve de rumores: jinetes vestidos de negro que hacen preguntas a medianoche, un montaraz callado que ronda la posada, hobbits forasteros que llegaron con la lluvia. Llevas años mirando el Camino del Este desde tu ventana. Hoy has decidido seguirlo. Ajustas la espada que heredaste de tu padre, te echas el petate al hombro y te detienes en la calle embarrada. Antes de partir, aún puedes despedirte de Bree.",
+      "imagePrompt": "A young human traveler with a sword and pack closing the wooden door of a stone cottage on a muddy village street at autumn dawn, thatched roofs, low hills behind, drizzle and mist, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "El Poney Pisador",
+      "text": "El calor de la sala común te recibe con olor a cerveza y a leña húmeda. Hombres y hobbits hablan en voz baja, mirando de reojo la puerta. Dicen que anoche alguien entró por la fuerza en las habitaciones de los forasteros y que los caballos del establo huyeron espantados. En un rincón, un hombre alto y curtido fuma sin quitarse la capucha. El posadero, sudoroso y distraído, te sirve una jarra y te desea buen viaje sin escucharte. Comprendes que el miedo ha llegado a Bree antes de que tú salgas al Camino.",
+      "imagePrompt": "Warm interior of a crowded village inn common room with low beams and a large hearth, humans and small hobbits whispering over tankards, a tall hooded ranger smoking in a shadowed corner, a young traveler at the bar, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Entrar en la posada"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "La Colina de Bree",
+      "text": "Subes por la ladera mientras el pueblo despierta a tus pies. Desde lo alto de la Colina de Bree ves el Camino del Este alejarse entre setos y campos hasta perderse en una mancha oscura de árboles: el Bosque de Chet. Más allá, dicen, solo hay pantanos y colinas desiertas. El viento trae olor a lluvia y a humo. Junto a una piedra encuentras huellas de botas recientes y la ceniza de una fogata mal apagada. Alguien más vigila el Camino desde aquí, y no parece querer que lo vean.",
+      "imagePrompt": "View from a grassy hilltop at morning over a small hedged village with thatched roofs, a long road winding east through fields toward a dark distant forest, a lone traveler beside a standing stone and a smoldering campfire, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a la colina"
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "El callejón de atrás",
+      "text": "Sales por la puerta trasera de la posada y tomas un callejón estrecho entre muros de piedra. Apenas das veinte pasos cuando una sombra se despega de un portal. Un hombre de cara cetrina te cierra el paso con un cuchillo en la mano. Quiere tu bolsa y tu espada, y sonríe como quien ya lo ha hecho otras veces. Nadie va a asomarse a ayudarte. Tu primer combate no te espera en el Camino, sino a la vuelta de la esquina de tu propio pueblo.",
+      "imagePrompt": "A narrow cobbled alley between stone walls in a rainy village at morning, a sallow-faced bandit with a knife stepping out of a doorway to block a young traveler with a sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atajar por los callejones",
+      "encounter": {
+        "rivals": [
+          { "name": "Ratero de Bree", "portrait": "bandit", "levelOffset": 0, "pattern": ["12", "121"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "El patio de los establos",
+      "text": "En el patio de los establos reina el desorden: puertas reventadas, heno pisoteado y un mozo que lamenta los ponis perdidos. Mientras le ayudas a cerrar los portones, dos tipos aparecen tras el abrevadero con un saco al hombro. Se han aprovechado del caos de la noche para robar arreos y bridas. Al verte, sueltan el botín y desenvainan. No son jinetes negros, solo ladrones vulgares, pero sus hojas cortan igual y no piensan dejar testigos.",
+      "imagePrompt": "A muddy inn stable yard in grey morning light with broken stall doors and trampled hay, two ragged thieves dropping a sack of bridles and drawing blades against a young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar a los establos",
+      "encounter": {
+        "rivals": [
+          { "name": "Ladrón de caballos", "portrait": "bandit", "levelOffset": -2, "pattern": ["12", "121"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Ladrón de caballos", "portrait": "bandit", "levelOffset": -2, "pattern": ["12", "121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "Los huertos de Entrada",
+      "text": "Bajas la colina por el sudeste, hacia los huertos que separan Bree de la aldea de Entrada. Las gallinas han enmudecido y un perro ladra a lo lejos sin atreverse a salir. Entre los manzanos, un lobo flaco y gris olfatea los restos de un corral. El hambre lo ha empujado lejos del bosque, demasiado cerca de las casas. Te ve, enseña los dientes y no retrocede. Si no lo detienes ahora, esta noche serán los niños quienes lo encuentren.",
+      "imagePrompt": "An autumn apple orchard below a hill near a small village, a gaunt grey wolf snarling over a broken chicken pen, a young traveler raising a sword among fallen apples, overcast sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar hacia Entrada",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo hambriento", "portrait": "wolf", "levelOffset": 0, "pattern": ["12", "121", "1212"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "El foso del poniente",
+      "text": "Sigues el gran foso que rodea Bree, con su seto espeso en lo alto, buscando un paso hacia el Camino sin cruzar el pueblo. En la hondonada encuentras a un hombre andrajoso agachado junto a un lobo flaco al que arroja pedazos de carne, como quien ceba a un perro de presa. Al descubrirte, el lobo huye seto arriba con su pedazo de carne y el bandido, solo, empuña un garrote. Hay gente en Bree que ha aprendido a convivir con cosas peores que los lobos.",
+      "imagePrompt": "A grassy ditch beneath a thick hedge wall at the edge of a village, a ragged bandit with a club facing a young traveler with a sword, a hungry grey wolf fleeing up the hedge, cold morning mist, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Rodear por el foso",
+      "encounter": {
+        "rivals": [
+          { "name": "Bandido del foso", "portrait": "bandit", "levelOffset": 0, "pattern": ["12", "121"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "La fragua del herrero",
+      "text": "Con la mano aún temblorosa, llegas a la fragua del herrero, que te conoce desde niño. Examina tu espada, chasquea la lengua al ver la mella del combate y la pone sobre el yunque. Mientras golpea, te cuenta que unos forasteros del sur llevan semanas comprando cuchillos y preguntando por los caminos del este. Te devuelve la hoja bien afilada y se niega a cobrarte. Solo te pide que, si algún día vuelves, le traigas noticias del mundo de ahí fuera.",
+      "imagePrompt": "A glowing village forge with an old burly blacksmith hammering a sword blade on an anvil, sparks flying, a young traveler watching, tools hanging on soot-stained walls, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar al herrero"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "La guarida de los bribones",
+      "text": "El ratero llevaba una marca de tiza en la manga, y la misma marca aparece en la puerta de un cobertizo junto al muro sur. Empujas la hoja y dentro encuentras bolsas robadas, mantas y un mapa tosco del Camino con cruces en los tramos más solitarios. Dos hombres se levantan de un jergón, sorprendidos y furiosos. No son simples rateros: forman parte de una banda que aguarda a los viajeros más allá de los campos de Bree.",
+      "imagePrompt": "A dim wooden shed full of stolen sacks, blankets and a crude map pinned to the wall, two rough bandits rising from straw beds with clubs and knives to face an intruding young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la marca del ratero",
+      "encounter": {
+        "rivals": [
+          { "name": "Bribón de la banda", "portrait": "bandit", "levelOffset": -2, "pattern": ["12", "121"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Bribón de la banda", "portrait": "bandit", "levelOffset": -2, "pattern": ["12", "121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "El mozo de cuadra",
+      "text": "El mozo de cuadra, agradecido, te ofrece pan y queso en el pajar mientras recoge lo que dejaron los ladrones. Te cuenta en susurros lo que sintió de madrugada: sombras junto a la cerca, un frío que helaba la sangre y luego los animales desbocados por las calles. Dice que el montaraz salió esta mañana con los hobbits por el Camino, y que alguien les vendió un poni flaco a precio de oro. Le das las gracias y vuelves a cargar el petate.",
+      "imagePrompt": "Inside a hay loft of a village stable, a young stable boy sharing bread and cheese with a traveler by lantern light, scattered harness on the floor, rain at the open loft door, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Ayudar al mozo"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "La casa de los Abrojal",
+      "text": "Antes de huir maltrechos, los ladrones gritaron un nombre: Abrojal. Su casa está junto al camino del sur, una vivienda de ventanas cerradas y fama turbia. Te acercas al seto y escuchas voces: un forastero del sur, de pelo negro, discute sobre jinetes y monedas con alguien que no ves. Una rama cruje bajo tu bota. La puerta se abre de golpe y sale un matón corpulento con una porra. Lo que se trama ahí dentro no es asunto tuyo, pero ya no puedes marcharte sin pelear.",
+      "imagePrompt": "A shuttered gloomy house behind a hedge on a village lane at dusk, a burly thug with a cudgel bursting out of the door toward a young traveler crouching by the hedge, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Espiar la casa de Abrojal",
+      "encounter": {
+        "rivals": [
+          { "name": "Matón de Abrojal", "portrait": "bandit", "levelOffset": 1, "pattern": ["12", "121"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "La cabaña del cazador",
+      "text": "En el linde de Entrada vive un cazador viejo que vio caer al lobo desde su porche. Te invita a pasar, aviva el fuego y te enseña a leer las huellas marcadas en el barro de su puerta. Dice que este otoño los lobos bajan más flacos y atrevidos que nunca, y que en el Bosque de Chet ha visto a uno enorme, gris como la ceniza, guiando a los demás. Te regala un cuerno de caza y un consejo: nunca acampes donde no puedas ver el cielo.",
+      "imagePrompt": "A cozy log cabin interior with an old hunter by the fire showing wolf tracks pressed in clay to a young traveler, pelts and bows on the walls, a hunting horn on the table, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Pedir cobijo al cazador"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "Tras la manada",
+      "text": "El lobo no venía solo. En el barro del huerto hay más huellas, y las sigues campo a través hasta un soto de espinos donde huele a carroña. Allí, entre huesos de oveja, dos lobos levantan la cabeza a la vez. Uno se escabulle entre los espinos; el otro, el más flaco, está en los huesos y no va a dejar escapar a una presa que viene a su encuentro. El sol se esconde tras una nube. Sientes el pulso en las sienes, afirmas los pies en la tierra y alzas la espada.",
+      "imagePrompt": "A thorny thicket at the edge of autumn fields littered with sheep bones, a gaunt grey wolf baring fangs at a young traveler with a raised sword while a second wolf slinks away into the thorns, clouded sun, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Rastrear a la manada",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo hambriento", "portrait": "wolf", "levelOffset": 0, "pattern": ["12", "121", "1212"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "El guardián de la Puerta Sur",
+      "text": "Llegas a la Puerta Sur, por donde el Camino abandona Bree. El guardián, un hombre nervioso que no suelta la tranca, te mira de arriba abajo antes de abrir. Te cuenta que anoche algo pasó junto a su caseta, algo que no quiere describir, y que desde entonces no duerme. También te advierte de una banda de salteadores que vigila el Camino más allá de los campos, al mando de un tipo al que llaman el Tuerto. Te desea suerte como quien no espera volver a verte.",
+      "imagePrompt": "A heavy wooden village gate in a hedge wall at the end of a road, a nervous gatekeeper with a lantern peering from his small hut at a young traveler with pack and sword, grey morning, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Hablar con el guardián"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "Al otro lado del seto",
+      "text": "Para evitar la puerta y sus preguntas, trepas por el seto y saltas a los campos del otro lado. La hierba alta te llega a la cintura y te empapa la capa. A medio camino, un movimiento entre los cardos te hace detenerte: un lobo grande, de pelaje sucio, avanza a tu par sin hacer ruido. Cuando te giras, ya está demasiado cerca. Fuera de la protección de Bree, el mundo no espera a que estés preparado.",
+      "imagePrompt": "Tall wet grass and thistles in open fields beyond a thick hedge, a large mangy wolf stalking close to a young traveler in a damp cloak, low grey clouds, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Saltar el seto",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo hambriento", "portrait": "wolf", "levelOffset": 1, "pattern": ["12", "121", "1212"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "El Camino del Este",
+      "text": "Por fin pisas el Camino del Este, ancho y gastado por siglos de carretas. A ambos lados se extienden granjas, cercas de piedra y bosquecillos de abedules que amarillean. Te cruzas con un buhonero que regresa a toda prisa hacia Bree y no se detiene a saludar. El sol de otoño calienta poco, pero cada paso te aleja de la vida que conoces. Por primera vez desde que cerraste tu puerta, sonríes: el viaje ha empezado de verdad.",
+      "imagePrompt": "A wide old dirt road running east through autumn farmland with stone fences and yellowing birch groves, a hurrying peddler with a cart passing a smiling young traveler, pale sunlight, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Tomar el Camino del Este"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "Las casas de Entrada",
+      "text": "Atraviesas Entrada, la aldea de las casas excavadas en la ladera, donde viven tantos hobbits como hombres. Una anciana te ofrece agua del pozo y un puñado de nueces para el camino. Los niños juegan a perseguir jinetes negros con palos por espadas, y sus madres los llaman a gritos para que entren. En la plaza, un carretero comenta que el Camino está más vacío que nunca. Llenas la cantimplora, agradeces la bondad y sigues hacia el este.",
+      "imagePrompt": "A small hillside village with round doors dug into the slope, an old woman offering water from a well to a young traveler, children playing with sticks as swords, autumn afternoon, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Pasar por Entrada"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "Los tejados de Archet",
+      "text": "Tomas un sendero que sube hacia Archet, la aldea más cercana al bosque. Sus casas se apiñan entre robles y el aire huele a resina. En la taberna, unos leñadores hablan de un montaraz que se internó con varios hobbits en el Bosque de Chet, lejos del Camino, como si huyeran de algo. Otros juran que de noche se oyen cascos junto a los árboles. Comes deprisa, escuchas mucho, hablas poco y vuelves a ponerte en marcha.",
+      "imagePrompt": "A small village of timber houses huddled among tall oaks at the edge of a forest, woodcutters talking at a rustic tavern table, a young traveler eating and listening, golden late light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Desviarse hacia Archet"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "Una noche al raso",
+      "text": "Cae la tarde y decides acampar en una vaguada a pocos pasos del Camino. Enciendes un fuego pequeño, como te enseñaron, y cenas pan duro mirando las primeras estrellas. A lo lejos ladra un zorro. Más tarde, ya medio dormido, oyes cascos que pasan despacio por el Camino y se detienen. Contienes el aliento hasta que el sonido se aleja. Al amanecer no queda rastro alguno, salvo un frío extraño en la hierba escarchada.",
+      "imagePrompt": "A small campfire in a grassy hollow beside an old road under early stars, a young traveler wrapped in a cloak listening tensely, the faint dark shape of a distant rider on the road, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acampar junto al Camino"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "Los campos desiertos",
+      "text": "Avanzas por el Camino, donde las últimas granjas de las tierras de Bree dan paso a matorrales y brezos. En una curva encuentras un carro volcado, sin bueyes ni dueño, con una rueda aún girando al viento. Hay sangre seca en el pescante y huellas que se pierden hacia el bosque. En Bree ya se murmuraba que los salteadores vigilan este tramo. Aprietas el paso con la mano en la empuñadura, atento a cada sombra de los árboles cercanos.",
+      "imagePrompt": "An overturned abandoned cart on a lonely road through heath and scrub near a dark forest edge, dried blood on the seat, a wary young traveler with hand on sword hilt, overcast afternoon, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir por el Camino"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "Atajo entre zarzales",
+      "text": "Abandonas el Camino para ahorrar tiempo y te internas en un laberinto de zarzas y brezo. El atajo resulta peor de lo que esperabas: las espinas te desgarran la capa y el suelo se hunde en hoyos ocultos. En un claro tropiezas con un vigía de los salteadores, que da la alarma con un silbido. Antes de que puedas huir, un lobo hambriento, atraído por el ruido, se suma a la refriega. Esta vez no hay muros de Bree a tu espalda.",
+      "imagePrompt": "A tangle of brambles and heather around a small clearing, a bandit lookout whistling an alarm while a hungry grey wolf leaps from the thorns at a young traveler with a torn cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atajar por los matorrales",
+      "encounter": {
+        "rivals": [
+          { "name": "Vigía de los salteadores", "portrait": "bandit", "levelOffset": -2, "pattern": ["12", "121"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Lobo hambriento", "portrait": "wolf", "levelOffset": -2, "pattern": ["12", "121", "1212"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El cabecilla de los bandidos",
+      "text": "Donde el Camino roza los primeros árboles del Bosque de Chet, un tronco caído corta el paso. No es casualidad. De entre los helechos sale un hombre de anchas espaldas, con un parche de cuero sobre el ojo y un hacha mellada en la mano: el Tuerto, cabecilla de los salteadores. Uno de sus hombres te cierra la retirada. El Tuerto te ofrece dejar el petate y volver a Bree con vida. Tras él, la sombra del bosque espera. Solo hay una manera de seguir adelante.",
+      "imagePrompt": "A fallen tree blocking an old road at the edge of a dark forest, a broad-shouldered one-eyed bandit leader with a leather eyepatch and notched axe, a henchman behind, facing a young traveler at dusk, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          { "name": "El Tuerto, cabecilla de los bandidos", "portrait": "boss_bree", "levelOffset": 2, "pattern": ["12", "121", "11", "31"], "everyNTicks": 4, "modes": { "defenseBelowPct": 40, "attackAbovePct": 60, "maxDefenses": 1, "defense": ["21", "212", "12"] } },
+          { "name": "Salteador del Tuerto", "portrait": "bandit", "levelOffset": -4, "pattern": ["12", "121"], "everyNTicks": 2 }
+        ]
+      }
+    }
+  ]
+}

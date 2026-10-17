@@ -1,0 +1,125 @@
+{
+  "id": "bree",
+  "name": "Bree",
+  "nodes": {
+    "bree_1_0": {
+      "title": "A Door Closing",
+      "text": "You close the door of your house in Bree, and the key weighs more than you expected. It is autumn in the year 3018, and the village seethes with rumour: riders clad in black asking questions at midnight, a silent Ranger haunting the inn, hobbits from away who came in with the rain. For years you have watched the East Road from your window. Today you have resolved to follow it. You settle the sword you inherited from your father, swing your pack onto your shoulder and pause in the muddy street. Before you leave, you can still bid Bree farewell."
+    },
+    "bree_2_0": {
+      "title": "The Prancing Pony",
+      "text": "The warmth of the common room greets you with the smell of ale and damp firewood. Men and hobbits talk in low voices, glancing sidelong at the door. They say that last night someone forced their way into the strangers' rooms, and that the horses fled the stable in terror. In a corner, a tall, weathered man smokes without lowering his hood. The innkeeper, sweating and distracted, pours you a mug and wishes you a good journey without listening. You understand that fear has reached Bree before you have even set foot on the Road.",
+      "choiceLabel": "Enter the inn"
+    },
+    "bree_2_1": {
+      "title": "Bree-hill",
+      "text": "You climb the slope as the village wakes beneath your feet. From the top of Bree-hill you watch the East Road wind away between hedges and fields until it vanishes into a dark smudge of trees: the Chetwood. Beyond, they say, lie only marshes and empty hills. The wind carries the smell of rain and smoke. Beside a stone you find fresh boot prints and the ash of a badly smothered fire. Someone else watches the Road from here, and does not seem to want to be seen.",
+      "choiceLabel": "Climb the hill"
+    },
+    "bree_3_0": {
+      "title": "The Back Alley",
+      "text": "You slip out by the inn's back door and take a narrow alley between stone walls. You have barely gone twenty paces when a shadow peels away from a doorway. A sallow-faced man bars your path, a knife in his hand. He wants your purse and your sword, and he smiles like someone who has done this before. Nobody will look out to help you. Your first fight does not await you on the Road, but around the corner in your own village.",
+      "choiceLabel": "Cut through the alleys"
+    },
+    "bree_3_1": {
+      "title": "The Stable Yard",
+      "text": "Disorder reigns in the stable yard: doors burst open, hay trampled, and a stable lad mourning the lost ponies. While you help him shut the gates, two men appear behind the trough a sack slung over one shoulder. They have used the chaos of the night to steal harness and bridles. Seeing you, they drop their loot and draw their blades. They are no Black Riders, only common thieves, but their steel cuts all the same, and they have no wish to leave a witness.",
+      "choiceLabel": "Go down to the stables"
+    },
+    "bree_3_2": {
+      "title": "The Orchards of Staddle",
+      "text": "You descend the hill to the south-east, towards the orchards that lie between Bree and the village of Staddle. The hens have fallen silent and a dog barks in the distance without daring to come out. Among the apple trees, a lean grey wolf sniffs at the remains of a henhouse. Hunger has driven it far from the forest, too close to the houses. It sees you, bares its teeth and does not give ground. If you do not stop it now, tonight it will be the children who find it.",
+      "choiceLabel": "Head down towards Staddle"
+    },
+    "bree_3_3": {
+      "title": "The Western Dike",
+      "text": "You follow the great dike that encircles Bree, its thick hedge running along the top, seeking a way to the Road without crossing the village. In the hollow you come upon a ragged man crouched beside a lean wolf, tossing it scraps of meat as one feeds a fighting dog. At the sight of you, the wolf bolts up the hedge with its scrap and the bandit, alone, grips a cudgel. There are folk in Bree who have learned to live with worse things than wolves.",
+      "choiceLabel": "Skirt round by the Dike"
+    },
+    "bree_4_0": {
+      "title": "The Smithy",
+      "text": "Your hand still trembling, you reach the forge of the smith who has known you since you were a child. He examines your sword, clicks his tongue at the notch from the fight and lays it on the anvil. As he hammers, he tells you that strangers from the south have spent weeks buying knives and asking about the eastern roads. He hands back the blade well honed and refuses your coin. He asks only that, if one day you return, you bring him news of the world out there.",
+      "choiceLabel": "Seek out the blacksmith"
+    },
+    "bree_4_1": {
+      "title": "The Rogues' Den",
+      "text": "The cutpurse wore a chalk mark on his sleeve, and the same mark appears on the door of a shed by the south wall. You push the door open and find stolen purses, blankets and a crude map of the Road with crosses on its loneliest stretches. Two men rise from a straw pallet, startled and furious. These are no mere cutpurses: they belong to a gang that waits for travellers beyond the fields of Bree.",
+      "choiceLabel": "Follow the cutpurse's mark"
+    },
+    "bree_4_2": {
+      "title": "The Stable Lad",
+      "text": "Grateful, the stable lad offers you bread and cheese in the hayloft while he gathers what the thieves left behind. He whispers what he felt before dawn: shadows by the fence, a cold that froze the blood, and then the animals bolting through the streets. He says the Ranger left this morning with the hobbits along the Road, and that someone sold them a scrawny pony for its weight in gold. You thank him and shoulder your pack once more.",
+      "choiceLabel": "Help the stable lad"
+    },
+    "bree_4_3": {
+      "title": "The Fernys' House",
+      "text": "Before fleeing in a sorry state, the thieves shouted a name: Ferny. His house stands by the south road, a dwelling of shuttered windows and murky repute. You creep to the hedge and hear voices: a black-haired stranger from the south arguing about riders and coin with someone you cannot see. A twig snaps under your boot. The door flies open and out comes a burly thug with a club. Whatever is being plotted inside is none of your business, but you can no longer leave without a fight.",
+      "choiceLabel": "Spy on Ferny's house"
+    },
+    "bree_4_4": {
+      "title": "The Hunter's Cabin",
+      "text": "On the edge of Staddle lives an old hunter who watched the wolf fall from his porch. He invites you in, stirs the fire and teaches you to read the tracks pressed into the mud by his door. He says that this autumn the wolves come down leaner and bolder than ever, and that in the Chetwood he has seen a huge one, grey as ash, leading the others. He gives you a hunting horn and a piece of advice: never make camp where you cannot see the sky.",
+      "choiceLabel": "Ask the hunter for shelter"
+    },
+    "bree_4_5": {
+      "title": "After the Pack",
+      "text": "The wolf did not come alone. In the orchard mud there are more tracks, and you follow them across the fields to a thicket of thorns that reeks of carrion. There, among sheep bones, two wolves raise their heads at once. One slinks away through the thorns; the other, the leanest, is skin and bone and will not let slip a quarry that walks straight towards it. The sun hides behind a cloud. You feel your pulse in your temples, plant your feet in the earth and raise your sword.",
+      "choiceLabel": "Track the pack"
+    },
+    "bree_4_6": {
+      "title": "The Keeper of the South-gate",
+      "text": "You reach the South-gate, where the Road leaves Bree. The gatekeeper, a nervous man who never lets go of the bar, looks you up and down before opening. He tells you that last night something passed by his lodge, something he will not describe, and that he has not slept since. He also warns you of a band of highwaymen watching the Road beyond the fields, led by a fellow they call One-Eye. He wishes you luck like someone who never expects to see you again.",
+      "choiceLabel": "Speak with the gatekeeper"
+    },
+    "bree_4_7": {
+      "title": "Beyond the Hedge",
+      "text": "To avoid the gate and its questions, you climb the hedge and drop into the fields on the other side. The tall grass reaches your waist and soaks your cloak. Halfway across, a movement among the thistles stops you short: a big wolf with a filthy coat is pacing alongside you without a sound. By the time you turn, it is already too close. Outside the shelter of Bree, the world does not wait for you to be ready.",
+      "choiceLabel": "Jump the hedge"
+    },
+    "bree_5_0": {
+      "title": "The East Road",
+      "text": "At last you tread the East Road, broad and worn by centuries of carts. On either side stretch farms, stone walls and birch copses turning yellow. You pass a pedlar hurrying back towards Bree who does not stop to greet you. The autumn sun gives little warmth, but every step takes you further from the life you know. For the first time since you closed your door, you smile: the journey has truly begun.",
+      "choiceLabel": "Take the East Road"
+    },
+    "bree_5_1": {
+      "title": "The Houses of Staddle",
+      "text": "You pass through Staddle, the village of houses dug into the hillside, where as many hobbits live as Men. An old woman offers you water from the well and a handful of nuts for the road. Children play at chasing Black Riders with sticks for swords, and their mothers shout for them to come inside. In the square, a carter remarks that the Road is emptier than ever. You fill your water bottle, give thanks for the kindness and carry on eastward.",
+      "choiceLabel": "Pass through Staddle"
+    },
+    "bree_5_2": {
+      "title": "The Roofs of Archet",
+      "text": "You take a path that climbs towards Archet, the village nearest the forest. Its houses huddle among oaks and the air smells of resin. In the tavern, woodcutters speak of a Ranger who went into the Chetwood with several hobbits, far from the Road, as if fleeing something. Others swear that at night hoofbeats can be heard beside the trees. You eat quickly, listen much, say little and set out again.",
+      "choiceLabel": "Turn aside to Archet"
+    },
+    "bree_5_3": {
+      "title": "A Night in the Open",
+      "text": "Evening falls and you decide to camp in a hollow a few paces from the Road. You light a small fire, as you were taught, and sup on stale bread watching the first stars. Far off, a fox barks. Later, half asleep, you hear hoofbeats pass slowly along the Road and halt. You hold your breath until the sound fades. At dawn no trace remains, save a strange cold in the frost-rimed grass.",
+      "choiceLabel": "Camp beside the Road"
+    },
+    "bree_6_0": {
+      "title": "The Empty Fields",
+      "text": "You press on along the Road, where the last farms of the Bree-land give way to scrub and heather. At a bend you find an overturned cart, with neither oxen nor owner, one wheel still turning in the wind. There is dried blood on the driver's seat and tracks that vanish towards the forest. In Bree it was already whispered that highwaymen watch this stretch. You quicken your pace, hand on the hilt, alert to every shadow among the nearby trees.",
+      "choiceLabel": "Keep to the Road"
+    },
+    "bree_6_1": {
+      "title": "A Shortcut Through the Brambles",
+      "text": "You leave the Road to save time and plunge into a maze of brambles and heather. The shortcut proves worse than you hoped: thorns tear your cloak and the ground gives way into hidden pits. In a clearing you stumble upon a highwaymen's lookout, who raises the alarm with a whistle. Before you can flee, a hungry wolf, drawn by the noise, joins the fray. This time there are no walls of Bree at your back.",
+      "choiceLabel": "Cut through the scrub"
+    },
+    "bree_7_0": {
+      "title": "The Bandit Chief",
+      "text": "Where the Road brushes the first trees of the Chetwood, a fallen trunk blocks the way. It is no accident. From among the ferns steps a broad-shouldered man with a leather patch over one eye and a notched axe in his hand: One-Eye, chief of the highwaymen. One of his men cuts off your retreat. One-Eye offers you the chance to leave your pack and return to Bree alive. Behind him, the shadow of the forest waits. There is only one way forward."
+    }
+  },
+  "rivals": {
+    "Ratero de Bree": "Bree Cutpurse",
+    "Ladrón de caballos": "Horse Thief",
+    "Lobo hambriento": "Hungry Wolf",
+    "Bandido del foso": "Dike Bandit",
+    "Bribón de la banda": "Gang Rogue",
+    "Matón de Abrojal": "Ferny's Thug",
+    "Vigía de los salteadores": "Highwaymen's Lookout",
+    "El Tuerto, cabecilla de los bandidos": "One-Eye, Bandit Chief",
+    "Salteador del Tuerto": "One-Eye's Highwayman"
+  }
+}

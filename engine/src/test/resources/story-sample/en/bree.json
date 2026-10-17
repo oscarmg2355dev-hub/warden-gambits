@@ -1,0 +1,18 @@
+{
+  "id": "bree",
+  "name": "Bree",
+  "nodes": {
+    "bree_1_0": {
+      "title": "The Gates of Bree",
+      "text": "You reach Bree at nightfall, your cloak soaked through by the rain."
+    },
+    "bree_2_1": {
+      "title": "The Prancing Pony",
+      "text": "A bandit bars your way before the inn.",
+      "choiceLabel": "Enter the inn"
+    }
+  },
+  "rivals": {
+    "Bandido de Bree": "Bree Bandit"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "id": "chet",
+  "name": "The Chetwood",
+  "nodes": {
+    "chet_1_0": {
+      "title": "Beneath the Chetwood",
+      "text": "With One-Eye defeated, you heave the trunk aside and look into the thicket. The Road runs on eastward, but rumour tells of a Ranger who led some hobbits through the forest, far from prying eyes, and you decide to follow his example. The Chetwood swallows you within a few paces: twisted oaks, ferns waist-high and a green gloom that deadens every sound. Here and there, blazed trunks and narrow paths betray the hunters. From afar comes a long howl, and another answers it."
+    },
+    "chet_2_0": {
+      "title": "The Hunters' Path",
+      "text": "You choose the best-trodden path, the one opened by generations of Archet hunters. It is narrow but firm, and someone has cut notches into the trunks so as not to lose the way. You walk for hours beneath the canopy, listening to the creak of branches and the flutter of birds. At a bend you find a knotted rope tied to a tree, a sign that the path forks: one branch leads down towards the smoke of a chimney; the other, towards the remains of an old fire.",
+      "choiceLabel": "Follow the hunters' path"
+    },
+    "chet_2_1": {
+      "title": "The Thicket",
+      "text": "You would rather not follow paths that others may be watching, so you force your way through the thicket, hacking at branches and brambles with your sword. Soon you lose the sun. The forest closes around you and an acrid smell puts you on guard: a wolf has marked its territory here. You hear it before you see it, a low growl to your left. A brown-furred beast bursts from the ferns, bigger than any dog in Bree and far surer of itself.",
+      "choiceLabel": "Plunge into the thicket"
+    },
+    "chet_3_0": {
+      "title": "The Abandoned Camp",
+      "text": "The branch brings you to a clearing where someone camped not long ago, a day or two perhaps. The ashes are cold, but the ground tells a story: prints of small, bare, broad feet beside those of long boots and a pony's hooves. Hobbits, without a doubt, and the Ranger they spoke of in Bree. They covered their trail with care, though not enough for a watchful eye. By a log you see other marks too: heavy boots that came afterwards.",
+      "choiceLabel": "Search the old fire"
+    },
+    "chet_3_1": {
+      "title": "The Trapper's Cabin",
+      "text": "The smoke rises from a log cabin half buried in the hillside. A bearded, wary trapper opens the door, a bow half drawn. When you tell him you come from Bree, he lowers the weapon and lets you warm yourself by the hearth. He speaks of wolves that no longer fear fire and of a huge grey male who leads them. Two nights ago they killed his dog. He looks at you with weary eyes and asks whether you truly know how to use that sword.",
+      "choiceLabel": "Head down towards the chimney"
+    },
+    "chet_3_2": {
+      "title": "The Hidden Stream",
+      "text": "Following the murmur of water, you come to a stream running between moss-covered stones. You wash off blood and sweat, drink your fill and, for a moment, the forest seems kindly. Blue kingfishers dart like arrows over the current. Downstream, the water stills in dark pools; upstream, flat stones offer a crossing to the far bank. You allow yourself a breather before deciding which way to go.",
+      "choiceLabel": "Go down to the stream"
+    },
+    "chet_3_3": {
+      "title": "The Fallen Oak",
+      "text": "A gigantic oak lies felled by some ancient storm, its roots in the air like a rampart. You climb along the trunk to a point where you can see over the ferns. To the north rises a column of grey smoke; to the east, the trees seem to thin over lower, misty ground. A squirrel scolds you from a branch, offended by the visit. You breathe deeply: at least now you know which way the forest opens.",
+      "choiceLabel": "Climb the fallen oak"
+    },
+    "chet_4_0": {
+      "title": "On the Trail",
+      "text": "You follow the small footprints for a good league. Whoever leads the group knows the forest: they choose ground carpeted with leaves, cross streams to throw off pursuit and shun the clearings. You lose the trail twice and find it as often again. In the end you understand that you must not catch them; whatever their errand, they would rather not be found. You respect their silence, but you note their heading: north-east, towards low, wet lands.",
+      "choiceLabel": "Follow the small footprints"
+    },
+    "chet_4_1": {
+      "title": "The Heavy Boots",
+      "text": "The heavy boots lead you to a hollow where two men are roasting a rabbit. They are of the same ilk as One-Eye's band: long knives, stolen clothes and a list of names scrawled on a scrap of leather. They talk of claiming a reward for news of the hobbits. You have no intention of helping them earn it. When you step on a dry twig, both turn towards you and rise, grinning like wolves.",
+      "choiceLabel": "Follow the heavy boots"
+    },
+    "chet_4_2": {
+      "title": "The Broken Trap",
+      "text": "You offer the trapper your help, and he asks you to check his traps while he mends nets. In the third you find a wolf caught by a hind leg, thrashing in fury. Before you can decide what to do, the chain gives way with a snap. The beast, wounded and mad with pain, hurls itself at you without a thought. A cornered animal is the most dangerous thing in the forest, the old man had warned you, and now you understand why.",
+      "choiceLabel": "Check the traps"
+    },
+    "chet_4_3": {
+      "title": "By the Hearth",
+      "text": "You accept a night under the trapper's roof. You share a stew of mushrooms and dried meat while the wind shakes the treetops. The old man tells you of the marsh beyond the forest: still water, mists and midges that eat you alive. He also shows you how to make an ointment of bitter herbs to keep them off. You sleep as you have not slept since Bree and, at dawn, he sends you off with a loaf under your arm.",
+      "choiceLabel": "Stay the night"
+    },
+    "chet_4_4": {
+      "title": "The Stepping Stones",
+      "text": "You leap from stone to stone to the far bank. One shifts under your foot and you nearly fall into the icy water, but you catch your balance in time. On the opposite bank you find an old wooden post bearing simple signs you cannot read and a carved arrow pointing east. Someone, long ago, marked a route here. Following its direction, the forest suddenly seems a little less hostile.",
+      "choiceLabel": "Cross by the stones"
+    },
+    "chet_4_5": {
+      "title": "Eyes on the Bank",
+      "text": "You follow the current down to the dark pools, where the forest leans over the water. The silence is complete; not a single bird sings. Then you see them: two pairs of yellow eyes among the reeds of the bank, waiting for prey to come down and drink. You have walked straight into their ambush. The wolves burst from the water and surround you, one on each side, hackles raised and fangs bared.",
+      "choiceLabel": "Follow the water downstream"
+    },
+    "chet_4_6": {
+      "title": "The Highwaymen's Fire",
+      "text": "The smoke leads you to a makeshift camp beneath an overhang of rock. A single man guards it, surrounded by stolen bundles: a straggler from One-Eye's band. By his look, he already knows his chief has fallen, and who brought him down. His face turns from fright to rage in an instant. He seizes a short spear propped against the rock and charges at you howling for vengeance, without stopping to think.",
+      "choiceLabel": "Make for the column of smoke"
+    },
+    "chet_4_7": {
+      "title": "Towards the Lowlands",
+      "text": "You climb down from the oak and walk towards where you saw the mist. The ground slopes gently and the oaks give way to alders and willows with damp roots. The air grows heavy and the first mosquitoes appear. Beneath a willow you find a small cairn of piled stones, mantled in moss, with offerings centuries old. You pause before it a moment, not quite knowing why, and then walk on.",
+      "choiceLabel": "Head towards the mist"
+    },
+    "chet_5_0": {
+      "title": "The Clearing of Howls",
+      "text": "You come out into a wide clearing, deep in tall grass and ringed by white birches. Halfway across you realise your mistake: there is nowhere to hide here. A howl rises behind you, another to your right, a third ahead. Three wolves leave the treeline and begin to close the circle, unhurried, like those who know their trade well. You plant your feet and wait for the first.",
+      "choiceLabel": "Cross a clearing"
+    },
+    "chet_5_1": {
+      "title": "The Toll Hollow",
+      "text": "The path drops into a hollow barred by a log laid across it. Beside it, a man with a rusty crossbow and a crooked hat demands a toll from all who pass: two coins or your life. He claims the forest has been his since the Archet hunters stopped coming. You have no intention of paying anyone to walk among trees, and you tell him so. He spits on the ground and lunges at you.",
+      "choiceLabel": "Go down into the hollow"
+    },
+    "chet_5_2": {
+      "title": "The Wall of Brambles",
+      "text": "A wall of brambles closes off the forest and there is no way round it. You hack your way through, thorns raking your face and hands. When at last you emerge on the other side, bleeding and breathless, an old wolf covered in scars sits waiting for you, as if it knew you would come this way. It rises slowly, without a growl. It is a patient hunter, and you are tired.",
+      "choiceLabel": "Hack through the brambles"
+    },
+    "chet_5_3": {
+      "title": "The Log Bridge",
+      "text": "A deep torrent splits the forest, and the only crossing is a bridge of logs lashed with ropes. When you are halfway over, two bandits step out of the undergrowth, one at each end. The nearer holds an axe beside the ropes and smiles: one more step and he will cut. They order you to lay your weapons on the logs. You look at the foaming water far below, then at your enemy, and decide to move first.",
+      "choiceLabel": "Cross the log bridge"
+    },
+    "chet_6_0": {
+      "title": "A Rangers' Refuge",
+      "text": "Night falls and you find a refuge dug beneath the roots of a beech, hidden behind a curtain of ivy. Inside there is dry firewood, a clay bowl and a simple star carved into the stone. The Rangers of the North use such hiding places to roam the wild lands unseen. You sleep in shelter, listening to howls that draw near and fade away. Before dawn, one sounds very close.",
+      "choiceLabel": "Seek shelter for the night"
+    },
+    "chet_6_1": {
+      "title": "Marks in the Bark",
+      "text": "On the trunks in this part of the forest appear deep claw marks, at a height that chills your blood. Some enormous wolf has been sharpening them here, marking a territory that stretches eastward. Gnawed bones and tufts of grey fur litter the ground. The howls that have dogged you for days now seem to come from that same direction, as if the whole forest were driving you towards its lair.",
+      "choiceLabel": "Follow the claw marks"
+    },
+    "chet_7_0": {
+      "title": "The Grey Alpha Wolf",
+      "text": "At the edge of the forest, where the trees grow sparse and the ground already smells of bog, the pack awaits you. Atop a rock, the grey alpha wolf watches you: taller than a pony, with ash-coloured fur and a scar splitting its muzzle. It is the one that leads the others, the terror of the Archet hunters. A single growl from it sends two young wolves to your flanks. Beyond, in the mist, the marshes begin."
+    }
+  },
+  "rivals": {
+    "Lobo pardo de Chet": "Brown Wolf of the Chetwood",
+    "Lobo hambriento": "Hungry Wolf",
+    "Bandido del bosque": "Forest Bandit",
+    "Lobo de las pozas": "Pool Wolf",
+    "Salteador rezagado": "Straggling Highwayman",
+    "Lobo de la manada": "Pack Wolf",
+    "Cobrador de peajes": "Toll Collector",
+    "Lobo viejo": "Old Wolf",
+    "Bandido del puente": "Bridge Bandit",
+    "Lobo gris alfa": "Grey Alpha Wolf",
+    "Lobo joven de la manada": "Young Pack Wolf"
+  }
+}

@@ -1,0 +1,254 @@
+<h2>Prototipo v2: mapa continuo en alta resolución</h2>
+<p class="subtitle">El doble de píxeles por zona y color continuo: los terrenos se mezclan color a color (no a manchas), el relieve se ilumina desde el noroeste (las colinas y montañas tienen volumen), árboles, rocas y casas se dibujan con sombra propia y proyectada, y el agua tiene profundidad y orilla. Mismo movimiento suave que la v1.</p>
+<label style="font-size:13px"><input type="checkbox" id="showBounds"> Mostrar fronteras de zona</label>
+<span id="status" style="font-size:12px;margin-left:12px;color:#888">generando…</span>
+<div id="wrap" style="overflow-x:auto;border:2px solid #555;border-radius:8px;background:#000;margin-top:8px">
+  <canvas id="map" style="display:block;image-rendering:pixelated"></canvas>
+</div>
+<p class="subtitle" style="margin-top:10px">Escala: 56 baldosas por zona y 200 de alto (v1: 28 × 100). En el juego cada baldosa sería de 4 dp.</p>
+
+<script>
+(function(){
+const ZONES=[["bree","Bree"],["chet","Bosque de Chet"],["moscagua","Pantanos de Moscagua"],["cima","Cima de los Vientos"],["puente","Último Puente"],["quebradas","Quebradas de los Trolls"],["bruinen","Vado del Bruinen"],["rivendel","Rivendel"],["eregion","Eregion"],["caradhras","Caradhras"],["durin","Puertas de Durin"],["moria","Moria"],["sombrio","Valle del Arroyo Sombrío"],["nimrodel","Nimrodel"],["lothlorien","Lothlórien"]];
+const ZC=56, W=ZONES.length*ZC, H=200, T=3;
+const cv=document.getElementById('map'); cv.width=W*T; cv.height=H*T;
+const ctx=cv.getContext('2d'); ctx.imageSmoothingEnabled=false;
+
+// ---------------- noise
+function hash(a,b,c){let h=(a*374761393+b*668265263+c*2147483647)|0;h=Math.imul(h^(h>>>13),1274126177);return (h^(h>>>16))>>>0;}
+function h01(a,b,c){return (hash(a,b,c)>>>8)/16777216;}
+function sm(t){return t*t*(3-2*t);}
+function vn(x,y,s){const xi=Math.floor(x),yi=Math.floor(y),xf=sm(x-xi),yf=sm(y-yi);
+ const a=h01(xi,yi,s),b=h01(xi+1,yi,s),c=h01(xi,yi+1,s),d=h01(xi+1,yi+1,s);
+ return a+(b-a)*xf+(c-a)*yf+(a-b-c+d)*xf*yf;}
+function fbm(x,y,s,o=4){let v=0,a=.5,f=1,n=0;for(let i=0;i<o;i++){v+=a*vn(x*f,y*f,s+i*17);n+=a;a*=.5;f*=2.03;}return v/n;}
+function clamp(v,a,b){return v<a?a:v>b?b:v;}
+function mix(a,b,t){return a+(b-a)*t;}
+
+// ---------------- zone keyframes (continuous fields)
+const K={
+ bree:{farm:1,meadow:.8}, chet:{forest:1,meadow:.2}, moscagua:{marsh:1,forest:.2},
+ cima:{hills:1,rock:.4,meadow:.3,elev:.45}, puente:{meadow:.6,hills:.5,elev:.2},
+ quebradas:{forest:.55,rock:.7,hills:.6,elev:.45}, bruinen:{forest:.5,meadow:.4,elev:.25},
+ rivendel:{valley:1,forest:.5,elev:.35}, eregion:{holly:1,hills:.5,meadow:.3,elev:.3},
+ caradhras:{snow:1,mount:1,rock:.6,elev:1}, durin:{mount:.8,rock:1,snow:.2,elev:.8},
+ moria:{under:1,mount:.6,elev:.7}, sombrio:{rock:.7,mount:.45,meadow:.35,elev:.45},
+ nimrodel:{forest:.85,golden:.35,meadow:.25,elev:.15}, lothlorien:{golden:1,forest:.5,elev:.05},
+};
+const FIELDS=["farm","meadow","forest","marsh","hills","rock","snow","mount","under","golden","holly","valley"];
+const key=ZONES.map(z=>K[z[0]]);
+function field(f,x){const p=(x-ZC/2)/ZC;const i=clamp(Math.floor(p),0,ZONES.length-1),j=Math.min(ZONES.length-1,i+1);
+ const t=sm(clamp(p-i,0,1));return (key[i][f]||0)*(1-t)+(key[j][f]||0)*t;}
+function warpX(x,y){return x+(vn(x/18,y/18,91)-.5)*34+(vn(x/6,y/6,92)-.5)*8;}
+
+// ---------------- ground colours: each biome = dark→light ramp (5 stops)
+const RAMP={
+ farm:  ["#4e7a2a","#6a9a34","#8cb446","#b4c45a","#d2c878"],
+ meadow:["#2f6a26","#447f2e","#5c9a3a","#7cb24a","#a2c862"],
+ forest:["#132e14","#1c4019","#28561f","#386c28","#4c8034"],
+ marsh: ["#2a3a24","#3a4e2e","#4c6238","#60724a","#7a8a5e"],
+ hills: ["#4e5a2c","#68743a","#84904a","#a2a85e","#c0bc7a"],
+ rock:  ["#3e3a36","#56514a","#6e6860","#8a847a","#aaa498"],
+ snow:  ["#8a98b0","#aebccc","#cad6e2","#e2eaf2","#fafcff"],
+ mount: ["#2e2c36","#44424e","#5c5a66","#78767e","#9a98a0"],
+ under: ["#0c0a10","#141218","#1c1922","#26222c","#302b36"],
+ golden:["#7a5a1a","#a07c26","#c49e34","#dcbc4a","#f0d870"],
+ holly: ["#1e3a1c","#2a4e26","#3a6232","#4e763e","#66894c"],
+ valley:["#1e5a26","#2e7432","#40903e","#58a84c","#7cc064"],
+};
+const RGB={};for(const k in RAMP)RGB[k]=RAMP[k].map(h=>[parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)]);
+function ramp(b,v){const r=RGB[b];const p=clamp(v,0,.999)*4;const i=Math.floor(p),t=p-i;const a=r[i],c=r[Math.min(4,i+1)];return [mix(a[0],c[0],t),mix(a[1],c[1],t),mix(a[2],c[2],t)];}
+
+// ---------------- geography
+function roadY(x){return H*0.47+Math.sin(x/46)*13+(vn(x/22,0,7)-.5)*16;}
+const RIVERS=[{x:4*ZC+32,w:3.6},{x:6*ZC+24,w:4.4},{x:13*ZC+24,w:3},{x:7*ZC+40,w:1.8}];
+function riverCx(r,y){return r.x+Math.sin(y/18+r.x)*6+(vn(r.x,y/12,3)-.5)*8;}
+function lakeD(x,y){
+ const d1=((x-(10*ZC+20))/14)**2+((y-H*0.72)/9)**2;
+ const d2=((x-(12*ZC+32))/16)**2+((y-H*0.68)/9)**2;
+ return Math.min(d1,d2);}
+const DOOR_X=11*ZC+4;
+function elevation(x,y){
+ const wx=warpX(x,y);const e=field("elev",wx),m=field("mount",wx),h=field("hills",wx);
+ const edge=Math.min(y,H-1-y)/(H/2); // 0 edge, 1 centre
+ const ridge=1-Math.abs(fbm(x/26,y/26,40,4)*2-1);
+ let z=0.25*fbm(x/40,y/40,1)+h*0.35*fbm(x/14,y/14,2)+e*0.25;
+ z+=m*Math.max(0,(1-edge*1.25))*(0.6+0.8*ridge);
+ return z;}
+const ELEV=new Float32Array(W*H);
+for(let y=0;y<H;y++)for(let x=0;x<W;x++)ELEV[y*W+x]=elevation(x,y);
+function E(x,y){x=clamp(x,0,W-1);y=clamp(y,0,H-1);return ELEV[y*W+x];}
+
+// ---------------- pixel buffer
+const img=new Float32Array(W*H*3); const kind=new Uint8Array(W*H); // 0 ground,1 water,2 road,3 cliff,4 sprite
+function put(x,y,c,k){if(x<0||y<0||x>=W||y>=H)return;const i=(y*W+x)*3;img[i]=c[0];img[i+1]=c[1];img[i+2]=c[2];if(k!==undefined)kind[y*W+x]=k;}
+function get(x,y){const i=(y*W+x)*3;return [img[i],img[i+1],img[i+2]];}
+function mul(c,f){return [c[0]*f,c[1]*f,c[2]*f];}
+function lerpc(a,b,t){return [mix(a[0],b[0],t),mix(a[1],b[1],t),mix(a[2],b[2],t)];}
+const biomeOf=new Array(W*H);
+
+// ground: weighted colour blend of all biomes + hillshade
+for(let y=0;y<H;y++)for(let x=0;x<W;x++){
+ const wx=warpX(x,y);let tw=0,col=[0,0,0],best="meadow",bw=-1;
+ const z=E(x,y); const m=field("mount",wx);
+ const tex=fbm(x/5,y/5,7,3);
+ for(let k=0;k<FIELDS.length;k++){const f=FIELDS[k];let w=field(f,wx);if(w<=0)continue;
+  w*=0.6+0.8*vn(x/11,y/11,k*13+5); // patchiness
+  if(f==="snow")w*=clamp((z-0.55)*3,0,1.5);
+  if(f==="mount")w*=clamp((z-0.35)*3,0,1.4);
+  w=w*w; if(w>bw){bw=w;best=f;}
+  const c=ramp(f,0.25+0.5*tex+0.15*(vn(x/3,y/3,k)-.5));col[0]+=c[0]*w;col[1]+=c[1]*w;col[2]+=c[2]*w;tw+=w;}
+ col=tw>0?mul(col,1/tw):[90,140,60];
+ // high peaks always snow, under always dark
+ if(z>0.95){col=lerpc(col,ramp("snow",.6+.3*tex),clamp((z-.95)*4,0,1));best="snow";}
+ biomeOf[y*W+x]=best;
+ // hillshade (light from NW)
+ const dx=E(x+1,y)-E(x-1,y),dy=E(x,y+1)-E(x,y-1);
+ let sh=1-(dx+dy)*3.2; sh=clamp(sh,0.55,1.35);
+ if(best==="under") sh=mix(sh,1,.6);
+ put(x,y,mul(col,sh),0);}
+
+// water: rivers + lakes + marsh pools
+for(let y=0;y<H;y++)for(let x=0;x<W;x++){
+ const i=y*W+x;const b=biomeOf[i]; if(b==="under")continue;
+ let depth=-1;
+ for(const r of RIVERS){const d=Math.abs(x-riverCx(r,y));if(d<r.w)depth=Math.max(depth,1-d/r.w);}
+ const ld=lakeD(x,y); if(ld<1)depth=Math.max(depth,1-ld);
+ const marsh=field("marsh",warpX(x,y)); const pn=fbm(x/9,y/9,77,3); if(marsh>0.45&&pn>0.6)depth=Math.max(depth,(pn-.6)*4);
+ if(depth<0)continue;
+ const cold=field("snow",warpX(x,y))+field("mount",warpX(x,y))*.5;
+ const deep=cold>.5?[34,62,96]:marsh>.45?[44,66,58]:[28,70,128], shallow=cold>.5?[110,150,180]:marsh>.45?[96,120,88]:[80,150,200];
+ put(x,y,lerpc(shallow,deep,clamp(depth*1.6,0,1)),1);}
+// shore foam / wet edge
+for(let y=1;y<H-1;y++)for(let x=1;x<W-1;x++){if(kind[y*W+x]!==0)continue;
+ let n=0;for(const [a,b] of [[1,0],[-1,0],[0,1],[0,-1]])if(kind[(y+b)*W+x+a]===1)n++;
+ if(n>0)put(x,y,lerpc(get(x,y),[150,130,90],.45));}
+
+// Durin cliff
+for(let y=0;y<H;y++){const jag=Math.round((vn(0,y/6,61)-.5)*7);
+ for(let x=DOOR_X-4+jag;x<DOOR_X+4+jag;x++){const t=(x-(DOOR_X-4+jag))/8;const v=0.75+0.25*vn(x/2,y/2,9);
+  put(x,y,mul(lerpc([86,84,98],[46,44,54],t),v),3);}}
+
+// road with edges, stones, ruts; bridges and ford
+for(let x=0;x<W;x++){const ry=roadY(x);const y0=Math.round(ry);
+ for(let d=-3;d<=3;d++){const y=y0+d;if(y<0||y>=H)continue;const i=y*W+x;const k=kind[i];const b=biomeOf[i];
+  const ad=Math.abs(d);
+  if(k===1){ // bridge or ford
+   const isFord=x>6*ZC&&x<7*ZC||x>13*ZC;
+   if(isFord){ if(ad<=2&&h01(x,y,4)<.5)put(x,y,[150,146,136]); }
+   else { if(ad<=2)put(x,y,mul([140,96,52],(x%3===0?.75:1)*(ad===2?.8:1)),2); else if(ad===3)put(x,y,[90,60,32],2);}
+   continue;}
+  if(k===3){ if(ad<=2)put(x,y,ad===0?[236,230,200]:[120,118,140],2); continue;}
+  if(ad===3){put(x,y,mul(get(x,y),d>0?.72:.9));continue;}
+  let base=b==="under"?[70,64,78]:b==="snow"?[206,212,222]:b==="golden"?[232,214,160]:[196,160,104];
+  if(ad===2)base=mul(base,.82);
+  const n=vn(x/2,y/2,31);if(n>.78)base=mul(base,.8);if(h01(x,y,32)<.05)base=[140,134,124];
+  put(x,y,mul(base,0.92+0.12*vn(x/4,y,33)),2);}}
+
+// ---------------- procedural sprites (shaded)
+const L=[-.6,-.8]; // light dir NW
+function shadow(cx,cy,rx,ry){for(let y=-ry;y<=ry;y++)for(let x=-rx;x<=rx;x++){if((x/rx)**2+(y/ry)**2>1)continue;
+ const px=Math.round(cx+x+2),py=Math.round(cy+y+1);if(px<0||py<0||px>=W||py>=H)continue;if(kind[py*W+px]===4)continue;put(px,py,mul(get(px,py),.62));}}
+function blob(cx,cy,r,palette,k=4,squash=1){ // shaded sphere-ish canopy with leafy noise
+ for(let y=-r;y<=r;y++)for(let x=-r;x<=r;x++){const nx=x/r,ny=y/(r*squash);const d=nx*nx+ny*ny;
+  const edgeN=0.85+0.3*vn((cx+x)/1.7,(cy+y)/1.7,71);if(d>edgeN)continue;
+  const nz=Math.sqrt(Math.max(0,1-d));const lit=clamp(-(nx*L[0]+ny*L[1])*.6+nz*.55+.1*(vn((cx+x)/1.3,(cy+y)/1.3,72)-.5),0,1);
+  put(Math.round(cx+x),Math.round(cy+y),ramp(palette,lit),k);}}
+function rect(x0,y0,w,h,c){for(let y=0;y<h;y++)for(let x=0;x<w;x++)put(x0+x,y0+y,c,4);}
+const SPR={
+ tree(x,y,s){shadow(x,y,4*s,1.5*s);rect(x-1,y-3*s,2,3*s+1,[86,56,30]);blob(x,y-4*s,3.2*s,"meadow");},
+ oak(x,y,s){shadow(x,y,5*s,2*s);rect(x-1,y-3*s,2,3*s+1,[80,52,28]);blob(x,y-5*s,4.2*s,"forest");},
+ pine(x,y,s){shadow(x,y,3*s,1.2*s);rect(x,y-2,1,3,[70,44,24]);
+  for(let l=0;l<9*s;l++){const w=Math.round((l/(9*s))*3.4*s);for(let i=-w;i<=w;i++){const lit=clamp(.55-(i/(w+1))*.5+.15*(vn(x+i,y-l,5)-.5),0,1);put(x+i,y-2-9*s+l,ramp("forest",lit*.9+.05),4);}}},
+ house(x,y){shadow(x+1,y,6,2);const wall=[216,200,160],roof=[170,64,44];
+  rect(x-5,y-6,11,7,wall);for(let yy=0;yy<7;yy++)put(x+5,y-6+yy,mul(wall,.75),4);
+  rect(x-1,y-3,2,4,[90,58,30]);rect(x-4,y-5,2,2,[240,210,120]);rect(x+2,y-5,2,2,[240,210,120]);
+  for(let r=0;r<6;r++){for(let i=-6+r;i<=6-r;i++)put(x+i,y-7-r,mul(roof,i<0?1.1:.8),4);}
+  rect(x+3,y-12,2,4,[110,96,90]);return [x+4,y-13];},
+ rock(x,y,s){shadow(x,y,3*s,1.2*s);blob(x,y-1.5*s,2.4*s,"rock",4,.7);},
+ boulder(x,y,s){shadow(x,y,4*s,1.5*s);blob(x,y-2*s,3.4*s,"rock",4,.75);},
+ reeds(x,y){for(let i=-2;i<=2;i+=2){const h=4+Math.round(h01(x+i,y,1)*3);for(let k=0;k<h;k++)put(x+i,y-k,ramp("marsh",.5+k/h*.4),4);put(x+i,y-h,[120,80,40],4);}},
+ dead(x,y){shadow(x,y,3,1);for(let k=0;k<7;k++)put(x,y-k,[70,56,42],4);put(x-1,y-5,[70,56,42],4);put(x-2,y-6,[70,56,42],4);put(x+1,y-4,[70,56,42],4);put(x+2,y-5,[70,56,42],4);},
+ ruins(x,y){shadow(x,y,5,2);const st=[150,142,124];rect(x-5,y-1,11,2,mul(st,.8));rect(x-5,y-7,2,6,st);rect(x+3,y-5,2,4,st);rect(x-1,y-9,2,8,st);for(let k=0;k<8;k++)put(x,y-1-k,mul(st,.75),4);},
+ holly(x,y){shadow(x,y,4,1.5);blob(x,y-3,3.2,"holly");for(let k=0;k<4;k++){const a=h01(x,y,k)*6.28;put(Math.round(x+Math.cos(a)*2),Math.round(y-3+Math.sin(a)*2),[200,40,30],4);}},
+ peak(x,y,s){ // big mountain with snow cap and NW lighting
+  const h=Math.round(14*s),w=Math.round(12*s);shadow(x+3,y,w,2*s);
+  for(let r=0;r<h;r++){const half=Math.round(w*(r+1)/h);for(let i=-half;i<=half;i++){const side=i<0?1.15:.7;const t=r/h;
+   const snowLine=0.38+0.18*vn(x+i,y,8);let c=t<snowLine?ramp("snow",.55+.4*(1-t)):ramp("mount",.35+.3*vn((x+i)/2,(y-h+r)/2,9));
+   put(x+i,y-h+r,mul(c,side),4);}}},
+ pillar(x,y){shadow(x,y,3,1);const st=[78,72,86];rect(x-2,y-10,4,10,st);for(let k=0;k<10;k++)put(x+1,y-10+k,mul(st,.7),4);rect(x-3,y-11,6,1,mul(st,1.2));rect(x-3,y,6,1,mul(st,.8));},
+ mallorn(x,y,s){shadow(x,y,6*s,2*s);const tr=[220,214,196];for(let k=0;k<7*s;k++){put(x,y-k,tr,4);put(x+1,y-k,mul(tr,.75),4);}
+  blob(x,y-9*s,5*s,"golden",4,.85);blob(x-3*s,y-7*s,3*s,"golden");blob(x+3*s,y-7*s,3*s,"golden");},
+ field(x,y){for(let j=0;j<5;j++)for(let i=-6;i<=6;i++){if(kind[(y-j)*W+x+i]!==0)continue;put(x+i,y-j,(j%2)?[200,184,96]:[176,156,72]);}},
+};
+function pick(b,r){switch(b){
+ case"farm":return r<.25?"house":r<.5?"field":r<.8?"tree":"rock";
+ case"meadow":return r<.55?"tree":r<.75?"oak":"rock";
+ case"forest":return r<.55?"oak":r<.9?"pine":"rock";
+ case"marsh":return r<.55?"reeds":r<.85?"dead":"rock";
+ case"hills":return r<.4?"boulder":r<.47?"ruins":r<.85?"tree":"rock";
+ case"rock":return r<.55?"boulder":r<.9?"pine":"dead";
+ case"snow":return r<.6?"peak":"boulder";
+ case"mount":return r<.6?"peak":"boulder";
+ case"under":return r<.8?"pillar":"rock";
+ case"golden":return r<.75?"mallorn":"oak";
+ case"holly":return r<.55?"holly":r<.75?"ruins":"oak";
+ case"valley":return r<.5?"pine":r<.85?"oak":"house";}}
+const DENS={farm:.55,meadow:.35,forest:.9,marsh:.5,hills:.4,rock:.45,snow:.55,mount:.6,under:.35,golden:.85,holly:.6,valley:.6};
+const items=[];
+for(let gy=4;gy<H;gy+=7)for(let gx=0;gx<W;gx+=7){
+ const x=gx+Math.floor(h01(gx,gy,201)*7),y=gy+Math.floor(h01(gx,gy,202)*7);if(x>=W||y>=H)continue;
+ const i=y*W+x;if(kind[i]!==0)continue;const b=biomeOf[i];if(h01(gx,gy,203)>DENS[b])continue;
+ const f=pick(b,h01(gx,gy,204));const ry=roadY(x);
+ const clear=f==="peak"?18:f==="house"||f==="mallorn"?9:6;
+ if(Math.abs(y-ry)<clear&&y>ry-clear-10&&y<ry+3)continue;
+ let wet=false;for(let k=-6;k<=6&&!wet;k+=2)for(let j=-3;j<=0;j++){const ii=(y+j)*W+x+k;if(ii>=0&&ii<W*H&&(kind[ii]===1||kind[ii]===3)){wet=true;break;}}
+ if(wet)continue;items.push([y,x,f,b]);}
+items.sort((a,b)=>a[0]-b[0]);
+const chimneys=[],mallorns=[],torches=[];
+for(const [y,x,f,b] of items){const s=f==="peak"?0.9+h01(x,y,5)*0.9:0.8+h01(x,y,6)*0.5;
+ const r=SPR[f](x,y,s);if(f==="house")chimneys.push(r);if(f==="mallorn")mallorns.push([x,y-9]);}
+for(let x=DOOR_X+8;x<12*ZC+4;x+=11)torches.push([x,Math.round(roadY(x))-6]);
+// Moria darkness vignette away from the road
+for(let y=0;y<H;y++)for(let x=0;x<W;x++){if(biomeOf[y*W+x]!=="under"&&field("under",warpX(x,y))<.3)continue;
+ const u=field("under",warpX(x,y));const d=Math.abs(y-roadY(x));const f=1-u*clamp((d-6)/40,0,.75);put(x,y,mul(get(x,y),f));}
+
+// ---------------- palette quantisation with ordered dither (keeps the pixel-art look)
+const B4=[0,8,2,10,12,4,14,6,3,11,1,9,15,7,13,5];
+const base=document.createElement('canvas');base.width=W;base.height=H;const bctx=base.getContext('2d');
+const id=bctx.createImageData(W,H);
+for(let y=0;y<H;y++)for(let x=0;x<W;x++){const i=(y*W+x)*3,o=(y*W+x)*4;const th=(B4[(y&3)*4+(x&3)]/16-.5)*10;
+ for(let c=0;c<3;c++){let v=img[i+c]+th;v=Math.round(v/8)*8;id.data[o+c]=clamp(v,0,255);}id.data[o+3]=255;}
+bctx.putImageData(id,0,0);
+const stops=ZONES.map((z,i)=>{const x=i*ZC+ZC/2;return [x,roadY(x)];});
+const water=[];for(let i=0;i<W*H;i++)if(kind[i]===1)water.push(i);
+
+// ---------------- animation
+let t=0;const smoke=[];
+function frame(){t++;
+ ctx.drawImage(base,0,0,W*T,H*T);
+ for(const i of water){const x=i%W,y=(i/W)|0;const v=vn(x/4+t*.18,y/2.5,5);
+  if(v>.74){ctx.fillStyle="rgba(220,240,255,.5)";ctx.fillRect(x*T,y*T,T,T);}else if(v<.22){ctx.fillStyle="rgba(0,20,60,.22)";ctx.fillRect(x*T,y*T,T,T);}}
+ for(let y=0;y<H;y+=3)for(let x=0;x<W;x+=3){const v=vn((x-t*.45)/44,y/28,333);
+  if(v>.6){ctx.fillStyle=`rgba(0,0,25,${Math.min(.2,(v-.6)*1.1)})`;ctx.fillRect(x*T,y*T,3*T,3*T);}}
+ if(t%2===0)for(const [cx,cy] of chimneys)if(h01(cx,cy,t>>2)<.4)smoke.push([cx,cy,0]);
+ for(let k=smoke.length-1;k>=0;k--){const s=smoke[k];s[2]++;if(s[2]>24){smoke.splice(k,1);continue;}
+  const sx=s[0]+Math.sin(s[2]/4)*1.2+s[2]*.25,sy=s[1]-s[2]*.7;ctx.fillStyle=`rgba(225,225,230,${.55-s[2]*.022})`;
+  const r=1+Math.floor(s[2]/9);ctx.fillRect(Math.round(sx)*T,Math.round(sy)*T,r*T,r*T);}
+ for(const [x,y] of torches){const f=h01(x,y,t>>1);
+  const g=ctx.createRadialGradient((x+.5)*T,(y+.5)*T,1,(x+.5)*T,(y+.5)*T,T*14);g.addColorStop(0,`rgba(255,170,60,${.35+.15*f})`);g.addColorStop(1,"rgba(255,120,30,0)");
+  ctx.fillStyle=g;ctx.fillRect((x-14)*T,(y-14)*T,28*T,28*T);
+  ctx.fillStyle="#4a3020";ctx.fillRect(x*T,(y+1)*T,T,3*T);ctx.fillStyle=f<.5?"#ffd060":"#ff8a20";ctx.fillRect(x*T,(y-1)*T,T,2*T);ctx.fillStyle="#fff2b0";ctx.fillRect(x*T,y*T,T,T);}
+ for(const [x,y] of mallorns){const v=h01(x,y,t>>2);if(v<.3){ctx.fillStyle="rgba(255,250,220,.9)";ctx.fillRect((x+Math.floor(v*37)%9-4)*T,(y+Math.floor(v*53)%7-3)*T,T,T);}}
+ stops.forEach(([x,y],i)=>{const cx=(x+.5)*T,cy=(y+.5)*T;
+  ctx.fillStyle="rgba(0,0,0,.35)";ctx.beginPath();ctx.ellipse(cx+3,cy+4,13,7,0,0,7);ctx.fill();
+  const g=ctx.createRadialGradient(cx-4,cy-4,1,cx,cy,12);g.addColorStop(0,"#c04050");g.addColorStop(1,"#5a1424");
+  ctx.fillStyle=g;ctx.strokeStyle="#e8c060";ctx.lineWidth=3;ctx.beginPath();ctx.arc(cx,cy,11,0,7);ctx.fill();ctx.stroke();
+  ctx.font="bold 13px Georgia";ctx.textAlign="center";ctx.fillStyle="rgba(0,0,0,.7)";ctx.fillText(ZONES[i][1],cx+1,cy+27);ctx.fillStyle="#f6e8b8";ctx.fillText(ZONES[i][1],cx,cy+26);});
+ if(document.getElementById('showBounds').checked){ctx.strokeStyle="rgba(255,255,255,.35)";ctx.setLineDash([6,6]);ctx.lineWidth=1;
+  for(let i=1;i<ZONES.length;i++){ctx.beginPath();ctx.moveTo(i*ZC*T,0);ctx.lineTo(i*ZC*T,H*T);ctx.stroke();}ctx.setLineDash([]);}
+ setTimeout(()=>requestAnimationFrame(frame),100);}
+document.getElementById('status').textContent="";
+frame();
+})();
+</script>

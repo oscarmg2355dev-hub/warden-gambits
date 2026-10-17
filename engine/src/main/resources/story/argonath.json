@@ -1,0 +1,474 @@
+{
+  "id": "argonath",
+  "name": "Sarn Gebir y los Argonath",
+  "baseLevel": 43,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "El rugido de Sarn Gebir",
+      "text": "El rumor se ha convertido en rugido. Delante, el río se rompe en un caos de rocas y espuma blanca que ninguna barca podría atravesar entera: son los rápidos de Sarn Gebir. Remas con todas tus fuerzas hacia la orilla oeste y varas la barca en una playa de piedras, con los brazos temblando. Las colinas se alzan a ambos lados, grises y peladas. Tendrás que llevar la barca a hombros hasta donde el río vuelva a calmarse.",
+      "imagePrompt": "Roaring white rapids breaking among jagged rocks between grey bare hills, a young traveler dragging a small grey boat onto a stony western shore, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "Huargos en el porteo",
+      "text": "Buscas el viejo camino de porteo que te describieron los elfos y lo encuentras: una senda que sube por la orilla oeste, lejos del agua. No eres el único que la conoce. A medio camino, dos huargos te esperan sentados en mitad de la senda, como perros que guardan una puerta. Se levantan al verte, sin prisa. Dejas la barca en el suelo, con cuidado, y desenvainas.",
+      "imagePrompt": "Two wargs sitting on an old portage path above a river like gate guards, rising as a young traveler sets down a small grey boat and draws his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Buscar el viejo porteo",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": -2,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": -2,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "La orilla de piedra",
+      "text": "No das con el camino de porteo, así que bordeas los rápidos por la misma orilla, cargando la barca y dejándola en el suelo a cada salto entre las rocas. La espuma te empapa la cara. En una piedra plana ves una flecha clavada en una grieta, negra y de plumas oscuras, que vino de la otra orilla. Más allá hay otras, decenas, esparcidas entre las rocas y hundidas en la arena. Te preguntas a quién buscaban tantas flechas, y si alguna dio en el blanco.",
+      "imagePrompt": "A young traveler carrying a small grey boat from rock to rock along a roaring rapid, black orc arrows stuck in cracks among the stones, spray in the air, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bordear los rápidos a pie"
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "La senda de los porteadores",
+      "text": "Cargas la barca a hombros. Es ligera, pero el camino es largo y empinado, y pronto te arden las piernas. La senda es antigua: hay escalones tallados en la roca, gastados por siglos de pies. En algunos tramos ves marcas recientes, rozaduras en la piedra como las que dejaría la quilla de una barca al arrastrarla, y huellas de botas y de pies pequeños. Llegas a una explanada y te tumbas, con la barca a tu lado.",
+      "imagePrompt": "A young traveler carrying a small grey boat on his shoulders up worn ancient stone steps on a steep portage path, keel scrapes and small footprints on the rock, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cargar la barca a hombros"
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "Restos de una lucha",
+      "text": "Desde lo alto de la senda miras hacia la orilla este. Entre las rocas del otro lado ves hogueras apagadas y arcos rotos, abandonados con prisa. En tu orilla, en cambio, hay flechas negras clavadas en la arena y en los troncos, todas tiradas desde allí. Alguien cruzó el río de noche bajo esa lluvia de flechas y llegó a este lado. No ves sangre en las piedras ni restos de barcas rotas. Quien pasó por aquí lo hizo deprisa y bien, y se marchó antes del alba.",
+      "imagePrompt": "Seen from a high path across roaring rapids, cold campfires and broken bows on the eastern rocks, black arrows stuck everywhere in the near western shore, a young traveler looking down, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Mirar hacia la orilla oriental"
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "El explorador uruk",
+      "text": "Dejas la barca un momento al pie y subes a las rocas altas para ver el camino desde arriba, y te encuentras de frente con un orco que no se parece a los de Moria. Es grande, de piel oscura y piernas largas, y no le molesta la luz del día. En el escudo lleva pintada una mano blanca. Te mira con desprecio, como a un insecto, y desenvaina una espada ancha y corta. No hay a dónde huir.",
+      "imagePrompt": "A tall dark-skinned uruk-hai scout with a white hand painted on his shield drawing a broad short sword on high rocks in daylight, a young traveler facing him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a las rocas altas",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": 0,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "La Mano Blanca",
+      "text": "Sigues un rastro de botas que cruza el porteo de oeste a este y te topas con tres uruk-hai que bajan hacia el río. Llevan cascos con una runa blanca y escudos con una mano pintada. No vienen de Mordor, piensas: vienen del oeste, de alguien que no es el Ojo pero que también busca algo. Uno te señala y gruñe una palabra. Los otros dos se separan para rodearte.",
+      "imagePrompt": "Three uruk-hai with white-rune helmets and white hand shields spreading out to surround a young traveler on a rocky portage trail, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir un rastro de botas",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -4,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -4,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -4,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "La barca herida",
+      "text": "Al dejar la barca en el suelo ves que una roca le ha abierto una grieta en el costado. Te sientas a repararla con lo que tienes: resina de un pino, un trozo de la capa vieja y un palmo de cuerda élfica. Trabajas despacio, como te enseñaron en la orilla del bosque dorado. Al terminar, la grieta apenas se ve. La barca no es tuya, piensas, solo te la han prestado, y quieres devolverla al río entera.",
+      "imagePrompt": "A young traveler repairing a crack in the side of a small grey boat with pine resin and grey rope on a rocky ledge, rapids below, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Reparar la barca"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "La calzada antigua",
+      "text": "La senda se convierte durante un trecho en una calzada de losas, rota y cubierta de líquenes. A los lados hay restos de muros y un pilar caído con un emblema borrado: un árbol, quizá, y unas estrellas. Hombres de un reino antiguo construyeron este camino cuando el río era suyo. Ahora solo pasan orcos y viajeros perdidos. Acaricias la piedra fría y sigues, con la barca a cuestas.",
+      "imagePrompt": "A broken lichen-covered paved road with ruined walls and a fallen pillar bearing a faded tree and stars emblem, a young traveler carrying a grey boat along it, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la calzada antigua"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "La sombra alada",
+      "text": "Un frío repentino te para en seco. El sol se apaga como si una nube lo tapara, pero no hay nubes. Muy alto, sobre la orilla este, una sombra con alas enormes cruza el cielo hacia el sur. Te tiras bajo una roca y te quedas quieto, con el corazón golpeando. Conoces ese frío: lo sentiste en la Cima, y en el vado. La sombra se aleja. Pasa mucho rato antes de que te atrevas a salir.",
+      "imagePrompt": "A huge dark winged shadow crossing the sky high over grey hills, dimming the sun, a young traveler hiding beneath an overhanging rock in terror, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Esconderse bajo las rocas"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "La poza",
+      "text": "Bajas a una poza tranquila, a un lado de los rápidos, para llenar el odre. Al inclinarte ves en el agua el reflejo de algo detrás de ti. Un huargo solitario, más grande que los otros, con una cicatriz que le cruza el hocico, ha bajado sin hacer ruido. No ataca enseguida. Te mide, como si ya hubiera cazado hombres antes. Te incorporas despacio, con el agua goteándote de la mano.",
+      "imagePrompt": "A huge scarred lone warg reflected in a calm pool beside rapids, standing behind a young traveler kneeling to fill a waterskin, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar a la poza",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": 1,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "El campamento uruk",
+      "text": "Sigues un hilo de humo hasta una hondonada entre las rocas. Hay un campamento: un fuego mal apagado, huesos roídos y armas apiladas, y cuatro uruk-hai que discuten en voz alta en una lengua áspera. Uno arroja un escudo con la mano blanca contra una piedra. Te agachas, pero el viento cambia, y el más cercano levanta la cabeza, olfatea y te mira directamente.",
+      "imagePrompt": "Four uruk-hai arguing around a smoky fire in a rocky hollow with gnawed bones and stacked weapons, one sniffing the air and spotting a young traveler hiding behind a rock, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acercarse al humo",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "El escudo abandonado",
+      "text": "En la ladera encuentras un escudo negro abandonado entre las piedras, con una mano blanca pintada en el centro. Al lado hay un yelmo con una runa en forma de rayo, también blanca. Los dejas donde están. Ningún orco de las montañas lleva esas señales. Recuerdas lo que decían en Eregion de los cuervos y de la torre del mago en el sur. Alguien más, además del Ojo, ha enviado a sus siervos a este río.",
+      "imagePrompt": "A black shield painted with a white hand and a helmet with a white rune lying among stones on a hillside, a young traveler kneeling to look at them, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Registrar la ladera"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "La garganta",
+      "text": "La senda se mete en una garganta estrecha, con paredes de roca que se cierran sobre tu cabeza. El estruendo del río llega multiplicado por los ecos, y tienes que gritar para oírte a ti mismo. Llevas la barca de lado para que quepa. En algún punto la luz casi desaparece. Avanzas palmo a palmo, rozando la piedra con los codos, hasta que por fin ves claridad al otro lado.",
+      "imagePrompt": "A narrow rocky gorge with towering walls closing overhead, a young traveler squeezing through sideways carrying a small grey boat, faint light at the far end, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Avanzar por la garganta"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "El remanso",
+      "text": "Al pie de los últimos rápidos el río forma un remanso amplio y oscuro, donde la espuma gira despacio antes de seguir. Bajas la barca hasta el agua con cuidado y la dejas flotar. Aguanta. La pruebas remando en círculo, cerca de la orilla, hasta que confías en ella otra vez. Los brazos te duelen de llevarla, pero sentir de nuevo la corriente bajo el casco es como volver a respirar.",
+      "imagePrompt": "A wide dark pool below the last rapids with slowly swirling foam, a young traveler relaunching a small grey boat and paddling in a circle near the shore, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Botar la barca en el remanso"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "El fin de los rápidos",
+      "text": "Los rápidos quedan atrás. El río vuelve a ser uno solo, profundo y rápido, encajado entre colinas cada vez más altas. Vuelves a la barca y te dejas llevar, atento a las piedras. El rugido de Sarn Gebir se apaga a tu espalda y en su lugar oyes el silbido del viento entre las rocas. Comes un bocado de pan élfico y cuentas los días. Ya has perdido la cuenta, y eso te inquieta más que los orcos.",
+      "imagePrompt": "A young traveler paddling a small grey boat down a deep fast river between rising grey hills, the white rapids receding behind him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Volver al agua"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "Los acantilados",
+      "text": "Las colinas se convierten en acantilados verticales que encajonan el río. El agua corre oscura y profunda entre paredes que te tapan el cielo. Arriba, muy arriba, ves pasar pájaros negros que no graznan. Apenas hay orillas donde varar: si algo te ataca aquí, casi solo te queda remar. Sigues adelante, pegado a una de las paredes, y la luz del atardecer pinta de rojo la roca.",
+      "imagePrompt": "Sheer cliffs enclosing a dark deep river, black birds silently circling high above, a young traveler paddling a small grey boat close to the rock wall at red sunset, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Remar entre los acantilados"
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "Cuernos en la ladera",
+      "text": "Desde lo alto de una ladera oyes, lejos, el sonido de un cuerno ronco y áspero. Otro le responde más al sur, y luego un tercero, al oeste. No son señales de caza: son patrullas que se llaman unas a otras, muchas, repartidas por las colinas. Los siervos de la Mano Blanca peinan esta tierra en busca de algo, y tú estás en medio. Te quedas inmóvil, intentando adivinar de dónde vienen. El viento se lleva el sonido y no vuelve.",
+      "imagePrompt": "A young traveler standing still on a high grey hillside listening to distant harsh horn calls answering each other, the river far below, wind in his cloak, hazy hills to the south, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Escuchar desde la ladera"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "Noche en la grieta",
+      "text": "Encuentras una grieta en la roca, bastante honda para meterte en ella con la barca, y decides pasar allí la noche. No enciendes fuego. Desde dentro oyes pasar patrullas por la ladera: pasos pesados, gruñidos, el roce de una lanza contra la piedra. Te envuelves en la capa gris y te quedas quieto. Nadie se asoma. Al amanecer sales entumecido, pero entero, y sigues hacia el sur.",
+      "imagePrompt": "A young traveler hiding wrapped in a grey cloak inside a deep rock cleft with a small grey boat at night, dark silhouettes of a patrol passing outside, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acampar en una grieta"
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "Figuras en la niebla",
+      "text": "El río se ensancha un poco y una niebla baja cubre el agua. A lo lejos, río abajo, dos formas enormes se alzan a ambos lados del cauce, más altas que cualquier torre que hayas visto. Al principio crees que son montañas, pero tienen hombros, y cabezas coronadas. Recuerdas el mapa de los elfos. Sientes miedo y algo parecido al respeto. Remas hacia ellas despacio.",
+      "imagePrompt": "Two colossal stone figures looming faintly through low mist on either side of a river far downstream, a young traveler in a small grey boat paddling slowly toward them, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Remar hacia la niebla"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "La patrulla de la orilla",
+      "text": "Cuando la orilla oeste se abre en una franja de grava, bajas a tierra y sigues a pie, tirando de la barca con la cuerda. Una patrulla te corta el paso: dos uruk-hai con la mano blanca en el escudo y dos huargos que tiran de sus correas. Los uruk sonríen al verte solo. Uno suelta a su huargo y le grita algo. No hay tiempo para subir a la barca. Atas la cuerda a una raíz y te plantas en mitad de la senda.",
+      "imagePrompt": "Two uruk-hai with white hand shields releasing two wargs on a riverbank path, a young traveler tying a grey boat to a root and standing his ground, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la orilla oeste",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3,
+            "reaction": {
+              "atHpPct": [
+                30
+              ],
+              "combos": [
+                "21212"
+              ]
+            }
+          },
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -5,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          },
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": -5,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 2
+          },
+          {
+            "name": "Huargo",
+            "portrait": "warg",
+            "levelOffset": -5,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 2
+          }
+        ]
+      }
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "Los reyes de piedra",
+      "text": "Las dos figuras ya no dejan dudas: son reyes de piedra, tallados en la roca, con la mano izquierda alzada hacia el norte como si ordenaran detenerse. La corriente te arrastra hacia la puerta que forman. Pero a sus pies, en una repisa de roca sobre el agua, te espera un uruk más grande que los demás, con el yelmo pintado de blanco: el capitán de la Mano Blanca, con un guerrero a su lado. Varas como puedes y subes a la repisa a enfrentarte con él.",
+      "imagePrompt": "A huge uruk captain in a white-painted helm with a warrior beside him on a rock ledge at the feet of two colossal stone kings with raised hands, a young traveler climbing from a grey boat, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          {
+            "name": "Capitán uruk de la Mano Blanca",
+            "portrait": "boss_argonath",
+            "levelOffset": 11,
+            "pattern": [
+              "12",
+              "121",
+              "1212",
+              "13",
+              "131",
+              "1313",
+              "31",
+              "123"
+            ],
+            "everyNTicks": 1,
+            "modes": {
+              "defenseBelowPct": 15,
+              "attackAbovePct": 70,
+              "maxDefenses": 1,
+              "defense": [
+                "2132",
+                "21",
+                "212",
+                "2121",
+                "21212",
+                "12",
+                "121"
+              ]
+            }
+          },
+          {
+            "name": "Uruk-hai de la Mano Blanca",
+            "portrait": "uruk",
+            "levelOffset": -4,
+            "pattern": [
+              "11",
+              "12",
+              "121",
+              "1212",
+              "12121"
+            ],
+            "everyNTicks": 3
+          }
+        ]
+      }
+    }
+  ]
+}

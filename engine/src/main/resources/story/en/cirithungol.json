@@ -1,0 +1,119 @@
+{
+  "id": "cirithungol",
+  "name": "Morgul Vale and Cirith Ungol",
+  "nodes": {
+    "cirithungol_1_0": {
+      "title": "The Green Light",
+      "text": "Beneath a brown sky that no longer lets the sun be seen, you go on southward to a crossroads in the middle of a ring of trees. There you take the road that climbs east, towards the mountains. It leads you into a cold valley where everything glows with a sickly green light: the river, the meadows and, at the far end, a city of pale walls with a tall tower crowned with light. You have no intention of going near. Up the northern wall of the valley climbs a path of hewn steps, and in its dust you see small footprints once again."
+    },
+    "cirithungol_2_0": {
+      "title": "The Pale Flowers",
+      "text": "You skirt the valley through the meadows that run down to the river, seeking the foot of the path without passing near the city. The meadows are covered in white flowers that glimmer faintly in the gloom, like little moons, and smell of rot, of an open grave. The river runs black and soundless. You dare not drink from it, thirsty though you are. You wrap yourself in your cloak and walk quickly, eyes lowered, while the green light follows you over the grass.",
+      "choiceLabel": "Skirt the river meadows"
+    },
+    "cirithungol_2_1": {
+      "title": "The Valley Patrol",
+      "text": "You begin to climb the path and at the first bend come face to face with two orcs coming down. They are not like those of the mountains: they wear black mail and on their breasts a painted device, a white moon with a skull for a face. They stop dead and sniff the air. One says something in a hoarse voice and laughs; the other has already drawn a long, curved knife. They stand between you and the climb, and they have no thought of moving aside.",
+      "choiceLabel": "Climb straight up the path"
+    },
+    "cirithungol_3_0": {
+      "title": "The Orc at the Stream",
+      "text": "A stream comes down from the heights and crosses the meadows to join the river. Its water is so cold that your ankles ache as you wade it, and it has the same greenish sheen as everything else. Halfway across you hear a splash upstream: an orc with the white moon on his breast has crouched to fill a bucket. He raises his head, sees you and drops the bucket, which floats away. He runs at you through the water, sword already out.",
+      "choiceLabel": "Cross the icy stream"
+    },
+    "cirithungol_3_1": {
+      "title": "Webbed Clefts",
+      "text": "To keep off the path, where you might meet someone, you climb the clefts in the wall, clutching at roots and ledges. The clefts are full of grey cobwebs, old and dusty, so thick they look like rags. As you brush one aside with your hand, something moves within. Two spiders the size of dogs come out of the cleft, black and hairy, with eyes that gleam like beads. One drops down above your head. The other cuts off your retreat.",
+      "choiceLabel": "Climb the clefts"
+    },
+    "cirithungol_3_2": {
+      "title": "The Straight Stair",
+      "text": "The path becomes a straight stair, hewn in the rock, climbing on and on without rest into the darkness. The steps are high and narrow, worn in the middle. There is no rail, nothing to hold on to, only the wall on one side and the drop on the other. You climb counting steps until you lose count. Your legs are burning. When you turn to look, the city of the green light lies far below, small as a toy.",
+      "choiceLabel": "Climb the hewn stair"
+    },
+    "cirithungol_3_3": {
+      "title": "The Silence of the Valley",
+      "text": "You hide among some rocks to wait for the danger to pass. After a while you realise that you can hear nothing: no wind, no water, no bird, not even your own breathing. You clap your hands and the sound dies in the air as if it had never been. The green light of the city rises and falls slowly, like the pulse of something asleep. You do not know how long you stay like that. When at last you rise, your hands are numb.",
+      "choiceLabel": "Wait among the rocks"
+    },
+    "cirithungol_4_0": {
+      "title": "The Post of the Moon",
+      "text": "Beside the path stands an ancient guard-post of white stone, built by folk far better than orcs. Above the door a crescent moon was once carved, beautiful, but someone has hacked at it and painted a skull over it. Inside there are animal bones, ashes and filth. You sit for a moment on the threshold. You think that this valley, before the green light, must have been a place where the moon was mirrored in the river.",
+      "choiceLabel": "Enter the old post"
+    },
+    "cirithungol_4_1": {
+      "title": "The Collapse",
+      "text": "Higher up, a stretch of the path has fallen away, and between the two sides there is a gap too wide to leap. Above it, in the wall, a horn of rock juts out. You cast the grey Elven rope, catch it on the horn at the second try and swing across, your feet against the rock and the abyss beneath. On the other side you give a sharp tug, and the rope comes loose and falls into your hands. You coil it carefully.",
+      "choiceLabel": "Get past the fallen stretch"
+    },
+    "cirithungol_4_2": {
+      "title": "The Fire in the Niche",
+      "text": "You go on climbing to a landing and see a reddish light: in a niche in the wall, four orcs of the white moon are warming themselves at a small fire, arguing loudly about something that has happened above. You press yourself against the rock to slip past. But the wind shifts, carries your scent to them, and the voices fall suddenly silent. Four heads turn towards the darkness where you stand. One takes up a burning brand and comes closer, sniffing.",
+      "choiceLabel": "Follow a firelight"
+    },
+    "cirithungol_4_3": {
+      "title": "The Fleeing Orc",
+      "text": "You hear footsteps running down and press yourself into a crack in the wall. An orc passes right by you without seeing you, stumbling, looking back over his shoulder. His helm is askew and there is blood on his arm, and he mutters something over and over, like a madman. He is not fleeing from you: he is fleeing from something above. He drops a curved knife on the steps and does not even stop to pick it up. You wait until his footsteps fade below before going on.",
+      "choiceLabel": "Press against the wall"
+    },
+    "cirithungol_4_4": {
+      "title": "The Falling Stones",
+      "text": "You keep climbing, step by step. Suddenly there is a sharp crack above, and then a growing din: stones bouncing down the stair, some as big as heads. You flatten yourself against the wall while they whistle past a hand's breadth from you and vanish into the void. One grazes your shoulder and leaves your arm numb for a good while. When the noise stops, you stay still, waiting for the next. It does not come. You will never know whether they fell of their own accord.",
+      "choiceLabel": "Climb on step by step"
+    },
+    "cirithungol_4_5": {
+      "title": "The Gorge of Webs",
+      "text": "To spare yourself a stretch of stair, you cut through a narrow gorge between two walls. It is a mistake. The gorge is blocked from side to side by cobwebs, one after another, like the sails of a ship. You cut the first with your sword; it is tough and sticky as wet leather. As you cut the second, the whole gorge trembles. Four spiders come swiftly down the threads from the shadows above, clacking their jaws. Behind you, the webs already close the way.",
+      "choiceLabel": "Cut through a gorge"
+    },
+    "cirithungol_4_6": {
+      "title": "The Counted Cakes",
+      "text": "You sit down in the shelter of a rock and open your pack. You count what is left of the Elves' bread: three cakes, still wrapped in their leaves. You break one, eat half of it slowly and put the rest away. The taste brings back to you for a moment the golden light of the trees, the water of the silver stream, the serene voice of the Lady. You feel stronger than you ought to. You take a sip from your waterskin and set off again.",
+      "choiceLabel": "Rest behind a rock"
+    },
+    "cirithungol_4_7": {
+      "title": "The Searching Light",
+      "text": "You lean over the edge to look at the valley. At that moment the light of the tower grows stronger, and a green beam unfolds and sweeps slowly across the walls, like a hand groping in the dark. It draws near you. You throw yourself behind a rock and curl up, not breathing. The beam passes overhead, lights the stone beside you with a sickly gleam and moves on. You wait for it to die out completely before you move again.",
+      "choiceLabel": "Look over the edge"
+    },
+    "cirithungol_5_0": {
+      "title": "The Ridge",
+      "text": "At last you reach the top of the climb. Before you the mountain rises in a jagged ridge, black against the brown sky, and in it opens a cleft: the pass. Beside it, perched upon the rocks, stands a dark tower with a single window lit red. From here you see no guards on its walls, but neither do you know whether they are watching you. You resolve that, come what may, you will not pass beneath that tower if you can help it.",
+      "choiceLabel": "Climb to the ridge"
+    },
+    "cirithungol_5_1": {
+      "title": "The Stench",
+      "text": "The air changes. You begin to notice a sweet, rotten smell unlike anything you know, growing thicker at every step. Among the rocks lie the bones of goats, of wolves and of orcs, empty and clean, as if something had sucked the life from them and cast away the rest. Grey threads are tangled in them. You cover your nose with your cloak. You do not wish to know what feeds like this, but you suspect you soon will.",
+      "choiceLabel": "Follow a strange smell"
+    },
+    "cirithungol_5_2": {
+      "title": "The Ledge",
+      "text": "Exhausted, you look for a place to sleep and find only a narrow ledge, little wider than your shoulders, above the void. You pass the Elven rope around a spike of rock and around your waist, and lie on your side against the wall. You sleep fitfully, waking every time a stone falls. No dawn comes, only a brownish grey a little paler than before. You untie the rope, coil it and put it away, and go on climbing.",
+      "choiceLabel": "Sleep on a ledge"
+    },
+    "cirithungol_5_3": {
+      "title": "The Fumes",
+      "text": "A thick pall of fumes comes down from the pass and crawls over the hillside, driven by an east wind. It smells of sulphur and burnt iron, and it makes your eyes stream. You tie a cloth over your mouth and go forward almost blindly, feeling the wall with one hand. You cough until your chest aches. When at last you come out of the smoke, your face is black with soot and your mouth bitter. It is the first breath of the land that lies beyond.",
+      "choiceLabel": "Pass through the fumes"
+    },
+    "cirithungol_6_0": {
+      "title": "The Black Mouth",
+      "text": "The path is lost among rocks and you follow it to the end. There, in the wall, opens a black mouth, taller than two men, from which comes a cold and fetid air. Above, a dark tower perched on the ridge, with a red window, watches the pass; you do not wish to go beneath it, and there is no other way east. Torn webs hang across the threshold, as if someone had broken through them not long ago, and on the stone there are greenish stains, dried. You draw a deep breath, grip your sword and go in.",
+      "choiceLabel": "Seek a pass in the rocks"
+    },
+    "cirithungol_6_1": {
+      "title": "The Brood",
+      "text": "You turn off the path into a hollow among the rocks, so that no one can see you from above. The ground is covered in dry husks, like those of enormous eggs, and threads that stick to your boots. Too late you understand that it is a nest. Three young spiders, the size of calves, come out from beneath a slab and slowly surround you, raising their forelegs. Their sweet, rotten smell fills the hollow.",
+      "choiceLabel": "Climb through the hollow"
+    },
+    "cirithungol_7_0": {
+      "title": "Shelob",
+      "text": "In the end only one way remains: the tunnel that runs through the mountain. Inside, the darkness is complete and the stench unbearable. You go forward feeling along the wall, among webs that cling to your face. Then you hear an enormous scraping, a click, and ahead of you two clusters of eyes kindle, one of them dull and crusted, wounded not long ago. A gigantic spider fills the tunnel from side to side, and beside her a younger one lets itself down. It is Shelob, the ancient mistress of this tunnel, and she is hungry."
+    }
+  },
+  "rivals": {
+    "Orco de Morgul": "Morgul Orc",
+    "Araña": "Spider",
+    "Ella-Laraña": "Shelob"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "id": "bruinen",
+  "name": "Ford of Bruinen",
+  "nodes": {
+    "bruinen_1_0": {
+      "title": "The Vale of the Bruinen",
+      "text": "Dawn breaks as you leave the troll-hills behind, your body aching and your sword notched. The Road now descends through a long gorge between dark pines, and the air fills with a growing murmur: the Bruinen, the river that comes down from the mountains and marks the border of the land of the Elves. In the mud of the highway you see deep prints of shod hooves, many and close together, all running east. No one rides like that for pleasure. Something, or someone, was hunted along here only a few days ago."
+    },
+    "bruinen_2_0": {
+      "title": "The Gorge of the Road",
+      "text": "You follow the highway as it drops in tight bends between walls of rock. With every step the voice of the river grows louder, though you cannot yet see it. The hoofprints never pause: not a fire, not a halt to water the horses. Those who left them were in a hurry, or hungry for something. At midday, at a bend, you think you see a figure crouch behind a crag above the Road and vanish. You stand still for a long while, your hand on the hilt.",
+      "choiceLabel": "Follow the Road to the ford"
+    },
+    "bruinen_2_1": {
+      "title": "The Wooded Slope",
+      "text": "You would rather not walk where those riders have passed, so you strike into the forest that clothes the slope. You descend among birches and pines, skirting slippery stones and brooks that run down to the valley. It is slower, but here no one will see you from the Road. By mid-morning you come upon the carcass of a deer, half devoured, marked by bites from jaws far too large for any common wolf. The beast's tracks lead away through the ferns. Higher up, a crag of grey stone commands the whole valley.",
+      "choiceLabel": "Descend the wooded slope"
+    },
+    "bruinen_3_0": {
+      "title": "Small Feet in the Mud",
+      "text": "You kneel beside the highway and study the mud with care. Beneath the hoofprints, almost erased by them, lie older tracks: those of a laden pony, the boots of a tall man and small bare feet with broad toes. Hobbit feet. You remember the rumours in Bree about the Ranger who was guiding some halflings eastward. They passed this way before the riders, though not long before. What you see nowhere are tracks coming back, neither theirs nor the others'.",
+      "choiceLabel": "Examine the tracks"
+    },
+    "bruinen_3_1": {
+      "title": "The Watcher at the Bend",
+      "text": "You leave the highway and climb towards the crag where you saw the shadow move. Behind it crouches a man with matted hair and a brown cloak, a long knife at his belt: a spy from Dunland. He has been watching the Road, and judging by the bed of branches and the breadcrumbs, he has been at it for days. Seeing you, he hurls himself at you without a word. Further down, among the pines, you hear branches snapping: someone else is fleeing downhill, never looking back.",
+      "choiceLabel": "Chase the figure at the bend"
+    },
+    "bruinen_3_2": {
+      "title": "The Wargs in the Bracken",
+      "text": "You follow the tracks through the ferns with your sword bare. Soon you hear the growling: in a clearing, three Wargs are fighting over the remains of another kill. They are gaunt, their coats caked with mud, but no less savage for it, and the moment the wind carries your scent to them they leave the meat and turn towards you. One circles to your left, another to your right, and the third faces you, baring its teeth. There is no tree to climb and nowhere to run. All that remains is to fight.",
+      "choiceLabel": "Follow the beast's trail"
+    },
+    "bruinen_3_3": {
+      "title": "The Grey Crag",
+      "text": "You climb the crag, clinging to roots and cracks, up to a ledge that overlooks the entire valley. Below, the Bruinen runs wide and turbid, a muddy brown that bears no likeness to clear mountain water. Whole trunks float in the current, and along the banks lie bands of mud and stones carried far higher than they should be. The river has risen suddenly, and not long ago, as if something had burst it from its bed. To the east, on the far bank, the forest climbs towards hidden valleys.",
+      "choiceLabel": "Climb the stone crag"
+    },
+    "bruinen_4_0": {
+      "title": "The Hollow of the Camp",
+      "text": "The small tracks turn aside from the Road for a stretch and lead you to a hollow sheltered by rocks. Someone camped here: there is a ring of cold ash, pine boughs laid out as a bed and, among them, a scrap of bandage with dark stains. It still smells, very faintly, of crushed leaves with a sweet, clean scent you do not recognise. One of the travellers was wounded, and someone tended him with a Ranger's skill. You keep the bandage without quite knowing why and return to the highway.",
+      "choiceLabel": "Find where the travellers camped"
+    },
+    "bruinen_4_1": {
+      "title": "The Gallop",
+      "text": "You follow the trail of the black horses. Further on, the hoofprints lengthen, sink deeper and spatter mud to the sides: here they broke into a gallop. For a stretch, among them, you see different prints, those of a lighter horse that barely marks the ground, as if it ran ahead of all the rest. At the end of the stretch, a rag of black cloth flutters on a low branch. When you touch it your hand turns icy, as though you had plunged it into snow. You know that cold: you felt it on Weathertop.",
+      "choiceLabel": "Follow the black horses"
+    },
+    "bruinen_4_2": {
+      "title": "The Spy's Pack",
+      "text": "When the spy falls, you go through his belongings. He carries little: hard bread, a threadbare blanket, a flint and a purse of silver coins minted far from here. But in the lining of his cloak you find something more: a scrap of leather with a crude drawing of the Road, the river and the ford, and marks beside every bend. Someone wants to know who crosses into the land of the Elves, and pays well for it. You keep the leather. Perhaps the lords beyond the river will wish to see it.",
+      "choiceLabel": "Search the spy's pack"
+    },
+    "bruinen_4_3": {
+      "title": "The One Who Fled",
+      "text": "You go down the slope after the other man, guided by snapped branches and disturbed stones. He runs like someone who knows the ground well, and at times you lose sight of him. At last you reach the bank of a swollen stream and see him on the far side, scrambling west in haste, back the way you came. It is not worth following him: whatever he has to tell, he will tell. You stand a moment watching the water, which runs murky, laden with branches and mud.",
+      "choiceLabel": "Pursue the second man"
+    },
+    "bruinen_4_4": {
+      "title": "The Cold Water",
+      "text": "The Wargs have left scratches on your arm and a shallow bite on your leg. You go down to a brook leaping between the stones and wash your wounds in the icy water, gritting your teeth. Then you bind them with strips torn from your own shirt. As you work, you notice that the brook sweeps leaves and branches along at a strange speed, and that on the bank stones there is a line of dried mud far above the water. A few days ago, this whole valley lay beneath a flood.",
+      "choiceLabel": "Wash your wounds in the brook"
+    },
+    "bruinen_4_5": {
+      "title": "The Den",
+      "text": "You follow the Wargs' trail up the slope to a cleft between pine roots, where the earth is churned and reeks of carrion. It is their den. Inside lie bones of deer, of sheep, and others you would rather not look at closely. By the entrance you find a severed leather strap, the kind used by the wolf-riders of the mountains. These beasts were not here by chance: someone brought them, or drove them towards the ford. You step out into the clean air with an unease that will not leave you.",
+      "choiceLabel": "Seek out the Wargs' den"
+    },
+    "bruinen_4_6": {
+      "title": "The Fallen Trees",
+      "text": "You climb down from the crag to the bank of the Bruinen. Up close, the flood is more astonishing still: whole trees torn up by the roots and heaped like straw, boulders the size of a cart shifted from their places, and the sand covered with branches and dried foam. The water has fallen somewhat, but it still roars, swift and cold. It has not rained enough for this. A woodcutter from Bree would say it was a storm in the mountains. You, after all you have seen this autumn, are no longer so sure.",
+      "choiceLabel": "Go down to the riverbank"
+    },
+    "bruinen_4_7": {
+      "title": "The Cleft in the Crag",
+      "text": "You find a cleft in the rock, deep enough to shelter you from the wind, and decide to rest a while before going on. You fall asleep without meaning to. You are woken, late in the afternoon, by a sound from far away downstream: a long, shrill cry that belongs to no animal. Your skin crawls, for you know that cry. You wait, motionless, your sword across your knees, but it does not come again. Only the murmur of the water remains, and the beating of your own heart.",
+      "choiceLabel": "Shelter in a cleft"
+    },
+    "bruinen_5_0": {
+      "title": "The Old Warg",
+      "text": "A deer trail runs down towards the ford through the birches, and you take it because it seems the shortest way. It is narrow and covered with wet leaves. Halfway down, the forest falls suddenly silent. A huge old Warg steps out from behind a trunk and plants itself in the middle of the trail. Its muzzle is grey and a scar runs across its back. It does not attack at once: it studies you, as if it knew you have been days on the road and are weary.",
+      "choiceLabel": "Take the deer trail"
+    },
+    "bruinen_5_1": {
+      "title": "Watchers by the River",
+      "text": "You let the noise of the river guide you as it draws ever closer. In a clearing beside some rocks, two men of Dunland sit before a small, smokeless fire, their eyes fixed on the far bank. They speak low in their harsh tongue. One of them turns, sees you and gives a shout. In a moment both are on their feet, knives in hand. They have no intention of letting anyone tell that they were keeping watch here.",
+      "choiceLabel": "Follow the sound of water"
+    },
+    "bruinen_5_2": {
+      "title": "The Pack on the Scree",
+      "text": "To save time, you cut across a scree: a slope of loose stones, without a single tree, running straight down to the river valley. The stones roll beneath your boots and the noise betrays every step. Halfway across you hear howling above. Four Wargs come bounding down from rock to rock, far nimbler than you on this ground. There is nowhere to hide. You find a large boulder, set your back against it so they cannot surround you, and await the first leap with your sword raised.",
+      "choiceLabel": "Cross the scree"
+    },
+    "bruinen_5_3": {
+      "title": "The Scarred Man",
+      "text": "You would rather not go down to the ford yet, so you climb to some high crags from which you can see without being seen. Or so you believe. Between two rocks, a man is waiting for you: a spy from Dunland, hardened and with the look of one who has killed more than once. He carries a short sword of good steel, and a scar splits his cheek. He has watched you coming from afar. He smiles without mirth, spits into his palm and advances towards you.",
+      "choiceLabel": "Skirt round by the high crags"
+    },
+    "bruinen_6_0": {
+      "title": "The Ford",
+      "text": "At dusk you reach at last the Ford of Bruinen, where the Road enters the river and climbs out on the far bank, steep and dark with trees. The water still runs high and murky. This side of the bank is a chaos of mud, stones and branches, and in it you see things that tighten your stomach: black hoofprints sunk in the mire, rags of dark cloth snagged on the brambles and, half buried in the sand, the body of a great black horse, drowned. You decide to wait for the moon to rise before crossing.",
+      "choiceLabel": "Go down to the ford"
+    },
+    "bruinen_6_1": {
+      "title": "The Vigil in the Grove",
+      "text": "You do not trust yourself to approach the water in the open, so you post yourself in a grove from which you can see the whole ford. Night falls. The hours pass and nothing moves but the river. Then, behind you, you hear panting: two Wargs have followed your trail here and split apart to attack you from both sides. You fight among the trunks by the light of a pale moon. And, above the clamour, you sense that something on the bank seems to be listening.",
+      "choiceLabel": "Watch the ford from the trees"
+    },
+    "bruinen_7_0": {
+      "title": "The Black Rider",
+      "text": "Beneath the moon, you approach the water's edge to cross. Then the mud of the bank stirs. A tall figure rises from the mire, wrapped in a tattered, sodden black cloak: a horseless Black Rider, left behind on the western bank by the flood. You feel the same cold as on Weathertop, but more bitter, as if the creature, humiliated, were seeking someone on whom to take its revenge. It draws a pale blade. Behind you the river roars louder, and on the far bank a white light moves among the trees."
+    }
+  },
+  "rivals": {
+    "Espía dunlendino": "Dunlending Spy",
+    "Huargo": "Warg",
+    "Huargo viejo": "Old Warg",
+    "Espía dunlendino veterano": "Veteran Dunlending Spy",
+    "Jinete Negro": "Black Rider"
+  }
+}

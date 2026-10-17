@@ -1,0 +1,119 @@
+{
+  "id": "amonhen",
+  "name": "Amon Hen",
+  "nodes": {
+    "amonhen_1_0": {
+      "title": "The Lake of the Three Hills",
+      "text": "Beyond the kings of stone, the river opens into a long, still lake shut in between hills. In its midst rises a tall, sheer island, and at the far end thunders a roar that never ceases: a great waterfall you cannot yet see. On the western shore, at the foot of a wooded hill, a green lawn runs down to the water. You beach the boat there and leave it on the grass. The Elves called that hill Amon Hen, the Hill of the Eye. No bird sings. From the west, far away, come the hoarse calls of horns, ever fainter, moving off."
+    },
+    "amonhen_2_0": {
+      "title": "The Crows of the Lawn",
+      "text": "You cross the lawn towards the trees. The grass is trampled in broad swathes, as though a crowd had run over it very recently, and there are dark stains on the green. At the edge of the wood a flock of black crows bursts up from the ferns. Most fly off westward, cawing, but two circle over your head and dive at you, talons first. They are crebain, spying birds that do not behave like crows.",
+      "choiceLabel": "Cross the lawn"
+    },
+    "amonhen_2_1": {
+      "title": "The Lakeshore",
+      "text": "You would rather not enter the wood yet, and follow the shore southward along a strip of pebbles. The water of the lake is so still that it mirrors the hills upside down. You find the remains of an old wall, covered in moss, and a little further on some stone steps climbing among the trees towards the summit. To the south the thunder of the falls grows, and a column of white spray rises above the water. You sit for a moment on a stone. Everything is far too quiet.",
+      "choiceLabel": "Follow the lakeshore"
+    },
+    "amonhen_3_0": {
+      "title": "Beneath the Trees",
+      "text": "Beneath the trees the ground is churned up, littered with broken branches and black arrows lodged in the trunks. Among the ferns lie dead orcs, many of them, of two different kinds. Some are large, with a white hand painted on their shields. Others, smaller, bear a red eye on their helms. Two masters, you think, and neither of them a friend. You do not know who fought them here, or whether anyone survived. You walk slowly, touching nothing, your hand on the hilt.",
+      "choiceLabel": "Enter the wood"
+    },
+    "amonhen_3_1": {
+      "title": "The Muddied Stream",
+      "text": "A stream runs down from the hill to the lake, and you want to fill your waterskin. But the water comes down cloudy, stirred up by hundreds of feet that crossed it higher up. In the mud of the bank there are prints of iron-shod boots, so many that they tread on one another, and all go the same way: westward, away from the lake. Some are very deep, as of someone bearing a load. You wait for the water to clear and drink, gazing to where the trail disappears.",
+      "choiceLabel": "Go down to the stream"
+    },
+    "amonhen_3_2": {
+      "title": "The Ancient Stair",
+      "text": "You climb the ancient stair. The steps are broad and worn, hewn centuries ago so that kings might ascend to the summit without weariness. Roots and moss grow between the stones. As you rise, the wood thins and the lake appears below, ever smaller, with the island in its midst like the prow of a ship of stone. You stop to catch your breath on a landing. Above, against the sky, you see something that looks like a carved seat.",
+      "choiceLabel": "Climb the stone steps"
+    },
+    "amonhen_3_3": {
+      "title": "The Path to the Falls",
+      "text": "You follow the shore towards the thunder. The path narrows between the water and a wall of rock, and the air fills with a fine drizzle. Rounding a crag you meet two Uruk-hai returning from the shore with wet boots. On the shoulder of one perches a black crow, which caws and points at you with its beak. Without a word the Uruk-hai part to close the path on both sides, and the crow takes wing.",
+      "choiceLabel": "Walk towards the falls"
+    },
+    "amonhen_4_0": {
+      "title": "The Spring in the Wood",
+      "text": "Far from the dead, in a hollow of the wood, you find a spring that wells from a stone and falls into a carved basin strewn with leaves. The water is cold and clean. You wash your face and hands, then sit with your back against the stone to eat a piece of Elven bread. For the first time all day you hear a bird. You close your eyes for a moment. When you open them, the light has changed and the afternoon is wearing on.",
+      "choiceLabel": "Seek clean water"
+    },
+    "amonhen_4_1": {
+      "title": "Dust in the West",
+      "text": "You climb to a clearing from which the west can be seen. Beyond the hill the land falls away to vast grasslands, green and brown, vanishing into the horizon. Very far off, a dark smudge moves across them, raising a cloud of dust. It is a large band, running without rest. You cannot make out who they are, but you know where they come from: from this wood, from among these dead. You follow it with your eyes until the smudge melts into the land.",
+      "choiceLabel": "Climb to a high clearing"
+    },
+    "amonhen_4_2": {
+      "title": "Three More Trails",
+      "text": "You follow the orcs' trail for a stretch, as far as the end of the hill. There you see something you had not seen before: on top of the iron-shod prints, fresher, are those of only three walkers. Two were made by long, light boots; the third, shorter and heavier, sinks its heel into the mud. They are running after the orcs, and by the length of their strides, running hard. You would never catch them. You stand looking at the trail, and then turn back towards the lake.",
+      "choiceLabel": "Follow the trail awhile"
+    },
+    "amonhen_4_3": {
+      "title": "The Straggler",
+      "text": "You skirt a thicket of holly and almost stumble over him. He is an Uruk-hai sitting against a trunk, one leg bound with filthy rags. He has been left behind, alone, and he knows it. He is whetting a short sword on a stone, and when he sees you he is not afraid: he grins, sets down the stone and rises, leaning on the tree. He limps, but the sword does not waver in his hand. He has no intention of letting you go and tell anyone you saw him.",
+      "choiceLabel": "Skirt the thicket"
+    },
+    "amonhen_4_4": {
+      "title": "The Seat of Stone",
+      "text": "On the summit there is a platform of flagstones and, upon four pillars, a seat of stone reached by a stair. You dare not sit in it; it is not for you. You stay beside it, your hand on the cold stone. Even so, from here you can see very far. To the east, beyond the river, lie grey and broken hills; behind them, a plain that gleams like dirty water; and beyond that, a line of dark mountains beneath a cloud that does not move.",
+      "choiceLabel": "Climb to the summit"
+    },
+    "amonhen_4_5": {
+      "title": "The Watchers on the Slope",
+      "text": "You leave the stair to explore the upper slope, among rocks and twisted pines. You reach an outcrop and come upon four Uruk-hai who have climbed up there to watch the lake. They point at the shores, argue, and one spits towards the water. They were searching for something from on high and have not found it. Your arrival strikes them as a consolation prize. They spread out around you on the rock, and at your back there is only the drop.",
+      "choiceLabel": "Explore the upper slope"
+    },
+    "amonhen_4_6": {
+      "title": "The Brink of the Falls",
+      "text": "You reach the brink of the falls. Here the lake ends abruptly and the whole river plunges over a step of rock into an abyss of foam so deep you cannot see the bottom. The noise fills your chest and drives out all thought. Above the spray a bow of colours forms. Further down, the river runs on southward, wide and slow, between low lands. No boat could pass here whole. You stand gazing a long while, drenched and unable to look away.",
+      "choiceLabel": "Look over the falls"
+    },
+    "amonhen_4_7": {
+      "title": "The Ancient Landing",
+      "text": "Among the rushes you discover a landing-stage of stone, so old that the waves have rounded its edges. It has iron rings eaten by rust and steps that go down into the water. Someone moored their boats here when these hills had masters. You sit on the lowest step, your feet close to the water, and gaze at the island in the middle of the lake, unreachable, crowned with birds that circle without ever settling.",
+      "choiceLabel": "Go down to an old landing"
+    },
+    "amonhen_5_0": {
+      "title": "A Night without Fire",
+      "text": "Night overtakes you far from the lawn, and you spend it beneath an overhanging rock, wrapped in the grey cloak. You light no fire. The cold creeps down from the hill and the thunder of the falls is never silent. At midnight you wake and see, far to the east, a red glow beneath the clouds, waxing and waning like an ember someone is blowing on. You do not sleep again. When dawn at last comes, the glow has faded and the sky is grey.",
+      "choiceLabel": "Spend the night under cover"
+    },
+    "amonhen_5_1": {
+      "title": "Mist in the Wood",
+      "text": "At dawn a white mist rises from the lake and creeps into the wood. The trunks appear and vanish around you like figures drawing near and moving away. You walk slowly, counting your steps, guided by the murmur of the falls. At one point you hear a flutter of wings very close, and a caw, and then nothing. You stand still until the silence returns. When the mist tears open, you are on the hillside, nearer the water than you thought.",
+      "choiceLabel": "Walk through the mist"
+    },
+    "amonhen_5_2": {
+      "title": "The Ruined Watchtower",
+      "text": "Among the trees of the slope you find the ruins of a watchtower: a ring of dressed stones and a pillar still standing, with a winged helm carved at its top. The men who built it watched the river and the eastern border from here. Now nettles grow where their sentinels slept. You lean against the pillar and look east, as they must have looked. The land on the far side is still grey and hostile. No one watches it any more.",
+      "choiceLabel": "Visit some ruins"
+    },
+    "amonhen_5_3": {
+      "title": "The Deer Path",
+      "text": "You find a narrow path, worn by deer, that zigzags down the slope among ferns and stones. You follow it because it is the only one no iron-shod boots have trodden. After a while you see the deer: three hinds and a young stag, motionless among the trees, watching you. They do not flee. You pass beside them slowly, hardly breathing, and they follow you with their eyes until the path turns. It is the only living, peaceful thing you have seen on this hill.",
+      "choiceLabel": "Follow a deer path"
+    },
+    "amonhen_6_0": {
+      "title": "The Great Crow",
+      "text": "You go down through the wood towards the lawn. For some time a crow has been following you, larger than the rest, hopping from branch to branch without a sound. When you stop, it stops. When you walk on, it flies ahead and waits for you. At last, in a clearing, it alights on a low branch, so close you can see its eyes. You know that if you let it fly, it will carry your face to someone. Before you can raise your sword, it hurls itself at your eyes.",
+      "choiceLabel": "Head down through the wood"
+    },
+    "amonhen_6_1": {
+      "title": "Looters among the Stones",
+      "text": "You go down a scree slope that opens among the trees, without cover, in plain sight. At its foot two Uruk-hai are rummaging among the things their dead left behind: belts, knives, a waterskin. Above them, two black crows wait for their share. The birds see you first. They caw, and the Uruk-hai lift their heads together. One flings away what he holds and draws his blade; the other whistles, and the crows swoop down on you.",
+      "choiceLabel": "Descend a scree slope"
+    },
+    "amonhen_7_0": {
+      "title": "The Warlord of the Shore",
+      "text": "You return to the lawn as evening falls. Your boat is where you left it. But a little further on there is a furrow in the sand where someone pushed another boat into the water with its prow towards the far shore, and small, bare footprints that walk into the lake. Bent over them is the largest Uruk you have ever seen, with a horned helm and a broad sword, sniffing the trail like a hound. Beside him a warrior awaits orders. The warlord looks at you and laughs."
+    }
+  },
+  "rivals": {
+    "Crebain": "Crebain",
+    "Uruk-hai de la Mano Blanca": "Uruk-hai of the White Hand",
+    "Caudillo uruk-hai": "Uruk-hai Warlord"
+  }
+}

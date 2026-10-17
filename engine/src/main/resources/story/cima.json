@@ -1,0 +1,229 @@
+{
+  "id": "cima",
+  "name": "Cima de los Vientos",
+  "baseLevel": 10,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "Bajo la Cima de los Vientos",
+      "text": "Dejas atrás el pantano con el zumbido de la reina todavía en los oídos. El suelo se vuelve firme y pedregoso, y una cadena de colinas peladas se alza ante ti. La más alta, al sur, termina en un anillo de piedras rotas: la Cima de los Vientos, la Amon Sûl de las canciones de Bree, donde dicen que hubo una gran torre de vigía. El viento sopla helado y trae olor a ceniza. Al norte, una senda medio borrada recorre las lomas; al sur, el Camino del Este rodea las colinas. Ajustas el petate y eliges.",
+      "imagePrompt": "A young traveler with a sword and pack leaving the edge of a marsh onto stony ground, a chain of bare hills ahead, the highest crowned by a ring of broken stones under a cold windy sky, faint smoke, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "La senda de las lomas",
+      "text": "Subes a la senda que serpentea por el lomo de las colinas. Es antigua: a trechos la bordean piedras talladas y restos de muros que alguien levantó hace siglos para defender estas alturas. Desde aquí lo ves todo y nadie te ve a ti. En el barro de un recodo descubres huellas recientes, varias pequeñas y unas largas de bota, todas en dirección a la cima. Los viajeros cuyo rastro sigues pasaron por aquí hace pocos días. Vas tarde, pero vas bien.",
+      "imagePrompt": "An ancient overgrown path winding along the crest of bare hills, flanked by carved stones and crumbling wall remains, a young traveler kneeling to study small fresh footprints in the mud, windswept grey sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Tomar la senda de las lomas"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "Un viajero demasiado amable",
+      "text": "Bajas al Camino, ancho y despejado, que rodea las colinas por el sur. Avanzas deprisa, pero aquí cualquiera puede verte. Al poco, un hombre de pelo oscuro sale de entre unos espinos y te saluda como un viajero más. Habla demasiado y mira demasiado tu espada. Cuando le das la espalda para seguir, oyes el roce de un cuchillo saliendo de su vaina. Es un dunlendino, un hombre de las Tierras Brunas, y no está aquí por casualidad.",
+      "imagePrompt": "On a wide empty road skirting bare hills, a dark-haired man in a shabby cloak stepping from thorn bushes and drawing a knife behind a young traveler's back, overcast sky, cold wind, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar al Camino del Este",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": 0, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "Las murallas caídas",
+      "text": "La senda atraviesa los restos de un fuerte: torres desmochadas, muros cubiertos de líquenes, un patio donde crece la ortiga. Al pasar bajo un arco oyes un gruñido. Dos lobos flacos, con las costillas marcadas, salen de una grieta del muro donde han hecho su cubil. El hambre les ha quitado el miedo a los hombres. Se separan para atacarte por ambos lados, y tú buscas una pared a tu espalda antes de que salten.",
+      "imagePrompt": "Ruins of a hilltop fort with broken towers and lichen-covered walls, two gaunt wolves with visible ribs emerging from a crack in the wall to flank a young traveler with a sword under a stone arch, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar las murallas caídas",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo hambriento", "portrait": "wolf", "levelOffset": -2, "pattern": ["12", "121", "1212"], "everyNTicks": 2 },
+          { "name": "Lobo hambriento", "portrait": "wolf", "levelOffset": -2, "pattern": ["12", "121", "1212"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "El explorador del arroyo",
+      "text": "Bajas a una hondonada donde un arroyo corre entre zarzas, buscando agua y abrigo del viento. Alguien ha tenido la misma idea: junto a la orilla, un hombre de las Tierras Brunas limpia un arco y repasa unas marcas en un trozo de corteza. Es un explorador veterano, con cicatrices en los brazos. Te ve antes de que puedas retroceder y no hace preguntas. Deja la corteza, desenvaina un hacha corta y viene hacia ti.",
+      "imagePrompt": "A sheltered hollow with a brambly stream, a scarred wild-haired scout setting down a bow and a piece of marked bark and drawing a short axe as a young traveler descends the slope, grey light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar a la hondonada",
+      "encounter": {
+        "rivals": [
+          { "name": "Explorador dunlendino", "portrait": "dunlending", "levelOffset": 1, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "El rastro de los cascos",
+      "text": "En el Camino encuentras huellas de cascos, grandes y profundas, de caballos pesados que galoparon hacia el este. No eres el único que las sigue: una manada de lobos husmea el mismo rastro, como si esos jinetes dejaran tras de sí una promesa de carroña. Cuatro de ellos levantan la cabeza al olerte. Uno gruñe; los otros se abren en abanico por la cuneta. Comprendes que hoy la presa vas a ser tú.",
+      "imagePrompt": "Deep heavy hoofprints on a muddy road, four lean wolves sniffing the trail lifting their heads toward a young traveler, one snarling while the others spread out in a fan, bleak hills and low clouds, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir las huellas de cascos",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo hambriento", "portrait": "wolf", "levelOffset": -5, "pattern": ["12", "121", "1212"], "everyNTicks": 2 },
+          { "name": "Lobo hambriento", "portrait": "wolf", "levelOffset": -5, "pattern": ["12", "121", "1212"], "everyNTicks": 2 },
+          { "name": "Lobo hambriento", "portrait": "wolf", "levelOffset": -5, "pattern": ["12", "121", "1212"], "everyNTicks": 2 },
+          { "name": "Lobo hambriento", "portrait": "wolf", "levelOffset": -5, "pattern": ["12", "121", "1212"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "La vieja atalaya",
+      "text": "Junto al Camino se levanta una atalaya en ruinas, poco más que un muñón de piedra. Desde lejos ves un hilo de humo: alguien la usa de refugio. Te acercas con sigilo y oyes a tres hombres discutir en una lengua áspera mientras vigilan el Camino. Hablan de jinetes, de colinas y de un pago que no llega. Uno de ellos sale a estirar las piernas y tropieza contigo. Su grito avisa a los otros, y los tres echan mano a las armas.",
+      "imagePrompt": "A ruined stone watchtower stump beside a lonely road with a thin thread of smoke, three rough dark-haired men grabbing their weapons as they discover a young traveler sneaking close, dusk light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acercarse a la vieja atalaya",
+      "encounter": {
+        "rivals": [
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -4, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -4, "pattern": ["13", "131", "31"], "everyNTicks": 2 },
+          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -4, "pattern": ["13", "131", "31"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "La losa de la estrella",
+      "text": "Cuando el último lobo cae, recorres el fuerte en silencio. En el patio, bajo las ortigas, asoma una losa tallada con una estrella de muchas puntas, gastada por siglos de lluvia. Este lugar perteneció a un reino que ya nadie nombra en Bree, y aun así alguien lo recuerda: junto a la losa hay ramas secas apiladas con cuidado, como dejadas para quien venga detrás. Tomas solo las necesarias para una noche y das las gracias en voz baja.",
+      "imagePrompt": "The overgrown courtyard of a ruined fort, a weathered flagstone carved with a many-pointed star half hidden by nettles, a neat pile of dry firewood beside it, a young traveler kneeling respectfully, evening light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Explorar el patio del fuerte"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "Un cuervo solitario",
+      "text": "Prefieres no quedarte entre las ruinas y sigues la senda hacia el sur. El viento arrecia y te obliga a caminar encorvado. Por la tarde, desde una loma, ves la Cima de los Vientos mucho más cerca: una colina redonda y pelada, con su corona de piedras. Sobre ella vuela un cuervo, solo uno, en círculos lentos. Hay algo en esa colina que te encoge el corazón, como si el aire allí pesara más. Aun así, sigues adelante.",
+      "imagePrompt": "A young traveler bent against a strong wind on a hillside path, looking toward a round bare hill crowned with ruined stones, a single crow circling slowly above it under a heavy grey sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la senda hacia el sur"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "La corteza marcada",
+      "text": "Recoges la corteza que dejó el explorador. Lleva marcas toscas: una colina con un círculo, unas rayas que podrían ser días y cinco figuras, cuatro pequeñas y una alta. Alguien ha estado vigilando a los viajeros que sigues y contando sus pasos. Te guardas la corteza en el jubón. Si los espías saben tanto, otros enemigos peores pueden saberlo también, y la colina ya no te parece un refugio, sino una trampa.",
+      "imagePrompt": "Close view of a young traveler's hands holding a strip of bark scratched with crude marks of a hill, a circle, tally lines and five small figures, a brambly stream behind, cold grey light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Examinar la corteza del explorador"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "Agua y silencio",
+      "text": "Te lavas las manos en el arroyo y te sientas entre las zarzas a recuperar el aliento. El agua corre fría y clara, y el viento no llega hasta el fondo de la hondonada. Por primera vez en días, comes caliente: un poco de tocino tostado sobre una llama diminuta que apagas enseguida. Mientras masticas, ves en el barro de la orilla las huellas de un poni cargado. Los viajeros a los que sigues también bebieron aquí.",
+      "imagePrompt": "A young traveler resting among brambles at the bottom of a sheltered hollow beside a clear cold stream, toasting bacon over a tiny flame, pony hoofprints visible in the mud of the bank, calm grey light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Descansar junto al arroyo"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "Donde acaban las huellas",
+      "text": "Sigues las huellas de cascos hasta que se apartan del Camino y se pierden en un pedregal, al pie de las colinas. Allí la hierba está quemada en círculos, y el aire conserva un frío que no es del otoño. Los jinetes se separaron en varias direcciones, como si quisieran rodear algo. Sientes un escalofrío que nace en la nuca. No sabes qué buscaban, pero estás seguro de que todos miraban hacia la cima.",
+      "imagePrompt": "Hoofprints fading into a stony field at the foot of bare hills, rings of burnt grass and an unnatural frost on the stones, a young traveler shivering as he looks up toward a ruined hilltop, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el rastro hasta el final"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "El hito del Camino",
+      "text": "Herido por los mordiscos, buscas una fuente que brota junto a un viejo hito de piedra al borde del Camino. Te lavas las heridas y las vendas con tiras de la camisa. Mientras lo haces, ves en el hito unas letras casi borradas y, debajo, una señal reciente rayada con la punta de un cuchillo: una flecha que apunta a las colinas. Es una marca de montaraz, piensas. No es para ti, pero te dice hacia dónde ir.",
+      "imagePrompt": "A wounded young traveler bandaging his arm beside a small spring at an old roadside milestone, faded ancient letters on the stone and a fresh knife-scratched arrow pointing toward the hills, overcast afternoon, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Curarse junto a la fuente"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "Lo que vigilaban",
+      "text": "Registras la atalaya. Los espías tenían provisiones para muchos días, una manta de buena lana que no es suya y un saco de monedas de plata acuñadas lejos de aquí. Alguien les paga bien por vigilar. En la pared han dibujado con carbón el perfil de la Cima de los Vientos y, junto a ella, una mano blanca. No sabes qué significa ese signo, pero lo grabas en tu memoria. Te quedas con la manta: las noches aquí son crueles.",
+      "imagePrompt": "Inside a ruined watchtower, a young traveler searching supplies by firelight, a pouch of silver coins and a wool blanket, a charcoal drawing of a hill and a white hand on the stone wall, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Registrar la atalaya"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "Una sombra en la corona",
+      "text": "Te alejas de la atalaya y buscas un repecho desde el que se domine la colina. Te tumbas entre los brezos y esperas a que caiga la tarde. En la cumbre no se mueve nadie, pero el viento trae a ratos un olor a madera quemada y algo más, agrio, que no sabes nombrar. Cuando la luz se apaga, te parece ver una sombra más negra que la noche deslizarse entre las piedras de la corona. Parpadeas, y ya no está.",
+      "imagePrompt": "A young traveler lying hidden in heather on a slope at dusk, watching a distant hilltop crowned with ruined stones where a shadow darker than the night seems to glide between the rocks, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Vigilar la cima desde lejos"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "Al abrigo de las rocas",
+      "text": "El viento sopla tan fuerte que apenas puedes avanzar. Te refugias en un hueco entre grandes rocas, al pie de las colinas, y esperas a que amaine. Desde allí estudias la ladera: hay varias formas de subir y ninguna es fácil. Te calientas las manos con el aliento, repasas el filo de la espada y comes los últimos frutos secos. Cuando por fin el viento cede, la Cima de los Vientos está más cerca que nunca, oscura contra un cielo de nubes rasgadas.",
+      "imagePrompt": "A young traveler sheltering in a gap between great boulders at the foot of a bare hill, warming his hands and checking his sword, the dark ruined summit looming above under torn racing clouds, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Refugiarse entre las rocas"
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "El brezal abierto",
+      "text": "Cortas camino por un brezal abierto que sube hacia la colina. No hay donde esconderse, y lo sabes. A medio camino, una figura se levanta entre los brezos donde llevaba horas tumbada: un rastreador de las Tierras Brunas, con la cara manchada de barro y una lanza corta. Te estaba esperando. No grita ni pide ayuda; quiere encargarse de ti él solo, y por la forma en que se mueve, sabe hacerlo.",
+      "imagePrompt": "An open heather slope rising toward a bare hill, a mud-smeared tracker with a short spear rising from the heather where he lay hidden, facing a young traveler with a sword, windswept grey sky, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atajar por el brezal",
+      "encounter": {
+        "rivals": [
+          { "name": "Rastreador dunlendino", "portrait": "dunlending", "levelOffset": 1, "pattern": ["13", "131", "31"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "La fila de piedras",
+      "text": "Encuentras una fila de piedras hincadas que sube por la ladera, restos de un muro o de una calzada muy antigua. Las sigues, y te llevan por un paso oculto que nadie adivinaría desde abajo. En algunas el musgo está raspado por botas recientes. Te reconforta pensar que por aquí camina gente que conoce estas colinas mejor que tú. Subes despacio, sin ruido, y cuando miras atrás, el mundo entero parece pequeño y gris.",
+      "imagePrompt": "A line of ancient standing stones climbing a steep hillside like the remains of a forgotten road, moss scraped by recent boots, a young traveler climbing quietly and looking back over a vast grey land, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir la línea de piedras"
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "La ladera oeste",
+      "text": "Subes por la ladera oeste, la más empinada, agarrándote a las matas y a las rocas sueltas. A media altura, un hedor espeso te avisa demasiado tarde: has llegado a la boca de una madriguera. Tres lobos salen de ella, flacos y furiosos, y te cierran el paso por arriba y por los lados. Debajo solo queda la pendiente. No puedes huir sin despeñarte, así que afirmas los pies en la roca y levantas la espada.",
+      "imagePrompt": "A steep rocky hillside, a young traveler clinging to the slope with a raised sword as three furious lean wolves burst from a den above and around him, loose stones falling below, stormy light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Trepar por la ladera oeste",
+      "encounter": {
+        "rivals": [
+          { "name": "Lobo hambriento", "portrait": "wolf", "levelOffset": -4, "pattern": ["12", "121", "1212"], "everyNTicks": 2 },
+          { "name": "Lobo hambriento", "portrait": "wolf", "levelOffset": -4, "pattern": ["12", "121", "1212"], "everyNTicks": 2 },
+          { "name": "Lobo hambriento", "portrait": "wolf", "levelOffset": -4, "pattern": ["12", "121", "1212"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "El campamento abandonado",
+      "text": "Te asomas a una hondonada abrigada en la cara oeste de la colina, bajo la cumbre, y bajas a ella con cautela. Hay un manantial, leña apilada y los restos de una hoguera grande. La hierba está pisoteada y quemada a trechos, hay ramas partidas por todas partes y, en el suelo, marcas de lucha que no sabes leer. Huellas pequeñas y un rastro de poni salen del claro hacia el sur, apresuradas. Quienes acamparon aquí se fueron con prisa, y algo los obligó a hacerlo.",
+      "imagePrompt": "A sheltered dell on the western side of a hill below its summit, with a small spring, stacked firewood and the scorched remains of a large campfire, trampled burnt grass and broken branches, a young traveler studying small footprints leading away, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Desviarse hacia el claro abrigado"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "La corona de piedras",
+      "text": "Subes el último tramo hasta la cumbre. Del gran torreón de Amon Sûl solo queda un anillo de piedras rotas cubiertas de hierba áspera. El suelo está ennegrecido, y algunas rocas parecen fundidas por un calor terrible, aunque el aire es helado. Algo ardió aquí hace muy pocos días. Sobre un montón de piedras descubres unos arañazos recientes, como letras, que no entiendes. Abajo se extienden tierras vacías bajo un cielo de plomo.",
+      "imagePrompt": "The summit of a bare hill ringed by broken ancient stones, blackened ground and rocks that look melted by great heat, scratched marks on a small cairn, a young traveler standing alone under a leaden sky over empty lands, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a la cumbre"
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El espectro de la cima",
+      "text": "Cae la noche sobre la colina y el viento se detiene de golpe. En el silencio, el frío te muerde los huesos y una angustia sin nombre te aprieta el pecho. Desde donde estás ves aparecer, entre las piedras de la corona, una figura alta envuelta en un manto negro, sin rostro bajo la capucha; solo un brillo pálido donde deberían estar los ojos. Viene hacia ti sin prisa. Es uno de los jinetes negros de los que hablaban en Bree, que ha vuelto a la colina como quien busca un rastro perdido. No es un enemigo al que puedas matar. Solo te queda resistir, con acero y fuego, hasta que la sombra se retire.",
+      "imagePrompt": "Night on a windless hillside, a faceless hooded figure in black with a pale gleam beneath the hood and a pale blade, emerging from a ring of ruined stones above, advancing toward a young traveler holding a sword and a burning brand in dread, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          { "name": "Espectro del Anillo", "portrait": "boss_cima", "levelOffset": 5, "pattern": ["32", "323", "3232", "12", "121", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } }
+        ]
+      }
+    }
+  ]
+}

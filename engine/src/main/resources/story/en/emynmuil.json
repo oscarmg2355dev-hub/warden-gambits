@@ -1,0 +1,119 @@
+{
+  "id": "emynmuil",
+  "name": "Emyn Muil",
+  "nodes": {
+    "emynmuil_1_0": {
+      "title": "The Far Shore",
+      "text": "That night you cross the lake in your boat, towards the far shore, the way the owners of those small footprints went. You paddle slowly, the falls roaring on your right. At dawn you beach on a stony strand beneath a bare hill and hide the boat among the rocks. You will not come back for it: where you are going there is no river. Before you rise the hills of the Emyn Muil, a maze of grey rock cut by ravines and clefts, where the wind whistles and almost nothing grows."
+    },
+    "emynmuil_2_0": {
+      "title": "The Blind Ravine",
+      "text": "You enter the first ravine that opens to the east. The walls are of grey rock, smooth and cold, and the floor is full of loose stones that roll beneath your boots. After an hour the ravine ends in a wall. You turn back, choose another, and that one ends too. By mid-afternoon you understand that these hills cannot be crossed by walking straight: they must be read like a riddle. You sit down, take a drink and look at the clefts with more patience.",
+      "choiceLabel": "Enter a ravine"
+    },
+    "emynmuil_2_1": {
+      "title": "The Windy Ridge",
+      "text": "You decide to climb before you lose yourself, and scramble up a ridge of rock to the top. There the wind strikes you sideways, cutting, and you must crouch to keep your balance. From above you see the whole maze: parallel ridges, crossing ravines, wells of shadow where the sun never reaches. Everything is grey. With your eyes you choose a line that seems to run eastward, and you commit it to memory stone by stone before climbing down.",
+      "choiceLabel": "Climb the ridge"
+    },
+    "emynmuil_3_0": {
+      "title": "Eyes in the Wall",
+      "text": "You follow a deep cleft that seems to run east. It is so narrow that the sky is only a white ribbon above your head. Suddenly something moves in the wall, at the height of your eyes: there is a ledge, and on it a wolf with grey fur, the same colour as the stone, so still that you had passed beside it without seeing it. Now it bares its teeth. It springs from the ledge without a howl, straight for your throat.",
+      "choiceLabel": "Follow the deepest cleft"
+    },
+    "emynmuil_3_1": {
+      "title": "The Orc Path",
+      "text": "Among the stones you find a beaten path, the first you have seen in these hills. There are prints of heavy boots and, on a rock, someone has painted in something red a lidless eye. You follow it warily. At a bend you come face to face with two orcs climbing up. They are different from the Uruk-hai: shorter, long-armed, with black shields and that same red eye. For an instant they stand still, surprised. Then they shriek and charge.",
+      "choiceLabel": "Take a beaten path"
+    },
+    "emynmuil_3_2": {
+      "title": "The Horse-head Rock",
+      "text": "You walk along the heights following the line you memorised. For hours all goes well. But at dusk you recognise a split rock shaped like a horse's head, the very one you passed at midday. You have made an enormous circle and come back to the start. You stand staring at it, furious. The wind drives the cold into your bones. This time you mark the rock with the point of your sword, and promise yourself you will never see it again.",
+      "choiceLabel": "Walk along the heights"
+    },
+    "emynmuil_3_3": {
+      "title": "The Hollow of Bones",
+      "text": "You go down into a hollow sheltered from the wind. The ground is strewn with goat bones, picked clean, and there are the remains of a fire. Beside it a Mordor orc gnaws a bone, and at his feet two rock wolves sleep, curled up like dogs. One of them opens its eyes. It makes no sound: it rises, wakes the other with its muzzle, and both stare at you. The orc sees where they are looking, spits out the bone and grabs his spear.",
+      "choiceLabel": "Go down into a hollow"
+    },
+    "emynmuil_4_0": {
+      "title": "The Leap",
+      "text": "The cleft you are following suddenly opens into another, at right angles, that cuts across the way from side to side. It is too wide to cross in one stride and too deep to see the bottom: you hear only, far below, the dripping of water. You take off your pack, throw it to the other side and step back for a run-up. You leap. Your boots reach the edge, slip, and you cling to the stone with your nails. You haul yourself up. You lie there trembling, laughing without knowing why.",
+      "choiceLabel": "Follow the cleft to its end"
+    },
+    "emynmuil_4_1": {
+      "title": "A Shadow beneath the Moon",
+      "text": "You sleep beneath a slanting slab that shields you from the wind. You are woken by a sound of falling pebbles. The moon has risen, and for an instant, atop a rock, you see outlined against it a thin, hunched shadow gazing eastward. You blink and it is gone. You do not know whether it was a beast, an orc or a dream. You do not close your eyes again until dawn, your sword across your knees and your ears straining at every stone.",
+      "choiceLabel": "Seek shelter to sleep"
+    },
+    "emynmuil_4_2": {
+      "title": "Red Signs",
+      "text": "The orc path runs on eastward, and every so often, on a rock, the red eye appears again, painted in haste. Beside one of them is a cairn of stones with a spear thrust into it and a black rag tied on. Further on, the path splits in three, and each branch bears its sign. You understand that these hills are watched by folk who know the way. You decide to keep off the paths, though it costs you twice the effort.",
+      "choiceLabel": "Read the signs of the path"
+    },
+    "emynmuil_4_3": {
+      "title": "Tracks in the Frost",
+      "text": "You hide among the rocks to let a patrol go by, and it does: four orcs going down at a brisk pace, without speaking. You breathe again. But one stops, turns back and crouches over the frost that covers the path. Your footprints are there, marked in white, clear as a signature. The orc sniffs, growls, and the other three turn round. Before they find you, you go out to meet them in the narrow pass, where they can only come two at a time.",
+      "choiceLabel": "Hide among the rocks"
+    },
+    "emynmuil_4_4": {
+      "title": "The Frozen Night",
+      "text": "The night on the heights is the coldest you can remember. There is no firewood in these hills, not so much as a scrubby bush to burn. You wrap yourself in the grey cloak and huddle between two stones, your knees against your chest. The cloak is warmer than it looks, but the cold rises from the rock. You rub your hands, count the stars, softly repeat the songs of the inn. At dawn there is frost on your eyebrows, but you are still alive.",
+      "choiceLabel": "Camp on the heights"
+    },
+    "emynmuil_4_5": {
+      "title": "The Sheer Drop",
+      "text": "The way you chose ends at a cliff of rock, as high as ten men, with no other way down for a long distance. You take out the grey rope of the Elves. You loop it double around a spur of stone, so that you can recover it from below, and climb down backwards, bracing your boots against the wall. The rope is as thin as a cord and yet it does not give a span. At the bottom you pull one end and the whole rope falls at your feet, coiled like a grey serpent.",
+      "choiceLabel": "Rope down a cliff"
+    },
+    "emynmuil_4_6": {
+      "title": "The Water in the Stone",
+      "text": "You have gone a whole day without finding water and your waterskin is nearly empty. Your tongue sticks to the roof of your mouth. At last, in a shaded crevice, you come upon a natural basin in the rock, full of rainwater. It is cold and tastes of stone, but it seems better to you than the ale of the inn. You drink slowly, fill your waterskin to the brim and stay there a while, watching the water grow still again.",
+      "choiceLabel": "Look for water in the rocks"
+    },
+    "emynmuil_4_7": {
+      "title": "The Rockslide",
+      "text": "You cross a scree of loose rocks at the foot of a crag. Halfway over you hear a crack above, then a swelling roar: the hillside has given way. You run diagonally, leaping from stone to stone, while behind you boulders the size of houses come rolling down. One passes so close you feel its wind. When silence falls, you are on the other side, covered in grey dust, and the way you came no longer exists.",
+      "choiceLabel": "Cross the scree"
+    },
+    "emynmuil_5_0": {
+      "title": "Haze among the Rocks",
+      "text": "Dawn comes with a low haze that fills the ravines like milk. Only the ridges show, like islands in a white sea. You walk along them, from one to the next, while below the mist moves slowly. It is beautiful and treacherous: one false step and you would fall into the whiteness without knowing how far. At midday the sun burns it away, and you find you have gone further than in the whole of the day before. For the first time, to the east, the hills seem to fall away.",
+      "choiceLabel": "Walk through the haze"
+    },
+    "emynmuil_5_1": {
+      "title": "The Stone Arch",
+      "text": "The wind has carved in the rock an enormous arch, so high that a tower would fit beneath it. You pass under it and stop in the middle, neck craned, gazing upward. The stone is grained like wood, in grey and ochre layers. In the shadow of the arch lies a smooth stone with ancient markings: lines, circles, perhaps a map. Someone passed this way long ago and wished to leave a record. Beside it you carve a small B, for Bree.",
+      "choiceLabel": "Pass beneath a stone arch"
+    },
+    "emynmuil_5_2": {
+      "title": "The Pack of the Plateau",
+      "text": "You come out onto a bare plateau without a rock to take cover behind. Halfway across you hear the first howl, short, on your left. Another answers on your right, and another behind. Four rock wolves emerge from the clefts at the edge and fan out, unhurried, never taking their eyes off you. They hunt as wolves hunt: in silence, closing the circle step by step. You take your stand in the centre, turn slowly and wait for the first.",
+      "choiceLabel": "Cross a bare plateau"
+    },
+    "emynmuil_5_3": {
+      "title": "The Watcher of the Eye",
+      "text": "You skirt a tall crag and see, at its very top, a heap of dry firewood and an orc sitting beside it. He is a lookout, posted there to light a signal if he sees anything. He has not seen you yet. You climb up from behind, clutching at every crack, holding your breath. You have one stretch left when a stone comes loose beneath your boot. The orc turns and seizes a torch; then, seeing you so close, he trades the torch for his scimitar.",
+      "choiceLabel": "Skirt a tall crag"
+    },
+    "emynmuil_6_0": {
+      "title": "The Edge of the Hills",
+      "text": "At last you reach the eastern edge. The hills end in a long, broken cliff, and at its feet stretches a grey and brown plain that gleams here and there like a dirty mirror: stagnant water, reeds, mist. Beyond it, on the horizon, rises a wall of black mountains. The wind brings a smell of rot. You search for hours for a way down, and at last you find a broad ravine that descends, stone by stone, towards the plain.",
+      "choiceLabel": "Seek the way down east"
+    },
+    "emynmuil_6_1": {
+      "title": "Enormous Footprints",
+      "text": "You go down a dry watercourse that descends eastward. In the sand of its bed there are footprints: enormous, of bare feet longer than your arm, with thick toes and nails that scratch the rock. There are bones too, smashed by blows, not by teeth, and a stone with dark stains. Whatever left those prints passed here not long ago and is far bigger than you. You go on, because there is no other way, but now you watch every shadow.",
+      "choiceLabel": "Follow a dry watercourse"
+    },
+    "emynmuil_7_0": {
+      "title": "The Hill-troll",
+      "text": "The descent opens onto a level stretch at the foot of the hills, from which the marshes can already be seen. There, sitting on a rock, waits something that freezes your blood: a Hill-troll, grey as stone, with a club made from a whole tree trunk. Beside it a Mordor orc shouts orders at it and points at you with his spear. The troll rises slowly, taller than two men, and the whole level ground seems to shrink."
+    }
+  },
+  "rivals": {
+    "Lobo de las rocas": "Rock Wolf",
+    "Orco de Mordor": "Mordor Orc",
+    "Trol de las colinas": "Hill-troll"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "lothlorien",
+  "name": "Lothlórien",
+  "nodes": {
+    "lothlorien_1_0": {
+      "title": "Caras Galadhon",
+      "text": "For a couple of days the Elves lead you through the forest in silence, until you reach a green hill ringed by a wall and a fosse. Upon it rise the tallest trees you have ever seen, and among their boughs shine hundreds of lights, silver, green and gold: this is Caras Galadhon, the city of the trees. They give you food, clean clothes and a high bed among the leaves. That night you do not dream of fire. You think of Bree, of the wind on Weathertop, of the Ford, of the darkness beneath the mountain. Atop the hill a serene white light seems to watch over the whole wood, and you know that someone has seen you arrive."
+    },
+    "lothlorien_2_0": {
+      "title": "The Houses in the Trees",
+      "text": "In the morning you climb a white stair that winds around a vast trunk. Above, among the branches, are platforms of pale wood, the talan, with walls of grey cloth that the wind stirs like sails. Here the Galadhrim live: they sleep, sing and work high above the ground, and not a single branch seems forced. An Elf child watches you with curiosity and laughs when you clutch at the rail. From on high, the forest is a sea of gold that stretches away eastward, as far as a distant glint of water.",
+      "choiceLabel": "Climb to the talan"
+    },
+    "lothlorien_2_1": {
+      "title": "The Ways of the City",
+      "text": "You walk the paths that cross the hill. They are paved with white stone and lined with lamps that no one seems to light or put out. The Elves greet you with a brief bow, asking nothing, and go on about their business. Somewhere high above you hear music, a harp and a voice, and the murmur of water beneath the moss. The green wall encircles the city like an embrace. For the first time since Rivendell your hand is not resting on your sword. You notice, and slowly draw it away.",
+      "choiceLabel": "Walk the city paths"
+    },
+    "lothlorien_3_0": {
+      "title": "The Hall of the Lady",
+      "text": "They lead you to the top of the greatest tree, to an oval hall walled in green and silver. At its far end, seated side by side, are the Lord and the Lady of the wood. They receive you only for a moment, courteously, amid weightier matters: they ask where you come from and by what roads, and thank you for your news. It is no long audience; messengers are waiting and voices murmur beside the pillars. You leave the hall feeling that you have stood very close to something ancient and immense, and have not wholly understood it.",
+      "choiceLabel": "Climb to the great hall"
+    },
+    "lothlorien_3_1": {
+      "title": "The Songs of Mourning",
+      "text": "As evening falls, the whole forest sings. The songs are slow, in a tongue you do not understand, but sorrow needs no translation. An Elf guarding the stair tells you that they are lamenting someone who fell in the depths of the mountain, a grey wanderer many had known for centuries. You remember the fire beneath the bridge of Moria and the shuddering of the stone. You sit down on a root and listen until the last voice fades among the leaves.",
+      "choiceLabel": "Listen to the laments"
+    },
+    "lothlorien_3_2": {
+      "title": "The Guide of the Borders",
+      "text": "You seek out the Elf who guided you from the Nimrodel and find him fletching arrows at the foot of a mallorn. He greets you more warmly than he did in the forest, now that you are no longer an armed stranger. He tells you that he and his brothers watch the northern border and that for months the orcs have prowled the banks more than ever. He teaches you a few words of his tongue, to give thanks and to ask for passage. You repeat them until they no longer sound clumsy in your mouth.",
+      "choiceLabel": "Seek out your Elven guide"
+    },
+    "lothlorien_3_3": {
+      "title": "The Fountain in the Garden",
+      "text": "You follow the sound of water to a spring that wells up near the top of the hill and runs down in a silver thread through a channel of stone. There is a silent garden there, with neither wall nor guard, and yet no one enters it without leave. You sit on the grass, at a distance. The water is so clear that you see the bottom as though there were no water at all. You drink a mouthful from the channel, and your head seems to clear, as after a long sleep.",
+      "choiceLabel": "Follow the sound of water"
+    },
+    "lothlorien_4_0": {
+      "title": "The Mirror",
+      "text": "At nightfall an Elf maiden leads you to the top of some steps and points to a hollow in the garden where a silver basin stands upon a pedestal. She tells you it is the Mirror of the Lady, and that no one looks into it without her leave. You stay at the edge and do not go down. From there you see only still water, and the stars within it. Yet for an instant they seem to tremble and draw something else: a great river, two enormous figures of stone and, far to the east, a red glow. You blink, and they are stars again.",
+      "choiceLabel": "Look into the hollow"
+    },
+    "lothlorien_4_1": {
+      "title": "The Lord of the Wood",
+      "text": "The Lord of the wood receives you alone on a high terrace. He wants to know about your road: where you saw orcs, where the wolves are prowling, what is said in Bree of the lands to the south. He listens patiently and then speaks to you of the river that rises in the north and runs down to the sea, and of the lands that each bank guards. As you take your leave you understand that he did not question you out of curiosity. There are many borders to watch, and every traveller brings news.",
+      "choiceLabel": "Hear the Lord of the wood"
+    },
+    "lothlorien_4_2": {
+      "title": "The Dwarf and the Elf",
+      "text": "Beside the guest pavilion you see two figures pass whom you never expected to see together: a long-bearded Dwarf with an axe at his belt, and a tall, fair-haired Elf who laughs at something the Dwarf has said. They talk of trees and caves like old friends. You stare longer than you should. The Dwarf returns your gaze with a frown, then nods to you. You do not approach: they belong to another road.",
+      "choiceLabel": "Stroll by the pavilion"
+    },
+    "lothlorien_4_3": {
+      "title": "The Weavers",
+      "text": "On a low talan, Elven women weave cloaks on looms of pale wood. The cloth is light as air, and its colour changes as you look at it: grey in the sun, green among the leaves, brown as wet earth. They let you run your hand over a half-finished length. It is warm and weighs nothing. One of them tells you that such cloaks make no one invisible, but they help enemy eyes slide past. You wish you had had one on Weathertop.",
+      "choiceLabel": "Visit the weavers"
+    },
+    "lothlorien_4_4": {
+      "title": "The Archers",
+      "text": "The guardians of the borders practise in a glade at the foot of the hill, and they let you try one of their bows. It is taller than you and hard to draw. Your first arrow is lost among the ferns; the third, at least, strikes the trunk. They do not laugh. One corrects the set of your feet and another teaches you to breathe before you loose. In the end you have not learned to shoot, but you have learned to look more calmly at what lies before you.",
+      "choiceLabel": "Train with the archers"
+    },
+    "lothlorien_4_5": {
+      "title": "The Rope-makers",
+      "text": "In a workshop beneath the roots, two Elves braid grey rope from a fibre that gleams like silk. The rope is slender, scarcely thicker than your finger, and yet they assure you it would bear the weight of three men. They let you braid a span of it; yours comes out crooked and slack. One of them patiently unpicks it and begins again before your eyes, more slowly. You think that on the road ahead, some day, a rope like this might be worth more than a sword.",
+      "choiceLabel": "Visit the rope-makers"
+    },
+    "lothlorien_4_6": {
+      "title": "The Ovens",
+      "text": "The smell of bread leads you to some stone ovens hidden among the roots. The Elves who work there are making thin golden cakes, which they wrap in leaves. They give you a piece to taste. It is little more than a mouthful, yet after a while you feel as though you had eaten a whole meal. They tell you that this bread keeps for weeks on the road and is not given to just anyone. They say it without looking at you, as if it had nothing to do with you.",
+      "choiceLabel": "Follow the smell of bread"
+    },
+    "lothlorien_4_7": {
+      "title": "The Hill of Flowers",
+      "text": "Half a morning's walk to the west lies a small hill covered in evergreen grass and strewn with golden and white flowers. On its summit grow two rings of trees, and at their centre a mallorn holds up an ancient talan. The Elves seldom visit it and speak of it softly, as of a place where time does not pass. You lie down in the grass. For a moment you hear nothing, neither the wind nor your own blood.",
+      "choiceLabel": "Climb the flowering hill"
+    },
+    "lothlorien_5_0": {
+      "title": "A Night on the Talan",
+      "text": "That night you cannot sleep and go out to the edge of the talan. The forest is dark, but above, the stars seem nearer than anywhere else on your journey. Below, someone is singing very softly. You think of the road still ahead of you, whose end you no longer know, and for the first time not knowing does not frighten you. You wrap yourself in your blanket and sit there until the sky begins to turn grey.",
+      "choiceLabel": "Keep watch under the stars"
+    },
+    "lothlorien_5_1": {
+      "title": "The Lore of the Galadhrim",
+      "text": "A grey-haired Elf, one of the oldest in the city, agrees to speak with you. He tells you the history of the wood from before there were men in Bree, and speaks of the Enemy, who is rising again in his black land in the east, beyond the river and the mountains of ash. He says nothing to frighten you; he speaks as one describing winter. By the time you have finished listening, the sun has set and you have much to think about.",
+      "choiceLabel": "Listen to the loremasters"
+    },
+    "lothlorien_5_2": {
+      "title": "The Sentinels of the River",
+      "text": "A company of guardians returns from the bank of the great river and you sit with them by the fire. They bring ill news: on the eastern shore there are orcs who shoot at anything that moves on the water, and Wargs that come down to drink at dusk. Further south, they say, rapids close the river and can only be passed overland, with the boats on your shoulders. You listen in silence and ask a question now and then. Soon, you think, that will be your road.",
+      "choiceLabel": "Talk with the sentinels"
+    },
+    "lothlorien_5_3": {
+      "title": "The Maps of the River",
+      "text": "In a low chamber an Elf spreads before you a map of the great river drawn in silver ink. He shows you the woods along the banks, the islands, the rapids where no boat passes unless it is carried, and further down two great figures of stone on either side of the stream, and after them a lake and a roaring waterfall. Beyond that, the map turns dark and empty. You ask him what lies there. He shrugs and rolls up the parchment.",
+      "choiceLabel": "Study the river maps"
+    },
+    "lothlorien_6_0": {
+      "title": "The Farewell Feast",
+      "text": "The Elves prepare a simple supper beneath the trees to bid you farewell, as though you were an old friend and not a lost traveller from Bree. There is bread, honey and a pale wine that tastes of summer. At the end, the Lady passes among the tables and pauses beside you for a moment. She tells you very little: that the southern road is full of shadow, and that the light you carry within you counts as well. Then she goes on her way among the lamps.",
+      "choiceLabel": "Attend the farewell feast"
+    },
+    "lothlorien_6_1": {
+      "title": "Rumours Downriver",
+      "text": "You ask after the guests of the grey pavilion, and a guardian tells you they have already gone. They left a few days ago, downriver, in three grey boats, wearing cloaks of the Galadhrim and bearing gifts from the Lady. They were heading south, though no one knows exactly where, and some say not even they knew. You look at the empty pavilion, its curtains drawn back. Once again you arrive one step behind, as in Bree, as in Rivendell.",
+      "choiceLabel": "Ask after the other travellers"
+    },
+    "lothlorien_7_0": {
+      "title": "The Departure by Boat",
+      "text": "At dawn they lead you down to the shore, where the silver stream joins the great river. There a grey boat awaits you, small and light. The Elves give you a cloak like the ones you saw being woven, bread wrapped in leaves and a coil of grey rope, and they teach you to paddle and to patch the hull. A guardian tells you that a few days ago three boats like yours set out from this very shore, downriver, to the south. Then they push yours off and the current takes you. You turn once: through the mist, the golden wood shines and recedes."
+    }
+  },
+  "rivals": {}
+}

@@ -1,0 +1,119 @@
+{
+  "id": "argonath",
+  "name": "Sarn Gebir and the Argonath",
+  "nodes": {
+    "argonath_1_0": {
+      "title": "The Roar of Sarn Gebir",
+      "text": "The murmur has become a roar. Ahead, the river breaks into a chaos of rocks and white foam that no boat could pass through whole: these are the rapids of Sarn Gebir. You paddle with all your strength towards the western bank and beach the boat on a stony strand, your arms trembling. The hills rise on either side, grey and bare. You will have to carry the boat on your shoulders until the river grows calm again."
+    },
+    "argonath_2_0": {
+      "title": "Wargs on the Portage",
+      "text": "You look for the old portage-way the Elves described to you and you find it: a path that climbs along the western bank, away from the water. You are not the only one who knows it. Halfway along, two Wargs are waiting for you, sitting in the middle of the path like hounds guarding a gate. They rise when they see you, unhurried. You set the boat down on the ground, carefully, and draw your sword.",
+      "choiceLabel": "Seek the old portage-way"
+    },
+    "argonath_2_1": {
+      "title": "The Stony Shore",
+      "text": "You cannot find the portage-way, so you skirt the rapids along the bank itself, carrying the boat and setting it down at every leap between the rocks. The spray drenches your face. On a flat stone you see an arrow lodged in a crack, black and dark-feathered, shot from the far shore. Beyond it there are others, dozens, scattered among the rocks and buried in the sand. You wonder whom so many arrows were seeking, and whether any found its mark.",
+      "choiceLabel": "Skirt the rapids on foot"
+    },
+    "argonath_3_0": {
+      "title": "The Bearers' Path",
+      "text": "You hoist the boat onto your shoulders. It is light, but the way is long and steep, and soon your legs are burning. The path is ancient: there are steps hewn in the rock, worn by centuries of feet. In some stretches you see fresh marks, scrapes on the stone such as the keel of a boat would leave when dragged, and prints of boots and of small feet. You reach a level place and lie down, the boat beside you.",
+      "choiceLabel": "Shoulder the boat"
+    },
+    "argonath_3_1": {
+      "title": "Remains of a Fight",
+      "text": "From the top of the path you look towards the eastern bank. Among the rocks on the far side you see dead fires and broken bows, abandoned in haste. On your bank, by contrast, there are black arrows driven into the sand and the tree trunks, all shot from over there. Someone crossed the river by night under that rain of arrows and reached this side. You see no blood on the stones and no wreckage of boats. Whoever passed here did so swiftly and well, and was gone before dawn.",
+      "choiceLabel": "Look to the eastern bank"
+    },
+    "argonath_3_2": {
+      "title": "The Uruk Scout",
+      "text": "You leave the boat for a moment at the foot of the slope and climb the high rocks to see the way from above, and you come face to face with an orc unlike those of Moria. He is big, dark-skinned and long-legged, and the daylight does not trouble him. On his shield is painted a white hand. He looks at you with contempt, as at an insect, and draws a broad, short sword. There is nowhere to run.",
+      "choiceLabel": "Climb the high rocks"
+    },
+    "argonath_3_3": {
+      "title": "The White Hand",
+      "text": "You follow a trail of boots that crosses the portage from west to east and run into three Uruk-hai coming down towards the river. They wear helms with a white rune and shields with a painted hand. They do not come from Mordor, you think: they come from the west, from someone who is not the Eye but who is also seeking something. One points at you and growls a word. The other two spread out to surround you.",
+      "choiceLabel": "Follow a trail of boots"
+    },
+    "argonath_4_0": {
+      "title": "The Wounded Boat",
+      "text": "As you set the boat down you see that a rock has opened a crack in its side. You sit down to mend it with what you have: resin from a pine, a strip of your old cloak and a span of Elven rope. You work slowly, as you were taught on the shore of the Golden Wood. When you finish, the crack can barely be seen. The boat is not yours, you think, it has only been lent to you, and you want to return it to the river whole.",
+      "choiceLabel": "Mend the boat"
+    },
+    "argonath_4_1": {
+      "title": "The Ancient Road",
+      "text": "For a stretch the path becomes a road of flagstones, broken and crusted with lichen. Along its sides are the remains of walls and a fallen pillar bearing a worn emblem: a tree, perhaps, and some stars. Men of an ancient kingdom built this road when the river was theirs. Now only orcs and lost travellers pass. You run your hand over the cold stone and go on, the boat on your back.",
+      "choiceLabel": "Follow the ancient road"
+    },
+    "argonath_4_2": {
+      "title": "The Winged Shadow",
+      "text": "A sudden chill stops you dead. The sun goes dark as if a cloud had covered it, but there are no clouds. Very high above the eastern bank, a shadow with enormous wings crosses the sky towards the south. You throw yourself beneath a rock and lie still, your heart pounding. You know that cold: you felt it on Weathertop, and at the Ford. The shadow passes away. A long while goes by before you dare come out.",
+      "choiceLabel": "Hide beneath the rocks"
+    },
+    "argonath_4_3": {
+      "title": "The Pool",
+      "text": "You go down to a quiet pool beside the rapids to fill your waterskin. As you bend over, you see in the water the reflection of something behind you. A lone Warg, bigger than the others, with a scar across its muzzle, has come down without a sound. It does not attack at once. It takes your measure, as if it had hunted men before. You straighten slowly, water dripping from your hand.",
+      "choiceLabel": "Go down to the pool"
+    },
+    "argonath_4_4": {
+      "title": "The Uruk Camp",
+      "text": "You follow a thread of smoke to a hollow among the rocks. There is a camp: a badly smothered fire, gnawed bones and piled weapons, and four Uruk-hai arguing loudly in a harsh tongue. One hurls a shield bearing the white hand against a stone. You crouch down, but the wind shifts, and the nearest one lifts his head, sniffs and looks straight at you.",
+      "choiceLabel": "Creep towards the smoke"
+    },
+    "argonath_4_5": {
+      "title": "The Abandoned Shield",
+      "text": "On the hillside you find a black shield abandoned among the stones, with a white hand painted at its centre. Beside it lies a helm bearing a rune shaped like a lightning bolt, also white. You leave them where they are. No orc of the mountains bears such tokens. You remember what was said in Hollin about the crows and the wizard's tower in the south. Someone else besides the Eye has sent his servants to this river.",
+      "choiceLabel": "Search the hillside"
+    },
+    "argonath_4_6": {
+      "title": "The Gorge",
+      "text": "The path enters a narrow gorge, its walls of rock closing above your head. The thunder of the river comes multiplied by the echoes, and you must shout to hear yourself. You carry the boat sideways so that it fits. At one point the light almost vanishes. You advance inch by inch, your elbows grazing the stone, until at last you see daylight on the other side.",
+      "choiceLabel": "Press on through the gorge"
+    },
+    "argonath_4_7": {
+      "title": "The Backwater",
+      "text": "At the foot of the last rapids the river forms a wide, dark backwater, where the foam turns slowly before moving on. You lower the boat carefully into the water and let it float. It holds. You test it, paddling in circles near the bank, until you trust it again. Your arms ache from carrying it, but feeling the current beneath the hull once more is like breathing again.",
+      "choiceLabel": "Launch the boat"
+    },
+    "argonath_5_0": {
+      "title": "The End of the Rapids",
+      "text": "The rapids lie behind you. The river is one again, deep and swift, hemmed in between ever higher hills. You return to the boat and let yourself be carried, watchful for rocks. The roar of Sarn Gebir dies away at your back, and in its place you hear the wind whistling among the stones. You eat a mouthful of Elven bread and count the days. You have already lost count, and that troubles you more than the orcs.",
+      "choiceLabel": "Return to the water"
+    },
+    "argonath_5_1": {
+      "title": "The Cliffs",
+      "text": "The hills become sheer cliffs that box in the river. The water runs dark and deep between walls that hide the sky. Above, far above, you see black birds pass that make no sound. There are hardly any shores to land on: if something attacks you here, almost all you can do is paddle. You press on, close to one of the walls, and the evening light paints the rock red.",
+      "choiceLabel": "Paddle between the cliffs"
+    },
+    "argonath_5_2": {
+      "title": "Horns on the Hillside",
+      "text": "From high on a hillside you hear, far off, the sound of a hoarse and grating horn. Another answers further south, and then a third, to the west. These are not hunting calls: they are patrols calling to one another, many of them, spread across the hills. The servants of the White Hand are combing this land in search of something, and you are in the middle. You stay motionless, trying to guess where they come from. The wind carries the sound away and it does not return.",
+      "choiceLabel": "Listen from the hillside"
+    },
+    "argonath_5_3": {
+      "title": "Night in the Cleft",
+      "text": "You find a cleft in the rock, deep enough to squeeze into with the boat, and decide to spend the night there. You light no fire. From inside you hear patrols pass along the hillside: heavy footsteps, growls, the scrape of a spear against stone. You wrap yourself in the grey cloak and keep still. No one looks in. At dawn you come out stiff, but whole, and go on southward.",
+      "choiceLabel": "Camp in a cleft"
+    },
+    "argonath_6_0": {
+      "title": "Figures in the Mist",
+      "text": "The river widens a little and a low mist covers the water. Far off, downstream, two enormous shapes rise on either side of the channel, taller than any tower you have ever seen. At first you take them for mountains, but they have shoulders, and crowned heads. You remember the Elves' map. You feel fear, and something close to reverence. You paddle towards them slowly.",
+      "choiceLabel": "Paddle into the mist"
+    },
+    "argonath_6_1": {
+      "title": "The Patrol on the Shore",
+      "text": "Where the western bank opens into a strip of gravel, you go ashore and continue on foot, towing the boat by its rope. A patrol bars your way: two Uruk-hai with the white hand on their shields and two Wargs straining at their leashes. The Uruks grin when they see you are alone. One lets his Warg loose and shouts something at it. There is no time to get into the boat. You tie the rope to a root and plant yourself in the middle of the path.",
+      "choiceLabel": "Follow the western shore"
+    },
+    "argonath_7_0": {
+      "title": "The Kings of Stone",
+      "text": "The two figures leave no doubt now: they are kings of stone, carved from the living rock, their left hands raised towards the north as if commanding a halt. The current sweeps you towards the gate they form. But at their feet, on a ledge of rock above the water, an Uruk bigger than the rest awaits you, his helm painted white: the captain of the White Hand, with a warrior at his side. You beach the boat as best you can and climb onto the ledge to face him."
+    }
+  },
+  "rivals": {
+    "Huargo": "Warg",
+    "Uruk-hai de la Mano Blanca": "Uruk-hai of the White Hand",
+    "Capitán uruk de la Mano Blanca": "Uruk Captain of the White Hand"
+  }
+}

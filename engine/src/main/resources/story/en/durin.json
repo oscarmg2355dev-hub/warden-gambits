@@ -1,0 +1,119 @@
+{
+  "id": "durin",
+  "name": "Doors of Durin",
+  "nodes": {
+    "durin_1_0": {
+      "title": "The Dry Riverbed",
+      "text": "When at last you leave the snow behind, your fingers are numb and your cloak stiff with ice, but you are alive. You descend to the downs and go on south, skirting the range. On the second day you come upon the trail of a company of travellers: men's boots, small bare feet, the shoes of a pony. They too came down from the mountains and turned south. The tracks lead you to a valley through which runs the bed of a dry river, full of round stones. At its head rise sheer walls of grey rock."
+    },
+    "durin_2_0": {
+      "title": "The Stair by the Falls",
+      "text": "You follow the dry riverbed, as the travellers did. It climbs among rocks to a drop where a waterfall must once have fallen; now only a thread of water trickles down the stone. Beside it, steps carved in the rock, worn and slippery, climb the cliff. You climb them. At the top awaits something you never imagined: a dark lake, still as a slab, filling the valley to the foot of the walls. The old road sinks into it. No wind blows, and the water smells of rot.",
+      "choiceLabel": "Follow the dry riverbed"
+    },
+    "durin_2_1": {
+      "title": "The Heights of the Valley",
+      "text": "You dislike how hemmed in the valley is, so you climb the slope to see it from above. From the top of a crag you understand everything: the river has stopped because something has blocked its course, and its waters form a black lake beneath enormous cliffs. At the foot of the wall, on the shore, lie two huge holly trees torn up by the roots and rocks heaped together, as if a giant had flown into a rage. Behind you, in the hills, a howl rings out. They have caught your scent.",
+      "choiceLabel": "Climb the slope"
+    },
+    "durin_3_0": {
+      "title": "The Lone Pony",
+      "text": "You skirt the lake along a narrow strip of ground between water and rock. Halfway along, something stirs among the stones and your hand flies to your sword, but it is a pony: a lean beast, with neither load nor saddle, its eyes wild with terror. By its shoes you know it belongs to the company you are following. You call to it softly, but it will not come near. It looks at the water, neighs and trots off northward, away from the lake. Something has frightened it badly.",
+      "choiceLabel": "Skirt the shore of the lake"
+    },
+    "durin_3_1": {
+      "title": "Goblins on the Stair",
+      "text": "You linger a while at the top of the steps, hidden, watching the lake. Before long you see movement: two hunched figures coming down the rocks of the shore, in ill-fitting black armour and with rusty scimitars. They are goblins, creatures of the mines, come out of some hole in the mountain. One hangs back and the other sniffs the air and climbs straight towards you. They have seen you. On the stair there is no room to flee; you will have to fight upon the steps.",
+      "choiceLabel": "Keep watch from the steps"
+    },
+    "durin_3_2": {
+      "title": "The Wolves of the Slope",
+      "text": "You keep to the heights, leaping from rock to rock, but the howls draw nearer. Three grey wolves appear on the ridge, outlined against the sky, and come down at you in a straight line. They are large and silent, and they move as though someone had taught them to hunt men. There is no tree to climb and no cave to crawl into. You find a rock to guard your back and make ready. Below, the black lake lies still, indifferent to everything.",
+      "choiceLabel": "Keep to the heights"
+    },
+    "durin_3_3": {
+      "title": "The Edge of the Cliff",
+      "text": "You make your way carefully down the slope to the top of the cliffs, right above the spot where you saw the uprooted trees. From here you hear the water lapping at the stone far below. You peer over: the wall drops sheer, smooth, without a single mark, and at its foot the heaped rocks form a barrier along the shore. Something has struck here with terrible force; there are fresh cracks in the rock, white as wounds. You search for a way down and find one: a narrow chimney between two crags.",
+      "choiceLabel": "Descend towards the wall"
+    },
+    "durin_4_0": {
+      "title": "The Pony's Hunters",
+      "text": "You run after the pony along the shore, fearing it will break a leg among the stones. You are not the only one pursuing it. A grey wolf bursts from among the rocks and lunges at the animal, which rears and flees up the slope. The wolf then turns on you, its hackles raised: it prefers prey that does not run. You place yourself between it and the way the pony went and raise your sword. That beast will get home, if you have any say in it.",
+      "choiceLabel": "Go after the pony"
+    },
+    "durin_4_1": {
+      "title": "The Scavenger",
+      "text": "You follow the shore towards the cliffs. Near the wall, the ground is churned: freshly fallen rocks, split trunks and a smell of slime that turns your stomach. Among the stones, a lone goblin is grubbing in the mud for anything of value. Seeing you, it lets out a screech and hurls itself at you with a curved knife in each hand, more rabid than brave. If it escapes, it will warn its kin. You cannot let it go.",
+      "choiceLabel": "Follow the shore to the wall"
+    },
+    "durin_4_2": {
+      "title": "The Burrow",
+      "text": "The other goblin, the one that hung back, has fled. You follow it among the rocks of the shore to a crack in the slope, half hidden with branches, into which it slips. You peer in. It is a burrow, not an entrance: a narrow hole reeking of smoke and burnt flesh, where three more goblins leap to their feet beside a small fire. Now there are four, and the firelight gleams on their blades. You can no longer retreat without turning your back on them.",
+      "choiceLabel": "Chase the fleeing goblin"
+    },
+    "durin_4_3": {
+      "title": "Quarrel on the Shore",
+      "text": "At last you go down to the lake shore. The stones are coated with green, slippery slime, and the water, so close, seems blacker still. Beside a fallen trunk a strange scene surprises you: a goblin and a grey wolf fighting over the remains of something dead, snarling at each other. Seeing you, they forget their quarrel. The wolf crouches to spring and the goblin, cleverer, moves aside to attack you from the flank. The lake is at your back, and you do not like it at all.",
+      "choiceLabel": "Go down to the shore"
+    },
+    "durin_4_4": {
+      "title": "The Pack",
+      "text": "The first wolves were only the vanguard. Four more come down from the ridge, two on each flank, noses pressed to your trail. You could hide, but they would find you. You seek a narrow gap between two rocks, where they cannot all attack at once, and wait with your sword raised. The first one leaps; the others follow, snarling, seeking an opening to reach you. The fight will be long, and no one is coming to help you.",
+      "choiceLabel": "Stand against the pack"
+    },
+    "durin_4_5": {
+      "title": "Flight among the Crags",
+      "text": "You hear more howls on the ridge and do not stay to count them. You bound down among the crags towards the lake, seeking a place where the wolves cannot surround you. Most of them lose your trail among the rocks, but one, the largest, is not deceived. It catches you at the foot of the slope, where the stones give way to the shore, and stands before you with its fangs bared. This one will not give up. You will have to finish it.",
+      "choiceLabel": "Escape among the crags"
+    },
+    "durin_4_6": {
+      "title": "The Blocked Doors",
+      "text": "You climb down the chimney to the foot of the wall. Up close, the destruction is greater still: enormous rocks piled against the cliff, split holly trees, churned mud. Behind that heap, you suspect, there is a door, though you cannot see so much as a crack. A goblin is clambering over the rocks trying to shift them, without success, cursing aloud in its tongue. Seeing you, it draws its weapon. It seems it too is seeking a way in, or a way out.",
+      "choiceLabel": "Climb down the chimney"
+    },
+    "durin_4_7": {
+      "title": "The Crack at the Summit",
+      "text": "You walk along the top of the cliff looking for another way down. You find a fresh crack splitting the rock from top to bottom, as if the mountain had been cleft by a blow. It smells of damp and of something rancid. You are not alone: up through it climbs a goblin leading a wolf on a rope. Seeing you, the goblin slips the beast with a shrill laugh and screams an order. The wolf leaps at you and its master follows with a spear. Up here, one false step would send you into the lake.",
+      "choiceLabel": "Walk along the clifftop"
+    },
+    "durin_5_0": {
+      "title": "The Last Tracks",
+      "text": "You search for the trail of the travellers who came down from the mountains. You find it near the wall, on a strip of ground the water has not covered: the boots, the small feet, the pony. The tracks stop at the foot of the cliff and there mingle with other marks, broad and slimy, coming out of the lake as if something had dragged itself through the mud. After that, nothing: no blood, no bodies, only rocks heaped against the smooth stone. They went in, you understand, and something closed the way behind them.",
+      "choiceLabel": "Seek the company's trail"
+    },
+    "durin_5_1": {
+      "title": "The Moving Water",
+      "text": "You sit on a rock and watch the lake. Its surface looks like black glass, without a ripple. But after a while you see it is not entirely still: near the shore slow rings appear, as if something were breathing beneath, and a line of bubbles moves forward and stops. Dead fish float belly up. In the mud of the shore are broad, fresh furrows, made by no animal you know. You move away from the water without a sound and never turn your back on it again.",
+      "choiceLabel": "Watch the surface of the lake"
+    },
+    "durin_5_2": {
+      "title": "The Ancient Channel",
+      "text": "You pause to think how this lake was formed. It is not natural: downstream, a barrier of stones and earth blocks the riverbed and holds back the water, which barely seeps over the top. But something else catches your eye. Following the line of the old riverbed towards the cliffs, you understand that the river did not rise from any ordinary spring: it flowed from the mountain itself, through a channel now beneath the water, beside the wall. If water could come out that way, perhaps a man could go in.",
+      "choiceLabel": "Examine the old riverbed"
+    },
+    "durin_5_3": {
+      "title": "Lines in the Moonlight",
+      "text": "You find a dry corner far from the water and rest until nightfall, your back against a rock. When the moon rises and the clouds part, you see something that leaves you breathless: on the smooth face of the cliff, silver lines kindle, fine as threads, tracing an arch, some trees and a star. It is an enormous door that shows itself only by moonlight. But it is shut and blocked by fallen rocks, and you do not know its secret. After a while the clouds return and the drawing fades.",
+      "choiceLabel": "Rest until nightfall"
+    },
+    "durin_6_0": {
+      "title": "The Shore beneath the Wall",
+      "text": "You advance along the shore towards the base of the cliff, stepping carefully among the slime-coated stones. The water is a pace away, black and still, and you try not to look at it. Behind you, however, you hear now and then a soft splash, as though something were following you beneath the surface, matching your pace. You turn and there is nothing, only widening rings. You quicken your step. The wall draws near, enormous, and at its foot the water swirls against fallen rocks.",
+      "choiceLabel": "Walk along the shore"
+    },
+    "durin_6_1": {
+      "title": "The Last Wolves",
+      "text": "You cut towards the wall through a chaos of fallen crags, leaping from one to the next. Halfway there, two grey wolves that had been trailing you for some time without a howl catch up with you. The first leaps from a higher rock and nearly knocks you down; the second goes for your legs. You fight balanced on slippery stones, with the lake gleaming below like a black eye. You know that if you fall into the water, you may never come out.",
+      "choiceLabel": "Cut through the crags"
+    },
+    "durin_7_0": {
+      "title": "The Watcher in the Water",
+      "text": "At the foot of the wall, level with the water, the rock has split: the blows that felled trees and heaped up rocks have also cracked an old Dwarvish channel, and through the fissure comes a breath of cold air from inside the mountain. It is your way. You wade in up to your knees to reach it and, at that moment, the lake boils. Immensely long arms, pale and slimy, rise from the surface and coil about, seeking you. You cannot kill what lives down there; you must strike it until it sinks and lets you pass."
+    }
+  },
+  "rivals": {
+    "Trasgo de Moria": "Moria Goblin",
+    "Lobo de Saruman": "Wolf of Saruman",
+    "Guardián del Agua": "Watcher in the Water"
+  }
+}

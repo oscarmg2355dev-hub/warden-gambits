@@ -1,0 +1,229 @@
+{
+  "id": "quebradas",
+  "name": "Quebradas de los Trolls",
+  "baseLevel": 16,
+  "nodes": [
+    {
+      "level": 1,
+      "index": 0,
+      "title": "Colinas de mala fama",
+      "text": "Al otro lado del Último Puente, el Camino se adentra en una tierra distinta: colinas empinadas cubiertas de bosque, barrancos sombríos y, en lo alto de algunas cumbres, castillos en ruinas de aspecto siniestro. En Bree llaman a esta comarca las Quebradas de los Trolls, y no lo dicen en broma. Llueve a menudo, los árboles gotean y el musgo lo cubre todo. Entre los helechos ves senderos anchos, aplastados por pies demasiado grandes. Al este, muy lejos, asoman por fin cumbres nevadas.",
+      "imagePrompt": "A young traveler entering steep forested hills beyond an old stone bridge, dark ravines and a sinister ruined castle on a distant summit, dripping trees, wide trampled paths in the ferns, faint snowy peaks far east, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text"
+    },
+    {
+      "level": 2,
+      "index": 0,
+      "title": "La calzada olvidada",
+      "text": "Sigues el Camino, que serpentea entre las colinas, encajonado por laderas de árboles altos. Aquí la calzada está descuidada: raíces que levantan las losas, charcos profundos, ramas caídas que nadie retira. Aun así, es lo único que parece seguro en esta tierra. Al mediodía encuentras una piedra con una muesca reciente, la señal de alguien que se detuvo aquí no hace mucho. A lo lejos, una columna de humo sube entre los árboles.",
+      "imagePrompt": "A neglected ancient road winding between steep wooded slopes, paving stones heaved up by roots, deep puddles and fallen branches, a young traveler looking toward a column of smoke rising above the trees, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el Camino entre bosques"
+    },
+    {
+      "level": 2,
+      "index": 1,
+      "title": "Bajo los árboles viejos",
+      "text": "Abandonas el Camino y subes por una ladera boscosa, donde los árboles son tan viejos que sus copas apagan la luz del día. El suelo está cubierto de hojas podridas que amortiguan tus pasos. Avanzas entre troncos gigantescos, siguiendo una senda de animales que sube y baja sin descanso. De vez en cuando, un crujido de ramas a lo lejos te obliga a detenerte y escuchar. El bosque no está vacío, y lo que se mueve en él no es pequeño.",
+      "imagePrompt": "A young traveler climbing a dim forest slope among gigantic ancient trunks, thick carpet of rotting leaves, canopy blotting out the daylight, pausing to listen to distant cracking branches, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Internarse en el bosque alto"
+    },
+    {
+      "level": 3,
+      "index": 0,
+      "title": "El castillo de la colina",
+      "text": "Subes a una colina rocosa coronada por las ruinas de un castillo. Sus muros negros siguen en pie, agrietados, y por las ventanas vacías silba el viento. Quien lo construyó no era amigo de nadie: en las piedras del portón hay tallas de figuras encadenadas, borrosas por el tiempo. Desde las almenas dominas todo el valle. El Camino se pierde hacia el este entre los bosques, y en una hondonada cercana ves moverse figuras pequeñas y oscuras.",
+      "imagePrompt": "Black cracked walls of a sinister ruined castle on a rocky hilltop, carvings of chained figures on the gate, a young traveler on the battlements overlooking a forested valley where small dark figures move in a hollow, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir al castillo en ruinas"
+    },
+    {
+      "level": 3,
+      "index": 1,
+      "title": "Las hogueras del barranco",
+      "text": "Sigues el humo hasta un barranco junto al Camino. Te arrastras entre los helechos y ves un campamento de orcos de las Montañas Nubladas: chozas de ramas, huesos roídos y una hoguera humeante. Han bajado de las montañas con el otoño, buscando presas en los caminos. Antes de que puedas retirarte, tres de ellos, que volvían de cazar, te descubren por detrás. Lanzan un chillido y cargan contra ti con cimitarras dentadas.",
+      "imagePrompt": "A smoky orc camp of branch huts and gnawed bones in a forest ravine, three snarling orcs with jagged scimitars charging a young traveler from behind as he crouches in the ferns, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Acercarse a las hogueras",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -4, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -4, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2 },
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -4, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 2,
+      "title": "El huargo del remanso",
+      "text": "Bajas hasta un arroyo que corre entre rocas cubiertas de musgo y lo sigues aguas arriba, pensando que te llevará a terreno abierto. Pero el agua también atrae a otros. En un remanso, un huargo bebe con las orejas tiesas. Lleva al cuello restos de una correa de cuero: alguien lo ha usado como montura. Al verte enseña los colmillos, y salta de piedra en piedra por el arroyo directo hacia ti.",
+      "imagePrompt": "A mossy forest stream with a still pool, a warg wearing a torn leather harness leaping across the stones toward a young traveler with a drawn sword, dim green light through the trees, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Seguir el arroyo del bosque",
+      "encounter": {
+        "rivals": [
+          { "name": "Huargo de monta", "portrait": "warg_rider", "levelOffset": 1, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "index": 3,
+      "title": "La loma desnuda",
+      "text": "Subes a una loma donde el bosque se abre y solo crecen helechos y rocas. Desde allí ves la comarca entera: colinas y más colinas, oscuras de árboles, y entre ellas el valle por el que corre el Camino. Al otro lado de la loma, en un claro, distingues tres formas grandes y grises, quietas como rocas. Parecen gigantes agachados alrededor de una hoguera apagada. No se mueven. Aun así, se te seca la boca.",
+      "imagePrompt": "A bare fern-covered hilltop above endless dark wooded hills, a young traveler looking down into a clearing where three huge grey hunched shapes sit motionless around a dead fire, cloudy light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Subir a la loma desnuda"
+    },
+    {
+      "level": 4,
+      "index": 0,
+      "title": "Los sótanos",
+      "text": "Bajas por una escalera rota hasta los sótanos del castillo. Allí abajo huele a moho y a algo peor. Hay huesos amontonados, grandes y pequeños, y en las paredes, marcas de garras a una altura imposible para un hombre. En un rincón encuentras un cofre reventado, vacío salvo por unas monedas antiguas pegadas al fondo por el barro. Te las guardas y sales a la luz cuanto antes. Algo grande usó este lugar como guarida, y no hace tanto.",
+      "imagePrompt": "Dark castle cellars at the bottom of a broken stair, heaps of large and small bones, huge claw marks high on the walls, a young traveler with a torch prying old coins from a smashed chest, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar a los sótanos"
+    },
+    {
+      "level": 4,
+      "index": 1,
+      "title": "Lo que temen los orcos",
+      "text": "Te quedas en las almenas observando la hondonada. Las figuras son orcos, una docena, que arrastran algo pesado entre los árboles hacia las colinas del norte. No vienen hacia ti, y das gracias. Esperas a que desaparezcan y, entretanto, te fijas en el terreno: los orcos evitan con cuidado ciertos barrancos, como si en ellos hubiera algo que incluso a ellos les diera miedo. Tomas buena nota de esos lugares.",
+      "imagePrompt": "From the battlements of a ruined castle, a young traveler watching a band of orcs dragging a heavy load through the trees below, carefully skirting a dark ravine, grey afternoon light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Vigilar desde las almenas"
+    },
+    {
+      "level": 4,
+      "index": 2,
+      "title": "El botín de los orcos",
+      "text": "Cuando cae el segundo orco, nadie más aparece: el campamento estaba casi vacío. Lo registras deprisa. Entre pieles sucias y cacharros encuentras cosas robadas a viajeros: un odre de vino, una bota de enano, una capa verde rasgada, un puñado de clavos de herradura. Los orcos cazan en el Camino, y no todos sus encuentros terminan bien para los caminantes. Llenas tu bolsa con lo que pueda servirte y te alejas antes de que vuelvan los demás.",
+      "imagePrompt": "A young traveler hastily searching an empty orc camp, filthy furs and crude pots, stolen goods scattered about such as a wineskin, a dwarf boot and a torn green cloak, smoke drifting, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Registrar el campamento"
+    },
+    {
+      "level": 4,
+      "index": 3,
+      "title": "Perdido en el bosque",
+      "text": "No te quedas a comprobar si hay más. Te internas en el bosque a la carrera, saltando raíces y apartando ramas, hasta que el humo del campamento queda muy atrás. Cuando te detienes, jadeando, estás perdido entre árboles idénticos. Te calmas, buscas el musgo de los troncos y la luz entre las copas, y poco a poco recuperas el rumbo hacia el este. Has perdido tiempo, pero estás vivo, y nadie te sigue.",
+      "imagePrompt": "A breathless young traveler stopping in a dense forest of identical tall trunks, examining moss on the bark to find his bearings, shafts of light through the canopy, distant smoke far behind, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Escapar hacia el bosque"
+    },
+    {
+      "level": 4,
+      "index": 4,
+      "title": "Huellas gigantes",
+      "text": "Tras la pelea, te arrodillas junto al remanso para lavarte y entonces las ves: huellas en el barro de la orilla, tan grandes que en cada una cabría un niño acostado. Tienen dedos gruesos y se hunden muy hondo. Son recientes, de la noche pasada como mucho, y se alejan arroyo arriba, hacia un barranco oscuro. Ya no te quedan dudas sobre el nombre de esta tierra. Te pones en pie despacio, con la espada en la mano, y escuchas.",
+      "imagePrompt": "A young traveler kneeling by a muddy forest pool beside enormous fresh footprints sunk deep in the mud, the trail leading upstream into a dark ravine, sword in hand, tense gloomy light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Examinar la orilla del remanso"
+    },
+    {
+      "level": 4,
+      "index": 5,
+      "title": "El abeto hueco",
+      "text": "Para alejarte del cadáver del huargo, que pronto atraerá a otros, cruzas el arroyo sobre unos troncos caídos, resbaladizos de musgo. En la otra orilla el bosque es más claro y huele a resina. Encuentras un abeto enorme con el tronco hueco y te metes dentro a descansar. Desde tu refugio ves pasar un zorro, una familia de ciervos y, muy alto entre las ramas, una ardilla que te regaña. Por un momento, el bosque parece casi amable.",
+      "imagePrompt": "A young traveler resting inside the hollow trunk of a giant fir in a brighter resin-scented forest, a fox and a family of deer passing, a squirrel scolding from a high branch, mossy log bridge behind, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar por los troncos caídos"
+    },
+    {
+      "level": 4,
+      "index": 6,
+      "title": "Los tres de piedra",
+      "text": "Bajas al claro con el corazón en la boca. Las tres formas son trolls, sí, pero de piedra: enormes, encorvados, uno con el brazo en alto como si fuera a golpear. El tiempo los ha cubierto de líquenes y musgo. Alrededor hay huellas recientes de botas y de pies descalzos, y la hierba está aplastada donde alguien se sentó a descansar. Los viajeros a los que sigues estuvieron aquí. Sonríes al imaginarlos ante estos gigantes, tan asustados como tú.",
+      "imagePrompt": "A forest clearing with three enormous hunched trolls turned to stone, lichen and moss covering them, one with an arm raised as if to strike, a young traveler smiling nervously among small footprints in flattened grass, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar al claro de los gigantes"
+    },
+    {
+      "level": 4,
+      "index": 7,
+      "title": "La cueva de la losa",
+      "text": "Rodeas el claro y, entre rocas cubiertas de zarzas, encuentras la boca de una cueva. Una gran losa de piedra, que en otro tiempo debió de servir de puerta, yace partida a un lado. Dentro, el suelo está sembrado de huesos viejos, cacharros rotos y monedas verdes de óxido. Hace mucho que nadie vive aquí, o eso parece. Pero junto a la entrada hay un montón de ramas recién arrancadas y un hedor que no tiene nada de antiguo.",
+      "imagePrompt": "A bramble-choked cave mouth among rocks with a great broken stone slab beside it, old bones, broken pots and green-tarnished coins inside, a pile of freshly torn branches at the entrance, a wary young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Explorar las rocas cercanas"
+    },
+    {
+      "level": 5,
+      "index": 0,
+      "title": "El jinete de lobo",
+      "text": "Avanzas por la cresta de una colina, donde los árboles ralean y se camina mejor. Es un error: desde lejos se te ve recortado contra el cielo. Un orco montado en un huargo te ha visto y sube la ladera a toda velocidad, agitando una lanza sobre la cabeza. A pocos pasos, el orco salta de la montura para atacarte por un lado mientras la bestia te embiste por el otro. Tienes que dividir tu atención entre los dos.",
+      "imagePrompt": "A sparse wooded hill crest against the sky, an orc riding a warg charging uphill with a spear, leaping off to attack a young traveler from one side while the warg lunges from the other, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Avanzar por la cresta",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -2, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -2, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 1,
+      "title": "La hondonada de la niebla",
+      "text": "Cruzas una hondonada oscura y húmeda, donde la niebla se queda prendida entre los troncos. Un aullido rompe el silencio, muy cerca, y te deja helado. De la niebla surge un huargo enorme, con el lomo erizado y el hocico manchado de sangre fresca. Ha estado cazando y no le ha bastado. Da vueltas a tu alrededor, midiendo tus fuerzas, y luego se lanza. Plantas los pies en la tierra húmeda y esperas el golpe.",
+      "imagePrompt": "A dark damp forest hollow filled with clinging mist between trunks, a huge bristling warg with a blood-stained muzzle circling and then lunging at a young traveler bracing with his sword, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Cruzar la hondonada oscura",
+      "encounter": {
+        "rivals": [
+          { "name": "Huargo", "portrait": "warg", "levelOffset": 1, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 2,
+      "title": "El sendero ancho",
+      "text": "Encuentras un sendero ancho y pisoteado que atraviesa el bosque como una herida. Lo usan criaturas grandes, pero esta vez quienes lo recorren son pequeños, ruidosos y muchos: cuatro orcos que bajan cargados con un ciervo, discutiendo a gritos. Te ven a la vez que tú a ellos. Sueltan la presa, desenvainan y se abren para rodearte, gritando en su lengua algo que suena a burla. Esperas a que el primero se acerque.",
+      "imagePrompt": "A wide trampled path cutting through the forest like a wound, four noisy orcs dropping a deer carcass and drawing blades to surround a young traveler with a sword, dim forest light, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Tomar el sendero ancho",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -5, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } },
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -5, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2 },
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -5, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2 },
+          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -5, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "index": 3,
+      "title": "El orco de la orilla",
+      "text": "Bajas hacia el río que corre por el fondo del valle, buscando un lugar por donde cruzar. En la orilla, sentado en una roca, un orco grande y musculoso afila una espada robada. Lleva un casco abollado y un escudo negro sin adornos. Es más alto que tú y no parece tener prisa. Se levanta despacio, se cuelga el escudo al brazo y te hace una seña burlona para que te acerques.",
+      "imagePrompt": "A rocky riverbank at the bottom of a wooded valley, a big muscular orc in a dented helmet rising from a rock with a stolen sword and a plain black shield, mockingly beckoning a young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Bajar hacia el río",
+      "encounter": {
+        "rivals": [
+          { "name": "Orco grande de las Montañas Nubladas", "portrait": "orc", "levelOffset": 1, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2, "reaction": { "atHpPct": [30], "combos": ["21212"] } }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "index": 0,
+      "title": "La voz de la cueva",
+      "text": "Decides no arriesgarte más y das un largo rodeo por la ladera, entre peñas y árboles caídos. Tardas casi todo el día, pero no te cruzas con nadie. Al caer la tarde, el bosque se abre de pronto ante un barranco profundo, al pie de una pared de roca. Huele a humo rancio y a carne podrida. En la pared se abre una gran cueva, y de ella sale un sonido que al principio tomas por un derrumbe: una voz enorme que canturrea.",
+      "imagePrompt": "At dusk, a young traveler emerging from the trees at the edge of a deep ravine below a rock wall, a huge cave mouth with rancid smoke drifting out, bones scattered on the ground, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Rodear el valle por la ladera"
+    },
+    {
+      "level": 6,
+      "index": 1,
+      "title": "El valle a oscuras",
+      "text": "Quieres salir de estas colinas cuanto antes y cruzas el valle de noche, guiándote por las estrellas que asoman entre las copas. En la oscuridad, dos huargos te cierran el paso en un claro, atraídos por tu olor. Luchas casi a ciegas, adivinando sus saltos por el brillo de sus ojos. Más allá del claro, una pared de roca se alza contra el cielo, y en su base, la boca de una gran cueva deja escapar el resplandor rojo de una hoguera.",
+      "imagePrompt": "A forest clearing at night under faint stars, two wargs with glowing eyes leaping at a young traveler fighting almost blind, beyond them a rock wall with a great cave mouth glowing red from a fire within, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "choiceLabel": "Atravesar el valle a oscuras",
+      "encounter": {
+        "rivals": [
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -2, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 },
+          { "name": "Huargo", "portrait": "warg", "levelOffset": -2, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    },
+    {
+      "level": 7,
+      "index": 0,
+      "title": "El trol de piedra",
+      "text": "De la cueva sale un trol de piedra, vivo y bien despierto: casi el doble de alto que un hombre, con la piel gris y rugosa como una roca y una maza hecha con un tronco entero. Te ha olido, y le gusta lo que huele. Un huargo que rondaba la cueva, atraído por los huesos, se acerca gruñendo a su lado. Detrás de él, la hoguera ilumina un montón de huesos y tesoros robados. Sabes por los cuentos que la luz del sol convierte a los suyos en piedra, pero falta mucho para el alba. Hasta entonces, solo cuentas con tu espada. Más allá de estas colinas, el Camino desciende hacia un río rápido y hacia el vado que lleva a la tierra de los elfos: el vado del Bruinen.",
+      "imagePrompt": "Night before a great cave in a rock wall, a living stone troll twice a man's height with grey rocky skin and a whole tree trunk as a club stepping out toward a young traveler with a sword, a warg growling at its side, a fire lighting bones and treasure behind, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "encounter": {
+        "rivals": [
+          { "name": "Trol de piedra", "portrait": "boss_quebradas", "levelOffset": 6, "pattern": ["12", "121", "1212", "13", "131", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 20, "attackAbovePct": 70, "maxDefenses": 2, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } },
+          { "name": "Huargo de la cueva", "portrait": "warg", "levelOffset": -4, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+        ]
+      }
+    }
+  ]
+}

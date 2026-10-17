@@ -1,0 +1,120 @@
+{
+  "id": "gorgoroth",
+  "name": "Gorgoroth",
+  "nodes": {
+    "gorgoroth_1_0": {
+      "title": "The Land of Ash",
+      "text": "You have left the great spider shrieking in the darkness, wounded, crawling back to her holes, and you did not follow her. Coming out of the tunnel, you passed by night beneath a tower that kept silent, with no guards on its walls and smoke in its windows, and you went down a ravine on the far side, slithering among loose stones. Now, before you, stretches a plain of ash and slag, broken by red fissures. In its midst, alone, a mountain spews fire. The water in your waterskin will have to last."
+    },
+    "gorgoroth_2_0": {
+      "title": "The Black Tracker",
+      "text": "At the foot of the ravine, crouched over your trail in the ash, is a huge orc, black-skinned and long-armed, with a mail shirt down to his knees and a red eye painted on his shield. He sniffs your footprints like a hound. When he looks up and sees you, he neither shouts nor calls to anyone: he grins, baring his fangs, and rises slowly, drawing a broad sword. He wants the prey for himself alone.",
+      "choiceLabel": "Head down to the plain"
+    },
+    "gorgoroth_2_1": {
+      "title": "The Road of Ash",
+      "text": "You find a raised road crossing the plain, of black stones beaten flat, and you follow it for a stretch because on either side the ash comes up to your ankles. Rounding a heap of slag, you run headlong into two orcs coming the other way, laden with bundles. For an instant they stand dumbfounded, as surprised as you. Then they throw their bundles to the ground, draw their scimitars and hurl themselves at you, shouting to give themselves courage.",
+      "choiceLabel": "Follow an orc road"
+    },
+    "gorgoroth_3_0": {
+      "title": "The Water in the Rock",
+      "text": "Your waterskin weighs very little now, and you search for water among some black rocks. In a hollow you find a pool of old rain, a hand's depth, covered by a film of ash. You brush it aside with your hand. The water tastes of iron and smoke, bitter, but it is water. You drink slowly, in small sips, and fill your waterskin to the brim. Then you stay a while gazing at the empty pool, as one gazes at a spent treasure.",
+      "choiceLabel": "Look for water in the rocks"
+    },
+    "gorgoroth_3_1": {
+      "title": "The Red Fissure",
+      "text": "You hear marching feet and lower yourself into a fissure that cuts the ground. Below, very deep, a red light glows, and a heat rises that dries your lips and makes you sweat beneath your cloak. You hang from a ledge, two spans below the rim, while above you a troop of orcs goes by. The ash they raise falls on you. When they have gone, you crawl out, your hands aching from gripping the rock so hard.",
+      "choiceLabel": "Hide in a fissure"
+    },
+    "gorgoroth_3_2": {
+      "title": "The Camps",
+      "text": "From the top of a heap of slag you look out over the plain. It is dotted with camps: fires, black tents, pens and long lines of orcs setting off northward one after another, like ants. This whole land seems to be emptying itself that way, towards something that summons it. To the north-east, among the clouds, you make out a dark mass, immense, taller than any mountain, and at once you look away. Better not to gaze at it long.",
+      "choiceLabel": "Climb a heap of slag"
+    },
+    "gorgoroth_3_3": {
+      "title": "The Pit of Ash",
+      "text": "To get away from the road you cross a hollow full of ash as fine as flour. You sink to your knees, then to your thighs. Each step raises a grey cloud that gets into your mouth, your eyes and your nose. You cover your face with the hem of your cloak and breathe through it. It takes you an eternity to cross what you would have covered in a moment on the road. On the other side you spit grey for a good while.",
+      "choiceLabel": "Cross the ash hollow"
+    },
+    "gorgoroth_4_0": {
+      "title": "The Fires",
+      "text": "As night falls you must pass close to a camp to avoid a fissure. You creep forward on all fours, using the shadows of the slag. You are about to leave it behind when an orc coming out to relieve himself stumbles over you. His shout wakes the whole camp. Two black Uruks and two orcs fall upon you, and far off, all across the plain, horns begin to sound, one after another. Suddenly, everyone is looking for you.",
+      "choiceLabel": "Slip past some fires"
+    },
+    "gorgoroth_4_1": {
+      "title": "The Sunless Day",
+      "text": "There is no day here, only a brown gloom a little lighter than the night. You lie down between two rocks and cover yourself entirely with the grey Elven cloak. You sleep fitfully. Once you are woken by footsteps: an orc patrol passes three strides from you, arguing, and one even sits on your rock to shake a stone out of his boot. He does not see you. The cloak makes you look like just another stone. When they have gone, it is a long time before you breathe again.",
+      "choiceLabel": "Sleep beneath your cloak"
+    },
+    "gorgoroth_4_2": {
+      "title": "The River of Fire",
+      "text": "You follow the rim of the fissure for hours. Further on it widens, and along its floor runs, slowly, a river of molten rock, red and yellow, that makes the air crackle. Its light shows you the way in the darkness, but the heat is so fierce that every little while you must step back from the edge to breathe. A stone you tread on breaks loose and vanishes into the fire without a sound. You leave the fissure as soon as you see firm ground to one side.",
+      "choiceLabel": "Follow the rim of the fissure"
+    },
+    "gorgoroth_4_3": {
+      "title": "The Olog of the Bridge",
+      "text": "The fissure can only be crossed by a narrow bridge of stone. At the far end, leaning on the parapet, is a troll. It is not like the one in the hills: it is leaner, black-scaled, with shield and hammer, and its eyes fix on you with a cold intelligence. No creature of this land has ever seemed to you so dangerous. It is an Olog-hai. It straightens, strikes its shield with its hammer and advances to the middle of the bridge. It has no intention of letting you cross.",
+      "choiceLabel": "Cross the stone bridge"
+    },
+    "gorgoroth_4_4": {
+      "title": "The Forges",
+      "text": "To keep away from the lines of orcs you go down the far side of the heap and come upon a quarter of open-air forges: hammers pounding without rest, fountains of sparks, roaring furnaces and sweating orcs drawing red-hot sword blades from the fire. No one looks outward; they all work as though their lives depended on it. You crawl behind the piles of slag, amid the din, until the noise of the hammers is left behind.",
+      "choiceLabel": "Skirt some forges"
+    },
+    "gorgoroth_4_5": {
+      "title": "The Empty Camp",
+      "text": "You find an abandoned camp: fallen tents, cold fires and refuse everywhere. Its troop has already marched north. You go through it looking for some water, and you are not alone. Four straggling orcs are rummaging through the remains, fighting over a barrel. When they see you they forget the barrel. One whistles, another laughs, and the four spread out around you among the fallen tents, barring your way on every side.",
+      "choiceLabel": "Cross an empty camp"
+    },
+    "gorgoroth_4_6": {
+      "title": "The Patrol",
+      "text": "You climb out of the hollow by the far slope and shake off the ash. But your trail in the soft ash is as plain as a road, and a patrol finds it at once: a black Uruk in command and two orcs running ahead with their noses to the ground. They catch you on a flat stretch with no rocks to hide behind. The Uruk barks an order and the orcs split up to attack you on the flanks, while he comes straight at you.",
+      "choiceLabel": "Climb out by the far slope"
+    },
+    "gorgoroth_4_7": {
+      "title": "The Last Cake",
+      "text": "You stop in the shelter of a black rock, exhausted. At the bottom of your pack you find the last cake of Elven bread, wrapped in its leaf. You break it in two and eat both halves, slowly, with your eyes closed. For a moment the ash disappears and you are once more beneath the golden trees, with clear water near. You fold the empty leaf and keep it against your breast, as a keepsake. You rise with a strength you did not know you had.",
+      "choiceLabel": "Rest behind a black rock"
+    },
+    "gorgoroth_5_0": {
+      "title": "The Pursuit",
+      "text": "Someone has found your trail: horns begin to sound all across the plain, and the patrols converge on where you are. You run westward, away from the mountain, leaping fissures and hiding behind the slag, while they follow you with torches. For hours you draw them along behind you, ever further. At last you lose them in a field of rocks. Exhausted, you turn and look back. The plain around the mountain has been emptied of patrols.",
+      "choiceLabel": "Head away from the mountain"
+    },
+    "gorgoroth_5_1": {
+      "title": "Beneath the Eye",
+      "text": "You cross the plain by night. To the north-east, atop a dark and immense mass, a red light burns, and suddenly you feel it searching for you, sweeping the land like the beam of a beacon. You do not throw yourself down: you keep walking, head bowed and cloak drawn tight, like one more shadow of the ash. For one unbearable instant the weight of that gaze seems to brush you, and your knees tremble, but you do not stop. Then it turns aside, towards the north, to something that matters to it more. You breathe.",
+      "choiceLabel": "Cross the plain by night"
+    },
+    "gorgoroth_5_2": {
+      "title": "The Lava Cave",
+      "text": "You find the mouth of a long, black cave that the lava left as it cooled, and you creep inside to rest. The air is still and smells of sulphur, but here they will not see you. You shake your waterskin: there is little left. You take a sip, only one, and swill it round your mouth before swallowing. Your lips are cracked and your throat is raw. You sleep sitting against the wall, sword in hand.",
+      "choiceLabel": "Creep into a lava cave"
+    },
+    "gorgoroth_5_3": {
+      "title": "The Winged Shadow",
+      "text": "You cross an open flat without a single rock, and halfway over the air turns suddenly cold. A piercing cry comes down from the sky. A shadow with enormous wings flies low, circling, searching. You run for a distant fissure, the only cover, and the shadow cuts across your path again and again, forcing you to swerve southward, away from where you meant to go. You reach the fissure breathless and crawl inside. When you come out, the sky is empty and you do not know where you are. It was hunting you, and you do not know why.",
+      "choiceLabel": "Cross the open flat"
+    },
+    "gorgoroth_6_0": {
+      "title": "The Skirts of Fire",
+      "text": "You climb the most remote flank of the fire-mountain, far from the road that winds up it, over a slope of loose slag that slides beneath your feet. The ground burns through your boots and the mountain booms like a drum. From above you see the torches of patrols sweeping the plain, searching. Then you do something you cannot wholly explain: you push a great stone down the slope, with a crash, and show yourself against the glow. The torches turn towards you. You draw them after you along this flank, far from any other path.",
+      "choiceLabel": "Climb towards the mountain"
+    },
+    "gorgoroth_6_1": {
+      "title": "The Last Guards",
+      "text": "At the foot of the mountain stands one last guard-post: a low tower of black stone beside the road. Only two black Uruks remain there, whetting their swords by the door. You try to skirt round them, but the slag crunches beneath your feet. One raises a horn to his lips and sounds it. All across the plain other horns answer, and the torches of the patrols begin to converge on you. The two Uruks close in with naked swords, one on each side.",
+      "choiceLabel": "Get past the last post"
+    },
+    "gorgoroth_7_0": {
+      "title": "The Winged Beast",
+      "text": "You move away from the road along the most remote flank of the mountain, the torches always behind you. But something has long been searching for you across the plain, and at last it finds you. A shriek rends the sky and the air freezes, though the ground burns. A featherless beast, long-necked, its hide like old leather, alights on a rock before you, and upon it a figure shrouded in black, faceless, with a pale sword. A Nazgûl. Up the slope climbs a black Uruk. You fall back downhill, drawing them with you, ever further from the path."
+    }
+  },
+  "rivals": {
+    "Uruk negro": "Black Uruk",
+    "Orco de Mordor": "Mordor Orc",
+    "Olog-hai": "Olog-hai",
+    "Nazgûl en su bestia alada": "Nazgûl on a Fell Beast"
+  }
+}

@@ -1,0 +1,349 @@
+zone,node,rivals,expectedLevel,skill,winPct,avgTicks,avgHpLeft
+bree,bree_3_0,Ratero de Bree L1,1,NOVATO,100.0,11.0,52.0
+bree,bree_3_1,Ladrón de caballos L1+Ladrón de caballos L1,1,NOVATO,0.0,18.0,0.0
+bree,bree_3_2,Lobo hambriento L1,1,NOVATO,0.0,6.0,0.0
+bree,bree_3_3,Bandido del foso L1+Lobo hambriento L1,1,NOVATO,0.0,6.0,0.0
+bree,bree_4_1,Bribón de la banda L1+Bribón de la banda L1,2,NOVATO,100.0,21.0,46.0
+bree,bree_4_3,Matón de Abrojal L2,2,NOVATO,100.0,11.0,69.0
+bree,bree_4_5,Lobo hambriento L1+Lobo hambriento L1,2,NOVATO,0.0,4.0,0.0
+bree,bree_4_7,Lobo hambriento L2,2,NOVATO,0.0,6.0,0.0
+bree,bree_6_1,Vigía de los salteadores L1+Lobo hambriento L1,3,NOVATO,0.0,8.0,0.0
+bree,bree_7_0,"El Tuerto, cabecilla de los bandidos L3+Salteador del Tuerto L1",3,NOVATO,100.0,19.0,42.0
+chet,chet_2_1,Lobo pardo de Chet L5,4,NOVATO,0.0,6.0,0.0
+chet,chet_4_1,Bandido del bosque L3+Bandido del bosque L3,4,NOVATO,100.0,27.0,53.0
+chet,chet_4_2,Lobo hambriento L4,4,NOVATO,0.0,6.0,0.0
+chet,chet_4_5,Lobo de las pozas L3+Lobo de las pozas L3,5,NOVATO,0.0,4.0,0.0
+chet,chet_4_6,Salteador rezagado L5,5,NOVATO,100.0,11.0,104.0
+chet,chet_5_0,Lobo de la manada L2+Lobo de la manada L2+Lobo de la manada L2,5,NOVATO,0.0,4.0,0.0
+chet,chet_5_1,Cobrador de peajes L4,5,NOVATO,100.0,9.0,136.0
+chet,chet_5_2,Lobo viejo L5,5,NOVATO,0.0,6.0,0.0
+chet,chet_5_3,Bandido del puente L3+Bandido del puente L3,6,NOVATO,100.0,15.0,90.0
+chet,chet_7_0,Lobo gris alfa L6+Lobo joven de la manada L2,6,NOVATO,0.0,4.0,0.0
+moscagua,moscagua_2_0,Nube de moscardones L7,7,NOVATO,100.0,10.2,103.4
+moscagua,moscagua_2_1,Espía dunlendino L7,7,NOVATO,96.3,15.2,71.6
+moscagua,moscagua_4_1,Enjambre de moscardones L5+Enjambre de moscardones L5+Enjambre de moscardones L5,8,NOVATO,0.0,16.0,0.0
+moscagua,moscagua_4_3,Espía dunlendino L6+Espía dunlendino L6,8,NOVATO,0.0,10.6,0.0
+moscagua,moscagua_4_4,Espía dunlendino L6+Moscardones de Moscagua L6,8,NOVATO,41.0,24.0,34.0
+moscagua,moscagua_4_6,Enjambre del ahogado L8,8,NOVATO,100.0,9.9,113.2
+moscagua,moscagua_6_1,Moscardones de Moscagua L6+Espía dunlendino L6,9,NOVATO,49.7,20.4,45.0
+moscagua,moscagua_7_0,Reina del enjambre L9+Guardianas del enjambre L5,9,NOVATO,82.3,66.0,63.8
+cima,cima_2_1,Espía dunlendino L10,10,NOVATO,97.0,14.5,90.3
+cima,cima_3_0,Lobo hambriento L9+Lobo hambriento L9,10,NOVATO,0.0,4.0,0.0
+cima,cima_3_1,Explorador dunlendino L11,10,NOVATO,83.3,20.9,76.4
+cima,cima_3_2,Lobo hambriento L8+Lobo hambriento L8+Lobo hambriento L8,11,NOVATO,0.0,4.0,0.0
+cima,cima_3_3,Espía dunlendino L9+Espía dunlendino L9,11,NOVATO,0.0,10.9,0.0
+cima,cima_5_1,Rastreador dunlendino L11,11,NOVATO,94.3,15.2,98.3
+cima,cima_5_3,Lobo hambriento L8+Lobo hambriento L8+Lobo hambriento L8,12,NOVATO,0.0,4.0,0.0
+cima,cima_7_0,Espectro del Anillo L12,12,NOVATO,100.0,10.8,173.3
+puente,puente_2_1,Huargo explorador L13,13,NOVATO,0.0,6.0,0.0
+puente,puente_4_0,Huargo L12+Huargo L12,13,NOVATO,0.0,4.0,0.0
+puente,puente_4_1,Espía dunlendino L14,13,NOVATO,95.7,16.6,90.9
+puente,puente_4_2,Huargo grande L14,13,NOVATO,0.0,6.0,0.0
+puente,puente_4_3,Espía dunlendino L12+Espía dunlendino L12,13,NOVATO,0.0,8.0,0.0
+puente,puente_4_4,Huargo L11+Huargo L11+Huargo L11,14,NOVATO,0.0,3.0,0.0
+puente,puente_4_5,Espía dunlendino L13,14,NOVATO,100.0,13.0,129.0
+puente,puente_4_6,Huargo viejo L14,14,NOVATO,0.0,6.0,0.0
+puente,puente_4_7,Espía dunlendino L12+Huargo L12,14,NOVATO,0.0,5.0,0.0
+puente,puente_6_1,Huargo L12+Huargo L12,15,NOVATO,0.0,4.0,0.0
+puente,puente_7_0,Jefe de la manada de huargos L15+Huargo L11,15,NOVATO,0.0,4.0,0.0
+quebradas,quebradas_3_1,Orco de las Montañas Nubladas L15+Orco de las Montañas Nubladas L15,16,NOVATO,0.0,5.0,0.0
+quebradas,quebradas_3_2,Huargo de monta L17,16,NOVATO,0.0,6.0,0.0
+quebradas,quebradas_5_0,Orco de las Montañas Nubladas L15+Huargo L15,16,NOVATO,0.0,4.0,0.0
+quebradas,quebradas_5_1,Huargo L17,17,NOVATO,0.0,6.0,0.0
+quebradas,quebradas_5_2,Orco de las Montañas Nubladas L14+Orco de las Montañas Nubladas L14+Orco de las Montañas Nubladas L14,17,NOVATO,0.0,3.0,0.0
+quebradas,quebradas_5_3,Orco grande de las Montañas Nubladas L17,17,NOVATO,0.0,6.0,0.0
+quebradas,quebradas_6_1,Huargo L15+Huargo L15,18,NOVATO,0.0,4.0,0.0
+quebradas,quebradas_7_0,Trol de piedra L18,18,NOVATO,100.0,9.0,243.0
+bruinen,bruinen_3_1,Espía dunlendino L19,19,NOVATO,100.0,14.3,145.0
+bruinen,bruinen_3_2,Huargo L18+Huargo L18,19,NOVATO,0.0,4.0,0.0
+bruinen,bruinen_5_0,Huargo viejo L20,19,NOVATO,0.0,6.0,0.0
+bruinen,bruinen_5_1,Espía dunlendino L18+Espía dunlendino L18,20,NOVATO,0.0,9.6,0.0
+bruinen,bruinen_5_2,Huargo L17+Huargo L17+Huargo L17,20,NOVATO,0.0,3.0,0.0
+bruinen,bruinen_5_3,Espía dunlendino veterano L20,20,NOVATO,100.0,14.4,149.9
+bruinen,bruinen_6_1,Huargo L18+Huargo L18,21,NOVATO,0.0,4.0,0.0
+bruinen,bruinen_7_0,Jinete Negro L21,21,NOVATO,100.0,11.3,240.4
+eregion,eregion_3_0,Crebain L20+Crebain L20+Crebain L20,22,NOVATO,0.0,8.0,0.0
+eregion,eregion_3_1,Lobo de Saruman L23,22,NOVATO,0.0,5.8,0.0
+eregion,eregion_3_2,Espía dunlendino L21+Espía dunlendino L21,22,NOVATO,0.0,8.0,0.0
+eregion,eregion_3_3,Lobo de Saruman L21+Lobo de Saruman L21,22,NOVATO,0.0,4.0,0.0
+eregion,eregion_5_1,Espía dunlendino L20+Lobo de Saruman L20+Lobo de Saruman L20,23,NOVATO,0.0,3.0,0.0
+eregion,eregion_5_2,Crebain L21+Crebain L21,23,NOVATO,8.7,15.3,12.0
+eregion,eregion_6_0,Espía dunlendino L19+Espía dunlendino L19+Lobo de Saruman L19+Lobo de Saruman L19,24,NOVATO,0.0,3.0,0.0
+eregion,eregion_7_0,Capitán dunlendino L24+Espía dunlendino L20+Lobo de Saruman L20,24,NOVATO,0.0,4.0,0.0
+caradhras,caradhras_3_0,Crebain L24+Crebain L24,25,NOVATO,3.7,12.5,7.1
+caradhras,caradhras_3_1,Lobo de Saruman L26,25,NOVATO,0.0,5.0,0.0
+caradhras,caradhras_3_2,Lobo de Saruman L24+Lobo de Saruman L24,25,NOVATO,0.0,4.0,0.0
+caradhras,caradhras_3_3,Crebain L23+Crebain L23+Crebain L23,25,NOVATO,0.0,8.0,0.0
+caradhras,caradhras_5_1,Lobo de Saruman L24+Lobo de Saruman L24,26,NOVATO,0.0,4.0,0.0
+caradhras,caradhras_5_3,Crebain L24+Lobo de Saruman L24,26,NOVATO,0.0,5.0,0.0
+caradhras,caradhras_6_0,Lobo de Saruman L23+Lobo de Saruman L23+Lobo de Saruman L23,27,NOVATO,0.0,2.0,0.0
+caradhras,caradhras_7_0,Furia del Caradhras L27,27,NOVATO,100.0,12.5,252.2
+durin,durin_3_1,Trasgo de Moria L27+Trasgo de Moria L27,28,NOVATO,0.0,5.6,0.0
+durin,durin_3_2,Lobo de Saruman L27+Lobo de Saruman L27,28,NOVATO,0.0,4.0,0.0
+durin,durin_4_0,Lobo de Saruman L29,28,NOVATO,0.0,5.7,0.0
+durin,durin_4_1,Trasgo de Moria L29,28,NOVATO,0.0,11.2,0.0
+durin,durin_4_2,Trasgo de Moria L26+Trasgo de Moria L26+Trasgo de Moria L26,29,NOVATO,0.0,4.0,0.0
+durin,durin_4_3,Lobo de Saruman L27+Trasgo de Moria L27,29,NOVATO,0.0,4.0,0.0
+durin,durin_4_4,Lobo de Saruman L26+Lobo de Saruman L26+Lobo de Saruman L26,29,NOVATO,0.0,2.0,0.0
+durin,durin_4_5,Lobo de Saruman L28,29,NOVATO,0.0,5.7,0.0
+durin,durin_4_6,Trasgo de Moria L27+Trasgo de Moria L27,28,NOVATO,0.0,5.6,0.0
+durin,durin_4_7,Lobo de Saruman L27+Trasgo de Moria L27,28,NOVATO,0.0,4.0,0.0
+durin,durin_6_1,Lobo de Saruman L27+Lobo de Saruman L27,30,NOVATO,0.0,4.0,0.0
+durin,durin_7_0,Guardián del Agua L30,30,NOVATO,100.0,21.8,263.7
+moria,moria_2_0,Trasgo de Moria L30+Trasgo de Moria L30,31,NOVATO,0.0,5.6,0.0
+moria,moria_2_1,Trol de las cavernas L31,31,NOVATO,100.0,19.0,286.0
+moria,moria_4_1,Orco capitán L30+Trasgo de Moria L30,32,NOVATO,0.0,4.0,0.0
+moria,moria_4_2,Trasgo de Moria L29+Trasgo de Moria L29+Trasgo de Moria L29,32,NOVATO,0.0,4.0,0.0
+moria,moria_4_5,Trol de las cavernas L30+Trasgo de Moria L30,32,NOVATO,0.0,7.0,0.0
+moria,moria_4_6,Orco capitán L32,32,NOVATO,0.0,8.0,0.0
+moria,moria_5_1,Orco capitán L29+Trasgo de Moria L29+Trasgo de Moria L29,33,NOVATO,0.0,4.0,0.0
+moria,moria_5_3,Trol de las cavernas L32,33,NOVATO,100.0,19.0,325.0
+moria,moria_7_0,Sombra de Durin L33,33,NOVATO,100.0,9.7,424.0
+sombrio,sombrio_3_0,Trasgo de Moria L33+Trasgo de Moria L33,34,NOVATO,0.0,5.5,0.0
+sombrio,sombrio_3_1,Arquero orco L35,34,NOVATO,91.0,20.1,250.3
+sombrio,sombrio_3_2,Orco de las Montañas Nubladas L33+Trasgo de Moria L33,34,NOVATO,0.0,5.0,0.0
+sombrio,sombrio_3_3,Orco de las Montañas Nubladas L32+Arquero orco L32+Trasgo de Moria L32,34,NOVATO,0.0,4.0,0.0
+sombrio,sombrio_5_1,Orco de las Montañas Nubladas L33+Arquero orco L33,35,NOVATO,0.0,5.0,0.0
+sombrio,sombrio_5_3,Orco de las Montañas Nubladas L35,35,NOVATO,0.0,6.0,0.0
+sombrio,sombrio_6_0,Orco de las Montañas Nubladas L32+Arquero orco L32+Trasgo de Moria L32,36,NOVATO,0.0,4.0,0.0
+sombrio,sombrio_7_0,Capitán orco de las Montañas Nubladas L36+Arquero orco L32,36,NOVATO,0.0,7.0,0.0
+nimrodel,nimrodel_2_1,Orco de las Montañas Nubladas L36+Orco de las Montañas Nubladas L36,37,NOVATO,0.0,5.0,0.0
+nimrodel,nimrodel_3_0,Arquero orco L38,37,NOVATO,91.3,20.1,266.3
+nimrodel,nimrodel_3_1,Orco de las Montañas Nubladas L36+Arquero orco L36,37,NOVATO,0.0,5.0,0.0
+nimrodel,nimrodel_3_2,Orco de las Montañas Nubladas L35+Orco de las Montañas Nubladas L35+Arquero orco L35,38,NOVATO,0.0,3.7,0.0
+nimrodel,nimrodel_3_3,Arquero orco L37,38,NOVATO,97.0,19.4,309.8
+nimrodel,nimrodel_5_0,Arquero orco L36+Arquero orco L36,39,NOVATO,0.0,6.0,0.0
+nimrodel,nimrodel_5_2,Orco de las Montañas Nubladas L35+Orco de las Montañas Nubladas L35+Arquero orco L35,39,NOVATO,0.0,3.7,0.0
+nimrodel,nimrodel_7_0,Jefe de los arqueros orcos L39+Orco de las Montañas Nubladas L35+Arquero orco L35,39,NOVATO,0.0,4.0,0.0
+bree,bree_3_0,Ratero de Bree L1,1,MEDIO,100.0,5.0,83.0
+bree,bree_3_1,Ladrón de caballos L1+Ladrón de caballos L1,1,MEDIO,0.3,202.1,11.8
+bree,bree_3_2,Lobo hambriento L1,1,MEDIO,34.3,7.0,19.9
+bree,bree_3_3,Bandido del foso L1+Lobo hambriento L1,1,MEDIO,0.0,7.7,0.0
+bree,bree_4_1,Bribón de la banda L1+Bribón de la banda L1,2,MEDIO,76.7,165.9,48.7
+bree,bree_4_3,Matón de Abrojal L2,2,MEDIO,100.0,5.6,97.5
+bree,bree_4_5,Lobo hambriento L1+Lobo hambriento L1,2,MEDIO,0.0,7.1,0.0
+bree,bree_4_7,Lobo hambriento L2,2,MEDIO,39.7,7.4,28.6
+bree,bree_6_1,Vigía de los salteadores L1+Lobo hambriento L1,3,MEDIO,89.0,20.9,69.2
+bree,bree_7_0,"El Tuerto, cabecilla de los bandidos L3+Salteador del Tuerto L1",3,MEDIO,100.0,71.2,50.1
+chet,chet_2_1,Lobo pardo de Chet L5,4,MEDIO,39.0,7.2,28.6
+chet,chet_4_1,Bandido del bosque L3+Bandido del bosque L3,4,MEDIO,50.0,324.1,55.7
+chet,chet_4_2,Lobo hambriento L4,4,MEDIO,39.0,7.4,37.8
+chet,chet_4_5,Lobo de las pozas L3+Lobo de las pozas L3,5,MEDIO,8.0,7.3,7.8
+chet,chet_4_6,Salteador rezagado L5,5,MEDIO,100.0,5.6,146.0
+chet,chet_5_0,Lobo de la manada L2+Lobo de la manada L2+Lobo de la manada L2,5,MEDIO,6.3,7.5,8.6
+chet,chet_5_1,Cobrador de peajes L4,5,MEDIO,100.0,5.0,158.0
+chet,chet_5_2,Lobo viejo L5,5,MEDIO,38.0,7.5,41.0
+chet,chet_5_3,Bandido del puente L3+Bandido del puente L3,6,MEDIO,100.0,6.9,160.7
+chet,chet_7_0,Lobo gris alfa L6+Lobo joven de la manada L2,6,MEDIO,0.0,7.6,0.0
+moscagua,moscagua_2_0,Nube de moscardones L7,7,MEDIO,100.0,5.5,171.1
+moscagua,moscagua_2_1,Espía dunlendino L7,7,MEDIO,100.0,6.6,133.8
+moscagua,moscagua_4_1,Enjambre de moscardones L5+Enjambre de moscardones L5+Enjambre de moscardones L5,8,MEDIO,77.7,20.2,97.2
+moscagua,moscagua_4_3,Espía dunlendino L6+Espía dunlendino L6,8,MEDIO,38.0,20.2,41.3
+moscagua,moscagua_4_4,Espía dunlendino L6+Moscardones de Moscagua L6,8,MEDIO,68.0,20.2,74.0
+moscagua,moscagua_4_6,Enjambre del ahogado L8,8,MEDIO,100.0,5.6,185.2
+moscagua,moscagua_6_1,Moscardones de Moscagua L6+Espía dunlendino L6,9,MEDIO,90.7,16.4,125.6
+moscagua,moscagua_7_0,Reina del enjambre L9+Guardianas del enjambre L5,9,MEDIO,100.0,28.6,123.1
+cima,cima_2_1,Espía dunlendino L10,10,MEDIO,100.0,6.9,170.7
+cima,cima_3_0,Lobo hambriento L9+Lobo hambriento L9,10,MEDIO,0.0,6.7,0.0
+cima,cima_3_1,Explorador dunlendino L11,10,MEDIO,100.0,8.9,152.6
+cima,cima_3_2,Lobo hambriento L8+Lobo hambriento L8+Lobo hambriento L8,11,MEDIO,0.0,6.0,0.0
+cima,cima_3_3,Espía dunlendino L9+Espía dunlendino L9,11,MEDIO,33.0,20.0,45.8
+cima,cima_5_1,Rastreador dunlendino L11,11,MEDIO,100.0,6.6,176.8
+cima,cima_5_3,Lobo hambriento L8+Lobo hambriento L8+Lobo hambriento L8,12,MEDIO,0.3,6.5,0.4
+cima,cima_7_0,Espectro del Anillo L12,12,MEDIO,100.0,6.7,216.1
+puente,puente_2_1,Huargo explorador L13,13,MEDIO,91.3,19.6,169.6
+puente,puente_4_0,Huargo L12+Huargo L12,13,MEDIO,0.0,6.1,0.0
+puente,puente_4_1,Espía dunlendino L14,13,MEDIO,100.0,7.5,192.0
+puente,puente_4_2,Huargo grande L14,13,MEDIO,43.0,13.7,85.9
+puente,puente_4_3,Espía dunlendino L12+Espía dunlendino L12,13,MEDIO,3.0,16.5,4.7
+puente,puente_4_4,Huargo L11+Huargo L11+Huargo L11,14,MEDIO,0.0,4.6,0.0
+puente,puente_4_5,Espía dunlendino L13,14,MEDIO,100.0,5.8,239.8
+puente,puente_4_6,Huargo viejo L14,14,MEDIO,88.3,17.6,177.2
+puente,puente_4_7,Espía dunlendino L12+Huargo L12,14,MEDIO,0.0,9.0,0.0
+puente,puente_6_1,Huargo L12+Huargo L12,15,MEDIO,0.0,6.5,0.0
+puente,puente_7_0,Jefe de la manada de huargos L15+Huargo L11,15,MEDIO,0.0,6.0,0.0
+quebradas,quebradas_3_1,Orco de las Montañas Nubladas L15+Orco de las Montañas Nubladas L15,16,MEDIO,0.0,5.8,0.0
+quebradas,quebradas_3_2,Huargo de monta L17,16,MEDIO,43.3,11.1,95.0
+quebradas,quebradas_5_0,Orco de las Montañas Nubladas L15+Huargo L15,16,MEDIO,0.0,5.8,0.0
+quebradas,quebradas_5_1,Huargo L17,17,MEDIO,90.3,17.5,211.1
+quebradas,quebradas_5_2,Orco de las Montañas Nubladas L14+Orco de las Montañas Nubladas L14+Orco de las Montañas Nubladas L14,17,MEDIO,0.0,4.8,0.0
+quebradas,quebradas_5_3,Orco grande de las Montañas Nubladas L17,17,MEDIO,100.0,5.0,88.8
+quebradas,quebradas_6_1,Huargo L15+Huargo L15,18,MEDIO,0.0,6.3,0.0
+quebradas,quebradas_7_0,Trol de piedra L18,18,MEDIO,100.0,5.0,440.0
+bruinen,bruinen_3_1,Espía dunlendino L19,19,MEDIO,100.0,6.8,282.9
+bruinen,bruinen_3_2,Huargo L18+Huargo L18,19,MEDIO,0.0,6.0,0.0
+bruinen,bruinen_5_0,Huargo viejo L20,19,MEDIO,44.3,13.0,119.1
+bruinen,bruinen_5_1,Espía dunlendino L18+Espía dunlendino L18,20,MEDIO,8.0,22.2,18.2
+bruinen,bruinen_5_2,Huargo L17+Huargo L17+Huargo L17,20,MEDIO,0.0,4.4,0.0
+bruinen,bruinen_5_3,Espía dunlendino veterano L20,20,MEDIO,100.0,6.6,299.7
+bruinen,bruinen_6_1,Huargo L18+Huargo L18,21,MEDIO,0.0,6.5,0.0
+bruinen,bruinen_7_0,Jinete Negro L21,21,MEDIO,100.0,7.0,302.4
+eregion,eregion_3_0,Crebain L20+Crebain L20+Crebain L20,22,MEDIO,0.0,10.6,0.0
+eregion,eregion_3_1,Lobo de Saruman L23,22,MEDIO,36.3,6.6,75.9
+eregion,eregion_3_2,Espía dunlendino L21+Espía dunlendino L21,22,MEDIO,6.0,19.3,15.4
+eregion,eregion_3_3,Lobo de Saruman L21+Lobo de Saruman L21,22,MEDIO,0.0,5.1,0.0
+eregion,eregion_5_1,Espía dunlendino L20+Lobo de Saruman L20+Lobo de Saruman L20,23,MEDIO,0.0,4.7,0.0
+eregion,eregion_5_2,Crebain L21+Crebain L21,23,MEDIO,6.7,16.8,15.4
+eregion,eregion_6_0,Espía dunlendino L19+Espía dunlendino L19+Lobo de Saruman L19+Lobo de Saruman L19,24,MEDIO,0.0,4.6,0.0
+eregion,eregion_7_0,Capitán dunlendino L24+Espía dunlendino L20+Lobo de Saruman L20,24,MEDIO,0.0,5.6,0.0
+caradhras,caradhras_3_0,Crebain L24+Crebain L24,25,MEDIO,1.3,16.0,3.3
+caradhras,caradhras_3_1,Lobo de Saruman L26,25,MEDIO,41.3,6.6,96.3
+caradhras,caradhras_3_2,Lobo de Saruman L24+Lobo de Saruman L24,25,MEDIO,0.0,5.1,0.0
+caradhras,caradhras_3_3,Crebain L23+Crebain L23+Crebain L23,25,MEDIO,0.0,10.9,0.0
+caradhras,caradhras_5_1,Lobo de Saruman L24+Lobo de Saruman L24,26,MEDIO,0.0,5.6,0.0
+caradhras,caradhras_5_3,Crebain L24+Lobo de Saruman L24,26,MEDIO,0.0,7.2,0.0
+caradhras,caradhras_6_0,Lobo de Saruman L23+Lobo de Saruman L23+Lobo de Saruman L23,27,MEDIO,0.0,4.1,0.0
+caradhras,caradhras_7_0,Furia del Caradhras L27,27,MEDIO,100.0,7.1,321.3
+durin,durin_3_1,Trasgo de Moria L27+Trasgo de Moria L27,28,MEDIO,0.0,8.4,0.0
+durin,durin_3_2,Lobo de Saruman L27+Lobo de Saruman L27,28,MEDIO,0.0,5.1,0.0
+durin,durin_4_0,Lobo de Saruman L29,28,MEDIO,71.3,10.2,176.1
+durin,durin_4_1,Trasgo de Moria L29,28,MEDIO,91.3,7.0,328.9
+durin,durin_4_2,Trasgo de Moria L26+Trasgo de Moria L26+Trasgo de Moria L26,29,MEDIO,0.0,6.8,0.0
+durin,durin_4_3,Lobo de Saruman L27+Trasgo de Moria L27,29,MEDIO,0.0,6.8,0.0
+durin,durin_4_4,Lobo de Saruman L26+Lobo de Saruman L26+Lobo de Saruman L26,29,MEDIO,0.0,3.6,0.0
+durin,durin_4_5,Lobo de Saruman L28,29,MEDIO,86.0,5.5,185.2
+durin,durin_4_6,Trasgo de Moria L27+Trasgo de Moria L27,28,MEDIO,0.0,8.2,0.0
+durin,durin_4_7,Lobo de Saruman L27+Trasgo de Moria L27,28,MEDIO,0.0,6.9,0.0
+durin,durin_6_1,Lobo de Saruman L27+Lobo de Saruman L27,30,MEDIO,0.0,5.6,0.0
+durin,durin_7_0,Guardián del Agua L30,30,MEDIO,100.0,13.7,361.0
+moria,moria_2_0,Trasgo de Moria L30+Trasgo de Moria L30,31,MEDIO,0.0,8.4,0.0
+moria,moria_2_1,Trol de las cavernas L31,31,MEDIO,100.0,9.0,390.0
+moria,moria_4_1,Orco capitán L30+Trasgo de Moria L30,32,MEDIO,0.0,7.0,0.0
+moria,moria_4_2,Trasgo de Moria L29+Trasgo de Moria L29+Trasgo de Moria L29,32,MEDIO,0.0,7.0,0.0
+moria,moria_4_5,Trol de las cavernas L30+Trasgo de Moria L30,32,MEDIO,0.0,9.9,0.0
+moria,moria_4_6,Orco capitán L32,32,MEDIO,100.0,22.5,385.9
+moria,moria_5_1,Orco capitán L29+Trasgo de Moria L29+Trasgo de Moria L29,33,MEDIO,0.0,6.1,0.0
+moria,moria_5_3,Trol de las cavernas L32,33,MEDIO,100.0,8.0,446.9
+moria,moria_7_0,Sombra de Durin L33,33,MEDIO,100.0,6.4,486.1
+sombrio,sombrio_3_0,Trasgo de Moria L33+Trasgo de Moria L33,34,MEDIO,0.0,8.3,0.0
+sombrio,sombrio_3_1,Arquero orco L35,34,MEDIO,100.0,11.3,461.8
+sombrio,sombrio_3_2,Orco de las Montañas Nubladas L33+Trasgo de Moria L33,34,MEDIO,0.0,6.9,0.0
+sombrio,sombrio_3_3,Orco de las Montañas Nubladas L32+Arquero orco L32+Trasgo de Moria L32,34,MEDIO,0.0,5.8,0.0
+sombrio,sombrio_5_1,Orco de las Montañas Nubladas L33+Arquero orco L33,35,MEDIO,0.0,7.5,0.0
+sombrio,sombrio_5_3,Orco de las Montañas Nubladas L35,35,MEDIO,100.0,5.0,162.1
+sombrio,sombrio_6_0,Orco de las Montañas Nubladas L32+Arquero orco L32+Trasgo de Moria L32,36,MEDIO,0.0,6.1,0.0
+sombrio,sombrio_7_0,Capitán orco de las Montañas Nubladas L36+Arquero orco L32,36,MEDIO,2.0,9.4,8.2
+nimrodel,nimrodel_2_1,Orco de las Montañas Nubladas L36+Orco de las Montañas Nubladas L36,37,MEDIO,0.0,5.9,0.0
+nimrodel,nimrodel_3_0,Arquero orco L38,37,MEDIO,99.7,10.4,495.8
+nimrodel,nimrodel_3_1,Orco de las Montañas Nubladas L36+Arquero orco L36,37,MEDIO,0.0,7.1,0.0
+nimrodel,nimrodel_3_2,Orco de las Montañas Nubladas L35+Orco de las Montañas Nubladas L35+Arquero orco L35,38,MEDIO,0.0,5.1,0.0
+nimrodel,nimrodel_3_3,Arquero orco L37,38,MEDIO,100.0,8.2,500.7
+nimrodel,nimrodel_5_0,Arquero orco L36+Arquero orco L36,39,MEDIO,2.7,15.5,10.6
+nimrodel,nimrodel_5_2,Orco de las Montañas Nubladas L35+Orco de las Montañas Nubladas L35+Arquero orco L35,39,MEDIO,0.0,5.0,0.0
+nimrodel,nimrodel_7_0,Jefe de los arqueros orcos L39+Orco de las Montañas Nubladas L35+Arquero orco L35,39,MEDIO,0.0,6.2,0.0
+bree,bree_3_0,Ratero de Bree L1,1,EXPERTO,100.0,5.0,83.0
+bree,bree_3_1,Ladrón de caballos L1+Ladrón de caballos L1,1,EXPERTO,0.0,250.7,18.0
+bree,bree_3_2,Lobo hambriento L1,1,EXPERTO,100.0,5.6,37.7
+bree,bree_3_3,Bandido del foso L1+Lobo hambriento L1,1,EXPERTO,0.0,8.3,0.0
+bree,bree_4_1,Bribón de la banda L1+Bribón de la banda L1,2,EXPERTO,100.0,58.3,52.2
+bree,bree_4_3,Matón de Abrojal L2,2,EXPERTO,100.0,5.0,102.0
+bree,bree_4_5,Lobo hambriento L1+Lobo hambriento L1,2,EXPERTO,0.0,6.8,0.0
+bree,bree_4_7,Lobo hambriento L2,2,EXPERTO,100.0,5.6,51.4
+bree,bree_6_1,Vigía de los salteadores L1+Lobo hambriento L1,3,EXPERTO,57.3,98.3,33.8
+bree,bree_7_0,"El Tuerto, cabecilla de los bandidos L3+Salteador del Tuerto L1",3,EXPERTO,100.0,196.0,64.7
+chet,chet_2_1,Lobo pardo de Chet L5,4,EXPERTO,42.0,7.6,36.1
+chet,chet_4_1,Bandido del bosque L3+Bandido del bosque L3,4,EXPERTO,57.7,304.5,74.6
+chet,chet_4_2,Lobo hambriento L4,4,EXPERTO,100.0,5.6,75.2
+chet,chet_4_5,Lobo de las pozas L3+Lobo de las pozas L3,5,EXPERTO,0.0,7.9,0.0
+chet,chet_4_6,Salteador rezagado L5,5,EXPERTO,100.0,5.6,153.0
+chet,chet_5_0,Lobo de la manada L2+Lobo de la manada L2+Lobo de la manada L2,5,EXPERTO,0.0,7.0,0.0
+chet,chet_5_1,Cobrador de peajes L4,5,EXPERTO,100.0,4.6,158.0
+chet,chet_5_2,Lobo viejo L5,5,EXPERTO,55.7,7.0,58.6
+chet,chet_5_3,Bandido del puente L3+Bandido del puente L3,6,EXPERTO,100.0,12.2,140.6
+chet,chet_7_0,Lobo gris alfa L6+Lobo joven de la manada L2,6,EXPERTO,17.7,15.8,17.7
+moscagua,moscagua_2_0,Nube de moscardones L7,7,EXPERTO,100.0,5.1,175.8
+moscagua,moscagua_2_1,Espía dunlendino L7,7,EXPERTO,100.0,6.5,143.6
+moscagua,moscagua_4_1,Enjambre de moscardones L5+Enjambre de moscardones L5+Enjambre de moscardones L5,8,EXPERTO,15.3,380.4,60.7
+moscagua,moscagua_4_3,Espía dunlendino L6+Espía dunlendino L6,8,EXPERTO,90.0,57.6,112.6
+moscagua,moscagua_4_4,Espía dunlendino L6+Moscardones de Moscagua L6,8,EXPERTO,54.3,235.5,82.8
+moscagua,moscagua_4_6,Enjambre del ahogado L8,8,EXPERTO,100.0,5.4,188.7
+moscagua,moscagua_6_1,Moscardones de Moscagua L6+Espía dunlendino L6,9,EXPERTO,99.0,38.8,140.1
+moscagua,moscagua_7_0,Reina del enjambre L9+Guardianas del enjambre L5,9,EXPERTO,100.0,42.2,137.5
+cima,cima_2_1,Espía dunlendino L10,10,EXPERTO,100.0,6.4,186.0
+cima,cima_3_0,Lobo hambriento L9+Lobo hambriento L9,10,EXPERTO,0.0,7.1,0.0
+cima,cima_3_1,Explorador dunlendino L11,10,EXPERTO,100.0,8.4,159.7
+cima,cima_3_2,Lobo hambriento L8+Lobo hambriento L8+Lobo hambriento L8,11,EXPERTO,0.0,5.9,0.0
+cima,cima_3_3,Espía dunlendino L9+Espía dunlendino L9,11,EXPERTO,93.7,61.1,150.1
+cima,cima_5_1,Rastreador dunlendino L11,11,EXPERTO,100.0,6.4,193.6
+cima,cima_5_3,Lobo hambriento L8+Lobo hambriento L8+Lobo hambriento L8,12,EXPERTO,0.0,6.5,0.0
+cima,cima_7_0,Espectro del Anillo L12,12,EXPERTO,100.0,6.0,225.5
+puente,puente_2_1,Huargo explorador L13,13,EXPERTO,89.7,20.2,165.7
+puente,puente_4_0,Huargo L12+Huargo L12,13,EXPERTO,0.0,5.8,0.0
+puente,puente_4_1,Espía dunlendino L14,13,EXPERTO,100.0,7.7,202.1
+puente,puente_4_2,Huargo grande L14,13,EXPERTO,58.0,22.1,104.6
+puente,puente_4_3,Espía dunlendino L12+Espía dunlendino L12,13,EXPERTO,47.0,54.6,84.4
+puente,puente_4_4,Huargo L11+Huargo L11+Huargo L11,14,EXPERTO,0.0,4.6,0.0
+puente,puente_4_5,Espía dunlendino L13,14,EXPERTO,100.0,5.7,253.0
+puente,puente_4_6,Huargo viejo L14,14,EXPERTO,91.3,18.2,177.5
+puente,puente_4_7,Espía dunlendino L12+Huargo L12,14,EXPERTO,0.0,29.5,4.7
+puente,puente_6_1,Huargo L12+Huargo L12,15,EXPERTO,0.0,6.6,0.0
+puente,puente_7_0,Jefe de la manada de huargos L15+Huargo L11,15,EXPERTO,0.0,6.7,0.0
+quebradas,quebradas_3_1,Orco de las Montañas Nubladas L15+Orco de las Montañas Nubladas L15,16,EXPERTO,0.0,5.4,0.0
+quebradas,quebradas_3_2,Huargo de monta L17,16,EXPERTO,61.7,18.8,129.6
+quebradas,quebradas_5_0,Orco de las Montañas Nubladas L15+Huargo L15,16,EXPERTO,0.0,6.0,0.0
+quebradas,quebradas_5_1,Huargo L17,17,EXPERTO,95.3,16.1,226.2
+quebradas,quebradas_5_2,Orco de las Montañas Nubladas L14+Orco de las Montañas Nubladas L14+Orco de las Montañas Nubladas L14,17,EXPERTO,0.0,4.9,0.0
+quebradas,quebradas_5_3,Orco grande de las Montañas Nubladas L17,17,EXPERTO,100.0,5.0,182.0
+quebradas,quebradas_6_1,Huargo L15+Huargo L15,18,EXPERTO,0.0,6.4,0.0
+quebradas,quebradas_7_0,Trol de piedra L18,18,EXPERTO,100.0,5.0,440.0
+bruinen,bruinen_3_1,Espía dunlendino L19,19,EXPERTO,100.0,6.3,306.3
+bruinen,bruinen_3_2,Huargo L18+Huargo L18,19,EXPERTO,0.0,5.6,0.0
+bruinen,bruinen_5_0,Huargo viejo L20,19,EXPERTO,86.7,18.5,214.1
+bruinen,bruinen_5_1,Espía dunlendino L18+Espía dunlendino L18,20,EXPERTO,87.3,75.7,220.8
+bruinen,bruinen_5_2,Huargo L17+Huargo L17+Huargo L17,20,EXPERTO,0.0,4.4,0.0
+bruinen,bruinen_5_3,Espía dunlendino veterano L20,20,EXPERTO,100.0,6.3,320.5
+bruinen,bruinen_6_1,Huargo L18+Huargo L18,21,EXPERTO,0.0,6.3,0.0
+bruinen,bruinen_7_0,Jinete Negro L21,21,EXPERTO,100.0,6.4,308.6
+eregion,eregion_3_0,Crebain L20+Crebain L20+Crebain L20,22,EXPERTO,0.0,11.6,0.0
+eregion,eregion_3_1,Lobo de Saruman L23,22,EXPERTO,51.0,8.1,112.1
+eregion,eregion_3_2,Espía dunlendino L21+Espía dunlendino L21,22,EXPERTO,35.7,51.1,96.4
+eregion,eregion_3_3,Lobo de Saruman L21+Lobo de Saruman L21,22,EXPERTO,0.0,5.7,0.0
+eregion,eregion_5_1,Espía dunlendino L20+Lobo de Saruman L20+Lobo de Saruman L20,23,EXPERTO,0.0,5.4,0.0
+eregion,eregion_5_2,Crebain L21+Crebain L21,23,EXPERTO,14.0,23.3,40.8
+eregion,eregion_6_0,Espía dunlendino L19+Espía dunlendino L19+Lobo de Saruman L19+Lobo de Saruman L19,24,EXPERTO,0.0,4.8,0.0
+eregion,eregion_7_0,Capitán dunlendino L24+Espía dunlendino L20+Lobo de Saruman L20,24,EXPERTO,0.0,5.6,0.0
+caradhras,caradhras_3_0,Crebain L24+Crebain L24,25,EXPERTO,6.7,22.1,20.2
+caradhras,caradhras_3_1,Lobo de Saruman L26,25,EXPERTO,47.0,8.0,113.0
+caradhras,caradhras_3_2,Lobo de Saruman L24+Lobo de Saruman L24,25,EXPERTO,0.0,5.6,0.0
+caradhras,caradhras_3_3,Crebain L23+Crebain L23+Crebain L23,25,EXPERTO,0.0,11.5,0.0
+caradhras,caradhras_5_1,Lobo de Saruman L24+Lobo de Saruman L24,26,EXPERTO,0.0,5.9,0.0
+caradhras,caradhras_5_3,Crebain L24+Lobo de Saruman L24,26,EXPERTO,0.0,8.4,0.0
+caradhras,caradhras_6_0,Lobo de Saruman L23+Lobo de Saruman L23+Lobo de Saruman L23,27,EXPERTO,0.0,4.3,0.0
+caradhras,caradhras_7_0,Furia del Caradhras L27,27,EXPERTO,100.0,6.7,343.6
+durin,durin_3_1,Trasgo de Moria L27+Trasgo de Moria L27,28,EXPERTO,0.0,9.0,0.0
+durin,durin_3_2,Lobo de Saruman L27+Lobo de Saruman L27,28,EXPERTO,0.0,5.7,0.0
+durin,durin_4_0,Lobo de Saruman L29,28,EXPERTO,77.0,12.4,219.9
+durin,durin_4_1,Trasgo de Moria L29,28,EXPERTO,98.7,8.1,361.2
+durin,durin_4_2,Trasgo de Moria L26+Trasgo de Moria L26+Trasgo de Moria L26,29,EXPERTO,0.0,6.8,0.0
+durin,durin_4_3,Lobo de Saruman L27+Trasgo de Moria L27,29,EXPERTO,0.0,6.9,0.0
+durin,durin_4_4,Lobo de Saruman L26+Lobo de Saruman L26+Lobo de Saruman L26,29,EXPERTO,0.0,4.0,0.0
+durin,durin_4_5,Lobo de Saruman L28,29,EXPERTO,83.3,5.4,209.9
+durin,durin_4_6,Trasgo de Moria L27+Trasgo de Moria L27,28,EXPERTO,0.0,9.0,0.0
+durin,durin_4_7,Lobo de Saruman L27+Trasgo de Moria L27,28,EXPERTO,0.0,6.7,0.0
+durin,durin_6_1,Lobo de Saruman L27+Lobo de Saruman L27,30,EXPERTO,0.0,5.9,0.0
+durin,durin_7_0,Guardián del Agua L30,30,EXPERTO,100.0,15.2,383.0
+moria,moria_2_0,Trasgo de Moria L30+Trasgo de Moria L30,31,EXPERTO,0.0,9.3,0.0
+moria,moria_2_1,Trol de las cavernas L31,31,EXPERTO,100.0,20.1,354.4
+moria,moria_4_1,Orco capitán L30+Trasgo de Moria L30,32,EXPERTO,0.0,7.3,0.0
+moria,moria_4_2,Trasgo de Moria L29+Trasgo de Moria L29+Trasgo de Moria L29,32,EXPERTO,0.0,6.9,0.0
+moria,moria_4_5,Trol de las cavernas L30+Trasgo de Moria L30,32,EXPERTO,0.0,11.4,0.0
+moria,moria_4_6,Orco capitán L32,32,EXPERTO,100.0,26.5,440.2
+moria,moria_5_1,Orco capitán L29+Trasgo de Moria L29+Trasgo de Moria L29,33,EXPERTO,0.0,5.7,0.0
+moria,moria_5_3,Trol de las cavernas L32,33,EXPERTO,100.0,14.7,406.6
+moria,moria_7_0,Sombra de Durin L33,33,EXPERTO,100.0,6.3,486.1
+sombrio,sombrio_3_0,Trasgo de Moria L33+Trasgo de Moria L33,34,EXPERTO,0.0,9.0,0.0
+sombrio,sombrio_3_1,Arquero orco L35,34,EXPERTO,100.0,9.6,459.3
+sombrio,sombrio_3_2,Orco de las Montañas Nubladas L33+Trasgo de Moria L33,34,EXPERTO,0.0,7.5,0.0
+sombrio,sombrio_3_3,Orco de las Montañas Nubladas L32+Arquero orco L32+Trasgo de Moria L32,34,EXPERTO,0.0,5.9,0.0
+sombrio,sombrio_5_1,Orco de las Montañas Nubladas L33+Arquero orco L33,35,EXPERTO,9.7,20.9,37.5
+sombrio,sombrio_5_3,Orco de las Montañas Nubladas L35,35,EXPERTO,100.0,5.0,335.0
+sombrio,sombrio_6_0,Orco de las Montañas Nubladas L32+Arquero orco L32+Trasgo de Moria L32,36,EXPERTO,0.0,6.2,0.0
+sombrio,sombrio_7_0,Capitán orco de las Montañas Nubladas L36+Arquero orco L32,36,EXPERTO,27.3,28.2,124.7
+nimrodel,nimrodel_2_1,Orco de las Montañas Nubladas L36+Orco de las Montañas Nubladas L36,37,EXPERTO,0.0,5.3,0.0
+nimrodel,nimrodel_3_0,Arquero orco L38,37,EXPERTO,100.0,9.7,501.2
+nimrodel,nimrodel_3_1,Orco de las Montañas Nubladas L36+Arquero orco L36,37,EXPERTO,9.7,21.5,42.5
+nimrodel,nimrodel_3_2,Orco de las Montañas Nubladas L35+Orco de las Montañas Nubladas L35+Arquero orco L35,38,EXPERTO,0.0,5.1,0.0
+nimrodel,nimrodel_3_3,Arquero orco L37,38,EXPERTO,100.0,8.3,517.5
+nimrodel,nimrodel_5_0,Arquero orco L36+Arquero orco L36,39,EXPERTO,28.7,39.3,132.4
+nimrodel,nimrodel_5_2,Orco de las Montañas Nubladas L35+Orco de las Montañas Nubladas L35+Arquero orco L35,39,EXPERTO,0.0,5.1,0.0
+nimrodel,nimrodel_7_0,Jefe de los arqueros orcos L39+Orco de las Montañas Nubladas L35+Arquero orco L35,39,EXPERTO,0.0,6.9,0.0

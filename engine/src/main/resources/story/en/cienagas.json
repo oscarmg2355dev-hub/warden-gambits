@@ -1,0 +1,119 @@
+{
+  "id": "cienagas",
+  "name": "The Dead Marshes",
+  "nodes": {
+    "cienagas_1_0": {
+      "title": "A Land of Dead Water",
+      "text": "You leave the last rocks behind and the ground turns soft beneath your boots. Before you stretches the marsh: pools of brown water, clumps of rotten reeds, mounds of mud that quiver when you tread on them. A sweet, rancid smell fills everything. Mist crawls low over the water, and it is cold, a damp cold that does not leave with the sun. No bird flies here. To the east, behind the haze, you can make out the dark wall of the mountains."
+    },
+    "cienagas_2_0": {
+      "title": "The First Light",
+      "text": "You follow a shore of reeds as evening falls. Ahead, over the water, a pale light kindles, greenish, like the flame of a candle that no one holds. It stays still for a moment. Then it draws near, floating, and when it reaches you it swells and stretches, and you feel on your face an icy breath instead of warmth. It is a flame that burns with cold. When your sword passes through it, it sputters, shrinks and grows again.",
+      "choiceLabel": "Follow the reedy shore"
+    },
+    "cienagas_2_1": {
+      "title": "The Black Pools",
+      "text": "You go forward leaping from one tussock of grass to the next, for between them the water is black and no bottom can be seen. As you land on a large tussock, the water of the pools around it begins to tremble. Two shapes rise slowly, made of mist and foul water, with something like arms. They have no faces, only two dark hollows where the eyes should be. They smell of the bottom of a well. They lean towards you as if they wished to embrace you.",
+      "choiceLabel": "Leap from tussock to tussock"
+    },
+    "cienagas_3_0": {
+      "title": "Faces beneath the Water",
+      "text": "You stop beside a pool of still water, so clear that it is startling in this place. At first you see only mud. Then, beneath the surface, you see a face: pale, beneath an ancient helm, the eyes open as if dreaming. And another behind it, and another, men of other ages and creatures you do not recognise, lying on the bottom as though they had been left there after some very ancient battle. You lean no further. You draw away slowly, without turning your back on the water.",
+      "choiceLabel": "Look into a pool"
+    },
+    "cienagas_3_1": {
+      "title": "The Sounding Staff",
+      "text": "The mist grows so thick that you can no longer see your feet. You cut a staff from a dry bush and sound the ground before each step. Sometimes the staff sinks without finding bottom, and you must seek another way. You go on like this for hours, in a white and mute world, not knowing whether you are heading east or walking in circles. Only the cold tells you that you are awake. When the mist thins a little, you see the staff is caked with mud halfway up.",
+      "choiceLabel": "Press on through the mist"
+    },
+    "cienagas_3_2": {
+      "title": "The Dry Islet",
+      "text": "You find an islet of firm ground, scarcely bigger than a room, with a twisted bush and a few stones. It is the first dry ground all day. You take off your boots, wring out your stockings and eat a piece of Elven bread, slowly, watching the water all around. The leaves that wrap it still smell of the Golden Wood. For a moment the stench of the marsh vanishes, and you remember the silver trees and their lamps.",
+      "choiceLabel": "Climb onto a dry islet"
+    },
+    "cienagas_3_3": {
+      "title": "The Sunken Road",
+      "text": "Among the tussocks you discover a line of flat stones, half sunk, that cross the marsh in a straight line. It is what remains of a road, made by people who knew how to build, so long ago that the marsh has been swallowing it ever since. You follow it, leaping from flagstone to flagstone. Some shift beneath your weight. On one you see carved a circle with rays, like a sun. You wonder where this road led when there was no water here.",
+      "choiceLabel": "Follow a line of stones"
+    },
+    "cienagas_4_0": {
+      "title": "What Juts from the Mud",
+      "text": "From a mound of mud something metallic juts out. You dig it up with the point of your sword: it is a rusted helm, tall and narrow, with the remains of a plume that has lost all colour. Beneath it lie a spearhead and a piece of shield with a worn device. Someone died here a very long time ago, in a war no one has told you of. You put everything back where it was, cover it with mud and go on in silence.",
+      "choiceLabel": "Look at what juts out"
+    },
+    "cienagas_4_1": {
+      "title": "The Deceiving Lights",
+      "text": "By night you see lights ahead, in a row, like the lanterns of a camp. You think of men, of fire, of a little warmth, and you go towards them. The lights draw back as you advance, always at the same distance. Before you realise it, you are waist-deep in water. Then you see that the lights do not float alone: two are held aloft by grey, still figures you took for dead trunks. The other two come down towards you, and the figures begin to wade through the water. You have fallen into their trap like a child.",
+      "choiceLabel": "Follow the pale lights"
+    },
+    "cienagas_4_2": {
+      "title": "Voices in the Mist",
+      "text": "In the mist you begin to hear voices. They are faint, distant, and you cannot understand what they say; they seem to speak in a very ancient tongue, slowly, like someone calling to one who has gone. They come from the water. You stop to listen, and for a moment it seems to you that one of them speaks your name. You shake your head hard. You cover one ear with your hand and go on sounding with your staff, faster, until the voices are left behind.",
+      "choiceLabel": "Listen to the mist"
+    },
+    "cienagas_4_3": {
+      "title": "The Quagmire",
+      "text": "To save time you cut across a quagmire that looks firm. It is not. At the third step you sink to your knees, then to your waist, and the mud grips your legs like hands. The more you move, the deeper you sink. You keep still, breathe, and cast the grey Elven rope towards a dead trunk jutting up to one side. At the third try it wraps around a branch. You pull yourself out span by span, covered in black mud and trembling, and unwind the rope from the branch before going on.",
+      "choiceLabel": "Cut across the quagmire"
+    },
+    "cienagas_4_4": {
+      "title": "Those Who Rise from the Water",
+      "text": "You decide to spend the night on the islet. You fall asleep with your sword beside you, and the cold wakes you: icy hands have seized your ankles from the water at the edge. They drag you towards the mud, slowly, without a sound. You kick yourself free and roll to the twisted bush. At the edge of the islet, half in the water, three wraiths are crawling towards you on their elbows, with tatters of mist for hair. You set your back to the bush and raise your sword.",
+      "choiceLabel": "Spend the night on the islet"
+    },
+    "cienagas_4_5": {
+      "title": "The Sunless Dawn",
+      "text": "You leave the islet before daybreak, to make use of what little light there is. But dawn here brings no sun: only a grey that lightens a little, like dirty water in a glass. To the east the mountains stand out sharper than ever, black, with smoke on their peaks. Ahead the marsh goes on and on. You walk without speaking, not even to yourself. You catch yourself missing even the icy wind of the hills.",
+      "choiceLabel": "Set out before dawn"
+    },
+    "cienagas_4_6": {
+      "title": "Sparks from the Road",
+      "text": "The road ends in a level space of broken flagstones, perhaps a square or a sunken guard-post. As you step onto the first, pale sparks spring from the cracks between the stones, as from a dead forge that someone had stirred. They rise, gather and form four flames, which begin to circle around you. They do not burn: they freeze. Where they pass, the water of the puddles is coated with frost. The ring tightens.",
+      "choiceLabel": "Follow the road to its end"
+    },
+    "cienagas_4_7": {
+      "title": "The Mounds",
+      "text": "The road passes beside some long mounds covered in coarse grass, rising from the water in rows. They are too regular to be natural. At the head of one stands a tilted standing stone with letters that time has worn away. They are graves, you understand, or what is left of them. You skirt the rows with respect, treading on none. You do not know to whom they belong, but someone wished them to be remembered.",
+      "choiceLabel": "Skirt some mounds"
+    },
+    "cienagas_5_0": {
+      "title": "The Cry on High",
+      "text": "You cross a plain of mud without a single reed. Halfway across, the air turns to ice and the light goes out. Very high among the clouds a shadow with enormous wings passes, and from it falls a cry that pierces you. You throw yourself face down in the mud, covered by the grey cloak, not moving, not breathing. When the cold at last withdraws, the sky is empty again, but it is a long while before you get to your feet.",
+      "choiceLabel": "Cross the open mudflats"
+    },
+    "cienagas_5_1": {
+      "title": "Thirst",
+      "text": "You are surrounded by water and cannot drink it. The water of the pools tastes of iron and rot, and the mere smell of it turns your stomach. Your waterskin is nearly empty. At last you find some broad leaves, folded like bowls, that have gathered the night's dew. You empty them one by one into your mouth, careful not to lose a single drop. It is little, but enough to keep you going until it rains again.",
+      "choiceLabel": "Look for water to drink"
+    },
+    "cienagas_5_2": {
+      "title": "The Dry Reeds",
+      "text": "You plunge into a sea of dry reeds, taller than you, that creak and rub together in the wind like bones. You can see nothing beyond a single step. The noise is constant, and beneath it you seem to hear others: a splash, a rustle, something dragging itself along. Each time you stop, everything stops. You go forward parting the stems with your arm, always towards where you believe the east to be. When you come out, your face is covered in fine cuts.",
+      "choiceLabel": "Cross the dry reeds"
+    },
+    "cienagas_5_3": {
+      "title": "The Night of Candles",
+      "text": "As night falls you take refuge in a heap of stones, and from there you watch lights kindle all over the marsh: hundreds of them, pale, green and white, rising and falling over the water like candles in an endless procession. None comes near. You stay motionless, your cloak over your head, watching them through a gap. It is beautiful and terrible at once. At dawn, one by one, they go out, and the marsh is grey and empty again.",
+      "choiceLabel": "Shelter among some stones"
+    },
+    "cienagas_6_0": {
+      "title": "The Wraith of the Channel",
+      "text": "A wide channel of slow water bars your way, and there is no way around it. You wade it with your sword held high and the water up to your chest, feeling the bottom with your feet. The current carries towards you a bundle of dark rags, floating, like an old cloak someone lost. You move aside to let it pass. But the bundle stops beside you, unfolds and rises up: a wraith larger than any you have seen, wrapped in the tatters of an ancient cloak. And it hurls itself upon you.",
+      "choiceLabel": "Wade a wide channel"
+    },
+    "cienagas_6_1": {
+      "title": "The End of the Marsh",
+      "text": "You skirt a broad lagoon for hours, and little by little the marsh changes. The reeds grow scarce, the mud dries and cracks, and heaps of grey slag and dust begin to appear. Beyond, the land is a desert of ash reaching to the feet of the black mountains. Firm ground at last, though dead. You stop on the last shore. Between you and that land there remains only a great pool, dark and still as an eye.",
+      "choiceLabel": "Skirt the open waters"
+    },
+    "cienagas_7_0": {
+      "title": "The Lord of the Drowned",
+      "text": "You reach the last pool, the one that divides the marsh from the dry land. When you set foot in the water, the whole pool shudders. From its centre rises an enormous figure, made of mud and black water, with a rusted crown sunk into its brow and the remnants of ancient armour. Its eyes are two pale lights. Beside it a cold flame springs up, circling and waiting. It is the lord of those who sleep beneath the marsh, and it will not let you pass."
+    }
+  },
+  "rivals": {
+    "Fuego fatuo": "Will-o'-the-wisp",
+    "Espectro de la ciénaga": "Marsh Wraith",
+    "Señor de los ahogados": "Lord of the Drowned"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "id": "moscagua",
+  "name": "Midgewater Marshes",
+  "nodes": {
+    "moscagua_1_0": {
+      "title": "The Midgewater Marshes",
+      "text": "With the alpha slain, the forest lets you go. Before you stretch the Midgewater Marshes: a sea of reeds, brown waters and banks of fog that drift like flocks. Every step sinks into the mire and the air quivers with the drone of countless insects seeking your skin. Even so, the mud holds fresh tracks: small feet, long boots, a pony. And others, heavier, that you like not at all, following the first."
+    },
+    "moscagua_2_0": {
+      "title": "Among the Reeds",
+      "text": "You wade in among reeds taller than you, seeking the most direct way. The water reaches your knees, warm, thick and foul-smelling. Suddenly the drone becomes a roar: a cloud of midges rises from the surface like black smoke and descends upon you. They bite, they get into your eyes and mouth, and there is no fleeing with water to your knees. You have to face them.",
+      "choiceLabel": "Wade through the reeds"
+    },
+    "moscagua_2_1": {
+      "title": "Tracks in the Mud",
+      "text": "You decide to follow the tracks, which always seek the firmest banks of earth. Soon you discover you are not alone: a man with black hair and weathered skin walks stooped ahead of you, studying the same marks. He wears clothes of the southern lands and carries a curved knife at his belt. When he notices you, he asks nothing. His hand flies to his weapon, and you understand that a witness is the last thing he wants.",
+      "choiceLabel": "Follow the trail of mud"
+    },
+    "moscagua_3_0": {
+      "title": "The Willow Islet",
+      "text": "You escape the water onto an islet where three twisted willows grow. The ground is firm and dry, a small miracle in the midst of the marsh. You shake off the insects, smear your face with mud for protection and eat a little of what remains to you. From here you hear a deep, unbroken drone coming from the north, as though something enormous were breathing beneath the water. You would rather not think too hard about it.",
+      "choiceLabel": "Look for firm ground"
+    },
+    "moscagua_3_1": {
+      "title": "The Black Water",
+      "text": "You risk crossing a lagoon of black water that shortens the way. Halfway across, the bottom vanishes beneath your feet and the mire seizes you to the waist. The more you move, the deeper you sink. With what calm remains, you lean back, reach a root with the tip of your sword and pull yourself along, little by little. You emerge caked in mud, shaking and alive, with a lesson well learned.",
+      "choiceLabel": "Cross the black water"
+    },
+    "moscagua_3_2": {
+      "title": "The Spy's Camp",
+      "text": "Following the spy's tracks backwards, you find his camp: a blanket, a waterskin and a tightly tied bundle. Inside are black bread, a handful of silver coins and a scrap of cloth painted with a white hand. You do not know what it means, but it has the feel of something important. There is also a map with the Road drawn on it and several crosses beside a tall hill to the east. You keep the scrap and press on.",
+      "choiceLabel": "Search the spy's camp"
+    },
+    "moscagua_3_3": {
+      "title": "The Marsh Light",
+      "text": "As evening falls you see a pale light floating over the water, not far off. You think it may be another traveller with a lantern and follow it, splashing. But the light draws away each time you come closer: it dances, goes out and kindles again further on. When at last you stop, you no longer know where you are. Around you there is only fog, still water and the croaking of frogs, which suddenly falls silent.",
+      "choiceLabel": "Follow the distant light"
+    },
+    "moscagua_4_0": {
+      "title": "Night on the Islet",
+      "text": "You decide to spend the night on the islet. You dare not light a fire, so you wrap yourself in your damp cloak and listen to the marsh: splashes, the moan of the wind among the reeds and, far off to the east, flashes lighting the clouds above some hills, like lightning without thunder. You wonder whether they are storms or something worse. At dawn the fog has erased everything, and the way still awaits you.",
+      "choiceLabel": "Camp beneath the willows"
+    },
+    "moscagua_4_1": {
+      "title": "The Nest of the Drone",
+      "text": "You follow the deep drone to a hollow stump rising from the middle of the water. Around it the air is a living mass of insects, and inside it something like a comb of mud throbs. As you draw near, four swarms break from the main cloud and fling themselves at you from different sides. You realise this nest is only one of many, and that somewhere in the marsh there must be a far greater one.",
+      "choiceLabel": "Seek the source of the drone"
+    },
+    "moscagua_4_2": {
+      "title": "The Sunken Walkway",
+      "text": "Recovered from your fright, you explore the shore and find the remains of a wooden walkway, half sunk but still serviceable. Someone built it centuries ago, when perhaps these lands were inhabited. You make your way along it carefully, testing every plank. On a post you discover an ancient carving, worn by the water: a crown ringed with stars. You remember that the tales of Bree spoke of a lost kingdom of the North.",
+      "choiceLabel": "Search for the old walkway"
+    },
+    "moscagua_4_3": {
+      "title": "Eyes in the Fog",
+      "text": "As you scrape off the mud, you hear voices in a harsh tongue you do not understand. You crouch in the fog and see two swarthy men rummaging in the mud and pointing east. They are spies, no doubt, folk from the south seeking nothing good so far north. One of them sniffs the air like a dog and turns exactly towards your hiding place. There is no time to flee on legs numbed by the cold of the mire.",
+      "choiceLabel": "Hide in the fog"
+    },
+    "moscagua_4_4": {
+      "title": "The Comrade Returns",
+      "text": "You hide beside the camp and wait. At nightfall another man arrives, the first one's comrade, who curses at the sight of the rifled bundle. He searches about with a torch, and the light rouses two swarms of midges sleeping in the reeds. The spy discovers you at the very moment the droning cloud engulfs you both. In the chaos he chooses to attack, and the insects take no sides.",
+      "choiceLabel": "Wait beside the camp"
+    },
+    "moscagua_4_5": {
+      "title": "The Hill of Crosses",
+      "text": "You study the spy's map in the evening light. The crosses mark a tall hill to the east, beside the Road, together with some words in a tongue you do not know. Whatever they were seeking, they were seeking it there. You turn your steps that way, choosing the firmest banks of reeds. When the fog parts for a moment, you see far off a bare summit, crowned by a ring of stones.",
+      "choiceLabel": "Study the spy's map"
+    },
+    "moscagua_4_6": {
+      "title": "The Drowned Man of the Marsh",
+      "text": "The light kindles again just ahead and, this time, it stays still. You approach and find it glowing over a rotten log where a skeleton lies in the remains of armour, trapped in the mire for many years. When you brush it, the log splits and releases a furious swarm that slept inside, larger and fiercer than any you have seen. The light goes out and only the drone remains.",
+      "choiceLabel": "Approach the light"
+    },
+    "moscagua_4_7": {
+      "title": "Flashes in the Hills",
+      "text": "Through the fog you make out a mound of earth and stones rising from the water. You climb it to get your bearings. From there, at last, you see more than reeds: to the east, a line of dark hills cuts the sky, and above the tallest flicker white flashes, like sparks from a distant storm. Something is happening on those heights. You wait for them to cease and, with the stars as your guide, set your course towards them.",
+      "choiceLabel": "Climb the mound"
+    },
+    "moscagua_5_0": {
+      "title": "Firmer Ground",
+      "text": "Little by little, the ground hardens beneath your boots. Tufts of heather appear and the odd grey rock peering out of the moss. It is not the end of the marsh, but it is a respite: you can walk without sinking and dry your clothes in the wind. You sit on a stone and count your provisions, scantier than you would like. In the distance, the hills look somewhat nearer than yesterday. There is still much mud ahead.",
+      "choiceLabel": "Look for solid ground"
+    },
+    "moscagua_5_1": {
+      "title": "The Hidden Spring",
+      "text": "After days of drinking murky water, you find it almost by chance: a spring welling between white stones, clean and icy. You drink until your teeth ache and fill your water bottle. Watercress and wild mint grow around it, and the midges, strangely, keep away. You bathe your bites, which burn less, and rest a while listening to the water. Seldom has something so small seemed so great a gift.",
+      "choiceLabel": "Look for clean water"
+    },
+    "moscagua_5_2": {
+      "title": "A Recent Camp",
+      "text": "You find a place where someone camped very recently: grass flattened by four small bodies and one large, branches cut with care and not an ember in sight. The hobbits and their guide, surely. One of them must have complained bitterly about the midges, for in a corner lies a heap of scorched fragrant herbs. You smile in spite of yourself. At least, for now, no one has caught up with them here.",
+      "choiceLabel": "Follow the travellers' trail"
+    },
+    "moscagua_5_3": {
+      "title": "The Canebrake",
+      "text": "You enter a canebrake so tall and dense that you can barely see the sky. The canes creak and whisper with every breath of wind, and at moments you think you hear footsteps beside you. You press on, notching the canes with your sword so as not to walk in circles. When at last you come out on the other side, you find your heading is true: the ground rises gently and the fog begins to fall behind you.",
+      "choiceLabel": "Cross the canebrake"
+    },
+    "moscagua_6_0": {
+      "title": "The Eastern Shore",
+      "text": "You choose the long way and skirt the bog along its eastern shore, where the reeds thin out and the first thorn bushes appear. It costs you a day more, but you arrive whole. From a small rise you behold the last stretch of marsh: a broad lagoon wrapped in fog, from which rises a drone so powerful that the air trembles. Every swarm seems to return there, like bees to their hive.",
+      "choiceLabel": "Skirt round the bog"
+    },
+    "moscagua_6_1": {
+      "title": "The Heart of the Bog",
+      "text": "You cut straight through the middle of the bog, where the water is deepest and the fog thickest. It is a mistake. A Dunlending spy has followed you for hours, waiting for his chance, and he finds it when a swarm surrounds you in a narrow passage. The man bursts from the reeds with his knife raised while the insects blind you. You fight with mud to your chest and the certainty that no one will come looking for you.",
+      "choiceLabel": "Cut across the bog"
+    },
+    "moscagua_7_0": {
+      "title": "The Swarm Queen",
+      "text": "The lagoon at the heart of the marsh seethes with insects. On an islet of mud and bones stirs the queen of the swarm: a winged creature the size of a dog, red-eyed, its sting dripping, born of stagnant water and centuries of oblivion. Around her, a cloud of guardians drones like a storm. She has sensed your coming, and she is not the only one: from the reeds on the shore, the Dunlending spy who was following your tracks steps out, knife in hand. Beyond the lagoon, the land climbs towards bare hills and a summit crowned with stones. To reach it, you must first cross her realm."
+    }
+  },
+  "rivals": {
+    "Nube de moscardones": "Cloud of Midges",
+    "Espía dunlendino": "Dunlending Spy",
+    "Enjambre de moscardones": "Midge Swarm",
+    "Moscardones de Moscagua": "Midgewater Midges",
+    "Enjambre del ahogado": "Drowned Man's Swarm",
+    "Reina del enjambre": "Swarm Queen",
+    "Guardianas del enjambre": "Swarm Guardians",
+    "Espía del pantano": "Marsh Spy"
+  }
+}
