@@ -222,12 +222,11 @@
       "level": 7,
       "index": 0,
       "title": "El cabecilla de los bandidos",
-      "text": "Donde el Camino roza los primeros árboles del Bosque de Chet, un tronco caído corta el paso. No es casualidad. De entre los helechos sale un hombre de anchas espaldas, con un parche de cuero sobre el ojo y un hacha mellada en la mano: el Tuerto, cabecilla de los salteadores. Uno de sus hombres te cierra la retirada. El Tuerto te ofrece dejar el petate y volver a Bree con vida. Tras él, la sombra del bosque espera. Solo hay una manera de seguir adelante.",
-      "imagePrompt": "A fallen tree blocking an old road at the edge of a dark forest, a broad-shouldered one-eyed bandit leader with a leather eyepatch and notched axe, a henchman behind, facing a young traveler at dusk, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "Donde el Camino roza los primeros árboles del Bosque de Chet, un tronco caído corta el paso. No es casualidad. De entre los helechos sale un hombre de anchas espaldas, con un parche de cuero sobre el ojo y un hacha mellada en la mano: el Tuerto, cabecilla de los salteadores. Viene solo: sus hombres se han quedado en el campamento, seguros de que no le hará falta ayuda. El Tuerto te ofrece dejar el petate y volver a Bree con vida. Tras él, la sombra del bosque espera. Solo hay una manera de seguir adelante.",
+      "imagePrompt": "A fallen tree blocking an old road at the edge of a dark forest, a broad-shouldered one-eyed bandit leader with a leather eyepatch and notched axe, alone, facing a young traveler at dusk, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
-          { "name": "El Tuerto, cabecilla de los bandidos", "portrait": "boss_bree", "levelOffset": 2, "pattern": ["12", "121", "11", "31"], "everyNTicks": 4, "modes": { "defenseBelowPct": 40, "attackAbovePct": 60, "maxDefenses": 1, "defense": ["21", "212", "12"] } },
-          { "name": "Salteador del Tuerto", "portrait": "bandit", "levelOffset": -4, "pattern": ["12", "121"], "everyNTicks": 2 }
+          { "name": "El Tuerto, cabecilla de los bandidos", "portrait": "boss_bree", "levelOffset": 2, "pattern": ["12", "121", "11", "31"], "everyNTicks": 4, "modes": { "defenseBelowPct": 40, "attackAbovePct": 60, "maxDefenses": 1, "defense": ["21", "212", "12"] } }
         ]
       }
     }

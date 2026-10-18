@@ -89,7 +89,20 @@ class RivalScalingTest {
         val setup = CombatSetup(FighterSpec("Player", 5), listOf(RivalSpec("Boss", 5, PatternBrain(listOf("12")), isBoss = true)))
         val state = CombatEngine().start(setup, 1L)
         assertEquals(LevelStats.forRival(5, RivalScaling.BOSS), state.rivals.single().stats)
-        assertEquals(RivalScaling.BOSS.startPower(LevelStats.MAX_POWER), state.rivals.single().power)
+        assertEquals(RivalScaling.BOSS.startPower(LevelStats.forRival(5, RivalScaling.BOSS).maxPower), state.rivals.single().power)
+    }
+
+    /** Decision of the user (2026-10-18): bosses fight alone with double HP and double power (180 % → 360 %, 300 → 600). */
+    @Test
+    fun bossesHaveDoubleHpAndPower() {
+        assertEquals(360, RivalScaling.BOSS.hpPct)
+        assertEquals(200, RivalScaling.BOSS.powerPct)
+        val setup = CombatSetup(FighterSpec("Player", 10), listOf(RivalSpec("Boss", 10, PatternBrain(listOf("12")), isBoss = true)))
+        val boss = CombatEngine().start(setup, 1L).rivals.single()
+        assertEquals(28_000 * 360 / 100, boss.stats.maxHp)
+        assertEquals(boss.stats.maxHp, boss.hp)
+        assertEquals(2 * LevelStats.MAX_POWER, boss.stats.maxPower)
+        assertEquals(2 * LevelStats.MAX_POWER, boss.power)
     }
 
     @Test

@@ -930,7 +930,7 @@ Para cada jefe se midió también el combate con el jugador entre dos niveles po
 
 ### 6.1 Puente sin escolta
 
-En `puente_7_0` se quita el Huargo que acompañaba al jefe: ahora el jefe pelea solo. El texto cambia lo mínimo: "Se planta en mitad del puente y te cierra el paso." (antes, "…mientras otro huargo te cierra la retirada"). En el `imagePrompt` (y en `docs/content/prompts-imagenes.md`), "another warg behind a young traveler" pasa a "standing alone … facing a young traveler".
+En `puente_7_0` se quita el Huargo que acompañaba al jefe: ahora el jefe pelea solo. El texto cambia lo mínimo: "Se planta en mitad del puente y te cierra el paso." (antes, "…mientras otro huargo te cierra la retirada"). En el `imagePrompt` (y en `docs/content/prompts.md`), "another warg behind a young traveler" pasa a "standing alone … facing a young traveler".
 
 Efecto: puente pasa al 100 % en los tres perfiles al nivel esperado. El porcentaje de NOVATO que llega a quebradas sube del 26,7 % al 86,2 %, pero el muro se traslada al jefe de quebradas (+7), donde el NOVATO pierde siempre. La aventura completa NOVATO solo sube del 2,2 % al 3,3 %; MEDIO queda en 46,9 % y EXPERTO en 85,2 %. Ahora son 10 los jefes al 99–100 % MEDIO (puente incluido).
 
@@ -1411,7 +1411,7 @@ Decisión del coordinador: Bree pasa a ser una zona tutorial suave, para que el 
 | 4 | jefe de bree cada 4 ticks | 66,7 | 0,0 | 30,6 | 62,8 | 75 / 100 / 100 |
 | 5 | ataque de jefe 72 → 74 (73 da lo mismo que 72 por redondeo) | 66,7 | 0,0 | **24,8** | **58,8** | 75,3 / 100 / 100 |
 
-- Los rivales de bree ya están en el nivel 1 (base 1; los offsets negativos se recortan a 1), así que bajar offsets no los aligera: solo se puede quitar un rival. Con un rival, §5 permite offset 0 o +1; se usa 0. Los textos y los `imagePrompt` de los dos nodos cambian lo mínimo, y también sus filas en `docs/content/prompts-imagenes.md`.
+- Los rivales de bree ya están en el nivel 1 (base 1; los offsets negativos se recortan a 1), así que bajar offsets no los aligera: solo se puede quitar un rival. Con un rival, §5 permite offset 0 o +1; se usa 0. Los textos y los `imagePrompt` de los dos nodos cambian lo mínimo, y también sus filas en `docs/content/prompts.md`.
 - Ninguna variante del jefe de bree deja al MEDIO por debajo del 98 % y a la vez deja ganar al NOVATO: con `1212` en el patrón el NOVATO pierde siempre; sin él, el MEDIO gana el 99–100 % con cualquier offset. Se acepta **bree al 100 % MEDIO como excepción de zona tutorial** (el único jefe fuera de 75–98 %).
 - Con el jefe cada 4 ticks, el NOVATO también le gana si llega con un nivel menos (84 %; cada 2 ticks, 0 %).
 - El NOVATO sigue completando el 0 %: ahora lo para chet (chet_7_0, el 51,9 % de las partidas, y chet_5_0, el 14,8 %), y bree_6_1 (Vigía + Lobo, fuera de los cambios permitidos) se lleva el 24,5 %. Llevarlo a 2–10 % exigiría tocar zonas posteriores, fuera de esta decisión.
@@ -2084,7 +2084,7 @@ Petición del usuario tras jugar la aventura completa: «me parece algo fácil, 
 
 ### 1. Contenido: grupos de 4 y grupos más grandes
 
-La regla de §5 de la spec de contenido ya admitía 4 rivales (offset −5) pero ningún nodo los usaba. Test nuevo (rojo primero): `RealContentTest.groupSizesPerZone` exige al menos un encuentro de 4 rivales en cada zona desde Moscagua (la 3.ª) salvo Rivendel, al menos dos en las zonas tardías (Caradhras, Durin, Moria, Sombrío y Nimrodel) y que Bree no pase de 2 rivales por grupo. Cambian 26 nodos de niveles 2–6 (texto, `imagePrompt`, rivales y offsets según §5; sin tocar Bree ni Chet) y los prompts de esos nodos en `docs/content/prompts-imagenes.md`. Los nodos con encuentro no cambian, así que la curva de niveles esperada es la misma.
+La regla de §5 de la spec de contenido ya admitía 4 rivales (offset −5) pero ningún nodo los usaba. Test nuevo (rojo primero): `RealContentTest.groupSizesPerZone` exige al menos un encuentro de 4 rivales en cada zona desde Moscagua (la 3.ª) salvo Rivendel, al menos dos en las zonas tardías (Caradhras, Durin, Moria, Sombrío y Nimrodel) y que Bree no pase de 2 rivales por grupo. Cambian 26 nodos de niveles 2–6 (texto, `imagePrompt`, rivales y offsets según §5; sin tocar Bree ni Chet) y los prompts de esos nodos en `docs/content/prompts.md`. Los nodos con encuentro no cambian, así que la curva de niveles esperada es la misma.
 
 | Rivales por encuentro (niveles 2–6) | Antes | Después |
 |---|---|---|
@@ -2262,7 +2262,7 @@ RivalScaling.BOSS     = RivalScaling(hpPct = 180, attackPct = 82, healPct = 100,
 | sombrio | +8 | sin cambio | arquero → **arquero + trasgo** |
 | nimrodel | +2 | → **`32, 323, 3232, 31, 2131, 31`** (sin Cura) | orco + arquero (sin cambio) |
 
-- JSON de las 12 zonas con cambios, `ContentRules.Bestiary` (patrones de chet, bruinen y nimrodel), §3 y §5 de la spec de contenido y `docs/content/prompts-imagenes.md`. Las imágenes de los nodos cambiados son las de antes (pueden mostrar menos criaturas que el texto) y `prompts-imagenes-pixelart.md` no se ha tocado.
+- JSON de las 12 zonas con cambios, `ContentRules.Bestiary` (patrones de chet, bruinen y nimrodel), §3 y §5 de la spec de contenido y `docs/content/prompts.md`. Las imágenes de los nodos cambiados son las de antes (pueden mostrar menos criaturas que el texto) y `prompts.md` no se ha tocado.
 - Las huellas de `HpRegressionTest` se regrabaron desde el motor nuevo; `final-encounters.csv` y `final-adventures.csv` son los de este estado.
 
 ### Pendiente para pruebas reales (más enemigos y dificultad +)
@@ -3054,3 +3054,55 @@ RivalScaling.BOSS               // sin cambio (PV 180 / ataque 77)
 4. **El MEDIO sufre más en cima (50 %), durin (50 %) y cirithungol (53 %)**, con 1,26, 0,82 y 0,76 muertes por aventura; el MAESTRO, que es la referencia, está en 81–88 % en esos tres.
 5. **Las muertes del MAESTRO (3,94) están en el borde del objetivo:** con el ruido de 2000 aventuras pueden pasar de 4 en otra semilla.
 6. Siguen abiertos los pendientes de «Jefes con modo ataque y defensa» (su punto 1, «menos defensas», queda aún más marcado) y los anteriores.
+
+## Jefes solos con el doble de vida y power (2026-10-18)
+
+Decisión del usuario: **todos los jefes luchan solos** (sin escoltas) y con **el doble de vida y de power**, para que cada uno sea un reto; el Balrog (`moria_7_0`) fue el primero que pidió. Después eligió reajustar para que el MAESTRO (que juega como él) gane **el 50–70 % de cada jefe**: un reto, pero ningún muro. Prevalece sobre los números de balance anteriores.
+
+Qué cambió:
+- **Motor:** `RivalScaling.BOSS` vida 180 → **360 %** y `powerPct` 100 → **200** (power máximo del jefe 300 → 600; empieza lleno). Ataque, curas y defensa sin cambio.
+- **Contenido:** los 16 jefes con escolta la pierden (`ContentRules`: «the boss fights alone»; `RealContentTest.everyBossFightsAlone`); sus textos (es/en) y prompts de imagen ya no mencionan acompañantes. Las traducciones de nombres de escoltas que ya no aparecen se quitaron de `story/en/`.
+- **Re-balance:** solo offsets por jefe (dentro de +2..+15) y, en Caradhras y Anduin, `everyNTicks` 1 → 2 (con offset 0 seguían por debajo del 50 %). Sin tocar al jugador, los patrones ni los modos. Barrido: `sweep offsets <zona> 0,…,15` y `every=2`.
+- **UI:** el retrato del jefe es más grande (60 dp) y lleva una franja diagonal roja «ELITE» en la esquina superior derecha.
+
+Mismas semillas; 300 combates por encuentro y 2000 aventuras por perfil. «Antes» es la sección «Escudo táctico: inmunidad total»; «solo ×2 sin reajuste» es el contenido sin escoltas con vida y power ×2 y los offsets antiguos.
+
+| Jefe | offset (antes → ahora) | MAESTRO antes | MAESTRO solo ×2 sin reajuste | **MAESTRO ahora** | MEDIO antes | MEDIO ahora | ticks MAESTRO antes → ahora |
+|---|---|---|---|---|---|---|---|
+| bree | +2 (sin cambio, tutorial) | 100.0 | 100.0 | **100.0** | 100.0 | 100.0 | 14 → 30 |
+| chet | +3 → **+4** | 87.7 | 82.7 | **65.0** | 84.7 | 27.3 | 25 → 81 |
+| moscagua | +2 | 85.7 | 66.0 | **66.0** | 79.7 | 29.3 | 20 → 56 |
+| cima | +5 → **+4** | 81.3 | 43.3 | **63.0** | 50.0 | 27.3 | 41 → 92 |
+| puente | +2 → **+5** | 90.0 | 83.7 | **53.7** | 61.3 | 24.7 | 48 → 85 |
+| quebradas | +6 → **+7** | 90.0 | 63.3 | **60.0** | 68.3 | 10.7 | 74 → 163 |
+| bruinen | +3 | 90.0 | 56.7 | **56.7** | 69.3 | 26.7 | 35 → 95 |
+| eregion | +3 → **+8** | 85.3 | 90.3 | **59.0** | 69.0 | 21.3 | 20 → 97 |
+| caradhras | +3 → **+2** · cada **2** ticks | 90.7 | 29.7 | **61.3** | 62.0 | 46.3 | 26 → 62 |
+| durin | +5 → **+2** | 87.0 | 37.0 | **53.0** | 50.3 | 32.3 | 30 → 84 |
+| moria | +3 → **+4** | 91.0 | 70.0 | **58.7** | 89.7 | 30.7 | 26 → 91 |
+| sombrio | +6 → **+7** | 90.0 | 63.3 | **57.7** | 80.7 | 12.3 | 27 → 153 |
+| nimrodel | +4 → **+8** | 91.3 | 72.0 | **61.3** | 83.7 | 24.7 | 28 → 94 |
+| anduin | +8 → **+10** · cada **2** ticks | 90.7 | 28.3 | **60.7** | 91.7 | 37.0 | 20 → 84 |
+| argonath | +11 → **+2** | 90.7 | 20.3 | **61.7** | 84.3 | 30.7 | 23 → 83 |
+| amonhen | +12 → **+2** | 88.7 | 25.0 | **59.0** | 82.7 | 31.0 | 22 → 84 |
+| emynmuil | +2 | 89.0 | 65.0 | **65.0** | 91.3 | 27.0 | 19 → 53 |
+| cienagas | +10 → **+3** | 87.0 | 32.0 | **58.0** | 66.0 | 25.3 | 26 → 93 |
+| ithilien | +2 → **+4** | 89.0 | 72.7 | **60.0** | 93.0 | 30.0 | 20 → 91 |
+| cirithungol | +8 → **+2** | 87.7 | 28.3 | **52.0** | 52.7 | 31.7 | 20 → 84 |
+| gorgoroth | +4 → **+11** | 89.7 | 78.3 | **60.0** | 82.0 | 20.7 | 24 → 101 |
+
+| Métrica | Antes | Solo ×2 sin reajuste | **Final** |
+|---|---|---|---|
+| MAESTRO: jefes, mínimo–máximo (sin Bree) | 81,3–91,3 | 20,3–90,3 | **52,0 (cirithungol) – 66,0 (moscagua)** |
+| MAESTRO: muertes por aventura / abandonadas | 3,94 / 0 % | 36,83 / 1,6 % | **21,00 / 0,1 %** |
+| MEDIO: jefes, mínimo–máximo (sin Bree) | 50,0–93,0 | 13,7–46,3 | **10,7 (quebradas) – 46,3 (caradhras)** |
+| MEDIO: muertes por aventura / abandonadas | 9,58 / 0 % | 74,10 / 1,1 % | **68,13 / 0,9 %** (atascadas sobre todo en sombrio) |
+| EXPERTO: muertes por aventura | – | 46,94 | **42,46** |
+| Combates de jefe, ticks medios MEDIO / MAESTRO | 34 / 28 | 75 / – | **76 / 88** |
+| Combates al tope de 600 ticks | 0 | 0 | **0** |
+
+Notas:
+- Los comunes no cambian (MAESTRO 100 %, MEDIO ≥ 87,3 %).
+- Los objetivos MEDIO de las rondas anteriores (jefes ≥ 40 %, ≤ 20 muertes) ya no se cumplen: el objetivo ahora es el reto del MAESTRO. El NOVATO sigue atascado en chet.
+- `AdventureTest.simAdventureReachesOrodruin` usa ahora el MAESTRO (una aventura MEDIO puede atascarse).
+- Pendiente para pruebas reales: si el usuario se atasca de verdad en algún jefe, la palanca es su offset (tabla de arriba).

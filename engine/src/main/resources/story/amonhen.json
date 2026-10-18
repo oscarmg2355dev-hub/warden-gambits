@@ -419,14 +419,14 @@
       "level": 7,
       "index": 0,
       "title": "El caudillo de la orilla",
-      "text": "Vuelves al prado al caer la tarde. Tu barca sigue donde la dejaste. Pero un poco más allá hay un surco en la arena, donde alguien empujó otra barca al agua con la proa hacia la orilla de enfrente, y huellas pequeñas, descalzas, que entran en el lago. Inclinado sobre ellas está el uruk más grande que has visto, con un yelmo de cuernos y una espada ancha, olfateando el rastro como un perro. A su lado, un guerrero espera órdenes. El caudillo te mira y se ríe.",
+      "text": "Vuelves al prado al caer la tarde. Tu barca sigue donde la dejaste. Pero un poco más allá hay un surco en la arena, donde alguien empujó otra barca al agua con la proa hacia la orilla de enfrente, y huellas pequeñas, descalzas, que entran en el lago. Inclinado sobre ellas está el uruk más grande que has visto, con un yelmo de cuernos y una espada ancha, olfateando el rastro como un perro. Los suyos ya marchan hacia el oeste con otra presa; solo él se ha quedado atrás. El caudillo te mira y se ríe.",
       "imagePrompt": "A green lakeside lawn at dusk, a small grey boat on the grass, a furrow in the sand and small bare footprints leading into the water, a huge uruk chieftain in a horned helm sniffing them, turning toward a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
           {
             "name": "Caudillo uruk-hai",
             "portrait": "boss_amonhen",
-            "levelOffset": 12,
+            "levelOffset": 2,
             "pattern": [
               "13",
               "131",
@@ -452,19 +452,6 @@
                 "131"
               ]
             }
-          },
-          {
-            "name": "Uruk-hai de la Mano Blanca",
-            "portrait": "uruk",
-            "levelOffset": -4,
-            "pattern": [
-              "11",
-              "12",
-              "121",
-              "1212",
-              "12121"
-            ],
-            "everyNTicks": 3
           }
         ]
       }

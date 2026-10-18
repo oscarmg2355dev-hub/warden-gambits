@@ -55,14 +55,14 @@ object Bestiary {
         "quebradas" to BeastEntry("Trol de piedra", listOf("12", "121", "1212", "13", "131", "31"), 1),
         "bruinen" to BeastEntry("Jinete Negro", listOf("32", "323", "3232", "13", "131", "3123", "31232", "31"), 1),
         "eregion" to BeastEntry("Capitán dunlendino", listOf("12", "121", "1212", "13", "131", "31", "123"), 1),
-        "caradhras" to BeastEntry("Furia del Caradhras", listOf("32", "323", "3232", "12", "121", "1212", "31", "123"), 1),
+        "caradhras" to BeastEntry("Furia del Caradhras", listOf("32", "323", "3232", "12", "121", "1212", "31", "123"), 2),
         "durin" to BeastEntry("Guardián del Agua", listOf("13", "131", "1313", "12", "121", "1212", "31", "123"), 1),
         "moria" to BeastEntry("Sombra de Durin", listOf("32", "323", "3232", "13", "131", "31", "123"), 1),
         "sombrio" to BeastEntry("Capitán orco de las Montañas Nubladas", listOf("12", "121", "1212", "13", "131", "31", "123"), 1),
         "nimrodel" to BeastEntry("Jefe de los arqueros orcos", listOf("32", "323", "3232", "12", "121", "31"), 1),
         // Road to Mordor (spec 2026-10-16 §3), tuned in tuning.md «Libro II: hasta el Monte del Destino». Since «Escudo
         // táctico: inmunidad total» (2026-10-17) most bosses run two damage chains and a single Aturdir.
-        "anduin" to BeastEntry("Cabecilla de los saqueadores del río", listOf("12", "121", "1212", "13", "131", "31", "32", "323", "123"), 1),
+        "anduin" to BeastEntry("Cabecilla de los saqueadores del río", listOf("12", "121", "1212", "13", "131", "31", "32", "323", "123"), 2),
         "argonath" to BeastEntry("Capitán uruk de la Mano Blanca", listOf("12", "121", "1212", "13", "131", "1313", "31", "123"), 1),
         "amonhen" to BeastEntry("Caudillo uruk-hai", listOf("13", "131", "1313", "12", "121", "1212", "31", "123"), 1),
         "emynmuil" to BeastEntry("Trol de las colinas", listOf("12", "121", "1212", "32", "323", "3232", "31", "123"), 1),
@@ -205,9 +205,6 @@ object ContentRules {
     /** §5: allowed levelOffset of every rival of a level 2–6 encounter, by number of rivals. */
     val GROUP_OFFSETS: Map<Int, Set<Int>> = mapOf(1 to setOf(0, 1), 2 to setOf(-2), 3 to setOf(-4), 4 to setOf(-5))
 
-    /** §5: levelOffset of the commons escorting a boss. */
-    const val ESCORT_OFFSET = -4
-
     /** §5: levelOffset of the zone boss, tuned per boss. */
     val BOSS_OFFSETS: IntRange = 2..15
 
@@ -317,8 +314,8 @@ object ContentRules {
         if (!matches(first, boss) || first.levelOffset !in BOSS_OFFSETS) {
             errors += "$key: first rival must be the boss ${boss.name} with offset in +${BOSS_OFFSETS.first}..+${BOSS_OFFSETS.last}"
         }
-        val extras = rivals.drop(1)
-        if (extras.size > 2) errors += "$key: boss encounter has ${extras.size} extra rivals, max 2"
+        // Decision of the user (2026-10-18): every boss fights alone.
+        if (rivals.size > 1) errors += "$key: the boss fights alone, found ${rivals.size - 1} extra rivals"
         if (first.reaction != null) errors += "$key: the boss cannot have a reaction, it heals in its defense mode"
         first.pattern.filter(::isShieldOrHeal).forEach { errors += "$key: boss attack pattern cannot shield or heal: $it" }
         val modes = first.modes
@@ -327,12 +324,6 @@ object ContentRules {
         } else {
             modesErrors(modes).forEach { errors += "$key: $it" }
             if (modes != bossModes(zoneId)) errors += "$key: boss modes $modes should be ${bossModes(zoneId)}"
-        }
-        extras.forEachIndexed { i, rival ->
-            if (!isCommonOf(zoneId, rival)) errors += "$key: extra rival ${i + 1} is not a common of $zoneId"
-            if (rival.levelOffset != ESCORT_OFFSET) errors += "$key: extra rival ${i + 1} must have offset $ESCORT_OFFSET"
-            if (rival.reaction != null) errors += "$key: extra rival ${i + 1} cannot react, only the boss heals"
-            if (rival.modes != null) errors += "$key: extra rival ${i + 1} cannot have modes, only the boss"
         }
     }
 

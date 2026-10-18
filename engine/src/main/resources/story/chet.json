@@ -224,13 +224,11 @@
       "level": 7,
       "index": 0,
       "title": "El lobo gris alfa",
-      "text": "Al final del bosque, donde los árboles se vuelven ralos y el suelo huele ya a ciénaga, te espera la manada. En lo alto de una roca, el lobo gris alfa te observa: más alto que un poni, con el pelaje color ceniza y una cicatriz que le parte el hocico. Es el que guía a los demás, el terror de los cazadores de Archet. Basta un gruñido suyo para que dos lobos jóvenes se coloquen a tus flancos. Más allá, entre la bruma, comienzan los pantanos.",
-      "imagePrompt": "At the misty edge of a thinning forest near marshland, a huge ash-grey alpha wolf with a scarred muzzle standing on a rock, two younger wolves flanking a young traveler with sword drawn, dusk, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "Al final del bosque, donde los árboles se vuelven ralos y el suelo huele ya a ciénaga, te espera la manada. En lo alto de una roca, el lobo gris alfa te observa: más alto que un poni, con el pelaje color ceniza y una cicatriz que le parte el hocico. Es el que guía a los demás, el terror de los cazadores de Archet. Con un gruñido aparta a los lobos jóvenes: esta presa es suya. Salta de la roca y empieza a rodearte despacio. Más allá, entre la bruma, comienzan los pantanos.",
+      "imagePrompt": "At the misty edge of a thinning forest near marshland, a huge ash-grey alpha wolf with a scarred muzzle leaping down from a rock toward a young traveler with sword drawn, dusk, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
-          { "name": "Lobo gris alfa", "portrait": "boss_chet", "levelOffset": 3, "pattern": ["12", "121", "1212", "12121", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 10, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } },
-          { "name": "Lobo joven de la manada", "portrait": "wolf", "levelOffset": -4, "pattern": ["12", "121", "1212"], "everyNTicks": 2 },
-          { "name": "Lobo joven de la manada", "portrait": "wolf", "levelOffset": -4, "pattern": ["12", "121", "1212"], "everyNTicks": 2 }
+          { "name": "Lobo gris alfa", "portrait": "boss_chet", "levelOffset": 4, "pattern": ["12", "121", "1212", "12121", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 10, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } }
         ]
       }
     }

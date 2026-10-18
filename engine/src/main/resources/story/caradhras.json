@@ -223,7 +223,7 @@
       "imagePrompt": "A furious blizzard on a reddish mountain, an avalanche thundering down like a white sea toward a tiny young traveler in a grey cloak bracing against the wind, sword in hand, shapes of malice in the storm clouds, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
-          { "name": "Furia del Caradhras", "portrait": "boss_caradhras", "levelOffset": 3, "pattern": ["32", "323", "3232", "12", "121", "1212", "31", "123"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } }
+          { "name": "Furia del Caradhras", "portrait": "boss_caradhras", "levelOffset": 2, "pattern": ["32", "323", "3232", "12", "121", "1212", "31", "123"], "everyNTicks": 2, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } }
         ]
       }
     }

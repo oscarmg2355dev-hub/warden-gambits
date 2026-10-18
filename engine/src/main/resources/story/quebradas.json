@@ -216,12 +216,11 @@
       "level": 7,
       "index": 0,
       "title": "El trol de piedra",
-      "text": "De la cueva sale un trol de piedra, vivo y bien despierto: casi el doble de alto que un hombre, con la piel gris y rugosa como una roca y una maza hecha con un tronco entero. Te ha olido, y le gusta lo que huele. Un huargo que rondaba la cueva, atraído por los huesos, se acerca gruñendo a su lado. Detrás de él, la hoguera ilumina un montón de huesos y tesoros robados. Sabes por los cuentos que la luz del sol convierte a los suyos en piedra, pero falta mucho para el alba. Hasta entonces, solo cuentas con tu espada. Más allá de estas colinas, el Camino desciende hacia un río rápido y hacia el vado que lleva a la tierra de los elfos: el vado del Bruinen.",
-      "imagePrompt": "Night before a great cave in a rock wall, a living stone troll twice a man's height with grey rocky skin and a whole tree trunk as a club stepping out toward a young traveler with a sword, a warg growling at its side, a fire lighting bones and treasure behind, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "De la cueva sale un trol de piedra, vivo y bien despierto: casi el doble de alto que un hombre, con la piel gris y rugosa como una roca y una maza hecha con un tronco entero. Te ha olido, y le gusta lo que huele. Detrás de él, la hoguera ilumina un montón de huesos y tesoros robados. Sabes por los cuentos que la luz del sol convierte a los suyos en piedra, pero falta mucho para el alba. Hasta entonces, solo cuentas con tu espada. Más allá de estas colinas, el Camino desciende hacia un río rápido y hacia el vado que lleva a la tierra de los elfos: el vado del Bruinen.",
+      "imagePrompt": "Night before a great cave in a rock wall, a living stone troll twice a man's height with grey rocky skin and a whole tree trunk as a club stepping out toward a young traveler with a sword, a fire lighting bones and treasure behind, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
-          { "name": "Trol de piedra", "portrait": "boss_quebradas", "levelOffset": 6, "pattern": ["12", "121", "1212", "13", "131", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 20, "attackAbovePct": 70, "maxDefenses": 2, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } },
-          { "name": "Huargo de la cueva", "portrait": "warg", "levelOffset": -4, "pattern": ["12", "121", "1212", "12121"], "everyNTicks": 2 }
+          { "name": "Trol de piedra", "portrait": "boss_quebradas", "levelOffset": 7, "pattern": ["12", "121", "1212", "13", "131", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 20, "attackAbovePct": 70, "maxDefenses": 2, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } }
         ]
       }
     }

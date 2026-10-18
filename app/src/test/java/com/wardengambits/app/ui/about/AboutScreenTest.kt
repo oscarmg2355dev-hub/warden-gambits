@@ -1,5 +1,8 @@
 package com.wardengambits.app.ui.about
 
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.ui.platform.LocalUriHandler
+import androidx.compose.ui.platform.UriHandler
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.junit4.createComposeRule
@@ -24,10 +27,38 @@ class AboutScreenTest {
     @get:Rule
     val composeRule = createComposeRule()
 
+    private val opened = mutableListOf<String>()
+
     private fun show(language: AppLanguage = AppLanguage.ES, script: AppScript = AppScript.LATIN, onBack: () -> Unit = {}) {
-        composeRule.setContent {
-            ProvideLanguageAndScript(language, script) { WardenTheme { AboutScreen(onBack = onBack) } }
+        val uriHandler = object : UriHandler {
+            override fun openUri(uri: String) { opened += uri }
         }
+        composeRule.setContent {
+            CompositionLocalProvider(LocalUriHandler provides uriHandler) {
+                ProvideLanguageAndScript(language, script) { WardenTheme { AboutScreen(onBack = onBack) } }
+            }
+        }
+    }
+
+    @Test fun linksThePublicSourceCodeOnGitHub() {
+        show()
+        assertEquals("https://github.com/oscarmg2355dev-hub/warden-gambits", SOURCE_CODE_URL)
+        composeRule.onNodeWithText("Código fuente").assertIsDisplayed()
+        composeRule.onNodeWithText("GitHub", substring = true).assertIsDisplayed()
+        composeRule.onNodeWithText(SOURCE_CODE_URL).assertIsDisplayed().performClick()
+        assertEquals(listOf(SOURCE_CODE_URL), opened)
+    }
+
+    @Test fun sourceCodeLinkInEnglish() {
+        show(AppLanguage.EN)
+        composeRule.onNodeWithText("Source code").assertIsDisplayed()
+        composeRule.onNodeWithText(SOURCE_CODE_URL).assertIsDisplayed()
+    }
+
+    @Test fun sourceCodeUrlStaysLatinInTengwar() {
+        show(AppLanguage.ES, AppScript.TENGWAR)
+        composeRule.onNodeWithText(Tengwar.transcribe("Código fuente", TengwarMode.SPANISH)).assertIsDisplayed()
+        composeRule.onNodeWithText(SOURCE_CODE_URL).assertIsDisplayed()
     }
 
     @Test fun showsHowItWasMadeTheAuthorAndTheCredits() {

@@ -98,7 +98,7 @@
   - `engine/src/main/resources/story-pending/lothlorien.json`: árbol de 22 nodos sin encuentros. Su `lothlorien_1_0` es la llegada a Caras Galadhon; reutiliza y adapta el texto del antiguo final, de 60 a 120 palabras. El nivel 7 es la partida en barcas.
   - `story-pending/anduin.json`
   - `story-pending/argonath.json`
-- Modify: `docs/content/prompts-imagenes-pixelart.md`, con una fila por nodo nuevo `| <key>.webp | <título> | <prompt pixel-art> |` en el mismo estilo que las existentes. La fila de `lothlorien_1_0` reutiliza la de `lothlorien_final`.
+- Modify: `docs/content/prompts.md`, con una fila por nodo nuevo `| <key>.webp | <título> | <prompt pixel-art> |` en el mismo estilo que las existentes. La fila de `lothlorien_1_0` reutiliza la de `lothlorien_final`.
 
 **Interfaces:** consume el bestiario y `PendingContentTest` de la Tarea 1.
 
@@ -108,7 +108,7 @@
 
 ### Task 3: Contenido II — Amon Hen, Emyn Muil y Ciénagas
 
-Igual que la Tarea 2, para `story-pending/amonhen.json`, `emynmuil.json` y `cienagas.json`, con sus filas en `prompts-imagenes-pixelart.md`.
+Igual que la Tarea 2, para `story-pending/amonhen.json`, `emynmuil.json` y `cienagas.json`, con sus filas en `prompts.md`.
 
 - [ ] **Step 1:** escribe los JSON.
 - [ ] **Step 2: Run** `PendingContentTest`. Expected: PASS.
@@ -153,7 +153,7 @@ Igual que la Tarea 2, para `story-pending/ithilien.json`, `cirithungol.json` y `
 - Modify:
   - `app/.../ui/common/Portraits.kt` (6 sprites nuevos de 16×16 y la tabla de tipo base de los 8 jefes de la spec §5)
   - `PortraitsTest.kt`
-  - `docs/content/prompts-retratos-pixelart.md` (6 tipos y 8 jefes, mismo formato y estilo)
+  - `docs/content/prompts.md` (6 tipos y 8 jefes, mismo formato y estilo)
 
 - [ ] **Step 1: Write the failing tests:**
   - los sprites nuevos tienen 16×16 con colores de paleta;

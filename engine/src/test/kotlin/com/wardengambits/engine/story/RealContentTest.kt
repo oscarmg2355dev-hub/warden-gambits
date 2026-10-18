@@ -105,6 +105,14 @@ class RealContentTest {
         zone.nodes.mapNotNull { node -> node.encounter?.let { PlacedEncounter(zone.id, node.level, it.rivals) } }
     }
 
+    /** Decision of the user (2026-10-18): every zone boss fights alone, without escorts. */
+    @Test
+    fun everyBossFightsAlone() {
+        val bosses = encounters().filter { it.level == TreeShape.LEVELS }
+        assertEquals(21, bosses.size)
+        bosses.forEach { assertEquals(1, it.rivals.size, "boss of ${it.zoneId} has escorts: ${it.rivals.map { r -> r.name }}") }
+    }
+
     /** Boss-modes spec §1: the 21 bosses carry their attack and defense modes (Bree's, its own tutorial version). */
     @Test
     fun everyBossHasModes() {

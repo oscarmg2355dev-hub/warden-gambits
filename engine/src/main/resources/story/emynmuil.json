@@ -417,8 +417,8 @@
       "level": 7,
       "index": 0,
       "title": "El trol de las colinas",
-      "text": "La bajada desemboca en una explanada al pie de las colinas, desde la que ya se ve la ciénaga. Allí, sentado sobre una roca, te espera algo que te hiela la sangre: un trol de las colinas, gris como la piedra, con una porra hecha de un tronco entero. A su lado, un orco de Mordor le grita órdenes y le señala hacia ti con la lanza. El trol se levanta despacio, más alto que dos hombres, y la explanada entera parece encogerse.",
-      "imagePrompt": "A rocky flat at the foot of grey hills overlooking distant marshes, a huge grey hill troll with a tree-trunk club rising from a boulder, a Mordor orc pointing a spear at a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "La bajada desemboca en una explanada al pie de las colinas, desde la que ya se ve la ciénaga. Allí, sentado sobre una roca, te espera algo que te hiela la sangre: un trol de las colinas, gris como la piedra, con una porra hecha de un tronco entero. No hay nadie más en la explanada: solo la bestia, que vuelve hacia ti la cabeza y olfatea el aire. El trol se levanta despacio, más alto que dos hombres, y la explanada entera parece encogerse.",
+      "imagePrompt": "A rocky flat at the foot of grey hills overlooking distant marshes, a huge grey hill troll with a tree-trunk club rising from a boulder to face a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
           {
@@ -450,18 +450,6 @@
                 "121"
               ]
             }
-          },
-          {
-            "name": "Orco de Mordor",
-            "portrait": "mordor_orc",
-            "levelOffset": -4,
-            "pattern": [
-              "13",
-              "131",
-              "1313",
-              "11"
-            ],
-            "everyNTicks": 3
           }
         ]
       }

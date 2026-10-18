@@ -27,7 +27,8 @@ class AdventureTest {
 
     @Test
     fun simAdventureReachesOrodruin() {
-        val run = Simulator(content).simulateAdventures(Skill.MEDIO, 1, firstSeed = 14_000_000L).single()
+        // MAESTRO, the balance reference: since the solo double-HP bosses (2026-10-18) a MEDIO adventure may stall.
+        val run = Simulator(content).simulateAdventures(Skill.MAESTRO, 1, firstSeed = 14_000_000L).single()
         assertTrue(run.completed)
         assertEquals(Route.zones.map { it.id }, run.reachedZones)
         assertEquals("orodruin", run.reachedZones.last())

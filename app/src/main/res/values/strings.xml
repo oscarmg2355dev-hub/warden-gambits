@@ -174,6 +174,8 @@ Solo puede estar activo un multiplicador y un escudo a la vez.</string>
     <string name="about_how_2">La historia está escrita como datos (24 zonas y 507 nodos camino de Mordor), el mapa se genera por código, los sonidos se sintetizan y las imágenes pixel-art se crearon con Gemini a partir de prompts propios. Todo se ha desarrollado con ayuda de IA (Claude Code), con un flujo de especificaciones, planes, tests y revisiones.</string>
     <string name="about_author_heading">El autor</string>
     <string name="about_author_body">Oscar Martínez Gómez es programador, aficionado al mundo de Tolkien y jugador retirado de El Señor de los Anillos Online (LOTRO). Allí, con el Guardián (el Warden) y sus gambits, combos que se encadenan golpe a golpe, nació la idea de este juego.</string>
+    <string name="about_source_heading">Código fuente</string>
+    <string name="about_source_body">El código del juego es público: puedes leerlo, aprender de él o proponer mejoras en GitHub.</string>
     <string name="about_credits_heading">Créditos</string>
     <string name="about_credits_fonts">Fuentes: Cinzel, Uncial Antiqua, Almendra y Alcarin Tengwar, bajo la licencia SIL Open Font License (OFL).</string>
     <string name="about_credits_disclaimer">Warden-Gambits es un proyecto de aficionado, sin relación con los titulares de los derechos de la obra de J. R. R. Tolkien ni de El Señor de los Anillos Online, ni respaldado por ellos.</string>

@@ -414,14 +414,14 @@
       "level": 7,
       "index": 0,
       "title": "Ella-Laraña",
-      "text": "Al final solo queda un camino: el túnel que cruza la montaña. Dentro, la oscuridad es completa y el hedor, insoportable. Avanzas tanteando la pared, entre telas que se te pegan a la cara. Entonces oyes un roce enorme, un chasquido, y delante se encienden dos racimos de ojos, uno de ellos apagado y costroso, herido hace poco. Una araña gigantesca llena el túnel de lado a lado, y a su lado se descuelga una cría. Es Ella-Laraña, la vieja señora de este túnel, y tiene hambre.",
-      "imagePrompt": "A pitch-black tunnel choked with webs, an enormous ancient spider filling the passage with clusters of glowing eyes, one cluster dull and scarred, a smaller spider dropping beside her, a young traveler in a grey elven cloak with sword raised, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "Al final solo queda un camino: el túnel que cruza la montaña. Dentro, la oscuridad es completa y el hedor, insoportable. Avanzas tanteando la pared, entre telas que se te pegan a la cara. Entonces oyes un roce enorme, un chasquido, y delante se encienden dos racimos de ojos, uno de ellos apagado y costroso, herido hace poco. Una araña gigantesca llena el túnel de lado a lado. Es Ella-Laraña, la vieja señora de este túnel, y tiene hambre.",
+      "imagePrompt": "A pitch-black tunnel choked with webs, an enormous ancient spider filling the passage with clusters of glowing eyes, one cluster dull and scarred, a young traveler in a grey elven cloak with sword raised, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
           {
             "name": "Ella-Laraña",
             "portrait": "boss_cirithungol",
-            "levelOffset": 8,
+            "levelOffset": 2,
             "pattern": [
               "13",
               "131",
@@ -447,18 +447,6 @@
                 "131"
               ]
             }
-          },
-          {
-            "name": "Araña",
-            "portrait": "spider",
-            "levelOffset": -4,
-            "pattern": [
-              "13",
-              "131",
-              "31",
-              "313"
-            ],
-            "everyNTicks": 2
           }
         ]
       }

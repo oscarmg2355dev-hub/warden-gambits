@@ -219,13 +219,11 @@
       "level": 7,
       "index": 0,
       "title": "El jefe de los arqueros",
-      "text": "Llegas al lugar donde el Nimrodel se une al río que traes desde las montañas, más ancho y frío. Al otro lado, el bosque se vuelve más espeso y más dorado. Pero antes de que encuentres la manera de cruzar, te rodean: un orco enorme con un arco negro tan alto como él, el jefe de los arqueros, con un orco de las montañas y un arquero a su lado. Luchas con la espalda contra el río. Muy arriba, entre las ramas doradas, unas figuras vestidas de gris observan la lucha en silencio, con los arcos tensos y una cuerda enrollada al hombro.",
-      "imagePrompt": "At the meeting of two rivers under golden trees, a huge orc chieftain with a black bow as tall as himself and two orcs fighting a young traveler in a grey cloak, grey-clad elven archers watching silently from the high branches, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "Llegas al lugar donde el Nimrodel se une al río que traes desde las montañas, más ancho y frío. Al otro lado, el bosque se vuelve más espeso y más dorado. Pero antes de que encuentres la manera de cruzar, te cierra el paso un orco enorme con un arco negro tan alto como él: el jefe de los arqueros, que ha dejado atrás a su partida para darte caza en persona. Luchas con la espalda contra el río. Muy arriba, entre las ramas doradas, unas figuras vestidas de gris observan la lucha en silencio, con los arcos tensos y una cuerda enrollada al hombro.",
+      "imagePrompt": "At the meeting of two rivers under golden trees, a huge orc chieftain with a black bow as tall as himself fighting a young traveler in a grey cloak, grey-clad elven archers watching silently from the high branches, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
-          { "name": "Jefe de los arqueros orcos", "portrait": "boss_nimrodel", "levelOffset": 4, "pattern": ["32", "323", "3232", "12", "121", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 20, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } },
-          { "name": "Orco de las Montañas Nubladas", "portrait": "orc", "levelOffset": -4, "pattern": ["11", "12", "121", "1212", "22"], "everyNTicks": 2 },
-          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -4, "pattern": ["32", "323"], "everyNTicks": 1 }
+          { "name": "Jefe de los arqueros orcos", "portrait": "boss_nimrodel", "levelOffset": 8, "pattern": ["32", "323", "3232", "12", "121", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 20, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } }
         ]
       }
     }

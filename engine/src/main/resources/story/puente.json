@@ -236,7 +236,7 @@
       "imagePrompt": "An ancient three-arched stone bridge over a swift grey river, a gigantic coal-black scarred warg with knowing eyes standing alone in the middle of the bridge facing a young traveler with a sword, wooded hills beyond, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
-          { "name": "Jefe de la manada de huargos", "portrait": "boss_puente", "levelOffset": 2, "pattern": ["12", "121", "1212", "13", "131", "31", "11"], "everyNTicks": 1, "modes": { "defenseBelowPct": 50, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } }
+          { "name": "Jefe de la manada de huargos", "portrait": "boss_puente", "levelOffset": 5, "pattern": ["12", "121", "1212", "13", "131", "31", "11"], "everyNTicks": 1, "modes": { "defenseBelowPct": 50, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } }
         ]
       }
     }

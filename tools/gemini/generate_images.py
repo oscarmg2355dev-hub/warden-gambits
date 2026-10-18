@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate node images and fighter portraits with the Gemini API and convert them for the app.
 
-Reads the prompt table in docs/content/prompts-imagenes-pixelart.md
+Reads the prompt tables in docs/content/prompts.md
 (rows: | <key>.webp | <title> | <prompt> |), calls Gemini for each prompt
 that has no image yet in docs/content/gemini/, and saves the result as
 <key>.png. The `convert` command turns every image found in
@@ -16,9 +16,14 @@ Usage:
                                                   [--model MODEL] [--delay 6]
   python tools/gemini/generate_images.py convert [--only ...] [--zone ...]
   python tools/gemini/generate_images.py all ...   (generate, then convert)
+  python tools/gemini/generate_images.py pending   (only rewrite the pending list)
 
-Portraits: add `--set portraits` to any command. It reads
-docs/content/prompts-retratos-pixelart.md (rows: | portrait_<key>.webp | ... |),
+Every `convert` (and `pending`) rewrites docs/content/imagenes-pendientes.md:
+the node images and portraits that have no original yet in docs/content/gemini/,
+with their prompts, so an image drops off the list as soon as it is added.
+
+Portraits: add `--set portraits` to any command. It uses the
+portrait rows of docs/content/prompts.md (| portrait_<key>.webp | ... |),
 asks Gemini for 1:1 images, keeps them in docs/content/gemini/portraits/ and
 `convert` turns them into 256x256 WebP (center crop to 1:1, nearest-neighbour
 resize to keep the pixels crisp) named portrait_<key>.webp.
@@ -37,14 +42,14 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-PROMPTS = ROOT / "docs" / "content" / "prompts-imagenes-pixelart.md"
+PROMPTS = ROOT / "docs" / "content" / "prompts.md"
+PENDING = ROOT / "docs" / "content" / "imagenes-pendientes.md"
 OUT_DIR = ROOT / "docs" / "content" / "gemini"
 APP_DIR = ROOT / "app" / "src" / "main" / "res" / "drawable-nodpi"
 DEFAULT_MODEL = "gemini-2.5-flash-image"
 API_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 IMAGE_EXTS = (".png", ".jpg", ".jpeg", ".jfif", ".webp")
 APP_SIZE = (1024, 768)
-NODE_TOTAL = 309
 PORTRAIT_PREFIX = "portrait_"
 # Node keys (bree_1_0) and portrait keys (portrait_boss_bree) are both accepted.
 ROW = re.compile(r"^\|\s*((?:portrait_)?[a-z0-9_]+)\.webp\s*\|\s*(.*?)\s*\|\s*(.+?)\s*\|\s*$")
@@ -65,7 +70,7 @@ class ImageSet:
 
 SETS = {
     "nodes": ImageSet("nodes", PROMPTS, OUT_DIR, "4:3", APP_SIZE, "LANCZOS", 85),
-    "portraits": ImageSet("portraits", ROOT / "docs" / "content" / "prompts-retratos-pixelart.md",
+    "portraits": ImageSet("portraits", PROMPTS,
                           OUT_DIR / "portraits", "1:1", (256, 256), "NEAREST", 90),
 }
 
@@ -74,7 +79,7 @@ def load_prompts(image_set: ImageSet = SETS["nodes"]) -> list[tuple[str, str, st
     rows = []
     for line in image_set.prompts.read_text(encoding="utf-8").splitlines():
         m = ROW.match(line)
-        if m:
+        if m and m.group(1).startswith(PORTRAIT_PREFIX) == (image_set.name == "portraits"):
             rows.append((m.group(1), m.group(2), m.group(3)))
     return rows
 
@@ -203,16 +208,58 @@ def convert(args) -> int:
         done += 1
         print(f"  {src.name} -> {dst.relative_to(ROOT)}")
     in_app = sum(1 for f in APP_DIR.glob("*.webp") if image_set.owns(f))
-    total = NODE_TOTAL if image_set.name == "nodes" else len(rows)
-    print(f"Convertidas {done}, ya al día {skipped}. Imágenes en la app: {in_app}/{total}.")
+    print(f"Convertidas {done}, ya al día {skipped}. Imágenes en la app: {in_app}/{len(rows)}.")
+    write_pending()
     return 0
+
+
+def write_pending() -> None:
+    """Rewrite the pending list: every prompt (nodes and portraits) without an original in docs/content/gemini/."""
+    nl = "\n"
+    sections = []
+    total = 0
+    for image_set in SETS.values():
+        missing = [r for r in load_prompts(image_set) if existing_image(r[0], image_set.out_dir) is None]
+        total += len(missing)
+        title = "Nodos" if image_set.name == "nodes" else "Retratos"
+        if not missing:
+            sections.append(f"## {title}{nl}{nl}Ninguna pendiente.{nl}")
+            continue
+        lines = [f"## {title} ({len(missing)})", ""]
+        if image_set.name == "nodes":
+            by_zone: dict[str, list[str]] = {}
+            for key, _, _ in missing:
+                by_zone.setdefault(key.split("_")[0], []).append(key)
+            lines += [f"- **{zone}** ({len(keys)}): " + ", ".join(f"`{k}`" for k in keys) for zone, keys in by_zone.items()]
+            lines.append("")
+        lines += ["| archivo | título | prompt |", "|---|---|---|"]
+        lines += [f"| {key}.webp | {title_} | {prompt} |" for key, title_, prompt in missing]
+        sections.append(nl.join(lines) + nl)
+    in_app = [r[0] for s in SETS.values() for r in load_prompts(s)
+              if existing_image(r[0], s.out_dir) is None and (APP_DIR / f"{r[0]}.webp").exists()]
+    note = ""
+    if in_app:
+        note = (f"{nl}Ya tienen una imagen provisional en la app, pero no la suya propia: "
+                + ", ".join(f"`{k}`" for k in in_app)
+                + " (`lothlorien_1_0` usa la del antiguo final de la aventura)." + nl)
+    header = (
+        f"# Imágenes pendientes{nl}{nl}"
+        f"Imágenes sin original en `docs/content/gemini/` (retratos: `docs/content/gemini/portraits/`): **{total}**. "
+        f"Los prompts completos están en `prompts.md`.{nl}{nl}"
+        "Este fichero lo genera `python tools/gemini/generate_images.py convert` (o `pending`): guarda cada imagen en "
+        "`docs/content/gemini/` con el nombre de su clave (`.png`, `.jpg`, `.jfif` o `.webp`), lanza `convert` y "
+        "desaparecerá de esta lista. Mientras falte, la app muestra el degradado de la zona con su nombre. La imagen "
+        f"final se llama `orodruin_final`.{nl}" + note
+    )
+    PENDING.write_text(header + nl + nl.join(sections), encoding="utf-8")
+    print(f"Pendientes: {total} -> {PENDING.relative_to(ROOT)}")
 
 
 def main() -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
     p = argparse.ArgumentParser(description="Genera imágenes de nodos y retratos con Gemini y las prepara para la app.")
-    p.add_argument("command", choices=["generate", "convert", "all"])
+    p.add_argument("command", choices=["generate", "convert", "all", "pending"])
     p.add_argument("--set", choices=sorted(SETS), default="nodes",
                    help="nodes: imágenes de nodo 4:3 (por defecto); portraits: retratos de combate 1:1")
     p.add_argument("--zone", help="solo una zona (p. ej. bree)")
@@ -228,6 +275,8 @@ def main() -> int:
         rc = generate(args)
     if args.command in ("convert", "all") and not args.dry_run:
         rc = max(rc, convert(args))
+    if args.command == "pending":
+        write_pending()
     return rc
 
 

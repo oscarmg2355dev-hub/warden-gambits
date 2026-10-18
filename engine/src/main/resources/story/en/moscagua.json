@@ -108,7 +108,7 @@
     },
     "moscagua_7_0": {
       "title": "The Swarm Queen",
-      "text": "The lagoon at the heart of the marsh seethes with insects. On an islet of mud and bones stirs the queen of the swarm: a winged creature the size of a dog, red-eyed, its sting dripping, born of stagnant water and centuries of oblivion. Around her, a cloud of guardians drones like a storm. She has sensed your coming, and she is not the only one: from the reeds on the shore, the Dunlending spy who was following your tracks steps out, knife in hand. Beyond the lagoon, the land climbs towards bare hills and a summit crowned with stones. To reach it, you must first cross her realm."
+      "text": "The lagoon at the heart of the marsh seethes with insects. On an islet of mud and bones stirs the queen of the swarm: a winged creature the size of a dog, red-eyed, its sting dripping, born of stagnant water and centuries of oblivion. Even the midges shy away from her. She has sensed your coming, and she spreads her wings with a drone that sets the reeds along the shore trembling. Beyond the lagoon, the land climbs towards bare hills and a summit crowned with stones. To reach it, you must first cross her realm."
     }
   },
   "rivals": {
@@ -117,8 +117,5 @@
     "Enjambre de moscardones": "Midge Swarm",
     "Moscardones de Moscagua": "Midgewater Midges",
     "Enjambre del ahogado": "Drowned Man's Swarm",
-    "Reina del enjambre": "Swarm Queen",
-    "Guardianas del enjambre": "Swarm Guardians",
-    "Espía del pantano": "Marsh Spy"
-  }
+    "Reina del enjambre": "Swarm Queen"}
 }

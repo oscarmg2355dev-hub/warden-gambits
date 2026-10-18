@@ -87,7 +87,7 @@ Fuera de alcance: rediseñar el mapa, los nodos o el menú; animaciones de perso
 
 - **Validación.** `ContentRulesTest` / `RealContentTest` comprueban que todo rival tiene `portrait` con el formato `[a-z_]+` y que todo jefe usa `boss_<su zona>`. La lista de claves válidas vive en `ContentRules`, en los tests: 12 comunes más los 13 jefes.
 - **Imágenes.** `app/src/main/res/drawable-nodpi/portrait_<clave>.webp`, cuadradas de 256×256.
-  - `docs/content/prompts-retratos-pixelart.md` tiene una fila `| portrait_<clave>.webp | título | prompt |` por cada retrato: 26 en total (12 comunes, 13 jefes y `warden`), en pixel-art de 16 bits, retrato de busto cuadrado y fondo oscuro neutro.
+  - `docs/content/prompts.md` tiene una fila `| portrait_<clave>.webp | título | prompt |` por cada retrato: 26 en total (12 comunes, 13 jefes y `warden`), en pixel-art de 16 bits, retrato de busto cuadrado y fondo oscuro neutro.
   - `tools/gemini/generate_images.py` gana `--set portraits`, que lee ese fichero, genera con relación 1:1, deja las imágenes en `docs/content/gemini/portraits/` y las convierte a 256×256.
 - **Retrato por código.** Mientras falte la imagen se dibuja un sprite de 16×16 por tipo (`PortraitSprites`, en `:app`).
   - Hay 13 sprites: los 12 tipos y `warden`.

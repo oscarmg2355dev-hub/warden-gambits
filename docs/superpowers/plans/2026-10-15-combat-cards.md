@@ -217,7 +217,7 @@
 - Create:
   - `app/src/main/java/com/wardengambits/app/ui/common/Portraits.kt`
   - `app/src/test/java/com/wardengambits/app/ui/common/PortraitsTest.kt`
-  - `docs/content/prompts-retratos-pixelart.md`
+  - `docs/content/prompts.md`
 - Modify: `tools/gemini/generate_images.py`
 
 **Interfaces:**
@@ -249,11 +249,11 @@
   | nimrodel | orc_archer |
 
   El Jinete y el Espectro usan el sprite `dunlending` (figura encapuchada) mientras no haya imagen de Gemini; no hay sprites extra.
-- **`prompts-retratos-pixelart.md`:** 26 filas `| portrait_<clave>.webp | <título en español> | <prompt en inglés> |`, en el mismo estilo que `prompts-imagenes-pixelart.md`: «16-bit pixel art, SNES-era fantasy RPG style, bust portrait of …, centered, dark neutral background, square 1:1, no text». Las claves son los 12 tipos, los 13 `boss_<zona>` con el nombre del jefe en el título, y `warden` (joven viajero con capa marrón con capucha y espada corta, el mismo personaje de las imágenes de nodo).
+- **`prompts.md`:** 26 filas `| portrait_<clave>.webp | <título en español> | <prompt en inglés> |`, en el mismo estilo que `prompts.md`: «16-bit pixel art, SNES-era fantasy RPG style, bust portrait of …, centered, dark neutral background, square 1:1, no text». Las claves son los 12 tipos, los 13 `boss_<zona>` con el nombre del jefe en el título, y `warden` (joven viajero con capa marrón con capucha y espada corta, el mismo personaje de las imágenes de nodo).
 - **`generate_images.py`:**
   - nueva opción `--set {nodes,portraits}` (por defecto `nodes`);
   - con `portraits`:
-    - lee `prompts-retratos-pixelart.md`;
+    - lee `prompts.md`;
     - pide `aspectRatio: "1:1"`;
     - deja las imágenes en `docs/content/gemini/portraits/`;
     - `convert` recorta al centro a 1:1, redimensiona a 256×256 con `Image.NEAREST` y guarda `drawable-nodpi/portrait_<clave>.webp` en calidad 90;

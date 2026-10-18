@@ -178,4 +178,4 @@ Retratos comunes: a los 12 actuales se suman `uruk`, `mordor_orc`, `wisp`, `mars
 
 - Se escribe en 5 tandas de 3 zonas, en orden de ruta, con revisión de cada tanda (continuidad, canon, reglas).
 - Un test de contenido real (`RealContentTest`) comprueba, para cada zona ya escrita, el validador (errores de esa zona), las reglas de §5 y que el bestiario se use bien. Al final verifica los 15 archivos juntos con `StoryContentLoader.loadFromResources()` + `ContentValidator.validate` sin errores.
-- Al final se genera `docs/content/prompts-imagenes.md`: una tabla con el id de nodo (nombre del archivo de imagen) y el prompt, lista para que el usuario genere las imágenes.
+- Al final se genera `docs/content/prompts.md`: una tabla con el id de nodo (nombre del archivo de imagen) y el prompt, lista para que el usuario genere las imágenes.

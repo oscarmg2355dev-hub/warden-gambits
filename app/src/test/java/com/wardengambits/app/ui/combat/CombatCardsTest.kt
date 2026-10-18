@@ -65,6 +65,18 @@ class CombatCardsTest {
         attack = 3400, defense = 900, heal = 2100,
     )
 
+    /** Decision of the user (2026-10-18): a boss portrait wears a red diagonal «ELITE» ribbon in its top-right corner. */
+    @Test fun bossPortraitWearsAnEliteRibbon() {
+        showRival(rival.copy(isBoss = true))
+        composeRule.onNodeWithText(ELITE_LABEL).assertExists()
+        composeRule.onNodeWithTag("elite_ribbon", useUnmergedTree = true).assertExists()
+    }
+
+    @Test fun commonRivalHasNoEliteRibbon() {
+        showRival()
+        composeRule.onNodeWithText(ELITE_LABEL).assertDoesNotExist()
+    }
+
     /** A rival card the size of one cell of the 2×2 grid on a 360 dp wide phone. */
     private fun showRival(
         fighter: FighterUi = rival,

@@ -426,14 +426,14 @@
       "level": 7,
       "index": 0,
       "title": "El cabecilla de los saqueadores",
-      "text": "En un paso estrecho, justo antes de los rápidos, el río corre entre dos peñas. De pronto la barca choca contra algo: una cadena tendida bajo el agua. En la peña este, un orco enorme con un arco largo y un alfanje al cinto se levanta riendo. Es el cabecilla de los saqueadores del río, que vive de lo que el agua le trae. A su lado, un arquero ya apunta. Saltas a la roca más cercana y trepas hacia ellos, con la barca atrapada.",
-      "imagePrompt": "A huge orc chieftain with a longbow and scimitar laughing on a rock above a river narrows, an orc archer aiming beside him, a young traveler climbing from a grey boat caught on an underwater chain, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "En un paso estrecho, justo antes de los rápidos, el río corre entre dos peñas. De pronto la barca choca contra algo: una cadena tendida bajo el agua. En la peña este, un orco enorme con un arco largo y un alfanje al cinto se levanta riendo. Es el cabecilla de los saqueadores del río, que vive de lo que el agua le trae. Está solo en la peña y no necesita a nadie más: ya tiene una flecha en la cuerda. Saltas a la roca más cercana y trepas hacia él, con la barca atrapada.",
+      "imagePrompt": "A huge orc chieftain with a longbow and scimitar laughing on a rock above a river narrows, nocking an arrow, a young traveler climbing from a grey boat caught on an underwater chain, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
           {
             "name": "Cabecilla de los saqueadores del río",
             "portrait": "boss_anduin",
-            "levelOffset": 8,
+            "levelOffset": 10,
             "pattern": [
               "12",
               "121",
@@ -445,7 +445,7 @@
               "323",
               "123"
             ],
-            "everyNTicks": 1,
+            "everyNTicks": 2,
             "modes": {
               "defenseBelowPct": 15,
               "attackAbovePct": 70,
@@ -460,16 +460,6 @@
                 "121"
               ]
             }
-          },
-          {
-            "name": "Arquero orco",
-            "portrait": "orc_archer",
-            "levelOffset": -4,
-            "pattern": [
-              "32",
-              "323"
-            ],
-            "everyNTicks": 1
           }
         ]
       }

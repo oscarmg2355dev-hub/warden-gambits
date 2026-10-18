@@ -244,7 +244,7 @@
       "imagePrompt": "Long pale slimy tentacles bursting from a boiling black lake around a young traveler knee-deep in water, slashing with his sword, a dark crack in the cliff at water level beside him, heaped boulders, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
-          { "name": "Guardián del Agua", "portrait": "boss_durin", "levelOffset": 5, "pattern": ["13", "131", "1313", "12", "121", "1212", "31", "123"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "13", "131"] } }
+          { "name": "Guardián del Agua", "portrait": "boss_durin", "levelOffset": 2, "pattern": ["13", "131", "1313", "12", "121", "1212", "31", "123"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "13", "131"] } }
         ]
       }
     }

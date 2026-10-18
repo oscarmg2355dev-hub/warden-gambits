@@ -34,9 +34,18 @@ class RpgBackgroundTest {
         composeRule.onNodeWithTag("bg").assertIsDisplayed()
     }
 
-    @Test fun tileHasFaintLineArtAndTwelveMotifs() {
-        assertTrue(RpgPattern.motifCount in 10..12)
-        val px = 240
+    @Test fun tileUsesGameThemedMotifs() {
+        val motifs = RpgPattern.Motif.entries.map { it.name }.toSet()
+        for (themed in listOf("ONE_RING", "EYE", "MOUNT_DOOM", "WARDEN_SPEAR", "WARDEN_SHIELD", "LORIEN_LEAF", "WHITE_TREE",
+            "HOBBIT_DOOR", "DURIN_STAR", "HORN", "POTION", "COMBO_KEYS")) {
+            assertTrue("missing motif $themed", themed in motifs)
+        }
+        assertTrue("every motif is placed (${RpgPattern.motifCount})", RpgPattern.motifCount == RpgPattern.Motif.entries.size)
+        assertTrue("dense like a doodle wallpaper (${RpgPattern.placementCount} placements)", RpgPattern.placementCount >= 20)
+    }
+
+    @Test fun tileIsVisibleButSubtle() {
+        val px = 300
         val tile = ImageBitmap(px, px)
         CanvasDrawScope().draw(Density(1f), LayoutDirection.Ltr, Canvas(tile), Size(px.toFloat(), px.toFloat())) {
             RpgPattern.drawTile(this)
@@ -49,8 +58,9 @@ class RpgBackgroundTest {
             if (a > 0f) drawn++
             if (a > maxAlpha) maxAlpha = a
         }
-        assertTrue("pattern draws some line-art ($drawn px)", drawn > 500)
-        assertTrue("pattern stays very subtle (max alpha $maxAlpha)", maxAlpha <= 0.08f)
+        assertTrue("pattern draws plenty of line-art ($drawn px)", drawn > 2500)
+        assertTrue("pattern is visible on a phone (max alpha $maxAlpha)", maxAlpha >= 0.10f)
+        assertTrue("pattern stays subtle behind the UI (max alpha $maxAlpha)", maxAlpha <= 0.16f)
         assertTrue("pattern stays sparse ($drawn px)", drawn < px * px / 4)
     }
 }

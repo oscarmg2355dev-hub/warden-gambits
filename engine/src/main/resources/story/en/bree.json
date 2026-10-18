@@ -108,7 +108,7 @@
     },
     "bree_7_0": {
       "title": "The Bandit Chief",
-      "text": "Where the Road brushes the first trees of the Chetwood, a fallen trunk blocks the way. It is no accident. From among the ferns steps a broad-shouldered man with a leather patch over one eye and a notched axe in his hand: One-Eye, chief of the highwaymen. One of his men cuts off your retreat. One-Eye offers you the chance to leave your pack and return to Bree alive. Behind him, the shadow of the forest waits. There is only one way forward."
+      "text": "Where the Road brushes the first trees of the Chetwood, a fallen trunk blocks the way. It is no accident. From among the ferns steps a broad-shouldered man with a leather patch over one eye and a notched axe in his hand: One-Eye, chief of the highwaymen. He comes alone: his men have stayed at the camp, sure he will need no help. One-Eye offers you the chance to leave your pack and return to Bree alive. Behind him, the shadow of the forest waits. There is only one way forward."
     }
   },
   "rivals": {
@@ -119,7 +119,5 @@
     "Bribón de la banda": "Gang Rogue",
     "Matón de Abrojal": "Ferny's Thug",
     "Vigía de los salteadores": "Highwaymen's Lookout",
-    "El Tuerto, cabecilla de los bandidos": "One-Eye, Bandit Chief",
-    "Salteador del Tuerto": "One-Eye's Highwayman"
-  }
+    "El Tuerto, cabecilla de los bandidos": "One-Eye, Bandit Chief"}
 }

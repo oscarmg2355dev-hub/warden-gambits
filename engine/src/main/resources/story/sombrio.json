@@ -219,13 +219,11 @@
       "level": 7,
       "index": 0,
       "title": "El capitán de la montaña",
-      "text": "El río se ensancha y las colinas se suavizan. A lo lejos ya distingues, oscura contra el cielo, la línea de un bosque. Entonces, en la orilla, te sale al encuentro un capitán orco de las montañas, más alto que tú, con un yelmo abollado y una cimitarra enorme. A su lado, un arquero ya tiene la flecha en la cuerda, y un trasgo salido de las minas le sigue como un perro. El capitán sonríe al verte solo: llevaba toda la noche buscándote. Luchas con los pies en el barro y el río a tu espalda. Más allá de ellos, hacia el sureste, te esperan los árboles.",
-      "imagePrompt": "Night on a muddy riverbank, a tall orc captain in a dented helm swinging a huge scimitar at a young traveler in a grey cloak, an orc archer drawing his bow and a goblin crouching beside him, the dark line of a distant forest on the horizon, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "El río se ensancha y las colinas se suavizan. A lo lejos ya distingues, oscura contra el cielo, la línea de un bosque. Entonces, en la orilla, te sale al encuentro un capitán orco de las montañas, más alto que tú, con un yelmo abollado y una cimitarra enorme. Viene solo: ha dejado atrás a los suyos para cobrarse la presa con sus propias manos. El capitán sonríe al verte: llevaba toda la noche buscándote. Luchas con los pies en el barro y el río a tu espalda. Más allá de él, hacia el sureste, te esperan los árboles.",
+      "imagePrompt": "Night on a muddy riverbank, a tall orc captain in a dented helm swinging a huge scimitar at a young traveler in a grey cloak, the dark line of a distant forest on the horizon, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
-          { "name": "Capitán orco de las Montañas Nubladas", "portrait": "boss_sombrio", "levelOffset": 6, "pattern": ["12", "121", "1212", "13", "131", "31", "123"], "everyNTicks": 1, "modes": { "defenseBelowPct": 20, "attackAbovePct": 70, "maxDefenses": 2, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } },
-          { "name": "Arquero orco", "portrait": "orc_archer", "levelOffset": -4, "pattern": ["32", "323"], "everyNTicks": 1 },
-          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -4, "pattern": ["13", "131"], "everyNTicks": 1 }
+          { "name": "Capitán orco de las Montañas Nubladas", "portrait": "boss_sombrio", "levelOffset": 7, "pattern": ["12", "121", "1212", "13", "131", "31", "123"], "everyNTicks": 1, "modes": { "defenseBelowPct": 20, "attackAbovePct": 70, "maxDefenses": 2, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } }
         ]
       }
     }

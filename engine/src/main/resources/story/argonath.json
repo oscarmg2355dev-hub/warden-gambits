@@ -420,14 +420,14 @@
       "level": 7,
       "index": 0,
       "title": "Los reyes de piedra",
-      "text": "Las dos figuras ya no dejan dudas: son reyes de piedra, tallados en la roca, con la mano izquierda alzada hacia el norte como si ordenaran detenerse. La corriente te arrastra hacia la puerta que forman. Pero a sus pies, en una repisa de roca sobre el agua, te espera un uruk más grande que los demás, con el yelmo pintado de blanco: el capitán de la Mano Blanca, con un guerrero a su lado. Varas como puedes y subes a la repisa a enfrentarte con él.",
-      "imagePrompt": "A huge uruk captain in a white-painted helm with a warrior beside him on a rock ledge at the feet of two colossal stone kings with raised hands, a young traveler climbing from a grey boat, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "Las dos figuras ya no dejan dudas: son reyes de piedra, tallados en la roca, con la mano izquierda alzada hacia el norte como si ordenaran detenerse. La corriente te arrastra hacia la puerta que forman. Pero a sus pies, en una repisa de roca sobre el agua, te espera un uruk más grande que los demás, con el yelmo pintado de blanco: el capitán de la Mano Blanca, solo, con la espada desnuda. Varas como puedes y subes a la repisa a enfrentarte con él.",
+      "imagePrompt": "A huge uruk captain in a white-painted helm with a great blade on a rock ledge at the feet of two colossal stone kings with raised hands, a young traveler climbing from a grey boat, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
           {
             "name": "Capitán uruk de la Mano Blanca",
             "portrait": "boss_argonath",
-            "levelOffset": 11,
+            "levelOffset": 2,
             "pattern": [
               "12",
               "121",
@@ -453,19 +453,6 @@
                 "121"
               ]
             }
-          },
-          {
-            "name": "Uruk-hai de la Mano Blanca",
-            "portrait": "uruk",
-            "levelOffset": -4,
-            "pattern": [
-              "11",
-              "12",
-              "121",
-              "1212",
-              "12121"
-            ],
-            "everyNTicks": 3
           }
         ]
       }

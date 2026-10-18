@@ -114,8 +114,8 @@ Todos llevan al menos un Aturdir (`31`), como los actuales.
   - cirithungol → `spider`;
   - gorgoroth → `marsh_wraith`, como figura espectral, mientras no haya imagen.
 - **Prompts para Gemini.**
-  - `docs/content/prompts-retratos-pixelart.md` suma los 6 tipos y los 8 jefes.
-  - `docs/content/prompts-imagenes-pixelart.md` suma una fila por cada nodo nuevo, unos 200, con el mismo estilo pixel-art que los actuales, más `orodruin_final`.
+  - `docs/content/prompts.md` suma los 6 tipos y los 8 jefes.
+  - `docs/content/prompts.md` suma una fila por cada nodo nuevo, unos 200, con el mismo estilo pixel-art que los actuales, más `orodruin_final`.
   - Los `imagePrompt` del JSON siguen el estilo pintado de la spec de contenido.
 - **Mapa.** `ZoneKeys` incorpora las 9 zonas nuevas con biomas nuevos:
 

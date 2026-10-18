@@ -467,14 +467,14 @@
       "level": 7,
       "index": 0,
       "title": "La bestia alada",
-      "text": "Te alejas de la calzada por el flanco más apartado de la montaña, con las antorchas siempre detrás. Pero hay algo que lleva tiempo buscándote por la llanura, y por fin te encuentra. Un chillido rasga el cielo y el aire se hiela, aunque el suelo arde. Una bestia sin plumas, de cuello largo y piel como cuero viejo, se posa en una roca delante de ti, y sobre ella una figura envuelta en negro, sin rostro, con una espada pálida. Un nazgûl. Por la ladera sube un uruk negro. Retrocedes cuesta abajo, arrastrándolos contigo, cada vez más lejos del camino.",
-      "imagePrompt": "A remote flank of a smoking volcano far from its road, a huge featherless long-necked winged beast landing on a rock, a faceless black-robed rider with a pale sword, a black uruk climbing, a young traveler in a grey elven cloak backing downhill, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "Te alejas de la calzada por el flanco más apartado de la montaña, con las antorchas siempre detrás. Pero hay algo que lleva tiempo buscándote por la llanura, y por fin te encuentra. Un chillido rasga el cielo y el aire se hiela, aunque el suelo arde. Una bestia sin plumas, de cuello largo y piel como cuero viejo, se posa en una roca delante de ti, y sobre ella una figura envuelta en negro, sin rostro, con una espada pálida. Un nazgûl. Retrocedes cuesta abajo, arrastrándolos contigo, cada vez más lejos del camino.",
+      "imagePrompt": "A remote flank of a smoking volcano far from its road, a huge featherless long-necked winged beast landing on a rock, a faceless black-robed rider with a pale sword, a young traveler in a grey elven cloak backing downhill, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
           {
             "name": "Nazgûl en su bestia alada",
             "portrait": "boss_gorgoroth",
-            "levelOffset": 4,
+            "levelOffset": 11,
             "pattern": [
               "32",
               "323",
@@ -499,20 +499,6 @@
                 "323"
               ]
             }
-          },
-          {
-            "name": "Uruk negro",
-            "portrait": "uruk",
-            "levelOffset": -4,
-            "pattern": [
-              "11",
-              "12",
-              "121",
-              "1212",
-              "12121",
-              "22"
-            ],
-            "everyNTicks": 2
           }
         ]
       }

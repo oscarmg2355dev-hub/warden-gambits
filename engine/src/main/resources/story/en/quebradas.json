@@ -108,7 +108,7 @@
     },
     "quebradas_7_0": {
       "title": "The Stone-troll",
-      "text": "Out of the cave comes a Stone-troll, alive and wide awake: almost twice the height of a man, with skin grey and rough as rock and a club made from a whole tree trunk. It has smelled you, and it likes what it smells. A Warg, drawn by the bones, growls at its side. Behind it, the fire lights a heap of bones and stolen treasure. You know from the tales that sunlight turns its kind to stone, but dawn is a long way off. Until then, you have only your sword. Beyond these hills, the Road descends towards a swift river and the ford that leads to the land of the Elves: the Ford of Bruinen."
+      "text": "Out of the cave comes a Stone-troll, alive and wide awake: almost twice the height of a man, with skin grey and rough as rock and a club made from a whole tree trunk. It has smelled you, and it likes what it smells. Behind it, the fire lights a heap of bones and stolen treasure. You know from the tales that sunlight turns its kind to stone, but dawn is a long way off. Until then, you have only your sword. Beyond these hills, the Road descends towards a swift river and the ford that leads to the land of the Elves: the Ford of Bruinen."
     }
   },
   "rivals": {
@@ -116,7 +116,5 @@
     "Huargo de monta": "Riding Warg",
     "Huargo": "Warg",
     "Orco grande de las Montañas Nubladas": "Great Misty Mountains Orc",
-    "Trol de piedra": "Stone-troll",
-    "Huargo de la cueva": "Cave Warg"
-  }
+    "Trol de piedra": "Stone-troll"}
 }

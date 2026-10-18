@@ -401,14 +401,14 @@
       "level": 7,
       "index": 0,
       "title": "El olifante de guerra",
-      "text": "El sendero te lleva a un claro junto a la calzada, lleno de árboles tronchados. Allí está: una bestia gris, grande como una casa, con colmillos curvos envueltos en anillas de bronce y una torre de madera sobre el lomo, de la que cuelgan jirones rojos. Debió de quedarse rezagada de su columna. En la torre, un arquero del sur tensa el arco y grita algo. La bestia levanta la trompa, lanza un bramido que hace temblar el suelo y viene hacia ti.",
-      "imagePrompt": "A forest clearing of snapped trees beside an old road, a colossal grey war oliphant with bronze-ringed curved tusks and a wooden tower hung with red rags, a southern archer in the tower, charging at a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "El sendero te lleva a un claro junto a la calzada, lleno de árboles tronchados. Allí está: una bestia gris, grande como una casa, con colmillos curvos envueltos en anillas de bronce y una torre de madera sobre el lomo, de la que cuelgan jirones rojos. Debió de quedarse rezagada de su columna; la torre está vacía y sus jinetes han caído o huido. Sin nadie que la guíe, la bestia levanta la trompa, lanza un bramido que hace temblar el suelo y viene hacia ti.",
+      "imagePrompt": "A forest clearing of snapped trees beside an old road, a colossal grey war oliphant with bronze-ringed curved tusks and a wooden tower hung with red rags, the tower empty, charging at a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
           {
             "name": "Olifante de guerra",
             "portrait": "boss_ithilien",
-            "levelOffset": 2,
+            "levelOffset": 4,
             "pattern": [
               "32",
               "323",
@@ -433,17 +433,6 @@
                 "323"
               ]
             }
-          },
-          {
-            "name": "Arquero haradrim",
-            "portrait": "haradrim",
-            "levelOffset": -4,
-            "pattern": [
-              "32",
-              "323",
-              "3232"
-            ],
-            "everyNTicks": 3
           }
         ]
       }

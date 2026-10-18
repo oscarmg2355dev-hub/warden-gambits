@@ -87,6 +87,6 @@ Each batch task writes 3 files (Task 6 also finishes the plan). Same procedure f
 
 **Task 6 extra steps:**
 - [ ] Add `@Test fun allContentLoadsAndValidates()` to `RealContentTest`: `ContentValidator.validate(StoryContentLoader.loadFromResources())` is empty and `WRITTEN_ZONES` equals all 15 `Route.zones` ids in order. RED before the last files exist, GREEN after.
-- [ ] Generate `docs/content/prompts-imagenes.md` (Spanish header, one row per node in route order: `| archivo | prompt |` with `archivo` = `<node key>.webp`) with a one-off script (e.g. Python reading the 15 JSON files); do not add the script to the project.
-- [ ] Update `CLAUDE.md` "Estado": contenido completo (15 zonas, 309 nodos), imágenes pendientes del usuario (`docs/content/prompts-imagenes.md`), siguiente: app Android.
+- [ ] Generate `docs/content/prompts.md` (Spanish header, one row per node in route order: `| archivo | prompt |` with `archivo` = `<node key>.webp`) with a one-off script (e.g. Python reading the 15 JSON files); do not add the script to the project.
+- [ ] Update `CLAUDE.md` "Estado": contenido completo (15 zonas, 309 nodos), imágenes pendientes del usuario (`docs/content/prompts.md`), siguiente: app Android.
 - [ ] Full `./gradlew :engine:build` → BUILD SUCCESSFUL, no `w:` lines.

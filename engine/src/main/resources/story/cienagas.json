@@ -378,14 +378,14 @@
       "level": 7,
       "index": 0,
       "title": "El señor de los ahogados",
-      "text": "Llegas al último estanque, el que separa la ciénaga de la tierra seca. Cuando pones el pie en el agua, el estanque entero se estremece. Del centro se levanta una figura enorme, hecha de barro y agua negra, con una corona herrumbrosa hundida en la frente y los restos de una armadura antigua. Sus ojos son dos luces pálidas. A su lado brota una llama fría que gira y espera. Es el señor de los que duermen bajo la ciénaga, y no quiere dejarte pasar.",
-      "imagePrompt": "A great dark still pool at the edge of a marsh, a huge figure of mud and black water rising with a rusted crown and ancient armor, eyes like pale lights, a cold ghostly flame beside it, facing a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "Llegas al último estanque, el que separa la ciénaga de la tierra seca. Cuando pones el pie en el agua, el estanque entero se estremece. Del centro se levanta una figura enorme, hecha de barro y agua negra, con una corona herrumbrosa hundida en la frente y los restos de una armadura antigua. Sus ojos son dos luces pálidas. El agua negra le chorrea de los brazos cuando los alza hacia ti. Es el señor de los que duermen bajo la ciénaga, y no quiere dejarte pasar.",
+      "imagePrompt": "A great dark still pool at the edge of a marsh, a huge figure of mud and black water rising with a rusted crown and ancient armor, eyes like pale lights, facing a young traveler in a grey elven cloak, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
           {
             "name": "Señor de los ahogados",
             "portrait": "boss_cienagas",
-            "levelOffset": 10,
+            "levelOffset": 3,
             "pattern": [
               "3123",
               "31232",
@@ -412,18 +412,6 @@
                 "31232"
               ]
             }
-          },
-          {
-            "name": "Fuego fatuo",
-            "portrait": "wisp",
-            "levelOffset": -4,
-            "pattern": [
-              "32",
-              "323",
-              "3232",
-              "31"
-            ],
-            "everyNTicks": 3
           }
         ]
       }

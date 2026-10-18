@@ -116,7 +116,7 @@ class ContentRulesTest {
         "quebradas" to BeastEntry("Trol de piedra", listOf("12", "121", "1212", "13", "131", "31"), 1),
         "bruinen" to BeastEntry("Jinete Negro", listOf("32", "323", "3232", "13", "131", "3123", "31232", "31"), 1),
         "eregion" to BeastEntry("Capitán dunlendino", listOf("12", "121", "1212", "13", "131", "31", "123"), 1),
-        "caradhras" to BeastEntry("Furia del Caradhras", listOf("32", "323", "3232", "12", "121", "1212", "31", "123"), 1),
+        "caradhras" to BeastEntry("Furia del Caradhras", listOf("32", "323", "3232", "12", "121", "1212", "31", "123"), 2),
         "durin" to BeastEntry("Guardián del Agua", listOf("13", "131", "1313", "12", "121", "1212", "31", "123"), 1),
         "moria" to BeastEntry("Sombra de Durin", listOf("32", "323", "3232", "13", "131", "31", "123"), 1),
         "sombrio" to BeastEntry("Capitán orco de las Montañas Nubladas", listOf("12", "121", "1212", "13", "131", "31", "123"), 1),
@@ -336,10 +336,10 @@ class ContentRulesTest {
         listOf(2 to -1, 3 to -2, 4 to -3, 3 to -3, 4 to -4).forEach { (n, offset) ->
             assertErrorFor("bree_3_0", zone.withEncounter(3, 0, bandits(n, offset)))
         }
-        // Boss escorts: -4.
-        val escorted = zone.withEncounter(7, 0, encounter(boss("bree"), fromBestiary("lobo", -4), fromBestiary("bandido", -4)))
-        assertEquals(emptyList(), ContentRules.errors(escorted))
-        assertErrorFor("bree_7_0", zone.withEncounter(7, 0, encounter(boss("bree"), fromBestiary("lobo", -2))))
+        // Bosses fight alone (2026-10-18): any escort is rejected, whatever its offset.
+        assertEquals(emptyList(), ContentRules.errors(zone.withEncounter(7, 0, encounter(boss("bree")))))
+        assertErrorFor("bree_7_0", zone.withEncounter(7, 0, encounter(boss("bree"), fromBestiary("lobo", -4))))
+        assertErrorFor("bree_7_0", zone.withEncounter(7, 0, encounter(boss("bree"), fromBestiary("lobo", -4), fromBestiary("bandido", -4))))
     }
 
     /** Rival-healing spec §3: reactions are mandatory for the boss and the first humanoid, forbidden for everyone else. */
@@ -347,13 +347,11 @@ class ContentRulesTest {
     fun detectsReactionRules() {
         val zone = validBree()
         val wolf = fromBestiary("lobo", -2)
-        // Valid: the first humanoid heals even behind a beast; Bree's boss with its own reaction and a quiet escort.
+        // Valid: the first humanoid heals even behind a beast; Bree's boss alone.
         assertEquals(emptyList(), ContentRules.errors(zone.withEncounter(3, 0, encounter(wolf, healer("bandido", -2)))))
-        assertEquals(emptyList(), ContentRules.errors(zone.withEncounter(7, 0, encounter(boss("bree"), fromBestiary("bandido", -4)))))
+        assertEquals(emptyList(), ContentRules.errors(zone.withEncounter(7, 0, encounter(boss("bree")))))
         // Boss with a reaction (it heals in its defense mode now).
         assertErrorFor("bree_7_0", zone.withEncounter(7, 0, encounter(boss("bree").copy(reaction = ContentRules.HEALER_REACTION))))
-        // Escort that heals.
-        assertErrorFor("bree_7_0", zone.withEncounter(7, 0, encounter(boss("bree"), healer("bandido", -4))))
         // Humanoid encounter without healer, two healers, healer that is not the first humanoid, beast that heals.
         assertErrorFor("bree_3_0", zone.withEncounter(3, 0, encounter(fromBestiary("bandido", 0))))
         assertErrorFor("bree_3_0", zone.withEncounter(3, 0, encounter(healer("bandido", -2), healer("bandido", -2))))
@@ -446,10 +444,9 @@ class ContentRulesTest {
         // Shield or heal in the attack pattern.
         val shielded = boss("bree").copy(pattern = listOf("12", "121", "11", "31", "2132"))
         assertErrorFor("bree_7_0", zone.withEncounter(7, 0, encounter(shielded)))
-        // Escort or common with modes.
-        val withModes = fromBestiary("lobo", -4).copy(modes = ContentRules.bossModes("bree"))
-        assertErrorFor("bree_7_0", zone.withEncounter(7, 0, encounter(boss("bree"), withModes)))
-        assertErrorFor("bree_3_0", zone.withEncounter(3, 0, encounter(withModes.copy(levelOffset = 0))))
+        // Common with modes.
+        val withModes = fromBestiary("lobo", 0).copy(modes = ContentRules.bossModes("bree"))
+        assertErrorFor("bree_3_0", zone.withEncounter(3, 0, encounter(withModes)))
     }
 
     @Test

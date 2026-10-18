@@ -3,6 +3,7 @@ package com.wardengambits.app.ui.combat
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
@@ -75,6 +76,9 @@ private val PortraitBackground = Brush.radialGradient(listOf(Color(0xFF6B5A45), 
 private val PortraitShape = RoundedCornerShape(6.dp)
 
 private val RivalPortraitSize = 44.dp
+
+/** Bosses fight alone, so their portrait is bigger and its «ELITE» ribbon stays legible. */
+private val BossPortraitSize = 60.dp
 private val PlayerPortraitSize = 58.dp
 private val CardPadding = 5.dp
 private val CardGap = 3.dp
@@ -145,7 +149,7 @@ fun RivalCard(
             verticalArrangement = Arrangement.spacedBy(CardGap),
         ) {
             Row(horizontalArrangement = Arrangement.spacedBy(CardPadding)) {
-                FramedPortrait(fighter, RivalPortraitSize)
+                FramedPortrait(fighter, if (fighter.isBoss) BossPortraitSize else RivalPortraitSize)
                 Column(Modifier.weight(1f)) {
                     Text(
                         trText(fighter.name),
@@ -304,23 +308,31 @@ private fun Modifier.numberStage(stage: NumberStage): Modifier = layout { measur
     layout(constraints.maxWidth, height) { placeable.place(0, top) }
 }
 
-/** Portrait in a gold frame with an inner shadow; a boss wears the crown in its corner. */
+/** Label of the boss ribbon: the same in every language and always in Latin letters, like the combo codes. */
+internal const val ELITE_LABEL = "ELITE"
+
+private val EliteRed = Color(0xFFB3261E)
+
+/** Portrait in a gold frame with an inner shadow; a boss wears the crown in its corner and the «ELITE» ribbon. */
 @Composable
 private fun FramedPortrait(fighter: FighterUi, size: Dp) {
     Box(
-        Modifier.size(size).clip(PortraitShape).background(PortraitBackground)
-            .drawWithContent {
+        Modifier.size(size).clip(PortraitShape).background(PortraitBackground).border(2.dp, PortraitBorder, PortraitShape),
+        contentAlignment = Alignment.Center,
+    ) {
+        // Inner shadow over the picture only (a dark rim fading inwards), so the boss marks stay bright on top.
+        Box(
+            Modifier.matchParentSize().drawWithContent {
                 drawContent()
-                // Inner shadow: a dark rim fading inwards.
                 drawRoundRect(
                     Brush.radialGradient(listOf(Color.Transparent, Color(0xCC000000)), radius = this.size.minDimension * 0.75f),
                     cornerRadius = CornerRadius(6.dp.toPx()),
                 )
-            }
-            .border(2.dp, PortraitBorder, PortraitShape),
-        contentAlignment = Alignment.Center,
-    ) {
-        Portrait(fighter.portrait, size - 4.dp, dimmed = !fighter.isAlive)
+            },
+            contentAlignment = Alignment.Center,
+        ) {
+            Portrait(fighter.portrait, size - 4.dp, dimmed = !fighter.isAlive)
+        }
         if (fighter.isBoss) {
             Text(
                 trTextResource(R.string.combat_boss),
@@ -328,7 +340,44 @@ private fun FramedPortrait(fighter: FighterUi, size: Dp) {
                 color = WardenColors.Primary,
                 modifier = Modifier.align(Alignment.TopStart).padding(start = 2.dp),
             )
+            EliteRibbon(size)
         }
+    }
+}
+
+/**
+ * Red diagonal band across the top-right corner of a boss portrait of [size], with [ELITE_LABEL] in white. The band is
+ * placed centred on the corner's diagonal and rotated 45°; the portrait's clip trims its ends.
+ */
+@Composable
+private fun BoxScope.EliteRibbon(size: Dp) {
+    val band = size * 0.95f
+    val thickness = size * 0.2f
+    Box(
+        Modifier
+            .align(Alignment.TopStart)
+            .layout { measurable, _ ->
+                val w = band.roundToPx()
+                val h = thickness.roundToPx()
+                val placeable = measurable.measure(Constraints.fixed(w, h))
+                val box = size.roundToPx()
+                val inset = (box * 0.24f).roundToInt()
+                layout(0, 0) { placeable.place(box - inset - w / 2, inset - h / 2) }
+            }
+            .graphicsLayer { rotationZ = 45f }
+            .background(EliteRed)
+            .testTag("elite_ribbon"),
+        contentAlignment = Alignment.Center,
+    ) {
+        Text(
+            ELITE_LABEL,
+            color = Color.White,
+            fontWeight = FontWeight.Black,
+            fontSize = (size.value * 0.14f).sp,
+            lineHeight = (size.value * 0.14f).sp,
+            letterSpacing = 0.5.sp,
+            maxLines = 1,
+        )
     }
 }
 

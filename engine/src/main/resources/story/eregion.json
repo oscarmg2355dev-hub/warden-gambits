@@ -218,13 +218,11 @@
       "level": 7,
       "index": 0,
       "title": "El capitán dunlendino",
-      "text": "Al pie de la montaña roja, entre los muros de una antigua sala élfica, los hombres de las Tierras Brunas tienen su campamento. Desde allí vigilan el camino del paso. Su jefe sale a tu encuentro a la luz de la hoguera: un hombre enorme, de barba negra y brazos cubiertos de cicatrices, con un hacha en cada mano. Tras él asoman un espía y un lobo gris. El capitán se ríe. Dice que su señor quiere saber quién cruza las montañas, y que tú no las vas a cruzar. Detrás de él, el Caradhras se pierde entre las nubes.",
-      "imagePrompt": "Firelit ruins of an elvish hall at the foot of a snowy reddish mountain, a huge black-bearded Dunlending captain with an axe in each hand laughing at a young traveler, a spy and a grey wolf behind him, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "Al pie de la montaña roja, entre los muros de una antigua sala élfica, los hombres de las Tierras Brunas tienen su campamento. Desde allí vigilan el camino del paso. Su jefe sale a tu encuentro a la luz de la hoguera: un hombre enorme, de barba negra y brazos cubiertos de cicatrices, con un hacha en cada mano. Con un gesto ordena a los suyos que se aparten: este combate lo quiere para él solo. El capitán se ríe. Dice que su señor quiere saber quién cruza las montañas, y que tú no las vas a cruzar. Detrás de él, el Caradhras se pierde entre las nubes.",
+      "imagePrompt": "Firelit ruins of an elvish hall at the foot of a snowy reddish mountain, a huge black-bearded Dunlending captain with an axe in each hand laughing at a young traveler, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
-          { "name": "Capitán dunlendino", "portrait": "boss_eregion", "levelOffset": 3, "pattern": ["12", "121", "1212", "13", "131", "31", "123"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } },
-          { "name": "Espía dunlendino", "portrait": "dunlending", "levelOffset": -4, "pattern": ["13", "131", "31"], "everyNTicks": 2 },
-          { "name": "Lobo de Saruman", "portrait": "wolf_saruman", "levelOffset": -4, "pattern": ["13", "131", "1313"], "everyNTicks": 2 }
+          { "name": "Capitán dunlendino", "portrait": "boss_eregion", "levelOffset": 8, "pattern": ["12", "121", "1212", "13", "131", "31", "123"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "12", "121"] } }
         ]
       }
     }

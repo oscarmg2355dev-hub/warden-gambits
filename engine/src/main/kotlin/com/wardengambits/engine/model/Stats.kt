@@ -30,8 +30,11 @@ data class RivalScaling(
         /** Tuned with `./gradlew :sim:run --args="sweep"` (see docs/balance/tuning.md). */
         val DEFAULT = RivalScaling(hpPct = 115, attackPct = 64, healPct = 100, defensePct = 100, startPowerPct = 92, regenPct = 100)
 
-        /** Scaling of zone bosses (first rival of a level-7 encounter). Tuned with `sweep boss ...`. */
-        val BOSS = RivalScaling(hpPct = 180, attackPct = 77, healPct = 100, defensePct = 100, startPowerPct = 100, regenPct = 100)
+        /**
+         * Scaling of zone bosses (the only rival of a level-7 encounter). Attack tuned with `sweep boss ...`; HP and
+         * power doubled by decision of the user (2026-10-18: bosses fight alone, 180 % → 360 % HP, power 300 → 600).
+         */
+        val BOSS = RivalScaling(hpPct = 360, attackPct = 77, healPct = 100, defensePct = 100, startPowerPct = 100, regenPct = 100, powerPct = 200)
     }
 }
 

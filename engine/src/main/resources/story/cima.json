@@ -221,7 +221,7 @@
       "imagePrompt": "Night on a windless hillside, a faceless hooded figure in black with a pale gleam beneath the hood and a pale blade, emerging from a ring of ruined stones above, advancing toward a young traveler holding a sword and a burning brand in dread, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
-          { "name": "Espectro del Anillo", "portrait": "boss_cima", "levelOffset": 5, "pattern": ["32", "323", "3232", "12", "121", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } }
+          { "name": "Espectro del Anillo", "portrait": "boss_cima", "levelOffset": 4, "pattern": ["32", "323", "3232", "12", "121", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } }
         ]
       }
     }

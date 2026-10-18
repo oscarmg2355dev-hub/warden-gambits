@@ -216,13 +216,11 @@
       "level": 7,
       "index": 0,
       "title": "La reina del enjambre",
-      "text": "La laguna del centro del pantano hierve de insectos. Sobre un islote de barro y huesos se agita la reina del enjambre: una criatura alada del tamaño de un perro, de ojos rojos y aguijón goteante, nacida del agua estancada y de siglos de olvido. A su alrededor, una nube de guardianas zumba como una tormenta. Ella te ha sentido llegar, y no es la única: entre los juncos de la orilla, el espía dunlendino que seguía tus huellas sale con el cuchillo en la mano. Más allá de la laguna, la tierra sube hacia colinas peladas y una cima coronada de piedras. Para alcanzarla, primero tienes que cruzar su reino.",
-      "imagePrompt": "A seething swamp lagoon with an islet of mud and bones, a dog-sized winged insect queen with red eyes and a dripping stinger rising amid a storm of midges to face a young traveler, a southern spy with a curved knife stepping out of the reeds, distant bare hills, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "La laguna del centro del pantano hierve de insectos. Sobre un islote de barro y huesos se agita la reina del enjambre: una criatura alada del tamaño de un perro, de ojos rojos y aguijón goteante, nacida del agua estancada y de siglos de olvido. Hasta los mosquitos se apartan de ella. Te ha sentido llegar, y despliega las alas con un zumbido que hace temblar los juncos de la orilla. Más allá de la laguna, la tierra sube hacia colinas peladas y una cima coronada de piedras. Para alcanzarla, primero tienes que cruzar su reino.",
+      "imagePrompt": "A seething swamp lagoon with an islet of mud and bones, a dog-sized winged insect queen with red eyes and a dripping stinger spreading its wings to face a young traveler on the shore, distant bare hills, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
-          { "name": "Reina del enjambre", "portrait": "boss_moscagua", "levelOffset": 2, "pattern": ["32", "323", "3232", "13", "131", "1313", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 10, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } },
-          { "name": "Guardianas del enjambre", "portrait": "swarm", "levelOffset": -4, "pattern": ["32", "323", "13"], "everyNTicks": 2 },
-          { "name": "Espía del pantano", "portrait": "dunlending", "levelOffset": -4, "pattern": ["13", "131", "31"], "everyNTicks": 2 }
+          { "name": "Reina del enjambre", "portrait": "boss_moscagua", "levelOffset": 2, "pattern": ["32", "323", "3232", "13", "131", "1313", "31"], "everyNTicks": 1, "modes": { "defenseBelowPct": 10, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } }
         ]
       }
     }

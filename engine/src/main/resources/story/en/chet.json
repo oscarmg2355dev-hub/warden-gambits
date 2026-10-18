@@ -108,7 +108,7 @@
     },
     "chet_7_0": {
       "title": "The Grey Alpha Wolf",
-      "text": "At the edge of the forest, where the trees grow sparse and the ground already smells of bog, the pack awaits you. Atop a rock, the grey alpha wolf watches you: taller than a pony, with ash-coloured fur and a scar splitting its muzzle. It is the one that leads the others, the terror of the Archet hunters. A single growl from it sends two young wolves to your flanks. Beyond, in the mist, the marshes begin."
+      "text": "At the edge of the forest, where the trees grow sparse and the ground already smells of bog, the pack awaits you. Atop a rock, the grey alpha wolf watches you: taller than a pony, with ash-coloured fur and a scar splitting its muzzle. It is the one that leads the others, the terror of the Archet hunters. With a single growl it drives the young wolves back: this prey is its own. It leaps down from the rock and begins to circle you slowly. Beyond, in the mist, the marshes begin."
     }
   },
   "rivals": {
@@ -121,7 +121,5 @@
     "Cobrador de peajes": "Toll Collector",
     "Lobo viejo": "Old Wolf",
     "Bandido del puente": "Bridge Bandit",
-    "Lobo gris alfa": "Grey Alpha Wolf",
-    "Lobo joven de la manada": "Young Pack Wolf"
-  }
+    "Lobo gris alfa": "Grey Alpha Wolf"}
 }

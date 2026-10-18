@@ -223,13 +223,11 @@
       "level": 7,
       "index": 0,
       "title": "La Sombra de Durin",
-      "text": "El puente es un arco de piedra estrecho, sin barandilla, tendido sobre un abismo del que sube un resplandor de fuego. Al otro lado, unas escaleras ascienden hacia la puerta del este. A tu espalda, un trol de las cavernas y un trasgo rezagado te han seguido hasta el puente. Estás a mitad del puente cuando el calor te golpea: de la grieta se alza una sombra inmensa con un corazón de llamas. No puedes vencerla. Solo puedes resistir sus golpes de fuego y seguir avanzando. En lo peor de la lucha, la sombra se detiene y vuelve la cabeza hacia las salas del oeste, hacia una luz blanca y unos pasos que se acercan, y te deja escapar. Subes las escaleras sin mirar atrás, hacia la puerta del este y la luz del día.",
-      "imagePrompt": "A narrow railless stone bridge over a fiery abyss in a vast dark hall, an immense shadow with a heart of flame rising from the chasm and turning its head away, a small young traveler with a sword crossing toward stairs, chased by a cave troll and a goblin and grey daylight, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
+      "text": "El puente es un arco de piedra estrecho, sin barandilla, tendido sobre un abismo del que sube un resplandor de fuego. Al otro lado, unas escaleras ascienden hacia la puerta del este. A tu espalda, los tambores callan de pronto y los trasgos huyen chillando. Estás a mitad del puente cuando el calor te golpea: de la grieta se alza una sombra inmensa con un corazón de llamas. No puedes vencerla. Solo puedes resistir sus golpes de fuego y seguir avanzando. En lo peor de la lucha, la sombra se detiene y vuelve la cabeza hacia las salas del oeste, hacia una luz blanca y unos pasos que se acercan, y te deja escapar. Subes las escaleras sin mirar atrás, hacia la puerta del este y la luz del día.",
+      "imagePrompt": "A narrow railless stone bridge over a fiery abyss in a vast dark hall, an immense shadow with a heart of flame rising from the chasm and turning its head away, a small young traveler with a sword crossing toward stairs and grey daylight, painterly dark fantasy illustration, Middle-earth, muted earthy palette, 2D game card art, no text",
       "encounter": {
         "rivals": [
-          { "name": "Sombra de Durin", "portrait": "boss_moria", "levelOffset": 3, "pattern": ["32", "323", "3232", "13", "131", "31", "123"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } },
-          { "name": "Trol de las cavernas", "portrait": "troll", "levelOffset": -4, "pattern": ["2132", "12", "121", "1212", "12121"], "everyNTicks": 2 },
-          { "name": "Trasgo de Moria", "portrait": "goblin", "levelOffset": -4, "pattern": ["13", "131"], "everyNTicks": 1 }
+          { "name": "Sombra de Durin", "portrait": "boss_moria", "levelOffset": 4, "pattern": ["32", "323", "3232", "13", "131", "31", "123"], "everyNTicks": 1, "modes": { "defenseBelowPct": 15, "attackAbovePct": 70, "maxDefenses": 1, "defense": ["2132", "21", "212", "2121", "21212", "32", "323"] } }
         ]
       }
     }
