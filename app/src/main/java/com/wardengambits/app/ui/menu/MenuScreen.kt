@@ -29,6 +29,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.wardengambits.app.R
 import com.wardengambits.app.i18n.trText
 import com.wardengambits.app.i18n.trTextResource
@@ -41,6 +42,7 @@ fun MenuScreen(
     onNewAdventure: () -> Unit,
     onOptions: () -> Unit = {},
     onAbout: () -> Unit = {},
+    onPractice: () -> Unit = {},
 ) {
     var confirmNew by rememberSaveable { mutableStateOf(false) }
     if (confirmNew) {
@@ -68,12 +70,14 @@ fun MenuScreen(
         ) {
             Text(
                 text = trTextResource(R.string.menu_title),
-                style = MaterialTheme.typography.displayMedium,
+                // 30 sp (displayMedium is 36): "Warden Gambits" fits one line on most phones and wraps whole words otherwise.
+                style = MaterialTheme.typography.displayMedium.copy(fontSize = 30.sp),
                 color = MaterialTheme.colorScheme.primary,
                 textAlign = TextAlign.Center,
             )
             Spacer(Modifier.height(48.dp))
             MenuButton(stringResource(R.string.menu_story), onStory)
+            MenuButton(stringResource(R.string.menu_practice), onPractice)
             MenuButton(stringResource(R.string.menu_character), onCharacter)
             MenuButton(stringResource(R.string.menu_help), onHelp)
             MenuButton(stringResource(R.string.menu_new_adventure), onClick = { confirmNew = true })

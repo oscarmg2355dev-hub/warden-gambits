@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Warden-Gambits</string>
-    <string name="menu_title">Warden-Gambits</string>
+    <string name="menu_title">Warden Gambits</string>
     <string name="menu_story">Modo Historia</string>
     <string name="menu_character">Personaje</string>
     <string name="menu_help">Ayuda de combos</string>
@@ -64,6 +64,9 @@
     <string name="combat_defeat">Has caído</string>
     <string name="combat_defeat_summary">%1$s · Nivel %2$d · %3$s</string>
     <string name="combat_back_to_previous_node">Volver al nodo anterior</string>
+    <string name="combat_practice_retry">Repetir</string>
+    <string name="combat_practice_back">Volver al grid</string>
+    <string name="combat_practice_abandon_message">No cuenta para tu partida: volverás al grid.</string>
     <string name="combat_abandon_title">¿Abandonar el combate?</string>
     <string name="combat_abandon_message">Contará como derrota: volverás al nodo anterior.</string>
     <string name="combat_abandon_confirm">Abandonar</string>
@@ -168,6 +171,10 @@ Solo puede estar activo un multiplicador y un escudo a la vez.</string>
         <item quantity="one">%d muerte</item>
         <item quantity="other">%d muertes</item>
     </plurals>
+    <string name="menu_practice">Modo combate</string>
+    <string name="practice_title">Modo combate</string>
+    <string name="practice_level">Nv %1$d</string>
+    <string name="practice_locked">Bloqueado</string>
     <string name="menu_about">Acerca de</string>
     <string name="about_how_heading">Cómo se ha hecho</string>
     <string name="about_how_1">Warden-Gambits es un juego nativo para Android escrito en Kotlin y Jetpack Compose, sin motor gráfico: aquí manda la lógica. Bajo las cartas late un motor de combate por combos puro y determinista, afinado con un simulador que juega miles de aventuras para equilibrar los números.</string>

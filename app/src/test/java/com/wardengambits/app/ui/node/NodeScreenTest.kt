@@ -87,9 +87,10 @@ class NodeScreenTest {
         composeRule.onNodeWithText("Lothlórien").assertDoesNotExist()
     }
 
-    @Test fun orodruinFinalShowsGradientPlaceholder() {
+    @Test fun missingImageShowsGradientPlaceholder() {
+        // Every node has its image since 2026-10-18; a key without drawable still falls back to the zone gradient.
         composeRule.setContent {
-            WardenTheme { NodeImage("orodruin_final", "orodruin", "Monte del Destino") }
+            WardenTheme { NodeImage("orodruin_no_image", "orodruin", "Monte del Destino") }
         }
         composeRule.onNodeWithText("Monte del Destino").assertIsDisplayed()
     }

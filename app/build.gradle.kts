@@ -21,9 +21,9 @@ android {
         applicationId = "com.oscarmg.warden"
         minSdk = 26
         targetSdk = 36
-        // Play already has versionCode 1-4 (1.0.0 / 1.0.1); always increase.
-        versionCode = 5
-        versionName = "2.0.0"
+        // Play already has versionCode 1-5 (5 = 2.0.0); always increase.
+        versionCode = 6
+        versionName = "2.1.0"
     }
 
     signingConfigs {

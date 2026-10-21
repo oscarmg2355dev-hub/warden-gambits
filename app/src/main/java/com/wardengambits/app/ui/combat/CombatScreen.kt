@@ -79,6 +79,8 @@ fun CombatScreen(
     floatingNumbers: FloatingNumbersState = FloatingNumbersState(),
     numbersClock: () -> Long = { 0L },
     running: Boolean = !state.paused,
+    isPractice: Boolean = false,
+    onRetry: () -> Unit = {},
 ) {
     var confirmAbandon by remember { mutableStateOf(false) }
     var pausedByDialog by remember { mutableStateOf(false) }
@@ -118,7 +120,7 @@ fun CombatScreen(
                 ActionButtons(onPress, onExecute, state.inputsEnabled, ready = state.bufferMatch != null, running = running && !finished)
             }
             if (state.paused && !finished) PausedOverlay(onTogglePause)
-            state.outcome?.let { ResultOverlay(state, it, onFinish) }
+            state.outcome?.let { ResultOverlay(state, it, isPractice, onRetry, onFinish) }
         }
     }
 
@@ -126,7 +128,13 @@ fun CombatScreen(
         AlertDialog(
             onDismissRequest = ::closeAbandonDialog,
             title = { Text(trTextResource(R.string.combat_abandon_title)) },
-            text = { Text(trTextResource(R.string.combat_abandon_message)) },
+            text = {
+                Text(
+                    trTextResource(
+                        if (isPractice) R.string.combat_practice_abandon_message else R.string.combat_abandon_message,
+                    ),
+                )
+            },
             confirmButton = {
                 TextButton(onClick = { confirmAbandon = false; pausedByDialog = false; onAbandon() }) {
                     Text(trTextResource(R.string.combat_abandon_confirm))
@@ -316,9 +324,48 @@ private fun PausedOverlay(onTogglePause: () -> Unit) {
     }
 }
 
+/** Practice result: no level or wins to show, just retry or back to the grid. */
 @Composable
-private fun ResultOverlay(state: CombatUiState, outcome: Outcome, onFinish: () -> Unit) {
+private fun PracticeResult(outcome: Outcome, onRetry: () -> Unit, onBack: () -> Unit) {
+    Column(
+        Modifier.padding(24.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(16.dp),
+    ) {
+        when (outcome) {
+            Outcome.VICTORY -> Text(
+                trTextResource(R.string.combat_victory),
+                style = MaterialTheme.typography.headlineSmall,
+                color = WardenColors.Primary,
+            )
+            Outcome.DEFEAT -> Text(
+                trTextResource(R.string.combat_defeat),
+                style = MaterialTheme.typography.headlineSmall,
+                color = WardenColors.Health,
+            )
+        }
+        Button(onClick = onRetry, modifier = Modifier.heightIn(min = ButtonHeight).testTag("btn_practice_retry")) {
+            Text(trTextResource(R.string.combat_practice_retry))
+        }
+        Button(onClick = onBack, modifier = Modifier.heightIn(min = ButtonHeight).testTag("btn_practice_back")) {
+            Text(trTextResource(R.string.combat_practice_back))
+        }
+    }
+}
+
+@Composable
+private fun ResultOverlay(
+    state: CombatUiState,
+    outcome: Outcome,
+    isPractice: Boolean,
+    onRetry: () -> Unit,
+    onFinish: () -> Unit,
+) {
     Overlay(ResultScrim) {
+        if (isPractice) {
+            PracticeResult(outcome, onRetry, onFinish)
+            return@Overlay
+        }
         Column(
             Modifier.padding(24.dp),
             horizontalAlignment = Alignment.CenterHorizontally,

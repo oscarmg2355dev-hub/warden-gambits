@@ -25,3 +25,6 @@ keystore.properties
 # Local working files
 backups/
 .superpowers/
+
+# Ads
+admob.properties

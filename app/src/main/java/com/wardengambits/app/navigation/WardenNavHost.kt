@@ -16,6 +16,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.NavType
+import androidx.navigation.navArgument
 import com.wardengambits.app.AppContainer
 import com.wardengambits.app.WardenApp
 import com.wardengambits.app.i18n.LocalAppLanguage
@@ -26,6 +28,8 @@ import com.wardengambits.app.ui.character.CharacterViewModel
 import com.wardengambits.app.ui.character.HistoryScreen
 import com.wardengambits.app.ui.combat.CombatRoute
 import com.wardengambits.app.ui.combat.CombatViewModel
+import com.wardengambits.app.ui.combat.PracticeCombatSource
+import com.wardengambits.app.ui.combat.StoryCombatSource
 import com.wardengambits.app.ui.ending.EndingScreen
 import com.wardengambits.app.ui.ending.EndingViewModel
 import com.wardengambits.app.ui.help.ComboDescriber
@@ -37,6 +41,9 @@ import com.wardengambits.app.ui.node.NodeActions
 import com.wardengambits.app.ui.node.NodeScreen
 import com.wardengambits.app.ui.node.NodeViewModel
 import com.wardengambits.app.ui.options.OptionsScreen
+import com.wardengambits.app.ui.practice.PracticeScreen
+import com.wardengambits.app.ui.practice.PracticeViewModel
+import com.wardengambits.engine.story.NodeId
 import com.wardengambits.engine.story.Phase
 import com.wardengambits.engine.story.StoryProfile
 
@@ -51,6 +58,10 @@ object Routes {
     const val ENDING = "ending"
     const val OPTIONS = "options"
     const val ABOUT = "about"
+    const val PRACTICE = "practice"
+    const val PRACTICE_COMBAT = "practice_combat/{zone}/{level}/{index}"
+
+    fun practiceCombat(node: NodeId) = "practice_combat/${node.zoneId}/${node.level}/${node.index}"
 }
 
 /** Where "continue the story" leads: the ending screen once the lap is complete, otherwise [otherwise]. */
@@ -83,6 +94,7 @@ fun WardenNavHost(
                 onNewAdventure = container.session::newAdventure,
                 onOptions = { navController.navigateSingle(Routes.OPTIONS) },
                 onAbout = { navController.navigateSingle(Routes.ABOUT) },
+                onPractice = { navController.navigateSingle(Routes.PRACTICE) },
             )
         }
         composable(Routes.OPTIONS) {
@@ -176,8 +188,50 @@ fun WardenNavHost(
                 factory = viewModelFactory {
                     initializer {
                         CombatViewModel(
-                            container.session,
-                            container.storyEngine,
+                            StoryCombatSource(container.session, container.storyEngine),
+                            container.storyTexts,
+                            container.combatEngine,
+                            container.clock,
+                        )
+                    }
+                },
+            )
+            CombatRoute(
+                viewModel = vm,
+                soundPlayer = container.soundPlayer,
+                onBackToNode = { navController.safeBack() },
+            )
+        }
+        composable(Routes.PRACTICE) {
+            val vm: PracticeViewModel = viewModel(
+                factory = viewModelFactory { initializer { PracticeViewModel(container.session, container.storyTexts) } },
+            )
+            val zones by vm.zones.collectAsStateWithLifecycle()
+            PracticeScreen(
+                zones = zones,
+                initialZoneIndex = vm.currentZoneIndex,
+                onFight = { navController.navigateSingle(Routes.practiceCombat(it)) },
+                onBack = { navController.safeBack() },
+            )
+        }
+        composable(
+            Routes.PRACTICE_COMBAT,
+            arguments = listOf(
+                navArgument("zone") { type = NavType.StringType },
+                navArgument("level") { type = NavType.IntType },
+                navArgument("index") { type = NavType.IntType },
+            ),
+        ) { entry ->
+            val node = NodeId(
+                entry.arguments?.getString("zone").orEmpty(),
+                entry.arguments?.getInt("level") ?: 1,
+                entry.arguments?.getInt("index") ?: 0,
+            )
+            val vm: CombatViewModel = viewModel(
+                factory = viewModelFactory {
+                    initializer {
+                        CombatViewModel(
+                            PracticeCombatSource(node, container.storyEngine),
                             container.storyTexts,
                             container.combatEngine,
                             container.clock,

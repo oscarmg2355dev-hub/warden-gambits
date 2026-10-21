@@ -34,12 +34,24 @@ class MenuScreenTest {
                 MenuScreen(onStory = {}, onCharacter = { characterClicks++ }, onHelp = {}, onNewAdventure = {})
             }
         }
-        composeRule.onNodeWithText("Warden-Gambits").assertIsDisplayed()
+        composeRule.onNodeWithText("Warden Gambits").assertIsDisplayed()
         listOf("Modo Historia", "Personaje", "Ayuda de combos", "Nueva aventura").forEach {
             composeRule.onNodeWithText(it).assertIsDisplayed()
         }
         composeRule.onNodeWithText("Personaje").performClick()
         assertEquals(1, characterClicks)
+    }
+
+    @Test
+    fun practiceButtonCallsBack() {
+        var clicks = 0
+        composeRule.setContent {
+            WardenTheme {
+                MenuScreen(onStory = {}, onCharacter = {}, onHelp = {}, onNewAdventure = {}, onPractice = { clicks++ })
+            }
+        }
+        composeRule.onNodeWithText("Modo combate").performClick()
+        assertEquals(1, clicks)
     }
 
     @Test
@@ -80,7 +92,7 @@ class MenuScreenTest {
                 MenuScreen(onStory = {}, onCharacter = {}, onHelp = {}, onNewAdventure = {}, onAbout = { about++ })
             }
         }
-        composeRule.onNodeWithText("Acerca de").assertIsDisplayed().performClick()
+        composeRule.onNodeWithText("Acerca de").performScrollTo().assertIsDisplayed().performClick()
         assertEquals(1, about)
     }
 

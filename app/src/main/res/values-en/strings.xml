@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Warden-Gambits</string>
-    <string name="menu_title">Warden-Gambits</string>
+    <string name="menu_title">Warden Gambits</string>
     <string name="menu_story">Story Mode</string>
     <string name="menu_character">Character</string>
     <string name="menu_help">Combo Help</string>
@@ -64,6 +64,9 @@
     <string name="combat_defeat">You have fallen</string>
     <string name="combat_defeat_summary">%1$s · Level %2$d · %3$s</string>
     <string name="combat_back_to_previous_node">Back to the previous node</string>
+    <string name="combat_practice_retry">Fight again</string>
+    <string name="combat_practice_back">Back to the grid</string>
+    <string name="combat_practice_abandon_message">It won\'t count for your game: you\'ll go back to the grid.</string>
     <string name="combat_abandon_title">Abandon the fight?</string>
     <string name="combat_abandon_message">It will count as a defeat: you will go back to the previous node.</string>
     <string name="combat_abandon_confirm">Abandon</string>
@@ -168,6 +171,10 @@ Only one multiplier and one shield can be active at a time.</string>
         <item quantity="one">%d death</item>
         <item quantity="other">%d deaths</item>
     </plurals>
+    <string name="menu_practice">Combat mode</string>
+    <string name="practice_title">Combat mode</string>
+    <string name="practice_level">Lv %1$d</string>
+    <string name="practice_locked">Locked</string>
     <string name="menu_about">About</string>
     <string name="about_how_heading">How it was made</string>
     <string name="about_how_1">Warden-Gambits is a native Android game written in Kotlin and Jetpack Compose, with no graphics engine: here the logic rules. Beneath the cards beats a pure, deterministic combo-combat engine, tuned with a simulator that plays thousands of adventures to balance the numbers.</string>

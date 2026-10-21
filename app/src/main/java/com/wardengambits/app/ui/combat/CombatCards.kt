@@ -350,7 +350,7 @@ private fun FramedPortrait(fighter: FighterUi, size: Dp) {
  * placed centred on the corner's diagonal and rotated 45°; the portrait's clip trims its ends.
  */
 @Composable
-private fun BoxScope.EliteRibbon(size: Dp) {
+internal fun BoxScope.EliteRibbon(size: Dp) {
     val band = size * 0.95f
     val thickness = size * 0.2f
     Box(

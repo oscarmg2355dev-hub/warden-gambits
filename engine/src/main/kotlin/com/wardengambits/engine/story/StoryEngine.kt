@@ -11,6 +11,8 @@ import com.wardengambits.engine.story.content.NodeContent
 import com.wardengambits.engine.story.content.StoryContent
 
 class StoryEngine(private val content: StoryContent) {
+    private val expectedLevels by lazy { ExpectedLevels(content) }
+
     fun newGame(): StoryProfile = StoryProfile(startRun(level = 1, lap = 1, lapStartLevel = 1).first, emptyList())
 
     fun reduce(profile: StoryProfile, action: StoryAction): StoryStep = when (action) {
@@ -74,23 +76,34 @@ class StoryEngine(private val content: StoryContent) {
     fun combatSetupFor(profile: StoryProfile): CombatSetup? {
         val run = profile.run
         if (run.phase != Phase.COMBAT_PENDING) return null
-        val encounter = node(run.node).encounter ?: return null
-        val baseLevel = requireNotNull(content.zone(run.node.zoneId)) { "No zone ${run.node.zoneId}" }.baseLevel
-        return CombatSetup(
-            FighterSpec("Warden", run.level),
-            encounter.rivals.mapIndexed { index, rival ->
-                val reaction = rival.reaction?.let { Reaction(it.atHpPct, it.shield, it.combos) }
-                val modes = rival.modes?.let { BossModes(it.defenseBelowPct, it.attackAbovePct, it.maxDefenses, it.defense) }
-                RivalSpec(
-                    rival.name,
-                    maxOf(1, baseLevel + rival.levelOffset + (run.lapStartLevel - 1)),
-                    PatternBrain(rival.pattern, rival.everyNTicks, reaction, modes),
-                    // ContentRules enforces the boss as the first rival of a level-7 encounter.
-                    isBoss = run.node.level == TreeShape.LEVELS && index == 0,
-                    portrait = rival.portrait,
-                )
-            },
-        )
+        if (node(run.node).encounter == null) return null
+        return CombatSetup(FighterSpec("Warden", run.level), rivalSpecs(run.node, run.lapStartLevel))
+    }
+
+    /** Practice mode: every encounter of the story with its unlock state (never touches the profile). */
+    fun practiceEntries(profile: StoryProfile): List<PracticeEntry> = PracticeCatalog.entries(content, profile)
+
+    /** Practice fight at [node]: the Warden at the expected level against the first-lap rivals; null without encounter. */
+    fun practiceSetup(node: NodeId): CombatSetup? {
+        if (content.node(node)?.encounter == null) return null
+        return CombatSetup(FighterSpec("Warden", expectedLevels.expectedLevel(node)), rivalSpecs(node, lapStartLevel = 1))
+    }
+
+    private fun rivalSpecs(node: NodeId, lapStartLevel: Int): List<RivalSpec> {
+        val encounter = requireNotNull(node(node).encounter) { "No encounter at ${node.key}" }
+        val baseLevel = requireNotNull(content.zone(node.zoneId)) { "No zone ${node.zoneId}" }.baseLevel
+        return encounter.rivals.mapIndexed { index, rival ->
+            val reaction = rival.reaction?.let { Reaction(it.atHpPct, it.shield, it.combos) }
+            val modes = rival.modes?.let { BossModes(it.defenseBelowPct, it.attackAbovePct, it.maxDefenses, it.defense) }
+            RivalSpec(
+                rival.name,
+                maxOf(1, baseLevel + rival.levelOffset + (lapStartLevel - 1)),
+                PatternBrain(rival.pattern, rival.everyNTicks, reaction, modes),
+                // ContentRules enforces the boss as the first rival of a level-7 encounter.
+                isBoss = node.level == TreeShape.LEVELS && index == 0,
+                portrait = rival.portrait,
+            )
+        }
     }
 
     private fun finishCombat(profile: StoryProfile, action: StoryAction.CombatFinished): StoryStep {

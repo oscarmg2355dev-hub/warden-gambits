@@ -198,6 +198,11 @@ class FloatingNumbersController {
 
     fun now(): Long = clock
 
+    /** Drops every number on screen (a new fight starts). */
+    fun clear() {
+        state = FloatingNumbersState()
+    }
+
     fun add(
         lines: List<CombatTextLine>,
         maxOf: (FighterId) -> Int,

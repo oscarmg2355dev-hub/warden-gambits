@@ -180,5 +180,12 @@ fun CombatRoute(
         floatingNumbers = numbers.state,
         numbersClock = numbers::now,
         running = running,
+        isPractice = viewModel.isPractice,
+        onRetry = {
+            viewModel.retry()
+            numbers.clear()
+            message = null
+            messageToken++
+        },
     )
 }

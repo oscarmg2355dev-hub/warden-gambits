@@ -100,6 +100,13 @@ class FloatingNumbersTest {
         assertEquals(0, controller.state.forTarget(r1).size)
     }
 
+    @Test fun clearDropsEveryNumber() {
+        val controller = FloatingNumbersController()
+        controller.add(listOf(line()), max, Random(1))
+        controller.clear()
+        assertTrue(controller.state.isEmpty)
+    }
+
     @Test fun defeatedTargetKeepsLiveNumbers() {
         val state = FloatingNumbersState().add(listOf(line()), max, 0L, Random(1))
         assertEquals(null, combatTextFor(CombatEvent.FighterDefeated(r1)))

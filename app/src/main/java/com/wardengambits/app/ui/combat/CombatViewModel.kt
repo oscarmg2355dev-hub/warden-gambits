@@ -2,7 +2,6 @@ package com.wardengambits.app.ui.combat
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.wardengambits.app.GameSession
 import com.wardengambits.engine.action.CombatAction
 import com.wardengambits.engine.combo.ChainRules
 import com.wardengambits.engine.combo.Combos
@@ -17,7 +16,6 @@ import com.wardengambits.engine.model.LevelStats
 import com.wardengambits.engine.model.Outcome
 import com.wardengambits.engine.model.PLAYER_ID
 import com.wardengambits.engine.rules.CombatEngine
-import com.wardengambits.engine.story.StoryAction
 import com.wardengambits.engine.story.StoryEngine
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -34,23 +32,25 @@ import kotlinx.coroutines.launch
 
 /**
  * Runs one real-time combat: wraps [CombatEngine] state, ticks it every [tickMillis] while the screen is
- * active and not paused, and reports the result to the [GameSession] once. The fight is built from
- * [storyEngine] (the session's story, which holds the mechanics); [story] is the same story in the app's language,
- * and only the zone and rival names shown come from it, following it even in the middle of the fight.
+ * active and not paused, and reports the result once through the [source] (a story combat reports to the
+ * session; a practice combat reports nothing and can be retried). The fight comes from [CombatSource.setup];
+ * [story] is the story in the app's language, and only the zone and rival names shown come from it,
+ * following it even in the middle of the fight.
  */
 class CombatViewModel(
-    private val session: GameSession,
-    storyEngine: StoryEngine,
+    private val source: CombatSource,
     story: StateFlow<StoryEngine>,
     private val combatEngine: CombatEngine,
     private val clock: () -> Long,
     private val tickMillis: Long = 1000L,
 ) : ViewModel() {
-    private val profileAtStart = session.profile.value
-    private val setup = storyEngine.combatSetupFor(profileAtStart)
+    private val setup = source.setup
+
+    /** True for a practice fight: no report, and the result overlay offers a retry. */
+    val isPractice: Boolean = source is PracticeCombatSource
 
     /** Rival names in the story's current language, in encounter order (rival `FighterId(i + 1)` is entry `i`). */
-    private var rivalNames: List<String> = rivalNamesIn(story.value)
+    private var rivalNames: List<String> = source.rivalNames(story.value)
 
     /** True when the profile had no combat to fight; the screen navigates back. */
     val invalid: Boolean = setup == null
@@ -70,8 +70,8 @@ class CombatViewModel(
     val events: SharedFlow<CombatEvent> = _events.asSharedFlow()
 
     init {
-        val progress = story.value.zoneProgress(profileAtStart)
-        val level = profileAtStart.run.level
+        val progress = source.progress(story.value)
+        val level = source.levelBefore
         val initial = CombatUiState(
             zoneName = progress.zone.name,
             levelLabel = "${progress.level}/${progress.total}",
@@ -82,8 +82,8 @@ class CombatViewModel(
             buffer = "",
             bufferMatch = null,
             outcome = null,
-            levelBefore = setup?.player?.level ?: level,
-            winsBefore = profileAtStart.run.wins,
+            levelBefore = level,
+            winsBefore = source.winsBefore,
         )
         _state = MutableStateFlow(combat?.let { withCombat(initial, it) } ?: initial)
         state = _state.asStateFlow()
@@ -140,11 +140,25 @@ class CombatViewModel(
         report(_state.value.outcome ?: Outcome.DEFEAT)
     }
 
+    /** Practice only: starts a brand new fight (same setup), clearing the result and resuming the ticks. */
+    fun retry() {
+        val setup = setup ?: return
+        if (!isPractice) return
+        val fresh = combatEngine.start(setup, clock())
+        combat = fresh
+        stopped.value = false
+        finished = false
+        _state.value = withCombat(_state.value.copy(paused = false, outcome = null), fresh)
+    }
+
     private fun report(outcome: Outcome) {
         if (invalid || finished) return
         finished = true
         stopped.value = true
-        session.dispatch(StoryAction.CombatFinished(outcome, clock()))
+        when (source) {
+            is StoryCombatSource -> source.report(outcome, clock())
+            is PracticeCombatSource -> Unit
+        }
     }
 
     /** Launching inputs (keys, cast, clear) are also ignored while the Warden is Dazed. */
@@ -168,17 +182,14 @@ class CombatViewModel(
         step.events.forEach { _events.tryEmit(it) }
     }
 
-    private fun rivalNamesIn(engine: StoryEngine): List<String> =
-        engine.node(profileAtStart.run.node).encounter?.rivals?.map { it.name }.orEmpty()
-
     private fun displayName(id: FighterId, fallback: String): String = rivalNames.getOrNull(id.value - 1) ?: fallback
 
     /** Shows the zone and rival names of [engine] (the same story in another language). */
     private fun relabel(engine: StoryEngine) {
-        rivalNames = rivalNamesIn(engine)
+        rivalNames = source.rivalNames(engine)
         _state.update { ui ->
             ui.copy(
-                zoneName = engine.zoneProgress(profileAtStart).zone.name,
+                zoneName = source.progress(engine).zone.name,
                 rivals = ui.rivals.map { rival -> rival.copy(name = displayName(rival.id, rival.name)) },
             )
         }

@@ -4,6 +4,7 @@ import com.wardengambits.engine.ai.PatternBrain
 import com.wardengambits.engine.model.CombatSetup
 import com.wardengambits.engine.model.FighterSpec
 import com.wardengambits.engine.model.RivalSpec
+import com.wardengambits.engine.story.ExpectedLevels
 import com.wardengambits.engine.story.NodeId
 import com.wardengambits.engine.story.Route
 import com.wardengambits.engine.story.content.StoryContentLoader
