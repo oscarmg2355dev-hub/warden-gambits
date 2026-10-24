@@ -3,6 +3,7 @@ package com.wardengambits.app.ui.character
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.wardengambits.app.GameSession
+import com.wardengambits.engine.model.Difficulty
 import com.wardengambits.engine.model.LevelStats
 import com.wardengambits.engine.model.Stats
 import com.wardengambits.engine.story.RunResult
@@ -26,6 +27,8 @@ data class HistoryRowUi(
     val deaths: Int = 0,
     /** The lap reached the end of the story (shown with a green seal). */
     val completed: Boolean = false,
+    /** Easiest difficulty of the lap; null in laps recorded before difficulties existed. */
+    val difficulty: Difficulty? = null,
 )
 
 data class CharacterUi(
@@ -73,6 +76,7 @@ class CharacterViewModel(
                     date = formatter.format(Instant.ofEpochMilli(record.finishedAtMillis)),
                     deaths = record.deaths,
                     completed = record.result == RunResult.COMPLETED,
+                    difficulty = record.difficulty,
                 )
             },
             completedLaps = profile.history.count { it.result == RunResult.COMPLETED },

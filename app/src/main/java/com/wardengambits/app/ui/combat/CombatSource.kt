@@ -2,6 +2,7 @@ package com.wardengambits.app.ui.combat
 
 import com.wardengambits.app.GameSession
 import com.wardengambits.engine.model.CombatSetup
+import com.wardengambits.engine.model.Difficulty
 import com.wardengambits.engine.model.Outcome
 import com.wardengambits.engine.story.NodeId
 import com.wardengambits.engine.story.StoryAction
@@ -33,9 +34,13 @@ sealed interface CombatSource {
 }
 
 /** The story's pending combat: reports its outcome to the [GameSession]. */
-class StoryCombatSource(private val session: GameSession, storyEngine: StoryEngine) : CombatSource {
+class StoryCombatSource(
+    private val session: GameSession,
+    storyEngine: StoryEngine,
+    private val difficulty: Difficulty,
+) : CombatSource {
     private val profileAtStart: StoryProfile = session.profile.value
-    override val setup: CombatSetup? = storyEngine.combatSetupFor(profileAtStart)
+    override val setup: CombatSetup? = storyEngine.combatSetupFor(profileAtStart)?.copy(rivalAttackPct = difficulty.rivalAttackPct)
     override val levelBefore: Int get() = setup?.player?.level ?: profileAtStart.run.level
     override val winsBefore: Int get() = profileAtStart.run.wins
 
@@ -45,13 +50,13 @@ class StoryCombatSource(private val session: GameSession, storyEngine: StoryEngi
     override fun progress(engine: StoryEngine): ZoneProgress = engine.zoneProgress(profileAtStart)
 
     fun report(outcome: Outcome, nowMillis: Long) {
-        session.dispatch(StoryAction.CombatFinished(outcome, nowMillis))
+        session.dispatch(StoryAction.CombatFinished(outcome, nowMillis, difficulty))
     }
 }
 
 /** A practice fight at [node]: reports nothing, the profile stays untouched. */
-class PracticeCombatSource(private val node: NodeId, storyEngine: StoryEngine) : CombatSource {
-    override val setup: CombatSetup? = storyEngine.practiceSetup(node)
+class PracticeCombatSource(private val node: NodeId, storyEngine: StoryEngine, difficulty: Difficulty) : CombatSource {
+    override val setup: CombatSetup? = storyEngine.practiceSetup(node)?.copy(rivalAttackPct = difficulty.rivalAttackPct)
     override val levelBefore: Int get() = setup?.player?.level ?: 1
     override val winsBefore: Int get() = 0
 

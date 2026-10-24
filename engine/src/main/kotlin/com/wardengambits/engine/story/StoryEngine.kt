@@ -4,6 +4,7 @@ import com.wardengambits.engine.ai.BossModes
 import com.wardengambits.engine.ai.PatternBrain
 import com.wardengambits.engine.model.CombatSetup
 import com.wardengambits.engine.model.FighterSpec
+import com.wardengambits.engine.model.Difficulty
 import com.wardengambits.engine.model.Outcome
 import com.wardengambits.engine.model.Reaction
 import com.wardengambits.engine.model.RivalSpec
@@ -111,12 +112,18 @@ class StoryEngine(private val content: StoryContent) {
         if (run.phase != Phase.COMBAT_PENDING) return reject(profile, StoryRejectReason.WRONG_PHASE)
         return when (action.outcome) {
             Outcome.VICTORY -> {
-                val next = run.copy(level = run.level + 1, wins = run.wins + 1, phase = Phase.CHOOSING)
+                val next = run.copy(
+                    level = run.level + 1, wins = run.wins + 1, phase = Phase.CHOOSING,
+                    easiestDifficulty = easiestOf(run, action),
+                )
                 StoryStep(profile.copy(run = next), listOf(StoryEvent.LeveledUp(next.level)))
             }
-            Outcome.DEFEAT -> returnToPreviousNode(profile)
+            Outcome.DEFEAT -> returnToPreviousNode(profile.copy(run = run.copy(easiestDifficulty = easiestOf(run, action))))
         }
     }
+
+    private fun easiestOf(run: RunState, action: StoryAction.CombatFinished): Difficulty? =
+        listOfNotNull(run.easiestDifficulty, action.difficulty).minOrNull()
 
     /**
      * A lost fight sends the Warden back to the previous node of the path, already completed (phase CHOOSING),
@@ -144,7 +151,7 @@ class StoryEngine(private val content: StoryContent) {
     private fun startNextLap(profile: StoryProfile, nowMillis: Long): StoryStep {
         val run = profile.run
         if (run.phase != Phase.LAP_COMPLETE) return reject(profile, StoryRejectReason.WRONG_PHASE)
-        val record = RunRecord(run.lap, NodeId.FINAL, run.level, run.wins, RunResult.COMPLETED, nowMillis, run.deaths)
+        val record = RunRecord(run.lap, NodeId.FINAL, run.level, run.wins, RunResult.COMPLETED, nowMillis, run.deaths, run.easiestDifficulty)
         val (fresh, entry) = startRun(level = run.level, lap = run.lap + 1, lapStartLevel = run.level)
         return StoryStep(
             StoryProfile(fresh, profile.history + record),

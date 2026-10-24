@@ -37,7 +37,8 @@ class CombatEngine(
         )
         val rivals = setup.rivals.mapIndexed { index, rival ->
             val scaling = if (rival.isBoss) bossScaling else rivalScaling
-            val stats = LevelStats.forRival(rival.level, scaling)
+            val scaled = LevelStats.forRival(rival.level, scaling)
+            val stats = scaled.copy(attack = maxOf(1, scaled.attack * setup.rivalAttackPct / 100))
             Fighter(
                 FighterId(index + 1), rival.name, rival.level, Side.RIVAL, stats,
                 hp = stats.maxHp, power = scaling.startPower(stats.maxPower), isBoss = rival.isBoss,

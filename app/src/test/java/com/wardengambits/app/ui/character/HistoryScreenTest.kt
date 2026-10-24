@@ -9,6 +9,7 @@ import com.wardengambits.app.i18n.AppLanguage
 import com.wardengambits.app.i18n.AppScript
 import com.wardengambits.app.i18n.ProvideLanguageAndScript
 import com.wardengambits.app.ui.theme.WardenTheme
+import com.wardengambits.engine.model.Difficulty
 import com.wardengambits.engine.story.RunResult
 import org.junit.Assert.assertEquals
 import org.junit.Rule
@@ -54,6 +55,18 @@ class HistoryScreenTest {
         composeRule.onNodeWithText("Lap 1 — Fallen").assertIsDisplayed()
         composeRule.onNodeWithText("The Chetwood · Level 4 · 1 victory · 1 death").assertIsDisplayed()
         composeRule.onNode(hasContentDescription("Lap completed")).assertIsDisplayed()
+    }
+
+    @Test fun historyShowsDifficulty() {
+        val history = listOf(HistoryRowUi(1, RunResult.COMPLETED, "Monte del Destino", 72, 35, "16/10/2026 10:00", completed = true, difficulty = Difficulty.RANGER))
+        composeRule.setContent { WardenTheme { HistoryScreen(history = history, onBack = {}) } }
+        composeRule.onNodeWithText("Dificultad: Senda del Montaraz").assertIsDisplayed()
+    }
+
+    @Test fun historyHidesMissingDifficulty() {
+        val history = listOf(HistoryRowUi(1, RunResult.COMPLETED, "Monte del Destino", 72, 35, "16/10/2026 10:00", completed = true, difficulty = null))
+        composeRule.setContent { WardenTheme { HistoryScreen(history = history, onBack = {}) } }
+        composeRule.onNodeWithText("Dificultad", substring = true).assertDoesNotExist()
     }
 
     @Test fun noLapsShowsTheEmptyState() {

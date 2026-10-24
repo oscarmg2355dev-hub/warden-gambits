@@ -19,7 +19,10 @@ import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.relocation.BringIntoViewRequester
 import androidx.compose.foundation.relocation.bringIntoViewRequester
 import androidx.compose.foundation.text.selection.SelectionContainer
+import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.Button
+import androidx.compose.material3.RadioButton
+import androidx.compose.ui.semantics.Role
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.getValue
@@ -56,6 +59,9 @@ import com.wardengambits.app.i18n.tengwar.TengwarMode
 import com.wardengambits.app.i18n.trText
 import com.wardengambits.app.i18n.trTextResource
 import com.wardengambits.app.ui.common.ScreenHeader
+import com.wardengambits.app.ui.common.hintRes
+import com.wardengambits.app.ui.common.nameRes
+import com.wardengambits.engine.model.Difficulty
 import com.wardengambits.app.ui.theme.AlcarinFamily
 import com.wardengambits.app.ui.theme.WardenColors
 
@@ -76,6 +82,8 @@ fun OptionsScreen(
     narrationEnabled: Boolean,
     language: AppLanguage,
     script: AppScript,
+    difficulty: Difficulty?,
+    onSelectDifficulty: (Difficulty) -> Unit,
     onToggleMusic: () -> Unit,
     onToggleSfx: () -> Unit,
     onToggleNarration: () -> Unit,
@@ -92,6 +100,7 @@ fun OptionsScreen(
             OptionButton(toggleLabel(R.string.options_music, musicEnabled), onToggleMusic)
             OptionButton(toggleLabel(R.string.options_sfx, sfxEnabled), onToggleSfx)
             OptionButton(toggleLabel(R.string.options_narration, narrationEnabled), onToggleNarration)
+            DifficultySection(difficulty, onSelectDifficulty)
             OptionButton(stringResource(R.string.options_language, language.displayName), onToggleLanguage, transcribe = false)
             val scriptName = stringResource(
                 when (script) {
@@ -105,6 +114,34 @@ fun OptionsScreen(
             Spacer(Modifier.height(24.dp))
             Transcriber(language)
             Spacer(Modifier.height(24.dp))
+        }
+    }
+}
+
+/** Four selectable rows, easiest first, each with its name and one-line hint; the chosen one is `selected`. */
+@Composable
+private fun DifficultySection(selected: Difficulty?, onSelect: (Difficulty) -> Unit) {
+    Text(
+        trTextResource(R.string.options_difficulty),
+        modifier = Modifier.fillMaxWidth().padding(top = 16.dp, bottom = 4.dp),
+        style = MaterialTheme.typography.titleMedium,
+        color = WardenColors.Primary,
+    )
+    Difficulty.entries.forEach { d ->
+        Row(
+            Modifier.padding(vertical = 4.dp).fillMaxWidth().heightIn(min = 56.dp)
+                .clip(RoundedCornerShape(8.dp)).background(WardenColors.Surface)
+                .selectable(selected = d == selected, role = Role.RadioButton, onClick = { onSelect(d) })
+                .padding(horizontal = 8.dp, vertical = 6.dp)
+                .testTag("difficulty_${d.name}"),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            RadioButton(selected = d == selected, onClick = null)
+            Column(Modifier.padding(start = 8.dp)) {
+                Text(trTextResource(d.nameRes()), style = MaterialTheme.typography.bodyLarge, color = WardenColors.Text)
+                // Plain getString: the hints contain a literal % (formatted="false"), so they must not be formatted.
+                Text(trText(stringResource(d.hintRes())), style = MaterialTheme.typography.bodySmall, color = WardenColors.Text)
+            }
         }
     }
 }

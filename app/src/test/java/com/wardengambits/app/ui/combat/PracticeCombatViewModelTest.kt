@@ -13,6 +13,7 @@ import com.wardengambits.app.data.SaveRepository
 import com.wardengambits.app.ui.theme.WardenTheme
 import com.wardengambits.engine.combo.Combos
 import com.wardengambits.engine.combo.Input
+import com.wardengambits.engine.model.Difficulty
 import com.wardengambits.engine.model.FighterId
 import com.wardengambits.engine.model.Outcome
 import com.wardengambits.engine.rules.CombatEngine
@@ -71,7 +72,7 @@ class PracticeCombatViewModelTest {
     }
 
     private fun practice() = CombatViewModel(
-        PracticeCombatSource(node, engine), MutableStateFlow(engine), CombatEngine(), { 1234L },
+        PracticeCombatSource(node, engine, Difficulty.EYE), MutableStateFlow(engine), CombatEngine(), { 1234L },
     )
 
     private fun TestScope.tick(n: Int = 1) {
@@ -140,7 +141,7 @@ class PracticeCombatViewModelTest {
         repo.save(strong)
         val session = GameSession(engine, repo, backgroundScope) { 0L }
         session.load()
-        val vm = CombatViewModel(StoryCombatSource(session, engine), MutableStateFlow(engine), CombatEngine(), { 1234L })
+        val vm = CombatViewModel(StoryCombatSource(session, engine, Difficulty.EYE), MutableStateFlow(engine), CombatEngine(), { 1234L })
         assertFalse(vm.isPractice)
         vm.setActive(true)
         fightUntilOver(vm)

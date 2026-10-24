@@ -3106,3 +3106,27 @@ Notas:
 - Los objetivos MEDIO de las rondas anteriores (jefes ≥ 40 %, ≤ 20 muertes) ya no se cumplen: el objetivo ahora es el reto del MAESTRO. El NOVATO sigue atascado en chet.
 - `AdventureTest.simAdventureReachesOrodruin` usa ahora el MAESTRO (una aventura MEDIO puede atascarse).
 - Pendiente para pruebas reales: si el usuario se atasca de verdad en algún jefe, la palanca es su offset (tabla de arriba).
+
+## Niveles de dificultad (2026-10-24)
+
+La referencia de balance sigue siendo `EYE` (el balance de las secciones anteriores no cambia).
+
+Spec: `docs/superpowers/specs/2026-10-24-difficulty-levels-design.md` §2. De más fácil a más difícil:
+
+| id | es | en | Ataque de los rivales |
+|---|---|---|---|
+| `SHIRE` | Paseo por la Comarca | A Stroll in the Shire | ×0,50 |
+| `RANGER` | Senda del Montaraz | Ranger's Path | ×0,60 |
+| `MARK` | Guardián de la Marca | Warden of the Mark | ×0,75 |
+| `EYE` | El Ojo de Sauron | The Eye of Sauron | ×1,00 (el juego actual) |
+
+**Por qué ×0,60 y ×0,75.** El simulador baja el ataque de jefes y comunes (barridos `sweep boss attack=…` y `sweep attack=…`, 2026-10-24). El porcentaje de victorias del jugador MEDIO contra los jefes, de media, sube de forma bastante pareja (unos 15 puntos por paso):
+
+| Multiplicador | Jefes MEDIO (media) | Peor jefe MEDIO | MAESTRO sin muertes |
+|---|---|---|---|
+| ×1,00 | 31 % | 11 % (quebradas) | 0 % |
+| ×0,85 | 38 % | 15 % | 9,6 % |
+| ×0,75 | 46 % | 26 % | 42,2 % |
+| ×0,67 | 55 % | 37 % | 70,8 % |
+| ×0,60 | 65 % | 37 % | 86,4 % |
+| ×0,50 | 79 % | 63 % (gorgoroth) | 92,0 % |

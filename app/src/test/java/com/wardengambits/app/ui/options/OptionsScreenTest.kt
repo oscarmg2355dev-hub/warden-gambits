@@ -6,6 +6,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.semantics.SemanticsProperties
 import androidx.compose.ui.test.assert
 import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.assertIsNotSelected
+import androidx.compose.ui.test.assertIsSelected
+import androidx.compose.ui.layout.boundsInRoot
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.junit4.createComposeRule
@@ -21,6 +24,7 @@ import com.wardengambits.app.i18n.tengwar.EquivalenceKind
 import com.wardengambits.app.i18n.tengwar.Tengwar
 import com.wardengambits.app.i18n.tengwar.TengwarMode
 import com.wardengambits.app.ui.theme.WardenTheme
+import com.wardengambits.engine.model.Difficulty
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotEquals
 import org.junit.Assert.assertTrue
@@ -28,8 +32,11 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
 
 @RunWith(RobolectricTestRunner::class)
+// Tall screen: the buttons above the equivalence table, difficulty rows included, all fit.
+@Config(qualifiers = "w411dp-h1600dp")
 class OptionsScreenTest {
     @get:Rule
     val composeRule = createComposeRule()
@@ -39,6 +46,8 @@ class OptionsScreenTest {
     private var narration by mutableStateOf(true)
     private var language by mutableStateOf(AppLanguage.ES)
     private var script by mutableStateOf(AppScript.LATIN)
+    private var difficulty by mutableStateOf<Difficulty?>(Difficulty.RANGER)
+    private val selected = mutableListOf<Difficulty>()
     private var musicToggles = 0
     private var sfxToggles = 0
     private var narrationToggles = 0
@@ -54,6 +63,8 @@ class OptionsScreenTest {
                         narrationEnabled = narration,
                         language = language,
                         script = script,
+                        difficulty = difficulty,
+                        onSelectDifficulty = { selected += it; difficulty = it },
                         onToggleMusic = { musicToggles++; music = !music },
                         onToggleSfx = { sfxToggles++; sfx = !sfx },
                         onToggleNarration = { narrationToggles++; narration = !narration },
@@ -80,6 +91,47 @@ class OptionsScreenTest {
         composeRule.onNodeWithText("Narración: no").assertIsDisplayed()
         composeRule.onNodeWithContentDescription("Volver").performClick()
         assertEquals(1, backs)
+    }
+
+    private val names = listOf("Paseo por la Comarca", "Senda del Montaraz", "Guardián de la Marca", "El Ojo de Sauron")
+    private val hints = listOf(
+        "Los rivales hacen la mitad de daño", "Los rivales hacen un 40 % menos de daño",
+        "Los rivales hacen un 25 % menos de daño", "El reto tal como fue forjado",
+    )
+
+    private fun top(label: String) = composeRule.onNodeWithText(label).fetchSemanticsNode().boundsInRoot.top
+
+    @Test fun optionsShowsFourDifficulties() {
+        show()
+        composeRule.onNodeWithText("Dificultad").assertIsDisplayed()
+        names.forEach { composeRule.onNodeWithText(it, substring = true).performScrollTo().assertIsDisplayed() }
+        hints.forEach { composeRule.onNodeWithText(it, substring = true).assertIsDisplayed() }
+        val tops = names.map { top(it) }
+        assertEquals(tops.sorted(), tops)
+        names.forEachIndexed { i, name ->
+            val node = composeRule.onNodeWithText(name, substring = true)
+            if (i == 1) node.assertIsSelected() else node.assertIsNotSelected()
+        }
+    }
+
+    @Test fun tapDifficultySelectsIt() {
+        show()
+        composeRule.onNodeWithText("Guardián de la Marca", substring = true).performScrollTo().performClick()
+        assertEquals(listOf(Difficulty.MARK), selected)
+        composeRule.onNodeWithText("Guardián de la Marca", substring = true).assertIsSelected()
+    }
+
+    @Test fun optionsDifficultyInEnglishAndTengwar() {
+        language = AppLanguage.EN
+        show()
+        composeRule.onNodeWithText("Difficulty").assertIsDisplayed()
+        composeRule.onNodeWithText("Warden of the Mark", substring = true).performScrollTo().assertIsDisplayed()
+        composeRule.onNodeWithText("Rivals deal 40% less damage", substring = true).assertIsDisplayed()
+        script = AppScript.TENGWAR
+        composeRule.waitForIdle()
+        composeRule.onNodeWithText("Warden of the Mark", substring = true).assertDoesNotExist()
+        composeRule.onNodeWithText(Tengwar.transcribe("Warden of the Mark", TengwarMode.ENGLISH), substring = true)
+            .assertExists()
     }
 
     @Test fun languageButtonSwitchesBetweenSpanishAndEnglish() {

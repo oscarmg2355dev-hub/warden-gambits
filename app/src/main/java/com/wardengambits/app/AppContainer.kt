@@ -18,6 +18,7 @@ import com.wardengambits.app.data.SaveRepository
 import com.wardengambits.app.data.SettingsRepository
 import com.wardengambits.app.i18n.AppLanguage
 import com.wardengambits.app.i18n.AppScript
+import com.wardengambits.engine.model.Difficulty
 import com.wardengambits.engine.rules.CombatEngine
 import com.wardengambits.engine.story.StoryEngine
 import com.wardengambits.engine.story.content.StoryContent
@@ -35,7 +36,9 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import java.util.Locale
 import java.util.concurrent.ConcurrentHashMap
@@ -63,6 +66,7 @@ class AppContainer(
     narrationPlayer: (Context) -> NarrationPlayer = ::AndroidNarrationPlayer,
     private val storyLoadDispatcher: CoroutineDispatcher = Dispatchers.Default,
     private val storyLoader: StoryLoader = translatedStory,
+    dataStore: DataStore<Preferences> = context.applicationContext.saveDataStore,
 ) {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
 
@@ -88,8 +92,8 @@ class AppContainer(
     val storyTexts: StateFlow<StoryEngine> = _storyTexts.asStateFlow()
 
     val combatEngine: CombatEngine = CombatEngine()
-    val saveRepository = SaveRepository(context.applicationContext.saveDataStore, storyEngine)
-    val settingsRepository = SettingsRepository(context.applicationContext.saveDataStore)
+    val saveRepository = SaveRepository(dataStore, storyEngine)
+    val settingsRepository = SettingsRepository(dataStore)
     val session = GameSession(storyEngine, saveRepository, scope, clock)
 
     /** Plays nothing while the "Efectos" option is off. */
@@ -125,7 +129,12 @@ class AppContainer(
     val tutorialDismissed: StateFlow<Boolean?> =
         settingsRepository.tutorialDismissed.stateIn<Boolean?>(scope, SharingStarted.Eagerly, null)
 
+    /** Chosen difficulty; null until it is resolved from the store (see [resolveDifficulty]). */
+    private val _difficulty = MutableStateFlow<Difficulty?>(null)
+    val difficulty: StateFlow<Difficulty?> = _difficulty.asStateFlow()
+
     init {
+        scope.launch { resolveDifficulty() }
         scope.launch { sfxEnabled.collect(soundPlayer::setEnabled) }
         // Preload every translation in the background, so switching language (or starting in English) is instant.
         AppLanguage.entries.filter { it != AppLanguage.ES }.forEach(::loadStory)
@@ -159,6 +168,24 @@ class AppContainer(
 
     private fun loadStory(language: AppLanguage): Deferred<StoryEngine> = storyLoads.getOrPut(language) {
         scope.async(storyLoadDispatcher) { storyLoader.load(language, content).also { loadedStories[language] = it } }
+    }
+
+    /** First run with this setting: Eye (the old difficulty) when a save exists, Ranger otherwise; written to the store. */
+    private suspend fun resolveDifficulty() {
+        // Held in memory even when the store cannot be read or written, so the story never stays blank.
+        var stored = settingsRepository.difficulty.first()
+        val default = if (stored == null && saveRepository.hasSave()) Difficulty.EYE else Difficulty.RANGER
+        if (stored == null) {
+            // Atomic inside the edit: a choice made in Options meanwhile is never overwritten.
+            settingsRepository.ensureDifficulty(default)
+            stored = settingsRepository.difficulty.first()
+        }
+        _difficulty.update { it ?: stored ?: default }
+    }
+
+    fun setDifficulty(d: Difficulty) {
+        _difficulty.value = d
+        scope.launch { settingsRepository.setDifficulty(d) }
     }
 
     fun markTutorialDone(id: String) {

@@ -1,7 +1,10 @@
 package com.wardengambits.sim
 
 import com.wardengambits.engine.combo.ComboTuning
+import com.wardengambits.engine.model.CombatSetup
+import com.wardengambits.engine.model.Difficulty
 import com.wardengambits.engine.model.Outcome
+import com.wardengambits.engine.model.RivalScaling
 import com.wardengambits.engine.random.SeededRandom
 import com.wardengambits.engine.rules.CombatEngine
 import com.wardengambits.engine.story.ExpectedLevels
@@ -60,9 +63,17 @@ data class AdventureStats(
 )
 
 
-class Simulator(private val content: StoryContent, private val engine: CombatEngine = CombatEngine()) {
+class Simulator(
+    private val content: StoryContent,
+    private val engine: CombatEngine = CombatEngine(),
+    private val difficulty: Difficulty = Difficulty.EYE,
+) {
     private val story = StoryEngine(content)
     private val levels = ExpectedLevels(content)
+
+    /** The combat setup of [profile] with the rival attack of [difficulty], exactly as the game applies it. */
+    internal fun combatSetup(profile: StoryProfile): CombatSetup =
+        requireNotNull(story.combatSetupFor(profile)).copy(rivalAttackPct = difficulty.rivalAttackPct)
 
     fun encounterNodes(): List<NodeId> = Route.treeZones.flatMap { TreeShape.nodesOf(it.id) }.filter(levels::hasEncounter)
 
@@ -70,7 +81,7 @@ class Simulator(private val content: StoryContent, private val engine: CombatEng
     fun simulateEncounter(node: NodeId, skill: Skill, fights: Int = FIGHTS_PER_ENCOUNTER, levelDelta: Int = 0): EncounterRow {
         val level = maxOf(1, levels.expectedLevel(node) + levelDelta)
         val profile = StoryProfile(RunState(level, 1, 1, level - 1, node, listOf(node), Phase.COMBAT_PENDING), emptyList())
-        val setup = requireNotNull(story.combatSetupFor(profile))
+        val setup = combatSetup(profile)
         val results = (0 until fights).map { i ->
             FightRunner.fight(setup, skill, seed = node.key.hashCode().toLong() * 1_000_003L + skill.ordinal * 100_000L + i, engine = engine)
         }
@@ -115,7 +126,7 @@ class Simulator(private val content: StoryContent, private val engine: CombatEng
                     profile = story.reduce(profile, action).profile
                 }
                 Phase.COMBAT_PENDING -> {
-                    val setup = requireNotNull(story.combatSetupFor(profile))
+                    val setup = combatSetup(profile)
                     val fightSeed = rng.nextInt(Int.MAX_VALUE).toLong() shl 16 or rng.nextInt(65_536).toLong()
                     val result = FightRunner.fight(setup, skill, fightSeed, engine)
                     if (result.capped) capped++
@@ -184,6 +195,15 @@ internal fun Double.f0() = String.format(Locale.ROOT, "%.0f", this)
 
 private fun csv(s: String) = if (s.contains(',') || s.contains('"')) "\"" + s.replace("\"", "\"\"") + "\"" else s
 
+/** Value of `--difficulty <ID>` (case-insensitive), or null when absent; fails on an unknown id. */
+fun parseDifficulty(args: List<String>): Difficulty? {
+    val at = args.indexOf("--difficulty")
+    if (at < 0) return null
+    val id = args.getOrNull(at + 1) ?: error("--difficulty needs one of ${Difficulty.entries.joinToString()}")
+    return Difficulty.entries.firstOrNull { it.name.equals(id, ignoreCase = true) }
+        ?: error("Unknown difficulty '$id'; use ${Difficulty.entries.joinToString()}")
+}
+
 fun main(args: Array<String>) {
     if (args.firstOrNull() == "sweep") {
         when (args.getOrNull(1)) {
@@ -198,11 +218,17 @@ fun main(args: Array<String>) {
     val fixedRoll = "--fixed-roll" in args
     // --no-reactions: rivals without their HP reaction (the game before the rival-healing spec) for before/after runs.
     val noReactions = "--no-reactions" in args
-    val rest = args.filter { it != "--fixed-roll" && it != "--no-reactions" }
+    // --difficulty <ID>: rival attack of that difficulty (SHIRE 50 %, RANGER 60 %, MARK 75 %, EYE 100 %).
+    val difficulty = parseDifficulty(args.toList())
+    val flagArgs = args.toMutableList()
+    flagArgs.indexOf("--difficulty").takeIf { it >= 0 }?.let { flagArgs.subList(it, minOf(it + 2, flagArgs.size)).clear() }
+    val rest = flagArgs.filter { it != "--fixed-roll" && it != "--no-reactions" }
     val outDir = File(rest.firstOrNull() ?: "build/reports").apply { mkdirs() }
     val loaded = StoryContentLoader.loadFromResources()
     val content = if (noReactions) withoutReactions(loaded) else loaded
-    val sim = Simulator(content, if (fixedRoll) CombatEngine(tuning = ComboTuning.FIXED) else CombatEngine())
+    val tuning = if (fixedRoll) ComboTuning.FIXED else ComboTuning.DEFAULT
+    val sim = Simulator(content, CombatEngine(tuning = tuning), difficulty ?: Difficulty.EYE)
+    if (difficulty != null) println("Dificultad: ${difficulty.name}")
     if (fixedRoll) println("Tirada fija (ComboTuning.FIXED)")
     if (noReactions) println("Rivales sin reacciones por vida")
     val pool = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors())

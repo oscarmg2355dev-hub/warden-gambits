@@ -11,6 +11,7 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.core.stringSetPreferencesKey
 import com.wardengambits.app.i18n.AppLanguage
 import com.wardengambits.app.i18n.AppScript
+import com.wardengambits.engine.model.Difficulty
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.map
@@ -46,6 +47,16 @@ class SettingsRepository(
 
     /** True once the player skipped the tutorial card of a new game. */
     val tutorialDismissed: Flow<Boolean> = prefs.map { it[TUTORIAL_DISMISSED] ?: false }
+
+    /** Chosen difficulty; null while the key does not exist (the container resolves and writes the default). */
+    val difficulty: Flow<Difficulty?> = prefs.map { p -> Difficulty.entries.firstOrNull { it.name == p[DIFFICULTY] } }
+
+    suspend fun setDifficulty(d: Difficulty) = edit("difficulty") { it[DIFFICULTY] = d.name }
+
+    /** Writes [default] in one atomic edit, only if no valid difficulty is stored yet (a choice made meanwhile wins). */
+    suspend fun ensureDifficulty(default: Difficulty) = edit("difficulty") {
+        if (Difficulty.entries.none { d -> d.name == it[DIFFICULTY] }) it[DIFFICULTY] = default.name
+    }
 
     suspend fun markTutorialDone(id: String) = edit("tutorial") { it[TUTORIAL_DONE] = (it[TUTORIAL_DONE] ?: emptySet()) + id }
 
@@ -86,6 +97,7 @@ class SettingsRepository(
         val LEGACY_SOUND_ENABLED = booleanPreferencesKey("sound_enabled")
         val LANGUAGE = stringPreferencesKey("language")
         val SCRIPT = stringPreferencesKey("script")
+        val DIFFICULTY = stringPreferencesKey("difficulty")
         val TUTORIAL_DONE = stringSetPreferencesKey("tutorial_done")
         val TUTORIAL_DISMISSED = booleanPreferencesKey("tutorial_dismissed")
     }

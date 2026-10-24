@@ -1,5 +1,6 @@
 package com.wardengambits.engine.story
 
+import com.wardengambits.engine.model.Difficulty
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -16,6 +17,8 @@ data class RunState(
     val phase: Phase,
     /** Combat defeats in this lap; each one sent the Warden back to the previous node. */
     val deaths: Int = 0,
+    /** The easiest difficulty used for any combat fought in this lap (won or lost); null when none was reported (old saves). */
+    val easiestDifficulty: Difficulty? = null,
 )
 
 @Serializable
@@ -30,6 +33,8 @@ data class RunRecord(
     val result: RunResult,
     val finishedAtMillis: Long,
     val deaths: Int = 0,
+    /** The easiest difficulty of the lap; null for laps recorded before difficulties existed. */
+    val difficulty: Difficulty? = null,
 )
 
 /** [DEFEATED] is only found in old saves: since 2026-10-13 a defeat no longer ends the run. */

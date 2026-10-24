@@ -11,6 +11,15 @@
     <string name="options_narration">Narración</string>
     <string name="options_toggle_on">%1$s: sí</string>
     <string name="options_toggle_off">%1$s: no</string>
+    <string name="options_difficulty">Dificultad</string>
+    <string name="difficulty_shire_name">Paseo por la Comarca</string>
+    <string name="difficulty_shire_hint">Los rivales hacen la mitad de daño</string>
+    <string name="difficulty_ranger_name">Senda del Montaraz</string>
+    <string name="difficulty_ranger_hint" formatted="false">Los rivales hacen un 40 % menos de daño</string>
+    <string name="difficulty_mark_name">Guardián de la Marca</string>
+    <string name="difficulty_mark_hint" formatted="false">Los rivales hacen un 25 % menos de daño</string>
+    <string name="difficulty_eye_name">El Ojo de Sauron</string>
+    <string name="difficulty_eye_hint">El reto tal como fue forjado</string>
     <string name="menu_options">Opciones</string>
     <string name="options_language">Idioma: %1$s</string>
     <string name="options_script">Escritura: %1$s</string>
@@ -167,6 +176,7 @@ Solo puede estar activo un multiplicador y un escudo a la vez.</string>
     <string name="portrait_description">Retrato</string>
     <string name="history_empty">Aún no has completado ninguna vuelta</string>
     <string name="history_head">Vuelta %1$d — %2$s</string>
+    <string name="history_difficulty">Dificultad: %1$s</string>
     <string name="history_detail">%1$s · Nivel %2$d · %3$s · %4$s</string>
     <plurals name="victories">
         <item quantity="one">%d victoria</item>

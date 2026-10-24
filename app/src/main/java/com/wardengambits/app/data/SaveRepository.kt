@@ -32,6 +32,13 @@ class SaveRepository(
         return profile
     }
 
+    /** Whether a save has been written (a corrupt one still counts: the player had played). */
+    suspend fun hasSave(): Boolean = try {
+        dataStore.data.first()[KEY] != null
+    } catch (e: IOException) {
+        false
+    }
+
     suspend fun save(profile: StoryProfile) {
         try {
             try {

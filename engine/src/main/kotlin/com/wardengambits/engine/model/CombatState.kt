@@ -24,11 +24,13 @@ data class RivalSpec(
 /**
  * [hpFloorPct], when set, keeps every fighter's HP at or above that percent of its max HP (never below 1): nobody
  * can be defeated (used by the combat tutorial). Null (the default) is a normal combat.
+ * [rivalAttackPct] scales every rival's attack on top of its [RivalScaling] (see [Difficulty]); 100 changes nothing.
  */
 data class CombatSetup(
     val player: FighterSpec,
     val rivals: List<RivalSpec>,
     val hpFloorPct: Int? = null,
+    val rivalAttackPct: Int = 100,
 ) {
     init {
         require(rivals.size in 1..4) { "A combat needs 1 to 4 rivals, got ${rivals.size}" }

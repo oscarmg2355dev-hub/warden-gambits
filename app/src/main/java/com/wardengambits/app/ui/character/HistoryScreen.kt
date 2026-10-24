@@ -28,6 +28,7 @@ import com.wardengambits.app.R
 import com.wardengambits.app.i18n.trText
 import com.wardengambits.app.i18n.trTextResource
 import com.wardengambits.app.ui.common.ScreenHeader
+import com.wardengambits.app.ui.common.nameRes
 import com.wardengambits.app.ui.theme.UncialFamily
 import com.wardengambits.app.ui.theme.WardenColors
 import com.wardengambits.engine.story.RunResult
@@ -82,6 +83,13 @@ private fun HistoryEntry(row: HistoryRowUi) {
                 modifier = Modifier.padding(top = 4.dp),
                 style = AlmendraBody.copy(fontSize = 16.sp),
             )
+            row.difficulty?.let { d ->
+                Text(
+                    trText(stringResource(R.string.history_difficulty, stringResource(d.nameRes()))),
+                    modifier = Modifier.padding(top = 2.dp),
+                    style = AlmendraBody.copy(fontSize = 16.sp),
+                )
+            }
             Text(
                 trText(row.date),
                 modifier = Modifier.padding(top = 2.dp),

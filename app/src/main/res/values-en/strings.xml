@@ -11,6 +11,15 @@
     <string name="options_narration">Narration</string>
     <string name="options_toggle_on">%1$s: on</string>
     <string name="options_toggle_off">%1$s: off</string>
+    <string name="options_difficulty">Difficulty</string>
+    <string name="difficulty_shire_name">A Stroll in the Shire</string>
+    <string name="difficulty_shire_hint">Rivals deal half damage</string>
+    <string name="difficulty_ranger_name">Ranger\'s Path</string>
+    <string name="difficulty_ranger_hint" formatted="false">Rivals deal 40% less damage</string>
+    <string name="difficulty_mark_name">Warden of the Mark</string>
+    <string name="difficulty_mark_hint" formatted="false">Rivals deal 25% less damage</string>
+    <string name="difficulty_eye_name">The Eye of Sauron</string>
+    <string name="difficulty_eye_hint">The challenge as it was forged</string>
     <string name="menu_options">Options</string>
     <string name="options_language">Language: %1$s</string>
     <string name="options_script">Script: %1$s</string>
@@ -167,6 +176,7 @@ Only one multiplier and one shield can be active at a time.</string>
     <string name="portrait_description">Portrait</string>
     <string name="history_empty">You have not completed a lap yet</string>
     <string name="history_head">Lap %1$d — %2$s</string>
+    <string name="history_difficulty">Difficulty: %1$s</string>
     <string name="history_detail">%1$s · Level %2$d · %3$s · %4$s</string>
     <plurals name="victories">
         <item quantity="one">%d victory</item>

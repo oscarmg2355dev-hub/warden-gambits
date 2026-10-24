@@ -134,12 +134,15 @@ fun WardenNavHost(
         composable(Routes.OPTIONS) {
             val musicEnabled by container.musicEnabled.collectAsStateWithLifecycle()
             val sfxEnabled by container.sfxEnabled.collectAsStateWithLifecycle()
+            val difficulty by container.difficulty.collectAsStateWithLifecycle()
             OptionsScreen(
                 musicEnabled = musicEnabled,
                 sfxEnabled = sfxEnabled,
                 narrationEnabled = narrationSetting ?: true,
                 language = LocalAppLanguage.current,
                 script = LocalScript.current,
+                difficulty = difficulty,
+                onSelectDifficulty = container::setDifficulty,
                 onToggleMusic = container::toggleMusic,
                 onToggleSfx = container::toggleSfx,
                 onToggleNarration = container::toggleNarration,
@@ -233,23 +236,27 @@ fun WardenNavHost(
             }
         }
         composable(Routes.COMBAT) {
-            val vm: CombatViewModel = viewModel(
-                factory = viewModelFactory {
-                    initializer {
-                        CombatViewModel(
-                            StoryCombatSource(container.session, container.storyEngine),
-                            container.storyTexts,
-                            container.combatEngine,
-                            container.clock,
-                        )
-                    }
-                },
-            )
-            CombatRoute(
-                viewModel = vm,
-                soundPlayer = container.soundPlayer,
-                onBackToNode = { navController.safeBack() },
-            )
+            // The difficulty resolves in a moment on the first run; the fight never starts before it is known.
+            val difficulty by container.difficulty.collectAsStateWithLifecycle()
+            difficulty?.let { chosen ->
+                val vm: CombatViewModel = viewModel(
+                    factory = viewModelFactory {
+                        initializer {
+                            CombatViewModel(
+                                StoryCombatSource(container.session, container.storyEngine, chosen),
+                                container.storyTexts,
+                                container.combatEngine,
+                                container.clock,
+                            )
+                        }
+                    },
+                )
+                CombatRoute(
+                    viewModel = vm,
+                    soundPlayer = container.soundPlayer,
+                    onBackToNode = { navController.safeBack() },
+                )
+            }
         }
         composable(Routes.PRACTICE) {
             val vm: PracticeViewModel = viewModel(
@@ -276,23 +283,26 @@ fun WardenNavHost(
                 entry.arguments?.getInt("level") ?: 1,
                 entry.arguments?.getInt("index") ?: 0,
             )
-            val vm: CombatViewModel = viewModel(
-                factory = viewModelFactory {
-                    initializer {
-                        CombatViewModel(
-                            PracticeCombatSource(node, container.storyEngine),
-                            container.storyTexts,
-                            container.combatEngine,
-                            container.clock,
-                        )
-                    }
-                },
-            )
-            CombatRoute(
-                viewModel = vm,
-                soundPlayer = container.soundPlayer,
-                onBackToNode = { navController.safeBack() },
-            )
+            val difficulty by container.difficulty.collectAsStateWithLifecycle()
+            difficulty?.let { chosen ->
+                val vm: CombatViewModel = viewModel(
+                    factory = viewModelFactory {
+                        initializer {
+                            CombatViewModel(
+                                PracticeCombatSource(node, container.storyEngine, chosen),
+                                container.storyTexts,
+                                container.combatEngine,
+                                container.clock,
+                            )
+                        }
+                    },
+                )
+                CombatRoute(
+                    viewModel = vm,
+                    soundPlayer = container.soundPlayer,
+                    onBackToNode = { navController.safeBack() },
+                )
+            }
         }
         composable(Routes.TUTORIAL) {
             val vm: TutorialViewModel = viewModel(

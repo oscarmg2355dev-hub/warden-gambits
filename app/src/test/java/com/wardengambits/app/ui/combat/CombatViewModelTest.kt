@@ -10,6 +10,7 @@ import com.wardengambits.engine.combo.Combos
 import com.wardengambits.engine.combo.Input
 import com.wardengambits.engine.event.CombatEvent
 import com.wardengambits.engine.event.RejectReason
+import com.wardengambits.engine.model.Difficulty
 import com.wardengambits.engine.model.FighterId
 import com.wardengambits.engine.model.Outcome
 import com.wardengambits.engine.model.PLAYER_ID
@@ -81,7 +82,7 @@ class CombatViewModelTest {
     }
 
     private fun vm(session: GameSession, clock: () -> Long = { 1234L }) =
-        CombatViewModel(StoryCombatSource(session, engine), MutableStateFlow(engine), CombatEngine(), clock)
+        CombatViewModel(StoryCombatSource(session, engine, Difficulty.EYE), MutableStateFlow(engine), CombatEngine(), clock)
 
     private fun TestScope.tick(n: Int = 1) {
         advanceTimeBy(1000L * n)
@@ -203,7 +204,7 @@ class CombatViewModelTest {
     }
 
     @Test fun inputsDisabledWhileDazedAndBackAfterItExpires() = runTest {
-        val vm = CombatViewModel(StoryCombatSource(session(bossNode(), 10), engine), MutableStateFlow(engine), CombatEngine(tuning = ComboTuning.FIXED) { OneDazeRandom() }, { 1234L })
+        val vm = CombatViewModel(StoryCombatSource(session(bossNode(), 10), engine, Difficulty.EYE), MutableStateFlow(engine), CombatEngine(tuning = ComboTuning.FIXED) { OneDazeRandom() }, { 1234L })
         vm.setActive(true)
         assertTrue(vm.state.value.inputsEnabled)
         var guard = 0
@@ -230,7 +231,7 @@ class CombatViewModelTest {
     }
 
     @Test fun dazedTicksLeftCountsDownTheActiveDaze() = runTest {
-        val vm = CombatViewModel(StoryCombatSource(session(bossNode(), 10), engine), MutableStateFlow(engine), CombatEngine(tuning = ComboTuning.FIXED) { OneDazeRandom() }, { 1234L })
+        val vm = CombatViewModel(StoryCombatSource(session(bossNode(), 10), engine, Difficulty.EYE), MutableStateFlow(engine), CombatEngine(tuning = ComboTuning.FIXED) { OneDazeRandom() }, { 1234L })
         vm.setActive(true)
         assertEquals(0, vm.state.value.player.dazedTicksLeft)
         var guard = 0
@@ -251,7 +252,7 @@ class CombatViewModelTest {
     }
 
     @Test fun pendingDazeCountsDownWithoutGap() = runTest {
-        val vm = CombatViewModel(StoryCombatSource(session(bossNode(), 10), engine), MutableStateFlow(engine), CombatEngine(tuning = ComboTuning.FIXED) { OneDazeRandom() }, { 1234L })
+        val vm = CombatViewModel(StoryCombatSource(session(bossNode(), 10), engine, Difficulty.EYE), MutableStateFlow(engine), CombatEngine(tuning = ComboTuning.FIXED) { OneDazeRandom() }, { 1234L })
         vm.setActive(true)
         var guard = 0
         while ("DZ" !in vm.state.value.player.badges.map { it.code } && guard++ < 40) tick()
@@ -336,7 +337,7 @@ class CombatViewModelTest {
             override fun nextInt(bound: Int) = 0
             override val state = 0L
         }
-        val vm = CombatViewModel(StoryCombatSource(session(weakNode, 3), engine), MutableStateFlow(engine), CombatEngine { alwaysZero }, { 1234L })
+        val vm = CombatViewModel(StoryCombatSource(session(weakNode, 3), engine, Difficulty.EYE), MutableStateFlow(engine), CombatEngine { alwaysZero }, { 1234L })
         vm.setActive(true)
         vm.press(Input.FIST)
         vm.press(Input.SPEAR)
@@ -352,7 +353,7 @@ class CombatViewModelTest {
         val s = session(weakNode, 3)
         fun firstTickSeed(now: Long): Long {
             val seeds = mutableListOf<Long>()
-            val vm = CombatViewModel(StoryCombatSource(s, engine), MutableStateFlow(engine), CombatEngine { seed -> seeds += seed; SeededRandom(seed) }, { now })
+            val vm = CombatViewModel(StoryCombatSource(s, engine, Difficulty.EYE), MutableStateFlow(engine), CombatEngine { seed -> seeds += seed; SeededRandom(seed) }, { now })
             vm.setActive(true)
             tick()
             vm.setActive(false)
@@ -366,7 +367,7 @@ class CombatViewModelTest {
         val english = StoryEngine(StoryContentLoader.loadFromResources(language = "en"))
         val s = session(pairNode, 3)
         val story = MutableStateFlow(engine)
-        val vm = CombatViewModel(StoryCombatSource(s, engine), story, CombatEngine(), { 1234L })
+        val vm = CombatViewModel(StoryCombatSource(s, engine, Difficulty.EYE), story, CombatEngine(), { 1234L })
         val spanishNames = engine.combatSetupFor(s.profile.value)!!.rivals.map { it.name }
         assertEquals(spanishNames, vm.state.value.rivals.map { it.name })
         vm.setActive(true)
