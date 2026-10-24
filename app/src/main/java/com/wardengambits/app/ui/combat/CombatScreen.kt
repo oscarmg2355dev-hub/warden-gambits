@@ -50,6 +50,7 @@ import com.wardengambits.app.i18n.trTextResource
 import com.wardengambits.app.ui.common.ComboKeys
 import com.wardengambits.app.ui.common.DisabledAlpha
 import com.wardengambits.app.ui.theme.WardenColors
+import com.wardengambits.app.ui.tutorial.TutorialPanel
 import com.wardengambits.engine.combo.Input
 import com.wardengambits.engine.model.FighterId
 import com.wardengambits.engine.model.Outcome
@@ -81,10 +82,14 @@ fun CombatScreen(
     running: Boolean = !state.paused,
     isPractice: Boolean = false,
     onRetry: () -> Unit = {},
+    onUnderstood: () -> Unit = {},
+    onNextLesson: (String) -> Unit = {},
 ) {
     var confirmAbandon by remember { mutableStateOf(false) }
     var pausedByDialog by remember { mutableStateOf(false) }
-    val finished = state.outcome != null
+    val tutorial = state.tutorial
+    // A lesson never ends by death: it is over once its last step is cast.
+    val finished = state.outcome != null || tutorial?.completed == true
 
     fun openAbandonDialog() {
         confirmAbandon = true
@@ -116,11 +121,16 @@ fun CombatScreen(
                 Header(state, onTogglePause)
                 RivalGrid(state.rivals, floatingNumbers, numbersClock, running, onSelectTarget, Modifier.weight(4f).fillMaxWidth())
                 PlayerSlot(state.player, floatingNumbers, numbersClock, running, message, Modifier.weight(2f).fillMaxWidth())
+                if (tutorial != null && !tutorial.completed) TutorialPanel(tutorial, onUnderstood)
                 ComboRow(state, onClear)
                 ActionButtons(onPress, onExecute, state.inputsEnabled, ready = state.bufferMatch != null, running = running && !finished)
             }
-            if (state.paused && !finished) PausedOverlay(onTogglePause)
-            state.outcome?.let { ResultOverlay(state, it, isPractice, onRetry, onFinish) }
+            if (state.paused && !finished && tutorial?.reading != true) PausedOverlay(onTogglePause)
+            if (tutorial?.completed == true) {
+                TutorialResult(tutorial.nextLessonId, onNextLesson, onFinish)
+            } else {
+                state.outcome?.let { ResultOverlay(state, it, isPractice, onRetry, onFinish) }
+            }
         }
     }
 
@@ -131,7 +141,11 @@ fun CombatScreen(
             text = {
                 Text(
                     trTextResource(
-                        if (isPractice) R.string.combat_practice_abandon_message else R.string.combat_abandon_message,
+                        when {
+                            tutorial != null -> R.string.tutorial_abandon_message
+                            isPractice -> R.string.combat_practice_abandon_message
+                            else -> R.string.combat_abandon_message
+                        },
                     ),
                 )
             },
@@ -164,7 +178,12 @@ private fun Header(state: CombatUiState, onTogglePause: () -> Unit) {
             fontSize = 13.sp,
             maxLines = 1,
         )
-        TextButton(onClick = onTogglePause, enabled = state.outcome == null, modifier = Modifier.testTag("btn_pause")) {
+        val tutorial = state.tutorial
+        TextButton(
+            onClick = onTogglePause,
+            enabled = state.outcome == null && tutorial?.reading != true && tutorial?.completed != true,
+            modifier = Modifier.testTag("btn_pause"),
+        ) {
             Text(trTextResource(R.string.combat_pause))
         }
     }
@@ -319,6 +338,34 @@ private fun PausedOverlay(onTogglePause: () -> Unit) {
             )
             Button(onClick = onTogglePause, modifier = Modifier.heightIn(min = ButtonHeight)) {
                 Text(trTextResource(R.string.combat_resume))
+            }
+        }
+    }
+}
+
+/** End of a tutorial lesson: «Siguiente lección» (or «¡Listo para Bree!» after the last one) and «Volver al mapa». */
+@Composable
+private fun TutorialResult(nextLessonId: String?, onNextLesson: (String) -> Unit, onBackToMap: () -> Unit) {
+    Overlay(ResultScrim) {
+        Column(
+            Modifier.padding(24.dp).testTag("tutorial_result"),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(16.dp),
+        ) {
+            Text(
+                trTextResource(R.string.tutorial_completed),
+                style = MaterialTheme.typography.headlineSmall,
+                color = WardenColors.Primary,
+            )
+            if (nextLessonId != null) {
+                Button(onClick = { onNextLesson(nextLessonId) }, modifier = Modifier.heightIn(min = ButtonHeight)) {
+                    Text(trTextResource(R.string.tutorial_next))
+                }
+            } else {
+                Text(trTextResource(R.string.tutorial_ready), style = MaterialTheme.typography.titleMedium, color = WardenColors.Text)
+            }
+            Button(onClick = onBackToMap, modifier = Modifier.heightIn(min = ButtonHeight)) {
+                Text(trTextResource(R.string.tutorial_back_to_map))
             }
         }
     }

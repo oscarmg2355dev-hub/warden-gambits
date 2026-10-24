@@ -21,7 +21,15 @@ data class RivalSpec(
     val modes: BossModes? get() = (brain as? PatternBrain)?.modes
 }
 
-data class CombatSetup(val player: FighterSpec, val rivals: List<RivalSpec>) {
+/**
+ * [hpFloorPct], when set, keeps every fighter's HP at or above that percent of its max HP (never below 1): nobody
+ * can be defeated (used by the combat tutorial). Null (the default) is a normal combat.
+ */
+data class CombatSetup(
+    val player: FighterSpec,
+    val rivals: List<RivalSpec>,
+    val hpFloorPct: Int? = null,
+) {
     init {
         require(rivals.size in 1..4) { "A combat needs 1 to 4 rivals, got ${rivals.size}" }
     }

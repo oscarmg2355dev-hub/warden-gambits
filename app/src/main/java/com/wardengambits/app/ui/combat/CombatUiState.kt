@@ -50,4 +50,27 @@ data class CombatUiState(
     val winsBefore: Int,
     /** False while paused, over, or the Warden is Dazed: combat keys are disabled. */
     val inputsEnabled: Boolean = true,
+    /** The guided lesson of a tutorial fight; null in story and practice fights. */
+    val tutorial: TutorialUi? = null,
+)
+
+/** State of a guided tutorial lesson: its texts are looked up by [lessonId] and [step] (`TutorialTexts`). */
+data class TutorialUi(
+    val lessonId: String,
+    /** Index of the current step; equals [stepCount] once completed. */
+    val step: Int,
+    val stepCount: Int,
+    /** Combo the player must cast now; null once completed. */
+    val requested: String?,
+    /** True while a new text waits for «Entendido»: the fight is paused. */
+    val reading: Boolean,
+    /** True until the intro has been read (it is shown above the first step). */
+    val showIntro: Boolean,
+    /** True after a wrong combo in the current step. */
+    val hint: Boolean = false,
+    /** Steps passed so far; each change flashes a ✔. */
+    val passed: Int = 0,
+    val completed: Boolean = false,
+    /** Lesson offered by «Siguiente lección»; null after the last one. */
+    val nextLessonId: String? = null,
 )

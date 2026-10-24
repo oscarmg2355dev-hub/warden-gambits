@@ -46,9 +46,10 @@ class CombatSound(private val player: SoundPlayer, private val playerId: Fighter
         soundFor(event, playerId)?.let(player::playSfx)
     }
 
-    fun update(active: Boolean, paused: Boolean, outcome: Outcome?) {
+    /** [ended]: the fight is over without an [outcome] (a completed tutorial lesson). */
+    fun update(active: Boolean, paused: Boolean, outcome: Outcome?, ended: Boolean = false) {
         val next = when {
-            outcome != null -> Ambient.STOPPED
+            outcome != null || ended -> Ambient.STOPPED
             active && !paused -> Ambient.PLAYING
             ambient == Ambient.STOPPED -> Ambient.STOPPED
             else -> Ambient.PAUSED

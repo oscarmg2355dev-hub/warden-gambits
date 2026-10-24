@@ -28,3 +28,20 @@ backups/
 
 # Ads
 admob.properties
+
+# Python
+__pycache__/
+
+# Narration recordings (local) and converter state
+docs/content/narration/**/*.wav
+docs/content/narration/**/*.mp3
+docs/content/narration/**/*.ogg
+docs/content/narration/**/*.flac
+docs/content/narration/**/*.m4a
+docs/content/narration/.converted.json
+
+# Local Python virtual environments
+.venv*/
+
+# Local TTS venvs (tools/narration/tts_generate.py)
+tools/narration/.venv-*/

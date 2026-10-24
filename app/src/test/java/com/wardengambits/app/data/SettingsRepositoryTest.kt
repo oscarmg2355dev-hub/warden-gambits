@@ -1,5 +1,6 @@
 package com.wardengambits.app.data
 
+import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import com.wardengambits.app.InMemoryPreferencesDataStore
@@ -17,23 +18,35 @@ class SettingsRepositoryTest {
     private val store = InMemoryPreferencesDataStore()
     private val repo = SettingsRepository(store, deviceLanguage = { AppLanguage.ES })
 
-    @Test fun soundIsEnabledByDefault() = runTest {
-        assertTrue(repo.soundEnabled.first())
+    @Test fun musicSfxAndNarrationAreEnabledByDefault() = runTest {
+        assertTrue(repo.musicEnabled.first())
+        assertTrue(repo.sfxEnabled.first())
+        assertTrue(repo.narrationEnabled.first())
     }
 
-    @Test fun soundSettingIsSavedAndLoaded() = runTest {
-        repo.setSoundEnabled(false)
-        assertFalse(SettingsRepository(store).soundEnabled.first())
-        repo.setSoundEnabled(true)
-        assertTrue(SettingsRepository(store).soundEnabled.first())
+    @Test fun legacySoundSettingMigratesToEffectsOnly() = runTest {
+        store.edit { it[booleanPreferencesKey("sound_enabled")] = false }
+        assertFalse(repo.sfxEnabled.first())
+        assertTrue(repo.musicEnabled.first())
+        assertTrue(repo.narrationEnabled.first())
+        repo.toggleSfx()
+        assertTrue(repo.sfxEnabled.first())
     }
 
-    @Test fun twoQuickTogglesReturnToTheOriginalValue() = runTest {
-        repo.toggleSound()
-        repo.toggleSound()
-        assertTrue(repo.soundEnabled.first())
-        repo.toggleSound()
-        assertFalse(repo.soundEnabled.first())
+    @Test fun eachToggleFlipsAndIsSaved() = runTest {
+        repo.toggleMusic()
+        assertFalse(SettingsRepository(store).musicEnabled.first())
+        assertTrue(SettingsRepository(store).sfxEnabled.first())
+        repo.toggleSfx()
+        assertFalse(SettingsRepository(store).sfxEnabled.first())
+        repo.toggleNarration()
+        assertFalse(SettingsRepository(store).narrationEnabled.first())
+        repo.toggleMusic()
+        repo.toggleSfx()
+        repo.toggleNarration()
+        assertTrue(repo.musicEnabled.first())
+        assertTrue(repo.sfxEnabled.first())
+        assertTrue(repo.narrationEnabled.first())
     }
 
     @Test fun languageDefaultsToTheDeviceLanguageAndScriptToLatin() = runTest {
@@ -72,10 +85,30 @@ class SettingsRepositoryTest {
         assertEquals(AppScript.LATIN, repo.script.first())
     }
 
-    @Test fun soundSettingUsesItsOwnKeyAndKeepsTheSave() = runTest {
+    @Test fun soundSettingsUseTheirOwnKeysAndKeepTheSave() = runTest {
         val saveKey = stringPreferencesKey("save_json")
         store.edit { it[saveKey] = "{}" }
-        repo.setSoundEnabled(false)
+        repo.toggleSfx()
+        repo.toggleMusic()
+        repo.toggleNarration()
+        assertEquals("{}", store.data.first()[saveKey])
+    }
+
+    @Test fun tutorialProgressStartsEmptyAndNotDismissed() = runTest {
+        assertEquals(emptySet<String>(), repo.tutorialDone.first())
+        assertFalse(repo.tutorialDismissed.first())
+    }
+
+    @Test fun tutorialDoneAndDismissedAreSaved() = runTest {
+        val saveKey = stringPreferencesKey("save_json")
+        store.edit { it[saveKey] = "{}" }
+        repo.markTutorialDone("attack")
+        repo.markTutorialDone("daze")
+        repo.markTutorialDone("attack")
+        repo.dismissTutorial()
+        val reloaded = SettingsRepository(store)
+        assertEquals(setOf("attack", "daze"), reloaded.tutorialDone.first())
+        assertTrue(reloaded.tutorialDismissed.first())
         assertEquals("{}", store.data.first()[saveKey])
     }
 }

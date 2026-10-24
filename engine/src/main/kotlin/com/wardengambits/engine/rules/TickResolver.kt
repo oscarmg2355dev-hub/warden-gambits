@@ -188,7 +188,7 @@ internal object TickResolver {
                     val magnitude = PulseRoll.scale(effect.magnitude, roll)
                     if (effect.kind == EffectKind.COT) magnitude else -DamageFormula.received(magnitude, guard, masterShield)
                 }
-                update(initial.id) { copy(hp = (hp + amounts.sum()).coerceIn(0, stats.maxHp)) }
+                update(initial.id) { withHpClamped(hp + amounts.sum()) }
                 val shown = OverTimeReport.amounts(initial.hp, state.fighter(initial.id).hp, initial.stats.maxHp, amounts)
                 shown.forEachIndexed { index, amount ->
                     val effect = overTime[index]
@@ -217,9 +217,9 @@ internal object TickResolver {
                     )
                     val taken = opponentsOf(initial.id).sumOf { opponent ->
                         val roll = PulseRoll.roll(random, tuning)
-                        val amount = minOf(PulseRoll.scale(pulse.magnitude, roll), opponent.hp)
+                        val amount = minOf(PulseRoll.scale(pulse.magnitude, roll), opponent.hpAboveFloor)
                         if (amount > 0) {
-                            update(opponent.id) { copy(hp = hp - amount) }
+                            update(opponent.id) { damaged(amount) }
                             events += resolved(opponent.id, -amount, roll)
                             defeatIfDead(opponent.id)
                         }

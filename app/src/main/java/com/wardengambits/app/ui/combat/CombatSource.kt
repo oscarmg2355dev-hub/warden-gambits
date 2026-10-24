@@ -10,8 +10,12 @@ import com.wardengambits.engine.story.StoryProfile
 import com.wardengambits.engine.story.TreeShape
 import com.wardengambits.engine.story.ZoneInfo
 import com.wardengambits.engine.story.ZoneProgress
+import com.wardengambits.engine.tutorial.TutorialLesson
+import com.wardengambits.engine.tutorial.TutorialLessons
 
-/** Where a combat comes from: the story's pending fight, or a practice fight that never touches the profile. */
+/**
+ * Where a combat comes from: the story's pending fight, or a practice or tutorial fight that never touches the profile.
+ */
 sealed interface CombatSource {
     /** The fight to run; null when there is nothing to fight. */
     val setup: CombatSetup?
@@ -60,4 +64,43 @@ class PracticeCombatSource(private val node: NodeId, storyEngine: StoryEngine) :
             node.level,
             TreeShape.LEVELS,
         )
+}
+
+/**
+ * A guided tutorial lesson [lessonId] of [lessons] against training dummies: reports nothing to the session, only
+ * [onCompleted] with the lesson id once its last step is cast. [lessonName] and [dummyName] are the texts shown.
+ */
+class TutorialCombatSource(
+    lessonId: String,
+    lessons: List<TutorialLesson>,
+    private val lessonName: String,
+    private val dummyName: String,
+    private val onCompleted: (String) -> Unit,
+) : CombatSource {
+    private val index = lessons.indexOfFirst { it.id == lessonId }
+
+    /** The lesson; null for an unknown id (the screen navigates back). */
+    val lesson: TutorialLesson? = lessons.getOrNull(index)
+
+    /** The lesson after this one in the list, or null after the last. */
+    val nextLessonId: String? = if (index >= 0) lessons.getOrNull(index + 1)?.id else null
+
+    private val lessonCount = lessons.size
+
+    override val setup: CombatSetup? = lesson?.let(TutorialLessons::setup)
+    override val levelBefore: Int get() = setup?.player?.level ?: 1
+    override val winsBefore: Int get() = 0
+
+    override fun rivalNames(engine: StoryEngine): List<String> = lesson?.rivals?.map { dummyName }.orEmpty()
+
+    override fun progress(engine: StoryEngine): ZoneProgress =
+        ZoneProgress(ZoneInfo(TUTORIAL_ZONE_ID, lessonName), index + 1, lessonCount)
+
+    fun complete() {
+        lesson?.let { onCompleted(it.id) }
+    }
+
+    private companion object {
+        const val TUTORIAL_ZONE_ID = "tutorial"
+    }
 }

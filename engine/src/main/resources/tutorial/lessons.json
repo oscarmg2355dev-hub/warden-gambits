@@ -1,0 +1,131 @@
+[
+  {
+    "id": "attack",
+    "steps": [
+      "11",
+      "12",
+      "121",
+      "1212",
+      "12121"
+    ],
+    "rivals": [
+      {
+        "name": "Muñeco de entrenamiento",
+        "portrait": "dummy",
+        "levelOffset": 0,
+        "pattern": [
+          "12"
+        ],
+        "everyNTicks": 6
+      }
+    ]
+  },
+  {
+    "id": "defense",
+    "steps": [
+      "2132",
+      "22",
+      "21",
+      "212",
+      "2121",
+      "21212"
+    ],
+    "rivals": [
+      {
+        "name": "Muñeco de entrenamiento",
+        "portrait": "dummy",
+        "levelOffset": 0,
+        "pattern": [
+          "12",
+          "121"
+        ],
+        "everyNTicks": 3
+      }
+    ]
+  },
+  {
+    "id": "daze",
+    "steps": [
+      "2131",
+      "33",
+      "31",
+      "313",
+      "3131",
+      "31313"
+    ],
+    "rivals": [
+      {
+        "name": "Muñeco de entrenamiento",
+        "portrait": "dummy",
+        "levelOffset": 0,
+        "pattern": [
+          "31",
+          "12"
+        ],
+        "everyNTicks": 3
+      }
+    ]
+  },
+  {
+    "id": "drain",
+    "steps": [
+      "22",
+      "3123",
+      "31232"
+    ],
+    "rivals": [
+      {
+        "name": "Muñeco de entrenamiento",
+        "portrait": "dummy",
+        "levelOffset": 0,
+        "pattern": [
+          "12",
+          "121"
+        ],
+        "everyNTicks": 3
+      },
+      {
+        "name": "Muñeco de entrenamiento",
+        "portrait": "dummy",
+        "levelOffset": 0,
+        "pattern": [
+          "12",
+          "121"
+        ],
+        "everyNTicks": 3
+      },
+      {
+        "name": "Muñeco de entrenamiento",
+        "portrait": "dummy",
+        "levelOffset": 0,
+        "pattern": [
+          "12",
+          "121"
+        ],
+        "everyNTicks": 3
+      }
+    ]
+  },
+  {
+    "id": "finisher",
+    "steps": [
+      "11",
+      "123",
+      "13",
+      "131",
+      "1313",
+      "13131"
+    ],
+    "rivals": [
+      {
+        "name": "Muñeco de entrenamiento",
+        "portrait": "dummy",
+        "levelOffset": 0,
+        "pattern": [
+          "12"
+        ],
+        "everyNTicks": 6
+      }
+    ]
+  }
+]

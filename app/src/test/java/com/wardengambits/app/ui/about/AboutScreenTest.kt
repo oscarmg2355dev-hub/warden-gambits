@@ -8,6 +8,7 @@ import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import com.wardengambits.app.i18n.AppLanguage
 import com.wardengambits.app.i18n.AppScript
 import com.wardengambits.app.i18n.ProvideLanguageAndScript
@@ -75,6 +76,23 @@ class AboutScreenTest {
         composeRule.onNodeWithText("sin relación", substring = true).assertIsDisplayed()
         composeRule.onNodeWithContentDescription("Volver").performClick()
         assertEquals(1, back)
+    }
+
+    @Test fun creditsTheMusicAndTheNarration() {
+        show()
+        composeRule.onNodeWithText("Medieval: The Bard's Tale", substring = true).performScrollTo().assertIsDisplayed()
+        composeRule.onNodeWithText("RandomMind (OpenGameArt.org)", substring = true).performScrollTo().assertIsDisplayed()
+        composeRule.onNodeWithText("CC0 1.0", substring = true).performScrollTo().assertIsDisplayed()
+        composeRule.onNodeWithText("Kokoro-82M (hexgrad)", substring = true).performScrollTo().assertIsDisplayed()
+        composeRule.onNodeWithText("Apache 2.0", substring = true).performScrollTo().assertIsDisplayed()
+    }
+
+    @Test fun creditsTheMusicAndTheNarrationInEnglish() {
+        show(AppLanguage.EN)
+        composeRule.onNodeWithText("Medieval: The Bard's Tale", substring = true).performScrollTo().assertIsDisplayed()
+        composeRule.onNodeWithText("public domain", substring = true).performScrollTo().assertIsDisplayed()
+        composeRule.onNodeWithText("Kokoro-82M (hexgrad)", substring = true).performScrollTo().assertIsDisplayed()
+        composeRule.onNodeWithText("Apache 2.0", substring = true).performScrollTo().assertIsDisplayed()
     }
 
     @Test fun inEnglish() {

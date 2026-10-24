@@ -500,6 +500,30 @@ object PortraitSprites {
             'k' to 0xFF060606, 'A' to 0xFF2A2830, 'a' to 0xFF8A8070, 'B' to 0xFF1E1C22, 'r' to 0xFFE03030,
             'w' to 0xFFE8E0C8, 'L' to 0xFF6A5C4E,
         ),
+        // Training dummy of the tutorial: sack head with stitched eyes, straw, rope and a wooden shield.
+        "dummy" to sprite(
+            listOf(
+                "......kkkk......",
+                "....kkBBBBkk....",
+                "...kBBbbbbBBk...",
+                "..kBbBBBBBBbBk..",
+                "..kBBxBBBBxBBk..",
+                "..kBBBxBBxBBBk..",
+                "..kBBxBBBBxBBk..",
+                "..kBBBBBBBBBBk..",
+                "..kBBmmmmmmBBk..",
+                "...kBBBBBBBBk...",
+                "..yykrrrrrrkyy..",
+                ".kWWWkyyyyykyyk.",
+                "kWwwwWkyyyyyyyyk",
+                "kWwnwWkyyrrryyyk",
+                "kWwwwWkyyyyyyyyk",
+                ".kWWWk.kppppppk.",
+            ),
+            'k' to 0xFF141010, 'B' to 0xFFC8A472, 'b' to 0xFFE0C08C, 'x' to 0xFF3A2414, 'm' to 0xFF6A3A22,
+            'y' to 0xFFD9B44A, 'r' to 0xFF8A5A2A, 'W' to 0xFF5A3A1C, 'w' to 0xFF8A5E30, 'n' to 0xFF9A9AA0,
+            'p' to 0xFF6E4A28,
+        ),
         "warden" to sprite(
             listOf(
                 "......kkkk......",
@@ -524,8 +548,8 @@ object PortraitSprites {
         ),
     )
 
-    /** The 18 common types (every sprite but the player's). */
-    val TYPES: Set<String> = SPRITES.keys - "warden"
+    /** The 18 common types (every sprite but the player's and the tutorial's training dummy). */
+    val TYPES: Set<String> = SPRITES.keys - "warden" - "dummy"
 
     /** The sprite key for [key]: itself if it has a sprite, the boss's base type, or `warden` when unknown. */
     fun baseType(key: String): String = when {

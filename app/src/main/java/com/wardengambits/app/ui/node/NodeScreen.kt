@@ -15,6 +15,10 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import com.wardengambits.app.audio.NarrationController
+import com.wardengambits.app.ui.common.NarrationButton
+import com.wardengambits.app.ui.common.NarrationButtonView
+import com.wardengambits.app.ui.common.rememberNarration
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -38,6 +42,30 @@ object NodeTextStyles {
     val rival = TextStyle(fontFamily = FontFamily.Serif, fontSize = 16.sp, lineHeight = 22.sp)
 }
 
+/** [NodeScreen] that narrates the node; choosing, fighting or leaving stops the narration. */
+@Composable
+fun NarratedNodeScreen(
+    ui: NodeUi,
+    narration: NarrationController,
+    narrationEnabled: Boolean,
+    onFight: () -> Unit,
+    onChoose: (Int) -> Unit,
+    onContinue: () -> Unit,
+    onNextLap: () -> Unit,
+    onMap: () -> Unit,
+) {
+    val button = rememberNarration(ui.key, narration, narrationEnabled)
+    NodeScreen(
+        ui = ui,
+        onFight = { narration.onLeave(); onFight() },
+        onChoose = { narration.onLeave(); onChoose(it) },
+        onContinue = { narration.onLeave(); onContinue() },
+        onNextLap = { narration.onLeave(); onNextLap() },
+        onMap = { narration.onLeave(); onMap() },
+        narration = button,
+    )
+}
+
 @Composable
 fun NodeScreen(
     ui: NodeUi,
@@ -46,6 +74,7 @@ fun NodeScreen(
     onContinue: () -> Unit,
     onNextLap: () -> Unit,
     onMap: () -> Unit,
+    narration: NarrationButton? = null,
 ) {
     Surface(modifier = Modifier.fillMaxSize(), color = Color.Transparent, contentColor = MaterialTheme.colorScheme.onBackground) {
         Column(Modifier.fillMaxSize()) {
@@ -60,6 +89,7 @@ fun NodeScreen(
                     color = WardenColors.Primary,
                 )
                 Text(trText("${ui.level}/${ui.total}"), color = WardenColors.Text, modifier = Modifier.padding(end = 8.dp))
+                if (narration != null) NarrationButtonView(narration, Modifier.padding(end = 4.dp))
                 TextButton(onClick = onMap) { Text(trTextResource(R.string.node_map)) }
             }
             Column(Modifier.weight(1f).fillMaxWidth().verticalScroll(rememberScrollState())) {

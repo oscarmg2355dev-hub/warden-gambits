@@ -17,6 +17,8 @@ import com.wardengambits.engine.model.Outcome
 import com.wardengambits.engine.model.PLAYER_ID
 import com.wardengambits.engine.rules.CombatEngine
 import com.wardengambits.engine.story.StoryEngine
+import com.wardengambits.engine.tutorial.TutorialProgress
+import com.wardengambits.engine.tutorial.advance
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -33,7 +35,8 @@ import kotlinx.coroutines.launch
 /**
  * Runs one real-time combat: wraps [CombatEngine] state, ticks it every [tickMillis] while the screen is
  * active and not paused, and reports the result once through the [source] (a story combat reports to the
- * session; a practice combat reports nothing and can be retried). The fight comes from [CombatSource.setup];
+ * session; a practice combat reports nothing and can be retried; a tutorial combat is a guided lesson that pauses on
+ * each new text until [understood] and ends when its last step is cast, never by death). The fight comes from [CombatSource.setup];
  * [story] is the story in the app's language, and only the zone and rival names shown come from it,
  * following it even in the middle of the fight.
  */
@@ -48,6 +51,12 @@ class CombatViewModel(
 
     /** True for a practice fight: no report, and the result overlay offers a retry. */
     val isPractice: Boolean = source is PracticeCombatSource
+
+    /** True for a tutorial lesson: guided steps instead of a victory or defeat. */
+    val isTutorial: Boolean = source is TutorialCombatSource
+
+    private val lesson = (source as? TutorialCombatSource)?.lesson
+    private var tutorialProgress: TutorialProgress? = lesson?.let { TutorialProgress(it.id) }
 
     /** Rival names in the story's current language, in encounter order (rival `FighterId(i + 1)` is entry `i`). */
     private var rivalNames: List<String> = source.rivalNames(story.value)
@@ -76,7 +85,8 @@ class CombatViewModel(
             zoneName = progress.zone.name,
             levelLabel = "${progress.level}/${progress.total}",
             tick = 0,
-            paused = false,
+            // A lesson opens on its intro, paused until «Entendido».
+            paused = lesson != null,
             rivals = emptyList(),
             player = placeholderPlayer(level),
             buffer = "",
@@ -84,6 +94,17 @@ class CombatViewModel(
             outcome = null,
             levelBefore = level,
             winsBefore = source.winsBefore,
+            tutorial = lesson?.let {
+                TutorialUi(
+                    lessonId = it.id,
+                    step = 0,
+                    stepCount = it.steps.size,
+                    requested = it.steps.firstOrNull(),
+                    reading = true,
+                    showIntro = true,
+                    nextLessonId = (source as? TutorialCombatSource)?.nextLessonId,
+                )
+            },
         )
         _state = MutableStateFlow(combat?.let { withCombat(initial, it) } ?: initial)
         state = _state.asStateFlow()
@@ -113,8 +134,22 @@ class CombatViewModel(
 
     fun togglePause() {
         val ui = _state.value
+        // While a lesson text waits for «Entendido» only that button resumes the fight.
+        if (ui.tutorial?.reading == true || ui.tutorial?.completed == true) return
         val paused = !ui.paused
         _state.value = ui.copy(paused = paused, inputsEnabled = combat?.let { it.outcome == null && !paused && !it.player.isDazed() } ?: false)
+    }
+
+    /** Tutorial only: the player read the current text; the fight resumes. */
+    fun understood() {
+        val ui = _state.value
+        val tutorial = ui.tutorial ?: return
+        if (!tutorial.reading) return
+        _state.value = ui.copy(
+            paused = false,
+            inputsEnabled = combat?.let { it.outcome == null && !it.player.isDazed() } ?: false,
+            tutorial = tutorial.copy(reading = false, showIntro = false),
+        )
     }
 
     /**
@@ -157,7 +192,7 @@ class CombatViewModel(
         stopped.value = true
         when (source) {
             is StoryCombatSource -> source.report(outcome, clock())
-            is PracticeCombatSource -> Unit
+            is PracticeCombatSource, is TutorialCombatSource -> Unit
         }
     }
 
@@ -179,7 +214,43 @@ class CombatViewModel(
         val step = combatEngine.reduce(current, action)
         combat = step.state
         _state.value = withCombat(_state.value, step.state)
+        followLesson(step.events)
         step.events.forEach { _events.tryEmit(it) }
+    }
+
+    /**
+     * Tutorial: the requested combo moves to the next step and pauses on its text, any other combo shows the hint,
+     * and the last step completes the lesson (no more ticks; the source records it).
+     */
+    private fun followLesson(events: List<CombatEvent>) {
+        val lesson = lesson ?: return
+        val before = tutorialProgress ?: return
+        val after = before.advance(lesson, events)
+        if (after == before) return
+        tutorialProgress = after
+        val advanced = after.step > before.step
+        val reading = advanced && !after.completed
+        _state.update { ui ->
+            val tutorial = ui.tutorial ?: return@update ui
+            val paused = ui.paused || reading
+            ui.copy(
+                paused = paused,
+                inputsEnabled = ui.inputsEnabled && !paused && !after.completed,
+                tutorial = tutorial.copy(
+                    step = after.step,
+                    requested = lesson.steps.getOrNull(after.step),
+                    reading = tutorial.reading || reading,
+                    hint = !advanced,
+                    passed = after.step,
+                    completed = after.completed,
+                ),
+            )
+        }
+        if (after.completed) {
+            finished = true
+            stopped.value = true
+            (source as? TutorialCombatSource)?.complete()
+        }
     }
 
     private fun displayName(id: FighterId, fallback: String): String = rivalNames.getOrNull(id.value - 1) ?: fallback

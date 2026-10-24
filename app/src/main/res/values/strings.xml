@@ -6,8 +6,11 @@
     <string name="menu_character">Personaje</string>
     <string name="menu_help">Ayuda de combos</string>
     <string name="menu_new_adventure">Nueva aventura</string>
-    <string name="menu_sound_on">Sonido: sí</string>
-    <string name="menu_sound_off">Sonido: no</string>
+    <string name="options_music">Música</string>
+    <string name="options_sfx">Efectos</string>
+    <string name="options_narration">Narración</string>
+    <string name="options_toggle_on">%1$s: sí</string>
+    <string name="options_toggle_off">%1$s: no</string>
     <string name="menu_options">Opciones</string>
     <string name="options_language">Idioma: %1$s</string>
     <string name="options_script">Escritura: %1$s</string>
@@ -36,6 +39,8 @@
     <string name="node_continue">Continuar</string>
     <string name="node_next_lap">Emprender la vuelta %d</string>
     <string name="node_map">Mapa</string>
+    <string name="node_read">▶ Leer</string>
+    <string name="node_stop_reading">■ Parar</string>
     <string name="node_rival">%1$s · Nv %2$d</string>
     <string name="ending_title">¡Has completado la aventura!</string>
     <string name="ending_lap_completed">Vuelta %d completada</string>
@@ -185,5 +190,56 @@ Solo puede estar activo un multiplicador y un escudo a la vez.</string>
     <string name="about_source_body">El código del juego es público: puedes leerlo, aprender de él o proponer mejoras en GitHub.</string>
     <string name="about_credits_heading">Créditos</string>
     <string name="about_credits_fonts">Fuentes: Cinzel, Uncial Antiqua, Almendra y Alcarin Tengwar, bajo la licencia SIL Open Font License (OFL).</string>
+    <string name="about_credits_music">Música: «Medieval: The Bard\'s Tale», «Medieval: The Old Tower Inn» y «Medieval: King\'s Feast», de RandomMind (OpenGameArt.org), bajo la licencia CC0 1.0 (dominio público).</string>
+    <string name="about_credits_narration">Narración: voz sintetizada con el modelo Kokoro-82M (hexgrad), bajo la licencia Apache 2.0, con las voces Dora (español) y Heart (inglés). Los efectos de sonido se generaron por código para este juego.</string>
     <string name="about_credits_disclaimer">Warden-Gambits es un proyecto de aficionado, sin relación con los titulares de los derechos de la obra de J. R. R. Tolkien ni de El Señor de los Anillos Online, ni respaldado por ellos.</string>
+    <string name="tutorial_title">Campo de entrenamiento</string>
+    <string name="tutorial_dummy">Muñeco de entrenamiento</string>
+    <string name="tutorial_understood">Entendido</string>
+    <string name="tutorial_hint">Ese no: marca %1$s y lanza ⚔</string>
+    <string name="tutorial_step_of">Paso %1$d de %2$d</string>
+    <string name="tutorial_completed">¡Lección completada!</string>
+    <string name="tutorial_next">Siguiente lección</string>
+    <string name="tutorial_back_to_map">Volver al mapa</string>
+    <string name="tutorial_ready">¡Listo para Bree!</string>
+    <string name="tutorial_abandon_message">No cuenta para tu partida: volverás a las lecciones.</string>
+    <string name="tutorial_card_text">Aprende a combatir en 5 lecciones</string>
+    <string name="tutorial_start">Empezar entrenamiento</string>
+    <string name="tutorial_skip">Saltar</string>
+    <string name="tutorial_lesson_attack">Ataque</string>
+    <string name="tutorial_lesson_defense">Defensa</string>
+    <string name="tutorial_lesson_daze">Aturdimiento</string>
+    <string name="tutorial_lesson_drain">Robo de vida</string>
+    <string name="tutorial_lesson_finisher">Remate</string>
+    <string name="tutorial_attack_intro">Un combo es una secuencia de teclas: 1 es la lanza, 2 el escudo y 3 el puño. Márcalas en orden y pulsa ⚔ para lanzarlo. Cada combo cuesta power, que se recupera solo poco a poco. El combate avanza en ticks de un segundo: el combo se resuelve en el siguiente tick y muchos de sus efectos duran varios ticks. Si lanzas los tiers de una misma familia en orden (I, II, III, IV) encadenas y ganas bonus; cambiar de familia o repetir un tier rompe la cadena, salvo el tier IV, que puedes repetir sin perder el bonus.</string>
+    <string name="tutorial_attack_step_0" formatted="false">Furia: marca 1 1 y lanza ⚔. Durante 30 ticks tu lanza hace un 20 % más de daño. Es un multiplicador: no forma parte de ninguna cadena (y si la lanzas en medio de una, la rompe).</string>
+    <string name="tutorial_attack_step_1">Lanza I: marca 1 2. Hiere al rival en cada tick durante 10 ticks. Es el tier I: abre la cadena de la lanza.</string>
+    <string name="tutorial_attack_step_2">Lanza II: marca 1 2 1 justo después de la Lanza I. El tier II hace el doble de daño por tick; encadenado dura 5 ticks más.</string>
+    <string name="tutorial_attack_step_3">Lanza III: marca 1 2 1 2. El tier III hace el triple de daño por tick; encadenado dura 10 ticks más.</string>
+    <string name="tutorial_attack_step_4">Lanza IV: marca 1 2 1 2 1. El tier más alto hace el cuádruple de daño por tick; encadenado dura 20 ticks más. ¡Cadena completa!</string>
+    <string name="tutorial_defense_intro">Este muñeco devuelve los golpes. Aprende a protegerte y a curarte mientras te ataca.</string>
+    <string name="tutorial_defense_step_0" formatted="false">Escudo maestro: marca 2 1 3 2 y lanza ⚔. Durante 60 ticks recibes un 50 % menos de daño.</string>
+    <string name="tutorial_defense_step_1" formatted="false">Guardia: marca 2 2. Durante 30 ticks recibes un 20 % menos de daño. Junto al escudo aguantarás mucho más.</string>
+    <string name="tutorial_defense_step_2">Cura I: marca 2 1. Te cura en cada tick durante 10 ticks. Abre la cadena de cura.</string>
+    <string name="tutorial_defense_step_3">Cura II: marca 2 1 2 justo después de la Cura I. El tier II cura el doble por tick; encadenado dura 5 ticks más.</string>
+    <string name="tutorial_defense_step_4">Cura III: marca 2 1 2 1. El tier III cura el triple por tick; encadenado dura 10 ticks más.</string>
+    <string name="tutorial_defense_step_5">Cura IV: marca 2 1 2 1 2. El tier IV cura el cuádruple por tick; encadenado dura 20 ticks más. Recuerda: si metes otro combo entre medias, la cadena se rompe y vuelves al tier I.</string>
+    <string name="tutorial_daze_intro">Quien está aturdido (Daze) no puede actuar: si te aturden, tus teclas se apagan hasta que se pase. Este muñeco intentará aturdirte; tú aprenderás a evitarlo y a aturdirlo a él.</string>
+    <string name="tutorial_daze_step_0">Escudo táctico: marca 2 1 3 1 y lanza ⚔. Durante 60 ticks eres inmune al Daze: el muñeco no podrá aturdirte.</string>
+    <string name="tutorial_daze_step_1" formatted="false">Brío: marca 3 3. Durante 30 ticks tu power se regenera un 20 % más rápido. Te vendrá bien para pagar la cadena que viene.</string>
+    <string name="tutorial_daze_step_2" formatted="false">Aturdir I: marca 3 1. Deja en el rival la ficha AT: un 5 % de probabilidad de quedar aturdido durante 10 ticks. Si la tirada sale, aparece en su carta la estrella DZ, que gira mientras dura: entonces el rival no puede actuar.</string>
+    <string name="tutorial_daze_step_3" formatted="false">Aturdir II: marca 3 1 3 justo después. Encadena y suma otro 5 % de probabilidad a la anterior.</string>
+    <string name="tutorial_daze_step_4" formatted="false">Aturdir III: marca 3 1 3 1. Encadenado suma un 5 % de probabilidad y otro 5 % de bonus.</string>
+    <string name="tutorial_daze_step_5" formatted="false">Aturdir IV: marca 3 1 3 1 3. Con la cadena completa suma un 5 % y un 30 % de bonus: ahora es muy probable ver la estrella DZ sobre el muñeco.</string>
+    <string name="tutorial_drain_intro">Contra varios rivales, el robo de vida les quita vida a todos a la vez y te la da a ti.</string>
+    <string name="tutorial_drain_step_0" formatted="false">Guardia: marca 2 2 y lanza ⚔. Son tres muñecos: con un 20 % menos de daño recibido durante 30 ticks aguantarás mejor sus golpes.</string>
+    <string name="tutorial_drain_step_1">Robo de vida I: marca 3 1 2 3. Durante 30 ticks, cada 5 ticks roba a cada rival tanta vida como tu cura y te la suma.</string>
+    <string name="tutorial_drain_step_2">Robo de vida II: marca 3 1 2 3 2 justo después del I. Encadena y multiplica la vida que robas.</string>
+    <string name="tutorial_finisher_intro">Para rematar, prepara la lanza, asesta un golpe directo y termina con una cadena larga de lanza cruzada.</string>
+    <string name="tutorial_finisher_step_0" formatted="false">Furia: marca 1 1 y lanza ⚔. Un 20 % más de daño de lanza durante 30 ticks: así el remate pega más.</string>
+    <string name="tutorial_finisher_step_1">Golpe directo: marca 1 2 3. Hace diez veces tu daño de lanza de una sola vez, sin esperar ticks. Cuesta 30 de power y no encadena.</string>
+    <string name="tutorial_finisher_step_2">Lanza cruzada I: marca 1 3. Como la lanza, hiere en cada tick durante 10 ticks, y abre su propia cadena.</string>
+    <string name="tutorial_finisher_step_3">Lanza cruzada II: marca 1 3 1 justo después. El tier II hace el doble de daño por tick; encadenado dura 5 ticks más.</string>
+    <string name="tutorial_finisher_step_4">Lanza cruzada III: marca 1 3 1 3. El tier III hace el triple de daño por tick; encadenado dura 10 ticks más.</string>
+    <string name="tutorial_finisher_step_5">Lanza cruzada IV: marca 1 3 1 3 1. El tier IV hace el cuádruple de daño por tick; encadenado dura 20 ticks más. ¡Ya sabes rematar!</string>
 </resources>

@@ -17,6 +17,7 @@ class WardenApp : Application() {
 
     override fun onTerminate() {
         container.soundPlayer.release()
+        container.musicController.release()
         super.onTerminate()
     }
 }

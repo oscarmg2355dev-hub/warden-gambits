@@ -16,6 +16,11 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import com.wardengambits.app.audio.NarrationController
+import com.wardengambits.app.ui.common.NarrationButton
+import com.wardengambits.app.ui.common.NarrationButtonView
+import com.wardengambits.app.ui.common.rememberNarration
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
@@ -29,7 +34,24 @@ import com.wardengambits.app.ui.theme.WardenColors
 
 /** "¡Has completado la aventura!": the final node, its epilogue and the summary of the completed lap. */
 @Composable
-fun EndingScreen(ui: EndingUi, onNextLap: () -> Unit, onMenu: () -> Unit) {
+fun NarratedEndingScreen(
+    ui: EndingUi,
+    narration: NarrationController,
+    narrationEnabled: Boolean,
+    onNextLap: () -> Unit,
+    onMenu: () -> Unit,
+) {
+    val button = rememberNarration(ui.key, narration, narrationEnabled)
+    EndingScreen(
+        ui = ui,
+        onNextLap = { narration.onLeave(); onNextLap() },
+        onMenu = { narration.onLeave(); onMenu() },
+        narration = button,
+    )
+}
+
+@Composable
+fun EndingScreen(ui: EndingUi, onNextLap: () -> Unit, onMenu: () -> Unit, narration: NarrationButton? = null) {
     Surface(modifier = Modifier.fillMaxSize(), color = Color.Transparent, contentColor = MaterialTheme.colorScheme.onBackground) {
         Column(Modifier.fillMaxSize()) {
             Text(
@@ -43,6 +65,7 @@ fun EndingScreen(ui: EndingUi, onNextLap: () -> Unit, onMenu: () -> Unit) {
                 NodeImage(ui.key, ui.zoneId, ui.zoneName, contentDescription = ui.title)
                 Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                     Text(trText(ui.title), style = MaterialTheme.typography.titleLarge, color = WardenColors.Primary)
+                    if (narration != null) NarrationButtonView(narration, Modifier.align(Alignment.End))
                     Text(trText(ui.text), style = NodeTextStyles.body, color = WardenColors.Text)
                     Summary(ui)
                 }

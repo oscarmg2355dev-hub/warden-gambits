@@ -79,7 +79,6 @@ class MenuScreenTest {
                 MenuScreen(onStory = {}, onCharacter = {}, onHelp = {}, onNewAdventure = {}, onOptions = { options++ })
             }
         }
-        composeRule.onNodeWithText("Sonido: sí").assertDoesNotExist()
         composeRule.onNodeWithText("Opciones").assertIsDisplayed().performClick()
         assertEquals(1, options)
     }

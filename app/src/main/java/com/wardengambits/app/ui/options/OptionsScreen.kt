@@ -66,15 +66,19 @@ private val LatinStyle = TextStyle(fontFamily = FontFamily.Serif, fontWeight = F
 private const val EXAMPLE_CONSONANT = "t"
 
 /**
- * Options: sound, language and script toggles, then the latin → tengwar equivalence table of the chosen
+ * Options: music, effects, narration, language and script toggles, then the latin → tengwar equivalence table of the chosen
  * language's mode (built from the transcriber's tables; the latin letters always stay in Latin).
  */
 @Composable
 fun OptionsScreen(
-    soundEnabled: Boolean,
+    musicEnabled: Boolean,
+    sfxEnabled: Boolean,
+    narrationEnabled: Boolean,
     language: AppLanguage,
     script: AppScript,
-    onToggleSound: () -> Unit,
+    onToggleMusic: () -> Unit,
+    onToggleSfx: () -> Unit,
+    onToggleNarration: () -> Unit,
     onToggleLanguage: () -> Unit,
     onToggleScript: () -> Unit,
     onBack: () -> Unit,
@@ -85,7 +89,9 @@ fun OptionsScreen(
             Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(horizontal = 24.dp, vertical = 8.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            OptionButton(stringResource(if (soundEnabled) R.string.menu_sound_on else R.string.menu_sound_off), onToggleSound)
+            OptionButton(toggleLabel(R.string.options_music, musicEnabled), onToggleMusic)
+            OptionButton(toggleLabel(R.string.options_sfx, sfxEnabled), onToggleSfx)
+            OptionButton(toggleLabel(R.string.options_narration, narrationEnabled), onToggleNarration)
             OptionButton(stringResource(R.string.options_language, language.displayName), onToggleLanguage, transcribe = false)
             val scriptName = stringResource(
                 when (script) {
@@ -102,6 +108,10 @@ fun OptionsScreen(
         }
     }
 }
+
+@Composable
+private fun toggleLabel(name: Int, enabled: Boolean): String =
+    stringResource(if (enabled) R.string.options_toggle_on else R.string.options_toggle_off, stringResource(name))
 
 /**
  * [transcribe] = false keeps the label in Latin with the normal font even in tengwar: the language and

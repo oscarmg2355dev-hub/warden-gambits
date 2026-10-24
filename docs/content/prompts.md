@@ -643,7 +643,7 @@ Un prompt por pantalla (nodo) del modo historia, en orden de ruta: 24 zonas y 50
 
 ## Retratos
 
-Un prompt por retrato de combate: 18 tipos de rival comunes, 21 jefes (`boss_<zona>`) y el protagonista (`warden`), 40 en total. Cada prompt describe en inglés un retrato de busto con la misma estética de pixel art de 16 bits que las imágenes de nodo.
+Un prompt por retrato de combate: 18 tipos de rival comunes, 21 jefes (`boss_<zona>`), el muñeco del tutorial (`dummy`) y el protagonista (`warden`), 41 en total. Cada prompt describe en inglés un retrato de busto con la misma estética de pixel art de 16 bits que las imágenes de nodo.
 
 - **Archivo:** cada imagen se guarda como `app/src/main/res/drawable-nodpi/<archivo>` (WebP 256×256); la app la usa para el retrato de la clave (`portrait` del rival). Sin imagen, la app dibuja un sprite de 16×16 del tipo (los jefes usan el de su tipo base).
 - **Formato:** cuadrado 1:1, busto centrado sobre fondo oscuro neutro. Se ve pequeño (44–58 dp), así que la figura debe llenar el encuadre.
@@ -699,6 +699,12 @@ Un prompt por retrato de combate: 18 tipos de rival comunes, 21 jefes (`boss_<zo
 | portrait_boss_ithilien.webp | Olifante de guerra (jefe · Ithilien) | 16-bit pixel art, SNES-era fantasy RPG style, bust portrait of a colossal war oliphaunt seen from the front, huge curved tusks with red banners, a war tower on its back with Haradrim archers and small fierce eyes, centered, dark neutral background, limited color palette, crisp pixels, no anti-aliasing, dithered shading, square 1:1 composition, no text, no UI |
 | portrait_boss_cirithungol.webp | Ella-Laraña (jefe · Valle de Morgul y Cirith Ungol) | 16-bit pixel art, SNES-era fantasy RPG style, bust portrait of a monstrous ancient giant spider in a dark lair, a bloated black body, clusters of many glowing eyes, dripping fangs and torn webs behind her, centered, dark neutral background, limited color palette, crisp pixels, no anti-aliasing, dithered shading, square 1:1 composition, no text, no UI |
 | portrait_boss_gorgoroth.webp | Nazgûl en su bestia alada (jefe · Gorgoroth) | 16-bit pixel art, SNES-era fantasy RPG style, bust portrait of a Ringwraith in a black hooded cloak and spiked iron crown riding a leathery winged fell beast with a long neck and open jaws, ash and fire behind, centered, dark neutral background, limited color palette, crisp pixels, no anti-aliasing, dithered shading, square 1:1 composition, no text, no UI |
+
+### Entrenamiento
+
+| archivo | título | prompt |
+|---|---|---|
+| portrait_dummy.webp | Muñeco de entrenamiento (tutorial) | 16-bit pixel art, SNES-era fantasy RPG style, bust portrait of a straw and wood training dummy on a wooden post, a burlap sack head with stitched cross eyes and a painted frown, straw sticking out of the seams, rope tied around the neck and chest, a battered round wooden shield strapped to one arm, centered, dark neutral background, limited color palette, crisp pixels, no anti-aliasing, dithered shading, square 1:1 composition, no text, no UI |
 
 ### Protagonista
 

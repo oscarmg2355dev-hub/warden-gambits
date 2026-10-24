@@ -33,6 +33,7 @@ class CombatEngine(
         val player = Fighter(
             PLAYER_ID, setup.player.name, setup.player.level, Side.PLAYER, playerStats,
             hp = playerStats.maxHp, power = playerStats.maxPower,
+            hpFloor = floorFor(setup, playerStats.maxHp),
         )
         val rivals = setup.rivals.mapIndexed { index, rival ->
             val scaling = if (rival.isBoss) bossScaling else rivalScaling
@@ -40,7 +41,7 @@ class CombatEngine(
             Fighter(
                 FighterId(index + 1), rival.name, rival.level, Side.RIVAL, stats,
                 hp = stats.maxHp, power = scaling.startPower(stats.maxPower), isBoss = rival.isBoss,
-                portrait = rival.portrait,
+                portrait = rival.portrait, hpFloor = floorFor(setup, stats.maxHp),
             )
         }
         val brains = setup.rivals.mapIndexed { index, rival -> FighterId(index + 1) to rival.brain }.toMap()
@@ -52,6 +53,9 @@ class CombatEngine(
             rngState = seed,
         )
     }
+
+    private fun floorFor(setup: CombatSetup, maxHp: Int): Int =
+        setup.hpFloorPct?.let { maxOf(1, maxHp * it / 100) } ?: 0
 
     fun reduce(state: CombatState, action: CombatAction): StepResult =
         if (state.outcome != null) reject(state, PLAYER_ID, RejectReason.COMBAT_OVER) else step(state, action)

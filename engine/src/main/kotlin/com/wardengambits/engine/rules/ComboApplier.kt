@@ -99,8 +99,8 @@ internal object ComboApplier {
                 target.isActive(EffectKind.SHIELD_MASTER, state.tick),
             )
             val roll = PulseRoll.roll(random, tuning)
-            val dealt = minOf(PulseRoll.scale(amount, roll), target.hp)
-            update(targetId) { copy(hp = hp - dealt) }
+            val dealt = minOf(PulseRoll.scale(amount, roll), target.hpAboveFloor)
+            update(targetId) { damaged(dealt) }
             events += CombatEvent.EffectResolved(targetId, casterId, combo.sequence, null, -dealt, roll)
             if (!state.fighter(targetId).isAlive) {
                 update(targetId) { copy(effects = emptyList()) }

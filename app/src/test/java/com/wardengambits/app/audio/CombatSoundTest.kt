@@ -50,6 +50,12 @@ class CombatSoundTest {
         assertEquals(listOf("startAmbient", "sfx:DEFEAT_ENEMY", "sfx:VICTORY", "stopAmbient"), fake.calls)
     }
 
+    @Test fun endedStopsAmbientEvenWithoutOutcome() {
+        sound.update(active = true, paused = false, outcome = null)
+        sound.update(active = true, paused = false, outcome = null, ended = true)
+        assertEquals(listOf("startAmbient", "stopAmbient"), fake.calls)
+    }
+
     @Test fun leavingTheScreenStopsAmbient() {
         sound.update(active = true, paused = false, outcome = null)
         sound.dispose()

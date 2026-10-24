@@ -50,6 +50,8 @@ fun AboutScreen(onBack: () -> Unit) {
                     SourceCodeLink()
                     SectionHeading(stringResource(R.string.about_credits_heading))
                     Paragraph(R.string.about_credits_fonts)
+                    Paragraph(R.string.about_credits_music)
+                    Paragraph(R.string.about_credits_narration)
                     Paragraph(R.string.about_credits_disclaimer, italic = true)
                 }
             }

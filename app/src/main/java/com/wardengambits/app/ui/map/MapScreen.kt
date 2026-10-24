@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -62,12 +63,33 @@ const val MAP_WORLD_TAG = "map_world"
 /** Vertical centre, in dp from the top of the map, of a stop sitting on road tile [stop]. */
 fun stopCenterYDp(stop: Tile): Float = (stop.y + 0.5f) * TILE_DP
 
+/** Column of the training ground's marker: on Bree's terrain, to the left of its stop (UI only, not a zone). */
+const val TUTORIAL_STOP_COL = 14
+
+/** How far above Bree's stop the training ground sits, so neither its marker nor its label covers Bree's. */
+private val TUTORIAL_STOP_RISE = 72.dp
+private val TUTORIAL_LABEL_WIDTH = 112.dp
+
+/**
+ * Whether the map offers the tutorial card: a new game (still in the first zone, [newGame]) with some lesson of
+ * [lessonIds] not done and the card not skipped (unknown until DataStore loads = no). Later in the run the stop
+ * stays on the map but the card does not pull the map away from the current zone.
+ */
+fun showTutorialCard(done: Set<String>?, dismissed: Boolean?, lessonIds: List<String>, newGame: Boolean): Boolean =
+    newGame && dismissed == false && done != null && !done.containsAll(lessonIds)
+
+/** A new game for the tutorial card: the current zone is still the first one. */
+fun isNewGame(rows: List<ZoneRowUi>): Boolean = rows.firstOrNull()?.status == ZoneStatus.CURRENT
+
 @Composable
 fun MapScreen(
     rows: List<ZoneRowUi>,
     onContinue: () -> Unit,
     onBack: () -> Unit,
     worldSource: WorldSource = WorldCache,
+    showTutorialCard: Boolean = false,
+    onTutorial: () -> Unit = {},
+    onSkipTutorial: () -> Unit = {},
 ) {
     Surface(modifier = Modifier.fillMaxSize(), color = Color.Transparent, contentColor = MaterialTheme.colorScheme.onBackground) {
         Column(Modifier.fillMaxSize()) {
@@ -84,7 +106,7 @@ fun MapScreen(
                 if (ready == null) {
                     MapLoading()
                 } else {
-                    Overworld(rows, ready, maxWidth, onContinue)
+                    Overworld(rows, ready, maxWidth, onContinue, TutorialStopUi(showTutorialCard, onTutorial, onSkipTutorial))
                 }
             }
         }
@@ -99,13 +121,17 @@ private fun MapLoading() {
 }
 
 @Composable
-private fun Overworld(rows: List<ZoneRowUi>, world: WorldMap, viewportWidth: Dp, onContinue: () -> Unit) {
+private fun Overworld(rows: List<ZoneRowUi>, world: WorldMap, viewportWidth: Dp, onContinue: () -> Unit, tutorial: TutorialStopUi) {
     val density = LocalDensity.current
     val scroll = rememberScrollState()
     val currentIndex = rows.indexOfFirst { it.status == ZoneStatus.CURRENT }
     val viewportPx = with(density) { viewportWidth.roundToPx() }
-    LaunchedEffect(currentIndex, viewportPx) {
-        if (currentIndex >= 0) {
+    LaunchedEffect(currentIndex, viewportPx, tutorial.showCard) {
+        if (tutorial.showCard) {
+            // A new game opens on the training ground, with its card.
+            val centerPx = with(density) { (TUTORIAL_STOP_COL * TILE_DP + TILE_DP / 2).dp.roundToPx() }
+            scroll.scrollTo((centerPx - viewportPx / 2).coerceAtLeast(0))
+        } else if (currentIndex >= 0) {
             val centerPx = with(density) { (currentIndex * ZONE_WIDTH_DP + ZONE_WIDTH_DP / 2).dp.roundToPx() }
             scroll.scrollTo((centerPx - viewportPx / 2).coerceAtLeast(0))
         }
@@ -134,6 +160,10 @@ private fun Overworld(rows: List<ZoneRowUi>, world: WorldMap, viewportWidth: Dp,
             MapAmbience(world, scrollPx = { scroll.value }, viewportWidthPx = viewportPx, tilePx = tilePx, running = running)
             rows.forEachIndexed { index, row ->
                 world.stops.getOrNull(index)?.let { stop -> ZoneStop(index, row, stop, onContinue) }
+            }
+            world.stops.firstOrNull()?.let { bree -> TrainingStop(bree, tutorial.onTutorial) }
+            if (tutorial.showCard) {
+                TutorialCard(tutorial.onTutorial, tutorial.onSkip, Modifier.offset(x = 8.dp, y = 8.dp))
             }
         }
     }
@@ -184,6 +214,45 @@ private fun ZoneStop(index: Int, row: ZoneRowUi, stop: Tile, onContinue: () -> U
 }
 
 private val STOP_GAP = 4.dp
+
+private class TutorialStopUi(val showCard: Boolean, val onTutorial: () -> Unit, val onSkip: () -> Unit)
+
+/**
+ * The training ground: a marker on Bree's terrain, left of and above Bree's stop, with its label above it
+ * (below when the map is too short). Tapping either opens the lesson list.
+ */
+@Composable
+private fun TrainingStop(bree: Tile, onTutorial: () -> Unit) {
+    val centerY = stopCenterYDp(bree).dp - TUTORIAL_STOP_RISE
+    val centerX = (TUTORIAL_STOP_COL * TILE_DP + TILE_DP / 2).dp
+    val name = stringResource(R.string.tutorial_title)
+    Layout(
+        content = {
+            TrainingMarker(
+                Modifier.testTag(TUTORIAL_STOP_TAG).clickable(onClickLabel = name, role = Role.Button, onClick = onTutorial),
+            )
+            ParchmentLabel(
+                name,
+                locked = false,
+                Modifier.widthIn(max = TUTORIAL_LABEL_WIDTH).clickable(onClickLabel = name, role = Role.Button, onClick = onTutorial),
+            )
+        },
+        modifier = Modifier.offset(x = centerX - TUTORIAL_LABEL_WIDTH / 2).width(TUTORIAL_LABEL_WIDTH).fillMaxHeight(),
+    ) { measurables, constraints ->
+        val loose = constraints.copy(minWidth = 0, minHeight = 0, maxHeight = Constraints.Infinity)
+        val marker = measurables[0].measure(loose)
+        val label = measurables[1].measure(loose)
+        val height = constraints.maxHeight
+        val gap = STOP_GAP.roundToPx()
+        val markerTop = (centerY.roundToPx() - marker.height / 2).coerceAtMost(height - marker.height).coerceAtLeast(0)
+        val above = markerTop - gap - label.height
+        val labelTop = if (above >= 0) above else (markerTop + marker.height + gap).coerceAtMost(height - label.height).coerceAtLeast(0)
+        layout(constraints.maxWidth, height) {
+            marker.place((constraints.maxWidth - marker.width) / 2, markerTop)
+            label.place((constraints.maxWidth - label.width) / 2, labelTop)
+        }
+    }
+}
 
 /** Where a zone stop's marker and label go, in px from the top of the map. */
 data class StopPlacement(val markerTop: Int, val labelTop: Int)

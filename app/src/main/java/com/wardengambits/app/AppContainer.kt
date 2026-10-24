@@ -6,7 +6,13 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import com.wardengambits.app.audio.AndroidSoundPlayer
+import com.wardengambits.app.audio.AndroidMusicPlayer
 import com.wardengambits.app.audio.GatedSoundPlayer
+import com.wardengambits.app.audio.MusicController
+import com.wardengambits.app.audio.MusicPlayer
+import com.wardengambits.app.audio.AndroidNarrationPlayer
+import com.wardengambits.app.audio.NarrationController
+import com.wardengambits.app.audio.NarrationPlayer
 import com.wardengambits.app.audio.SoundPlayer
 import com.wardengambits.app.data.SaveRepository
 import com.wardengambits.app.data.SettingsRepository
@@ -16,6 +22,8 @@ import com.wardengambits.engine.rules.CombatEngine
 import com.wardengambits.engine.story.StoryEngine
 import com.wardengambits.engine.story.content.StoryContent
 import com.wardengambits.engine.story.content.StoryContentLoader
+import com.wardengambits.engine.tutorial.TutorialLesson
+import com.wardengambits.engine.tutorial.TutorialLessons
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
@@ -51,6 +59,8 @@ class AppContainer(
     context: Context,
     val clock: () -> Long = System::currentTimeMillis,
     audio: (Context) -> SoundPlayer = ::AndroidSoundPlayer,
+    music: (Context) -> MusicPlayer = ::AndroidMusicPlayer,
+    narrationPlayer: (Context) -> NarrationPlayer = ::AndroidNarrationPlayer,
     private val storyLoadDispatcher: CoroutineDispatcher = Dispatchers.Default,
     private val storyLoader: StoryLoader = translatedStory,
 ) {
@@ -82,10 +92,20 @@ class AppContainer(
     val settingsRepository = SettingsRepository(context.applicationContext.saveDataStore)
     val session = GameSession(storyEngine, saveRepository, scope, clock)
 
-    /** Plays nothing while the "Sonido" option is off. */
+    /** Plays nothing while the "Efectos" option is off. */
     val soundPlayer: SoundPlayer = GatedSoundPlayer(audio(context.applicationContext))
 
-    val soundEnabled: StateFlow<Boolean> = settingsRepository.soundEnabled.stateIn(scope, SharingStarted.Eagerly, true)
+    /** Ambient music; its MediaPlayers are only created on the first play. */
+    val musicController = MusicController(music(context.applicationContext))
+
+    /** Recorded narration of nodes and the ending (assets/narration/<lang>/<key>.m4a). */
+    val narration = NarrationController(narrationPlayer(context.applicationContext))
+
+    val musicEnabled: StateFlow<Boolean> = settingsRepository.musicEnabled.stateIn(scope, SharingStarted.Eagerly, true)
+    val sfxEnabled: StateFlow<Boolean> = settingsRepository.sfxEnabled.stateIn(scope, SharingStarted.Eagerly, true)
+    /** Narration setting; null until DataStore delivers the stored value, so nothing auto-plays on the default. */
+    val narrationEnabled: StateFlow<Boolean?> =
+        settingsRepository.narrationEnabled.stateIn<Boolean?>(scope, SharingStarted.Eagerly, null)
 
     /** Language chosen in Options (the device's until then). */
     val language: StateFlow<AppLanguage> = settingsRepository.language
@@ -94,8 +114,19 @@ class AppContainer(
     /** Script chosen in Options (Latin until then). */
     val script: StateFlow<AppScript> = settingsRepository.script.stateIn(scope, SharingStarted.Eagerly, AppScript.LATIN)
 
+    /** The five combat lessons of the training ground. */
+    val tutorialLessons: List<TutorialLesson> by lazy { TutorialLessons.load() }
+
+    /** Ids of the completed tutorial lessons (settings, not the save); null until DataStore delivers them. */
+    val tutorialDone: StateFlow<Set<String>?> =
+        settingsRepository.tutorialDone.stateIn<Set<String>?>(scope, SharingStarted.Eagerly, null)
+
+    /** Whether the tutorial card was skipped; null until DataStore delivers it, so the card never flashes. */
+    val tutorialDismissed: StateFlow<Boolean?> =
+        settingsRepository.tutorialDismissed.stateIn<Boolean?>(scope, SharingStarted.Eagerly, null)
+
     init {
-        scope.launch { soundEnabled.collect(soundPlayer::setEnabled) }
+        scope.launch { sfxEnabled.collect(soundPlayer::setEnabled) }
         // Preload every translation in the background, so switching language (or starting in English) is instant.
         AppLanguage.entries.filter { it != AppLanguage.ES }.forEach(::loadStory)
     }
@@ -130,8 +161,24 @@ class AppContainer(
         scope.async(storyLoadDispatcher) { storyLoader.load(language, content).also { loadedStories[language] = it } }
     }
 
-    fun toggleSound() {
-        scope.launch { settingsRepository.toggleSound() }
+    fun markTutorialDone(id: String) {
+        scope.launch { settingsRepository.markTutorialDone(id) }
+    }
+
+    fun dismissTutorial() {
+        scope.launch { settingsRepository.dismissTutorial() }
+    }
+
+    fun toggleMusic() {
+        scope.launch { settingsRepository.toggleMusic() }
+    }
+
+    fun toggleSfx() {
+        scope.launch { settingsRepository.toggleSfx() }
+    }
+
+    fun toggleNarration() {
+        scope.launch { settingsRepository.toggleNarration() }
     }
 
     fun toggleLanguage() {

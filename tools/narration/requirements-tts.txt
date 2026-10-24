@@ -1,0 +1,13 @@
+# Local TTS for tools/narration/tts_generate.py: Kokoro-82M (Apache-2.0) in a Python 3.11 venv
+# (kokoro does not support Python 3.14 yet), CPU-only torch. From tools/narration/:
+#
+#   python -m pip install --user uv
+#   python -m uv venv --python 3.11 .venv-kokoro
+#   python -m uv pip install --python .venv-kokoro/Scripts/python.exe --index-strategy unsafe-best-match \
+#       --extra-index-url https://download.pytorch.org/whl/cpu kokoro "torch==2.11.*" soundfile imageio-ffmpeg pip
+#
+# The model (~330 MB) downloads on first use into the Hugging Face cache.
+kokoro==0.9.4
+torch==2.11.*
+soundfile
+imageio-ffmpeg

@@ -34,10 +34,14 @@ class OptionsScreenTest {
     @get:Rule
     val composeRule = createComposeRule()
 
-    private var sound by mutableStateOf(true)
+    private var music by mutableStateOf(true)
+    private var sfx by mutableStateOf(true)
+    private var narration by mutableStateOf(true)
     private var language by mutableStateOf(AppLanguage.ES)
     private var script by mutableStateOf(AppScript.LATIN)
-    private var soundToggles = 0
+    private var musicToggles = 0
+    private var sfxToggles = 0
+    private var narrationToggles = 0
     private var backs = 0
 
     private fun show() {
@@ -45,10 +49,14 @@ class OptionsScreenTest {
             ProvideLanguageAndScript(language, script) {
                 WardenTheme {
                     OptionsScreen(
-                        soundEnabled = sound,
+                        musicEnabled = music,
+                        sfxEnabled = sfx,
+                        narrationEnabled = narration,
                         language = language,
                         script = script,
-                        onToggleSound = { soundToggles++; sound = !sound },
+                        onToggleMusic = { musicToggles++; music = !music },
+                        onToggleSfx = { sfxToggles++; sfx = !sfx },
+                        onToggleNarration = { narrationToggles++; narration = !narration },
                         onToggleLanguage = { language = language.other() },
                         onToggleScript = { script = script.other() },
                         onBack = { backs++ },
@@ -58,13 +66,18 @@ class OptionsScreenTest {
         }
     }
 
-    @Test fun soundStillTogglesFromOptions() {
+    @Test fun musicEffectsAndNarrationToggleFromOptions() {
         show()
-        composeRule.onNodeWithText("Sonido: sí").assertIsDisplayed().performClick()
-        assertEquals(1, soundToggles)
-        composeRule.onNodeWithText("Sonido: no").assertIsDisplayed().performClick()
-        composeRule.onNodeWithText("Sonido: sí").assertIsDisplayed()
-        assertEquals(2, soundToggles)
+        composeRule.onNodeWithText("Efectos: sí").assertIsDisplayed()
+        composeRule.onNodeWithText("Narración: sí").assertIsDisplayed()
+        composeRule.onNodeWithText("Música: sí").assertIsDisplayed().performClick()
+        assertEquals(listOf(1, 0, 0), listOf(musicToggles, sfxToggles, narrationToggles))
+        composeRule.onNodeWithText("Música: no").assertIsDisplayed()
+        composeRule.onNodeWithText("Efectos: sí").performClick()
+        composeRule.onNodeWithText("Narración: sí").performClick()
+        assertEquals(listOf(1, 1, 1), listOf(musicToggles, sfxToggles, narrationToggles))
+        composeRule.onNodeWithText("Efectos: no").assertIsDisplayed()
+        composeRule.onNodeWithText("Narración: no").assertIsDisplayed()
         composeRule.onNodeWithContentDescription("Volver").performClick()
         assertEquals(1, backs)
     }
@@ -75,7 +88,9 @@ class OptionsScreenTest {
         assertEquals(AppLanguage.EN, language)
         // The whole screen follows the chosen language.
         composeRule.onNodeWithText("Language: English").assertIsDisplayed()
-        composeRule.onNodeWithText("Sound: on").assertIsDisplayed()
+        listOf("Music: on", "Effects: on", "Narration: on").forEach {
+            composeRule.onNodeWithText(it).assertIsDisplayed()
+        }
         composeRule.onNodeWithText("Language: English").performClick()
         assertEquals(AppLanguage.ES, language)
         composeRule.onNodeWithText("Idioma: Español").assertIsDisplayed()
@@ -86,8 +101,10 @@ class OptionsScreenTest {
         composeRule.onNodeWithText("Escritura: Latina").assertIsDisplayed().performClick()
         assertEquals(AppScript.TENGWAR, script)
         composeRule.onNodeWithText("Escritura: Latina").assertDoesNotExist()
-        composeRule.onNodeWithText("Sonido: sí").assertDoesNotExist()
-        composeRule.onNodeWithText(Tengwar.transcribe("Sonido: sí", TengwarMode.SPANISH)).assertIsDisplayed()
+        listOf("Música: sí", "Efectos: sí", "Narración: sí").forEach {
+            composeRule.onNodeWithText(it).assertDoesNotExist()
+            composeRule.onNodeWithText(Tengwar.transcribe(it, TengwarMode.SPANISH)).assertIsDisplayed()
+        }
         // The language and script toggles stay in Latin, with the normal font, so the player can switch back.
         listOf("Idioma: Español", "Escritura: Tengwar").forEach { label ->
             val texts = composeRule.onNodeWithText(label).assertIsDisplayed()

@@ -39,8 +39,19 @@ data class Fighter(
     val defenses: Int = 0,
     /** Casts made since the last mode change, the index into the current mode's pattern. */
     val modeCasts: Int = 0,
+    /** HP this fighter can never drop below (0 in a normal combat; see [CombatSetup.hpFloorPct]). */
+    val hpFloor: Int = 0,
 ) {
     val isAlive: Boolean get() = hp > 0
+
+    /** HP that can still be removed before reaching [hpFloor]. */
+    val hpAboveFloor: Int get() = (hp - hpFloor).coerceAtLeast(0)
+
+    /** The single place where HP is lost: removes [amount] (>= 0) without going below [hpFloor]. */
+    fun damaged(amount: Int): Fighter = copy(hp = maxOf(hp - amount, hpFloor.coerceAtMost(hp)))
+
+    /** Sets the HP to [newHp] clamped to [hpFloor]..max HP (net over-time changes). */
+    fun withHpClamped(newHp: Int): Fighter = copy(hp = newHp.coerceIn(hpFloor.coerceAtMost(hp), stats.maxHp))
 
     fun has(kind: EffectKind): Boolean = effects.any { it.kind == kind }
 

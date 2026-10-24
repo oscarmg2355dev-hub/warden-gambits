@@ -6,6 +6,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -17,6 +18,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -29,6 +31,7 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.translate
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
@@ -46,6 +49,8 @@ import kotlin.math.cos
 import kotlin.math.sin
 
 const val CURRENT_MARKER_TAG = "map_current_marker"
+const val TUTORIAL_STOP_TAG = "map_tutorial_stop"
+const val TUTORIAL_CARD_TAG = "map_tutorial_card"
 
 private val Parchment = Color(0xFFEBD9A8)
 private val ParchmentEdge = Color(0xFF7A5A2C)
@@ -59,6 +64,12 @@ private val StoneLight = Color(0xFFB4AFA4)
 private val StoneDark = Color(0xFF3A3632)
 private val Crimson = Color(0xFF7A1F1F)
 private val Shadow = Color(0x73000000)
+private val Wood = Color(0xFF9A6A3A)
+private val WoodLight = Color(0xFFC89A5E)
+private val WoodDark = Color(0xFF4A2E14)
+private val Straw = Color(0xFFE2C46A)
+
+val TRAINING_MARKER_SIZE = 40.dp
 
 fun markerSize(status: ZoneStatus): Dp = when (status) {
     ZoneStatus.DONE -> 40.dp
@@ -94,6 +105,21 @@ fun ZoneMarker(name: String, status: ZoneStatus, modifier: Modifier = Modifier) 
                 lock()
             }
         }
+    }
+}
+
+/** Marker of the training ground: a wooden shield with a straw target, in the style of [ZoneMarker]. */
+@Composable
+fun TrainingMarker(modifier: Modifier = Modifier) {
+    val name = stringResource(R.string.tutorial_title)
+    Canvas(modifier.size(TRAINING_MARKER_SIZE).semantics { contentDescription = name }) {
+        shield(Wood, WoodLight, WoodDark)
+        val c = Offset(size.width * 0.5f, size.height * 0.46f)
+        val r = size.minDimension * 0.24f
+        drawCircle(Straw, r, c)
+        drawCircle(WoodDark, r, c, style = Stroke(1.5.dp.toPx()))
+        drawCircle(Crimson, r * 0.55f, c)
+        drawCircle(Straw, r * 0.22f, c)
     }
 }
 
@@ -200,6 +226,37 @@ fun CurrentZoneCartouche(name: String, level: Int, total: Int, onContinue: () ->
             colors = ButtonDefaults.buttonColors(containerColor = Crimson, contentColor = GoldLight),
         ) {
             Text(trTextResource(R.string.map_continue), style = MaterialTheme.typography.labelLarge)
+        }
+    }
+}
+
+/** Card of a new game over the map: offers the training ground's lessons or skipping them. */
+@Composable
+fun TutorialCard(onStart: () -> Unit, onSkip: () -> Unit, modifier: Modifier = Modifier) {
+    val shape = RoundedCornerShape(4.dp)
+    Column(
+        modifier
+            .testTag(TUTORIAL_CARD_TAG)
+            .width(240.dp)
+            .background(Parchment, shape)
+            .border(2.dp, ParchmentEdge, shape)
+            .padding(horizontal = 12.dp, vertical = 10.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        Text(trTextResource(R.string.tutorial_title), style = MaterialTheme.typography.titleMedium, color = Ink, textAlign = TextAlign.Center)
+        Text(trTextResource(R.string.tutorial_card_text), style = MaterialTheme.typography.bodyMedium, color = Ink, textAlign = TextAlign.Center)
+        // Stacked so the long «Empezar entrenamiento» never breaks mid-word.
+        Button(
+            onClick = onStart,
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(6.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Crimson, contentColor = GoldLight),
+        ) {
+            Text(trTextResource(R.string.tutorial_start), style = MaterialTheme.typography.labelLarge, textAlign = TextAlign.Center)
+        }
+        TextButton(onClick = onSkip, colors = ButtonDefaults.textButtonColors(contentColor = Ink)) {
+            Text(trTextResource(R.string.tutorial_skip), style = MaterialTheme.typography.labelLarge)
         }
     }
 }

@@ -52,13 +52,16 @@ internal fun maxVitalOf(state: CombatUiState, id: FighterId, tone: CombatTextTon
 /**
  * Binds [CombatScreen] to a [CombatViewModel]: lifecycle (active only while STARTED), event feedback
  * (haptics, sounds, toast text, the floating numbers fed by [CombatEvent.EffectResolved] and [CombatEvent.PotionUsed])
- * and navigation callbacks.
+ * and navigation callbacks. A tutorial lesson ends with [onBackToMap] or [onNextLesson]; leaving it mid-lesson uses
+ * [onBackToNode] like any other fight.
  */
 @Composable
 fun CombatRoute(
     viewModel: CombatViewModel,
     soundPlayer: SoundPlayer,
     onBackToNode: () -> Unit,
+    onBackToMap: () -> Unit = onBackToNode,
+    onNextLesson: (String) -> Unit = {},
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
     val haptic = LocalHapticFeedback.current
@@ -86,7 +89,13 @@ fun CombatRoute(
                     viewModel.setActive(false)
                     screenActive = false
                     // The frame clock is paused from here on, so the LaunchedEffect below would not run: pause now.
-                    sound.update(active = false, paused = true, outcome = viewModel.state.value.outcome)
+                    val current = viewModel.state.value
+                    sound.update(
+                        active = false,
+                        paused = true,
+                        outcome = current.outcome,
+                        ended = current.tutorial?.completed == true,
+                    )
                 }
                 else -> Unit
             }
@@ -100,14 +109,20 @@ fun CombatRoute(
     }
 
     // Ambience: plays while the screen is started and the fight runs; pauses with the game; stops at the end.
-    LaunchedEffect(sound, screenActive, state.paused, state.outcome) {
-        sound.update(active = screenActive && !viewModel.invalid, paused = state.paused, outcome = state.outcome)
+    val lessonDone = state.tutorial?.completed == true
+    LaunchedEffect(sound, screenActive, state.paused, state.outcome, lessonDone) {
+        sound.update(
+            active = screenActive && !viewModel.invalid,
+            paused = state.paused,
+            outcome = state.outcome,
+            ended = lessonDone,
+        )
     }
     DisposableEffect(sound) {
         onDispose { sound.dispose() }
     }
 
-    val running = !state.paused && screenActive
+    val running = !state.paused && screenActive && !lessonDone
     val numbers = rememberFloatingNumbers(running)
 
     LaunchedEffect(viewModel) {
@@ -168,7 +183,7 @@ fun CombatRoute(
             handled = true
             viewModel.finish()
             // Victory and defeat both land on the node screen: after a defeat the story is on the previous node.
-            onBackToNode()
+            if (viewModel.isTutorial) onBackToMap() else onBackToNode()
         },
         onAbandon = {
             if (handled) return@CombatScreen
@@ -186,6 +201,13 @@ fun CombatRoute(
             numbers.clear()
             message = null
             messageToken++
+        },
+        onUnderstood = viewModel::understood,
+        onNextLesson = { id ->
+            if (!handled) {
+                handled = true
+                onNextLesson(id)
+            }
         },
     )
 }

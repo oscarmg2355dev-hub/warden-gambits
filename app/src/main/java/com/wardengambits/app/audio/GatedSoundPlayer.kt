@@ -1,6 +1,6 @@
 package com.wardengambits.app.audio
 
-/** Forwards to [delegate] only while sound is enabled (the menu's "Sonido" setting); disabling stops the ambience. */
+/** Forwards to [delegate] only while sound is enabled (the "Efectos" setting); disabling stops the ambience. */
 class GatedSoundPlayer(private val delegate: SoundPlayer) : SoundPlayer {
     private var enabled = true
 
